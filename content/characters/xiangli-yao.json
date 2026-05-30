@@ -1,0 +1,17 @@
+{
+  "id": "xiangli-yao",
+  "name": "Xiangli Yao",
+  "aliases": [],
+  "element": "Electro",
+  "weapon": "Gauntlets",
+  "faction": "Jinzhou",
+  "rarity": 5,
+  "releaseVersion": "1.2",
+  "profile": "He is the Principal Investigator in charge of the academics at Huaxu Academy's Jinzhou Campus. He is the Academy's youngest multi-disciplinary scientist, and an expert in the research of Automata Mechanics.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

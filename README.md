@@ -23,6 +23,7 @@ A Next.js + TypeScript site for collecting Wuthering Waves character archives, i
 
 ```bash
 npm run dev           # Start local dev server
+npm run data:sync     # Pull full character/version/voice stats from Fandom API
 npm run data:generate # Generate data/derived/voice-line-stats.json
 npm run data:validate # Validate identity and stat integrity
 npm run typecheck     # TypeScript checks

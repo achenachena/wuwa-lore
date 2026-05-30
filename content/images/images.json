@@ -1,30 +1,665 @@
 [
   {
-    "id": "yangyang-portrait",
-    "characterId": "yangyang",
-    "type": "portrait",
-    "title": "Yangyang Portrait",
-    "localPath": "/characters/yangyang.svg",
-    "copyright": "Kuro Games",
+    "id": "aalto-card",
+    "characterId": "aalto",
+    "type": "card",
+    "title": "Aalto Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/6/65/Aalto_Card.jpg/revision/latest?cb=20231221174300",
+    "copyright": "Fandom / Kuro Games",
     "source": {
-      "sourceUrl": "https://wutheringwaves.kurogames.com",
-      "sourceRevision": "promo-art",
-      "scrapedAt": "2026-05-30T21:00:00.000Z",
-      "editor": "seed-script"
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aalto",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
     }
   },
   {
-    "id": "jiyan-portrait",
-    "characterId": "jiyan",
-    "type": "portrait",
-    "title": "Jiyan Portrait",
-    "localPath": "/characters/jiyan.svg",
-    "copyright": "Kuro Games",
+    "id": "aemeath-card",
+    "characterId": "aemeath",
+    "type": "card",
+    "title": "Aemeath Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/f/fc/Aemeath_Card.jpg/revision/latest?cb=20260103095631",
+    "copyright": "Fandom / Kuro Games",
     "source": {
-      "sourceUrl": "https://wutheringwaves.kurogames.com",
-      "sourceRevision": "promo-art",
-      "scrapedAt": "2026-05-30T21:00:00.000Z",
-      "editor": "seed-script"
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aemeath",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "augusta-card",
+    "characterId": "augusta",
+    "type": "card",
+    "title": "Augusta Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/3/39/Augusta_Card.png/revision/latest?cb=20250730151033",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Augusta",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "baizhi-card",
+    "characterId": "baizhi",
+    "type": "card",
+    "title": "Baizhi Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ed/Baizhi_Card.png/revision/latest?cb=20240608100732",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Baizhi",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "brant-card",
+    "characterId": "brant",
+    "type": "card",
+    "title": "Brant Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/2/2d/Brant_Card.png/revision/latest?cb=20251015115249",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Brant",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "buling-card",
+    "characterId": "buling",
+    "type": "card",
+    "title": "Buling Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/58/Buling_Card.jpg/revision/latest?cb=20251017122754",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Buling",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "calcharo-card",
+    "characterId": "calcharo",
+    "type": "card",
+    "title": "Calcharo Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e5/Calcharo_Card.png/revision/latest?cb=20240717222251",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Calcharo",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "camellya-card",
+    "characterId": "camellya",
+    "type": "card",
+    "title": "Camellya Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8f/Camellya_Card.png/revision/latest?cb=20240912101744",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Camellya",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "cantarella-card",
+    "characterId": "cantarella",
+    "type": "card",
+    "title": "Cantarella Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/0/01/Cantarella_Card.png/revision/latest?cb=20250221143534",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cantarella",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "carlotta-card",
+    "characterId": "carlotta",
+    "type": "card",
+    "title": "Carlotta Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8a/Carlotta_Card.png/revision/latest?cb=20241122070709",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Carlotta",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "cartethyia-card",
+    "characterId": "cartethyia",
+    "type": "card",
+    "title": "Cartethyia Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d5/Cartethyia_Card.png/revision/latest?cb=20250509103319",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cartethyia",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "changli-card",
+    "characterId": "changli",
+    "type": "card",
+    "title": "Changli Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Changli_Card.png/revision/latest?cb=20240719033449",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Changli",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "chisa-card",
+    "characterId": "chisa",
+    "type": "card",
+    "title": "Chisa Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/c/ca/Chisa_Card.jpg/revision/latest?cb=20251017123133",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Chisa",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "chixia-card",
+    "characterId": "chixia",
+    "type": "card",
+    "title": "Chixia Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/da/Chixia_Card.png/revision/latest?cb=20240703175137",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Chixia",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "ciaccona-card",
+    "characterId": "ciaccona",
+    "type": "card",
+    "title": "Ciaccona Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/6/68/Ciaccona_Card.png/revision/latest?cb=20250403171349",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Ciaccona",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "danjin-card",
+    "characterId": "danjin",
+    "type": "card",
+    "title": "Danjin Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/3/3e/Danjin_Card.png/revision/latest?cb=20240607110406",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Danjin",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "denia-card",
+    "characterId": "denia",
+    "type": "card",
+    "title": "Denia Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b2/Denia_Card.jpg/revision/latest?cb=20260327233110",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Denia",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "encore-card",
+    "characterId": "encore",
+    "type": "card",
+    "title": "Encore Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/6/6c/Encore_Card.png/revision/latest?cb=20240819195310",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Encore",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "galbrena-card",
+    "characterId": "galbrena",
+    "type": "card",
+    "title": "Galbrena Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/9/9d/Galbrena_Card.jpg/revision/latest?cb=20251012132119",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Galbrena",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "hiyuki-card",
+    "characterId": "hiyuki",
+    "type": "card",
+    "title": "Hiyuki Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/dc/Hiyuki_Card.jpg/revision/latest?cb=20260327233031",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hiyuki",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "iuno-card",
+    "characterId": "iuno",
+    "type": "card",
+    "title": "Iuno Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1f/Iuno_Card.png/revision/latest?cb=20250730151112",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Iuno",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "jianxin-card",
+    "characterId": "jianxin",
+    "type": "card",
+    "title": "Jianxin Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8a/Jianxin_Card.jpg/revision/latest?cb=20240206132017",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jianxin",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "jinhsi-card",
+    "characterId": "jinhsi",
+    "type": "card",
+    "title": "Jinhsi Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a9/Jinhsi_Card.png/revision/latest?cb=20240517072857",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jinhsi",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "jiyan-card",
+    "characterId": "jiyan",
+    "type": "card",
+    "title": "Jiyan Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/0/0d/Jiyan_Card.png/revision/latest?cb=20240509102627",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jiyan",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "lingyang-card",
+    "characterId": "lingyang",
+    "type": "card",
+    "title": "Lingyang Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/9/98/Lingyang_Card.png/revision/latest?cb=20240503051937",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lingyang",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "lumi-card",
+    "characterId": "lumi",
+    "type": "card",
+    "title": "Lumi Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ee/Lumi_Card.jpg/revision/latest?cb=20251017214618",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lumi",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "lupa-card",
+    "characterId": "lupa",
+    "type": "card",
+    "title": "Lupa Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e4/Lupa_Card.png/revision/latest?cb=20250509103359",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lupa",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "luuk-herssen-card",
+    "characterId": "luuk-herssen",
+    "type": "card",
+    "title": "Luuk Herssen Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/f/fe/Luuk_Herssen_Card.jpg/revision/latest?cb=20260103095841",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "lynae-card",
+    "characterId": "lynae",
+    "type": "card",
+    "title": "Lynae Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/7/71/Lynae_Card.jpg/revision/latest?cb=20251216211412",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lynae",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "mornye-card",
+    "characterId": "mornye",
+    "type": "card",
+    "title": "Mornye Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/eb/Mornye_Card.jpg/revision/latest?cb=20251216212240",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mornye",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "mortefi-card",
+    "characterId": "mortefi",
+    "type": "card",
+    "title": "Mortefi Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8e/Mortefi_Card.jpg/revision/latest?cb=20231221180030",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mortefi",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "phoebe-card",
+    "characterId": "phoebe",
+    "type": "card",
+    "title": "Phoebe Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/54/Phoebe_Card.png/revision/latest?cb=20251015114458",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phoebe",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "phrolova-card",
+    "characterId": "phrolova",
+    "type": "card",
+    "title": "Phrolova Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/0/0b/Phrolova_Card.png/revision/latest?cb=20250621131505",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phrolova",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "qiuyuan-card",
+    "characterId": "qiuyuan",
+    "type": "card",
+    "title": "Qiuyuan Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/17/Qiuyuan_Card.jpg/revision/latest?cb=20251015202744",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "roccia-card",
+    "characterId": "roccia",
+    "type": "card",
+    "title": "Roccia Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ea/Roccia_Card.png/revision/latest?cb=20241122070750",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Roccia",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "rover-aero-card",
+    "characterId": "rover-aero",
+    "type": "card",
+    "title": "Rover-Aero Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8c/Both_Rovers.webp/revision/latest?cb=20250214010229",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Aero",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "rover-card",
+    "characterId": "rover",
+    "type": "card",
+    "title": "Rover Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/7/70/Rover_1.png/revision/latest?cb=20240420140302",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "rover-havoc-card",
+    "characterId": "rover-havoc",
+    "type": "card",
+    "title": "Rover-Havoc Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8c/Both_Rovers.webp/revision/latest?cb=20250214010229",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Havoc",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "rover-spectro-card",
+    "characterId": "rover-spectro",
+    "type": "card",
+    "title": "Rover-Spectro Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8c/Both_Rovers.webp/revision/latest?cb=20250214010229",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Spectro",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "sanhua-card",
+    "characterId": "sanhua",
+    "type": "card",
+    "title": "Sanhua Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/5d/Sanhua_Card.png/revision/latest?cb=20240814180016",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sanhua",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "shorekeeper-card",
+    "characterId": "shorekeeper",
+    "type": "card",
+    "title": "Shorekeeper Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/85/Shorekeeper_Card.png/revision/latest?cb=20240813134043",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Shorekeeper",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "sigrika-card",
+    "characterId": "sigrika",
+    "type": "card",
+    "title": "Sigrika Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f6/Sigrika_Card.jpg/revision/latest?cb=20260214084237",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sigrika",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "taoqi-card",
+    "characterId": "taoqi",
+    "type": "card",
+    "title": "Taoqi Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/ae/Taoqi_Card.jpg/revision/latest?cb=20231219185115",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Taoqi",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "verina-card",
+    "characterId": "verina",
+    "type": "card",
+    "title": "Verina Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/7/7c/Verina%27s_Card.jpg/revision/latest?cb=20240511130959",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Verina",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "xiangli-yao-card",
+    "characterId": "xiangli-yao",
+    "type": "card",
+    "title": "Xiangli Yao Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Xiangli_Yao_Card.png/revision/latest?cb=20240708200915",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "yangyang-card",
+    "characterId": "yangyang",
+    "type": "card",
+    "title": "Yangyang Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a7/Yangyang_Card.png/revision/latest?cb=20240813182233",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "yinlin-card",
+    "characterId": "yinlin",
+    "type": "card",
+    "title": "Yinlin Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/3/33/Yinlin_Card.jpg/revision/latest?cb=20241007222006",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yinlin",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "youhu-card",
+    "characterId": "youhu",
+    "type": "card",
+    "title": "Youhu Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b6/Youhu_Card.png/revision/latest?cb=20240813132555",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Youhu",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "yuanwu-card",
+    "characterId": "yuanwu",
+    "type": "card",
+    "title": "Yuanwu Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/53/Yuanwu_Card.jpg/revision/latest?cb=20231221175828",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yuanwu",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "zani-card",
+    "characterId": "zani",
+    "type": "card",
+    "title": "Zani Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/df/Zani_Card.png/revision/latest?cb=20250419141821",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zani",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "zhezhi-card",
+    "characterId": "zhezhi",
+    "type": "card",
+    "title": "Zhezhi Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f0/Zhezhi_Card.png/revision/latest?cb=20240708201004",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zhezhi",
+      "scrapedAt": "2026-05-30T22:48:36.031Z",
+      "editor": "scripts/sync-fandom-data.ts"
     }
   }
 ]

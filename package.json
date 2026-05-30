@@ -11,6 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "format": "prettier --check .",
+    "data:sync": "tsx scripts/sync-fandom-data.ts",
     "data:generate": "tsx scripts/generate-voice-stats.ts",
     "data:validate": "tsx scripts/validate-data.ts",
     "data:check": "npm run data:generate && npm run data:validate"

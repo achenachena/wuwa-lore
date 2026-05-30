@@ -1,16 +1,16 @@
 {
-  "id": "yangyang",
-  "name": "Yangyang",
+  "id": "jianxin",
+  "name": "Jianxin",
   "aliases": [],
   "element": "Aero",
-  "weapon": "Sword",
+  "weapon": "Gauntlets",
   "faction": "Jinzhou",
-  "rarity": 4,
+  "rarity": 5,
   "releaseVersion": "1.0",
-  "profile": "She is an outrider of the Midnight Rangers.",
+  "profile": "Profile text unavailable from source.",
   "locale": "en-US",
   "source": {
-    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang",
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jianxin",
     "scrapedAt": "2026-05-30T22:48:36.031Z",
     "editor": "scripts/sync-fandom-data.ts"
   }

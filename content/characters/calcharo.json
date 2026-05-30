@@ -1,0 +1,17 @@
+{
+  "id": "calcharo",
+  "name": "Calcharo",
+  "aliases": [],
+  "element": "Electro",
+  "weapon": "Broadblade",
+  "faction": "Ghost Hounds",
+  "rarity": 5,
+  "releaseVersion": "1.0",
+  "profile": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Calcharo",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

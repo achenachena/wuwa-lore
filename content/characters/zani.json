@@ -1,0 +1,17 @@
+{
+  "id": "zani",
+  "name": "Zani",
+  "aliases": [],
+  "element": "Spectro",
+  "weapon": "Gauntlets",
+  "faction": "Ragunna",
+  "rarity": 5,
+  "releaseVersion": "2.3",
+  "profile": "Profile text unavailable from source.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zani",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

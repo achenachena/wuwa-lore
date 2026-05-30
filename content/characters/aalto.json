@@ -1,0 +1,17 @@
+{
+  "id": "aalto",
+  "name": "Aalto",
+  "aliases": [],
+  "element": "Aero",
+  "weapon": "Pistols",
+  "faction": "Black Shores",
+  "rarity": 4,
+  "releaseVersion": "1.0",
+  "profile": "He is an information broker from the New Federation and a Consultant of the Black Shores. He first appears in the Main Quest Chapter I: Act V - Rewinding Raindrops.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aalto",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

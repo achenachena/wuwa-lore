@@ -1,0 +1,17 @@
+{
+  "id": "sigrika",
+  "name": "Sigrika",
+  "aliases": [],
+  "element": "Aero",
+  "weapon": "Gauntlets",
+  "faction": "Roya Tribe",
+  "rarity": 5,
+  "releaseVersion": "3.2",
+  "profile": "* is the name the Iceland epic poem Sigrdrífumál associates with the valkyrie Brynhildr.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sigrika",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

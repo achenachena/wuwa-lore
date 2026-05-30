@@ -1,0 +1,17 @@
+{
+  "id": "ciaccona",
+  "name": "Ciaccona",
+  "aliases": [],
+  "element": "Aero",
+  "weapon": "Pistols",
+  "faction": "Ragunna",
+  "rarity": 5,
+  "releaseVersion": "2.3",
+  "profile": "* A chaconne (ciaccona in Italian) is a style of musical composition popular during the Baroque Era (1600-1750 A.D.).",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Ciaccona",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

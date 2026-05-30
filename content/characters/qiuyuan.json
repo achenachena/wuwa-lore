@@ -1,0 +1,17 @@
+{
+  "id": "qiuyuan",
+  "name": "Qiuyuan",
+  "aliases": [],
+  "element": "Aero",
+  "weapon": "Sword",
+  "faction": "Mingting",
+  "rarity": 5,
+  "releaseVersion": "2.7",
+  "profile": "* is a Chinese surname.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

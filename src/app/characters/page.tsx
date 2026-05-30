@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { getCharacterListData } from "@/lib/data";
+import { loadGeneratedStats } from "@/lib/data/loaders";
 
 export default async function CharactersPage() {
-  const characters = await getCharacterListData();
+  const [characters, stats] = await Promise.all([getCharacterListData(), loadGeneratedStats()]);
+  const totalByCharacter = new Map<string, number>();
+  for (const row of stats) {
+    const current = totalByCharacter.get(row.characterId) ?? 0;
+    totalByCharacter.set(row.characterId, current + row.totalLineCount);
+  }
 
   if (characters.length === 0) {
     return <p className="text-zinc-600">No characters yet. Add records under `content/characters`.</p>;
@@ -33,6 +39,10 @@ export default async function CharactersPage() {
               <div>
                 <dt className="text-zinc-500">Debut</dt>
                 <dd>{character.releaseVersion}</dd>
+              </div>
+              <div>
+                <dt className="text-zinc-500">Voice Lines</dt>
+                <dd>{totalByCharacter.get(character.id) ?? 0}</dd>
               </div>
             </dl>
             <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">

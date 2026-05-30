@@ -30,7 +30,6 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
     notFound();
   }
 
-  const stat = characterStats[0];
   return (
     <section className="space-y-6">
       <div>
@@ -62,30 +61,35 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">Voice line stats</h2>
-        {!stat ? (
+        {characterStats.length === 0 ? (
           <p className="mt-2 text-zinc-600">No generated voice stats yet. Run `npm run data:generate`.</p>
         ) : (
-          <>
-            <p className="mt-2 text-zinc-700">
-              Locale: <strong>{stat.locale}</strong> · Total lines: <strong>{stat.totalLineCount}</strong>
-            </p>
-            <table className="mt-4 w-full border-collapse text-sm">
-              <thead>
-                <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                  <th className="py-2">Version</th>
-                  <th className="py-2">Line count</th>
-                </tr>
-              </thead>
-              <tbody>
-                {stat.perVersionLineCounts.map((item) => (
-                  <tr key={item.version} className="border-b border-zinc-100">
-                    <td className="py-2">{item.version}</td>
-                    <td className="py-2">{item.lineCount}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </>
+          <div className="space-y-6">
+            {characterStats.map((stat) => (
+              <div key={stat.locale} className="rounded border border-zinc-200 p-3">
+                <p className="text-zinc-700">
+                  Locale: <strong>{stat.locale}</strong> · Total lines:{" "}
+                  <strong>{stat.totalLineCount}</strong>
+                </p>
+                <table className="mt-3 w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-zinc-200 text-left text-zinc-500">
+                      <th className="py-2">Version</th>
+                      <th className="py-2">Line count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {stat.perVersionLineCounts.map((item) => (
+                      <tr key={`${stat.locale}-${item.version}`} className="border-b border-zinc-100">
+                        <td className="py-2">{item.version}</td>
+                        <td className="py-2">{item.lineCount}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </div>
         )}
       </article>
 

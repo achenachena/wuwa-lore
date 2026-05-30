@@ -1,0 +1,17 @@
+{
+  "id": "encore",
+  "name": "Encore",
+  "aliases": [],
+  "element": "Fusion",
+  "weapon": "Rectifier",
+  "faction": "Black Shores",
+  "rarity": 5,
+  "releaseVersion": "1.0",
+  "profile": "She always has two Woolies with her, who are Encore's best friends and protectors.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Encore",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

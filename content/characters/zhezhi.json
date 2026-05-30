@@ -1,0 +1,17 @@
+{
+  "id": "zhezhi",
+  "name": "Zhezhi",
+  "aliases": [],
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "faction": "Jinzhou",
+  "rarity": 5,
+  "releaseVersion": "1.2",
+  "profile": "She is a commissioned painter, quiet and shy with a dedication to her craft. She's not very eloquent, but her persistence and love for painting speak volumes.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zhezhi",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

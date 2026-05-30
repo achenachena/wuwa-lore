@@ -1,0 +1,17 @@
+{
+  "id": "sanhua",
+  "name": "Sanhua",
+  "aliases": [],
+  "element": "Glacio",
+  "weapon": "Sword",
+  "faction": "Jinzhou",
+  "rarity": 4,
+  "releaseVersion": "1.0",
+  "profile": "She is the loyal and reliable guard of Jinzhou Magistrate Jinhsi who perceives a world distinctly different from that in the eyes of others.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sanhua",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

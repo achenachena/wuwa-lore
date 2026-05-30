@@ -1,0 +1,17 @@
+{
+  "id": "cantarella",
+  "name": "Cantarella",
+  "aliases": [],
+  "element": "Havoc",
+  "weapon": "Rectifier",
+  "faction": "Fisalia Family",
+  "rarity": 5,
+  "releaseVersion": "2.2",
+  "profile": "For a moment, you think you glimpse something in the ocean's depths—but you are unsure if it is the shadow of a giant sea creature... or the tail feathers of the Celestial Steed.|Her introduction on the Official Website.}}",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cantarella",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

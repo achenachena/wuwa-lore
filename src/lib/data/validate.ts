@@ -20,7 +20,7 @@ export function validateCharactersAndVersions(
     } else {
       idSet.add(character.id);
     }
-    if (!versionSet.has(character.releaseVersion)) {
+    if (character.releaseVersion !== "unknown" && !versionSet.has(character.releaseVersion)) {
       errors.push(
         `Character ${character.id} has invalid releaseVersion ${character.releaseVersion}`,
       );

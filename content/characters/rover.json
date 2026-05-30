@@ -1,0 +1,17 @@
+{
+  "id": "rover",
+  "name": "Rover",
+  "aliases": [],
+  "element": "Multiple",
+  "weapon": "Sword",
+  "faction": "Unknown",
+  "rarity": 5,
+  "releaseVersion": "1.0",
+  "profile": "Rover is a multi-attribute Resonator and is the main protagonist of Wuthering Waves.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

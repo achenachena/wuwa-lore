@@ -1,0 +1,17 @@
+{
+  "id": "mornye",
+  "name": "Mornye",
+  "aliases": [],
+  "element": "Fusion",
+  "weapon": "Broadblade",
+  "faction": "Spacetrek Collective",
+  "rarity": 5,
+  "releaseVersion": "3.0",
+  "profile": "* Mornië is the word for \"darkness\" in the fictional elvish language Quenya, from J.R.R. Tolkien's Lord of the Rings.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mornye",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

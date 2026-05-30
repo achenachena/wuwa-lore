@@ -1,0 +1,17 @@
+{
+  "id": "jinhsi",
+  "name": "Jinhsi",
+  "aliases": [],
+  "element": "Spectro",
+  "weapon": "Broadblade",
+  "faction": "Jinzhou",
+  "rarity": 5,
+  "releaseVersion": "1.1",
+  "profile": "Profile text unavailable from source.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jinhsi",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

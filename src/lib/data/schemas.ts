@@ -16,7 +16,7 @@ export const characterSchema = z.object({
   element: z.string().min(1),
   weapon: z.string().min(1),
   faction: z.string().min(1),
-  rarity: z.number().int().min(1).max(5),
+  rarity: z.number().int().min(0).max(5),
   releaseVersion: z.string().min(1),
   profile: z.string().min(1),
   locale: localeSchema,
@@ -35,7 +35,7 @@ export const characterImageSchema = z.object({
 
 export const versionSchema = z.object({
   version: z.string().min(1),
-  releaseDate: z.iso.date(),
+  releaseDate: z.string().min(1),
   notes: z.string(),
 });
 

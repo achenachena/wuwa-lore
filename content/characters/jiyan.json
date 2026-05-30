@@ -1,18 +1,17 @@
 {
   "id": "jiyan",
   "name": "Jiyan",
-  "aliases": ["Midnight Ranger"],
+  "aliases": [],
   "element": "Aero",
   "weapon": "Broadblade",
-  "faction": "Midnight Rangers",
+  "faction": "Jinzhou",
   "rarity": 5,
   "releaseVersion": "1.0",
-  "profile": "General of the Midnight Rangers who protects Jinzhou's borders.",
+  "profile": "He is the general of the Midnight Rangers selected by the sentinel of Jinzhou, Jué and is stationed in the same city.",
   "locale": "en-US",
   "source": {
-    "sourceUrl": "https://wutheringwaves.kurogames.com",
-    "sourceRevision": "launch-profile",
-    "scrapedAt": "2026-05-30T21:00:00.000Z",
-    "editor": "seed-script"
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jiyan",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "id": "baizhi",
+  "name": "Baizhi",
+  "aliases": [],
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "faction": "Jinzhou",
+  "rarity": 4,
+  "releaseVersion": "1.0",
+  "profile": "She is a researcher in Remnant Ecoacoustics at Huaxu Academy. Baizhi's once unfulfilled wish has now manifested as her loyal companion. The Remnant Creature You'tan is her source of healing powers, and a lifelong research focus.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Baizhi",
+    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}
