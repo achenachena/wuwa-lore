@@ -1,0 +1,30 @@
+---
+description: Wuwa lore site goals, scope, and data contract
+alwaysApply: true
+---
+
+# Wuwa Lore Site Context
+
+## Product goal
+
+Build a TypeScript-based website that tracks each character's profile, images, debut version, per-version voice-line counts, and total voice-line counts.
+
+## Core entities
+
+- `Character`: id, name, aliases, element, weapon, faction, rarity, releaseVersion, profile text.
+- `CharacterImage`: characterId, type (portrait/card/splash), source, copyright, localPath.
+- `VoiceLineStat`: characterId, version, lineCount, locale, source, updatedAt.
+- `Version`: version tag (`1.0`, `1.1`, ...), releaseDate, notes.
+
+## Non-negotiables
+
+- Preserve provenance for every imported lore/stat field (`sourceUrl`, `scrapedAt`, `editor`).
+- Keep content and derived stats separate: raw data first, computed data second.
+- Favor deterministic scripts over manual editing for generated counts.
+- Support future i18n from day one (`locale` should never be omitted).
+
+## Expected output quality
+
+- Data changes include validation or generation step.
+- User-facing pages fail gracefully when data is partial.
+- Every automation favors reproducibility (CI-friendly, no hidden local assumptions).

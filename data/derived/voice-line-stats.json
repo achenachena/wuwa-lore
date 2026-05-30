@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-05-30T22:27:38.537Z",
+  "rows": [
+    {
+      "characterId": "jiyan",
+      "debutVersion": "1.0",
+      "locale": "en-US",
+      "perVersionLineCounts": [
+        {
+          "version": "1.0",
+          "lineCount": 1
+        },
+        {
+          "version": "1.1",
+          "lineCount": 0
+        },
+        {
+          "version": "1.2",
+          "lineCount": 1
+        }
+      ],
+      "totalLineCount": 2,
+      "sources": [
+        "https://wutheringwaves.fandom.com/wiki/Jiyan/Voicelines"
+      ],
+      "generatedAt": "2026-05-30T22:27:38.537Z"
+    },
+    {
+      "characterId": "yangyang",
+      "debutVersion": "1.0",
+      "locale": "en-US",
+      "perVersionLineCounts": [
+        {
+          "version": "1.0",
+          "lineCount": 2
+        },
+        {
+          "version": "1.1",
+          "lineCount": 1
+        },
+        {
+          "version": "1.2",
+          "lineCount": 0
+        }
+      ],
+      "totalLineCount": 3,
+      "sources": [
+        "https://wutheringwaves.fandom.com/wiki/Yangyang/Voicelines"
+      ],
+      "generatedAt": "2026-05-30T22:27:38.537Z"
+    }
+  ]
+}

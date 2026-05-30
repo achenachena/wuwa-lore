@@ -1,0 +1,70 @@
+{
+  "snapshotId": "voice-lines-2026-05-30",
+  "entries": [
+    {
+      "id": "yangyang-1",
+      "characterId": "yangyang",
+      "version": "1.0",
+      "locale": "en-US",
+      "line": "The wind carries many stories.",
+      "source": {
+        "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang/Voicelines",
+        "sourceRevision": "rev-2026-05-30",
+        "scrapedAt": "2026-05-30T21:00:00.000Z",
+        "editor": "seed-script"
+      }
+    },
+    {
+      "id": "yangyang-2",
+      "characterId": "yangyang",
+      "version": "1.0",
+      "locale": "en-US",
+      "line": "Stay close. I'll lead the path.",
+      "source": {
+        "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang/Voicelines",
+        "sourceRevision": "rev-2026-05-30",
+        "scrapedAt": "2026-05-30T21:00:00.000Z",
+        "editor": "seed-script"
+      }
+    },
+    {
+      "id": "yangyang-3",
+      "characterId": "yangyang",
+      "version": "1.1",
+      "locale": "en-US",
+      "line": "Clouds have shifted over Mt. Firmament.",
+      "source": {
+        "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang/Voicelines",
+        "sourceRevision": "rev-2026-05-30",
+        "scrapedAt": "2026-05-30T21:00:00.000Z",
+        "editor": "seed-script"
+      }
+    },
+    {
+      "id": "jiyan-1",
+      "characterId": "jiyan",
+      "version": "1.0",
+      "locale": "en-US",
+      "line": "Stand firm, and victory follows.",
+      "source": {
+        "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jiyan/Voicelines",
+        "sourceRevision": "rev-2026-05-30",
+        "scrapedAt": "2026-05-30T21:00:00.000Z",
+        "editor": "seed-script"
+      }
+    },
+    {
+      "id": "jiyan-2",
+      "characterId": "jiyan",
+      "version": "1.2",
+      "locale": "en-US",
+      "line": "Our duty does not change with the seasons.",
+      "source": {
+        "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jiyan/Voicelines",
+        "sourceRevision": "rev-2026-05-30",
+        "scrapedAt": "2026-05-30T21:00:00.000Z",
+        "editor": "seed-script"
+      }
+    }
+  ]
+}

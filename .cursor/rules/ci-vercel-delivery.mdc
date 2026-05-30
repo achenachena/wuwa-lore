@@ -1,0 +1,24 @@
+---
+description: GitHub CI and Vercel deployment guardrails
+globs: .github/workflows/**/*.yml, .github/workflows/**/*.yaml, vercel.json, package.json
+alwaysApply: false
+---
+
+# CI and Deployment Guardrails
+
+## CI baseline
+
+- CI should run at least: typecheck, lint, test, and build.
+- Prefer `npm ci` in CI for deterministic installs.
+- Cache dependency and build artifacts where safe.
+
+## Data-sensitive checks
+
+- Run data validation and stat generation checks in CI.
+- Fail CI when generated outputs are stale versus source data.
+
+## Vercel
+
+- Keep production build command identical to CI build command.
+- Keep environment variable names documented in repo (`docs/deployment.md` or equivalent).
+- Never commit secrets; use GitHub/Vercel secret stores only.

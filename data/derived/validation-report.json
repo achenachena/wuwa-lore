@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-05-30T22:27:40.977Z",
+  "checks": {
+    "identityValidation": {
+      "ok": true,
+      "errors": [],
+      "checkedAt": "2026-05-30T22:27:40.976Z"
+    },
+    "statValidation": {
+      "ok": true,
+      "errors": [],
+      "checkedAt": "2026-05-30T22:27:40.977Z"
+    }
+  },
+  "ok": true
+}

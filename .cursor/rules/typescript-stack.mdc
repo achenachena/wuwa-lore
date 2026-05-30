@@ -1,0 +1,28 @@
+---
+description: TypeScript and app-layer conventions for this project
+globs: **/*.ts, **/*.tsx, **/*.mts, **/*.cts
+alwaysApply: false
+---
+
+# TypeScript Conventions
+
+## Language and typing
+
+- Use strict TypeScript (`strict: true`) and avoid `any`; use `unknown` + narrowing.
+- Export explicit types for data contracts from a dedicated module (e.g. `src/types/lore.ts`).
+- Prefer readonly data shapes for normalized content where possible.
+
+## Runtime validation
+
+- Validate external/raw data using schema validators (recommended: Zod).
+- Parse at boundaries; avoid carrying unvalidated external payloads into UI.
+
+## App boundaries
+
+- Separate `content` (authoritative data), `compute` (derived stats), and `ui` layers.
+- Keep transform utilities pure and side-effect free.
+
+## Error handling
+
+- Throw typed errors in scripts and return user-safe fallbacks in UI.
+- Include actionable context in errors (`characterId`, `version`, `source`).

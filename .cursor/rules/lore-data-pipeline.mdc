@@ -1,0 +1,29 @@
+---
+description: Data ingestion and voice-line statistics workflow
+globs: data/**/*.json, scripts/**/*.ts, content/**/*.json, content/**/*.md, content/**/*.mdx
+alwaysApply: false
+---
+
+# Lore Data Pipeline Rules
+
+## Data flow
+
+1. Ingest raw source snapshots into `data/raw/`.
+2. Normalize into canonical `content/` records.
+3. Generate derived stats into `data/derived/`.
+
+## Counting rules
+
+- Per-version line counts must be generated, not manually typed.
+- Totals must equal sum of per-version counts for each character+locale.
+- If a version has no voice lines, write `0` explicitly.
+
+## Source traceability
+
+- Each generated stat row retains `sourceUrl` and `sourceRevision` when available.
+- Never overwrite raw snapshots; create a new snapshot file.
+
+## Safety checks
+
+- Reject merges if duplicate character IDs exist.
+- Reject merges if release version is invalid or missing from version registry.
