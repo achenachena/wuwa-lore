@@ -30,6 +30,18 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
     notFound();
   }
 
+  const trendByVersion = new Map<string, number>();
+  for (const stat of characterStats) {
+    for (const item of stat.perVersionLineCounts) {
+      const current = trendByVersion.get(item.version) ?? 0;
+      trendByVersion.set(item.version, current + item.lineCount);
+    }
+  }
+  const trendRows = [...trendByVersion.entries()]
+    .map(([version, count]) => ({ version, count }))
+    .sort((a, b) => a.version.localeCompare(b.version, "en"));
+  const maxTrend = trendRows.reduce((max, row) => Math.max(max, row.count), 1);
+
   return (
     <section className="space-y-6">
       <div>
@@ -98,6 +110,28 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
                     ))}
                   </tbody>
                 </table>
+              </div>
+            ))}
+          </div>
+        )}
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Version Trend (All Locales)</h2>
+        {trendRows.length === 0 ? (
+          <p className="mt-2 text-zinc-600">No trend data available.</p>
+        ) : (
+          <div className="mt-4 space-y-2">
+            {trendRows.map((row) => (
+              <div key={row.version} className="grid grid-cols-[72px_1fr_56px] items-center gap-3 text-sm">
+                <span className="text-zinc-600">{row.version}</span>
+                <div className="h-3 rounded bg-zinc-100">
+                  <div
+                    className="h-3 rounded bg-zinc-700"
+                    style={{ width: `${Math.max(2, (row.count / maxTrend) * 100)}%` }}
+                  />
+                </div>
+                <span className="text-right font-medium">{row.count}</span>
               </div>
             ))}
           </div>

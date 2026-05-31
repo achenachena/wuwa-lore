@@ -73,6 +73,33 @@ export default async function ToolsPage() {
           </div>
         </div>
       </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Exports</h2>
+        <p className="mt-2 text-sm text-zinc-600">
+          Download normalized snapshots for external analysis or BI tools.
+        </p>
+        <div className="mt-3 flex flex-wrap gap-3 text-sm">
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/exports/characters"
+          >
+            Download Characters CSV
+          </a>
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/exports/voice-stats-csv"
+          >
+            Download Voice Stats CSV
+          </a>
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/exports/voice-stats-json"
+          >
+            Download Voice Stats JSON
+          </a>
+        </div>
+      </article>
     </section>
   );
 }

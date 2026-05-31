@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { getCharacterListData, getVersionStatsPageData } from "@/lib/data";
+import { loadQualityReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
-  const [characters, versionStats] = await Promise.all([
+  const [characters, versionStats, quality, validation] = await Promise.all([
     getCharacterListData(),
     getVersionStatsPageData(),
+    loadQualityReport().catch(() => null),
+    loadValidationReport().catch(() => null),
   ]);
   const totalLines = versionStats.reduce((sum, item) => sum + item.totalVoiceLines, 0);
   return (
@@ -14,6 +17,28 @@ export default async function Home() {
         This site tracks character archives, image metadata, debut versions, per-version voice line
         counts, and total voice lines with deterministic data generation.
       </p>
+      <div className="flex flex-wrap gap-2 text-sm">
+        <span className="rounded-full border border-zinc-300 bg-white px-3 py-1">
+          Quality:{" "}
+          <strong>
+            {quality ? `${quality.coveredCharacters}/${quality.totalCharacters} characters covered` : "N/A"}
+          </strong>
+        </span>
+        <span
+          className={`rounded-full border px-3 py-1 ${
+            validation?.ok
+              ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+              : "border-amber-200 bg-amber-50 text-amber-700"
+          }`}
+        >
+          Validation: <strong>{validation?.ok ? "PASS" : "CHECK REQUIRED"}</strong>
+        </span>
+        {quality ? (
+          <span className="rounded-full border border-zinc-300 bg-white px-3 py-1">
+            Updated: <strong>{new Date(quality.generatedAt).toLocaleString()}</strong>
+          </span>
+        ) : null}
+      </div>
       <div className="grid gap-4 md:grid-cols-3">
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <h2 className="text-sm font-medium text-zinc-500">Tracked Characters</h2>
@@ -34,6 +59,9 @@ export default async function Home() {
         </Link>
         <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/stats/versions">
           View Version Analytics
+        </Link>
+        <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/tools">
+          Data Tools & Downloads
         </Link>
       </div>
     </section>
