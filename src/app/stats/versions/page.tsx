@@ -1,16 +1,41 @@
-import { getVersionStatsPageData } from "@/lib/data";
+import { getCharacterListData, getVersionStatsPageData } from "@/lib/data";
+import { loadGeneratedStats } from "@/lib/data/loaders";
 
 export default async function VersionStatsPage() {
-  const rows = await getVersionStatsPageData();
+  const [rows, characters, stats] = await Promise.all([
+    getVersionStatsPageData(),
+    getCharacterListData(),
+    loadGeneratedStats(),
+  ]);
 
   if (rows.length === 0) {
     return <p className="text-zinc-600">No version stats available yet.</p>;
   }
 
+  const locales = ["zh-CN", "en-US", "ja-JP", "ko-KR"] as const;
+
+  const characterNamesByVersion = new Map<string, string[]>();
+  for (const character of characters) {
+    const current = characterNamesByVersion.get(character.releaseVersion) ?? [];
+    current.push(character.name);
+    characterNamesByVersion.set(character.releaseVersion, current);
+  }
+
+  const localeTotalsByVersion = new Map<string, Record<string, number>>();
+  for (const row of stats) {
+    for (const item of row.perVersionLineCounts) {
+      const localeMap = localeTotalsByVersion.get(item.version) ?? {};
+      localeMap[row.locale] = (localeMap[row.locale] ?? 0) + item.lineCount;
+      localeTotalsByVersion.set(item.version, localeMap);
+    }
+  }
+
   return (
     <section className="space-y-4">
       <h1 className="text-2xl font-semibold">Version Stats</h1>
-      <p className="text-zinc-600">Total debut characters and accumulated voice lines per version.</p>
+      <p className="text-zinc-600">
+        Debut character counts, multilingual voice-line growth, and roster breakdown for each version.
+      </p>
       <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -18,7 +43,13 @@ export default async function VersionStatsPage() {
               <th className="px-4 py-3">Version</th>
               <th className="px-4 py-3">Release Date</th>
               <th className="px-4 py-3">Debut Characters</th>
-              <th className="px-4 py-3">Voice Lines</th>
+              <th className="px-4 py-3">Total Voice Lines</th>
+              {locales.map((locale) => (
+                <th key={locale} className="px-4 py-3">
+                  {locale}
+                </th>
+              ))}
+              <th className="px-4 py-3">Debut Roster</th>
             </tr>
           </thead>
           <tbody>
@@ -28,6 +59,16 @@ export default async function VersionStatsPage() {
                 <td className="px-4 py-3">{row.releaseDate}</td>
                 <td className="px-4 py-3">{row.characterCount}</td>
                 <td className="px-4 py-3">{row.totalVoiceLines}</td>
+                {locales.map((locale) => (
+                  <td key={`${row.version}-${locale}`} className="px-4 py-3">
+                    {localeTotalsByVersion.get(row.version)?.[locale] ?? 0}
+                  </td>
+                ))}
+                <td className="px-4 py-3 text-xs text-zinc-600">
+                  {(characterNamesByVersion.get(row.version) ?? [])
+                    .sort((a, b) => a.localeCompare(b))
+                    .join(", ") || "—"}
+                </td>
               </tr>
             ))}
           </tbody>

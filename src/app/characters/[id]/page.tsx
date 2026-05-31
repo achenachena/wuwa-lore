@@ -38,6 +38,17 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
         </Link>
         <h1 className="mt-2 text-3xl font-semibold">{character.name}</h1>
         <p className="mt-2 max-w-3xl text-zinc-700">{character.profile}</p>
+        <p className="mt-2 text-xs text-zinc-500">
+          Source:{" "}
+          <a
+            href={character.source.sourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            {character.source.sourceUrl}
+          </a>
+        </p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-4">

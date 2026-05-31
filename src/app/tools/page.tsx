@@ -1,10 +1,16 @@
+import { getCharacterListData } from "@/lib/data";
 import { loadGeneratedStats, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function ToolsPage() {
-  const [stats, report] = await Promise.all([
+  const [stats, report, characters] = await Promise.all([
     loadGeneratedStats().catch(() => []),
     loadValidationReport().catch(() => null),
+    getCharacterListData().catch(() => []),
   ]);
+
+  const coveredCharacterIds = new Set(stats.map((row) => row.characterId));
+  const missingVoiceCharacters = characters.filter((character) => !coveredCharacterIds.has(character.id));
+  const unknownReleaseCharacters = characters.filter((character) => character.releaseVersion === "unknown");
 
   return (
     <section className="space-y-6">
@@ -35,6 +41,31 @@ export default async function ToolsPage() {
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">Generated Voice Rows</h2>
         <p className="mt-2 text-sm text-zinc-600">Rows currently generated: {stats.length}</p>
+        <p className="mt-1 text-sm text-zinc-600">
+          Characters covered by voice stats: {coveredCharacterIds.size} / {characters.length}
+        </p>
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Data Gaps</h2>
+        <div className="mt-2 space-y-3 text-sm">
+          <div>
+            <p className="font-medium text-zinc-800">
+              Missing voice stats ({missingVoiceCharacters.length})
+            </p>
+            <p className="text-zinc-600">
+              {missingVoiceCharacters.map((character) => character.name).join(", ") || "None"}
+            </p>
+          </div>
+          <div>
+            <p className="font-medium text-zinc-800">
+              Unknown release version ({unknownReleaseCharacters.length})
+            </p>
+            <p className="text-zinc-600">
+              {unknownReleaseCharacters.map((character) => character.name).join(", ") || "None"}
+            </p>
+          </div>
+        </div>
       </article>
     </section>
   );

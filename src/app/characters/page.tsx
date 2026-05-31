@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { CharactersBrowser } from "@/components/characters-browser";
 import { getCharacterListData } from "@/lib/data";
 import { loadGeneratedStats } from "@/lib/data/loaders";
 
@@ -14,43 +14,26 @@ export default async function CharactersPage() {
     return <p className="text-zinc-600">No characters yet. Add records under `content/characters`.</p>;
   }
 
+  const listItems = characters.map((character) => ({
+    id: character.id,
+    name: character.name,
+    element: character.element,
+    weapon: character.weapon,
+    faction: character.faction,
+    rarity: character.rarity,
+    releaseVersion: character.releaseVersion,
+    voiceLineTotal: totalByCharacter.get(character.id) ?? 0,
+    hasVoiceStats: stats.some((row) => row.characterId === character.id),
+  }));
+
   return (
     <section className="space-y-4">
       <h1 className="text-2xl font-semibold">Characters</h1>
-      <p className="text-zinc-600">Archive includes debut version and key metadata.</p>
-      <div className="grid gap-4 md:grid-cols-2">
-        {characters.map((character) => (
-          <article key={character.id} className="rounded-lg border border-zinc-200 bg-white p-4">
-            <h2 className="text-lg font-semibold">{character.name}</h2>
-            <p className="text-sm text-zinc-500">{character.id}</p>
-            <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
-              <div>
-                <dt className="text-zinc-500">Element</dt>
-                <dd>{character.element}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">Weapon</dt>
-                <dd>{character.weapon}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">Faction</dt>
-                <dd>{character.faction}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">Debut</dt>
-                <dd>{character.releaseVersion}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">Voice Lines</dt>
-                <dd>{totalByCharacter.get(character.id) ?? 0}</dd>
-              </div>
-            </dl>
-            <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
-              View details →
-            </Link>
-          </article>
-        ))}
-      </div>
+      <p className="text-zinc-600">
+        Search and filter all archived resonators by element, weapon, rarity, debut version, and
+        voice-line totals.
+      </p>
+      <CharactersBrowser items={listItems} />
     </section>
   );
 }
