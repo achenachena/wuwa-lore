@@ -86,3 +86,16 @@ export async function loadValidationReport() {
     };
   }>(filePath);
 }
+
+export async function loadQualityReport() {
+  const filePath = path.join(root, "data", "derived", "quality-report.json");
+  return readJsonFile<{
+    generatedAt: string;
+    totalCharacters: number;
+    expectedRows: number;
+    actualRows: number;
+    coveredCharacters: number;
+    rowsWithContent: number;
+    rowsWithoutContent: number;
+  }>(filePath);
+}

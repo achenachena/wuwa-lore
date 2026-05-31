@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yinlin",
-    "scrapedAt": "2026-05-30T22:48:36.031Z",
+    "scrapedAt": "2026-05-31T02:52:45.557Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

@@ -313,6 +313,13 @@ function pickCountAtTimestamp(
   return picked;
 }
 
+function buildZeroPerVersionCounts(versions: VersionRecord[]) {
+  return versions.map((version) => ({
+    version: version.version,
+    lineCount: 0,
+  }));
+}
+
 async function main() {
   const root = process.cwd();
   const [characterNames, versionPages] = await Promise.all([
@@ -397,37 +404,36 @@ async function main() {
 
     for (const localeDef of localePages) {
       const voicePage = `${name}${localeDef.suffix}`;
+      const voicePageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(voicePage).replace(/%20/g, "_")}`;
       const revisions = await fetchAllRevisions(voicePage);
-      if (revisions.length === 0) {
-        continue;
+      let finalized = buildZeroPerVersionCounts(versions);
+      if (revisions.length > 0) {
+        const revisionCounts = revisions.map((revision) => ({
+          timestamp: revision.timestamp,
+          count: parseVoiceLineCount(revision.content),
+        }));
+
+        const perVersionLineCounts = versions.map((version, index) => {
+          const nextVersion = versions[index + 1];
+          const endTime = nextVersion ? new Date(nextVersion.releaseDate) : new Date();
+          return {
+            version: version.version,
+            lineCount: 0,
+            endTime,
+          };
+        });
+
+        let previous = 0;
+        finalized = perVersionLineCounts.map((item) => {
+          const snapshot = pickCountAtTimestamp(revisionCounts, item.endTime);
+          const delta = Math.max(0, snapshot - previous);
+          previous = snapshot;
+          return {
+            version: item.version,
+            lineCount: delta,
+          };
+        });
       }
-      const revisionCounts = revisions.map((revision) => ({
-        timestamp: revision.timestamp,
-        count: parseVoiceLineCount(revision.content),
-      }));
-
-      const perVersionLineCounts = versions.map((version, index) => {
-        const nextVersion = versions[index + 1];
-        const endTime = nextVersion
-          ? new Date(nextVersion.releaseDate)
-          : new Date();
-        return {
-          version: version.version,
-          lineCount: 0,
-          endTime,
-        };
-      });
-
-      let previous = 0;
-      const finalized = perVersionLineCounts.map((item) => {
-        const snapshot = pickCountAtTimestamp(revisionCounts, item.endTime);
-        const delta = Math.max(0, snapshot - previous);
-        previous = snapshot;
-        return {
-          version: item.version,
-          lineCount: delta,
-        };
-      });
 
       allVoiceRows.push({
         characterId: id,
@@ -435,7 +441,7 @@ async function main() {
         locale: localeDef.locale,
         perVersionLineCounts: finalized,
         totalLineCount: finalized.reduce((sum, entry) => sum + entry.lineCount, 0),
-        sources: [`https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(voicePage).replace(/%20/g, "_")}`],
+        sources: [voicePageUrl],
         generatedAt: nowIso,
       });
     }
@@ -500,8 +506,25 @@ async function main() {
     "utf8",
   );
 
+  const coveredCharacterIds = new Set(allVoiceRows.map((row) => row.characterId));
+  const rowsWithContent = allVoiceRows.filter((row) => row.totalLineCount > 0).length;
+  const qualityReport = {
+    generatedAt: nowIso,
+    totalCharacters: characters.length,
+    expectedRows: characters.length * localePages.length,
+    actualRows: allVoiceRows.length,
+    coveredCharacters: coveredCharacterIds.size,
+    rowsWithContent,
+    rowsWithoutContent: allVoiceRows.length - rowsWithContent,
+  };
+  await fs.writeFile(
+    path.join(root, "data", "derived", "quality-report.json"),
+    `${JSON.stringify(qualityReport, null, 2)}\n`,
+    "utf8",
+  );
+
   console.log(
-    `Synced ${characters.length} characters, ${versions.length} versions, ${allVoiceRows.length} voice-stat rows.`,
+    `Synced ${characters.length} characters, ${versions.length} versions, ${allVoiceRows.length} voice-stat rows (${rowsWithContent} with content).`,
   );
 }
 

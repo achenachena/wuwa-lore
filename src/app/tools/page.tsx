@@ -1,11 +1,12 @@
 import { getCharacterListData } from "@/lib/data";
-import { loadGeneratedStats, loadValidationReport } from "@/lib/data/loaders";
+import { loadGeneratedStats, loadQualityReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function ToolsPage() {
-  const [stats, report, characters] = await Promise.all([
+  const [stats, report, characters, quality] = await Promise.all([
     loadGeneratedStats().catch(() => []),
     loadValidationReport().catch(() => null),
     getCharacterListData().catch(() => []),
+    loadQualityReport().catch(() => null),
   ]);
 
   const coveredCharacterIds = new Set(stats.map((row) => row.characterId));
@@ -44,6 +45,11 @@ export default async function ToolsPage() {
         <p className="mt-1 text-sm text-zinc-600">
           Characters covered by voice stats: {coveredCharacterIds.size} / {characters.length}
         </p>
+        {quality ? (
+          <p className="mt-1 text-sm text-zinc-600">
+            Rows with non-zero content: {quality.rowsWithContent} / {quality.actualRows}
+          </p>
+        ) : null}
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
