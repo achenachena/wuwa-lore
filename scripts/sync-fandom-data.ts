@@ -121,11 +121,16 @@ function parseFirstDescriptionLine(wikitext: string): string {
 }
 
 function parseVoiceLineCount(wikitext: string): number {
-  const matches = [...wikitext.matchAll(/\|(vo_\d+_\d+)_title(?:_[a-z]+)?\s*=/g)];
-  if (matches.length === 0) {
-    return 0;
+  const keySet = new Set<string>();
+  for (const match of wikitext.matchAll(/\|([a-z0-9_]+?)_tx(?:_[a-z]+)?\s*=\s*([^\n]*)/gi)) {
+    const key = match[1]?.trim();
+    const value = match[2]?.trim() ?? "";
+    if (!key || !value) {
+      continue;
+    }
+    keySet.add(key);
   }
-  return new Set(matches.map((match) => match[1])).size;
+  return keySet.size;
 }
 
 function compareVersion(a: string, b: string): number {
