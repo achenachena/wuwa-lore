@@ -121,8 +121,11 @@ function parseFirstDescriptionLine(wikitext: string): string {
 }
 
 function parseVoiceLineCount(wikitext: string): number {
-  const matches = wikitext.match(/\|vo_[^=\n]+_title\s*=/g);
-  return matches?.length ?? 0;
+  const matches = [...wikitext.matchAll(/\|(vo_\d+_\d+)_title(?:_[a-z]+)?\s*=/g)];
+  if (matches.length === 0) {
+    return 0;
+  }
+  return new Set(matches.map((match) => match[1])).size;
 }
 
 function compareVersion(a: string, b: string): number {
@@ -402,8 +405,9 @@ async function main() {
       });
     }
 
+    const voiceBaseName = /^Rover(?:-|$)/.test(name) ? "Rover" : name;
     for (const localeDef of localePages) {
-      const voicePage = `${name}${localeDef.suffix}`;
+      const voicePage = `${voiceBaseName}${localeDef.suffix}`;
       const voicePageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(voicePage).replace(/%20/g, "_")}`;
       const revisions = await fetchAllRevisions(voicePage);
       let finalized = buildZeroPerVersionCounts(versions);
