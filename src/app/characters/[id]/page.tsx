@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { VoiceLineExplorer } from "@/components/voice-line-explorer";
 import { getCharacterDetailData } from "@/lib/data";
 
 type CharacterDetailProps = {
@@ -24,7 +25,8 @@ export async function generateMetadata({ params }: CharacterDetailProps): Promis
 
 export default async function CharacterDetailPage({ params }: CharacterDetailProps) {
   const { id } = await params;
-  const { character, characterStats, characterImages } = await getCharacterDetailData(id);
+  const { character, characterStats, characterImages, characterVoiceDetails } =
+    await getCharacterDetailData(id);
 
   if (!character) {
     notFound();
@@ -150,6 +152,23 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
             ))}
           </div>
         )}
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Voice Lines (Text)</h2>
+        <p className="mt-1 text-sm text-zinc-600">
+          Extracted from source `*_tx` fields. Use search and locale filters for direct auditing.
+        </p>
+        <div className="mt-4">
+          <VoiceLineExplorer
+            items={characterVoiceDetails.map((row) => ({
+              locale: row.locale,
+              sourcePageExists: row.sourcePageExists,
+              sourcePageTitle: row.sourcePageTitle,
+              lines: row.lines,
+            }))}
+          />
+        </div>
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">

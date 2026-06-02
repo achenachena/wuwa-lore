@@ -4,6 +4,7 @@ import {
   loadCharacters,
   loadGeneratedStats,
   loadRawVoiceEntries,
+  loadVoiceLineDetails,
   loadVersions,
 } from "@/lib/data/loaders";
 
@@ -12,15 +13,17 @@ export async function getCharacterListData() {
 }
 
 export async function getCharacterDetailData(id: string) {
-  const [characters, stats, images] = await Promise.all([
+  const [characters, stats, images, details] = await Promise.all([
     loadCharacters(),
     loadGeneratedStats(),
     loadCharacterImages(),
+    loadVoiceLineDetails(),
   ]);
   const character = characters.find((item) => item.id === id);
   const characterStats = stats.filter((item) => item.characterId === id);
   const characterImages = images.filter((item) => item.characterId === id);
-  return { character, characterStats, characterImages };
+  const characterVoiceDetails = details.filter((item) => item.characterId === id);
+  return { character, characterStats, characterImages, characterVoiceDetails };
 }
 
 export async function getVersionStatsPageData() {

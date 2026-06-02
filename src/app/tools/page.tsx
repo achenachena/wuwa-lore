@@ -126,6 +126,12 @@ export default async function ToolsPage() {
           >
             Download Voice Stats JSON
           </a>
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/exports/voice-lines-json"
+          >
+            Download Voice Lines JSON
+          </a>
         </div>
       </article>
     </section>

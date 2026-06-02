@@ -63,6 +63,7 @@ export const voiceLineStatRowSchema = z.object({
   sourceRevisionCount: z.number().int().min(0),
   countMethod: z.literal("tx_key_unique_nonempty"),
   qualityStatus: z.enum(["verified", "missing_source"]),
+  currentLineCount: z.number().int().min(0),
   perVersionLineCounts: z.array(
     z.object({
       version: z.string().min(1),
@@ -77,4 +78,22 @@ export const voiceLineStatRowSchema = z.object({
 export const generatedStatsSchema = z.object({
   generatedAt: z.iso.datetime(),
   rows: z.array(voiceLineStatRowSchema),
+});
+
+export const voiceLineDetailRowSchema = z.object({
+  characterId: z.string().min(1),
+  locale: localeSchema,
+  sourcePageTitle: z.string().min(1),
+  sourcePageExists: z.boolean(),
+  sourceLatestRevisionAt: z.iso.datetime().nullable(),
+  sourceRevisionCount: z.number().int().min(0),
+  generatedAt: z.iso.datetime(),
+  lines: z.array(
+    z.object({
+      key: z.string().min(1),
+      text: z.string().min(1),
+      firstSeenAt: z.iso.datetime().nullable(),
+      firstSeenVersion: z.string().nullable(),
+    }),
+  ),
 });

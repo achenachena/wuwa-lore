@@ -1,5 +1,5 @@
 {
-  "snapshotId": "fandom-voicelines-2026-06-02T18:41:13.877Z",
+  "snapshotId": "fandom-voicelines-2026-06-02T19:08:33.136Z",
   "characterCount": 51,
   "rows": [
     {
@@ -12,10 +12,11 @@
       "sourceRevisionCount": 16,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 64,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 64
+          "lineCount": 66
         },
         {
           "version": "1.1",
@@ -90,11 +91,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 64,
+      "totalLineCount": 66,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aalto%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aalto",
@@ -106,6 +107,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -188,7 +190,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aalto%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aalto",
@@ -200,6 +202,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -282,7 +285,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aalto%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aalto",
@@ -294,10 +297,11 @@
       "sourceRevisionCount": 4,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 64,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 64
+          "lineCount": 66
         },
         {
           "version": "1.1",
@@ -372,11 +376,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 64,
+      "totalLineCount": 66,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aalto%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aemeath",
@@ -388,6 +392,7 @@
       "sourceRevisionCount": 10,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 116,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -451,7 +456,7 @@
         },
         {
           "version": "3.1",
-          "lineCount": 116
+          "lineCount": 118
         },
         {
           "version": "3.2",
@@ -466,11 +471,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 116,
+      "totalLineCount": 118,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aemeath%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aemeath",
@@ -482,6 +487,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -564,7 +570,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aemeath%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aemeath",
@@ -576,6 +582,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -658,7 +665,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aemeath%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "aemeath",
@@ -670,6 +677,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -752,7 +760,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Aemeath%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "augusta",
@@ -764,6 +772,7 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 68,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -846,7 +855,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Augusta%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "augusta",
@@ -858,6 +867,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -940,7 +950,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Augusta%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "augusta",
@@ -952,6 +962,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1034,7 +1045,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Augusta%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "augusta",
@@ -1046,6 +1057,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1128,7 +1140,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Augusta%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "baizhi",
@@ -1140,10 +1152,11 @@
       "sourceRevisionCount": 15,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 59,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 59
+          "lineCount": 75
         },
         {
           "version": "1.1",
@@ -1218,11 +1231,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 59,
+      "totalLineCount": 75,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Baizhi%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "baizhi",
@@ -1234,6 +1247,7 @@
       "sourceRevisionCount": 4,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1316,7 +1330,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Baizhi%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "baizhi",
@@ -1328,6 +1342,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1410,7 +1425,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Baizhi%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "baizhi",
@@ -1422,6 +1437,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1504,7 +1520,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Baizhi%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "brant",
@@ -1516,6 +1532,7 @@
       "sourceRevisionCount": 7,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 62,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1598,7 +1615,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Brant%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "brant",
@@ -1610,6 +1627,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1692,7 +1710,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Brant%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "brant",
@@ -1704,6 +1722,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1786,7 +1805,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Brant%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "brant",
@@ -1798,6 +1817,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1880,7 +1900,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Brant%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "buling",
@@ -1892,6 +1912,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -1974,7 +1995,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Buling%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "buling",
@@ -1986,6 +2007,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2068,7 +2090,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Buling%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "buling",
@@ -2080,6 +2102,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2162,7 +2185,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Buling%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "buling",
@@ -2174,6 +2197,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2256,7 +2280,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Buling%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "calcharo",
@@ -2268,10 +2292,11 @@
       "sourceRevisionCount": 33,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 69,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 69
+          "lineCount": 77
         },
         {
           "version": "1.1",
@@ -2346,11 +2371,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 69,
+      "totalLineCount": 77,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Calcharo%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "calcharo",
@@ -2362,6 +2387,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2444,7 +2470,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Calcharo%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "calcharo",
@@ -2456,6 +2482,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2538,7 +2565,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Calcharo%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "calcharo",
@@ -2550,10 +2577,11 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 68,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 68
+          "lineCount": 69
         },
         {
           "version": "1.1",
@@ -2628,11 +2656,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 68,
+      "totalLineCount": 69,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Calcharo%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "camellya",
@@ -2644,6 +2672,7 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 62,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2726,7 +2755,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Camellya%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "camellya",
@@ -2738,6 +2767,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2820,7 +2850,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Camellya%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "camellya",
@@ -2832,6 +2862,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -2914,7 +2945,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Camellya%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "camellya",
@@ -2926,6 +2957,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3008,7 +3040,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Camellya%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cantarella",
@@ -3020,6 +3052,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 65,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3102,7 +3135,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cantarella%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cantarella",
@@ -3114,6 +3147,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3196,7 +3230,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cantarella%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cantarella",
@@ -3208,6 +3242,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3290,7 +3325,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cantarella%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cantarella",
@@ -3302,6 +3337,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3384,7 +3420,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cantarella%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "carlotta",
@@ -3396,6 +3432,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 73,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3478,7 +3515,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Carlotta%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "carlotta",
@@ -3490,6 +3527,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3572,7 +3610,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Carlotta%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "carlotta",
@@ -3584,6 +3622,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3666,7 +3705,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Carlotta%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "carlotta",
@@ -3678,6 +3717,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3760,7 +3800,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Carlotta%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cartethyia",
@@ -3772,6 +3812,7 @@
       "sourceRevisionCount": 8,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 98,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3854,7 +3895,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cartethyia%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cartethyia",
@@ -3866,6 +3907,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -3948,7 +3990,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cartethyia%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cartethyia",
@@ -3960,6 +4002,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4042,7 +4085,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cartethyia%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "cartethyia",
@@ -4054,6 +4097,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4136,7 +4180,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Cartethyia%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "changli",
@@ -4148,6 +4192,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 65,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4230,7 +4275,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Changli%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "changli",
@@ -4242,6 +4287,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4324,7 +4370,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Changli%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "changli",
@@ -4336,6 +4382,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4418,7 +4465,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Changli%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "changli",
@@ -4430,6 +4477,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4512,7 +4560,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Changli%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chisa",
@@ -4524,6 +4572,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 30,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4606,7 +4655,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chisa%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chisa",
@@ -4618,6 +4667,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4700,7 +4750,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chisa%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chisa",
@@ -4712,6 +4762,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4794,7 +4845,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chisa%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chisa",
@@ -4806,6 +4857,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4888,7 +4940,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chisa%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chixia",
@@ -4900,6 +4952,7 @@
       "sourceRevisionCount": 16,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 71,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -4982,7 +5035,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chixia%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chixia",
@@ -4994,6 +5047,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 70,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5076,7 +5130,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chixia%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chixia",
@@ -5088,6 +5142,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 70,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5170,7 +5225,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chixia%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "chixia",
@@ -5182,6 +5237,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 70,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5264,7 +5320,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Chixia%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "ciaccona",
@@ -5276,6 +5332,7 @@
       "sourceRevisionCount": 7,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 57,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5315,7 +5372,7 @@
         },
         {
           "version": "2.4",
-          "lineCount": 57
+          "lineCount": 74
         },
         {
           "version": "2.5",
@@ -5354,11 +5411,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 57,
+      "totalLineCount": 74,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Ciaccona%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "ciaccona",
@@ -5370,6 +5427,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5452,7 +5510,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Ciaccona%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "ciaccona",
@@ -5464,6 +5522,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5546,7 +5605,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Ciaccona%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "ciaccona",
@@ -5558,6 +5617,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5640,7 +5700,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Ciaccona%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "danjin",
@@ -5652,10 +5712,11 @@
       "sourceRevisionCount": 18,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 61
+          "lineCount": 63
         },
         {
           "version": "1.1",
@@ -5730,11 +5791,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 61,
+      "totalLineCount": 63,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Danjin%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "danjin",
@@ -5746,6 +5807,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 60,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5828,7 +5890,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Danjin%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "danjin",
@@ -5840,6 +5902,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 60,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -5922,7 +5985,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Danjin%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "danjin",
@@ -5934,6 +5997,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 60,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6016,7 +6080,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Danjin%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "denia",
@@ -6028,6 +6092,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6110,7 +6175,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Denia%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "denia",
@@ -6122,6 +6187,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6204,7 +6270,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Denia%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "denia",
@@ -6216,6 +6282,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6298,7 +6365,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Denia%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "denia",
@@ -6310,6 +6377,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6392,7 +6460,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Denia%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "encore",
@@ -6404,6 +6472,7 @@
       "sourceRevisionCount": 13,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 65,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6486,7 +6555,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Encore%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "encore",
@@ -6498,6 +6567,7 @@
       "sourceRevisionCount": 11,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 51,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6505,7 +6575,7 @@
         },
         {
           "version": "1.1",
-          "lineCount": 51
+          "lineCount": 61
         },
         {
           "version": "1.2",
@@ -6576,11 +6646,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 51,
+      "totalLineCount": 61,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Encore%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "encore",
@@ -6592,6 +6662,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6674,7 +6745,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Encore%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "encore",
@@ -6686,10 +6757,11 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 65,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 65
+          "lineCount": 68
         },
         {
           "version": "1.1",
@@ -6764,11 +6836,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 65,
+      "totalLineCount": 68,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Encore%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "galbrena",
@@ -6780,6 +6852,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 12,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6862,7 +6935,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Galbrena%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "galbrena",
@@ -6874,6 +6947,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -6956,7 +7030,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Galbrena%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "galbrena",
@@ -6968,6 +7042,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7050,7 +7125,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Galbrena%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "galbrena",
@@ -7062,6 +7137,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7144,7 +7220,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Galbrena%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "hiyuki",
@@ -7156,6 +7232,7 @@
       "sourceRevisionCount": 7,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 65,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7238,7 +7315,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Hiyuki%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "hiyuki",
@@ -7250,6 +7327,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7332,7 +7410,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Hiyuki%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "hiyuki",
@@ -7344,6 +7422,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7426,7 +7505,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Hiyuki%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "hiyuki",
@@ -7438,6 +7517,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7520,7 +7600,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Hiyuki%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "iuno",
@@ -7532,6 +7612,7 @@
       "sourceRevisionCount": 9,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 79,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7614,7 +7695,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Iuno%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "iuno",
@@ -7626,6 +7707,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7708,7 +7790,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Iuno%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "iuno",
@@ -7720,6 +7802,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7802,7 +7885,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Iuno%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "iuno",
@@ -7814,6 +7897,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -7896,7 +7980,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Iuno%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jianxin",
@@ -7908,10 +7992,11 @@
       "sourceRevisionCount": 12,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 57,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 57
+          "lineCount": 58
         },
         {
           "version": "1.1",
@@ -7986,11 +8071,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 57,
+      "totalLineCount": 58,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jianxin%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jianxin",
@@ -8002,194 +8087,7 @@
       "sourceRevisionCount": 4,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
-      "perVersionLineCounts": [
-        {
-          "version": "1.0",
-          "lineCount": 56
-        },
-        {
-          "version": "1.1",
-          "lineCount": 0
-        },
-        {
-          "version": "1.2",
-          "lineCount": 0
-        },
-        {
-          "version": "1.3",
-          "lineCount": 0
-        },
-        {
-          "version": "1.4",
-          "lineCount": 0
-        },
-        {
-          "version": "2.0",
-          "lineCount": 0
-        },
-        {
-          "version": "2.1",
-          "lineCount": 0
-        },
-        {
-          "version": "2.2",
-          "lineCount": 0
-        },
-        {
-          "version": "2.3",
-          "lineCount": 0
-        },
-        {
-          "version": "2.4",
-          "lineCount": 0
-        },
-        {
-          "version": "2.5",
-          "lineCount": 0
-        },
-        {
-          "version": "2.6",
-          "lineCount": 0
-        },
-        {
-          "version": "2.7",
-          "lineCount": 0
-        },
-        {
-          "version": "2.8",
-          "lineCount": 0
-        },
-        {
-          "version": "3.0",
-          "lineCount": 0
-        },
-        {
-          "version": "3.1",
-          "lineCount": 0
-        },
-        {
-          "version": "3.2",
-          "lineCount": 0
-        },
-        {
-          "version": "3.3",
-          "lineCount": 0
-        },
-        {
-          "version": "3.4",
-          "lineCount": 0
-        }
-      ],
-      "totalLineCount": 56,
-      "sources": [
-        "https://wutheringwaves.fandom.com/wiki/Jianxin%2FVoicelines%2FJapanese"
-      ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
-    },
-    {
-      "characterId": "jianxin",
-      "debutVersion": "1.0",
-      "locale": "ko-KR",
-      "sourcePageTitle": "Jianxin/Voicelines/Korean",
-      "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2024-06-10T18:01:10Z",
-      "sourceRevisionCount": 3,
-      "countMethod": "tx_key_unique_nonempty",
-      "qualityStatus": "verified",
-      "perVersionLineCounts": [
-        {
-          "version": "1.0",
-          "lineCount": 56
-        },
-        {
-          "version": "1.1",
-          "lineCount": 0
-        },
-        {
-          "version": "1.2",
-          "lineCount": 0
-        },
-        {
-          "version": "1.3",
-          "lineCount": 0
-        },
-        {
-          "version": "1.4",
-          "lineCount": 0
-        },
-        {
-          "version": "2.0",
-          "lineCount": 0
-        },
-        {
-          "version": "2.1",
-          "lineCount": 0
-        },
-        {
-          "version": "2.2",
-          "lineCount": 0
-        },
-        {
-          "version": "2.3",
-          "lineCount": 0
-        },
-        {
-          "version": "2.4",
-          "lineCount": 0
-        },
-        {
-          "version": "2.5",
-          "lineCount": 0
-        },
-        {
-          "version": "2.6",
-          "lineCount": 0
-        },
-        {
-          "version": "2.7",
-          "lineCount": 0
-        },
-        {
-          "version": "2.8",
-          "lineCount": 0
-        },
-        {
-          "version": "3.0",
-          "lineCount": 0
-        },
-        {
-          "version": "3.1",
-          "lineCount": 0
-        },
-        {
-          "version": "3.2",
-          "lineCount": 0
-        },
-        {
-          "version": "3.3",
-          "lineCount": 0
-        },
-        {
-          "version": "3.4",
-          "lineCount": 0
-        }
-      ],
-      "totalLineCount": 56,
-      "sources": [
-        "https://wutheringwaves.fandom.com/wiki/Jianxin%2FVoicelines%2FKorean"
-      ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
-    },
-    {
-      "characterId": "jianxin",
-      "debutVersion": "1.0",
-      "locale": "zh-CN",
-      "sourcePageTitle": "Jianxin/Voicelines/Chinese",
-      "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2024-06-17T10:56:48Z",
-      "sourceRevisionCount": 3,
-      "countMethod": "tx_key_unique_nonempty",
-      "qualityStatus": "verified",
+      "currentLineCount": 56,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8270,9 +8168,199 @@
       ],
       "totalLineCount": 57,
       "sources": [
+        "https://wutheringwaves.fandom.com/wiki/Jianxin%2FVoicelines%2FJapanese"
+      ],
+      "generatedAt": "2026-06-02T19:08:33.136Z"
+    },
+    {
+      "characterId": "jianxin",
+      "debutVersion": "1.0",
+      "locale": "ko-KR",
+      "sourcePageTitle": "Jianxin/Voicelines/Korean",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2024-06-10T18:01:10Z",
+      "sourceRevisionCount": 3,
+      "countMethod": "tx_key_unique_nonempty",
+      "qualityStatus": "verified",
+      "currentLineCount": 56,
+      "perVersionLineCounts": [
+        {
+          "version": "1.0",
+          "lineCount": 57
+        },
+        {
+          "version": "1.1",
+          "lineCount": 0
+        },
+        {
+          "version": "1.2",
+          "lineCount": 0
+        },
+        {
+          "version": "1.3",
+          "lineCount": 0
+        },
+        {
+          "version": "1.4",
+          "lineCount": 0
+        },
+        {
+          "version": "2.0",
+          "lineCount": 0
+        },
+        {
+          "version": "2.1",
+          "lineCount": 0
+        },
+        {
+          "version": "2.2",
+          "lineCount": 0
+        },
+        {
+          "version": "2.3",
+          "lineCount": 0
+        },
+        {
+          "version": "2.4",
+          "lineCount": 0
+        },
+        {
+          "version": "2.5",
+          "lineCount": 0
+        },
+        {
+          "version": "2.6",
+          "lineCount": 0
+        },
+        {
+          "version": "2.7",
+          "lineCount": 0
+        },
+        {
+          "version": "2.8",
+          "lineCount": 0
+        },
+        {
+          "version": "3.0",
+          "lineCount": 0
+        },
+        {
+          "version": "3.1",
+          "lineCount": 0
+        },
+        {
+          "version": "3.2",
+          "lineCount": 0
+        },
+        {
+          "version": "3.3",
+          "lineCount": 0
+        },
+        {
+          "version": "3.4",
+          "lineCount": 0
+        }
+      ],
+      "totalLineCount": 57,
+      "sources": [
+        "https://wutheringwaves.fandom.com/wiki/Jianxin%2FVoicelines%2FKorean"
+      ],
+      "generatedAt": "2026-06-02T19:08:33.136Z"
+    },
+    {
+      "characterId": "jianxin",
+      "debutVersion": "1.0",
+      "locale": "zh-CN",
+      "sourcePageTitle": "Jianxin/Voicelines/Chinese",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2024-06-17T10:56:48Z",
+      "sourceRevisionCount": 3,
+      "countMethod": "tx_key_unique_nonempty",
+      "qualityStatus": "verified",
+      "currentLineCount": 57,
+      "perVersionLineCounts": [
+        {
+          "version": "1.0",
+          "lineCount": 58
+        },
+        {
+          "version": "1.1",
+          "lineCount": 0
+        },
+        {
+          "version": "1.2",
+          "lineCount": 0
+        },
+        {
+          "version": "1.3",
+          "lineCount": 0
+        },
+        {
+          "version": "1.4",
+          "lineCount": 0
+        },
+        {
+          "version": "2.0",
+          "lineCount": 0
+        },
+        {
+          "version": "2.1",
+          "lineCount": 0
+        },
+        {
+          "version": "2.2",
+          "lineCount": 0
+        },
+        {
+          "version": "2.3",
+          "lineCount": 0
+        },
+        {
+          "version": "2.4",
+          "lineCount": 0
+        },
+        {
+          "version": "2.5",
+          "lineCount": 0
+        },
+        {
+          "version": "2.6",
+          "lineCount": 0
+        },
+        {
+          "version": "2.7",
+          "lineCount": 0
+        },
+        {
+          "version": "2.8",
+          "lineCount": 0
+        },
+        {
+          "version": "3.0",
+          "lineCount": 0
+        },
+        {
+          "version": "3.1",
+          "lineCount": 0
+        },
+        {
+          "version": "3.2",
+          "lineCount": 0
+        },
+        {
+          "version": "3.3",
+          "lineCount": 0
+        },
+        {
+          "version": "3.4",
+          "lineCount": 0
+        }
+      ],
+      "totalLineCount": 58,
+      "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jianxin%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jinhsi",
@@ -8284,6 +8372,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 74,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8331,7 +8420,7 @@
         },
         {
           "version": "2.6",
-          "lineCount": 1
+          "lineCount": 2
         },
         {
           "version": "2.7",
@@ -8362,11 +8451,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 74,
+      "totalLineCount": 75,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jinhsi%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jinhsi",
@@ -8378,6 +8467,7 @@
       "sourceRevisionCount": 7,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 73,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8460,7 +8550,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jinhsi%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jinhsi",
@@ -8472,6 +8562,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 73,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8554,7 +8645,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jinhsi%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jinhsi",
@@ -8566,6 +8657,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 73,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8648,7 +8740,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jinhsi%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jiyan",
@@ -8660,10 +8752,11 @@
       "sourceRevisionCount": 26,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 62,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 62
+          "lineCount": 63
         },
         {
           "version": "1.1",
@@ -8738,11 +8831,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 62,
+      "totalLineCount": 63,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jiyan%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jiyan",
@@ -8754,6 +8847,7 @@
       "sourceRevisionCount": 7,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8836,7 +8930,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jiyan%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jiyan",
@@ -8848,6 +8942,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -8930,7 +9025,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jiyan%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "jiyan",
@@ -8942,6 +9037,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9024,7 +9120,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Jiyan%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lingyang",
@@ -9036,6 +9132,7 @@
       "sourceRevisionCount": 20,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 80,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9118,7 +9215,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lingyang%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lingyang",
@@ -9130,6 +9227,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 79,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9212,7 +9310,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lingyang%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lingyang",
@@ -9224,6 +9322,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 79,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9306,7 +9405,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lingyang%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lingyang",
@@ -9318,6 +9417,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 79,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9400,7 +9500,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lingyang%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lumi",
@@ -9412,6 +9512,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 50,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9494,7 +9595,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lumi%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lumi",
@@ -9506,6 +9607,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9588,7 +9690,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lumi%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lumi",
@@ -9600,6 +9702,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9682,7 +9785,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lumi%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lumi",
@@ -9694,6 +9797,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9776,7 +9880,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lumi%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lupa",
@@ -9788,6 +9892,7 @@
       "sourceRevisionCount": 8,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 72,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9870,7 +9975,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lupa%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lupa",
@@ -9882,6 +9987,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -9964,7 +10070,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lupa%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lupa",
@@ -9976,6 +10082,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10058,7 +10165,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lupa%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lupa",
@@ -10070,6 +10177,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10152,7 +10260,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lupa%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "luuk-herssen",
@@ -10164,6 +10272,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10246,7 +10355,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "luuk-herssen",
@@ -10258,6 +10367,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10340,7 +10450,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "luuk-herssen",
@@ -10352,6 +10462,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10434,7 +10545,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "luuk-herssen",
@@ -10446,6 +10557,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10528,7 +10640,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lynae",
@@ -10540,6 +10652,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10622,7 +10735,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lynae%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lynae",
@@ -10634,6 +10747,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10716,7 +10830,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lynae%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lynae",
@@ -10728,6 +10842,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10810,7 +10925,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lynae%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "lynae",
@@ -10822,6 +10937,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10904,7 +11020,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Lynae%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mornye",
@@ -10916,6 +11032,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -10998,7 +11115,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mornye%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mornye",
@@ -11010,6 +11127,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11092,7 +11210,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mornye%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mornye",
@@ -11104,6 +11222,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11186,7 +11305,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mornye%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mornye",
@@ -11198,6 +11317,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11280,7 +11400,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mornye%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mortefi",
@@ -11292,10 +11412,11 @@
       "sourceRevisionCount": 29,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 61
+          "lineCount": 64
         },
         {
           "version": "1.1",
@@ -11370,11 +11491,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 61,
+      "totalLineCount": 64,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mortefi%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mortefi",
@@ -11386,6 +11507,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11468,7 +11590,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mortefi%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mortefi",
@@ -11480,6 +11602,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11562,7 +11685,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mortefi%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "mortefi",
@@ -11574,10 +11697,11 @@
       "sourceRevisionCount": 12,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 61
+          "lineCount": 63
         },
         {
           "version": "1.1",
@@ -11652,11 +11776,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 61,
+      "totalLineCount": 63,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Mortefi%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phoebe",
@@ -11668,6 +11792,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 59,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11750,7 +11875,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phoebe%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phoebe",
@@ -11762,6 +11887,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11844,7 +11970,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phoebe%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phoebe",
@@ -11856,6 +11982,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -11938,7 +12065,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phoebe%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phoebe",
@@ -11950,6 +12077,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12032,7 +12160,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phoebe%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phrolova",
@@ -12044,6 +12172,7 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 67,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12126,7 +12255,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phrolova%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phrolova",
@@ -12138,6 +12267,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12220,7 +12350,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phrolova%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phrolova",
@@ -12232,6 +12362,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12314,7 +12445,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phrolova%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "phrolova",
@@ -12326,6 +12457,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12408,7 +12540,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Phrolova%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "qiuyuan",
@@ -12420,6 +12552,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12502,7 +12635,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Qiuyuan%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "qiuyuan",
@@ -12514,6 +12647,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12596,7 +12730,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Qiuyuan%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "qiuyuan",
@@ -12608,6 +12742,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12690,7 +12825,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Qiuyuan%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "qiuyuan",
@@ -12702,6 +12837,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12784,7 +12920,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Qiuyuan%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "roccia",
@@ -12796,6 +12932,7 @@
       "sourceRevisionCount": 4,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12823,7 +12960,7 @@
         },
         {
           "version": "2.1",
-          "lineCount": 57
+          "lineCount": 65
         },
         {
           "version": "2.2",
@@ -12874,11 +13011,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 58,
+      "totalLineCount": 66,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Roccia%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "roccia",
@@ -12890,6 +13027,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -12972,7 +13110,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Roccia%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "roccia",
@@ -12984,6 +13122,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13066,7 +13205,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Roccia%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "roccia",
@@ -13078,6 +13217,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13160,7 +13300,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Roccia%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover",
@@ -13172,6 +13312,7 @@
       "sourceRevisionCount": 60,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13254,7 +13395,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover",
@@ -13266,6 +13407,7 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13348,7 +13490,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover",
@@ -13360,6 +13502,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13442,7 +13585,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover",
@@ -13454,6 +13597,7 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 52,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13536,7 +13680,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-aero",
@@ -13548,6 +13692,7 @@
       "sourceRevisionCount": 60,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13630,7 +13775,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-aero",
@@ -13642,6 +13787,7 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13724,7 +13870,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-aero",
@@ -13736,6 +13882,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13818,7 +13965,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-aero",
@@ -13830,6 +13977,7 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 52,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -13912,7 +14060,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-havoc",
@@ -13924,6 +14072,7 @@
       "sourceRevisionCount": 60,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14006,7 +14155,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-havoc",
@@ -14018,6 +14167,7 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14100,7 +14250,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-havoc",
@@ -14112,6 +14262,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14194,7 +14345,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-havoc",
@@ -14206,6 +14357,7 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 52,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14288,7 +14440,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-spectro",
@@ -14300,6 +14452,7 @@
       "sourceRevisionCount": 60,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14382,7 +14535,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-spectro",
@@ -14394,6 +14547,7 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 53,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14476,7 +14630,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-spectro",
@@ -14488,6 +14642,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14570,7 +14725,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "rover-spectro",
@@ -14582,6 +14737,7 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 52,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14664,7 +14820,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Rover%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sanhua",
@@ -14676,10 +14832,11 @@
       "sourceRevisionCount": 20,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 58
+          "lineCount": 61
         },
         {
           "version": "1.1",
@@ -14754,11 +14911,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 58,
+      "totalLineCount": 61,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sanhua%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sanhua",
@@ -14770,6 +14927,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14852,7 +15010,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sanhua%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sanhua",
@@ -14864,6 +15022,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -14946,7 +15105,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sanhua%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sanhua",
@@ -14958,6 +15117,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15040,7 +15200,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sanhua%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "shorekeeper",
@@ -15052,6 +15212,7 @@
       "sourceRevisionCount": 15,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 68,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15134,7 +15295,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Shorekeeper%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "shorekeeper",
@@ -15146,6 +15307,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15228,7 +15390,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Shorekeeper%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "shorekeeper",
@@ -15240,6 +15402,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15322,7 +15485,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Shorekeeper%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "shorekeeper",
@@ -15334,6 +15497,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15416,7 +15580,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Shorekeeper%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sigrika",
@@ -15428,6 +15592,7 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 63,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15510,7 +15675,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sigrika%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sigrika",
@@ -15522,6 +15687,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15604,7 +15770,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sigrika%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sigrika",
@@ -15616,6 +15782,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15698,7 +15865,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sigrika%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "sigrika",
@@ -15710,6 +15877,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15792,7 +15960,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Sigrika%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "taoqi",
@@ -15804,10 +15972,11 @@
       "sourceRevisionCount": 39,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 63,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 63
+          "lineCount": 76
         },
         {
           "version": "1.1",
@@ -15882,11 +16051,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 63,
+      "totalLineCount": 76,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Taoqi%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "taoqi",
@@ -15898,6 +16067,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -15980,7 +16150,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Taoqi%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "taoqi",
@@ -15992,6 +16162,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16074,7 +16245,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Taoqi%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "taoqi",
@@ -16086,10 +16257,11 @@
       "sourceRevisionCount": 6,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 63,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 62
+          "lineCount": 65
         },
         {
           "version": "1.1",
@@ -16164,11 +16336,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 63,
+      "totalLineCount": 66,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Taoqi%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "verina",
@@ -16180,6 +16352,7 @@
       "sourceRevisionCount": 45,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 59,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16262,7 +16435,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Verina%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "verina",
@@ -16274,6 +16447,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16356,7 +16530,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Verina%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "verina",
@@ -16368,6 +16542,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16450,7 +16625,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Verina%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "verina",
@@ -16462,112 +16637,19 @@
       "sourceRevisionCount": 5,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 59,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 59
-        },
-        {
-          "version": "1.1",
-          "lineCount": 0
-        },
-        {
-          "version": "1.2",
-          "lineCount": 0
-        },
-        {
-          "version": "1.3",
-          "lineCount": 0
-        },
-        {
-          "version": "1.4",
-          "lineCount": 0
-        },
-        {
-          "version": "2.0",
-          "lineCount": 0
-        },
-        {
-          "version": "2.1",
-          "lineCount": 0
-        },
-        {
-          "version": "2.2",
-          "lineCount": 0
-        },
-        {
-          "version": "2.3",
-          "lineCount": 0
-        },
-        {
-          "version": "2.4",
-          "lineCount": 0
-        },
-        {
-          "version": "2.5",
-          "lineCount": 0
-        },
-        {
-          "version": "2.6",
-          "lineCount": 0
-        },
-        {
-          "version": "2.7",
-          "lineCount": 0
-        },
-        {
-          "version": "2.8",
-          "lineCount": 0
-        },
-        {
-          "version": "3.0",
-          "lineCount": 0
-        },
-        {
-          "version": "3.1",
-          "lineCount": 0
-        },
-        {
-          "version": "3.2",
-          "lineCount": 0
-        },
-        {
-          "version": "3.3",
-          "lineCount": 0
-        },
-        {
-          "version": "3.4",
-          "lineCount": 0
-        }
-      ],
-      "totalLineCount": 59,
-      "sources": [
-        "https://wutheringwaves.fandom.com/wiki/Verina%2FVoicelines%2FChinese"
-      ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
-    },
-    {
-      "characterId": "xiangli-yao",
-      "debutVersion": "1.2",
-      "locale": "en-US",
-      "sourcePageTitle": "Xiangli Yao/Voicelines",
-      "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2024-09-07T09:51:43Z",
-      "sourceRevisionCount": 3,
-      "countMethod": "tx_key_unique_nonempty",
-      "qualityStatus": "verified",
-      "perVersionLineCounts": [
-        {
-          "version": "1.0",
-          "lineCount": 0
-        },
-        {
-          "version": "1.1",
-          "lineCount": 0
-        },
-        {
-          "version": "1.2",
           "lineCount": 61
+        },
+        {
+          "version": "1.1",
+          "lineCount": 0
+        },
+        {
+          "version": "1.2",
+          "lineCount": 0
         },
         {
           "version": "1.3",
@@ -16636,9 +16718,104 @@
       ],
       "totalLineCount": 61,
       "sources": [
+        "https://wutheringwaves.fandom.com/wiki/Verina%2FVoicelines%2FChinese"
+      ],
+      "generatedAt": "2026-06-02T19:08:33.136Z"
+    },
+    {
+      "characterId": "xiangli-yao",
+      "debutVersion": "1.2",
+      "locale": "en-US",
+      "sourcePageTitle": "Xiangli Yao/Voicelines",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2024-09-07T09:51:43Z",
+      "sourceRevisionCount": 3,
+      "countMethod": "tx_key_unique_nonempty",
+      "qualityStatus": "verified",
+      "currentLineCount": 61,
+      "perVersionLineCounts": [
+        {
+          "version": "1.0",
+          "lineCount": 0
+        },
+        {
+          "version": "1.1",
+          "lineCount": 0
+        },
+        {
+          "version": "1.2",
+          "lineCount": 62
+        },
+        {
+          "version": "1.3",
+          "lineCount": 0
+        },
+        {
+          "version": "1.4",
+          "lineCount": 0
+        },
+        {
+          "version": "2.0",
+          "lineCount": 0
+        },
+        {
+          "version": "2.1",
+          "lineCount": 0
+        },
+        {
+          "version": "2.2",
+          "lineCount": 0
+        },
+        {
+          "version": "2.3",
+          "lineCount": 0
+        },
+        {
+          "version": "2.4",
+          "lineCount": 0
+        },
+        {
+          "version": "2.5",
+          "lineCount": 0
+        },
+        {
+          "version": "2.6",
+          "lineCount": 0
+        },
+        {
+          "version": "2.7",
+          "lineCount": 0
+        },
+        {
+          "version": "2.8",
+          "lineCount": 0
+        },
+        {
+          "version": "3.0",
+          "lineCount": 0
+        },
+        {
+          "version": "3.1",
+          "lineCount": 0
+        },
+        {
+          "version": "3.2",
+          "lineCount": 0
+        },
+        {
+          "version": "3.3",
+          "lineCount": 0
+        },
+        {
+          "version": "3.4",
+          "lineCount": 0
+        }
+      ],
+      "totalLineCount": 62,
+      "sources": [
         "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "xiangli-yao",
@@ -16650,6 +16827,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16732,7 +16910,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "xiangli-yao",
@@ -16744,6 +16922,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16826,7 +17005,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "xiangli-yao",
@@ -16838,6 +17017,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -16920,7 +17100,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yangyang",
@@ -16932,6 +17112,7 @@
       "sourceRevisionCount": 10,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17014,7 +17195,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yangyang%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yangyang",
@@ -17026,6 +17207,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17108,7 +17290,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yangyang%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yangyang",
@@ -17120,6 +17302,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17202,7 +17385,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yangyang%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yangyang",
@@ -17214,6 +17397,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 58,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17296,7 +17480,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yangyang%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yinlin",
@@ -17308,10 +17492,11 @@
       "sourceRevisionCount": 8,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 65,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 65
+          "lineCount": 67
         },
         {
           "version": "1.1",
@@ -17386,11 +17571,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 65,
+      "totalLineCount": 67,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yinlin%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yinlin",
@@ -17402,6 +17587,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 64,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17484,7 +17670,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yinlin%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yinlin",
@@ -17496,6 +17682,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 64,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17578,7 +17765,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yinlin%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yinlin",
@@ -17590,6 +17777,7 @@
       "sourceRevisionCount": 3,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 64,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17672,7 +17860,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yinlin%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "youhu",
@@ -17684,6 +17872,7 @@
       "sourceRevisionCount": 2,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 66,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17766,7 +17955,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Youhu%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "youhu",
@@ -17778,6 +17967,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17860,7 +18050,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Youhu%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "youhu",
@@ -17872,6 +18062,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -17954,7 +18145,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Youhu%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "youhu",
@@ -17966,6 +18157,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18048,7 +18240,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Youhu%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yuanwu",
@@ -18060,10 +18252,11 @@
       "sourceRevisionCount": 21,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 61
+          "lineCount": 64
         },
         {
           "version": "1.1",
@@ -18138,11 +18331,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 61,
+      "totalLineCount": 64,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yuanwu%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yuanwu",
@@ -18154,6 +18347,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18236,7 +18430,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yuanwu%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yuanwu",
@@ -18248,6 +18442,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18330,7 +18525,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yuanwu%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "yuanwu",
@@ -18342,10 +18537,11 @@
       "sourceRevisionCount": 7,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 61,
       "perVersionLineCounts": [
         {
           "version": "1.0",
-          "lineCount": 61
+          "lineCount": 62
         },
         {
           "version": "1.1",
@@ -18420,11 +18616,11 @@
           "lineCount": 0
         }
       ],
-      "totalLineCount": 61,
+      "totalLineCount": 62,
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Yuanwu%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zani",
@@ -18436,6 +18632,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 72,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18518,7 +18715,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zani%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zani",
@@ -18530,6 +18727,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18612,7 +18810,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zani%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zani",
@@ -18624,6 +18822,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18706,7 +18905,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zani%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zani",
@@ -18718,6 +18917,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18800,7 +19000,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zani%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zhezhi",
@@ -18812,6 +19012,7 @@
       "sourceRevisionCount": 1,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "verified",
+      "currentLineCount": 56,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18894,7 +19095,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zhezhi%2FVoicelines"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zhezhi",
@@ -18906,6 +19107,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -18988,7 +19190,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zhezhi%2FVoicelines%2FJapanese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zhezhi",
@@ -19000,6 +19202,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -19082,7 +19285,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zhezhi%2FVoicelines%2FKorean"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     },
     {
       "characterId": "zhezhi",
@@ -19094,6 +19297,7 @@
       "sourceRevisionCount": 0,
       "countMethod": "tx_key_unique_nonempty",
       "qualityStatus": "missing_source",
+      "currentLineCount": 0,
       "perVersionLineCounts": [
         {
           "version": "1.0",
@@ -19176,7 +19380,7 @@
       "sources": [
         "https://wutheringwaves.fandom.com/wiki/Zhezhi%2FVoicelines%2FChinese"
       ],
-      "generatedAt": "2026-06-02T18:41:13.877Z"
+      "generatedAt": "2026-06-02T19:08:33.136Z"
     }
   ]
 }

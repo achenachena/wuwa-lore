@@ -50,10 +50,27 @@ type VoiceLineStatRow = {
   sourceRevisionCount: number;
   countMethod: "tx_key_unique_nonempty";
   qualityStatus: "verified" | "missing_source";
+  currentLineCount: number;
   perVersionLineCounts: Array<{ version: string; lineCount: number }>;
   totalLineCount: number;
   sources: string[];
   generatedAt: string;
+};
+
+type VoiceLineDetailRow = {
+  characterId: string;
+  locale: Locale;
+  sourcePageTitle: string;
+  sourcePageExists: boolean;
+  sourceLatestRevisionAt: string | null;
+  sourceRevisionCount: number;
+  generatedAt: string;
+  lines: Array<{
+    key: string;
+    text: string;
+    firstSeenAt: string | null;
+    firstSeenVersion: string | null;
+  }>;
 };
 
 const API_ROOT = "https://wutheringwaves.fandom.com/api.php";
@@ -126,17 +143,20 @@ function parseFirstDescriptionLine(wikitext: string): string {
   return "Profile text unavailable from source.";
 }
 
-function parseVoiceLineCount(wikitext: string): number {
-  const keySet = new Set<string>();
+function extractVoiceLineEntries(wikitext: string): Map<string, string> {
+  const entries = new Map<string, string>();
   for (const match of wikitext.matchAll(/\|([a-z0-9_]+?)_tx(?:_[a-z]+)?\s*=\s*([^\n]*)/gi)) {
     const key = match[1]?.trim();
-    const value = match[2]?.trim() ?? "";
+    const rawValue = match[2]?.trim() ?? "";
+    const value = cleanWikiText(rawValue);
     if (!key || !value) {
       continue;
     }
-    keySet.add(key);
+    if (!entries.has(key)) {
+      entries.set(key, value);
+    }
   }
-  return keySet.size;
+  return entries;
 }
 
 function compareVersion(a: string, b: string): number {
@@ -312,26 +332,31 @@ async function fetchAllRevisions(page: string): Promise<Array<{ timestamp: strin
   );
 }
 
-function pickCountAtTimestamp(
-  revisions: Array<{ timestamp: string; count: number }>,
-  endTimestamp: Date,
-): number {
-  let picked = 0;
-  for (const revision of revisions) {
-    if (new Date(revision.timestamp).getTime() <= endTimestamp.getTime()) {
-      picked = revision.count;
-    } else {
-      break;
-    }
-  }
-  return picked;
-}
-
 function buildZeroPerVersionCounts(versions: VersionRecord[]) {
   return versions.map((version) => ({
     version: version.version,
     lineCount: 0,
   }));
+}
+
+function findVersionForTimestamp(timestamp: string, versions: VersionRecord[]): string | null {
+  const target = new Date(timestamp).getTime();
+  if (Number.isNaN(target) || versions.length === 0) {
+    return null;
+  }
+  let picked: string | null = versions[0]?.version ?? null;
+  for (const version of versions) {
+    const release = new Date(version.releaseDate).getTime();
+    if (Number.isNaN(release)) {
+      continue;
+    }
+    if (release <= target) {
+      picked = version.version;
+    } else {
+      break;
+    }
+  }
+  return picked;
 }
 
 async function main() {
@@ -362,6 +387,7 @@ async function main() {
   const characters: CharacterRecord[] = [];
   const imageRecords: CharacterImage[] = [];
   const allVoiceRows: VoiceLineStatRow[] = [];
+  const allVoiceDetailRows: VoiceLineDetailRow[] = [];
 
   for (const name of characterNames) {
     const pageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(name).replace(/%20/g, "_")}`;
@@ -422,33 +448,45 @@ async function main() {
       const voicePageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(voicePage).replace(/%20/g, "_")}`;
       const revisions = await fetchAllRevisions(voicePage);
       let finalized = buildZeroPerVersionCounts(versions);
+      let currentLineCount = 0;
+      const firstSeenAtByKey = new Map<string, string>();
+      let latestEntries = new Map<string, string>();
       if (revisions.length > 0) {
-        const revisionCounts = revisions.map((revision) => ({
-          timestamp: revision.timestamp,
-          count: parseVoiceLineCount(revision.content),
+        for (const revision of revisions) {
+          const entries = extractVoiceLineEntries(revision.content);
+          for (const key of entries.keys()) {
+            if (!firstSeenAtByKey.has(key)) {
+              firstSeenAtByKey.set(key, revision.timestamp);
+            }
+          }
+          latestEntries = entries;
+        }
+
+        const firstSeenCountByVersion = new Map<string, number>();
+        for (const timestamp of firstSeenAtByKey.values()) {
+          const version = findVersionForTimestamp(timestamp, versions);
+          if (!version) {
+            continue;
+          }
+          firstSeenCountByVersion.set(version, (firstSeenCountByVersion.get(version) ?? 0) + 1);
+        }
+        finalized = versions.map((version) => ({
+          version: version.version,
+          lineCount: firstSeenCountByVersion.get(version.version) ?? 0,
         }));
-
-        const perVersionLineCounts = versions.map((version, index) => {
-          const nextVersion = versions[index + 1];
-          const endTime = nextVersion ? new Date(nextVersion.releaseDate) : new Date();
-          return {
-            version: version.version,
-            lineCount: 0,
-            endTime,
-          };
-        });
-
-        let previous = 0;
-        finalized = perVersionLineCounts.map((item) => {
-          const snapshot = pickCountAtTimestamp(revisionCounts, item.endTime);
-          const delta = Math.max(0, snapshot - previous);
-          previous = snapshot;
-          return {
-            version: item.version,
-            lineCount: delta,
-          };
-        });
+        currentLineCount = latestEntries.size;
       }
+
+      const detailLines = [...latestEntries.entries()]
+        .map(([key, text]) => ({
+          key,
+          text,
+          firstSeenAt: firstSeenAtByKey.get(key) ?? null,
+          firstSeenVersion: firstSeenAtByKey.get(key)
+            ? findVersionForTimestamp(firstSeenAtByKey.get(key)!, versions)
+            : null,
+        }))
+        .sort((a, b) => a.key.localeCompare(b.key));
 
       allVoiceRows.push({
         characterId: id,
@@ -460,10 +498,22 @@ async function main() {
         sourceRevisionCount: revisions.length,
         countMethod: "tx_key_unique_nonempty",
         qualityStatus: revisions.length > 0 ? "verified" : "missing_source",
+        currentLineCount,
         perVersionLineCounts: finalized,
         totalLineCount: finalized.reduce((sum, entry) => sum + entry.lineCount, 0),
         sources: [voicePageUrl],
         generatedAt: nowIso,
+      });
+
+      allVoiceDetailRows.push({
+        characterId: id,
+        locale: localeDef.locale,
+        sourcePageTitle: voicePage,
+        sourcePageExists: revisions.length > 0,
+        sourceLatestRevisionAt: revisions.length > 0 ? revisions[revisions.length - 1]?.timestamp ?? null : null,
+        sourceRevisionCount: revisions.length,
+        generatedAt: nowIso,
+        lines: detailLines,
       });
     }
   }
@@ -524,6 +574,11 @@ async function main() {
   await fs.writeFile(
     path.join(root, "data", "derived", "voice-line-stats.json"),
     `${JSON.stringify({ generatedAt: nowIso, rows: allVoiceRows }, null, 2)}\n`,
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(root, "data", "derived", "voice-line-details.json"),
+    `${JSON.stringify({ generatedAt: nowIso, rows: allVoiceDetailRows }, null, 2)}\n`,
     "utf8",
   );
 

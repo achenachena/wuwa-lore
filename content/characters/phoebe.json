@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phoebe",
-    "scrapedAt": "2026-06-02T18:41:13.877Z",
+    "scrapedAt": "2026-06-02T19:08:33.136Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

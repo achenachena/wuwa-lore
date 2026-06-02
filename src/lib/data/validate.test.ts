@@ -43,6 +43,7 @@ describe("validateVoiceLineStats", () => {
         sourceRevisionCount: 10,
         countMethod: "tx_key_unique_nonempty",
         qualityStatus: "verified",
+        currentLineCount: 1,
         perVersionLineCounts: [{ version: "1.0", lineCount: 1 }],
         totalLineCount: 2,
         sources: ["https://example.com"],

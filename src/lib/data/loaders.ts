@@ -1,10 +1,12 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { z } from "zod";
 
 import type {
   Character,
   CharacterImage,
   VersionRecord,
+  VoiceLineDetailRow,
   VoiceLineEntry,
   VoiceLineStatRow,
 } from "@/types/lore";
@@ -14,6 +16,7 @@ import {
   generatedStatsSchema,
   rawVoiceSnapshotSchema,
   versionSchema,
+  voiceLineDetailRowSchema,
 } from "@/lib/data/schemas";
 
 const root = process.cwd();
@@ -66,6 +69,13 @@ export async function loadGeneratedStats(): Promise<VoiceLineStatRow[]> {
   const filePath = path.join(root, "data", "derived", "voice-line-stats.json");
   const raw = await readJsonFile<unknown>(filePath);
   const parsed = generatedStatsSchema.parse(raw);
+  return parsed.rows;
+}
+
+export async function loadVoiceLineDetails(): Promise<VoiceLineDetailRow[]> {
+  const filePath = path.join(root, "data", "derived", "voice-line-details.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ rows: z.array(voiceLineDetailRowSchema) }).parse(raw);
   return parsed.rows;
 }
 

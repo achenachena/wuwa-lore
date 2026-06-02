@@ -57,6 +57,7 @@ export function aggregateVoiceLineStats(params: {
       sourceRevisionCount: groupedEntries.length,
       countMethod: "tx_key_unique_nonempty",
       qualityStatus: "verified",
+      currentLineCount: counts.reduce((sum, item) => sum + item.lineCount, 0),
       perVersionLineCounts: counts,
       totalLineCount: counts.reduce((sum, item) => sum + item.lineCount, 0),
       sources: unique(groupedEntries.map((entry) => entry.source.sourceUrl)).sort((a, b) =>
