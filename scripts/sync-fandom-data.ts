@@ -68,9 +68,31 @@ type VoiceLineDetailRow = {
   lines: Array<{
     key: string;
     text: string;
+    sourceFieldPath: string;
     firstSeenAt: string | null;
     firstSeenVersion: string | null;
   }>;
+};
+
+type ChangeReport = {
+  generatedAt: string;
+  rowCoverage: {
+    oldRowCount: number;
+    newRowCount: number;
+    addedRows: number;
+    removedRows: number;
+    changedRows: number;
+  };
+  currentLineCountDelta: {
+    increasedRows: number;
+    decreasedRows: number;
+    unchangedRows: number;
+  };
+  samples: {
+    added: Array<{ key: string; currentLineCount: number }>;
+    removed: Array<{ key: string; previousLineCount: number }>;
+    changed: Array<{ key: string; previousLineCount: number; currentLineCount: number; delta: number }>;
+  };
 };
 
 const API_ROOT = "https://wutheringwaves.fandom.com/api.php";
@@ -143,17 +165,24 @@ function parseFirstDescriptionLine(wikitext: string): string {
   return "Profile text unavailable from source.";
 }
 
-function extractVoiceLineEntries(wikitext: string): Map<string, string> {
-  const entries = new Map<string, string>();
-  for (const match of wikitext.matchAll(/\|([a-z0-9_]+?)_tx(?:_[a-z]+)?\s*=\s*([^\n]*)/gi)) {
-    const key = match[1]?.trim();
+type ParsedVoiceLineEntry = {
+  key: string;
+  text: string;
+  sourceFieldPath: string;
+};
+
+function extractVoiceLineEntries(wikitext: string): Map<string, ParsedVoiceLineEntry> {
+  const entries = new Map<string, ParsedVoiceLineEntry>();
+  for (const match of wikitext.matchAll(/\|([a-z0-9_]+?_tx(?:_[a-z]+)?)\s*=\s*([^\n]*)/gi)) {
+    const sourceFieldPath = match[1]?.trim() ?? "";
+    const key = sourceFieldPath.replace(/_tx(?:_[a-z]+)?$/i, "");
     const rawValue = match[2]?.trim() ?? "";
     const value = cleanWikiText(rawValue);
-    if (!key || !value) {
+    if (!key || !value || !sourceFieldPath) {
       continue;
     }
     if (!entries.has(key)) {
-      entries.set(key, value);
+      entries.set(key, { key, text: value, sourceFieldPath });
     }
   }
   return entries;
@@ -208,6 +237,15 @@ async function fetchJson<T>(params: Record<string, string>): Promise<T> {
     throw new Error(`API request failed: ${response.status} ${response.statusText}`);
   }
   return (await response.json()) as T;
+}
+
+async function readJsonIfExists<T>(filePath: string): Promise<T | null> {
+  try {
+    const text = await fs.readFile(filePath, "utf8");
+    return JSON.parse(text) as T;
+  } catch {
+    return null;
+  }
 }
 
 async function fetchPlayableCharacters(): Promise<string[]> {
@@ -361,6 +399,8 @@ function findVersionForTimestamp(timestamp: string, versions: VersionRecord[]): 
 
 async function main() {
   const root = process.cwd();
+  const prevStatsPath = path.join(root, "data", "derived", "voice-line-stats.json");
+  const previousStats = await readJsonIfExists<{ rows?: VoiceLineStatRow[] }>(prevStatsPath);
   const [characterNames, versionPages] = await Promise.all([
     fetchPlayableCharacters(),
     fetchVersionPages(),
@@ -450,7 +490,7 @@ async function main() {
       let finalized = buildZeroPerVersionCounts(versions);
       let currentLineCount = 0;
       const firstSeenAtByKey = new Map<string, string>();
-      let latestEntries = new Map<string, string>();
+      let latestEntries = new Map<string, ParsedVoiceLineEntry>();
       if (revisions.length > 0) {
         for (const revision of revisions) {
           const entries = extractVoiceLineEntries(revision.content);
@@ -477,13 +517,14 @@ async function main() {
         currentLineCount = latestEntries.size;
       }
 
-      const detailLines = [...latestEntries.entries()]
-        .map(([key, text]) => ({
-          key,
-          text,
-          firstSeenAt: firstSeenAtByKey.get(key) ?? null,
-          firstSeenVersion: firstSeenAtByKey.get(key)
-            ? findVersionForTimestamp(firstSeenAtByKey.get(key)!, versions)
+      const detailLines = [...latestEntries.values()]
+        .map((entry) => ({
+          key: entry.key,
+          text: entry.text,
+          sourceFieldPath: entry.sourceFieldPath,
+          firstSeenAt: firstSeenAtByKey.get(entry.key) ?? null,
+          firstSeenVersion: firstSeenAtByKey.get(entry.key)
+            ? findVersionForTimestamp(firstSeenAtByKey.get(entry.key)!, versions)
             : null,
         }))
         .sort((a, b) => a.key.localeCompare(b.key));
@@ -598,6 +639,75 @@ async function main() {
   await fs.writeFile(
     path.join(root, "data", "derived", "quality-report.json"),
     `${JSON.stringify(qualityReport, null, 2)}\n`,
+    "utf8",
+  );
+
+  const previousRows = previousStats?.rows ?? [];
+  const oldMap = new Map(
+    previousRows.map((row) => [
+      `${row.characterId}::${row.locale}`,
+      row.currentLineCount ?? row.totalLineCount,
+    ]),
+  );
+  const newMap = new Map(
+    allVoiceRows.map((row) => [`${row.characterId}::${row.locale}`, row.currentLineCount]),
+  );
+
+  const added: Array<{ key: string; currentLineCount: number }> = [];
+  const removed: Array<{ key: string; previousLineCount: number }> = [];
+  const changed: Array<{ key: string; previousLineCount: number; currentLineCount: number; delta: number }> = [];
+  let increasedRows = 0;
+  let decreasedRows = 0;
+  let unchangedRows = 0;
+
+  for (const [key, currentLineCount] of newMap.entries()) {
+    const prev = oldMap.get(key);
+    if (prev === undefined) {
+      added.push({ key, currentLineCount });
+      continue;
+    }
+    const delta = currentLineCount - prev;
+    if (delta > 0) {
+      increasedRows += 1;
+      changed.push({ key, previousLineCount: prev, currentLineCount, delta });
+    } else if (delta < 0) {
+      decreasedRows += 1;
+      changed.push({ key, previousLineCount: prev, currentLineCount, delta });
+    } else {
+      unchangedRows += 1;
+    }
+  }
+  for (const [key, previousLineCount] of oldMap.entries()) {
+    if (!newMap.has(key)) {
+      removed.push({ key, previousLineCount });
+    }
+  }
+
+  const changeReport: ChangeReport = {
+    generatedAt: nowIso,
+    rowCoverage: {
+      oldRowCount: oldMap.size,
+      newRowCount: newMap.size,
+      addedRows: added.length,
+      removedRows: removed.length,
+      changedRows: changed.length,
+    },
+    currentLineCountDelta: {
+      increasedRows,
+      decreasedRows,
+      unchangedRows,
+    },
+    samples: {
+      added: added.slice(0, 25),
+      removed: removed.slice(0, 25),
+      changed: changed
+        .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
+        .slice(0, 50),
+    },
+  };
+  await fs.writeFile(
+    path.join(root, "data", "derived", "change-report.json"),
+    `${JSON.stringify(changeReport, null, 2)}\n`,
     "utf8",
   );
 

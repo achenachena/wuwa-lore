@@ -1,15 +1,19 @@
 {
-  "generatedAt": "2026-06-02T19:09:52.575Z",
+  "generatedAt": "2026-06-02T19:33:56.808Z",
   "checks": {
     "identityValidation": {
       "ok": true,
       "errors": [],
-      "checkedAt": "2026-06-02T19:09:52.574Z"
+      "checkedAt": "2026-06-02T19:33:56.808Z"
     },
     "statValidation": {
       "ok": true,
       "errors": [],
-      "checkedAt": "2026-06-02T19:09:52.575Z"
+      "checkedAt": "2026-06-02T19:33:56.808Z"
+    },
+    "officialValidation": {
+      "ok": true,
+      "errors": []
     }
   },
   "ok": true

@@ -79,6 +79,7 @@ export interface VoiceLineDetailRow {
   lines: Array<{
     key: string;
     text: string;
+    sourceFieldPath: string;
     firstSeenAt: string | null;
     firstSeenVersion: string | null;
   }>;

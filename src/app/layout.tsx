@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteNav } from "@/components/site-nav";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
+
+const siteUrl = getSiteUrl();
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +19,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Wuwa Lore",
   description: "Wuthering Waves character archives and voice line analytics",
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    title: "Wuwa Lore",
+    description: "Wuthering Waves character archives and voice line analytics",
+    type: "website",
+    url: siteUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wuwa Lore",
+    description: "Wuthering Waves character archives and voice line analytics",
+  },
 };
 
 export default function RootLayout({

@@ -165,7 +165,13 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
               locale: row.locale,
               sourcePageExists: row.sourcePageExists,
               sourcePageTitle: row.sourcePageTitle,
-              lines: row.lines,
+              sourcePageUrl: `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(row.sourcePageTitle).replace(/%20/g, "_")}`,
+              lines: row.lines.map((line) => ({
+                key: line.key,
+                text: line.text,
+                sourceFieldPath: line.sourceFieldPath ?? `${line.key}_tx`,
+                firstSeenVersion: line.firstSeenVersion,
+              })),
             }))}
           />
         </div>

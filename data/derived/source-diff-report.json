@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-06-02T19:33:57.139Z",
+  "toleranceMinutes": 180,
+  "sources": {
+    "fandomVersionsFile": "content/versions/versions.json",
+    "officialVersionsFile": "content/official/version-notes.json",
+    "officialSourceUrl": "https://wutheringwaves.kurogames.com/en/main/news",
+    "officialSourceName": "kuro-official-mainmenu-en"
+  },
+  "summary": {
+    "fandomVersionCount": 19,
+    "officialVersionCount": 19,
+    "missingInOfficial": 0,
+    "missingInFandom": 0,
+    "alignedDate": 19,
+    "mismatchedDate": 0,
+    "ok": true
+  },
+  "missingInOfficial": [],
+  "missingInFandom": [],
+  "alignedDate": [
+    "1.0",
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4",
+    "2.0",
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "3.0",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4"
+  ],
+  "mismatchedDate": []
+}

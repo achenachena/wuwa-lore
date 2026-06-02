@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { getCharacterListData, getVersionStatsPageData } from "@/lib/data";
-import { loadQualityReport, loadValidationReport } from "@/lib/data/loaders";
+import { loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
-  const [characters, versionStats, quality, validation] = await Promise.all([
+  const [characters, versionStats, quality, validation, sourceDiff] = await Promise.all([
     getCharacterListData(),
     getVersionStatsPageData(),
     loadQualityReport().catch(() => null),
     loadValidationReport().catch(() => null),
+    loadSourceDiffReport().catch(() => null),
   ]);
   const totalLines = versionStats.reduce((sum, item) => sum + item.totalVoiceLines, 0);
   return (
@@ -36,6 +37,27 @@ export default async function Home() {
         {quality ? (
           <span className="rounded-full border border-zinc-300 bg-white px-3 py-1">
             Updated: <strong>{new Date(quality.generatedAt).toLocaleString()}</strong>
+          </span>
+        ) : null}
+        {sourceDiff ? (
+          <span
+            className={`rounded-full border px-3 py-1 ${
+              sourceDiff.summary.ok
+                ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+                : "border-amber-200 bg-amber-50 text-amber-700"
+            }`}
+          >
+            Dual-source:{" "}
+            <strong>
+              {sourceDiff.summary.ok
+                ? "aligned"
+                : `${sourceDiff.summary.mismatchedDate} date mismatch(es)`}
+            </strong>
+          </span>
+        ) : null}
+        {quality && quality.missingSourceRows > 0 ? (
+          <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-amber-700">
+            Source gaps: <strong>{quality.missingSourceRows}</strong> locale rows missing source pages
           </span>
         ) : null}
       </div>

@@ -93,6 +93,10 @@ export async function loadValidationReport() {
         ok: boolean;
         errors: string[];
       };
+      officialValidation?: {
+        ok: boolean;
+        errors: string[];
+      };
     };
   }>(filePath);
 }
@@ -109,5 +113,81 @@ export async function loadQualityReport() {
     rowsWithoutContent: number;
     verifiedRows: number;
     missingSourceRows: number;
+  }>(filePath);
+}
+
+export async function loadChangeReport() {
+  const filePath = path.join(root, "data", "derived", "change-report.json");
+  return readJsonFile<{
+    generatedAt: string;
+    rowCoverage: {
+      oldRowCount: number;
+      newRowCount: number;
+      addedRows: number;
+      removedRows: number;
+      changedRows: number;
+    };
+    currentLineCountDelta: {
+      increasedRows: number;
+      decreasedRows: number;
+      unchangedRows: number;
+    };
+    samples: {
+      added: Array<{ key: string; currentLineCount: number }>;
+      removed: Array<{ key: string; previousLineCount: number }>;
+      changed: Array<{ key: string; previousLineCount: number; currentLineCount: number; delta: number }>;
+    };
+  }>(filePath);
+}
+
+export async function loadOfficialVersionNotes() {
+  const filePath = path.join(root, "content", "official", "version-notes.json");
+  return readJsonFile<{
+    sourceName: string;
+    sourceUrl: string;
+    scrapedAt: string;
+    editor: string;
+    rows: Array<{
+      version: string;
+      releaseDate: string;
+      noticeUrl: string;
+      title: string;
+      articleId: number | null;
+      matchMethod: string;
+    }>;
+  }>(filePath);
+}
+
+export async function loadSourceDiffReport() {
+  const filePath = path.join(root, "data", "derived", "source-diff-report.json");
+  return readJsonFile<{
+    generatedAt: string;
+    toleranceMinutes?: number;
+    sources: {
+      fandomVersionsFile: string;
+      officialVersionsFile: string;
+      officialSourceUrl: string;
+      officialSourceName?: string;
+    };
+    summary: {
+      fandomVersionCount: number;
+      officialVersionCount: number;
+      missingInOfficial: number;
+      missingInFandom: number;
+      alignedDate?: number;
+      mismatchedDate: number;
+      ok: boolean;
+    };
+    missingInOfficial: string[];
+    missingInFandom: string[];
+    alignedDate?: string[];
+    mismatchedDate: Array<{
+      version: string;
+      fandomReleaseDate: string;
+      officialReleaseDate: string;
+      deltaMinutes: number;
+      noticeUrl: string;
+      officialMatchMethod?: string | null;
+    }>;
   }>(filePath);
 }

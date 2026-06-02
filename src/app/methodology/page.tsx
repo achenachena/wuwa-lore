@@ -47,6 +47,20 @@ export default function MethodologyPage() {
           </li>
         </ul>
       </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Dual-source Validation</h2>
+        <p className="mt-2 text-sm text-zinc-700">
+          Version dates are cross-checked against Kuro&apos;s official news feed (MainMenu JSON CDN)
+          via <code className="mx-1">npm run data:sync-official</code>, stored in
+          <code className="ml-1">content/official/version-notes.json</code>, and compared with Fandom
+          using a ±180 minute tolerance in <code className="mx-1">npm run data:compare</code>.
+        </p>
+        <p className="mt-2 text-sm text-zinc-700">
+          Each voiceline row stores the exact wiki field path (for example
+          <code className="mx-1">resskill_1_tx_s</code>) so text can be traced back to source wikitext.
+        </p>
+      </article>
     </section>
   );
 }

@@ -89,11 +89,17 @@ export const voiceLineDetailRowSchema = z.object({
   sourceRevisionCount: z.number().int().min(0),
   generatedAt: z.iso.datetime(),
   lines: z.array(
-    z.object({
-      key: z.string().min(1),
-      text: z.string().min(1),
-      firstSeenAt: z.iso.datetime().nullable(),
-      firstSeenVersion: z.string().nullable(),
-    }),
-  ),
+      z
+        .object({
+          key: z.string().min(1),
+          text: z.string().min(1),
+          sourceFieldPath: z.string().min(1).optional(),
+          firstSeenAt: z.iso.datetime().nullable(),
+          firstSeenVersion: z.string().nullable(),
+        })
+        .transform((line) => ({
+          ...line,
+          sourceFieldPath: line.sourceFieldPath ?? `${line.key}_tx`,
+        })),
+    ),
 });

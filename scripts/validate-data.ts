@@ -4,27 +4,40 @@ import path from "node:path";
 import {
   loadCharacters,
   loadGeneratedStats,
+  loadOfficialVersionNotes,
   loadVersions,
 } from "@/lib/data/loaders";
 import { validateCharactersAndVersions, validateVoiceLineStats } from "@/lib/data/validate";
 
 async function main() {
-  const [characters, versions, rows] = await Promise.all([
+  const [characters, versions, rows, official] = await Promise.all([
     loadCharacters(),
     loadVersions(),
     loadGeneratedStats(),
+    loadOfficialVersionNotes(),
   ]);
 
   const identityValidation = validateCharactersAndVersions(characters, versions);
   const statValidation = validateVoiceLineStats(rows);
+  const officialVersions = new Set(official.rows.map((row) => row.version));
+  const missingOfficialVersions = versions
+    .map((version) => version.version)
+    .filter((version) => !officialVersions.has(version));
+  const officialValidation = {
+    ok: missingOfficialVersions.length === 0,
+    errors: missingOfficialVersions.map(
+      (version) => `Missing official baseline for version ${version}`,
+    ),
+  };
 
   const report = {
     generatedAt: new Date().toISOString(),
     checks: {
       identityValidation,
       statValidation,
+      officialValidation,
     },
-    ok: identityValidation.ok && statValidation.ok,
+    ok: identityValidation.ok && statValidation.ok && officialValidation.ok,
   };
 
   const reportPath = path.join(process.cwd(), "data", "derived", "validation-report.json");
@@ -32,7 +45,11 @@ async function main() {
 
   if (!report.ok) {
     console.error("Data validation failed");
-    for (const error of [...identityValidation.errors, ...statValidation.errors]) {
+    for (const error of [
+      ...identityValidation.errors,
+      ...statValidation.errors,
+      ...officialValidation.errors,
+    ]) {
       console.error(`- ${error}`);
     }
     process.exitCode = 1;

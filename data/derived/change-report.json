@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-02T19:30:43.185Z",
+  "rowCoverage": {
+    "oldRowCount": 204,
+    "newRowCount": 204,
+    "addedRows": 0,
+    "removedRows": 0,
+    "changedRows": 0
+  },
+  "currentLineCountDelta": {
+    "increasedRows": 0,
+    "decreasedRows": 0,
+    "unchangedRows": 204
+  },
+  "samples": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  }
+}

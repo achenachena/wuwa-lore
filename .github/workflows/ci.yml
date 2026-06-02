@@ -27,6 +27,9 @@ jobs:
       - name: Validate data
         run: npm run data:validate
 
+      - name: Compare dual-source versions
+        run: npm run data:compare
+
       - name: Typecheck
         run: npm run typecheck
 

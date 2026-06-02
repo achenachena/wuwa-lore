@@ -1,12 +1,20 @@
 import { getCharacterListData } from "@/lib/data";
-import { loadGeneratedStats, loadQualityReport, loadValidationReport } from "@/lib/data/loaders";
+import {
+  loadChangeReport,
+  loadGeneratedStats,
+  loadQualityReport,
+  loadSourceDiffReport,
+  loadValidationReport,
+} from "@/lib/data/loaders";
 
 export default async function ToolsPage() {
-  const [stats, report, characters, quality] = await Promise.all([
+  const [stats, report, characters, quality, changes, sourceDiff] = await Promise.all([
     loadGeneratedStats().catch(() => []),
     loadValidationReport().catch(() => null),
     getCharacterListData().catch(() => []),
     loadQualityReport().catch(() => null),
+    loadChangeReport().catch(() => null),
+    loadSourceDiffReport().catch(() => null),
   ]);
 
   const coveredCharacterIds = new Set(stats.map((row) => row.characterId));
@@ -36,6 +44,10 @@ export default async function ToolsPage() {
             <p>Generated At: {report.generatedAt}</p>
             <p>Identity Errors: {report.checks.identityValidation.errors.length}</p>
             <p>Stat Errors: {report.checks.statValidation.errors.length}</p>
+            <p>
+              Official Baseline Errors:{" "}
+              {report.checks.officialValidation?.errors.length ?? "N/A"}
+            </p>
           </div>
         )}
       </article>
@@ -103,6 +115,89 @@ export default async function ToolsPage() {
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Sync Change Report</h2>
+        {!changes ? (
+          <p className="mt-2 text-sm text-zinc-600">No change report found yet.</p>
+        ) : (
+          <div className="mt-2 space-y-2 text-sm text-zinc-700">
+            <p>Generated: {new Date(changes.generatedAt).toLocaleString()}</p>
+            <p>
+              Rows old→new: {changes.rowCoverage.oldRowCount} → {changes.rowCoverage.newRowCount}
+              {" · "}added {changes.rowCoverage.addedRows}, removed {changes.rowCoverage.removedRows},
+              changed {changes.rowCoverage.changedRows}
+            </p>
+            <p>
+              Current line delta: +{changes.currentLineCountDelta.increasedRows} / -
+              {changes.currentLineCountDelta.decreasedRows} / ={changes.currentLineCountDelta.unchangedRows}
+            </p>
+          </div>
+        )}
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Dual-source Version Diff</h2>
+        {!sourceDiff ? (
+          <p className="mt-2 text-sm text-zinc-600">
+            No source diff report found. Run `npm run data:compare`.
+          </p>
+        ) : (
+          <div className="mt-2 space-y-2 text-sm text-zinc-700">
+            <p>
+              Status:{" "}
+              <span className={sourceDiff.summary.ok ? "font-semibold text-emerald-600" : "font-semibold text-amber-700"}>
+                {sourceDiff.summary.ok ? "IN SYNC" : "DIFF FOUND"}
+              </span>
+            </p>
+            <p>
+              Coverage: fandom {sourceDiff.summary.fandomVersionCount}, official{" "}
+              {sourceDiff.summary.officialVersionCount}
+            </p>
+            <p>
+              Aligned dates (±{sourceDiff.toleranceMinutes ?? 180} min): {sourceDiff.summary.alignedDate ?? 0};
+              mismatches: {sourceDiff.summary.mismatchedDate}
+            </p>
+            <p>
+              Missing in official: {sourceDiff.summary.missingInOfficial}; missing in fandom:{" "}
+              {sourceDiff.summary.missingInFandom}
+            </p>
+            {sourceDiff.mismatchedDate.length > 0 ? (
+              <div className="mt-3 overflow-x-auto">
+                <table className="w-full text-left text-xs">
+                  <thead>
+                    <tr className="border-b border-zinc-200 text-zinc-500">
+                      <th className="py-2 pr-3">Version</th>
+                      <th className="py-2 pr-3">Fandom</th>
+                      <th className="py-2 pr-3">Official</th>
+                      <th className="py-2 pr-3">Δ min</th>
+                      <th className="py-2">Notice</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sourceDiff.mismatchedDate.map((row) => (
+                      <tr key={row.version} className="border-b border-zinc-100">
+                        <td className="py-2 pr-3 font-medium">{row.version}</td>
+                        <td className="py-2 pr-3">{row.fandomReleaseDate}</td>
+                        <td className="py-2 pr-3">{row.officialReleaseDate}</td>
+                        <td className="py-2 pr-3">{row.deltaMinutes}</td>
+                        <td className="py-2">
+                          <a className="underline" href={row.noticeUrl} target="_blank" rel="noreferrer">
+                            source
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : null}
+            {sourceDiff.missingInOfficial.length > 0 ? (
+              <p className="text-amber-700">Missing in official: {sourceDiff.missingInOfficial.join(", ")}</p>
+            ) : null}
+          </div>
+        )}
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">Exports</h2>
         <p className="mt-2 text-sm text-zinc-600">
           Download normalized snapshots for external analysis or BI tools.
@@ -131,6 +226,24 @@ export default async function ToolsPage() {
             href="/api/exports/voice-lines-json"
           >
             Download Voice Lines JSON
+          </a>
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/exports/voice-lines-csv"
+          >
+            Download Voice Lines CSV
+          </a>
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/exports/source-diff-json"
+          >
+            Source Diff JSON
+          </a>
+          <a
+            className="rounded border border-zinc-300 px-3 py-2 hover:bg-zinc-50"
+            href="/api/health/data-quality"
+          >
+            Data Quality Health JSON
           </a>
         </div>
       </article>

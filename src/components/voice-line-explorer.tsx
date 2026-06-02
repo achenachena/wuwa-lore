@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 interface LineItem {
   key: string;
   text: string;
+  sourceFieldPath: string;
   firstSeenVersion: string | null;
 }
 
@@ -12,6 +13,7 @@ interface VoiceLocaleBlock {
   locale: string;
   sourcePageExists: boolean;
   sourcePageTitle: string;
+  sourcePageUrl: string;
   lines: LineItem[];
 }
 
@@ -38,7 +40,11 @@ export function VoiceLineExplorer({ items }: VoiceLineExplorerProps) {
           if (!q) {
             return true;
           }
-          return line.text.toLowerCase().includes(q) || line.key.toLowerCase().includes(q);
+          return (
+            line.text.toLowerCase().includes(q) ||
+            line.key.toLowerCase().includes(q) ||
+            line.sourceFieldPath.toLowerCase().includes(q)
+          );
         }),
       }));
   }, [items, locale, search]);
@@ -48,12 +54,12 @@ export function VoiceLineExplorer({ items }: VoiceLineExplorerProps) {
       <div className="rounded border border-zinc-200 p-3">
         <div className="grid gap-3 md:grid-cols-[1fr_220px]">
           <label className="flex flex-col gap-1 text-sm">
-            <span className="text-zinc-500">Search line text or key</span>
+            <span className="text-zinc-500">Search line text, key, or wiki field</span>
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               className="rounded border border-zinc-300 px-3 py-2"
-              placeholder="e.g. birthday, resskill_1"
+              placeholder="e.g. birthday, resskill_1_tx"
             />
           </label>
           <label className="flex flex-col gap-1 text-sm">
@@ -78,6 +84,14 @@ export function VoiceLineExplorer({ items }: VoiceLineExplorerProps) {
           <p className="text-sm">
             <strong>{block.locale}</strong> · {block.lines.length} line(s)
           </p>
+          {block.sourcePageExists ? (
+            <p className="mt-1 text-xs text-zinc-500">
+              Source page:{" "}
+              <a className="underline" href={block.sourcePageUrl} target="_blank" rel="noreferrer">
+                {block.sourcePageTitle}
+              </a>
+            </p>
+          ) : null}
           {!block.sourcePageExists ? (
             <p className="mt-1 text-xs text-amber-700">Source page missing for this locale.</p>
           ) : null}
@@ -85,7 +99,7 @@ export function VoiceLineExplorer({ items }: VoiceLineExplorerProps) {
             {block.lines.map((line) => (
               <div key={`${block.locale}-${line.key}`} className="rounded bg-zinc-50 p-2 text-sm">
                 <p className="font-mono text-xs text-zinc-500">
-                  {line.key}
+                  {line.key} · field <code>{line.sourceFieldPath}</code>
                   {line.firstSeenVersion ? ` · first seen ${line.firstSeenVersion}` : ""}
                 </p>
                 <p className="mt-1 whitespace-pre-wrap">{line.text}</p>
