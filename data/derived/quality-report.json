@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-05-31T23:08:04.245Z",
+  "generatedAt": "2026-06-02T18:41:13.877Z",
   "totalCharacters": 51,
   "expectedRows": 204,
   "actualRows": 204,
   "coveredCharacters": 51,
   "rowsWithContent": 93,
-  "rowsWithoutContent": 111
+  "rowsWithoutContent": 111,
+  "verifiedRows": 95,
+  "missingSourceRows": 109
 }

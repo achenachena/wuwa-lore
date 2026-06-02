@@ -13,6 +13,7 @@ export interface CharacterListItem {
   releaseVersion: string;
   voiceLineTotal: number;
   hasVoiceStats: boolean;
+  missingSourceLocales: number;
 }
 
 interface CharactersBrowserProps {
@@ -149,7 +150,13 @@ export function CharactersBrowser({ items }: CharactersBrowserProps) {
 
             {!character.hasVoiceStats ? (
               <p className="mt-2 text-xs text-amber-700">Voice statistics missing for this character.</p>
-            ) : null}
+            ) : character.missingSourceLocales > 0 ? (
+              <p className="mt-2 text-xs text-amber-700">
+                {character.missingSourceLocales} locale source page(s) unavailable.
+              </p>
+            ) : (
+              <p className="mt-2 text-xs text-emerald-700">All locale source pages verified.</p>
+            )}
 
             <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
               View details →

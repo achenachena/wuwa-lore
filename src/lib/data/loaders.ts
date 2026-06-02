@@ -97,5 +97,7 @@ export async function loadQualityReport() {
     coveredCharacters: number;
     rowsWithContent: number;
     rowsWithoutContent: number;
+    verifiedRows: number;
+    missingSourceRows: number;
   }>(filePath);
 }

@@ -51,6 +51,12 @@ export function aggregateVoiceLineStats(params: {
       characterId,
       debutVersion: character.releaseVersion,
       locale: locale as VoiceLineStatRow["locale"],
+      sourcePageTitle: "raw-voice-entry",
+      sourcePageExists: true,
+      sourceLatestRevisionAt: null,
+      sourceRevisionCount: groupedEntries.length,
+      countMethod: "tx_key_unique_nonempty",
+      qualityStatus: "verified",
       perVersionLineCounts: counts,
       totalLineCount: counts.reduce((sum, item) => sum + item.lineCount, 0),
       sources: unique(groupedEntries.map((entry) => entry.source.sourceUrl)).sort((a, b) =>

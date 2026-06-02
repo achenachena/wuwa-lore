@@ -14,17 +14,21 @@ export default async function CharactersPage() {
     return <p className="text-zinc-600">No characters yet. Add records under `content/characters`.</p>;
   }
 
-  const listItems = characters.map((character) => ({
-    id: character.id,
-    name: character.name,
-    element: character.element,
-    weapon: character.weapon,
-    faction: character.faction,
-    rarity: character.rarity,
-    releaseVersion: character.releaseVersion,
-    voiceLineTotal: totalByCharacter.get(character.id) ?? 0,
-    hasVoiceStats: stats.some((row) => row.characterId === character.id),
-  }));
+  const listItems = characters.map((character) => {
+    const rows = stats.filter((row) => row.characterId === character.id);
+    return {
+      id: character.id,
+      name: character.name,
+      element: character.element,
+      weapon: character.weapon,
+      faction: character.faction,
+      rarity: character.rarity,
+      releaseVersion: character.releaseVersion,
+      voiceLineTotal: totalByCharacter.get(character.id) ?? 0,
+      hasVoiceStats: rows.length > 0,
+      missingSourceLocales: rows.filter((row) => !row.sourcePageExists).length,
+    };
+  });
 
   return (
     <section className="space-y-4">

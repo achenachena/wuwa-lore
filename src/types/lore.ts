@@ -52,6 +52,12 @@ export interface VoiceLineStatRow {
   characterId: string;
   debutVersion: string;
   locale: Locale;
+  sourcePageTitle: string;
+  sourcePageExists: boolean;
+  sourceLatestRevisionAt: string | null;
+  sourceRevisionCount: number;
+  countMethod: "tx_key_unique_nonempty";
+  qualityStatus: "verified" | "missing_source";
   perVersionLineCounts: Array<{
     version: string;
     lineCount: number;

@@ -1,6 +1,6 @@
 import { loadGeneratedStats } from "@/lib/data/loaders";
 
-function escapeCsvCell(value: string | number): string {
+function escapeCsvCell(value: string | number | boolean): string {
   const text = String(value);
   if (text.includes(",") || text.includes('"') || text.includes("\n")) {
     return `"${text.replace(/"/g, '""')}"`;
@@ -10,7 +10,17 @@ function escapeCsvCell(value: string | number): string {
 
 export async function GET() {
   const rows = await loadGeneratedStats();
-  const headers = ["characterId", "debutVersion", "locale", "version", "lineCount", "totalLineCount"];
+  const headers = [
+    "characterId",
+    "debutVersion",
+    "locale",
+    "qualityStatus",
+    "sourcePageExists",
+    "sourceRevisionCount",
+    "version",
+    "lineCount",
+    "totalLineCount",
+  ];
   const lineRows: string[] = [];
 
   for (const row of rows) {
@@ -20,6 +30,9 @@ export async function GET() {
           row.characterId,
           row.debutVersion,
           row.locale,
+          row.qualityStatus,
+          row.sourcePageExists,
+          row.sourceRevisionCount,
           item.version,
           item.lineCount,
           row.totalLineCount,

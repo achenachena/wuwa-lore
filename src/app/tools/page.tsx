@@ -12,6 +12,7 @@ export default async function ToolsPage() {
   const coveredCharacterIds = new Set(stats.map((row) => row.characterId));
   const missingVoiceCharacters = characters.filter((character) => !coveredCharacterIds.has(character.id));
   const unknownReleaseCharacters = characters.filter((character) => character.releaseVersion === "unknown");
+  const missingSourceRows = stats.filter((row) => row.qualityStatus === "missing_source");
 
   return (
     <section className="space-y-6">
@@ -46,9 +47,11 @@ export default async function ToolsPage() {
           Characters covered by voice stats: {coveredCharacterIds.size} / {characters.length}
         </p>
         {quality ? (
-          <p className="mt-1 text-sm text-zinc-600">
-            Rows with non-zero content: {quality.rowsWithContent} / {quality.actualRows}
-          </p>
+          <div className="mt-1 space-y-1 text-sm text-zinc-600">
+            <p>Rows with non-zero content: {quality.rowsWithContent} / {quality.actualRows}</p>
+            <p>Verified source pages: {quality.verifiedRows} / {quality.actualRows}</p>
+            <p>Missing source pages: {quality.missingSourceRows} / {quality.actualRows}</p>
+          </div>
         ) : null}
       </article>
 
@@ -71,7 +74,32 @@ export default async function ToolsPage() {
               {unknownReleaseCharacters.map((character) => character.name).join(", ") || "None"}
             </p>
           </div>
+          <div>
+            <p className="font-medium text-zinc-800">
+              Missing source rows ({missingSourceRows.length})
+            </p>
+            <p className="text-zinc-600">
+              {missingSourceRows
+                .slice(0, 20)
+                .map((row) => `${row.characterId}:${row.locale}`)
+                .join(", ") || "None"}
+              {missingSourceRows.length > 20 ? " …" : ""}
+            </p>
+          </div>
         </div>
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Data Methodology</h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700">
+          <li>Source: Wuthering Waves Fandom MediaWiki pages and revision history.</li>
+          <li>Count method: unique non-empty `*_tx` text keys per locale page.</li>
+          <li>Per-version values: estimated by revision snapshots at version release boundaries.</li>
+          <li>Rows marked as missing_source mean the locale page does not currently exist on source wiki.</li>
+        </ul>
+        <p className="mt-2 text-sm text-zinc-600">
+          For full details and caveats, see the <a className="underline" href="/methodology">Methodology</a> page.
+        </p>
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">

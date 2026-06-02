@@ -5,6 +5,7 @@ const links = [
   { href: "/characters", label: "Characters" },
   { href: "/stats/versions", label: "Version Stats" },
   { href: "/tools", label: "Tools" },
+  { href: "/methodology", label: "Methodology" },
 ];
 
 export function SiteNav() {

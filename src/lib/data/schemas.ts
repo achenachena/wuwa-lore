@@ -57,6 +57,12 @@ export const voiceLineStatRowSchema = z.object({
   characterId: z.string().min(1),
   debutVersion: z.string().min(1),
   locale: localeSchema,
+  sourcePageTitle: z.string().min(1),
+  sourcePageExists: z.boolean(),
+  sourceLatestRevisionAt: z.iso.datetime().nullable(),
+  sourceRevisionCount: z.number().int().min(0),
+  countMethod: z.literal("tx_key_unique_nonempty"),
+  qualityStatus: z.enum(["verified", "missing_source"]),
   perVersionLineCounts: z.array(
     z.object({
       version: z.string().min(1),

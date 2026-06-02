@@ -44,6 +44,12 @@ type VoiceLineStatRow = {
   characterId: string;
   debutVersion: string;
   locale: Locale;
+  sourcePageTitle: string;
+  sourcePageExists: boolean;
+  sourceLatestRevisionAt: string | null;
+  sourceRevisionCount: number;
+  countMethod: "tx_key_unique_nonempty";
+  qualityStatus: "verified" | "missing_source";
   perVersionLineCounts: Array<{ version: string; lineCount: number }>;
   totalLineCount: number;
   sources: string[];
@@ -448,6 +454,12 @@ async function main() {
         characterId: id,
         debutVersion: releaseVersion,
         locale: localeDef.locale,
+        sourcePageTitle: voicePage,
+        sourcePageExists: revisions.length > 0,
+        sourceLatestRevisionAt: revisions.length > 0 ? revisions[revisions.length - 1]?.timestamp ?? null : null,
+        sourceRevisionCount: revisions.length,
+        countMethod: "tx_key_unique_nonempty",
+        qualityStatus: revisions.length > 0 ? "verified" : "missing_source",
         perVersionLineCounts: finalized,
         totalLineCount: finalized.reduce((sum, entry) => sum + entry.lineCount, 0),
         sources: [voicePageUrl],
@@ -525,6 +537,8 @@ async function main() {
     coveredCharacters: coveredCharacterIds.size,
     rowsWithContent,
     rowsWithoutContent: allVoiceRows.length - rowsWithContent,
+    verifiedRows: allVoiceRows.filter((row) => row.qualityStatus === "verified").length,
+    missingSourceRows: allVoiceRows.filter((row) => row.qualityStatus === "missing_source").length,
   };
   await fs.writeFile(
     path.join(root, "data", "derived", "quality-report.json"),

@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Iuno",
-    "scrapedAt": "2026-05-31T23:08:04.245Z",
+    "scrapedAt": "2026-06-02T18:41:13.877Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

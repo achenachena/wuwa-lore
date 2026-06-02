@@ -94,6 +94,20 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
                   Locale: <strong>{stat.locale}</strong> · Total lines:{" "}
                   <strong>{stat.totalLineCount}</strong>
                 </p>
+                <p className="mt-1 text-xs text-zinc-500">
+                  Source status:{" "}
+                  <strong>{stat.qualityStatus === "verified" ? "verified" : "source page missing"}</strong> ·
+                  Method: <code>{stat.countMethod}</code> · Revisions: {stat.sourceRevisionCount}
+                </p>
+                <p className="mt-1 text-xs text-zinc-500">
+                  Source page:{" "}
+                  <a href={stat.sources[0]} target="_blank" rel="noreferrer" className="underline">
+                    {stat.sourcePageTitle}
+                  </a>
+                  {stat.sourceLatestRevisionAt ? (
+                    <> · Latest revision: {new Date(stat.sourceLatestRevisionAt).toLocaleString()}</>
+                  ) : null}
+                </p>
                 <table className="mt-3 w-full border-collapse text-sm">
                   <thead>
                     <tr className="border-b border-zinc-200 text-left text-zinc-500">
