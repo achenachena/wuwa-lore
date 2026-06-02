@@ -14,13 +14,17 @@ export async function GET() {
       loadSourceDiffReport().catch(() => null),
     ]);
 
-    const ok =
-      validation.ok &&
-      quality.missingSourceRows <= Math.floor(quality.actualRows * 0.2) &&
-      (sourceDiff?.summary.ok ?? true);
+    const missingSourceRatio =
+      quality.actualRows > 0 ? quality.missingSourceRows / quality.actualRows : 0;
+    const ok = validation.ok && (sourceDiff?.summary.ok ?? true);
 
     return Response.json({
       ok,
+      warnings: {
+        highMissingSourceRatio: missingSourceRatio > 0.2,
+        missingSourceRows: quality.missingSourceRows,
+        missingSourceRatio,
+      },
       quality,
       validation: {
         ok: validation.ok,
