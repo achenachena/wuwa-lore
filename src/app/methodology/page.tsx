@@ -63,6 +63,18 @@ export default function MethodologyPage() {
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Main Story Dialogue Lines</h2>
+        <p className="mt-2 text-sm text-zinc-700">
+          Story dialogue counts are synced from{" "}
+          <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
+            encore.moe
+          </a>{" "}
+          (<code className="mx-1">npm run data:sync-story-dialogue</code>). Each line is counted when
+          the character is the speaker in a main-story quest chapter.
+        </p>
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">Version-half Story Appearances</h2>
         <p className="mt-2 text-sm text-zinc-700">
           Main-story appearance counts are derived from Fandom quest infobox

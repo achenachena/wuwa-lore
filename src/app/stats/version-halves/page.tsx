@@ -4,7 +4,7 @@ import { loadVersions } from "@/lib/data/loaders";
 
 export default async function VersionHalfStatsPage() {
   const [pageData, versions] = await Promise.all([
-    getVersionHalfStatsPageData({ fromVersion: "3.0", toVersion: "3.4", locale: "zh-CN" }),
+    getVersionHalfStatsPageData({ fromVersion: "3.0", toVersion: "3.4" }),
     loadVersions(),
   ]);
 
@@ -23,7 +23,6 @@ export default async function VersionHalfStatsPage() {
         }))}
         initialFromVersion={pageData.fromVersion}
         initialToVersion={pageData.toVersion}
-        initialLocale={pageData.locale}
         matrix={pageData.matrix}
       />
     </section>

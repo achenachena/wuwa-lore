@@ -57,7 +57,7 @@ export default async function Home() {
         ) : null}
         {quality && quality.missingSourceRows > 0 ? (
           <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-amber-700">
-            Source gaps: <strong>{quality.missingSourceRows}</strong> locale rows missing source pages
+            Fandom profile gaps: <strong>{quality.missingSourceRows}</strong> locale pages missing
           </span>
         ) : null}
       </div>

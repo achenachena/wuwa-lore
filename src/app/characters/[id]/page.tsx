@@ -25,12 +25,18 @@ export async function generateMetadata({ params }: CharacterDetailProps): Promis
 
 export default async function CharacterDetailPage({ params }: CharacterDetailProps) {
   const { id } = await params;
-  const { character, characterStats, characterImages, characterVoiceDetails } =
+  const { character, characterStats, characterImages, characterVoiceDetails, storyDialogueByVersion } =
     await getCharacterDetailData(id);
 
   if (!character) {
     notFound();
   }
+
+  const storyDialogueRows = [...storyDialogueByVersion.entries()]
+    .map(([version, count]) => ({ version, count }))
+    .filter((row) => row.count > 0)
+    .sort((a, b) => a.version.localeCompare(b.version, "en"));
+  const maxStoryDialogue = storyDialogueRows.reduce((max, row) => Math.max(max, row.count), 1);
 
   const trendByVersion = new Map<string, number>();
   for (const stat of characterStats) {
@@ -85,7 +91,40 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
       </div>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Voice line stats</h2>
+        <h2 className="text-lg font-semibold">Main story dialogue by version</h2>
+        <p className="mt-1 text-sm text-zinc-600">
+          Speaker lines in main-story quests, sourced from{" "}
+          <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
+            encore.moe
+          </a>{" "}
+          (zh-Hans). This reflects in-game story dialogue, not profile voicelines.
+        </p>
+        {storyDialogueRows.length === 0 ? (
+          <p className="mt-2 text-zinc-600">No main-story dialogue recorded for this character yet.</p>
+        ) : (
+          <div className="mt-4 space-y-2">
+            {storyDialogueRows.map((row) => (
+              <div key={row.version} className="grid grid-cols-[72px_1fr_56px] items-center gap-3 text-sm">
+                <span className="text-zinc-600">{row.version}</span>
+                <div className="h-3 rounded bg-zinc-100">
+                  <div
+                    className="h-3 rounded bg-emerald-700"
+                    style={{ width: `${Math.max(2, (row.count / maxStoryDialogue) * 100)}%` }}
+                  />
+                </div>
+                <span className="text-right font-medium">{row.count}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Profile voiceline stats (Fandom)</h2>
+        <p className="mt-1 text-sm text-zinc-600">
+          Resonator profile voicelines from Fandom wiki. Per-version counts reflect when lines first
+          appeared on the wiki, not when story dialogue was added in-game.
+        </p>
         {characterStats.length === 0 ? (
           <p className="mt-2 text-zinc-600">No generated voice stats yet. Run `npm run data:generate`.</p>
         ) : (
@@ -133,7 +172,7 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Version Trend (All Locales)</h2>
+        <h2 className="text-lg font-semibold">Profile voiceline trend (Fandom, all locales)</h2>
         {trendRows.length === 0 ? (
           <p className="mt-2 text-zinc-600">No trend data available.</p>
         ) : (

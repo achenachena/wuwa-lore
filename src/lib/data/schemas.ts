@@ -101,6 +101,17 @@ export const storyAppearanceRowSchema = z.object({
   questTitlesZh: z.array(z.string()),
 });
 
+export const storyDialogueRowSchema = z.object({
+  characterId: z.string().min(1),
+  versionHalf: z.string().min(1),
+  version: z.string().min(1),
+  half: z.enum(["a", "b"]),
+  lineCount: z.number().int().min(0),
+  encoreStoryIds: z.array(z.number().int()),
+  questNamesZh: z.array(z.string()),
+  questWikiTitles: z.array(z.string()),
+});
+
 export const versionHalfVoiceRowSchema = z.object({
   characterId: z.string().min(1),
   locale: localeSchema,

@@ -124,6 +124,17 @@ export interface VersionHalfVoiceRow {
   lineCount: number;
 }
 
+export interface StoryDialogueRow {
+  characterId: string;
+  versionHalf: string;
+  version: string;
+  half: VersionHalfCode;
+  lineCount: number;
+  encoreStoryIds: number[];
+  questNamesZh: string[];
+  questWikiTitles: string[];
+}
+
 export interface VersionHalfRankingRow {
   characterId: string;
   characterName: string;

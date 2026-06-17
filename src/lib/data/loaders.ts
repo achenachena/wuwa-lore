@@ -6,6 +6,7 @@ import type {
   Character,
   CharacterImage,
   StoryAppearanceRow,
+  StoryDialogueRow,
   VersionHalfRecord,
   VersionHalfVoiceRow,
   VersionRecord,
@@ -19,6 +20,7 @@ import {
   generatedStatsSchema,
   rawVoiceSnapshotSchema,
   storyAppearanceRowSchema,
+  storyDialogueRowSchema,
   versionHalfRecordSchema,
   versionHalfVoiceRowSchema,
   versionSchema,
@@ -175,6 +177,13 @@ export async function loadStoryAppearances(): Promise<StoryAppearanceRow[]> {
   const filePath = path.join(root, "data", "derived", "story-appearances.json");
   const raw = await readJsonFile<unknown>(filePath);
   const parsed = z.object({ rows: z.array(storyAppearanceRowSchema) }).parse(raw);
+  return parsed.rows;
+}
+
+export async function loadStoryDialogueStats(): Promise<StoryDialogueRow[]> {
+  const filePath = path.join(root, "data", "derived", "story-dialogue-stats.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ rows: z.array(storyDialogueRowSchema) }).parse(raw);
   return parsed.rows;
 }
 

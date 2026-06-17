@@ -20,7 +20,7 @@ type MatrixRow = {
     labelZh: string;
     appearanceCount: number;
     questTitlesZh: string[];
-    voiceLineCounts: Record<"zh-CN" | "en-US" | "ja-JP" | "ko-KR", number>;
+    dialogueLineCount: number;
   }>;
 };
 
@@ -29,7 +29,6 @@ type Props = {
   halfOptions: HalfOption[];
   initialFromVersion: string;
   initialToVersion: string;
-  initialLocale: "zh-CN" | "en-US" | "ja-JP" | "ko-KR";
   matrix: MatrixRow[];
 };
 
@@ -38,12 +37,10 @@ export function VersionHalfStatsBrowser({
   halfOptions,
   initialFromVersion,
   initialToVersion,
-  initialLocale,
   matrix,
 }: Props) {
   const [fromVersion, setFromVersion] = useState(initialFromVersion);
   const [toVersion, setToVersion] = useState(initialToVersion);
-  const [locale, setLocale] = useState(initialLocale);
   const [view, setView] = useState<"ranking" | "matrix">("ranking");
 
   const selectedHalfIds = useMemo(() => {
@@ -61,32 +58,32 @@ export function VersionHalfStatsBrowser({
   }, [fromVersion, halfOptions, toVersion]);
 
   const filteredRanking = useMemo(() => {
-    const voiceByCharacter = new Map<string, number>();
+    const dialogueByCharacter = new Map<string, number>();
     const appearancesByCharacter = new Map<string, number>();
 
     for (const row of matrix) {
-      let voiceTotal = 0;
+      let dialogueTotal = 0;
       let appearanceTotal = 0;
       for (const cell of row.cells) {
         if (!selectedHalfIds.includes(cell.versionHalf)) {
           continue;
         }
-        voiceTotal += cell.voiceLineCounts[locale];
+        dialogueTotal += cell.dialogueLineCount;
         appearanceTotal += cell.appearanceCount;
       }
-      if (voiceTotal > 0) {
-        voiceByCharacter.set(row.character.id, voiceTotal);
+      if (dialogueTotal > 0) {
+        dialogueByCharacter.set(row.character.id, dialogueTotal);
       }
       if (appearanceTotal > 0) {
         appearancesByCharacter.set(row.character.id, appearanceTotal);
       }
     }
 
-    const ids = new Set([...voiceByCharacter.keys(), ...appearancesByCharacter.keys()]);
+    const ids = new Set([...dialogueByCharacter.keys(), ...appearancesByCharacter.keys()]);
     return [...ids]
       .map((characterId) => {
         const source = matrix.find((row) => row.character.id === characterId);
-        const voiceLineCount = voiceByCharacter.get(characterId) ?? 0;
+        const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
         const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
         return {
           characterId,
@@ -105,7 +102,7 @@ export function VersionHalfStatsBrowser({
         }
         return b.voiceLineCount - a.voiceLineCount;
       });
-  }, [matrix, selectedHalfIds, locale]);
+  }, [matrix, selectedHalfIds]);
 
   const filteredMatrix = useMemo(() => {
     return matrix
@@ -114,13 +111,9 @@ export function VersionHalfStatsBrowser({
         cells: row.cells.filter((cell) => selectedHalfIds.includes(cell.versionHalf)),
       }))
       .filter((row) =>
-        row.cells.some(
-          (cell) =>
-            selectedHalfIds.includes(cell.versionHalf) &&
-            (cell.appearanceCount > 0 || cell.voiceLineCounts[locale] > 0),
-        ),
+        row.cells.some((cell) => cell.appearanceCount > 0 || cell.dialogueLineCount > 0),
       );
-  }, [matrix, selectedHalfIds, locale]);
+  }, [matrix, selectedHalfIds]);
 
   return (
     <div className="space-y-6">
@@ -153,19 +146,6 @@ export function VersionHalfStatsBrowser({
             ))}
           </select>
         </label>
-        <label className="space-y-1 text-sm">
-          <span className="text-zinc-600">台词语言</span>
-          <select
-            className="block rounded-md border border-zinc-300 px-3 py-2"
-            value={locale}
-            onChange={(event) => setLocale(event.target.value as Props["initialLocale"])}
-          >
-            <option value="zh-CN">zh-CN</option>
-            <option value="en-US">en-US</option>
-            <option value="ja-JP">ja-JP</option>
-            <option value="ko-KR">ko-KR</option>
-          </select>
-        </label>
         <div className="flex gap-2">
           <button
             type="button"
@@ -185,8 +165,11 @@ export function VersionHalfStatsBrowser({
       </div>
 
       <p className="text-sm text-zinc-600">
-        已选 {selectedHalfIds.length} 个小版本（{fromVersion}–{toVersion}）。主线登场依据 Fandom 任务 infobox
-        `characters` 字段；台词数依据语音首次出现时间映射到小版本。
+        已选 {selectedHalfIds.length} 个小版本（{fromVersion}–{toVersion}）。台词数来自{" "}
+        <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
+          encore.moe
+        </a>{" "}
+        主线对话；登场次数来自 Fandom 任务 infobox。
       </p>
 
       {view === "ranking" ? (
@@ -196,7 +179,7 @@ export function VersionHalfStatsBrowser({
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
                 <th className="px-4 py-3">#</th>
                 <th className="px-4 py-3">角色</th>
-                <th className="px-4 py-3">台词数</th>
+                <th className="px-4 py-3">主线台词</th>
                 <th className="px-4 py-3">登场次数</th>
                 <th className="px-4 py-3">台词/登场</th>
               </tr>
@@ -239,14 +222,12 @@ export function VersionHalfStatsBrowser({
                       {row.character.name}
                     </Link>
                   </td>
-                  {row.cells
-                    .filter((cell) => selectedHalfIds.includes(cell.versionHalf))
-                    .map((cell) => (
+                  {row.cells.map((cell) => (
                     <td key={cell.versionHalf} className="px-3 py-2 align-top">
-                      {cell.appearanceCount > 0 || cell.voiceLineCounts[locale] > 0 ? (
+                      {cell.appearanceCount > 0 || cell.dialogueLineCount > 0 ? (
                         <div className="space-y-1">
                           <div>登场 {cell.appearanceCount || "—"}</div>
-                          <div>台词 {cell.voiceLineCounts[locale] || "—"}</div>
+                          <div>台词 {cell.dialogueLineCount || "—"}</div>
                           {cell.questTitlesZh.length > 0 ? (
                             <div className="text-zinc-500">{cell.questTitlesZh.join("、")}</div>
                           ) : null}

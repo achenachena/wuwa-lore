@@ -6,19 +6,21 @@ import {
   loadGeneratedStats,
   loadOfficialVersionNotes,
   loadStoryAppearances,
+  loadStoryDialogueStats,
   loadVersionHalfVoiceStats,
   loadVersions,
 } from "@/lib/data/loaders";
 import { validateCharactersAndVersions, validateVoiceLineStats } from "@/lib/data/validate";
 
 async function main() {
-  const [characters, versions, rows, official, storyAppearances, versionHalfVoiceStats] =
+  const [characters, versions, rows, official, storyAppearances, storyDialogueStats, versionHalfVoiceStats] =
     await Promise.all([
     loadCharacters(),
     loadVersions(),
     loadGeneratedStats(),
     loadOfficialVersionNotes(),
     loadStoryAppearances().catch(() => []),
+    loadStoryDialogueStats().catch(() => []),
     loadVersionHalfVoiceStats().catch(() => []),
   ]);
 
@@ -36,9 +38,13 @@ async function main() {
   };
 
   const storyValidation = {
-    ok: storyAppearances.length > 0 && versionHalfVoiceStats.length > 0,
+    ok:
+      storyAppearances.length > 0 &&
+      storyDialogueStats.length > 0 &&
+      versionHalfVoiceStats.length > 0,
     errors: [
       ...(storyAppearances.length === 0 ? ["Missing story appearance rows"] : []),
+      ...(storyDialogueStats.length === 0 ? ["Missing story dialogue stats rows"] : []),
       ...(versionHalfVoiceStats.length === 0 ? ["Missing version-half voice stats rows"] : []),
     ],
   };

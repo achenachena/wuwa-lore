@@ -1,6 +1,5 @@
 import type {
   Character,
-  Locale,
   VersionHalfRankingRow,
   VersionHalfRecord,
   VersionRecord,
@@ -8,7 +7,7 @@ import type {
   VoiceLineEntry,
   VoiceLineStatRow,
 } from "@/types/lore";
-import type { StoryAppearanceRow, VersionHalfVoiceRow } from "@/types/lore";
+import type { StoryAppearanceRow, StoryDialogueRow } from "@/types/lore";
 
 function unique<T>(values: T[]): T[] {
   return [...new Set(values)];
@@ -123,20 +122,19 @@ export function buildVersionHalfRanking(params: {
   characters: Character[];
   versionHalves: VersionHalfRecord[];
   storyAppearances: StoryAppearanceRow[];
-  versionHalfVoiceStats: VersionHalfVoiceRow[];
+  storyDialogueStats: StoryDialogueRow[];
   selectedHalfIds: string[];
-  locale: Locale;
 }): VersionHalfRankingRow[] {
-  const { characters, storyAppearances, versionHalfVoiceStats, selectedHalfIds, locale } = params;
+  const { characters, storyAppearances, storyDialogueStats, selectedHalfIds } = params;
   const selected = new Set(selectedHalfIds);
   const characterById = new Map(characters.map((character) => [character.id, character]));
 
-  const voiceByCharacter = new Map<string, number>();
-  for (const row of versionHalfVoiceStats) {
-    if (row.locale !== locale || !selected.has(row.versionHalf)) {
+  const dialogueByCharacter = new Map<string, number>();
+  for (const row of storyDialogueStats) {
+    if (!selected.has(row.versionHalf)) {
       continue;
     }
-    voiceByCharacter.set(row.characterId, (voiceByCharacter.get(row.characterId) ?? 0) + row.lineCount);
+    dialogueByCharacter.set(row.characterId, (dialogueByCharacter.get(row.characterId) ?? 0) + row.lineCount);
   }
 
   const appearancesByCharacter = new Map<string, number>();
@@ -151,13 +149,13 @@ export function buildVersionHalfRanking(params: {
   }
 
   const characterIds = unique([
-    ...voiceByCharacter.keys(),
+    ...dialogueByCharacter.keys(),
     ...appearancesByCharacter.keys(),
   ]).sort((a, b) => a.localeCompare(b));
 
   return characterIds
     .map((characterId) => {
-      const voiceLineCount = voiceByCharacter.get(characterId) ?? 0;
+      const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
       const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
       return {
         characterId,
@@ -179,6 +177,16 @@ export function buildVersionHalfRanking(params: {
       }
       return a.characterName.localeCompare(b.characterName);
     });
+}
+
+export function aggregateStoryDialogueByVersion(rows: StoryDialogueRow[]): Map<string, Map<string, number>> {
+  const byCharacter = new Map<string, Map<string, number>>();
+  for (const row of rows) {
+    const versionMap = byCharacter.get(row.characterId) ?? new Map<string, number>();
+    versionMap.set(row.version, (versionMap.get(row.version) ?? 0) + row.lineCount);
+    byCharacter.set(row.characterId, versionMap);
+  }
+  return byCharacter;
 }
 
 export function filterVersionHalvesByRange(params: {

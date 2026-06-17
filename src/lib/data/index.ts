@@ -1,33 +1,42 @@
-import { aggregateVersionStats, aggregateVoiceLineStats, buildVersionHalfRanking, filterVersionHalvesByRange } from "@/lib/data/aggregate";
+import { aggregateVersionStats, aggregateVoiceLineStats, aggregateStoryDialogueByVersion, buildVersionHalfRanking, filterVersionHalvesByRange } from "@/lib/data/aggregate";
 import {
   loadCharacterImages,
   loadCharacters,
   loadGeneratedStats,
   loadRawVoiceEntries,
   loadStoryAppearances,
-  loadVersionHalfVoiceStats,
+  loadStoryDialogueStats,
   loadVersionHalves,
   loadVoiceLineDetails,
   loadVersions,
 } from "@/lib/data/loaders";
-import type { Locale } from "@/types/lore";
 
 export async function getCharacterListData() {
   return loadCharacters();
 }
 
 export async function getCharacterDetailData(id: string) {
-  const [characters, stats, images, details] = await Promise.all([
+  const [characters, stats, images, details, storyDialogueStats] = await Promise.all([
     loadCharacters(),
     loadGeneratedStats(),
     loadCharacterImages(),
     loadVoiceLineDetails(),
+    loadStoryDialogueStats(),
   ]);
   const character = characters.find((item) => item.id === id);
   const characterStats = stats.filter((item) => item.characterId === id);
   const characterImages = images.filter((item) => item.characterId === id);
   const characterVoiceDetails = details.filter((item) => item.characterId === id);
-  return { character, characterStats, characterImages, characterVoiceDetails };
+  const storyDialogueByVersion = aggregateStoryDialogueByVersion(
+    storyDialogueStats.filter((row) => row.characterId === id),
+  ).get(id);
+  return {
+    character,
+    characterStats,
+    characterImages,
+    characterVoiceDetails,
+    storyDialogueByVersion: storyDialogueByVersion ?? new Map<string, number>(),
+  };
 }
 
 export async function getVersionStatsPageData() {
@@ -42,20 +51,18 @@ export async function getVersionStatsPageData() {
 export async function getVersionHalfStatsPageData(params?: {
   fromVersion?: string;
   toVersion?: string;
-  locale?: Locale;
 }) {
-  const [characters, versionHalves, storyAppearances, versionHalfVoiceStats, versions] =
+  const [characters, versionHalves, storyAppearances, storyDialogueStats, versions] =
     await Promise.all([
       loadCharacters(),
       loadVersionHalves(),
       loadStoryAppearances(),
-      loadVersionHalfVoiceStats(),
+      loadStoryDialogueStats(),
       loadVersions(),
     ]);
 
   const fromVersion = params?.fromVersion ?? versions[0]?.version ?? "1.0";
   const toVersion = params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.4";
-  const locale = params?.locale ?? "zh-CN";
   const selectedHalves = filterVersionHalvesByRange({ versionHalves, fromVersion, toVersion });
   const selectedHalfIds = selectedHalves.map((half) => half.id);
 
@@ -63,9 +70,8 @@ export async function getVersionHalfStatsPageData(params?: {
     characters,
     versionHalves,
     storyAppearances,
-    versionHalfVoiceStats,
+    storyDialogueStats,
     selectedHalfIds,
-    locale,
   });
 
   const matrix = characters.map((character) => ({
@@ -74,24 +80,16 @@ export async function getVersionHalfStatsPageData(params?: {
       const appearance = storyAppearances.find(
         (row) => row.characterId === character.id && row.versionHalf === half.id,
       );
-      const voiceLineCounts = {
-        "zh-CN": 0,
-        "en-US": 0,
-        "ja-JP": 0,
-        "ko-KR": 0,
-      } satisfies Record<Locale, number>;
-      for (const row of versionHalfVoiceStats) {
-        if (row.characterId === character.id && row.versionHalf === half.id) {
-          voiceLineCounts[row.locale] += row.lineCount;
-        }
-      }
+      const dialogueLineCount = storyDialogueStats
+        .filter((row) => row.characterId === character.id && row.versionHalf === half.id)
+        .reduce((sum, row) => sum + row.lineCount, 0);
 
       return {
         versionHalf: half.id,
         labelZh: half.labelZh,
         appearanceCount: appearance?.appearanceCount ?? 0,
         questTitlesZh: appearance?.questTitlesZh ?? [],
-        voiceLineCounts,
+        dialogueLineCount,
       };
     }),
   }));
@@ -99,7 +97,6 @@ export async function getVersionHalfStatsPageData(params?: {
   return {
     fromVersion,
     toVersion,
-    locale,
     versionHalves,
     selectedHalves,
     ranking,
