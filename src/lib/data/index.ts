@@ -1,4 +1,10 @@
-import { aggregateVersionStats, aggregateVoiceLineStats, aggregateStoryDialogueByVersion, buildVersionHalfRanking, filterVersionHalvesByRange } from "@/lib/data/aggregate";
+import {
+  aggregateVersionStats,
+  aggregateVoiceLineStats,
+  buildCharacterStorySegmentRows,
+  buildStorySegmentRanking,
+  filterStorySegmentsByRange,
+} from "@/lib/data/aggregate";
 import {
   loadCharacterImages,
   loadCharacters,
@@ -6,8 +12,7 @@ import {
   loadRawVoiceEntries,
   loadStoryAppearances,
   loadStoryDialogueStats,
-  loadVersionHalves,
-  loadVoiceLineDetails,
+  loadStorySegments,
   loadVersions,
 } from "@/lib/data/loaders";
 
@@ -16,26 +21,27 @@ export async function getCharacterListData() {
 }
 
 export async function getCharacterDetailData(id: string) {
-  const [characters, stats, images, details, storyDialogueStats] = await Promise.all([
-    loadCharacters(),
-    loadGeneratedStats(),
-    loadCharacterImages(),
-    loadVoiceLineDetails(),
-    loadStoryDialogueStats(),
-  ]);
+  const [characters, images, storySegments, storyAppearances, storyDialogueStats] =
+    await Promise.all([
+      loadCharacters(),
+      loadCharacterImages(),
+      loadStorySegments(),
+      loadStoryAppearances(),
+      loadStoryDialogueStats(),
+    ]);
   const character = characters.find((item) => item.id === id);
-  const characterStats = stats.filter((item) => item.characterId === id);
   const characterImages = images.filter((item) => item.characterId === id);
-  const characterVoiceDetails = details.filter((item) => item.characterId === id);
-  const storyDialogueByVersion = aggregateStoryDialogueByVersion(
-    storyDialogueStats.filter((row) => row.characterId === id),
-  ).get(id);
+  const characterStorySegments = buildCharacterStorySegmentRows({
+    characterId: id,
+    segments: storySegments,
+    storyAppearances,
+    storyDialogueStats,
+  });
+
   return {
     character,
-    characterStats,
     characterImages,
-    characterVoiceDetails,
-    storyDialogueByVersion: storyDialogueByVersion ?? new Map<string, number>(),
+    storySegments: characterStorySegments,
   };
 }
 
@@ -52,10 +58,10 @@ export async function getVersionHalfStatsPageData(params?: {
   fromVersion?: string;
   toVersion?: string;
 }) {
-  const [characters, versionHalves, storyAppearances, storyDialogueStats, versions] =
+  const [characters, storySegments, storyAppearances, storyDialogueStats, versions] =
     await Promise.all([
       loadCharacters(),
-      loadVersionHalves(),
+      loadStorySegments(),
       loadStoryAppearances(),
       loadStoryDialogueStats(),
       loadVersions(),
@@ -63,32 +69,33 @@ export async function getVersionHalfStatsPageData(params?: {
 
   const fromVersion = params?.fromVersion ?? versions[0]?.version ?? "1.0";
   const toVersion = params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.4";
-  const selectedHalves = filterVersionHalvesByRange({ versionHalves, fromVersion, toVersion });
-  const selectedHalfIds = selectedHalves.map((half) => half.id);
+  const selectedSegments = filterStorySegmentsByRange({ segments: storySegments, fromVersion, toVersion });
+  const selectedSegmentIds = selectedSegments.map((segment) => segment.id);
 
-  const ranking = buildVersionHalfRanking({
+  const ranking = buildStorySegmentRanking({
     characters,
-    versionHalves,
+    storySegments,
     storyAppearances,
     storyDialogueStats,
-    selectedHalfIds,
+    selectedSegmentIds,
   });
 
   const matrix = characters.map((character) => ({
     character,
-    cells: versionHalves.map((half) => {
-      const appearance = storyAppearances.find(
-        (row) => row.characterId === character.id && row.versionHalf === half.id,
+    cells: storySegments.map((segment) => {
+      const appeared = storyAppearances.some(
+        (row) => row.characterId === character.id && row.questId === segment.id,
       );
-      const dialogueLineCount = storyDialogueStats
-        .filter((row) => row.characterId === character.id && row.versionHalf === half.id)
-        .reduce((sum, row) => sum + row.lineCount, 0);
+      const dialogueLineCount =
+        storyDialogueStats.find(
+          (row) => row.characterId === character.id && row.questId === segment.id,
+        )?.lineCount ?? 0;
 
       return {
-        versionHalf: half.id,
-        labelZh: half.labelZh,
-        appearanceCount: appearance?.appearanceCount ?? 0,
-        questTitlesZh: appearance?.questTitlesZh ?? [],
+        segmentId: segment.id,
+        labelZh: segment.nameZh,
+        version: segment.version,
+        appeared,
         dialogueLineCount,
       };
     }),
@@ -97,8 +104,8 @@ export async function getVersionHalfStatsPageData(params?: {
   return {
     fromVersion,
     toVersion,
-    versionHalves,
-    selectedHalves,
+    storySegments,
+    selectedSegments,
     ranking,
     matrix,
   };

@@ -90,26 +90,36 @@ export const versionHalfRecordSchema = z.object({
   endDate: z.string().min(1),
 });
 
-export const storyAppearanceRowSchema = z.object({
-  characterId: z.string().min(1),
-  versionHalf: z.string().min(1),
+export const storySegmentSchema = z.object({
+  id: z.string().min(1),
+  wikiTitle: z.string().min(1),
+  nameZh: z.string().min(1),
   version: z.string().min(1),
   half: z.enum(["a", "b"]),
-  appearanceCount: z.number().int().min(0),
-  questIds: z.array(z.string()),
-  questTitles: z.array(z.string()),
-  questTitlesZh: z.array(z.string()),
+  versionHalf: z.string().min(1),
+  sortOrder: z.number().int().min(0),
+});
+
+export const storyAppearanceRowSchema = z.object({
+  characterId: z.string().min(1),
+  questId: z.string().min(1),
+  wikiTitle: z.string().min(1),
+  nameZh: z.string().min(1),
+  version: z.string().min(1),
+  half: z.enum(["a", "b"]),
+  versionHalf: z.string().min(1),
 });
 
 export const storyDialogueRowSchema = z.object({
   characterId: z.string().min(1),
-  versionHalf: z.string().min(1),
+  questId: z.string().min(1),
+  wikiTitle: z.string().min(1),
+  nameZh: z.string().min(1),
   version: z.string().min(1),
   half: z.enum(["a", "b"]),
+  versionHalf: z.string().min(1),
   lineCount: z.number().int().min(0),
   encoreStoryIds: z.array(z.number().int()),
-  questNamesZh: z.array(z.string()),
-  questWikiTitles: z.array(z.string()),
 });
 
 export const versionHalfVoiceRowSchema = z.object({

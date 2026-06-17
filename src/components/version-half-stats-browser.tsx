@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-type HalfOption = {
+type SegmentOption = {
   id: string;
   labelZh: string;
   version: string;
@@ -16,17 +16,17 @@ type MatrixRow = {
     releaseVersion: string;
   };
   cells: Array<{
-    versionHalf: string;
+    segmentId: string;
     labelZh: string;
-    appearanceCount: number;
-    questTitlesZh: string[];
+    version: string;
+    appeared: boolean;
     dialogueLineCount: number;
   }>;
 };
 
 type Props = {
   versions: string[];
-  halfOptions: HalfOption[];
+  segmentOptions: SegmentOption[];
   initialFromVersion: string;
   initialToVersion: string;
   matrix: MatrixRow[];
@@ -34,7 +34,7 @@ type Props = {
 
 export function VersionHalfStatsBrowser({
   versions,
-  halfOptions,
+  segmentOptions,
   initialFromVersion,
   initialToVersion,
   matrix,
@@ -43,10 +43,10 @@ export function VersionHalfStatsBrowser({
   const [toVersion, setToVersion] = useState(initialToVersion);
   const [view, setView] = useState<"ranking" | "matrix">("ranking");
 
-  const selectedHalfIds = useMemo(() => {
-    return halfOptions
-      .filter((half) => {
-        const [major, minor] = half.version.split(".").map(Number);
+  const selectedSegmentIds = useMemo(() => {
+    return segmentOptions
+      .filter((segment) => {
+        const [major, minor] = segment.version.split(".").map(Number);
         const [fromMajor, fromMinor] = fromVersion.split(".").map(Number);
         const [toMajor, toMinor] = toVersion.split(".").map(Number);
         const value = major * 100 + minor;
@@ -54,8 +54,8 @@ export function VersionHalfStatsBrowser({
         const toValue = toMajor * 100 + toMinor;
         return value >= fromValue && value <= toValue;
       })
-      .map((half) => half.id);
-  }, [fromVersion, halfOptions, toVersion]);
+      .map((segment) => segment.id);
+  }, [fromVersion, segmentOptions, toVersion]);
 
   const filteredRanking = useMemo(() => {
     const dialogueByCharacter = new Map<string, number>();
@@ -65,11 +65,13 @@ export function VersionHalfStatsBrowser({
       let dialogueTotal = 0;
       let appearanceTotal = 0;
       for (const cell of row.cells) {
-        if (!selectedHalfIds.includes(cell.versionHalf)) {
+        if (!selectedSegmentIds.includes(cell.segmentId)) {
           continue;
         }
         dialogueTotal += cell.dialogueLineCount;
-        appearanceTotal += cell.appearanceCount;
+        if (cell.appeared) {
+          appearanceTotal += 1;
+        }
       }
       if (dialogueTotal > 0) {
         dialogueByCharacter.set(row.character.id, dialogueTotal);
@@ -102,18 +104,16 @@ export function VersionHalfStatsBrowser({
         }
         return b.voiceLineCount - a.voiceLineCount;
       });
-  }, [matrix, selectedHalfIds]);
+  }, [matrix, selectedSegmentIds]);
 
   const filteredMatrix = useMemo(() => {
     return matrix
       .map((row) => ({
         ...row,
-        cells: row.cells.filter((cell) => selectedHalfIds.includes(cell.versionHalf)),
+        cells: row.cells.filter((cell) => selectedSegmentIds.includes(cell.segmentId)),
       }))
-      .filter((row) =>
-        row.cells.some((cell) => cell.appearanceCount > 0 || cell.dialogueLineCount > 0),
-      );
-  }, [matrix, selectedHalfIds]);
+      .filter((row) => row.cells.some((cell) => cell.appeared || cell.dialogueLineCount > 0));
+  }, [matrix, selectedSegmentIds]);
 
   return (
     <div className="space-y-6">
@@ -159,17 +159,17 @@ export function VersionHalfStatsBrowser({
             className={`rounded-md px-3 py-2 text-sm ${view === "matrix" ? "bg-zinc-900 text-white" : "border border-zinc-300"}`}
             onClick={() => setView("matrix")}
           >
-            小版本明细
+            主线段落明细
           </button>
         </div>
       </div>
 
       <p className="text-sm text-zinc-600">
-        已选 {selectedHalfIds.length} 个小版本（{fromVersion}–{toVersion}）。台词数来自{" "}
+        已选 {selectedSegmentIds.length} 个主线段落（{fromVersion}–{toVersion}）。列标题为主线剧情名；台词数来自{" "}
         <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
           encore.moe
-        </a>{" "}
-        主线对话；登场次数来自 Fandom 任务 infobox。
+        </a>
+        ，登场来自 Fandom 任务 infobox。
       </p>
 
       {view === "ranking" ? (
@@ -180,7 +180,7 @@ export function VersionHalfStatsBrowser({
                 <th className="px-4 py-3">#</th>
                 <th className="px-4 py-3">角色</th>
                 <th className="px-4 py-3">主线台词</th>
-                <th className="px-4 py-3">登场次数</th>
+                <th className="px-4 py-3">登场段落数</th>
                 <th className="px-4 py-3">台词/登场</th>
               </tr>
             </thead>
@@ -207,9 +207,9 @@ export function VersionHalfStatsBrowser({
             <thead>
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
                 <th className="sticky left-0 bg-white px-3 py-2">角色</th>
-                {selectedHalfIds.map((halfId) => (
-                  <th key={halfId} className="px-3 py-2 whitespace-nowrap">
-                    {halfOptions.find((item) => item.id === halfId)?.labelZh ?? halfId}
+                {selectedSegmentIds.map((segmentId) => (
+                  <th key={segmentId} className="px-3 py-2 whitespace-nowrap">
+                    {segmentOptions.find((item) => item.id === segmentId)?.labelZh ?? segmentId}
                   </th>
                 ))}
               </tr>
@@ -223,14 +223,11 @@ export function VersionHalfStatsBrowser({
                     </Link>
                   </td>
                   {row.cells.map((cell) => (
-                    <td key={cell.versionHalf} className="px-3 py-2 align-top">
-                      {cell.appearanceCount > 0 || cell.dialogueLineCount > 0 ? (
+                    <td key={cell.segmentId} className="px-3 py-2 align-top">
+                      {cell.appeared || cell.dialogueLineCount > 0 ? (
                         <div className="space-y-1">
-                          <div>登场 {cell.appearanceCount || "—"}</div>
-                          <div>台词 {cell.dialogueLineCount || "—"}</div>
-                          {cell.questTitlesZh.length > 0 ? (
-                            <div className="text-zinc-500">{cell.questTitlesZh.join("、")}</div>
-                          ) : null}
+                          <div>{cell.appeared ? "登场" : "—"}</div>
+                          <div>{cell.dialogueLineCount > 0 ? `${cell.dialogueLineCount} 句` : "—"}</div>
                         </div>
                       ) : (
                         "—"

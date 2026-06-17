@@ -20,15 +20,24 @@ type QuestHalfMap = {
   quests: QuestHalfEntry[];
 };
 
-type StoryAppearanceRow = {
-  characterId: string;
-  versionHalf: string;
+type StorySegment = {
+  id: string;
+  wikiTitle: string;
+  nameZh: string;
   version: string;
   half: "a" | "b";
-  appearanceCount: number;
-  questIds: string[];
-  questTitles: string[];
-  questTitlesZh: string[];
+  versionHalf: string;
+  sortOrder: number;
+};
+
+type StoryAppearanceRow = {
+  characterId: string;
+  questId: string;
+  wikiTitle: string;
+  nameZh: string;
+  version: string;
+  half: "a" | "b";
+  versionHalf: string;
 };
 
 type StoryAppearanceSnapshot = {
@@ -146,17 +155,11 @@ async function main() {
   const characters = await loadCharacters();
   const nameIndex = buildCharacterNameIndex(characters);
 
-  const byCharacterHalf = new Map<
-    string,
-    {
-      questIds: Set<string>;
-      questTitles: Set<string>;
-      questTitlesZh: Set<string>;
-    }
-  >();
+  const segments: StorySegment[] = [];
+  const rows: StoryAppearanceRow[] = [];
 
   let processed = 0;
-  for (const quest of map.quests) {
+  for (const [sortOrder, quest] of map.quests.entries()) {
     const wikitext = await fetchQuestWikitext(quest.wikiTitle);
     const questType = parseTemplateField(wikitext, "type") ?? "Main";
     if (questType.toLowerCase() !== "main") {
@@ -164,45 +167,37 @@ async function main() {
     }
 
     const questId = slugify(quest.wikiTitle);
-    const questTitleZh = parseTemplateField(wikitext, "zhs") ?? quest.wikiTitle;
+    const nameZh = parseTemplateField(wikitext, "zhs") ?? quest.wikiTitle;
     const versionHalf = `${quest.version}-${quest.half}`;
-    const appeared = parseInfoboxCharacters(wikitext);
+    segments.push({
+      id: questId,
+      wikiTitle: quest.wikiTitle,
+      nameZh,
+      version: quest.version,
+      half: quest.half,
+      versionHalf,
+      sortOrder,
+    });
 
+    const appeared = parseInfoboxCharacters(wikitext);
     for (const wikiName of appeared) {
       const characterId = resolveCharacterId(wikiName, nameIndex);
       if (!characterId) {
         continue;
       }
-      const key = `${characterId}::${versionHalf}`;
-      const bucket = byCharacterHalf.get(key) ?? {
-        questIds: new Set<string>(),
-        questTitles: new Set<string>(),
-        questTitlesZh: new Set<string>(),
-      };
-      bucket.questIds.add(questId);
-      bucket.questTitles.add(quest.wikiTitle);
-      bucket.questTitlesZh.add(questTitleZh);
-      byCharacterHalf.set(key, bucket);
+      rows.push({
+        characterId,
+        questId,
+        wikiTitle: quest.wikiTitle,
+        nameZh,
+        version: quest.version,
+        half: quest.half,
+        versionHalf,
+      });
     }
 
     processed += 1;
     await new Promise((resolve) => setTimeout(resolve, 250));
-  }
-
-  const rows: StoryAppearanceRow[] = [];
-  for (const [key, bucket] of byCharacterHalf.entries()) {
-    const [characterId, versionHalf] = key.split("::");
-    const [version, half] = versionHalf.split("-") as [string, "a" | "b"];
-    rows.push({
-      characterId,
-      versionHalf,
-      version,
-      half,
-      appearanceCount: bucket.questIds.size,
-      questIds: [...bucket.questIds].sort(),
-      questTitles: [...bucket.questTitles].sort(),
-      questTitlesZh: [...bucket.questTitlesZh].sort(),
-    });
   }
 
   rows.sort((a, b) => {
@@ -210,8 +205,26 @@ async function main() {
     if (byCharacter !== 0) {
       return byCharacter;
     }
-    return a.versionHalf.localeCompare(b.versionHalf, "en");
+    const segmentA = segments.find((segment) => segment.id === a.questId);
+    const segmentB = segments.find((segment) => segment.id === b.questId);
+    return (segmentA?.sortOrder ?? 0) - (segmentB?.sortOrder ?? 0);
   });
+
+  const segmentsPath = path.join(process.cwd(), "content", "stories", "story-segments.json");
+  await fs.writeFile(
+    segmentsPath,
+    `${JSON.stringify(
+      {
+        sourceUrl: map.sourceUrl,
+        editor: "scripts/sync-story-appearances.ts",
+        generatedAt: nowIso,
+        segments,
+      },
+      null,
+      2,
+    )}\n`,
+    "utf8",
+  );
 
   const snapshot: StoryAppearanceSnapshot = {
     generatedAt: nowIso,
@@ -226,7 +239,9 @@ async function main() {
 
   const outPath = path.join(process.cwd(), "data", "derived", "story-appearances.json");
   await fs.writeFile(outPath, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
-  console.log(`Story appearances synced: ${rows.length} rows from ${processed} quests -> ${outPath}`);
+  console.log(
+    `Story appearances synced: ${rows.length} rows, ${segments.length} segments from ${processed} quests`,
+  );
 }
 
 main().catch((error: unknown) => {

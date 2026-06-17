@@ -10,16 +10,16 @@ export default async function VersionHalfStatsPage() {
 
   return (
     <section className="space-y-4">
-      <h1 className="text-2xl font-semibold">小版本统计</h1>
+      <h1 className="text-2xl font-semibold">主线段落统计</h1>
       <p className="text-zinc-600">
-        按版本上半/下半统计每个角色的主线登场次数与新增台词数，并支持选定版本区间后的台词/登场比排名。
+        按主线剧情段落（非版本上半/下半）统计每个角色的登场与台词数，并支持选定版本区间后的台词/登场比排名。
       </p>
       <VersionHalfStatsBrowser
         versions={versions.map((version) => version.version)}
-        halfOptions={pageData.versionHalves.map((half) => ({
-          id: half.id,
-          labelZh: half.labelZh,
-          version: half.version,
+        segmentOptions={pageData.storySegments.map((segment) => ({
+          id: segment.id,
+          labelZh: segment.nameZh,
+          version: segment.version,
         }))}
         initialFromVersion={pageData.fromVersion}
         initialToVersion={pageData.toVersion}

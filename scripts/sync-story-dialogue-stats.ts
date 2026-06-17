@@ -24,13 +24,14 @@ type EncoreStoryIndexItem = {
 
 type StoryDialogueRow = {
   characterId: string;
-  versionHalf: string;
+  questId: string;
+  wikiTitle: string;
+  nameZh: string;
   version: string;
   half: "a" | "b";
+  versionHalf: string;
   lineCount: number;
   encoreStoryIds: number[];
-  questNamesZh: string[];
-  questWikiTitles: string[];
 };
 
 type StoryDialogueSnapshot = {
@@ -48,6 +49,19 @@ type StoryDialogueSnapshot = {
 const ENCORE_BASE = "https://api.encore.moe";
 const LOCALE = "zh-Hans";
 const nowIso = new Date().toISOString();
+
+/** Wiki quest title -> encore.moe story name(s) when zhs labels differ. */
+const WIKI_TO_ENCORE_STORY_NAMES: Record<string, string[]> = {
+  "Utterance of Marvels": ["万象新声·上"],
+  "First Resonance": ["万象新声·下"],
+  "Echoing Marche": ["万象新声·上"],
+  "Ominous Star": ["万象新声·上"],
+  "Clashing Blades": ["万象新声·上"],
+  "Rewinding Raindrops": ["万象新声·上"],
+  "Grand Warstorm": ["万象新声·上"],
+  "Advance toward the Future from Today": ["万象新声·下"],
+  "Beyond the Shore's End": ["行至海岸尽头"],
+};
 
 function slugify(value: string): string {
   return value
@@ -119,6 +133,34 @@ function flattenEncoreStories(storyTypes: Array<{ Stories?: EncoreStoryIndexItem
     }
   }
   return items;
+}
+
+function resolveEncoreStoryIds(
+  wikiTitle: string,
+  nameZh: string,
+  storyIdByName: Map<string, number>,
+): number[] {
+  const aliases = WIKI_TO_ENCORE_STORY_NAMES[wikiTitle];
+  if (aliases) {
+    return aliases
+      .map((name) => storyIdByName.get(name))
+      .filter((id): id is number => typeof id === "number");
+  }
+
+  const direct = storyIdByName.get(nameZh);
+  if (direct) {
+    return [direct];
+  }
+
+  const normalized = nameZh.replace(/[·…?！!]/g, "").trim();
+  const fuzzy = [...storyIdByName.entries()].find(([name]) =>
+    name.replace(/[·…?！!]/g, "").includes(normalized),
+  );
+  if (fuzzy) {
+    return [fuzzy[1]];
+  }
+
+  return [];
 }
 
 function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
@@ -246,41 +288,54 @@ async function main() {
     {
       lineCount: number;
       encoreStoryIds: Set<number>;
-      questNamesZh: Set<string>;
-      questWikiTitles: Set<string>;
+      nameZh: string;
+      wikiTitle: string;
+      version: string;
+      half: "a" | "b";
+      versionHalf: string;
     }
   >();
 
   let processedQuests = 0;
   for (const quest of map.quests) {
+    const questId = slugify(quest.wikiTitle);
     const nameZh = await fetchQuestNameZh(quest.wikiTitle);
-    const storyId = storyIdByName.get(nameZh);
-    if (!storyId) {
+    const storyIds = resolveEncoreStoryIds(quest.wikiTitle, nameZh, storyIdByName);
+    if (storyIds.length === 0) {
       console.warn(`No encore story match for ${quest.wikiTitle} (${nameZh})`);
       await new Promise((resolve) => setTimeout(resolve, 150));
       continue;
     }
 
-    const detail = await fetchJson<unknown>(`${ENCORE_BASE}/${LOCALE}/story/${storyId}`);
-    const speakerCounts = countDialoguesBySpeaker(detail);
     const versionHalf = `${quest.version}-${quest.half}`;
+    const speakerCounts = new Map<string, number>();
+    for (const storyId of storyIds) {
+      const detail = await fetchJson<unknown>(`${ENCORE_BASE}/${LOCALE}/story/${storyId}`);
+      for (const [speaker, count] of countDialoguesBySpeaker(detail).entries()) {
+        speakerCounts.set(speaker, (speakerCounts.get(speaker) ?? 0) + count);
+      }
+      await new Promise((resolve) => setTimeout(resolve, 80));
+    }
 
     for (const [speaker, count] of speakerCounts.entries()) {
       const characterId = resolveSpeaker(speaker, speakerToCharacter, zhNamesByCharacter);
       if (!characterId) {
         continue;
       }
-      const key = `${characterId}::${versionHalf}`;
+      const key = `${characterId}::${questId}`;
       const bucket = aggregate.get(key) ?? {
         lineCount: 0,
         encoreStoryIds: new Set<number>(),
-        questNamesZh: new Set<string>(),
-        questWikiTitles: new Set<string>(),
+        nameZh,
+        wikiTitle: quest.wikiTitle,
+        version: quest.version,
+        half: quest.half,
+        versionHalf,
       };
       bucket.lineCount += count;
-      bucket.encoreStoryIds.add(storyId);
-      bucket.questNamesZh.add(nameZh);
-      bucket.questWikiTitles.add(quest.wikiTitle);
+      for (const storyId of storyIds) {
+        bucket.encoreStoryIds.add(storyId);
+      }
       aggregate.set(key, bucket);
     }
 
@@ -290,17 +345,17 @@ async function main() {
 
   const rows: StoryDialogueRow[] = [...aggregate.entries()]
     .map(([key, bucket]) => {
-      const [characterId, versionHalf] = key.split("::");
-      const [version, half] = versionHalf.split("-") as [string, "a" | "b"];
+      const [characterId, questId] = key.split("::");
       return {
         characterId,
-        versionHalf,
-        version,
-        half,
+        questId,
+        wikiTitle: bucket.wikiTitle,
+        nameZh: bucket.nameZh,
+        version: bucket.version,
+        half: bucket.half,
+        versionHalf: bucket.versionHalf,
         lineCount: bucket.lineCount,
         encoreStoryIds: [...bucket.encoreStoryIds].sort((a, b) => a - b),
-        questNamesZh: [...bucket.questNamesZh].sort(),
-        questWikiTitles: [...bucket.questWikiTitles].sort(),
       };
     })
     .sort((a, b) => {
@@ -308,7 +363,7 @@ async function main() {
       if (byCharacter !== 0) {
         return byCharacter;
       }
-      return a.versionHalf.localeCompare(b.versionHalf, "en");
+      return a.questId.localeCompare(b.questId);
     });
 
   const snapshot: StoryDialogueSnapshot = {

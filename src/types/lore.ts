@@ -104,15 +104,24 @@ export interface VersionHalfRecord {
   endDate: string;
 }
 
-export interface StoryAppearanceRow {
-  characterId: string;
-  versionHalf: string;
+export interface StorySegment {
+  id: string;
+  wikiTitle: string;
+  nameZh: string;
   version: string;
   half: VersionHalfCode;
-  appearanceCount: number;
-  questIds: string[];
-  questTitles: string[];
-  questTitlesZh: string[];
+  versionHalf: string;
+  sortOrder: number;
+}
+
+export interface StoryAppearanceRow {
+  characterId: string;
+  questId: string;
+  wikiTitle: string;
+  nameZh: string;
+  version: string;
+  half: VersionHalfCode;
+  versionHalf: string;
 }
 
 export interface VersionHalfVoiceRow {
@@ -126,13 +135,20 @@ export interface VersionHalfVoiceRow {
 
 export interface StoryDialogueRow {
   characterId: string;
-  versionHalf: string;
+  questId: string;
+  wikiTitle: string;
+  nameZh: string;
   version: string;
   half: VersionHalfCode;
+  versionHalf: string;
   lineCount: number;
   encoreStoryIds: number[];
-  questNamesZh: string[];
-  questWikiTitles: string[];
+}
+
+export interface CharacterStorySegmentRow {
+  segment: StorySegment;
+  appeared: boolean;
+  lineCount: number;
 }
 
 export interface VersionHalfRankingRow {

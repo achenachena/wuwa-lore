@@ -1,0 +1,358 @@
+{
+  "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
+  "editor": "scripts/sync-story-appearances.ts",
+  "generatedAt": "2026-06-17T23:46:19.505Z",
+  "segments": [
+    {
+      "id": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 1
+    },
+    {
+      "id": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 2
+    },
+    {
+      "id": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 3
+    },
+    {
+      "id": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 4
+    },
+    {
+      "id": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 5
+    },
+    {
+      "id": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 6
+    },
+    {
+      "id": "a-new-companion",
+      "wikiTitle": "A New Companion",
+      "nameZh": "行路遇新知",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 7
+    },
+    {
+      "id": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 8
+    },
+    {
+      "id": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
+      "version": "1.1",
+      "half": "a",
+      "versionHalf": "1.1-a",
+      "sortOrder": 9
+    },
+    {
+      "id": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "sortOrder": 10
+    },
+    {
+      "id": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "sortOrder": 11
+    },
+    {
+      "id": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "sortOrder": 12
+    },
+    {
+      "id": "the-sacred-breeze-so-often-breathes",
+      "wikiTitle": "The Sacred Breeze So Often Breathes",
+      "nameZh": "那神圣微风时常吹入",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "sortOrder": 13
+    },
+    {
+      "id": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "sortOrder": 14
+    },
+    {
+      "id": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "sortOrder": 15
+    },
+    {
+      "id": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "sortOrder": 17
+    },
+    {
+      "id": "rust-sword-and-the-sun",
+      "wikiTitle": "Rust, Sword and the Sun",
+      "nameZh": "铁锈，剑与烈阳",
+      "version": "2.3",
+      "half": "a",
+      "versionHalf": "2.3-a",
+      "sortOrder": 18
+    },
+    {
+      "id": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "sortOrder": 19
+    },
+    {
+      "id": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
+      "version": "2.4",
+      "half": "b",
+      "versionHalf": "2.4-b",
+      "sortOrder": 20
+    },
+    {
+      "id": "dreamcatchers-in-the-secret-gardens",
+      "wikiTitle": "Dreamcatchers in the Secret Gardens",
+      "nameZh": "捕梦于神秘园中",
+      "version": "2.5",
+      "half": "a",
+      "versionHalf": "2.5-a",
+      "sortOrder": 21
+    },
+    {
+      "id": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "sortOrder": 22
+    },
+    {
+      "id": "by-moons-fated-light",
+      "wikiTitle": "By Moon's Fated Light",
+      "nameZh": "今夜，注定属于月亮",
+      "version": "2.6",
+      "half": "b",
+      "versionHalf": "2.6-b",
+      "sortOrder": 23
+    },
+    {
+      "id": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "sortOrder": 24
+    },
+    {
+      "id": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "sortOrder": 25
+    },
+    {
+      "id": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "sortOrder": 26
+    },
+    {
+      "id": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
+      "version": "2.8",
+      "half": "a",
+      "versionHalf": "2.8-a",
+      "sortOrder": 27
+    },
+    {
+      "id": "flowing-starlight-in-the-iris",
+      "wikiTitle": "Flowing Starlight in the Iris",
+      "nameZh": "星光流转于眼眸之间",
+      "version": "2.8",
+      "half": "b",
+      "versionHalf": "2.8-b",
+      "sortOrder": 28
+    },
+    {
+      "id": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "sortOrder": 29
+    },
+    {
+      "id": "what-burns-beneath-frostlands",
+      "wikiTitle": "What Burns Beneath Frostlands",
+      "nameZh": "冰原下的星炬",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "sortOrder": 30
+    },
+    {
+      "id": "ode-to-the-second-sunrise",
+      "wikiTitle": "Ode to the Second Sunrise",
+      "nameZh": "致第二次日出",
+      "version": "3.0",
+      "half": "b",
+      "versionHalf": "3.0-b",
+      "sortOrder": 31
+    },
+    {
+      "id": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "sortOrder": 32
+    },
+    {
+      "id": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b",
+      "sortOrder": 33
+    },
+    {
+      "id": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "sortOrder": 34
+    },
+    {
+      "id": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "sortOrder": 35
+    },
+    {
+      "id": "the-flaming-red-from-tomorrow",
+      "wikiTitle": "The Flaming Red from Tomorrow",
+      "nameZh": "明日摇曳的绯影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "sortOrder": 36
+    },
+    {
+      "id": "wishes-in-the-bell",
+      "wikiTitle": "Wishes in the Bell",
+      "nameZh": "愿系铃中",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "sortOrder": 37
+    },
+    {
+      "id": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "sortOrder": 38
+    },
+    {
+      "id": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
+      "version": "3.3",
+      "half": "b",
+      "versionHalf": "3.3-b",
+      "sortOrder": 39
+    },
+    {
+      "id": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "sortOrder": 40
+    }
+  ]
+}

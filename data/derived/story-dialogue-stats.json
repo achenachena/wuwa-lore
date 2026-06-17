@@ -1,1970 +1,2195 @@
 {
-  "generatedAt": "2026-06-17T23:29:12.543Z",
+  "generatedAt": "2026-06-17T23:46:38.053Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
     "locale": "zh-Hans",
     "countMethod": "main_story_dialogue_speaker_lines"
   },
-  "questCount": 31,
+  "questCount": 40,
   "rows": [
     {
       "characterId": "aalto",
-      "versionHalf": "1.3-a",
-      "version": "1.3",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
       "half": "a",
+      "versionHalf": "1.4-a",
       "lineCount": 94,
       "encoreStoryIds": [
         100012
-      ],
-      "questNamesZh": [
-        "行至海岸尽头"
-      ],
-      "questWikiTitles": [
-        "To the Shore's End"
       ]
     },
     {
       "characterId": "aalto",
-      "versionHalf": "2.0-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 43,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "aalto",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
       "version": "2.0",
       "half": "a",
+      "versionHalf": "2.0-a",
       "lineCount": 17,
       "encoreStoryIds": [
         100014
-      ],
-      "questNamesZh": [
-        "如一叶小舟穿行于茫茫海洋"
-      ],
-      "questWikiTitles": [
-        "Through the Sea Thou Break"
       ]
     },
     {
       "characterId": "aalto",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
       "half": "a",
-      "lineCount": 43,
+      "versionHalf": "1.3-a",
+      "lineCount": 94,
       "encoreStoryIds": [
-        100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
+        100012
       ]
     },
     {
       "characterId": "aalto",
-      "versionHalf": "3.4-b",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 90,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
       "characterId": "aemeath",
-      "versionHalf": "3.1-a",
-      "version": "3.1",
-      "half": "a",
-      "lineCount": 361,
-      "encoreStoryIds": [
-        100035
-      ],
-      "questNamesZh": [
-        "远航星"
-      ],
-      "questWikiTitles": [
-        "The Star That Voyages Far"
-      ]
-    },
-    {
-      "characterId": "aemeath",
-      "versionHalf": "3.3-a",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
       "version": "3.3",
       "half": "a",
+      "versionHalf": "3.3-a",
       "lineCount": 36,
       "encoreStoryIds": [
         100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
       ]
     },
     {
       "characterId": "aemeath",
-      "versionHalf": "3.4-b",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 361,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "characterId": "aemeath",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 8,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
       "characterId": "augusta",
-      "versionHalf": "2.3-a",
-      "version": "2.3",
-      "half": "a",
-      "lineCount": 37,
-      "encoreStoryIds": [
-        100024
-      ],
-      "questNamesZh": [
-        "铁锈，剑与烈阳"
-      ],
-      "questWikiTitles": [
-        "Rust, Sword and the Sun"
-      ]
-    },
-    {
-      "characterId": "augusta",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
-      "half": "a",
-      "lineCount": 26,
-      "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
-      ]
-    },
-    {
-      "characterId": "augusta",
-      "versionHalf": "2.6-a",
-      "version": "2.6",
-      "half": "a",
-      "lineCount": 306,
-      "encoreStoryIds": [
-        100025
-      ],
-      "questNamesZh": [
-        "灼我以烈阳"
-      ],
-      "questWikiTitles": [
-        "By Sun's Burning Hand"
-      ]
-    },
-    {
-      "characterId": "augusta",
-      "versionHalf": "2.6-b",
-      "version": "2.6",
-      "half": "b",
-      "lineCount": 43,
-      "encoreStoryIds": [
-        100026
-      ],
-      "questNamesZh": [
-        "今夜，注定属于月亮"
-      ],
-      "questWikiTitles": [
-        "By Moon's Fated Light"
-      ]
-    },
-    {
-      "characterId": "augusta",
-      "versionHalf": "2.7-a",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
-      "half": "a",
-      "lineCount": 69,
-      "encoreStoryIds": [
-        100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
-      ]
-    },
-    {
-      "characterId": "augusta",
+      "half": "b",
       "versionHalf": "2.7-b",
-      "version": "2.7",
-      "half": "b",
       "lineCount": 9,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
       ]
     },
     {
-      "characterId": "brant",
-      "versionHalf": "2.0-a",
-      "version": "2.0",
-      "half": "a",
-      "lineCount": 42,
-      "encoreStoryIds": [
-        100014
-      ],
-      "questNamesZh": [
-        "如一叶小舟穿行于茫茫海洋"
-      ],
-      "questWikiTitles": [
-        "Through the Sea Thou Break"
-      ]
-    },
-    {
-      "characterId": "brant",
-      "versionHalf": "2.0-b",
-      "version": "2.0",
+      "characterId": "augusta",
+      "questId": "by-moons-fated-light",
+      "wikiTitle": "By Moon's Fated Light",
+      "nameZh": "今夜，注定属于月亮",
+      "version": "2.6",
       "half": "b",
-      "lineCount": 144,
+      "versionHalf": "2.6-b",
+      "lineCount": 43,
       "encoreStoryIds": [
-        100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
+        100026
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "lineCount": 306,
+      "encoreStoryIds": [
+        100025
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 69,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "questId": "rust-sword-and-the-sun",
+      "wikiTitle": "Rust, Sword and the Sun",
+      "nameZh": "铁锈，剑与烈阳",
+      "version": "2.3",
+      "half": "a",
+      "versionHalf": "2.3-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100024
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 26,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
       ]
     },
     {
       "characterId": "brant",
-      "versionHalf": "2.1-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "brant",
+      "questId": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
       "version": "2.1",
       "half": "a",
+      "versionHalf": "2.1-a",
       "lineCount": 15,
       "encoreStoryIds": [
         100018
-      ],
-      "questNamesZh": [
-        "老人鱼海"
-      ],
-      "questWikiTitles": [
-        "Old Man and the Whale"
       ]
     },
     {
       "characterId": "brant",
-      "versionHalf": "2.7-a",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
       "version": "2.7",
       "half": "a",
-      "lineCount": 29,
+      "versionHalf": "2.7-a",
+      "lineCount": 18,
       "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
+        100027
       ]
     },
     {
-      "characterId": "buling",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
+      "characterId": "brant",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
       "half": "a",
-      "lineCount": 16,
+      "versionHalf": "2.0-a",
+      "lineCount": 42,
       "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
+        100014
+      ]
+    },
+    {
+      "characterId": "brant",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 144,
+      "encoreStoryIds": [
+        100017
       ]
     },
     {
       "characterId": "buling",
-      "versionHalf": "2.6-a",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
       "version": "2.6",
       "half": "a",
+      "versionHalf": "2.6-a",
       "lineCount": 30,
       "encoreStoryIds": [
         100025
-      ],
-      "questNamesZh": [
-        "灼我以烈阳"
-      ],
-      "questWikiTitles": [
-        "By Sun's Burning Hand"
       ]
     },
     {
       "characterId": "buling",
-      "versionHalf": "2.8-a",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 16,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "characterId": "buling",
+      "questId": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
       "version": "2.8",
       "half": "a",
+      "versionHalf": "2.8-a",
       "lineCount": 12,
       "encoreStoryIds": [
         100030
-      ],
-      "questNamesZh": [
-        "曙光停摆于荒地之上"
-      ],
-      "questWikiTitles": [
-        "Stagnant Dawn on Wastelands"
       ]
     },
     {
       "characterId": "calcharo",
-      "versionHalf": "2.7-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
       "version": "2.7",
       "half": "a",
+      "versionHalf": "2.7-a",
       "lineCount": 1,
       "encoreStoryIds": [
         100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
       ]
     },
     {
       "characterId": "camellya",
-      "versionHalf": "2.7-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
       "version": "2.7",
       "half": "a",
+      "versionHalf": "2.7-a",
       "lineCount": 1,
       "encoreStoryIds": [
         100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
       ]
     },
     {
       "characterId": "cantarella",
-      "versionHalf": "2.2-a",
-      "version": "2.2",
-      "half": "a",
-      "lineCount": 267,
-      "encoreStoryIds": [
-        100019
-      ],
-      "questNamesZh": [
-        "圣者，忤逆者，告死者"
-      ],
-      "questWikiTitles": [
-        "The Maiden, The Defier, The Death Crier"
-      ]
-    },
-    {
-      "characterId": "cantarella",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
-      "half": "a",
-      "lineCount": 15,
-      "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
-      ]
-    },
-    {
-      "characterId": "cantarella",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
-      "half": "a",
-      "lineCount": 76,
-      "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
-      ]
-    },
-    {
-      "characterId": "cantarella",
-      "versionHalf": "2.7-b",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
       "half": "b",
+      "versionHalf": "2.7-b",
       "lineCount": 12,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
       ]
     },
     {
-      "characterId": "carlotta",
-      "versionHalf": "2.0-a",
-      "version": "2.0",
+      "characterId": "cantarella",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
       "half": "a",
-      "lineCount": 213,
+      "versionHalf": "2.7-a",
+      "lineCount": 56,
       "encoreStoryIds": [
-        100016
-      ],
-      "questNamesZh": [
-        "夜与昼，均请摘下面纱"
-      ],
-      "questWikiTitles": [
-        "Veils Off in Sun or Shadow"
+        100028
       ]
     },
     {
-      "characterId": "carlotta",
-      "versionHalf": "2.0-b",
-      "version": "2.0",
-      "half": "b",
-      "lineCount": 147,
+      "characterId": "cantarella",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 15,
       "encoreStoryIds": [
-        100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
+        100021
       ]
     },
     {
-      "characterId": "carlotta",
-      "versionHalf": "2.2-a",
+      "characterId": "cantarella",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 20,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "characterId": "cantarella",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
       "version": "2.2",
       "half": "a",
-      "lineCount": 10,
+      "versionHalf": "2.2-a",
+      "lineCount": 267,
       "encoreStoryIds": [
         100019
-      ],
-      "questNamesZh": [
-        "圣者，忤逆者，告死者"
-      ],
-      "questWikiTitles": [
-        "The Maiden, The Defier, The Death Crier"
       ]
     },
     {
       "characterId": "carlotta",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
-      "half": "a",
-      "lineCount": 28,
-      "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
-      ]
-    },
-    {
-      "characterId": "carlotta",
-      "versionHalf": "2.7-b",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
       "half": "b",
+      "versionHalf": "2.7-b",
       "lineCount": 7,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
       ]
     },
     {
-      "characterId": "cartethyia",
-      "versionHalf": "2.0-b",
-      "version": "2.0",
-      "half": "b",
-      "lineCount": 2,
+      "characterId": "carlotta",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 15,
       "encoreStoryIds": [
-        100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
+        100028
       ]
     },
     {
-      "characterId": "cartethyia",
-      "versionHalf": "2.2-a",
+      "characterId": "carlotta",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "characterId": "carlotta",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
       "version": "2.2",
       "half": "a",
-      "lineCount": 320,
+      "versionHalf": "2.2-a",
+      "lineCount": 10,
       "encoreStoryIds": [
         100019
-      ],
-      "questNamesZh": [
-        "圣者，忤逆者，告死者"
-      ],
-      "questWikiTitles": [
-        "The Maiden, The Defier, The Death Crier"
       ]
     },
     {
-      "characterId": "cartethyia",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
+      "characterId": "carlotta",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
       "half": "a",
-      "lineCount": 39,
+      "versionHalf": "2.0-a",
+      "lineCount": 213,
       "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
+        100016
       ]
     },
     {
-      "characterId": "cartethyia",
-      "versionHalf": "2.4-b",
-      "version": "2.4",
+      "characterId": "carlotta",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
       "half": "b",
-      "lineCount": 85,
+      "versionHalf": "2.0-b",
+      "lineCount": 147,
       "encoreStoryIds": [
-        100022
-      ],
-      "questNamesZh": [
-        "燃烧的心"
-      ],
-      "questWikiTitles": [
-        "Flames of Heart"
+        100017
       ]
     },
     {
       "characterId": "cartethyia",
-      "versionHalf": "2.5-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 48,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "questId": "dreamcatchers-in-the-secret-gardens",
+      "wikiTitle": "Dreamcatchers in the Secret Gardens",
+      "nameZh": "捕梦于神秘园中",
       "version": "2.5",
       "half": "a",
+      "versionHalf": "2.5-a",
       "lineCount": 4,
       "encoreStoryIds": [
         100023
-      ],
-      "questNamesZh": [
-        "捕梦于神秘园中"
-      ],
-      "questWikiTitles": [
-        "Dreamcatchers in the Secret Gardens"
       ]
     },
     {
       "characterId": "cartethyia",
-      "versionHalf": "2.7-a",
+      "questId": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
+      "version": "2.4",
+      "half": "b",
+      "versionHalf": "2.4-b",
+      "lineCount": 85,
+      "encoreStoryIds": [
+        100022
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 39,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
       "version": "2.7",
       "half": "a",
-      "lineCount": 52,
+      "versionHalf": "2.7-a",
+      "lineCount": 4,
       "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
+        100027
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "lineCount": 320,
+      "encoreStoryIds": [
+        100019
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100017
       ]
     },
     {
       "characterId": "changli",
-      "versionHalf": "1.1-a",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
       "version": "1.1",
       "half": "a",
+      "versionHalf": "1.1-a",
       "lineCount": 230,
       "encoreStoryIds": [
         100011
-      ],
-      "questNamesZh": [
-        "往岁乘霄醒惊蛰"
-      ],
-      "questWikiTitles": [
-        "Thaw of Eons"
       ]
     },
     {
       "characterId": "chisa",
-      "versionHalf": "2.8-a",
-      "version": "2.8",
-      "half": "a",
-      "lineCount": 251,
-      "encoreStoryIds": [
-        100030
-      ],
-      "questNamesZh": [
-        "曙光停摆于荒地之上"
-      ],
-      "questWikiTitles": [
-        "Stagnant Dawn on Wastelands"
-      ]
-    },
-    {
-      "characterId": "chisa",
-      "versionHalf": "2.8-b",
+      "questId": "flowing-starlight-in-the-iris",
+      "wikiTitle": "Flowing Starlight in the Iris",
+      "nameZh": "星光流转于眼眸之间",
       "version": "2.8",
       "half": "b",
+      "versionHalf": "2.8-b",
       "lineCount": 4,
       "encoreStoryIds": [
         100031
-      ],
-      "questNamesZh": [
-        "星光流转于眼眸之间"
-      ],
-      "questWikiTitles": [
-        "Flowing Starlight in the Iris"
       ]
     },
     {
       "characterId": "chisa",
-      "versionHalf": "3.0-a",
-      "version": "3.0",
-      "half": "a",
-      "lineCount": 5,
-      "encoreStoryIds": [
-        100032
-      ],
-      "questNamesZh": [
-        "未知的既感"
-      ],
-      "questWikiTitles": [
-        "When the Unknown Thrums"
-      ]
-    },
-    {
-      "characterId": "chisa",
-      "versionHalf": "3.2-a",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
       "version": "3.2",
       "half": "a",
+      "versionHalf": "3.2-a",
       "lineCount": 22,
       "encoreStoryIds": [
         100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
       ]
     },
     {
       "characterId": "chisa",
-      "versionHalf": "3.4-b",
+      "questId": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
+      "version": "2.8",
+      "half": "a",
+      "versionHalf": "2.8-a",
+      "lineCount": 251,
+      "encoreStoryIds": [
+        100030
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 7,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "questId": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100032
       ]
     },
     {
       "characterId": "chixia",
-      "versionHalf": "1.0-a",
+      "questId": "a-new-companion",
+      "wikiTitle": "A New Companion",
+      "nameZh": "行路遇新知",
       "version": "1.0",
       "half": "a",
+      "versionHalf": "1.0-a",
       "lineCount": 37,
       "encoreStoryIds": [
         100010
-      ],
-      "questNamesZh": [
-        "行路遇新知"
-      ],
-      "questWikiTitles": [
-        "A New Companion"
       ]
     },
     {
       "characterId": "chixia",
-      "versionHalf": "1.3-a",
-      "version": "1.3",
+      "questId": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
       "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
       "lineCount": 6,
       "encoreStoryIds": [
         100012
-      ],
-      "questNamesZh": [
-        "行至海岸尽头"
-      ],
-      "questWikiTitles": [
-        "To the Shore's End"
       ]
     },
     {
-      "characterId": "ciaccona",
-      "versionHalf": "2.2-a",
-      "version": "2.2",
+      "characterId": "chixia",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
       "half": "a",
-      "lineCount": 37,
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
       "encoreStoryIds": [
-        100019
-      ],
-      "questNamesZh": [
-        "圣者，忤逆者，告死者"
-      ],
-      "questWikiTitles": [
-        "The Maiden, The Defier, The Death Crier"
+        100001
       ]
     },
     {
-      "characterId": "ciaccona",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
+      "characterId": "chixia",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
       "half": "a",
-      "lineCount": 8,
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
       "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
+        100001
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
       ]
     },
     {
       "characterId": "ciaccona",
-      "versionHalf": "2.7-b",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
       "half": "b",
+      "versionHalf": "2.7-b",
       "lineCount": 26,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
       ]
     },
     {
-      "characterId": "denia",
-      "versionHalf": "3.2-a",
-      "version": "3.2",
+      "characterId": "ciaccona",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
       "half": "a",
-      "lineCount": 51,
+      "versionHalf": "2.7-a",
+      "lineCount": 4,
       "encoreStoryIds": [
-        100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
+        100028
+      ]
+    },
+    {
+      "characterId": "ciaccona",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "characterId": "ciaccona",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100019
       ]
     },
     {
       "characterId": "denia",
-      "versionHalf": "3.2-b",
-      "version": "3.2",
-      "half": "b",
-      "lineCount": 3,
-      "encoreStoryIds": [
-        100038
-      ],
-      "questNamesZh": [
-        "影面颠倒的兔影"
-      ],
-      "questWikiTitles": [
-        "Rabbit Reflected in Shades"
-      ]
-    },
-    {
-      "characterId": "denia",
-      "versionHalf": "3.3-a",
+      "questId": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
       "version": "3.3",
-      "half": "a",
-      "lineCount": 3,
-      "encoreStoryIds": [
-        100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
-      ]
-    },
-    {
-      "characterId": "denia",
+      "half": "b",
       "versionHalf": "3.3-b",
-      "version": "3.3",
-      "half": "b",
       "lineCount": 238,
       "encoreStoryIds": [
         100042
-      ],
-      "questNamesZh": [
-        "在熔解的夜空下"
-      ],
-      "questWikiTitles": [
-        "Beneath a Melting Night Sky"
+      ]
+    },
+    {
+      "characterId": "denia",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 51,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "characterId": "denia",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100038
+      ]
+    },
+    {
+      "characterId": "denia",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100040
       ]
     },
     {
       "characterId": "encore",
-      "versionHalf": "2.7-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
       "version": "2.7",
       "half": "a",
+      "versionHalf": "2.7-a",
       "lineCount": 1,
       "encoreStoryIds": [
         100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
       ]
     },
     {
       "characterId": "galbrena",
-      "versionHalf": "2.7-a",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
       "version": "2.7",
       "half": "a",
-      "lineCount": 377,
+      "versionHalf": "2.7-a",
+      "lineCount": 284,
       "encoreStoryIds": [
-        100027,
         100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
       ]
     },
     {
-      "characterId": "hiyuki",
-      "versionHalf": "3.2-b",
-      "version": "3.2",
-      "half": "b",
-      "lineCount": 9,
-      "encoreStoryIds": [
-        100038
-      ],
-      "questNamesZh": [
-        "影面颠倒的兔影"
-      ],
-      "questWikiTitles": [
-        "Rabbit Reflected in Shades"
-      ]
-    },
-    {
-      "characterId": "hiyuki",
-      "versionHalf": "3.3-a",
-      "version": "3.3",
+      "characterId": "galbrena",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
       "half": "a",
-      "lineCount": 145,
+      "versionHalf": "2.7-a",
+      "lineCount": 93,
       "encoreStoryIds": [
-        100039,
-        100040
-      ],
-      "questNamesZh": [
-        "愿系铃中",
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays",
-        "Wishes in the Bell"
+        100027
       ]
     },
     {
       "characterId": "hiyuki",
-      "versionHalf": "3.3-b",
+      "questId": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
       "version": "3.3",
       "half": "b",
+      "versionHalf": "3.3-b",
       "lineCount": 4,
       "encoreStoryIds": [
         100042
-      ],
-      "questNamesZh": [
-        "在熔解的夜空下"
-      ],
-      "questWikiTitles": [
-        "Beneath a Melting Night Sky"
       ]
     },
     {
       "characterId": "hiyuki",
-      "versionHalf": "3.4-b",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100038
+      ]
+    },
+    {
+      "characterId": "hiyuki",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 75,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "characterId": "hiyuki",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 4,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
-      "characterId": "iuno",
-      "versionHalf": "2.3-a",
-      "version": "2.3",
+      "characterId": "hiyuki",
+      "questId": "wishes-in-the-bell",
+      "wikiTitle": "Wishes in the Bell",
+      "nameZh": "愿系铃中",
+      "version": "3.3",
       "half": "a",
-      "lineCount": 18,
+      "versionHalf": "3.3-a",
+      "lineCount": 70,
       "encoreStoryIds": [
-        100024
-      ],
-      "questNamesZh": [
-        "铁锈，剑与烈阳"
-      ],
-      "questWikiTitles": [
-        "Rust, Sword and the Sun"
+        100039
       ]
     },
     {
       "characterId": "iuno",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
-      "half": "a",
-      "lineCount": 9,
-      "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
-      ]
-    },
-    {
-      "characterId": "iuno",
-      "versionHalf": "2.6-a",
-      "version": "2.6",
-      "half": "a",
-      "lineCount": 143,
-      "encoreStoryIds": [
-        100025
-      ],
-      "questNamesZh": [
-        "灼我以烈阳"
-      ],
-      "questWikiTitles": [
-        "By Sun's Burning Hand"
-      ]
-    },
-    {
-      "characterId": "iuno",
-      "versionHalf": "2.6-b",
+      "questId": "by-moons-fated-light",
+      "wikiTitle": "By Moon's Fated Light",
+      "nameZh": "今夜，注定属于月亮",
       "version": "2.6",
       "half": "b",
+      "versionHalf": "2.6-b",
       "lineCount": 215,
       "encoreStoryIds": [
         100026
-      ],
-      "questNamesZh": [
-        "今夜，注定属于月亮"
-      ],
-      "questWikiTitles": [
-        "By Moon's Fated Light"
       ]
     },
     {
       "characterId": "iuno",
-      "versionHalf": "2.7-a",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "lineCount": 143,
+      "encoreStoryIds": [
+        100025
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
       "version": "2.7",
       "half": "a",
+      "versionHalf": "2.7-a",
       "lineCount": 63,
       "encoreStoryIds": [
         100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "questId": "rust-sword-and-the-sun",
+      "wikiTitle": "Rust, Sword and the Sun",
+      "nameZh": "铁锈，剑与烈阳",
+      "version": "2.3",
+      "half": "a",
+      "versionHalf": "2.3-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100024
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100021
       ]
     },
     {
       "characterId": "jinhsi",
-      "versionHalf": "1.1-a",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "jinhsi",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "jinhsi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "jinhsi",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "jinhsi",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "jinhsi",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
       "version": "1.1",
       "half": "a",
+      "versionHalf": "1.1-a",
       "lineCount": 149,
       "encoreStoryIds": [
         100011
-      ],
-      "questNamesZh": [
-        "往岁乘霄醒惊蛰"
-      ],
-      "questWikiTitles": [
-        "Thaw of Eons"
       ]
     },
     {
-      "characterId": "lucilla",
-      "versionHalf": "3.1-a",
-      "version": "3.1",
+      "characterId": "jinhsi",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
       "half": "a",
-      "lineCount": 36,
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
       "encoreStoryIds": [
-        100035
-      ],
-      "questNamesZh": [
-        "远航星"
-      ],
-      "questWikiTitles": [
-        "The Star That Voyages Far"
+        100001
       ]
     },
     {
       "characterId": "lucilla",
-      "versionHalf": "3.1-b",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
       "version": "3.1",
       "half": "b",
+      "versionHalf": "3.1-b",
       "lineCount": 21,
       "encoreStoryIds": [
         100036
-      ],
-      "questNamesZh": [
-        "日光落处"
-      ],
-      "questWikiTitles": [
-        "All That Sunlight Touches"
       ]
     },
     {
       "characterId": "lucilla",
-      "versionHalf": "3.2-a",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
       "version": "3.2",
       "half": "a",
+      "versionHalf": "3.2-a",
       "lineCount": 128,
       "encoreStoryIds": [
         100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
       ]
     },
     {
       "characterId": "lucilla",
-      "versionHalf": "3.2-b",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
       "version": "3.2",
       "half": "b",
+      "versionHalf": "3.2-b",
       "lineCount": 233,
       "encoreStoryIds": [
         100038
-      ],
-      "questNamesZh": [
-        "影面颠倒的兔影"
-      ],
-      "questWikiTitles": [
-        "Rabbit Reflected in Shades"
       ]
     },
     {
       "characterId": "lucilla",
-      "versionHalf": "3.3-a",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
       "version": "3.3",
       "half": "a",
-      "lineCount": 57,
+      "versionHalf": "3.3-a",
+      "lineCount": 38,
       "encoreStoryIds": [
-        100039,
         100040
-      ],
-      "questNamesZh": [
-        "愿系铃中",
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays",
-        "Wishes in the Bell"
       ]
     },
     {
       "characterId": "lucilla",
-      "versionHalf": "3.4-b",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 36,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 321,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
-      "characterId": "lupa",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
+      "characterId": "lucilla",
+      "questId": "wishes-in-the-bell",
+      "wikiTitle": "Wishes in the Bell",
+      "nameZh": "愿系铃中",
+      "version": "3.3",
       "half": "a",
-      "lineCount": 258,
+      "versionHalf": "3.3-a",
+      "lineCount": 19,
       "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
+        100039
       ]
     },
     {
       "characterId": "lupa",
-      "versionHalf": "2.4-b",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "lupa",
+      "questId": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
       "version": "2.4",
       "half": "b",
+      "versionHalf": "2.4-b",
       "lineCount": 193,
       "encoreStoryIds": [
         100022
-      ],
-      "questNamesZh": [
-        "燃烧的心"
-      ],
-      "questWikiTitles": [
-        "Flames of Heart"
       ]
     },
     {
       "characterId": "lupa",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
       "half": "a",
-      "lineCount": 14,
+      "versionHalf": "2.4-a",
+      "lineCount": 258,
       "encoreStoryIds": [
-        100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
+        100021
       ]
     },
     {
       "characterId": "luuk-herssen",
-      "versionHalf": "3.1-a",
-      "version": "3.1",
-      "half": "a",
-      "lineCount": 63,
-      "encoreStoryIds": [
-        100035
-      ],
-      "questNamesZh": [
-        "远航星"
-      ],
-      "questWikiTitles": [
-        "The Star That Voyages Far"
-      ]
-    },
-    {
-      "characterId": "luuk-herssen",
-      "versionHalf": "3.1-b",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
       "version": "3.1",
       "half": "b",
+      "versionHalf": "3.1-b",
       "lineCount": 177,
       "encoreStoryIds": [
         100036
-      ],
-      "questNamesZh": [
-        "日光落处"
-      ],
-      "questWikiTitles": [
-        "All That Sunlight Touches"
       ]
     },
     {
       "characterId": "luuk-herssen",
-      "versionHalf": "3.2-a",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
       "version": "3.2",
       "half": "a",
+      "versionHalf": "3.2-a",
       "lineCount": 15,
       "encoreStoryIds": [
         100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
       ]
     },
     {
       "characterId": "luuk-herssen",
-      "versionHalf": "3.3-a",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
       "version": "3.3",
       "half": "a",
+      "versionHalf": "3.3-a",
       "lineCount": 30,
       "encoreStoryIds": [
         100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
       ]
     },
     {
-      "characterId": "lynae",
-      "versionHalf": "3.0-a",
-      "version": "3.0",
+      "characterId": "luuk-herssen",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
       "half": "a",
-      "lineCount": 4,
+      "versionHalf": "3.1-a",
+      "lineCount": 63,
       "encoreStoryIds": [
-        100032
-      ],
-      "questNamesZh": [
-        "未知的既感"
-      ],
-      "questWikiTitles": [
-        "When the Unknown Thrums"
+        100035
       ]
     },
     {
       "characterId": "lynae",
-      "versionHalf": "3.2-a",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
       "version": "3.2",
       "half": "a",
+      "versionHalf": "3.2-a",
       "lineCount": 52,
       "encoreStoryIds": [
         100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
       ]
     },
     {
       "characterId": "lynae",
-      "versionHalf": "3.3-a",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
       "version": "3.3",
       "half": "a",
+      "versionHalf": "3.3-a",
       "lineCount": 23,
       "encoreStoryIds": [
         100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
       ]
     },
     {
       "characterId": "lynae",
-      "versionHalf": "3.4-b",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 12,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
-      "characterId": "mornye",
-      "versionHalf": "3.1-a",
-      "version": "3.1",
+      "characterId": "lynae",
+      "questId": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
       "half": "a",
+      "versionHalf": "3.0-a",
       "lineCount": 4,
       "encoreStoryIds": [
-        100035
-      ],
-      "questNamesZh": [
-        "远航星"
-      ],
-      "questWikiTitles": [
-        "The Star That Voyages Far"
+        100032
       ]
     },
     {
       "characterId": "mornye",
-      "versionHalf": "3.2-a",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
       "version": "3.2",
       "half": "a",
+      "versionHalf": "3.2-a",
       "lineCount": 4,
       "encoreStoryIds": [
         100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
       ]
     },
     {
       "characterId": "mornye",
-      "versionHalf": "3.3-a",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
       "version": "3.3",
       "half": "a",
+      "versionHalf": "3.3-a",
       "lineCount": 19,
       "encoreStoryIds": [
         100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
       ]
     },
     {
       "characterId": "mornye",
-      "versionHalf": "3.4-b",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 13,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
       "characterId": "phoebe",
-      "versionHalf": "2.0-a",
-      "version": "2.0",
-      "half": "a",
-      "lineCount": 66,
-      "encoreStoryIds": [
-        100014,
-        100016
-      ],
-      "questNamesZh": [
-        "夜与昼，均请摘下面纱",
-        "如一叶小舟穿行于茫茫海洋"
-      ],
-      "questWikiTitles": [
-        "Through the Sea Thou Break",
-        "Veils Off in Sun or Shadow"
-      ]
-    },
-    {
-      "characterId": "phoebe",
-      "versionHalf": "2.0-b",
-      "version": "2.0",
-      "half": "b",
-      "lineCount": 9,
-      "encoreStoryIds": [
-        100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
-      ]
-    },
-    {
-      "characterId": "phoebe",
-      "versionHalf": "2.1-a",
-      "version": "2.1",
-      "half": "a",
-      "lineCount": 100,
-      "encoreStoryIds": [
-        100018
-      ],
-      "questNamesZh": [
-        "老人鱼海"
-      ],
-      "questWikiTitles": [
-        "Old Man and the Whale"
-      ]
-    },
-    {
-      "characterId": "phoebe",
-      "versionHalf": "2.7-a",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
-      "half": "a",
-      "lineCount": 24,
-      "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
-      ]
-    },
-    {
-      "characterId": "phoebe",
+      "half": "b",
       "versionHalf": "2.7-b",
-      "version": "2.7",
-      "half": "b",
       "lineCount": 5,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
       ]
     },
     {
-      "characterId": "phrolova",
-      "versionHalf": "1.1-a",
-      "version": "1.1",
-      "half": "a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100011
-      ],
-      "questNamesZh": [
-        "往岁乘霄醒惊蛰"
-      ],
-      "questWikiTitles": [
-        "Thaw of Eons"
-      ]
-    },
-    {
-      "characterId": "phrolova",
-      "versionHalf": "2.0-a",
-      "version": "2.0",
-      "half": "a",
-      "lineCount": 3,
-      "encoreStoryIds": [
-        100015
-      ],
-      "questNamesZh": [
-        "那神圣微风时常吹入"
-      ],
-      "questWikiTitles": [
-        "The Sacred Breeze So Often Breathes"
-      ]
-    },
-    {
-      "characterId": "phrolova",
-      "versionHalf": "2.0-b",
-      "version": "2.0",
-      "half": "b",
-      "lineCount": 37,
-      "encoreStoryIds": [
-        100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
-      ]
-    },
-    {
-      "characterId": "phrolova",
-      "versionHalf": "2.4-a",
-      "version": "2.4",
-      "half": "a",
-      "lineCount": 30,
-      "encoreStoryIds": [
-        100021
-      ],
-      "questNamesZh": [
-        "荣耀暗面"
-      ],
-      "questWikiTitles": [
-        "Shadow of Glory"
-      ]
-    },
-    {
-      "characterId": "phrolova",
-      "versionHalf": "2.4-b",
-      "version": "2.4",
-      "half": "b",
-      "lineCount": 12,
-      "encoreStoryIds": [
-        100022
-      ],
-      "questNamesZh": [
-        "燃烧的心"
-      ],
-      "questWikiTitles": [
-        "Flames of Heart"
-      ]
-    },
-    {
-      "characterId": "phrolova",
-      "versionHalf": "2.5-a",
-      "version": "2.5",
-      "half": "a",
-      "lineCount": 328,
-      "encoreStoryIds": [
-        100023
-      ],
-      "questNamesZh": [
-        "捕梦于神秘园中"
-      ],
-      "questWikiTitles": [
-        "Dreamcatchers in the Secret Gardens"
-      ]
-    },
-    {
-      "characterId": "phrolova",
-      "versionHalf": "2.7-a",
+      "characterId": "phoebe",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
       "version": "2.7",
       "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "questId": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
+      "version": "2.1",
+      "half": "a",
+      "versionHalf": "2.1-a",
+      "lineCount": 100,
+      "encoreStoryIds": [
+        100018
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100014
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 61,
+      "encoreStoryIds": [
+        100016
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
       "lineCount": 6,
       "encoreStoryIds": [
         100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
       ]
     },
     {
-      "characterId": "qiuyuan",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
+      "characterId": "phrolova",
+      "questId": "dreamcatchers-in-the-secret-gardens",
+      "wikiTitle": "Dreamcatchers in the Secret Gardens",
+      "nameZh": "捕梦于神秘园中",
+      "version": "2.5",
       "half": "a",
-      "lineCount": 31,
+      "versionHalf": "2.5-a",
+      "lineCount": 328,
       "encoreStoryIds": [
-        100028
-      ],
-      "questNamesZh": [
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides"
+        100023
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "questId": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
+      "version": "2.4",
+      "half": "b",
+      "versionHalf": "2.4-b",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100022
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
+      "version": "1.1",
+      "half": "a",
+      "versionHalf": "1.1-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100011
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "questId": "the-sacred-breeze-so-often-breathes",
+      "wikiTitle": "The Sacred Breeze So Often Breathes",
+      "nameZh": "那神圣微风时常吹入",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100015
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100017
       ]
     },
     {
       "characterId": "qiuyuan",
-      "versionHalf": "2.7-b",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
       "half": "b",
+      "versionHalf": "2.7-b",
       "lineCount": 146,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
+      ]
+    },
+    {
+      "characterId": "qiuyuan",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 31,
+      "encoreStoryIds": [
+        100028
       ]
     },
     {
       "characterId": "roccia",
-      "versionHalf": "2.0-b",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "roccia",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "characterId": "roccia",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
       "version": "2.0",
       "half": "b",
+      "versionHalf": "2.0-b",
       "lineCount": 148,
       "encoreStoryIds": [
         100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
-      ]
-    },
-    {
-      "characterId": "roccia",
-      "versionHalf": "2.7-a",
-      "version": "2.7",
-      "half": "a",
-      "lineCount": 11,
-      "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
       ]
     },
     {
       "characterId": "sanhua",
-      "versionHalf": "1.1-a",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
       "version": "1.1",
       "half": "a",
+      "versionHalf": "1.1-a",
       "lineCount": 21,
       "encoreStoryIds": [
         100011
-      ],
-      "questNamesZh": [
-        "往岁乘霄醒惊蛰"
-      ],
-      "questWikiTitles": [
-        "Thaw of Eons"
       ]
     },
     {
       "characterId": "shorekeeper",
-      "versionHalf": "1.3-a",
-      "version": "1.3",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
       "half": "a",
+      "versionHalf": "1.4-a",
       "lineCount": 308,
       "encoreStoryIds": [
         100012
-      ],
-      "questNamesZh": [
-        "行至海岸尽头"
-      ],
-      "questWikiTitles": [
-        "To the Shore's End"
       ]
     },
     {
       "characterId": "shorekeeper",
-      "versionHalf": "2.0-a",
-      "version": "2.0",
-      "half": "a",
-      "lineCount": 37,
-      "encoreStoryIds": [
-        100014
-      ],
-      "questNamesZh": [
-        "如一叶小舟穿行于茫茫海洋"
-      ],
-      "questWikiTitles": [
-        "Through the Sea Thou Break"
-      ]
-    },
-    {
-      "characterId": "shorekeeper",
-      "versionHalf": "2.8-a",
+      "questId": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
       "version": "2.8",
       "half": "a",
+      "versionHalf": "2.8-a",
       "lineCount": 6,
       "encoreStoryIds": [
         100030
-      ],
-      "questNamesZh": [
-        "曙光停摆于荒地之上"
-      ],
-      "questWikiTitles": [
-        "Stagnant Dawn on Wastelands"
       ]
     },
     {
       "characterId": "shorekeeper",
-      "versionHalf": "3.0-a",
-      "version": "3.0",
-      "half": "a",
-      "lineCount": 29,
-      "encoreStoryIds": [
-        100032
-      ],
-      "questNamesZh": [
-        "未知的既感"
-      ],
-      "questWikiTitles": [
-        "When the Unknown Thrums"
-      ]
-    },
-    {
-      "characterId": "shorekeeper",
-      "versionHalf": "3.3-a",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
       "version": "3.3",
       "half": "a",
+      "versionHalf": "3.3-a",
       "lineCount": 17,
       "encoreStoryIds": [
         100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
       ]
     },
     {
-      "characterId": "sigrika",
-      "versionHalf": "3.1-a",
-      "version": "3.1",
+      "characterId": "shorekeeper",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
       "half": "a",
-      "lineCount": 1,
+      "versionHalf": "2.0-a",
+      "lineCount": 37,
       "encoreStoryIds": [
-        100035
-      ],
-      "questNamesZh": [
-        "远航星"
-      ],
-      "questWikiTitles": [
-        "The Star That Voyages Far"
+        100014
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 308,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "questId": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        100032
       ]
     },
     {
       "characterId": "sigrika",
-      "versionHalf": "3.1-b",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
       "version": "3.1",
       "half": "b",
+      "versionHalf": "3.1-b",
       "lineCount": 4,
       "encoreStoryIds": [
         100036
-      ],
-      "questNamesZh": [
-        "日光落处"
-      ],
-      "questWikiTitles": [
-        "All That Sunlight Touches"
       ]
     },
     {
       "characterId": "sigrika",
-      "versionHalf": "3.2-a",
-      "version": "3.2",
-      "half": "a",
-      "lineCount": 409,
-      "encoreStoryIds": [
-        100037
-      ],
-      "questNamesZh": [
-        "影下不落的黄金"
-      ],
-      "questWikiTitles": [
-        "Gold Suspended in Shadows"
-      ]
-    },
-    {
-      "characterId": "sigrika",
-      "versionHalf": "3.3-a",
-      "version": "3.3",
-      "half": "a",
-      "lineCount": 1,
-      "encoreStoryIds": [
-        100040
-      ],
-      "questNamesZh": [
-        "昨夜群星"
-      ],
-      "questWikiTitles": [
-        "Starlights from Yesterdays"
-      ]
-    },
-    {
-      "characterId": "sigrika",
-      "versionHalf": "3.3-b",
+      "questId": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
       "version": "3.3",
       "half": "b",
+      "versionHalf": "3.3-b",
       "lineCount": 52,
       "encoreStoryIds": [
         100042
-      ],
-      "questNamesZh": [
-        "在熔解的夜空下"
-      ],
-      "questWikiTitles": [
-        "Beneath a Melting Night Sky"
       ]
     },
     {
       "characterId": "sigrika",
-      "versionHalf": "3.4-b",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 409,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
+      "versionHalf": "3.4-b",
       "lineCount": 12,
       "encoreStoryIds": [
         100044
-      ],
-      "questNamesZh": [
-        "我们选择天空"
-      ],
-      "questWikiTitles": [
-        "We Choose the Sky"
       ]
     },
     {
       "characterId": "yangyang",
-      "versionHalf": "1.0-a",
+      "questId": "a-new-companion",
+      "wikiTitle": "A New Companion",
+      "nameZh": "行路遇新知",
       "version": "1.0",
       "half": "a",
+      "versionHalf": "1.0-a",
       "lineCount": 31,
       "encoreStoryIds": [
         100010
-      ],
-      "questNamesZh": [
-        "行路遇新知"
-      ],
-      "questWikiTitles": [
-        "A New Companion"
       ]
     },
     {
       "characterId": "yangyang",
-      "versionHalf": "1.3-a",
-      "version": "1.3",
+      "questId": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
       "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
       "lineCount": 33,
       "encoreStoryIds": [
         100012
-      ],
-      "questNamesZh": [
-        "行至海岸尽头"
-      ],
-      "questWikiTitles": [
-        "To the Shore's End"
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
       ]
     },
     {
       "characterId": "youhu",
-      "versionHalf": "1.3-a",
-      "version": "1.3",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
       "half": "a",
+      "versionHalf": "1.4-a",
       "lineCount": 26,
       "encoreStoryIds": [
         100012
-      ],
-      "questNamesZh": [
-        "行至海岸尽头"
-      ],
-      "questWikiTitles": [
-        "To the Shore's End"
       ]
     },
     {
-      "characterId": "zani",
-      "versionHalf": "2.0-a",
-      "version": "2.0",
+      "characterId": "youhu",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
       "half": "a",
-      "lineCount": 247,
+      "versionHalf": "1.3-a",
+      "lineCount": 26,
       "encoreStoryIds": [
-        100015,
-        100016
-      ],
-      "questNamesZh": [
-        "夜与昼，均请摘下面纱",
-        "那神圣微风时常吹入"
-      ],
-      "questWikiTitles": [
-        "The Sacred Breeze So Often Breathes",
-        "Veils Off in Sun or Shadow"
+        100012
       ]
     },
     {
       "characterId": "zani",
-      "versionHalf": "2.0-b",
-      "version": "2.0",
-      "half": "b",
-      "lineCount": 9,
-      "encoreStoryIds": [
-        100017
-      ],
-      "questNamesZh": [
-        "昔我悲伤，今却歌唱"
-      ],
-      "questWikiTitles": [
-        "What Yesterday Wept, Today Doth Sing"
-      ]
-    },
-    {
-      "characterId": "zani",
-      "versionHalf": "2.7-a",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
       "version": "2.7",
-      "half": "a",
-      "lineCount": 20,
-      "encoreStoryIds": [
-        100027,
-        100028
-      ],
-      "questNamesZh": [
-        "已逝的必将归来",
-        "暗潮将映的黎明"
-      ],
-      "questWikiTitles": [
-        "Dawn Breaks on Dark Tides",
-        "The Bygone Shall Always Return"
-      ]
-    },
-    {
-      "characterId": "zani",
+      "half": "b",
       "versionHalf": "2.7-b",
-      "version": "2.7",
-      "half": "b",
       "lineCount": 2,
       "encoreStoryIds": [
         100029
-      ],
-      "questNamesZh": [
-        "独在异乡为异客"
-      ],
-      "questWikiTitles": [
-        "A Stranger in a Strange Land"
+      ]
+    },
+    {
+      "characterId": "zani",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "characterId": "zani",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "characterId": "zani",
+      "questId": "the-sacred-breeze-so-often-breathes",
+      "wikiTitle": "The Sacred Breeze So Often Breathes",
+      "nameZh": "那神圣微风时常吹入",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 126,
+      "encoreStoryIds": [
+        100015
+      ]
+    },
+    {
+      "characterId": "zani",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 121,
+      "encoreStoryIds": [
+        100016
+      ]
+    },
+    {
+      "characterId": "zani",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100017
       ]
     }
   ]
