@@ -80,6 +80,36 @@ export const generatedStatsSchema = z.object({
   rows: z.array(voiceLineStatRowSchema),
 });
 
+export const versionHalfRecordSchema = z.object({
+  id: z.string().min(1),
+  version: z.string().min(1),
+  half: z.enum(["a", "b"]),
+  label: z.string().min(1),
+  labelZh: z.string().min(1),
+  startDate: z.string().min(1),
+  endDate: z.string().min(1),
+});
+
+export const storyAppearanceRowSchema = z.object({
+  characterId: z.string().min(1),
+  versionHalf: z.string().min(1),
+  version: z.string().min(1),
+  half: z.enum(["a", "b"]),
+  appearanceCount: z.number().int().min(0),
+  questIds: z.array(z.string()),
+  questTitles: z.array(z.string()),
+  questTitlesZh: z.array(z.string()),
+});
+
+export const versionHalfVoiceRowSchema = z.object({
+  characterId: z.string().min(1),
+  locale: localeSchema,
+  versionHalf: z.string().min(1),
+  version: z.string().min(1),
+  half: z.enum(["a", "b"]),
+  lineCount: z.number().int().min(0),
+});
+
 export const voiceLineDetailRowSchema = z.object({
   characterId: z.string().min(1),
   locale: localeSchema,

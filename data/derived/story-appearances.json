@@ -1,0 +1,2557 @@
+{
+  "generatedAt": "2026-06-17T23:12:24.037Z",
+  "source": {
+    "questMapFile": "content/stories/quest-half-map.json",
+    "fandomApi": "https://wutheringwaves.fandom.com/api.php",
+    "appearanceRule": "main_quest_infobox_characters_only"
+  },
+  "questCount": 39,
+  "rows": [
+    {
+      "characterId": "aalto",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "grand-warstorm",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "Grand Warstorm",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴",
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "aalto",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "through-the-sea-thou-break"
+      ],
+      "questTitles": [
+        "Through the Sea Thou Break"
+      ],
+      "questTitlesZh": [
+        "如一叶小舟穿行于茫茫海洋"
+      ]
+    },
+    {
+      "characterId": "aalto",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "aalto",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "aemeath",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "when-the-unknown-thrums"
+      ],
+      "questTitles": [
+        "When the Unknown Thrums"
+      ],
+      "questTitlesZh": [
+        "未知的既感"
+      ]
+    },
+    {
+      "characterId": "aemeath",
+      "versionHalf": "3.1-a",
+      "version": "3.1",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-star-that-voyages-far"
+      ],
+      "questTitles": [
+        "The Star That Voyages Far"
+      ],
+      "questTitlesZh": [
+        "远航星"
+      ]
+    },
+    {
+      "characterId": "aemeath",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "aemeath",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-suns-burning-hand"
+      ],
+      "questTitles": [
+        "By Sun's Burning Hand"
+      ],
+      "questTitlesZh": [
+        "灼我以烈阳"
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "versionHalf": "2.6-b",
+      "version": "2.6",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-moons-fated-light"
+      ],
+      "questTitles": [
+        "By Moon's Fated Light"
+      ],
+      "questTitlesZh": [
+        "今夜，注定属于月亮"
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "augusta",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "baizhi",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 3,
+      "questIds": [
+        "first-resonance",
+        "grand-warstorm",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "First Resonance",
+        "Grand Warstorm",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴",
+        "大战风暴",
+        "第一次共振"
+      ]
+    },
+    {
+      "characterId": "brant",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "through-the-sea-thou-break"
+      ],
+      "questTitles": [
+        "Through the Sea Thou Break"
+      ],
+      "questTitlesZh": [
+        "如一叶小舟穿行于茫茫海洋"
+      ]
+    },
+    {
+      "characterId": "brant",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "brant",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "buling",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "buling",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-suns-burning-hand"
+      ],
+      "questTitles": [
+        "By Sun's Burning Hand"
+      ],
+      "questTitlesZh": [
+        "灼我以烈阳"
+      ]
+    },
+    {
+      "characterId": "buling",
+      "versionHalf": "2.8-a",
+      "version": "2.8",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "stagnant-dawn-on-wastelands"
+      ],
+      "questTitles": [
+        "Stagnant Dawn on Wastelands"
+      ],
+      "questTitlesZh": [
+        "曙光停摆于荒地之上"
+      ]
+    },
+    {
+      "characterId": "buling",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flowing-starlight-in-the-iris"
+      ],
+      "questTitles": [
+        "Flowing Starlight in the Iris"
+      ],
+      "questTitlesZh": [
+        "星光流转于眼眸之间"
+      ]
+    },
+    {
+      "characterId": "calcharo",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "camellya",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴"
+      ]
+    },
+    {
+      "characterId": "camellya",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "camellya",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flowing-starlight-in-the-iris"
+      ],
+      "questTitles": [
+        "Flowing Starlight in the Iris"
+      ],
+      "questTitlesZh": [
+        "星光流转于眼眸之间"
+      ]
+    },
+    {
+      "characterId": "cantarella",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-maiden-the-defier-the-death-crier"
+      ],
+      "questTitles": [
+        "The Maiden, The Defier, The Death Crier"
+      ],
+      "questTitlesZh": [
+        "圣者，忤逆者，告死者"
+      ]
+    },
+    {
+      "characterId": "cantarella",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "cantarella",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "cantarella",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "carlotta",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "the-sacred-breeze-so-often-breathes",
+        "veils-off-in-sun-or-shadow"
+      ],
+      "questTitles": [
+        "The Sacred Breeze So Often Breathes",
+        "Veils Off in Sun or Shadow"
+      ],
+      "questTitlesZh": [
+        "夜与昼，均请摘下面纱",
+        "那神圣微风时常吹入"
+      ]
+    },
+    {
+      "characterId": "carlotta",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "carlotta",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-maiden-the-defier-the-death-crier"
+      ],
+      "questTitles": [
+        "The Maiden, The Defier, The Death Crier"
+      ],
+      "questTitlesZh": [
+        "圣者，忤逆者，告死者"
+      ]
+    },
+    {
+      "characterId": "carlotta",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "carlotta",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-maiden-the-defier-the-death-crier"
+      ],
+      "questTitles": [
+        "The Maiden, The Defier, The Death Crier"
+      ],
+      "questTitlesZh": [
+        "圣者，忤逆者，告死者"
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "versionHalf": "2.4-b",
+      "version": "2.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flames-of-heart"
+      ],
+      "questTitles": [
+        "Flames of Heart"
+      ],
+      "questTitlesZh": [
+        "燃烧的心"
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "versionHalf": "2.5-a",
+      "version": "2.5",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dreamcatchers-in-the-secret-gardens"
+      ],
+      "questTitles": [
+        "Dreamcatchers in the Secret Gardens"
+      ],
+      "questTitlesZh": [
+        "捕梦于神秘园中"
+      ]
+    },
+    {
+      "characterId": "cartethyia",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "versionHalf": "2.8-a",
+      "version": "2.8",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "stagnant-dawn-on-wastelands"
+      ],
+      "questTitles": [
+        "Stagnant Dawn on Wastelands"
+      ],
+      "questTitlesZh": [
+        "曙光停摆于荒地之上"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flowing-starlight-in-the-iris"
+      ],
+      "questTitles": [
+        "Flowing Starlight in the Iris"
+      ],
+      "questTitlesZh": [
+        "星光流转于眼眸之间"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "what-burns-beneath-frostlands",
+        "when-the-unknown-thrums"
+      ],
+      "questTitles": [
+        "What Burns Beneath Frostlands",
+        "When the Unknown Thrums"
+      ],
+      "questTitlesZh": [
+        "冰原下的星炬",
+        "未知的既感"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "chisa",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "chixia",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 6,
+      "questIds": [
+        "a-new-companion",
+        "clashing-blades",
+        "echoing-marche",
+        "first-resonance",
+        "grand-warstorm",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "A New Companion",
+        "Clashing Blades",
+        "Echoing Marche",
+        "First Resonance",
+        "Grand Warstorm",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴",
+        "呼应马尔凯",
+        "大战风暴",
+        "碰撞刀片",
+        "第一次共振",
+        "行路遇新知"
+      ]
+    },
+    {
+      "characterId": "ciaccona",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-maiden-the-defier-the-death-crier"
+      ],
+      "questTitles": [
+        "The Maiden, The Defier, The Death Crier"
+      ],
+      "questTitlesZh": [
+        "圣者，忤逆者，告死者"
+      ]
+    },
+    {
+      "characterId": "ciaccona",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "ciaccona",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "denia",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "denia",
+      "versionHalf": "3.2-b",
+      "version": "3.2",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "rabbit-reflected-in-shades"
+      ],
+      "questTitles": [
+        "Rabbit Reflected in Shades"
+      ],
+      "questTitlesZh": [
+        "影面颠倒的兔影"
+      ]
+    },
+    {
+      "characterId": "denia",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "denia",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "beneath-a-melting-night-sky"
+      ],
+      "questTitles": [
+        "Beneath a Melting Night Sky"
+      ],
+      "questTitlesZh": [
+        "在熔解的夜空下"
+      ]
+    },
+    {
+      "characterId": "encore",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "grand-warstorm",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "Grand Warstorm",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴",
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "encore",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "galbrena",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-suns-burning-hand"
+      ],
+      "questTitles": [
+        "By Sun's Burning Hand"
+      ],
+      "questTitlesZh": [
+        "灼我以烈阳"
+      ]
+    },
+    {
+      "characterId": "galbrena",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "hiyuki",
+      "versionHalf": "3.2-b",
+      "version": "3.2",
+      "half": "b",
+      "appearanceCount": 2,
+      "questIds": [
+        "rabbit-reflected-in-shades",
+        "the-flaming-red-from-tomorrow"
+      ],
+      "questTitles": [
+        "Rabbit Reflected in Shades",
+        "The Flaming Red from Tomorrow"
+      ],
+      "questTitlesZh": [
+        "影面颠倒的兔影",
+        "明日摇曳的绯影"
+      ]
+    },
+    {
+      "characterId": "hiyuki",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "starlights-from-yesterdays",
+        "wishes-in-the-bell"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays",
+        "Wishes in the Bell"
+      ],
+      "questTitlesZh": [
+        "愿系铃中",
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "hiyuki",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "beneath-a-melting-night-sky"
+      ],
+      "questTitles": [
+        "Beneath a Melting Night Sky"
+      ],
+      "questTitlesZh": [
+        "在熔解的夜空下"
+      ]
+    },
+    {
+      "characterId": "hiyuki",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-suns-burning-hand"
+      ],
+      "questTitles": [
+        "By Sun's Burning Hand"
+      ],
+      "questTitlesZh": [
+        "灼我以烈阳"
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "versionHalf": "2.6-b",
+      "version": "2.6",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-moons-fated-light"
+      ],
+      "questTitles": [
+        "By Moon's Fated Light"
+      ],
+      "questTitlesZh": [
+        "今夜，注定属于月亮"
+      ]
+    },
+    {
+      "characterId": "iuno",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "jianxin",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "echoing-marche",
+        "grand-warstorm"
+      ],
+      "questTitles": [
+        "Echoing Marche",
+        "Grand Warstorm"
+      ],
+      "questTitlesZh": [
+        "呼应马尔凯",
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "jinhsi",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 4,
+      "questIds": [
+        "clashing-blades",
+        "grand-warstorm",
+        "ominous-star",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "Clashing Blades",
+        "Grand Warstorm",
+        "Ominous Star",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "不祥之星",
+        "倒带雨滴",
+        "大战风暴",
+        "碰撞刀片"
+      ]
+    },
+    {
+      "characterId": "jiyan",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 3,
+      "questIds": [
+        "echoing-marche",
+        "grand-warstorm",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "Echoing Marche",
+        "Grand Warstorm",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴",
+        "呼应马尔凯",
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "lingyang",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "grand-warstorm"
+      ],
+      "questTitles": [
+        "Grand Warstorm"
+      ],
+      "questTitlesZh": [
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "lupa",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "lupa",
+      "versionHalf": "2.4-b",
+      "version": "2.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flames-of-heart"
+      ],
+      "questTitles": [
+        "Flames of Heart"
+      ],
+      "questTitlesZh": [
+        "燃烧的心"
+      ]
+    },
+    {
+      "characterId": "lupa",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "luuk-herssen",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-burns-beneath-frostlands"
+      ],
+      "questTitles": [
+        "What Burns Beneath Frostlands"
+      ],
+      "questTitlesZh": [
+        "冰原下的星炬"
+      ]
+    },
+    {
+      "characterId": "luuk-herssen",
+      "versionHalf": "3.0-b",
+      "version": "3.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "ode-to-the-second-sunrise"
+      ],
+      "questTitles": [
+        "Ode to the Second Sunrise"
+      ],
+      "questTitlesZh": [
+        "致第二次日出"
+      ]
+    },
+    {
+      "characterId": "luuk-herssen",
+      "versionHalf": "3.1-a",
+      "version": "3.1",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-star-that-voyages-far"
+      ],
+      "questTitles": [
+        "The Star That Voyages Far"
+      ],
+      "questTitlesZh": [
+        "远航星"
+      ]
+    },
+    {
+      "characterId": "luuk-herssen",
+      "versionHalf": "3.1-b",
+      "version": "3.1",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "all-that-sunlight-touches"
+      ],
+      "questTitles": [
+        "All That Sunlight Touches"
+      ],
+      "questTitlesZh": [
+        "日光落处"
+      ]
+    },
+    {
+      "characterId": "luuk-herssen",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "luuk-herssen",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "lynae",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "what-burns-beneath-frostlands",
+        "when-the-unknown-thrums"
+      ],
+      "questTitles": [
+        "What Burns Beneath Frostlands",
+        "When the Unknown Thrums"
+      ],
+      "questTitlesZh": [
+        "冰原下的星炬",
+        "未知的既感"
+      ]
+    },
+    {
+      "characterId": "lynae",
+      "versionHalf": "3.0-b",
+      "version": "3.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "ode-to-the-second-sunrise"
+      ],
+      "questTitles": [
+        "Ode to the Second Sunrise"
+      ],
+      "questTitlesZh": [
+        "致第二次日出"
+      ]
+    },
+    {
+      "characterId": "lynae",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "lynae",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "lynae",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-burns-beneath-frostlands"
+      ],
+      "questTitles": [
+        "What Burns Beneath Frostlands"
+      ],
+      "questTitlesZh": [
+        "冰原下的星炬"
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "versionHalf": "3.0-b",
+      "version": "3.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "ode-to-the-second-sunrise"
+      ],
+      "questTitles": [
+        "Ode to the Second Sunrise"
+      ],
+      "questTitlesZh": [
+        "致第二次日出"
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "versionHalf": "3.1-a",
+      "version": "3.1",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-star-that-voyages-far"
+      ],
+      "questTitles": [
+        "The Star That Voyages Far"
+      ],
+      "questTitlesZh": [
+        "远航星"
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "mornye",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "mortefi",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "first-resonance",
+        "grand-warstorm"
+      ],
+      "questTitles": [
+        "First Resonance",
+        "Grand Warstorm"
+      ],
+      "questTitlesZh": [
+        "大战风暴",
+        "第一次共振"
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 3,
+      "questIds": [
+        "the-sacred-breeze-so-often-breathes",
+        "through-the-sea-thou-break",
+        "veils-off-in-sun-or-shadow"
+      ],
+      "questTitles": [
+        "The Sacred Breeze So Often Breathes",
+        "Through the Sea Thou Break",
+        "Veils Off in Sun or Shadow"
+      ],
+      "questTitlesZh": [
+        "夜与昼，均请摘下面纱",
+        "如一叶小舟穿行于茫茫海洋",
+        "那神圣微风时常吹入"
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "phoebe",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "first-resonance",
+        "ominous-star"
+      ],
+      "questTitles": [
+        "First Resonance",
+        "Ominous Star"
+      ],
+      "questTitlesZh": [
+        "不祥之星",
+        "第一次共振"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-sacred-breeze-so-often-breathes"
+      ],
+      "questTitles": [
+        "The Sacred Breeze So Often Breathes"
+      ],
+      "questTitlesZh": [
+        "那神圣微风时常吹入"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "shadow-of-glory"
+      ],
+      "questTitles": [
+        "Shadow of Glory"
+      ],
+      "questTitlesZh": [
+        "荣耀暗面"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "2.4-b",
+      "version": "2.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flames-of-heart"
+      ],
+      "questTitles": [
+        "Flames of Heart"
+      ],
+      "questTitlesZh": [
+        "燃烧的心"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "2.5-a",
+      "version": "2.5",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dreamcatchers-in-the-secret-gardens"
+      ],
+      "questTitles": [
+        "Dreamcatchers in the Secret Gardens"
+      ],
+      "questTitlesZh": [
+        "捕梦于神秘园中"
+      ]
+    },
+    {
+      "characterId": "phrolova",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "qiuyuan",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "dawn-breaks-on-dark-tides"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides"
+      ],
+      "questTitlesZh": [
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "qiuyuan",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "roccia",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "through-the-sea-thou-break",
+        "veils-off-in-sun-or-shadow"
+      ],
+      "questTitles": [
+        "Through the Sea Thou Break",
+        "Veils Off in Sun or Shadow"
+      ],
+      "questTitlesZh": [
+        "夜与昼，均请摘下面纱",
+        "如一叶小舟穿行于茫茫海洋"
+      ]
+    },
+    {
+      "characterId": "roccia",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "roccia",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 8,
+      "questIds": [
+        "a-new-companion",
+        "advance-toward-the-future-from-today",
+        "clashing-blades",
+        "echoing-marche",
+        "first-resonance",
+        "grand-warstorm",
+        "ominous-star",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "A New Companion",
+        "Advance toward the Future from Today",
+        "Clashing Blades",
+        "Echoing Marche",
+        "First Resonance",
+        "Grand Warstorm",
+        "Ominous Star",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "不祥之星",
+        "便能在如今走向未来",
+        "倒带雨滴",
+        "呼应马尔凯",
+        "大战风暴",
+        "碰撞刀片",
+        "第一次共振",
+        "行路遇新知"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "1.4-a",
+      "version": "1.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "beyond-the-shores-end"
+      ],
+      "questTitles": [
+        "Beyond the Shore's End"
+      ],
+      "questTitlesZh": [
+        "海岸尽头……之后?"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "through-the-sea-thou-break",
+        "veils-off-in-sun-or-shadow"
+      ],
+      "questTitles": [
+        "Through the Sea Thou Break",
+        "Veils Off in Sun or Shadow"
+      ],
+      "questTitlesZh": [
+        "夜与昼，均请摘下面纱",
+        "如一叶小舟穿行于茫茫海洋"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-maiden-the-defier-the-death-crier"
+      ],
+      "questTitles": [
+        "The Maiden, The Defier, The Death Crier"
+      ],
+      "questTitlesZh": [
+        "圣者，忤逆者，告死者"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-suns-burning-hand"
+      ],
+      "questTitles": [
+        "By Sun's Burning Hand"
+      ],
+      "questTitlesZh": [
+        "灼我以烈阳"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.6-b",
+      "version": "2.6",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "by-moons-fated-light"
+      ],
+      "questTitles": [
+        "By Moon's Fated Light"
+      ],
+      "questTitlesZh": [
+        "今夜，注定属于月亮"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.8-a",
+      "version": "2.8",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "stagnant-dawn-on-wastelands"
+      ],
+      "questTitles": [
+        "Stagnant Dawn on Wastelands"
+      ],
+      "questTitlesZh": [
+        "曙光停摆于荒地之上"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flowing-starlight-in-the-iris"
+      ],
+      "questTitles": [
+        "Flowing Starlight in the Iris"
+      ],
+      "questTitlesZh": [
+        "星光流转于眼眸之间"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "what-burns-beneath-frostlands",
+        "when-the-unknown-thrums"
+      ],
+      "questTitles": [
+        "What Burns Beneath Frostlands",
+        "When the Unknown Thrums"
+      ],
+      "questTitlesZh": [
+        "冰原下的星炬",
+        "未知的既感"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.0-b",
+      "version": "3.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "ode-to-the-second-sunrise"
+      ],
+      "questTitles": [
+        "Ode to the Second Sunrise"
+      ],
+      "questTitlesZh": [
+        "致第二次日出"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.1-a",
+      "version": "3.1",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-star-that-voyages-far"
+      ],
+      "questTitles": [
+        "The Star That Voyages Far"
+      ],
+      "questTitlesZh": [
+        "远航星"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.1-b",
+      "version": "3.1",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "all-that-sunlight-touches"
+      ],
+      "questTitles": [
+        "All That Sunlight Touches"
+      ],
+      "questTitlesZh": [
+        "日光落处"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.2-b",
+      "version": "3.2",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "rabbit-reflected-in-shades"
+      ],
+      "questTitles": [
+        "Rabbit Reflected in Shades"
+      ],
+      "questTitlesZh": [
+        "影面颠倒的兔影"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "beneath-a-melting-night-sky"
+      ],
+      "questTitles": [
+        "Beneath a Melting Night Sky"
+      ],
+      "questTitlesZh": [
+        "在熔解的夜空下"
+      ]
+    },
+    {
+      "characterId": "rover",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "sanhua",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 3,
+      "questIds": [
+        "clashing-blades",
+        "first-resonance",
+        "ominous-star"
+      ],
+      "questTitles": [
+        "Clashing Blades",
+        "First Resonance",
+        "Ominous Star"
+      ],
+      "questTitlesZh": [
+        "不祥之星",
+        "碰撞刀片",
+        "第一次共振"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "advance-toward-the-future-from-today"
+      ],
+      "questTitles": [
+        "Advance toward the Future from Today"
+      ],
+      "questTitlesZh": [
+        "便能在如今走向未来"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "1.4-a",
+      "version": "1.4",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "beyond-the-shores-end"
+      ],
+      "questTitles": [
+        "Beyond the Shore's End"
+      ],
+      "questTitlesZh": [
+        "海岸尽头……之后?"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "through-the-sea-thou-break"
+      ],
+      "questTitles": [
+        "Through the Sea Thou Break"
+      ],
+      "questTitlesZh": [
+        "如一叶小舟穿行于茫茫海洋"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "2.8-a",
+      "version": "2.8",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "stagnant-dawn-on-wastelands"
+      ],
+      "questTitles": [
+        "Stagnant Dawn on Wastelands"
+      ],
+      "questTitlesZh": [
+        "曙光停摆于荒地之上"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "flowing-starlight-in-the-iris"
+      ],
+      "questTitles": [
+        "Flowing Starlight in the Iris"
+      ],
+      "questTitlesZh": [
+        "星光流转于眼眸之间"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "when-the-unknown-thrums"
+      ],
+      "questTitles": [
+        "When the Unknown Thrums"
+      ],
+      "questTitlesZh": [
+        "未知的既感"
+      ]
+    },
+    {
+      "characterId": "shorekeeper",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "versionHalf": "3.1-a",
+      "version": "3.1",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "the-star-that-voyages-far"
+      ],
+      "questTitles": [
+        "The Star That Voyages Far"
+      ],
+      "questTitlesZh": [
+        "远航星"
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "versionHalf": "3.1-b",
+      "version": "3.1",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "all-that-sunlight-touches"
+      ],
+      "questTitles": [
+        "All That Sunlight Touches"
+      ],
+      "questTitlesZh": [
+        "日光落处"
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "gold-suspended-in-shadows"
+      ],
+      "questTitles": [
+        "Gold Suspended in Shadows"
+      ],
+      "questTitlesZh": [
+        "影下不落的黄金"
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "starlights-from-yesterdays"
+      ],
+      "questTitles": [
+        "Starlights from Yesterdays"
+      ],
+      "questTitlesZh": [
+        "昨夜群星"
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "beneath-a-melting-night-sky"
+      ],
+      "questTitles": [
+        "Beneath a Melting Night Sky"
+      ],
+      "questTitlesZh": [
+        "在熔解的夜空下"
+      ]
+    },
+    {
+      "characterId": "sigrika",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "we-choose-the-sky"
+      ],
+      "questTitles": [
+        "We Choose the Sky"
+      ],
+      "questTitlesZh": [
+        "我们选择天空"
+      ]
+    },
+    {
+      "characterId": "taoqi",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "grand-warstorm"
+      ],
+      "questTitles": [
+        "Grand Warstorm"
+      ],
+      "questTitlesZh": [
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "verina",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "grand-warstorm",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "Grand Warstorm",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "倒带雨滴",
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "yangyang",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 7,
+      "questIds": [
+        "a-new-companion",
+        "clashing-blades",
+        "echoing-marche",
+        "first-resonance",
+        "grand-warstorm",
+        "ominous-star",
+        "rewinding-raindrops"
+      ],
+      "questTitles": [
+        "A New Companion",
+        "Clashing Blades",
+        "Echoing Marche",
+        "First Resonance",
+        "Grand Warstorm",
+        "Ominous Star",
+        "Rewinding Raindrops"
+      ],
+      "questTitlesZh": [
+        "不祥之星",
+        "倒带雨滴",
+        "呼应马尔凯",
+        "大战风暴",
+        "碰撞刀片",
+        "第一次共振",
+        "行路遇新知"
+      ]
+    },
+    {
+      "characterId": "yuanwu",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "appearanceCount": 1,
+      "questIds": [
+        "grand-warstorm"
+      ],
+      "questTitles": [
+        "Grand Warstorm"
+      ],
+      "questTitlesZh": [
+        "大战风暴"
+      ]
+    },
+    {
+      "characterId": "zani",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "the-sacred-breeze-so-often-breathes",
+        "veils-off-in-sun-or-shadow"
+      ],
+      "questTitles": [
+        "The Sacred Breeze So Often Breathes",
+        "Veils Off in Sun or Shadow"
+      ],
+      "questTitlesZh": [
+        "夜与昼，均请摘下面纱",
+        "那神圣微风时常吹入"
+      ]
+    },
+    {
+      "characterId": "zani",
+      "versionHalf": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "what-yesterday-wept-today-doth-sing"
+      ],
+      "questTitles": [
+        "What Yesterday Wept, Today Doth Sing"
+      ],
+      "questTitlesZh": [
+        "昔我悲伤，今却歌唱"
+      ]
+    },
+    {
+      "characterId": "zani",
+      "versionHalf": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "appearanceCount": 2,
+      "questIds": [
+        "dawn-breaks-on-dark-tides",
+        "the-bygone-shall-always-return"
+      ],
+      "questTitles": [
+        "Dawn Breaks on Dark Tides",
+        "The Bygone Shall Always Return"
+      ],
+      "questTitlesZh": [
+        "已逝的必将归来",
+        "暗潮将映的黎明"
+      ]
+    },
+    {
+      "characterId": "zani",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "appearanceCount": 1,
+      "questIds": [
+        "a-stranger-in-a-strange-land"
+      ],
+      "questTitles": [
+        "A Stranger in a Strange Land"
+      ],
+      "questTitlesZh": [
+        "独在异乡为异客"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1023 @@
+{
+  "generatedAt": "2026-06-17T23:12:20.556Z",
+  "localeDefault": "zh-CN",
+  "halfCount": 38,
+  "rows": [
+    {
+      "characterId": "aalto",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 27
+    },
+    {
+      "characterId": "aalto",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 37
+    },
+    {
+      "characterId": "aalto",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 64
+    },
+    {
+      "characterId": "aemeath",
+      "locale": "en-US",
+      "versionHalf": "3.1-b",
+      "version": "3.1",
+      "half": "b",
+      "lineCount": 116
+    },
+    {
+      "characterId": "augusta",
+      "locale": "en-US",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "lineCount": 30
+    },
+    {
+      "characterId": "augusta",
+      "locale": "en-US",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "lineCount": 38
+    },
+    {
+      "characterId": "baizhi",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "baizhi",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "baizhi",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 58
+    },
+    {
+      "characterId": "baizhi",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 58
+    },
+    {
+      "characterId": "baizhi",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 58
+    },
+    {
+      "characterId": "brant",
+      "locale": "en-US",
+      "versionHalf": "2.1-b",
+      "version": "2.1",
+      "half": "b",
+      "lineCount": 62
+    },
+    {
+      "characterId": "calcharo",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 27
+    },
+    {
+      "characterId": "calcharo",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 42
+    },
+    {
+      "characterId": "calcharo",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 68
+    },
+    {
+      "characterId": "camellya",
+      "locale": "en-US",
+      "versionHalf": "1.3-b",
+      "version": "1.3",
+      "half": "b",
+      "lineCount": 62
+    },
+    {
+      "characterId": "cantarella",
+      "locale": "en-US",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "lineCount": 31
+    },
+    {
+      "characterId": "cantarella",
+      "locale": "en-US",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "lineCount": 34
+    },
+    {
+      "characterId": "carlotta",
+      "locale": "en-US",
+      "versionHalf": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "cartethyia",
+      "locale": "en-US",
+      "versionHalf": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "lineCount": 97
+    },
+    {
+      "characterId": "cartethyia",
+      "locale": "en-US",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "changli",
+      "locale": "en-US",
+      "versionHalf": "1.1-b",
+      "version": "1.1",
+      "half": "b",
+      "lineCount": 65
+    },
+    {
+      "characterId": "chisa",
+      "locale": "en-US",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "lineCount": 16
+    },
+    {
+      "characterId": "chisa",
+      "locale": "en-US",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "lineCount": 14
+    },
+    {
+      "characterId": "chixia",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 71
+    },
+    {
+      "characterId": "chixia",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 70
+    },
+    {
+      "characterId": "chixia",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 70
+    },
+    {
+      "characterId": "chixia",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 70
+    },
+    {
+      "characterId": "ciaccona",
+      "locale": "en-US",
+      "versionHalf": "2.4-b",
+      "version": "2.4",
+      "half": "b",
+      "lineCount": 57
+    },
+    {
+      "characterId": "danjin",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 29
+    },
+    {
+      "characterId": "danjin",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 32
+    },
+    {
+      "characterId": "danjin",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 60
+    },
+    {
+      "characterId": "danjin",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 60
+    },
+    {
+      "characterId": "danjin",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 60
+    },
+    {
+      "characterId": "encore",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 65
+    },
+    {
+      "characterId": "encore",
+      "locale": "ja-JP",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 51
+    },
+    {
+      "characterId": "encore",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 65
+    },
+    {
+      "characterId": "galbrena",
+      "locale": "en-US",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "lineCount": 12
+    },
+    {
+      "characterId": "hiyuki",
+      "locale": "en-US",
+      "versionHalf": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "lineCount": 54
+    },
+    {
+      "characterId": "hiyuki",
+      "locale": "en-US",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "lineCount": 11
+    },
+    {
+      "characterId": "iuno",
+      "locale": "en-US",
+      "versionHalf": "2.6-b",
+      "version": "2.6",
+      "half": "b",
+      "lineCount": 79
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jinhsi",
+      "locale": "en-US",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "jinhsi",
+      "locale": "en-US",
+      "versionHalf": "2.6-b",
+      "version": "2.6",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jinhsi",
+      "locale": "ja-JP",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "jinhsi",
+      "locale": "ko-KR",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "jinhsi",
+      "locale": "zh-CN",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "jiyan",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "jiyan",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jiyan",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "jiyan",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "jiyan",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "lingyang",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 80
+    },
+    {
+      "characterId": "lingyang",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 79
+    },
+    {
+      "characterId": "lingyang",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 79
+    },
+    {
+      "characterId": "lingyang",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 79
+    },
+    {
+      "characterId": "lumi",
+      "locale": "en-US",
+      "versionHalf": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "lineCount": 31
+    },
+    {
+      "characterId": "lumi",
+      "locale": "en-US",
+      "versionHalf": "2.5-a",
+      "version": "2.5",
+      "half": "a",
+      "lineCount": 19
+    },
+    {
+      "characterId": "lupa",
+      "locale": "en-US",
+      "versionHalf": "2.4-b",
+      "version": "2.4",
+      "half": "b",
+      "lineCount": 70
+    },
+    {
+      "characterId": "lupa",
+      "locale": "en-US",
+      "versionHalf": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "lupa",
+      "locale": "en-US",
+      "versionHalf": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "luuk-herssen",
+      "locale": "en-US",
+      "versionHalf": "3.2-b",
+      "version": "3.2",
+      "half": "b",
+      "lineCount": 53
+    },
+    {
+      "characterId": "lynae",
+      "locale": "en-US",
+      "versionHalf": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "mornye",
+      "locale": "en-US",
+      "versionHalf": "3.0-b",
+      "version": "3.0",
+      "half": "b",
+      "lineCount": 53
+    },
+    {
+      "characterId": "mortefi",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 61
+    },
+    {
+      "characterId": "mortefi",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 61
+    },
+    {
+      "characterId": "phoebe",
+      "locale": "en-US",
+      "versionHalf": "2.1-a",
+      "version": "2.1",
+      "half": "a",
+      "lineCount": 59
+    },
+    {
+      "characterId": "phrolova",
+      "locale": "en-US",
+      "versionHalf": "2.5-a",
+      "version": "2.5",
+      "half": "a",
+      "lineCount": 67
+    },
+    {
+      "characterId": "roccia",
+      "locale": "en-US",
+      "versionHalf": "2.1-a",
+      "version": "2.1",
+      "half": "a",
+      "lineCount": 57
+    },
+    {
+      "characterId": "roccia",
+      "locale": "en-US",
+      "versionHalf": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "rover",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "rover",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 11
+    },
+    {
+      "characterId": "rover",
+      "locale": "ja-JP",
+      "versionHalf": "2.3-b",
+      "version": "2.3",
+      "half": "b",
+      "lineCount": 42
+    },
+    {
+      "characterId": "rover",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 11
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "ja-JP",
+      "versionHalf": "2.3-b",
+      "version": "2.3",
+      "half": "b",
+      "lineCount": 42
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 11
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "ja-JP",
+      "versionHalf": "2.3-b",
+      "version": "2.3",
+      "half": "b",
+      "lineCount": 42
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 11
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "ja-JP",
+      "versionHalf": "2.3-b",
+      "version": "2.3",
+      "half": "b",
+      "lineCount": 42
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 52
+    },
+    {
+      "characterId": "sanhua",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 27
+    },
+    {
+      "characterId": "sanhua",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 31
+    },
+    {
+      "characterId": "sanhua",
+      "locale": "zh-CN",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "shorekeeper",
+      "locale": "en-US",
+      "versionHalf": "1.2-b",
+      "version": "1.2",
+      "half": "b",
+      "lineCount": 53
+    },
+    {
+      "characterId": "shorekeeper",
+      "locale": "en-US",
+      "versionHalf": "1.4-a",
+      "version": "1.4",
+      "half": "a",
+      "lineCount": 15
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "en-US",
+      "versionHalf": "3.1-b",
+      "version": "3.1",
+      "half": "b",
+      "lineCount": 4
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "en-US",
+      "versionHalf": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "lineCount": 49
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "en-US",
+      "versionHalf": "3.2-b",
+      "version": "3.2",
+      "half": "b",
+      "lineCount": 10
+    },
+    {
+      "characterId": "taoqi",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 26
+    },
+    {
+      "characterId": "taoqi",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 37
+    },
+    {
+      "characterId": "taoqi",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 62
+    },
+    {
+      "characterId": "taoqi",
+      "locale": "zh-CN",
+      "versionHalf": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "verina",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 59
+    },
+    {
+      "characterId": "verina",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 59
+    },
+    {
+      "characterId": "xiangli-yao",
+      "locale": "en-US",
+      "versionHalf": "1.2-a",
+      "version": "1.2",
+      "half": "a",
+      "lineCount": 52
+    },
+    {
+      "characterId": "xiangli-yao",
+      "locale": "en-US",
+      "versionHalf": "1.2-b",
+      "version": "1.2",
+      "half": "b",
+      "lineCount": 9
+    },
+    {
+      "characterId": "xiangli-yao",
+      "locale": "ja-JP",
+      "versionHalf": "1.3-a",
+      "version": "1.3",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "yangyang",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "yangyang",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "yangyang",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "yangyang",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "yinlin",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "yinlin",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "yinlin",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "yinlin",
+      "locale": "ko-KR",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "yinlin",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "youhu",
+      "locale": "en-US",
+      "versionHalf": "1.4-a",
+      "version": "1.4",
+      "half": "a",
+      "lineCount": 66
+    },
+    {
+      "characterId": "yuanwu",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 26
+    },
+    {
+      "characterId": "yuanwu",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 35
+    },
+    {
+      "characterId": "yuanwu",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 61
+    },
+    {
+      "characterId": "zani",
+      "locale": "en-US",
+      "versionHalf": "2.3-a",
+      "version": "2.3",
+      "half": "a",
+      "lineCount": 72
+    },
+    {
+      "characterId": "zhezhi",
+      "locale": "en-US",
+      "versionHalf": "1.2-a",
+      "version": "1.2",
+      "half": "a",
+      "lineCount": 56
+    }
+  ]
+}

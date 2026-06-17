@@ -61,6 +61,29 @@ export default function MethodologyPage() {
           <code className="mx-1">resskill_1_tx_s</code>) so text can be traced back to source wikitext.
         </p>
       </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Version-half Story Appearances</h2>
+        <p className="mt-2 text-sm text-zinc-700">
+          Main-story appearance counts are derived from Fandom quest infobox
+          <code className="mx-1">characters</code> fields only (no dialogue mentions). Quest-to-half
+          mapping lives in <code className="mx-1">content/stories/quest-half-map.json</code> and follows
+          official content release waves: first story wave in a patch = 上半, second wave = 下半.
+          Episodic/联动 quests are excluded.
+        </p>
+        <p className="mt-2 text-sm text-zinc-700">
+          Regenerate with <code className="mx-1">npm run data:sync-stories</code>.
+        </p>
+      </article>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">Version-half Voice Lines</h2>
+        <p className="mt-2 text-sm text-zinc-700">
+          Per-half voiceline counts map each line&apos;s first-seen timestamp to the calendar midpoint
+          between adjacent version release dates. Regenerate with{" "}
+          <code className="mx-1">npm run data:generate-half-stats</code>.
+        </p>
+      </article>
     </section>
   );
 }

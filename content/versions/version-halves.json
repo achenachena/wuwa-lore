@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2026-06-17T23:12:20.531Z",
+  "halves": [
+    {
+      "id": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "label": "1.0 upper",
+      "labelZh": "1.0 上半",
+      "startDate": "2024-05-23T14:00:00.000Z",
+      "endDate": "2024-06-10T15:30:00.000Z"
+    },
+    {
+      "id": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "label": "1.0 lower",
+      "labelZh": "1.0 下半",
+      "startDate": "2024-06-10T15:30:00.000Z",
+      "endDate": "2024-06-28T17:00:00.000Z"
+    },
+    {
+      "id": "1.1-a",
+      "version": "1.1",
+      "half": "a",
+      "label": "1.1 upper",
+      "labelZh": "1.1 上半",
+      "startDate": "2024-06-28T17:00:00.000Z",
+      "endDate": "2024-07-22T17:00:00.000Z"
+    },
+    {
+      "id": "1.1-b",
+      "version": "1.1",
+      "half": "b",
+      "label": "1.1 lower",
+      "labelZh": "1.1 下半",
+      "startDate": "2024-07-22T17:00:00.000Z",
+      "endDate": "2024-08-15T17:00:00.000Z"
+    },
+    {
+      "id": "1.2-a",
+      "version": "1.2",
+      "half": "a",
+      "label": "1.2 upper",
+      "labelZh": "1.2 上半",
+      "startDate": "2024-08-15T17:00:00.000Z",
+      "endDate": "2024-09-07T04:00:00.000Z"
+    },
+    {
+      "id": "1.2-b",
+      "version": "1.2",
+      "half": "b",
+      "label": "1.2 lower",
+      "labelZh": "1.2 下半",
+      "startDate": "2024-09-07T04:00:00.000Z",
+      "endDate": "2024-09-29T15:00:00.000Z"
+    },
+    {
+      "id": "1.3-a",
+      "version": "1.3",
+      "half": "a",
+      "label": "1.3 upper",
+      "labelZh": "1.3 上半",
+      "startDate": "2024-09-29T15:00:00.000Z",
+      "endDate": "2024-10-22T15:30:00.000Z"
+    },
+    {
+      "id": "1.3-b",
+      "version": "1.3",
+      "half": "b",
+      "label": "1.3 lower",
+      "labelZh": "1.3 下半",
+      "startDate": "2024-10-22T15:30:00.000Z",
+      "endDate": "2024-11-14T16:00:00.000Z"
+    },
+    {
+      "id": "1.4-a",
+      "version": "1.4",
+      "half": "a",
+      "label": "1.4 upper",
+      "labelZh": "1.4 上半",
+      "startDate": "2024-11-14T16:00:00.000Z",
+      "endDate": "2024-12-09T03:30:00.000Z"
+    },
+    {
+      "id": "1.4-b",
+      "version": "1.4",
+      "half": "b",
+      "label": "1.4 lower",
+      "labelZh": "1.4 下半",
+      "startDate": "2024-12-09T03:30:00.000Z",
+      "endDate": "2025-01-02T15:00:00.000Z"
+    },
+    {
+      "id": "2.0-a",
+      "version": "2.0",
+      "half": "a",
+      "label": "2.0 upper",
+      "labelZh": "2.0 上半",
+      "startDate": "2025-01-02T15:00:00.000Z",
+      "endDate": "2025-01-23T15:30:00.000Z"
+    },
+    {
+      "id": "2.0-b",
+      "version": "2.0",
+      "half": "b",
+      "label": "2.0 lower",
+      "labelZh": "2.0 下半",
+      "startDate": "2025-01-23T15:30:00.000Z",
+      "endDate": "2025-02-13T16:00:00.000Z"
+    },
+    {
+      "id": "2.1-a",
+      "version": "2.1",
+      "half": "a",
+      "label": "2.1 upper",
+      "labelZh": "2.1 上半",
+      "startDate": "2025-02-13T16:00:00.000Z",
+      "endDate": "2025-03-06T15:30:00.000Z"
+    },
+    {
+      "id": "2.1-b",
+      "version": "2.1",
+      "half": "b",
+      "label": "2.1 lower",
+      "labelZh": "2.1 下半",
+      "startDate": "2025-03-06T15:30:00.000Z",
+      "endDate": "2025-03-27T15:00:00.000Z"
+    },
+    {
+      "id": "2.2-a",
+      "version": "2.2",
+      "half": "a",
+      "label": "2.2 upper",
+      "labelZh": "2.2 上半",
+      "startDate": "2025-03-27T15:00:00.000Z",
+      "endDate": "2025-04-13T03:00:00.000Z"
+    },
+    {
+      "id": "2.2-b",
+      "version": "2.2",
+      "half": "b",
+      "label": "2.2 lower",
+      "labelZh": "2.2 下半",
+      "startDate": "2025-04-13T03:00:00.000Z",
+      "endDate": "2025-04-29T15:00:00.000Z"
+    },
+    {
+      "id": "2.3-a",
+      "version": "2.3",
+      "half": "a",
+      "label": "2.3 upper",
+      "labelZh": "2.3 上半",
+      "startDate": "2025-04-29T15:00:00.000Z",
+      "endDate": "2025-05-21T15:00:00.000Z"
+    },
+    {
+      "id": "2.3-b",
+      "version": "2.3",
+      "half": "b",
+      "label": "2.3 lower",
+      "labelZh": "2.3 下半",
+      "startDate": "2025-05-21T15:00:00.000Z",
+      "endDate": "2025-06-12T15:00:00.000Z"
+    },
+    {
+      "id": "2.4-a",
+      "version": "2.4",
+      "half": "a",
+      "label": "2.4 upper",
+      "labelZh": "2.4 上半",
+      "startDate": "2025-06-12T15:00:00.000Z",
+      "endDate": "2025-07-03T15:00:00.000Z"
+    },
+    {
+      "id": "2.4-b",
+      "version": "2.4",
+      "half": "b",
+      "label": "2.4 lower",
+      "labelZh": "2.4 下半",
+      "startDate": "2025-07-03T15:00:00.000Z",
+      "endDate": "2025-07-24T15:00:00.000Z"
+    },
+    {
+      "id": "2.5-a",
+      "version": "2.5",
+      "half": "a",
+      "label": "2.5 upper",
+      "labelZh": "2.5 上半",
+      "startDate": "2025-07-24T15:00:00.000Z",
+      "endDate": "2025-08-11T03:00:00.000Z"
+    },
+    {
+      "id": "2.5-b",
+      "version": "2.5",
+      "half": "b",
+      "label": "2.5 lower",
+      "labelZh": "2.5 下半",
+      "startDate": "2025-08-11T03:00:00.000Z",
+      "endDate": "2025-08-28T15:00:00.000Z"
+    },
+    {
+      "id": "2.6-a",
+      "version": "2.6",
+      "half": "a",
+      "label": "2.6 upper",
+      "labelZh": "2.6 上半",
+      "startDate": "2025-08-28T15:00:00.000Z",
+      "endDate": "2025-09-18T15:00:00.000Z"
+    },
+    {
+      "id": "2.6-b",
+      "version": "2.6",
+      "half": "b",
+      "label": "2.6 lower",
+      "labelZh": "2.6 下半",
+      "startDate": "2025-09-18T15:00:00.000Z",
+      "endDate": "2025-10-09T15:00:00.000Z"
+    },
+    {
+      "id": "2.7-a",
+      "version": "2.7",
+      "half": "a",
+      "label": "2.7 upper",
+      "labelZh": "2.7 上半",
+      "startDate": "2025-10-09T15:00:00.000Z",
+      "endDate": "2025-10-30T15:15:00.000Z"
+    },
+    {
+      "id": "2.7-b",
+      "version": "2.7",
+      "half": "b",
+      "label": "2.7 lower",
+      "labelZh": "2.7 下半",
+      "startDate": "2025-10-30T15:15:00.000Z",
+      "endDate": "2025-11-20T15:30:00.000Z"
+    },
+    {
+      "id": "2.8-a",
+      "version": "2.8",
+      "half": "a",
+      "label": "2.8 upper",
+      "labelZh": "2.8 上半",
+      "startDate": "2025-11-20T15:30:00.000Z",
+      "endDate": "2025-12-08T03:37:30.000Z"
+    },
+    {
+      "id": "2.8-b",
+      "version": "2.8",
+      "half": "b",
+      "label": "2.8 lower",
+      "labelZh": "2.8 下半",
+      "startDate": "2025-12-08T03:37:30.000Z",
+      "endDate": "2025-12-25T15:45:00.000Z"
+    },
+    {
+      "id": "3.0-a",
+      "version": "3.0",
+      "half": "a",
+      "label": "3.0 upper",
+      "labelZh": "3.0 上半",
+      "startDate": "2025-12-25T15:45:00.000Z",
+      "endDate": "2026-01-15T14:50:00.000Z"
+    },
+    {
+      "id": "3.0-b",
+      "version": "3.0",
+      "half": "b",
+      "label": "3.0 lower",
+      "labelZh": "3.0 下半",
+      "startDate": "2026-01-15T14:50:00.000Z",
+      "endDate": "2026-02-05T13:55:00.000Z"
+    },
+    {
+      "id": "3.1-a",
+      "version": "3.1",
+      "half": "a",
+      "label": "3.1 upper",
+      "labelZh": "3.1 上半",
+      "startDate": "2026-02-05T13:55:00.000Z",
+      "endDate": "2026-02-26T14:27:30.000Z"
+    },
+    {
+      "id": "3.1-b",
+      "version": "3.1",
+      "half": "b",
+      "label": "3.1 lower",
+      "labelZh": "3.1 下半",
+      "startDate": "2026-02-26T14:27:30.000Z",
+      "endDate": "2026-03-19T15:00:00.000Z"
+    },
+    {
+      "id": "3.2-a",
+      "version": "3.2",
+      "half": "a",
+      "label": "3.2 upper",
+      "labelZh": "3.2 上半",
+      "startDate": "2026-03-19T15:00:00.000Z",
+      "endDate": "2026-04-09T13:40:30.000Z"
+    },
+    {
+      "id": "3.2-b",
+      "version": "3.2",
+      "half": "b",
+      "label": "3.2 lower",
+      "labelZh": "3.2 下半",
+      "startDate": "2026-04-09T13:40:30.000Z",
+      "endDate": "2026-04-30T12:21:00.000Z"
+    },
+    {
+      "id": "3.3-a",
+      "version": "3.3",
+      "half": "a",
+      "label": "3.3 upper",
+      "labelZh": "3.3 上半",
+      "startDate": "2026-04-30T12:21:00.000Z",
+      "endDate": "2026-05-20T01:10:30.000Z"
+    },
+    {
+      "id": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "label": "3.3 lower",
+      "labelZh": "3.3 下半",
+      "startDate": "2026-05-20T01:10:30.000Z",
+      "endDate": "2026-06-08T14:00:00.000Z"
+    },
+    {
+      "id": "3.4-a",
+      "version": "3.4",
+      "half": "a",
+      "label": "3.4 upper",
+      "labelZh": "3.4 上半",
+      "startDate": "2026-06-08T14:00:00.000Z",
+      "endDate": "2026-06-29T14:00:00.000Z"
+    },
+    {
+      "id": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "label": "3.4 lower",
+      "labelZh": "3.4 下半",
+      "startDate": "2026-06-29T14:00:00.000Z",
+      "endDate": "2026-07-20T14:00:00.000Z"
+    }
+  ]
+}

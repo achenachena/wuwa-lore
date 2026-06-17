@@ -1,10 +1,14 @@
 import type {
   Character,
+  Locale,
+  VersionHalfRankingRow,
+  VersionHalfRecord,
   VersionRecord,
   VersionStatRow,
   VoiceLineEntry,
   VoiceLineStatRow,
 } from "@/types/lore";
+import type { StoryAppearanceRow, VersionHalfVoiceRow } from "@/types/lore";
 
 function unique<T>(values: T[]): T[] {
   return [...new Set(values)];
@@ -99,5 +103,93 @@ export function aggregateVersionStats(params: {
       characterCount,
       totalVoiceLines,
     };
+  });
+}
+
+function compareVersion(a: string, b: string): number {
+  const pa = a.split(".").map((x) => Number(x));
+  const pb = b.split(".").map((x) => Number(x));
+  for (let i = 0; i < Math.max(pa.length, pb.length); i += 1) {
+    const da = pa[i] ?? 0;
+    const db = pb[i] ?? 0;
+    if (da !== db) {
+      return da - db;
+    }
+  }
+  return 0;
+}
+
+export function buildVersionHalfRanking(params: {
+  characters: Character[];
+  versionHalves: VersionHalfRecord[];
+  storyAppearances: StoryAppearanceRow[];
+  versionHalfVoiceStats: VersionHalfVoiceRow[];
+  selectedHalfIds: string[];
+  locale: Locale;
+}): VersionHalfRankingRow[] {
+  const { characters, storyAppearances, versionHalfVoiceStats, selectedHalfIds, locale } = params;
+  const selected = new Set(selectedHalfIds);
+  const characterById = new Map(characters.map((character) => [character.id, character]));
+
+  const voiceByCharacter = new Map<string, number>();
+  for (const row of versionHalfVoiceStats) {
+    if (row.locale !== locale || !selected.has(row.versionHalf)) {
+      continue;
+    }
+    voiceByCharacter.set(row.characterId, (voiceByCharacter.get(row.characterId) ?? 0) + row.lineCount);
+  }
+
+  const appearancesByCharacter = new Map<string, number>();
+  for (const row of storyAppearances) {
+    if (!selected.has(row.versionHalf)) {
+      continue;
+    }
+    appearancesByCharacter.set(
+      row.characterId,
+      (appearancesByCharacter.get(row.characterId) ?? 0) + row.appearanceCount,
+    );
+  }
+
+  const characterIds = unique([
+    ...voiceByCharacter.keys(),
+    ...appearancesByCharacter.keys(),
+  ]).sort((a, b) => a.localeCompare(b));
+
+  return characterIds
+    .map((characterId) => {
+      const voiceLineCount = voiceByCharacter.get(characterId) ?? 0;
+      const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
+      return {
+        characterId,
+        characterName: characterById.get(characterId)?.name ?? characterId,
+        voiceLineCount,
+        appearanceCount,
+        linesPerAppearance:
+          appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
+      };
+    })
+    .sort((a, b) => {
+      const aScore = a.linesPerAppearance ?? -1;
+      const bScore = b.linesPerAppearance ?? -1;
+      if (bScore !== aScore) {
+        return bScore - aScore;
+      }
+      if (b.voiceLineCount !== a.voiceLineCount) {
+        return b.voiceLineCount - a.voiceLineCount;
+      }
+      return a.characterName.localeCompare(b.characterName);
+    });
+}
+
+export function filterVersionHalvesByRange(params: {
+  versionHalves: VersionHalfRecord[];
+  fromVersion: string;
+  toVersion: string;
+}): VersionHalfRecord[] {
+  const { versionHalves, fromVersion, toVersion } = params;
+  return versionHalves.filter((half) => {
+    const cmpFrom = compareVersion(half.version, fromVersion);
+    const cmpTo = compareVersion(half.version, toVersion);
+    return cmpFrom >= 0 && cmpTo <= 0;
   });
 }

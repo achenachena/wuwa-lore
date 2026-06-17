@@ -5,6 +5,9 @@ import { z } from "zod";
 import type {
   Character,
   CharacterImage,
+  StoryAppearanceRow,
+  VersionHalfRecord,
+  VersionHalfVoiceRow,
   VersionRecord,
   VoiceLineDetailRow,
   VoiceLineEntry,
@@ -15,6 +18,9 @@ import {
   characterImageSchema,
   generatedStatsSchema,
   rawVoiceSnapshotSchema,
+  storyAppearanceRowSchema,
+  versionHalfRecordSchema,
+  versionHalfVoiceRowSchema,
   versionSchema,
   voiceLineDetailRowSchema,
 } from "@/lib/data/schemas";
@@ -156,6 +162,27 @@ export async function loadOfficialVersionNotes() {
       matchMethod: string;
     }>;
   }>(filePath);
+}
+
+export async function loadVersionHalves(): Promise<VersionHalfRecord[]> {
+  const filePath = path.join(root, "content", "versions", "version-halves.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ halves: z.array(versionHalfRecordSchema) }).parse(raw);
+  return parsed.halves;
+}
+
+export async function loadStoryAppearances(): Promise<StoryAppearanceRow[]> {
+  const filePath = path.join(root, "data", "derived", "story-appearances.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ rows: z.array(storyAppearanceRowSchema) }).parse(raw);
+  return parsed.rows;
+}
+
+export async function loadVersionHalfVoiceStats(): Promise<VersionHalfVoiceRow[]> {
+  const filePath = path.join(root, "data", "derived", "version-half-voice-stats.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ rows: z.array(versionHalfVoiceRowSchema) }).parse(raw);
+  return parsed.rows;
 }
 
 export async function loadSourceDiffReport() {

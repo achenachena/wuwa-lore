@@ -5,16 +5,21 @@ import {
   loadCharacters,
   loadGeneratedStats,
   loadOfficialVersionNotes,
+  loadStoryAppearances,
+  loadVersionHalfVoiceStats,
   loadVersions,
 } from "@/lib/data/loaders";
 import { validateCharactersAndVersions, validateVoiceLineStats } from "@/lib/data/validate";
 
 async function main() {
-  const [characters, versions, rows, official] = await Promise.all([
+  const [characters, versions, rows, official, storyAppearances, versionHalfVoiceStats] =
+    await Promise.all([
     loadCharacters(),
     loadVersions(),
     loadGeneratedStats(),
     loadOfficialVersionNotes(),
+    loadStoryAppearances().catch(() => []),
+    loadVersionHalfVoiceStats().catch(() => []),
   ]);
 
   const identityValidation = validateCharactersAndVersions(characters, versions);
@@ -30,14 +35,27 @@ async function main() {
     ),
   };
 
+  const storyValidation = {
+    ok: storyAppearances.length > 0 && versionHalfVoiceStats.length > 0,
+    errors: [
+      ...(storyAppearances.length === 0 ? ["Missing story appearance rows"] : []),
+      ...(versionHalfVoiceStats.length === 0 ? ["Missing version-half voice stats rows"] : []),
+    ],
+  };
+
   const report = {
     generatedAt: new Date().toISOString(),
     checks: {
       identityValidation,
       statValidation,
       officialValidation,
+      storyValidation,
     },
-    ok: identityValidation.ok && statValidation.ok && officialValidation.ok,
+    ok:
+      identityValidation.ok &&
+      statValidation.ok &&
+      officialValidation.ok &&
+      storyValidation.ok,
   };
 
   const reportPath = path.join(process.cwd(), "data", "derived", "validation-report.json");
@@ -49,6 +67,7 @@ async function main() {
       ...identityValidation.errors,
       ...statValidation.errors,
       ...officialValidation.errors,
+      ...storyValidation.errors,
     ]) {
       console.error(`- ${error}`);
     }

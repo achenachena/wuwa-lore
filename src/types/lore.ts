@@ -91,3 +91,43 @@ export interface VersionStatRow {
   characterCount: number;
   totalVoiceLines: number;
 }
+
+export type VersionHalfCode = "a" | "b";
+
+export interface VersionHalfRecord {
+  id: string;
+  version: string;
+  half: VersionHalfCode;
+  label: string;
+  labelZh: string;
+  startDate: string;
+  endDate: string;
+}
+
+export interface StoryAppearanceRow {
+  characterId: string;
+  versionHalf: string;
+  version: string;
+  half: VersionHalfCode;
+  appearanceCount: number;
+  questIds: string[];
+  questTitles: string[];
+  questTitlesZh: string[];
+}
+
+export interface VersionHalfVoiceRow {
+  characterId: string;
+  locale: Locale;
+  versionHalf: string;
+  version: string;
+  half: VersionHalfCode;
+  lineCount: number;
+}
+
+export interface VersionHalfRankingRow {
+  characterId: string;
+  characterName: string;
+  voiceLineCount: number;
+  appearanceCount: number;
+  linesPerAppearance: number | null;
+}
