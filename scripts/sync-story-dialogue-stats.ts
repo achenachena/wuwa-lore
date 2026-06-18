@@ -50,6 +50,7 @@ type StoryDialogueSnapshot = {
 };
 
 const ENCORE_BASE = "https://api.encore.moe";
+const ENCORE_V2_BASE = "https://api-v2.encore.moe/api";
 const ENCORE_LOCALES: EncoreLocale[] = ["zh-Hans", "en"];
 const nowIso = new Date().toISOString();
 
@@ -111,16 +112,24 @@ async function fetchJson<T>(url: string): Promise<T> {
 }
 
 async function fetchStoryDetail(locale: EncoreLocale, storyId: number): Promise<unknown | null> {
-  const url = `${ENCORE_BASE}/${locale}/story/${storyId}`;
+  const primaryUrl = `${ENCORE_BASE}/${locale}/story/${storyId}`;
   try {
-    return await fetchJson<unknown>(url);
+    return await fetchJson<unknown>(primaryUrl);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    if (message.includes("403")) {
-      console.warn(`[${locale}] Encore story ${storyId} unavailable (${message})`);
-      return null;
+    if (!message.includes("403")) {
+      throw error;
     }
-    throw error;
+  }
+
+  const fallbackUrl = `${ENCORE_V2_BASE}/${locale}/story/${storyId}`;
+  try {
+    console.warn(`[${locale}] Encore v1 locked story ${storyId}; using api-v2 fallback`);
+    return await fetchJson<unknown>(fallbackUrl);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.warn(`[${locale}] Encore story ${storyId} unavailable (${message})`);
+    return null;
   }
 }
 

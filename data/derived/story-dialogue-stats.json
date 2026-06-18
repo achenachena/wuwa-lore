@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T01:15:33.953Z",
+  "generatedAt": "2026-06-18T01:34:47.472Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
@@ -1405,6 +1405,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "lucilla",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100043
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lucilla",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
       "nameZh": "影下不落的黄金",
@@ -1489,6 +1503,20 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "lucy",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 274,
+      "encoreStoryIds": [
+        100043
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "lupa",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1541,6 +1569,20 @@
       "lineCount": 177,
       "encoreStoryIds": [
         100036
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "luuk-herssen",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -1613,6 +1655,20 @@
       "encoreStoryIds": [
         103,
         100033
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lynae",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 58,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -1699,6 +1755,20 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100032
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "mornye",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 41,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -2013,6 +2083,20 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "rebecca",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 272,
+      "encoreStoryIds": [
+        100043
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "roccia",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -2163,6 +2247,20 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100036
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "sigrika",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -3941,6 +4039,20 @@
     {
       "locale": "en",
       "characterId": "lucilla",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100043
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
       "nameZh": "影下不落的黄金",
@@ -4024,6 +4136,20 @@
     },
     {
       "locale": "en",
+      "characterId": "lucy",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 274,
+      "encoreStoryIds": [
+        100043
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "lupa",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -4076,6 +4202,20 @@
       "lineCount": 177,
       "encoreStoryIds": [
         100036
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "luuk-herssen",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -4148,6 +4288,20 @@
       "encoreStoryIds": [
         103,
         100033
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lynae",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 58,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -4234,6 +4388,20 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100032
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mornye",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 41,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
@@ -4563,6 +4731,20 @@
     },
     {
       "locale": "en",
+      "characterId": "rebecca",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 272,
+      "encoreStoryIds": [
+        100043
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "roccia",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -4713,6 +4895,20 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100036
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        100043
       ]
     },
     {
