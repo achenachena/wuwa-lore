@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-17T23:46:19.505Z",
+  "generatedAt": "2026-06-18T01:15:13.670Z",
   "source": {
     "questMapFile": "content/stories/quest-half-map.json",
     "fandomApi": "https://wutheringwaves.fandom.com/api.php",
     "appearanceRule": "main_quest_infobox_characters_only"
   },
-  "questCount": 39,
+  "questCount": 42,
   "rows": [
     {
       "characterId": "aalto",
@@ -177,6 +177,15 @@
       "version": "2.0",
       "half": "b",
       "versionHalf": "2.0-b"
+    },
+    {
+      "characterId": "brant",
+      "questId": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
+      "version": "2.1",
+      "half": "a",
+      "versionHalf": "2.1-a"
     },
     {
       "characterId": "brant",
@@ -863,6 +872,96 @@
       "versionHalf": "1.0-a"
     },
     {
+      "characterId": "lucilla",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "the-flaming-red-from-tomorrow",
+      "wikiTitle": "The Flaming Red from Tomorrow",
+      "nameZh": "明日摇曳的绯影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "wishes-in-the-bell",
+      "wikiTitle": "Wishes in the Bell",
+      "nameZh": "愿系铃中",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
+    },
+    {
+      "characterId": "lucilla",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b"
+    },
+    {
+      "characterId": "lucy",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
+    },
+    {
       "characterId": "lupa",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -944,6 +1043,15 @@
       "versionHalf": "3.3-a"
     },
     {
+      "characterId": "luuk-herssen",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
+    },
+    {
       "characterId": "lynae",
       "questId": "when-the-unknown-thrums",
       "wikiTitle": "When the Unknown Thrums",
@@ -987,6 +1095,15 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a"
+    },
+    {
+      "characterId": "lynae",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
     },
     {
       "characterId": "lynae",
@@ -1041,6 +1158,15 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a"
+    },
+    {
+      "characterId": "mornye",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
     },
     {
       "characterId": "mornye",
@@ -1104,6 +1230,15 @@
       "version": "2.0",
       "half": "b",
       "versionHalf": "2.0-b"
+    },
+    {
+      "characterId": "phoebe",
+      "questId": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
+      "version": "2.1",
+      "half": "a",
+      "versionHalf": "2.1-a"
     },
     {
       "characterId": "phoebe",
@@ -1221,6 +1356,15 @@
       "version": "2.7",
       "half": "b",
       "versionHalf": "2.7-b"
+    },
+    {
+      "characterId": "rebecca",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
     },
     {
       "characterId": "roccia",
@@ -1530,6 +1674,15 @@
     },
     {
       "characterId": "rover",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
+    },
+    {
+      "characterId": "rover",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -1671,6 +1824,15 @@
       "version": "3.3",
       "half": "b",
       "versionHalf": "3.3-b"
+    },
+    {
+      "characterId": "sigrika",
+      "questId": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a"
     },
     {
       "characterId": "sigrika",

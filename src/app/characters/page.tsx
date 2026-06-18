@@ -37,7 +37,7 @@ export default async function CharactersPage() {
     <section className="space-y-4">
       <h1 className="text-2xl font-semibold">{t.characters.title}</h1>
       <p className="text-zinc-600">{t.characters.description}</p>
-      <CharactersBrowser items={listItems} labels={t.characters} common={t.common} />
+      <CharactersBrowser items={listItems} labels={t.characters} common={t.common} showCharacterId={siteLocale === "en"} />
     </section>
   );
 }

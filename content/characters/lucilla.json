@@ -1,0 +1,17 @@
+{
+  "id": "lucilla",
+  "name": "Lucilla",
+  "aliases": ["洛瑟菈"],
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "faction": "Unknown",
+  "rarity": 5,
+  "releaseVersion": "3.4",
+  "profile": "《赛博朋克：边缘行者》联动角色。",
+  "locale": "zh-CN",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucilla",
+    "scrapedAt": "2026-06-02T21:30:00.000Z",
+    "editor": "manual"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
   "editor": "scripts/sync-story-appearances.ts",
-  "notes": "Maps main-story quests to version half by official content release wave (first wave = a/上半, second wave = b/下半). Episodic/联动 quests excluded.",
+  "notes": "Maps tracked story quests to version half by official content release wave (first wave = a/上半, second wave = b/下半). Episodic quests are included only when explicitly listed here.",
   "quests": [
     { "wikiTitle": "Utterance of Marvels", "version": "1.0", "half": "a" },
     { "wikiTitle": "First Resonance", "version": "1.0", "half": "a" },
@@ -43,6 +43,7 @@
     { "wikiTitle": "Wishes in the Bell", "version": "3.3", "half": "a" },
     { "wikiTitle": "Starlights from Yesterdays", "version": "3.3", "half": "a" },
     { "wikiTitle": "Beneath a Melting Night Sky", "version": "3.3", "half": "b" },
+    { "wikiTitle": "At Dream's Edge", "version": "3.4", "half": "a" },
     { "wikiTitle": "We Choose the Sky", "version": "3.4", "half": "b" }
   ]
 }

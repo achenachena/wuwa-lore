@@ -1,8 +1,17 @@
 {
   "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
   "editor": "scripts/sync-story-appearances.ts",
-  "generatedAt": "2026-06-17T23:46:19.505Z",
+  "generatedAt": "2026-06-18T01:15:13.670Z",
   "segments": [
+    {
+      "id": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "sortOrder": 0
+    },
     {
       "id": "first-resonance",
       "wikiTitle": "First Resonance",
@@ -137,6 +146,15 @@
       "half": "b",
       "versionHalf": "2.0-b",
       "sortOrder": 15
+    },
+    {
+      "id": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
+      "version": "2.1",
+      "half": "a",
+      "versionHalf": "2.1-a",
+      "sortOrder": 16
     },
     {
       "id": "the-maiden-the-defier-the-death-crier",
@@ -346,13 +364,22 @@
       "sortOrder": 39
     },
     {
+      "id": "at-dreams-edge",
+      "wikiTitle": "At Dream's Edge",
+      "nameZh": "边缘幻梦",
+      "version": "3.4",
+      "half": "a",
+      "versionHalf": "3.4-a",
+      "sortOrder": 40
+    },
+    {
       "id": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
       "version": "3.4",
       "half": "b",
       "versionHalf": "3.4-b",
-      "sortOrder": 40
+      "sortOrder": 41
     }
   ]
 }

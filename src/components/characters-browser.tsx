@@ -21,11 +21,12 @@ interface CharactersBrowserProps {
   items: CharacterListItem[];
   labels: Messages["characters"];
   common: Messages["common"];
+  showCharacterId?: boolean;
 }
 
 type SortKey = "name" | "voice" | "release";
 
-export function CharactersBrowser({ items, labels, common }: CharactersBrowserProps) {
+export function CharactersBrowser({ items, labels, common, showCharacterId = true }: CharactersBrowserProps) {
   const [search, setSearch] = useState("");
   const [element, setElement] = useState("all");
   const [weapon, setWeapon] = useState("all");
@@ -148,7 +149,7 @@ export function CharactersBrowser({ items, labels, common }: CharactersBrowserPr
             <div className="flex items-start justify-between gap-2">
               <div>
                 <h2 className="text-lg font-semibold">{character.name}</h2>
-                <p className="text-sm text-zinc-500">{character.id}</p>
+                {showCharacterId ? <p className="text-sm text-zinc-500">{character.id}</p> : null}
               </div>
               <span className="rounded bg-zinc-100 px-2 py-1 text-xs">{character.rarity}★</span>
             </div>

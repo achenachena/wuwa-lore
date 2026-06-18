@@ -4,9 +4,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCharacterDetailData } from "@/lib/data";
 import { getCharacterDisplayName } from "@/lib/i18n/character-names";
-import { localizeGameLabel } from "@/lib/i18n/game-labels";
+import { localizeGameLabel, localizeImageType } from "@/lib/i18n/game-labels";
 import { formatStorySegmentLabel } from "@/lib/i18n/locale";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
+import { profileForLocale } from "@/lib/i18n/text-locale";
 
 type CharacterDetailProps = {
   params: Promise<{ id: string }>;
@@ -44,6 +45,7 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
   }
 
   const displayName = await getCharacterDisplayName(character.id, character.name, locale);
+  const profileText = profileForLocale(character.profile, locale);
 
   return (
     <section className="space-y-6">
@@ -52,7 +54,11 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
           {t.common.backToCharacters}
         </Link>
         <h1 className="mt-2 text-3xl font-semibold">{displayName}</h1>
-        <p className="mt-2 max-w-3xl text-zinc-700">{character.profile}</p>
+        {profileText ? (
+          <p className="mt-2 max-w-3xl text-zinc-700">{profileText}</p>
+        ) : (
+          <p className="mt-2 max-w-3xl text-zinc-500">{t.characterDetail.noProfile}</p>
+        )}
         <p className="mt-2 text-xs text-zinc-500">
           {t.common.source}:{" "}
           <a
@@ -131,7 +137,7 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
                   className="h-auto w-full rounded"
                 />
                 <figcaption className="mt-2 text-xs text-zinc-600">
-                  {image.title} ({image.type}) · {t.common.source}: {image.source.sourceUrl}
+                  {locale === "en" ? `${image.title} (${localizeImageType(image.type, locale)})` : localizeImageType(image.type, locale)} · {t.common.source}: {image.source.sourceUrl}
                 </figcaption>
               </figure>
             ))}

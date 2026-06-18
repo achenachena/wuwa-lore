@@ -161,11 +161,6 @@ async function main() {
   let processed = 0;
   for (const [sortOrder, quest] of map.quests.entries()) {
     const wikitext = await fetchQuestWikitext(quest.wikiTitle);
-    const questType = parseTemplateField(wikitext, "type") ?? "Main";
-    if (questType.toLowerCase() !== "main") {
-      continue;
-    }
-
     const questId = slugify(quest.wikiTitle);
     const nameZh = parseTemplateField(wikitext, "zhs") ?? quest.wikiTitle;
     const versionHalf = `${quest.version}-${quest.half}`;

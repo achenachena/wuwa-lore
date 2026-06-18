@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T00:48:58.381Z",
+  "generatedAt": "2026-06-18T01:15:33.953Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
@@ -10,8 +10,8 @@
     "countMethod": "main_story_dialogue_speaker_lines"
   },
   "questCountByLocale": {
-    "en": 40,
-    "zh-Hans": 40
+    "en": 41,
+    "zh-Hans": 41
   },
   "rows": [
     {

@@ -1,0 +1,17 @@
+{
+  "id": "rebecca",
+  "name": "Rebecca",
+  "aliases": ["丽贝卡"],
+  "element": "Electro",
+  "weapon": "Pistols",
+  "faction": "Unknown",
+  "rarity": 5,
+  "releaseVersion": "3.4",
+  "profile": "《赛博朋克：边缘行者》联动角色。",
+  "locale": "zh-CN",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rebecca",
+    "scrapedAt": "2026-06-02T21:30:00.000Z",
+    "editor": "manual"
+  }
+}

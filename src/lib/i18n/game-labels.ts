@@ -8,6 +8,7 @@ const ELEMENT_LABELS: Record<string, { en: string; zh: string }> = {
   Havoc: { en: "Havoc", zh: "湮灭" },
   Spectro: { en: "Spectro", zh: "衍射" },
   Multiple: { en: "Multiple", zh: "多属性" },
+  Unknown: { en: "Unknown", zh: "未知" },
 };
 
 const WEAPON_LABELS: Record<string, { en: string; zh: string }> = {
@@ -37,6 +38,21 @@ const FACTION_LABELS: Record<string, { en: string; zh: string }> = {
   Unknown: { en: "Unknown", zh: "未知" },
   Yuezhou: { en: "Yuezhou", zh: "月相" },
 };
+
+const IMAGE_TYPE_LABELS: Record<string, { en: string; zh: string }> = {
+  portrait: { en: "Portrait", zh: "头像" },
+  card: { en: "Card", zh: "卡片" },
+  splash: { en: "Splash", zh: "立绘" },
+  other: { en: "Other", zh: "其他" },
+};
+
+export function localizeImageType(value: string, locale: SiteLocale): string {
+  const entry = IMAGE_TYPE_LABELS[value];
+  if (!entry) {
+    return value;
+  }
+  return locale === "zh" ? entry.zh : entry.en;
+}
 
 export function localizeGameLabel(
   value: string,

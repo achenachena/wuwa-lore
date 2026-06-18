@@ -34,7 +34,7 @@ export default async function Home() {
         <span className="rounded-full border border-zinc-300 bg-white px-3 py-1">
           {t.home.quality}:{" "}
           <strong>
-            {quality ? `${quality.coveredCharacters}/${quality.totalCharacters} ${t.home.charactersCovered}` : "N/A"}
+            {quality ? `${quality.coveredCharacters}/${quality.totalCharacters} ${t.home.charactersCovered}` : t.common.notAvailable}
           </strong>
         </span>
         <span

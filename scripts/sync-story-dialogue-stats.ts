@@ -92,6 +92,8 @@ const EN_NAME_TO_ID: Record<string, string> = {
   "Rover: Havoc": "rover-havoc",
   "Rover: Aero": "rover-aero",
   Lucilla: "lucilla",
+  Lucy: "lucy",
+  Rebecca: "rebecca",
 };
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -106,6 +108,20 @@ async function fetchJson<T>(url: string): Promise<T> {
     throw new Error(`Encore API failed ${response.status} for ${url}`);
   }
   return (await response.json()) as T;
+}
+
+async function fetchStoryDetail(locale: EncoreLocale, storyId: number): Promise<unknown | null> {
+  const url = `${ENCORE_BASE}/${locale}/story/${storyId}`;
+  try {
+    return await fetchJson<unknown>(url);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (message.includes("403")) {
+      console.warn(`[${locale}] Encore story ${storyId} unavailable (${message})`);
+      return null;
+    }
+    throw error;
+  }
 }
 
 function parseTemplateField(wikitext: string, key: string): string | undefined {
@@ -239,7 +255,7 @@ function buildSpeakerToCharacterId(params: {
   for (const role of params.enRoles) {
     const localeName = localeById.get(role.Id);
     const characterId = EN_NAME_TO_ID[role.Name] ?? slugify(role.Name);
-    if (!params.knownCharacterIds.has(characterId) && characterId !== "lucilla") {
+    if (!params.knownCharacterIds.has(characterId)) {
       continue;
     }
     if (localeName) {
@@ -346,7 +362,10 @@ async function syncLocale(params: {
     const versionHalf = `${quest.version}-${quest.half}`;
     const speakerCounts = new Map<string, number>();
     for (const storyId of storyIds) {
-      const detail = await fetchJson<unknown>(`${ENCORE_BASE}/${locale}/story/${storyId}`);
+      const detail = await fetchStoryDetail(locale, storyId);
+      if (!detail) {
+        continue;
+      }
       for (const [speaker, count] of countDialoguesBySpeaker(detail).entries()) {
         speakerCounts.set(speaker, (speakerCounts.get(speaker) ?? 0) + count);
       }
@@ -412,9 +431,7 @@ async function main() {
   const map = JSON.parse(await fs.readFile(mapPath, "utf8")) as QuestHalfMap;
 
   const characterFiles = (await fs.readdir(charactersDir)).filter((file) => file.endsWith(".json"));
-  const knownCharacterIds = new Set(
-    characterFiles.map((file) => file.replace(/\.json$/, "")).concat(["lucilla"]),
-  );
+  const knownCharacterIds = new Set(characterFiles.map((file) => file.replace(/\.json$/, "")));
 
   const enRolesPayload = await fetchJson<{ roleList: EncoreRole[] }>(`${ENCORE_BASE}/en/character`);
 
