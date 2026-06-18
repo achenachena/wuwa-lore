@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCharacterDetailData } from "@/lib/data";
+import { getCharacterDisplayName } from "@/lib/i18n/character-names";
+import { localizeGameLabel } from "@/lib/i18n/game-labels";
 import { formatStorySegmentLabel } from "@/lib/i18n/locale";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 
@@ -12,15 +14,20 @@ type CharacterDetailProps = {
 
 export async function generateMetadata({ params }: CharacterDetailProps): Promise<Metadata> {
   const { id } = await params;
-  const [t, { character }] = await Promise.all([getMessages(), getCharacterDetailData(id)]);
+  const [t, siteLocale, { character }] = await Promise.all([
+    getMessages(),
+    getSiteLocale(),
+    getCharacterDetailData(id),
+  ]);
   if (!character) {
     return {
       title: t.characterDetail.notFoundTitle,
     };
   }
+  const displayName = await getCharacterDisplayName(character.id, character.name, siteLocale);
   return {
-    title: `${character.name} | ${t.siteTitle}`,
-    description: `${character.name} ${t.characterDetail.metaDescription}`,
+    title: `${displayName} | ${t.siteTitle}`,
+    description: `${displayName} ${t.characterDetail.metaDescription}`,
   };
 }
 
@@ -36,13 +43,15 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
     notFound();
   }
 
+  const displayName = await getCharacterDisplayName(character.id, character.name, locale);
+
   return (
     <section className="space-y-6">
       <div>
         <Link href="/characters" className="text-sm text-zinc-500">
           {t.common.backToCharacters}
         </Link>
-        <h1 className="mt-2 text-3xl font-semibold">{character.name}</h1>
+        <h1 className="mt-2 text-3xl font-semibold">{displayName}</h1>
         <p className="mt-2 max-w-3xl text-zinc-700">{character.profile}</p>
         <p className="mt-2 text-xs text-zinc-500">
           {t.common.source}:{" "}
@@ -60,15 +69,15 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
       <div className="grid gap-4 md:grid-cols-4">
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <p className="text-sm text-zinc-500">{t.characterDetail.element}</p>
-          <p className="mt-1 font-medium">{character.element}</p>
+          <p className="mt-1 font-medium">{localizeGameLabel(character.element, "element", locale)}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <p className="text-sm text-zinc-500">{t.characterDetail.weapon}</p>
-          <p className="mt-1 font-medium">{character.weapon}</p>
+          <p className="mt-1 font-medium">{localizeGameLabel(character.weapon, "weapon", locale)}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <p className="text-sm text-zinc-500">{t.characterDetail.faction}</p>
-          <p className="mt-1 font-medium">{character.faction}</p>
+          <p className="mt-1 font-medium">{localizeGameLabel(character.faction, "faction", locale)}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <p className="text-sm text-zinc-500">{t.characterDetail.debutVersion}</p>
@@ -78,18 +87,6 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">{t.characterDetail.storySectionTitle}</h2>
-        <p className="mt-1 text-sm text-zinc-600">
-          {t.characterDetail.storySectionDescription}{" "}
-          <a
-            className="underline"
-            href={locale === "zh" ? "https://encore.moe/story?lang=zh-Hans" : "https://encore.moe/story?lang=en"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            encore.moe
-          </a>
-          .
-        </p>
         {storySegments.length === 0 ? (
           <p className="mt-2 text-zinc-600">{t.characterDetail.noStoryData}</p>
         ) : (

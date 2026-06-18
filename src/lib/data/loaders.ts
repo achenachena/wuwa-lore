@@ -2,8 +2,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 
-import type { EncoreLocale } from "@/lib/i18n/locale";
-import { toEncoreLocale } from "@/lib/i18n/locale";
+import { toEncoreLocale, isRoverCharacter, type EncoreLocale } from "@/lib/i18n/locale";
 import { getSiteLocale } from "@/lib/i18n/server";
 
 import type {
@@ -190,16 +189,17 @@ export async function loadStoryAppearances(): Promise<StoryAppearanceRow[]> {
   const filePath = path.join(root, "data", "derived", "story-appearances.json");
   const raw = await readJsonFile<unknown>(filePath);
   const parsed = z.object({ rows: z.array(storyAppearanceRowSchema) }).parse(raw);
-  return parsed.rows;
+  return parsed.rows.filter((row) => !isRoverCharacter(row.characterId));
 }
 
 export async function loadStoryDialogueStats(params?: { locale?: EncoreLocale }): Promise<StoryDialogueRow[]> {
   const rows = await loadAllStoryDialogueStats();
+  const filtered = rows.filter((row) => !isRoverCharacter(row.characterId));
   if (!params?.locale) {
     const locale = toEncoreLocale(await getSiteLocale());
-    return rows.filter((row) => row.locale === locale);
+    return filtered.filter((row) => row.locale === locale);
   }
-  return rows.filter((row) => row.locale === params.locale);
+  return filtered.filter((row) => row.locale === params.locale);
 }
 
 export async function loadAllStoryDialogueStats(): Promise<StoryDialogueRow[]> {

@@ -10,6 +10,7 @@ import type {
   VoiceLineEntry,
   VoiceLineStatRow,
 } from "@/types/lore";
+import { isRoverCharacter } from "@/lib/i18n/locale";
 
 function unique<T>(values: T[]): T[] {
   return [...new Set(values)];
@@ -87,13 +88,17 @@ export function aggregateVersionStats(params: {
   voiceStats: VoiceLineStatRow[];
 }): VersionStatRow[] {
   const { versions, characters, voiceStats } = params;
+  const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
 
   return versions.map((version) => {
-    const characterCount = characters.filter(
+    const characterCount = playableCharacters.filter(
       (character) => character.releaseVersion === version.version,
     ).length;
 
     const totalVoiceLines = voiceStats.reduce((sum, row) => {
+      if (isRoverCharacter(row.characterId)) {
+        return sum;
+      }
       const perVersion = row.perVersionLineCounts.find((item) => item.version === version.version);
       return sum + (perVersion?.lineCount ?? 0);
     }, 0);
@@ -178,7 +183,9 @@ export function buildStorySegmentRanking(params: {
   const characterIds = unique([
     ...dialogueByCharacter.keys(),
     ...appearancesByCharacter.keys(),
-  ]).sort((a, b) => a.localeCompare(b));
+  ])
+    .filter((characterId) => !isRoverCharacter(characterId))
+    .sort((a, b) => a.localeCompare(b));
 
   return characterIds
     .map((characterId) => {
@@ -239,7 +246,9 @@ export function buildVersionHalfRanking(params: {
   const characterIds = unique([
     ...dialogueByCharacter.keys(),
     ...appearancesByCharacter.keys(),
-  ]).sort((a, b) => a.localeCompare(b));
+  ])
+    .filter((characterId) => !isRoverCharacter(characterId))
+    .sort((a, b) => a.localeCompare(b));
 
   return characterIds
     .map((characterId) => {

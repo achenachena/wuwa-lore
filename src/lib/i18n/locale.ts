@@ -8,6 +8,23 @@ export function toEncoreLocale(siteLocale: SiteLocale): EncoreLocale {
   return siteLocale === "zh" ? "zh-Hans" : "en";
 }
 
+export type VoiceDataLocale = "zh-CN" | "en-US";
+
+export function toVoiceDataLocale(siteLocale: SiteLocale): VoiceDataLocale {
+  return siteLocale === "zh" ? "zh-CN" : "en-US";
+}
+
+export const ROVER_CHARACTER_IDS = new Set([
+  "rover",
+  "rover-havoc",
+  "rover-spectro",
+  "rover-aero",
+]);
+
+export function isRoverCharacter(characterId: string): boolean {
+  return ROVER_CHARACTER_IDS.has(characterId);
+}
+
 export function segmentDisplayName(
   segment: { nameZh: string; wikiTitle: string },
   siteLocale: SiteLocale,

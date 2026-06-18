@@ -11,8 +11,6 @@ export const messages = {
       characters: "Characters",
       versionStats: "Version Stats",
       storySegments: "Story Segments",
-      tools: "Tools",
-      methodology: "Methodology",
     },
     language: {
       label: "Language",
@@ -45,7 +43,6 @@ export const messages = {
       totalVoiceLines: "Total Voice Lines",
       browseCharacters: "Browse Characters",
       viewVersionAnalytics: "View Version Analytics",
-      dataTools: "Data Tools & Downloads",
     },
     characters: {
       title: "Characters",
@@ -88,11 +85,9 @@ export const messages = {
     },
     versionStats: {
       title: "Version Stats",
-      description:
-        "Debut character counts, multilingual voice-line growth, and roster breakdown for each version.",
+      description: "Debut character counts, profile voice-line totals, and roster breakdown for each version.",
       empty: "No version stats available yet.",
-      dualSourceDates: "Dual-source version dates",
-      seeTools: "see Tools",
+      dualSourceDates: "Version date check",
       version: "Version",
       fandomRelease: "Fandom Release",
       officialRelease: "Official Release",
@@ -110,7 +105,6 @@ export const messages = {
       matrixTab: "Segment details",
       selectedSegments: "Selected",
       segments: "story segments",
-      dialogueSource: "Line counts from encore.moe story dialogue; appearances from Fandom quest infobox.",
       rank: "#",
       character: "Character",
       storyLines: "Story lines",
@@ -118,13 +112,6 @@ export const messages = {
       linesPerAppearance: "Lines / appearance",
       appeared: "Appeared",
       lines: "lines",
-    },
-    tools: {
-      title: "Data Tools",
-      description: "Download derived datasets and inspect data quality signals.",
-    },
-    methodology: {
-      title: "Data Methodology",
     },
     notFound: {
       title: "Page not found",
@@ -140,8 +127,6 @@ export const messages = {
       characters: "角色",
       versionStats: "版本统计",
       storySegments: "主线段落",
-      tools: "工具",
-      methodology: "数据方法",
     },
     language: {
       label: "语言",
@@ -174,7 +159,6 @@ export const messages = {
       totalVoiceLines: "语音台词总数",
       browseCharacters: "浏览角色",
       viewVersionAnalytics: "查看版本分析",
-      dataTools: "数据工具与下载",
     },
     characters: {
       title: "角色",
@@ -215,10 +199,9 @@ export const messages = {
     },
     versionStats: {
       title: "版本统计",
-      description: "各版本新角色数量、多语言台词增长与初版 roster 明细。",
+      description: "各版本新角色数量、档案台词总数与初版角色明细。",
       empty: "暂无版本统计数据。",
-      dualSourceDates: "双源版本日期",
-      seeTools: "见工具页",
+      dualSourceDates: "版本日期校验",
       version: "版本",
       fandomRelease: "Fandom 发布日",
       officialRelease: "官方发布日",
@@ -236,7 +219,6 @@ export const messages = {
       matrixTab: "段落明细",
       selectedSegments: "已选",
       segments: "个主线段落",
-      dialogueSource: "台词数来自 encore.moe 主线对话；登场来自 Fandom 任务 infobox。",
       rank: "#",
       character: "角色",
       storyLines: "主线台词",
@@ -244,13 +226,6 @@ export const messages = {
       linesPerAppearance: "台词/登场",
       appeared: "登场",
       lines: "句",
-    },
-    tools: {
-      title: "数据工具",
-      description: "下载衍生数据集并查看数据质量信息。",
-    },
-    methodology: {
-      title: "数据方法",
     },
     notFound: {
       title: "页面不存在",

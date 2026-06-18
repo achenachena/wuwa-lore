@@ -26,6 +26,9 @@ type MatrixRow = {
   }>;
 };
 
+type SortKey = "voiceLineCount" | "appearanceCount" | "linesPerAppearance";
+type SortDirection = "asc" | "desc";
+
 type Props = {
   versions: string[];
   segmentOptions: SegmentOption[];
@@ -46,6 +49,8 @@ export function VersionHalfStatsBrowser({
   const [fromVersion, setFromVersion] = useState(initialFromVersion);
   const [toVersion, setToVersion] = useState(initialToVersion);
   const [view, setView] = useState<"ranking" | "matrix">("ranking");
+  const [sortKey, setSortKey] = useState<SortKey>("linesPerAppearance");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
   const selectedSegmentIds = useMemo(() => {
     return segmentOptions
@@ -77,38 +82,39 @@ export function VersionHalfStatsBrowser({
           appearanceTotal += 1;
         }
       }
-      if (dialogueTotal > 0) {
+      if (dialogueTotal > 0 || appearanceTotal > 0) {
         dialogueByCharacter.set(row.character.id, dialogueTotal);
-      }
-      if (appearanceTotal > 0) {
         appearancesByCharacter.set(row.character.id, appearanceTotal);
       }
     }
 
     const ids = new Set([...dialogueByCharacter.keys(), ...appearancesByCharacter.keys()]);
-    return [...ids]
-      .map((characterId) => {
-        const source = matrix.find((row) => row.character.id === characterId);
-        const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
-        const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
-        return {
-          characterId,
-          characterName: source?.character.name ?? characterId,
-          voiceLineCount,
-          appearanceCount,
-          linesPerAppearance:
-            appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
-        };
-      })
-      .sort((a, b) => {
-        const aScore = a.linesPerAppearance ?? -1;
-        const bScore = b.linesPerAppearance ?? -1;
-        if (bScore !== aScore) {
-          return bScore - aScore;
-        }
-        return b.voiceLineCount - a.voiceLineCount;
-      });
-  }, [matrix, selectedSegmentIds]);
+    const rows = [...ids].map((characterId) => {
+      const source = matrix.find((row) => row.character.id === characterId);
+      const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
+      const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
+      return {
+        characterId,
+        characterName: source?.character.name ?? characterId,
+        voiceLineCount,
+        appearanceCount,
+        linesPerAppearance:
+          appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
+      };
+    });
+
+    return rows.sort((a, b) => {
+      const direction = sortDirection === "asc" ? 1 : -1;
+      const aValue =
+        sortKey === "linesPerAppearance" ? (a.linesPerAppearance ?? -1) : a[sortKey];
+      const bValue =
+        sortKey === "linesPerAppearance" ? (b.linesPerAppearance ?? -1) : b[sortKey];
+      if (aValue !== bValue) {
+        return (aValue - bValue) * direction;
+      }
+      return a.characterName.localeCompare(b.characterName);
+    });
+  }, [matrix, selectedSegmentIds, sortDirection, sortKey]);
 
   const filteredMatrix = useMemo(() => {
     return matrix
@@ -118,6 +124,22 @@ export function VersionHalfStatsBrowser({
       }))
       .filter((row) => row.cells.some((cell) => cell.appeared || cell.dialogueLineCount > 0));
   }, [matrix, selectedSegmentIds]);
+
+  function toggleSort(key: SortKey) {
+    if (sortKey === key) {
+      setSortDirection((current) => (current === "asc" ? "desc" : "asc"));
+      return;
+    }
+    setSortKey(key);
+    setSortDirection("desc");
+  }
+
+  function sortIndicator(key: SortKey) {
+    if (sortKey !== key) {
+      return "";
+    }
+    return sortDirection === "asc" ? " ↑" : " ↓";
+  }
 
   return (
     <div className="space-y-6">
@@ -169,8 +191,7 @@ export function VersionHalfStatsBrowser({
       </div>
 
       <p className="text-sm text-zinc-600">
-        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments} ({fromVersion}–{toVersion}
-        ). {labels.dialogueSource}
+        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments} ({fromVersion}–{toVersion})
       </p>
 
       {view === "ranking" ? (
@@ -180,9 +201,28 @@ export function VersionHalfStatsBrowser({
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
                 <th className="px-4 py-3">{labels.rank}</th>
                 <th className="px-4 py-3">{labels.character}</th>
-                <th className="px-4 py-3">{labels.storyLines}</th>
-                <th className="px-4 py-3">{labels.appearanceSegments}</th>
-                <th className="px-4 py-3">{labels.linesPerAppearance}</th>
+                <th className="px-4 py-3">
+                  <button type="button" className="hover:text-zinc-900" onClick={() => toggleSort("voiceLineCount")}>
+                    {labels.storyLines}
+                    {sortIndicator("voiceLineCount")}
+                  </button>
+                </th>
+                <th className="px-4 py-3">
+                  <button type="button" className="hover:text-zinc-900" onClick={() => toggleSort("appearanceCount")}>
+                    {labels.appearanceSegments}
+                    {sortIndicator("appearanceCount")}
+                  </button>
+                </th>
+                <th className="px-4 py-3">
+                  <button
+                    type="button"
+                    className="hover:text-zinc-900"
+                    onClick={() => toggleSort("linesPerAppearance")}
+                  >
+                    {labels.linesPerAppearance}
+                    {sortIndicator("linesPerAppearance")}
+                  </button>
+                </th>
               </tr>
             </thead>
             <tbody>

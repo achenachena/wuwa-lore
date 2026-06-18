@@ -1,18 +1,30 @@
 import Link from "next/link";
-import { getCharacterListData, getVersionStatsPageData } from "@/lib/data";
-import { getMessages } from "@/lib/i18n/server";
-import { loadSourceDiffReport, loadQualityReport, loadValidationReport } from "@/lib/data/loaders";
+import { getCharacterListData, getVersionStatsPageData, getVoiceStatsForSite } from "@/lib/data";
+import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
+import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
+import { getMessages, getSiteLocale } from "@/lib/i18n/server";
+import { isRoverCharacter } from "@/lib/i18n/locale";
+import { loadOfficialVersionNotes, loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
-  const [characters, versionStats, quality, validation, sourceDiff, t] = await Promise.all([
-    getCharacterListData(),
-    getVersionStatsPageData(),
-    loadQualityReport().catch(() => null),
-    loadValidationReport().catch(() => null),
-    loadSourceDiffReport().catch(() => null),
-    getMessages(),
-  ]);
-  const totalLines = versionStats.reduce((sum, item) => sum + item.totalVoiceLines, 0);
+  const [characters, versionStats, stats, quality, validation, sourceDiff, siteLocale, t] =
+    await Promise.all([
+      getCharacterListData(),
+      getVersionStatsPageData(),
+      getVoiceStatsForSite(),
+      loadQualityReport().catch(() => null),
+      loadValidationReport().catch(() => null),
+      loadSourceDiffReport().catch(() => null),
+      getSiteLocale(),
+      getMessages(),
+    ]);
+
+  const totalLines = stats.reduce((sum, row) => {
+    if (isRoverCharacter(row.characterId)) {
+      return sum;
+    }
+    return sum + row.totalLineCount;
+  }, 0);
 
   return (
     <section className="space-y-6">
@@ -36,7 +48,8 @@ export default async function Home() {
         </span>
         {quality ? (
           <span className="rounded-full border border-zinc-300 bg-white px-3 py-1">
-            {t.common.updated}: <strong>{new Date(quality.generatedAt).toLocaleString()}</strong>
+            {t.common.updated}:{" "}
+            <strong>{formatLocaleDateTime(quality.generatedAt, siteLocale)}</strong>
           </span>
         ) : null}
         {sourceDiff ? (
@@ -50,7 +63,7 @@ export default async function Home() {
             {t.home.dualSource}:{" "}
             <strong>
               {sourceDiff.summary.ok
-                ? t.home.aligned
+                ? `${t.home.aligned} (${sourceDiff.summary.alignedDate}/${sourceDiff.summary.fandomVersionCount})`
                 : `${sourceDiff.summary.mismatchedDate} ${t.home.dateMismatches}`}
             </strong>
           </span>
@@ -59,7 +72,9 @@ export default async function Home() {
       <div className="grid gap-4 md:grid-cols-3">
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <h2 className="text-sm font-medium text-zinc-500">{t.home.trackedCharacters}</h2>
-          <p className="mt-2 text-2xl font-semibold">{characters.length}</p>
+          <p className="mt-2 text-2xl font-semibold">
+            {characters.filter((character) => !isRoverCharacter(character.id)).length}
+          </p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <h2 className="text-sm font-medium text-zinc-500">{t.home.trackedVersions}</h2>
@@ -76,9 +91,6 @@ export default async function Home() {
         </Link>
         <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/stats/versions">
           {t.home.viewVersionAnalytics}
-        </Link>
-        <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/tools">
-          {t.home.dataTools}
         </Link>
       </div>
     </section>

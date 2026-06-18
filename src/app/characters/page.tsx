@@ -1,36 +1,35 @@
 import { CharactersBrowser } from "@/components/characters-browser";
-import { getCharacterListData } from "@/lib/data";
-import { getMessages } from "@/lib/i18n/server";
-import { loadGeneratedStats } from "@/lib/data/loaders";
+import { getCharacterListData, getVoiceStatsForSite } from "@/lib/data";
+import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
+import { localizeGameLabel } from "@/lib/i18n/game-labels";
+import { getMessages, getSiteLocale } from "@/lib/i18n/server";
+import { isRoverCharacter } from "@/lib/i18n/locale";
 
 export default async function CharactersPage() {
-  const [characters, stats, t] = await Promise.all([
+  const [characters, stats, siteLocale, t] = await Promise.all([
     getCharacterListData(),
-    loadGeneratedStats(),
+    getVoiceStatsForSite(),
+    getSiteLocale(),
     getMessages(),
   ]);
-  const totalByCharacter = new Map<string, number>();
-  for (const row of stats) {
-    const current = totalByCharacter.get(row.characterId) ?? 0;
-    totalByCharacter.set(row.characterId, current + row.totalLineCount);
-  }
+  const displayNames = await getCharacterDisplayNameMap(siteLocale);
 
   if (characters.length === 0) {
     return <p className="text-zinc-600">{t.characters.empty}</p>;
   }
 
   const listItems = characters.map((character) => {
-    const rows = stats.filter((row) => row.characterId === character.id);
+    const row = stats.find((item) => item.characterId === character.id);
     return {
       id: character.id,
-      name: character.name,
-      element: character.element,
-      weapon: character.weapon,
-      faction: character.faction,
+      name: displayNames.get(character.id) ?? character.name,
+      element: localizeGameLabel(character.element, "element", siteLocale),
+      weapon: localizeGameLabel(character.weapon, "weapon", siteLocale),
+      faction: localizeGameLabel(character.faction, "faction", siteLocale),
       rarity: character.rarity,
       releaseVersion: character.releaseVersion,
-      voiceLineTotal: totalByCharacter.get(character.id) ?? 0,
-      hasVoiceStats: rows.length > 0,
+      voiceLineTotal: isRoverCharacter(character.id) ? 0 : (row?.totalLineCount ?? 0),
+      hasVoiceStats: Boolean(row?.totalLineCount),
     };
   });
 
