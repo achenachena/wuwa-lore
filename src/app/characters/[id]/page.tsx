@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCharacterDetailData } from "@/lib/data";
+import { formatStorySegmentLabel } from "@/lib/i18n/locale";
+import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 
 type CharacterDetailProps = {
   params: Promise<{ id: string }>;
@@ -10,21 +12,25 @@ type CharacterDetailProps = {
 
 export async function generateMetadata({ params }: CharacterDetailProps): Promise<Metadata> {
   const { id } = await params;
-  const { character } = await getCharacterDetailData(id);
+  const [t, { character }] = await Promise.all([getMessages(), getCharacterDetailData(id)]);
   if (!character) {
     return {
-      title: "Character Not Found",
+      title: t.characterDetail.notFoundTitle,
     };
   }
   return {
-    title: `${character.name} | Wuwa Lore`,
-    description: `${character.name} profile and main-story appearance stats`,
+    title: `${character.name} | ${t.siteTitle}`,
+    description: `${character.name} ${t.characterDetail.metaDescription}`,
   };
 }
 
 export default async function CharacterDetailPage({ params }: CharacterDetailProps) {
   const { id } = await params;
-  const { character, characterImages, storySegments } = await getCharacterDetailData(id);
+  const [locale, t, { character, characterImages, storySegments }] = await Promise.all([
+    getSiteLocale(),
+    getMessages(),
+    getCharacterDetailData(id),
+  ]);
 
   if (!character) {
     notFound();
@@ -34,12 +40,12 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
     <section className="space-y-6">
       <div>
         <Link href="/characters" className="text-sm text-zinc-500">
-          ← Back to characters
+          {t.common.backToCharacters}
         </Link>
         <h1 className="mt-2 text-3xl font-semibold">{character.name}</h1>
         <p className="mt-2 max-w-3xl text-zinc-700">{character.profile}</p>
         <p className="mt-2 text-xs text-zinc-500">
-          Source:{" "}
+          {t.common.source}:{" "}
           <a
             href={character.source.sourceUrl}
             target="_blank"
@@ -53,52 +59,57 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
 
       <div className="grid gap-4 md:grid-cols-4">
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
-          <p className="text-sm text-zinc-500">Element</p>
+          <p className="text-sm text-zinc-500">{t.characterDetail.element}</p>
           <p className="mt-1 font-medium">{character.element}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
-          <p className="text-sm text-zinc-500">Weapon</p>
+          <p className="text-sm text-zinc-500">{t.characterDetail.weapon}</p>
           <p className="mt-1 font-medium">{character.weapon}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
-          <p className="text-sm text-zinc-500">Faction</p>
+          <p className="text-sm text-zinc-500">{t.characterDetail.faction}</p>
           <p className="mt-1 font-medium">{character.faction}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
-          <p className="text-sm text-zinc-500">Debut Version</p>
+          <p className="text-sm text-zinc-500">{t.characterDetail.debutVersion}</p>
           <p className="mt-1 font-medium">{character.releaseVersion}</p>
         </article>
       </div>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">主线剧情登场与台词</h2>
+        <h2 className="text-lg font-semibold">{t.characterDetail.storySectionTitle}</h2>
         <p className="mt-1 text-sm text-zinc-600">
-          按主线段落统计。登场依据 Fandom 任务 infobox；台词数来自{" "}
-          <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
+          {t.characterDetail.storySectionDescription}{" "}
+          <a
+            className="underline"
+            href={locale === "zh" ? "https://encore.moe/story?lang=zh-Hans" : "https://encore.moe/story?lang=en"}
+            target="_blank"
+            rel="noreferrer"
+          >
             encore.moe
-          </a>{" "}
-          主线对话（zh-Hans）。
+          </a>
+          .
         </p>
         {storySegments.length === 0 ? (
-          <p className="mt-2 text-zinc-600">暂无主线登场或台词记录。</p>
+          <p className="mt-2 text-zinc-600">{t.characterDetail.noStoryData}</p>
         ) : (
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[480px] border-collapse text-sm">
               <thead>
                 <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                  <th className="py-2 pr-4">主线段落</th>
-                  <th className="py-2 pr-4">版本</th>
-                  <th className="py-2 pr-4">登场</th>
-                  <th className="py-2">台词数</th>
+                  <th className="py-2 pr-4">{t.characterDetail.storySegment}</th>
+                  <th className="py-2 pr-4">{t.characterDetail.appeared}</th>
+                  <th className="py-2">{t.characterDetail.lineCount}</th>
                 </tr>
               </thead>
               <tbody>
                 {storySegments.map((row) => (
                   <tr key={row.segment.id} className="border-b border-zinc-100">
-                    <td className="py-2 pr-4 font-medium">{row.segment.nameZh}</td>
-                    <td className="py-2 pr-4 text-zinc-600">{row.segment.version}</td>
-                    <td className="py-2 pr-4">{row.appeared ? "是" : "—"}</td>
-                    <td className="py-2">{row.lineCount > 0 ? row.lineCount : "—"}</td>
+                    <td className="py-2 pr-4 font-medium">
+                      {formatStorySegmentLabel(row.segment, locale)}
+                    </td>
+                    <td className="py-2 pr-4">{row.appeared ? t.common.yes : t.common.dash}</td>
+                    <td className="py-2">{row.lineCount > 0 ? row.lineCount : t.common.dash}</td>
                   </tr>
                 ))}
               </tbody>
@@ -108,9 +119,9 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
       </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Image metadata</h2>
+        <h2 className="text-lg font-semibold">{t.characterDetail.imagesTitle}</h2>
         {characterImages.length === 0 ? (
-          <p className="mt-2 text-zinc-600">No images registered for this character.</p>
+          <p className="mt-2 text-zinc-600">{t.characterDetail.noImages}</p>
         ) : (
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             {characterImages.map((image) => (
@@ -123,7 +134,7 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
                   className="h-auto w-full rounded"
                 />
                 <figcaption className="mt-2 text-xs text-zinc-600">
-                  {image.title} ({image.type}) · Source: {image.source.sourceUrl}
+                  {image.title} ({image.type}) · {t.common.source}: {image.source.sourceUrl}
                 </figcaption>
               </figure>
             ))}

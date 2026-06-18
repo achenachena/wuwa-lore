@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import type { Messages } from "@/lib/i18n/messages";
+
 type SegmentOption = {
   id: string;
-  labelZh: string;
+  label: string;
   version: string;
 };
 
@@ -30,6 +32,7 @@ type Props = {
   initialFromVersion: string;
   initialToVersion: string;
   matrix: MatrixRow[];
+  labels: Messages["storySegments"];
 };
 
 export function VersionHalfStatsBrowser({
@@ -38,6 +41,7 @@ export function VersionHalfStatsBrowser({
   initialFromVersion,
   initialToVersion,
   matrix,
+  labels,
 }: Props) {
   const [fromVersion, setFromVersion] = useState(initialFromVersion);
   const [toVersion, setToVersion] = useState(initialToVersion);
@@ -119,7 +123,7 @@ export function VersionHalfStatsBrowser({
     <div className="space-y-6">
       <div className="flex flex-wrap items-end gap-4 rounded-lg border border-zinc-200 bg-white p-4">
         <label className="space-y-1 text-sm">
-          <span className="text-zinc-600">起始版本</span>
+          <span className="text-zinc-600">{labels.fromVersion}</span>
           <select
             className="block rounded-md border border-zinc-300 px-3 py-2"
             value={fromVersion}
@@ -133,7 +137,7 @@ export function VersionHalfStatsBrowser({
           </select>
         </label>
         <label className="space-y-1 text-sm">
-          <span className="text-zinc-600">结束版本</span>
+          <span className="text-zinc-600">{labels.toVersion}</span>
           <select
             className="block rounded-md border border-zinc-300 px-3 py-2"
             value={toVersion}
@@ -152,24 +156,21 @@ export function VersionHalfStatsBrowser({
             className={`rounded-md px-3 py-2 text-sm ${view === "ranking" ? "bg-zinc-900 text-white" : "border border-zinc-300"}`}
             onClick={() => setView("ranking")}
           >
-            台词/登场排名
+            {labels.rankingTab}
           </button>
           <button
             type="button"
             className={`rounded-md px-3 py-2 text-sm ${view === "matrix" ? "bg-zinc-900 text-white" : "border border-zinc-300"}`}
             onClick={() => setView("matrix")}
           >
-            主线段落明细
+            {labels.matrixTab}
           </button>
         </div>
       </div>
 
       <p className="text-sm text-zinc-600">
-        已选 {selectedSegmentIds.length} 个主线段落（{fromVersion}–{toVersion}）。列标题为主线剧情名；台词数来自{" "}
-        <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
-          encore.moe
-        </a>
-        ，登场来自 Fandom 任务 infobox。
+        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments} ({fromVersion}–{toVersion}
+        ). {labels.dialogueSource}
       </p>
 
       {view === "ranking" ? (
@@ -177,11 +178,11 @@ export function VersionHalfStatsBrowser({
           <table className="w-full border-collapse text-sm">
             <thead>
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                <th className="px-4 py-3">#</th>
-                <th className="px-4 py-3">角色</th>
-                <th className="px-4 py-3">主线台词</th>
-                <th className="px-4 py-3">登场段落数</th>
-                <th className="px-4 py-3">台词/登场</th>
+                <th className="px-4 py-3">{labels.rank}</th>
+                <th className="px-4 py-3">{labels.character}</th>
+                <th className="px-4 py-3">{labels.storyLines}</th>
+                <th className="px-4 py-3">{labels.appearanceSegments}</th>
+                <th className="px-4 py-3">{labels.linesPerAppearance}</th>
               </tr>
             </thead>
             <tbody>
@@ -206,10 +207,10 @@ export function VersionHalfStatsBrowser({
           <table className="w-full min-w-[960px] border-collapse text-xs">
             <thead>
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                <th className="sticky left-0 bg-white px-3 py-2">角色</th>
+                <th className="sticky left-0 bg-white px-3 py-2">{labels.character}</th>
                 {selectedSegmentIds.map((segmentId) => (
                   <th key={segmentId} className="px-3 py-2 whitespace-nowrap">
-                    {segmentOptions.find((item) => item.id === segmentId)?.labelZh ?? segmentId}
+                    {segmentOptions.find((item) => item.id === segmentId)?.label ?? segmentId}
                   </th>
                 ))}
               </tr>
@@ -226,8 +227,12 @@ export function VersionHalfStatsBrowser({
                     <td key={cell.segmentId} className="px-3 py-2 align-top">
                       {cell.appeared || cell.dialogueLineCount > 0 ? (
                         <div className="space-y-1">
-                          <div>{cell.appeared ? "登场" : "—"}</div>
-                          <div>{cell.dialogueLineCount > 0 ? `${cell.dialogueLineCount} 句` : "—"}</div>
+                          <div>{cell.appeared ? labels.appeared : "—"}</div>
+                          <div>
+                            {cell.dialogueLineCount > 0
+                              ? `${cell.dialogueLineCount} ${labels.lines}`
+                              : "—"}
+                          </div>
                         </div>
                       ) : (
                         "—"

@@ -111,6 +111,7 @@ export const storyAppearanceRowSchema = z.object({
 });
 
 export const storyDialogueRowSchema = z.object({
+  locale: z.enum(["en", "zh-Hans"]),
   characterId: z.string().min(1),
   questId: z.string().min(1),
   wikiTitle: z.string().min(1),

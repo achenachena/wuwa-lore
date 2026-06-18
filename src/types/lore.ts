@@ -134,6 +134,7 @@ export interface VersionHalfVoiceRow {
 }
 
 export interface StoryDialogueRow {
+  locale: "en" | "zh-Hans";
   characterId: string;
   questId: string;
   wikiTitle: string;

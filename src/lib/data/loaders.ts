@@ -2,6 +2,10 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 
+import type { EncoreLocale } from "@/lib/i18n/locale";
+import { toEncoreLocale } from "@/lib/i18n/locale";
+import { getSiteLocale } from "@/lib/i18n/server";
+
 import type {
   Character,
   CharacterImage,
@@ -189,7 +193,16 @@ export async function loadStoryAppearances(): Promise<StoryAppearanceRow[]> {
   return parsed.rows;
 }
 
-export async function loadStoryDialogueStats(): Promise<StoryDialogueRow[]> {
+export async function loadStoryDialogueStats(params?: { locale?: EncoreLocale }): Promise<StoryDialogueRow[]> {
+  const rows = await loadAllStoryDialogueStats();
+  if (!params?.locale) {
+    const locale = toEncoreLocale(await getSiteLocale());
+    return rows.filter((row) => row.locale === locale);
+  }
+  return rows.filter((row) => row.locale === params.locale);
+}
+
+export async function loadAllStoryDialogueStats(): Promise<StoryDialogueRow[]> {
   const filePath = path.join(root, "data", "derived", "story-dialogue-stats.json");
   const raw = await readJsonFile<unknown>(filePath);
   const parsed = z.object({ rows: z.array(storyDialogueRowSchema) }).parse(raw);

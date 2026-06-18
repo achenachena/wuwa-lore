@@ -1,14 +1,21 @@
 {
-  "generatedAt": "2026-06-17T23:46:38.053Z",
+  "generatedAt": "2026-06-18T00:00:48.239Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
-    "locale": "zh-Hans",
+    "locales": [
+      "zh-Hans",
+      "en"
+    ],
     "countMethod": "main_story_dialogue_speaker_lines"
   },
-  "questCount": 40,
+  "questCountByLocale": {
+    "en": 40,
+    "zh-Hans": 40
+  },
   "rows": [
     {
+      "locale": "zh-Hans",
       "characterId": "aalto",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
@@ -22,6 +29,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aalto",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -35,6 +43,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aalto",
       "questId": "through-the-sea-thou-break",
       "wikiTitle": "Through the Sea Thou Break",
@@ -48,6 +57,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aalto",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
@@ -61,6 +71,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aalto",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -74,6 +85,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aemeath",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -87,6 +99,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aemeath",
       "questId": "the-star-that-voyages-far",
       "wikiTitle": "The Star That Voyages Far",
@@ -100,6 +113,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "aemeath",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -113,6 +127,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "augusta",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -126,6 +141,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "augusta",
       "questId": "by-moons-fated-light",
       "wikiTitle": "By Moon's Fated Light",
@@ -139,6 +155,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "augusta",
       "questId": "by-suns-burning-hand",
       "wikiTitle": "By Sun's Burning Hand",
@@ -152,6 +169,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "augusta",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -165,6 +183,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "augusta",
       "questId": "rust-sword-and-the-sun",
       "wikiTitle": "Rust, Sword and the Sun",
@@ -178,6 +197,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "augusta",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -191,6 +211,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "advance-toward-the-future-from-today",
       "wikiTitle": "Advance toward the Future from Today",
@@ -204,6 +225,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -217,6 +239,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
@@ -230,6 +253,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
@@ -243,6 +267,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
@@ -256,6 +281,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
@@ -269,6 +295,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
@@ -282,6 +309,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "baizhi",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
@@ -295,6 +323,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "brant",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -308,6 +337,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "brant",
       "questId": "old-man-and-the-whale",
       "wikiTitle": "Old Man and the Whale",
@@ -321,6 +351,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "brant",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -334,6 +365,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "brant",
       "questId": "through-the-sea-thou-break",
       "wikiTitle": "Through the Sea Thou Break",
@@ -347,6 +379,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "brant",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",
@@ -360,6 +393,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "buling",
       "questId": "by-suns-burning-hand",
       "wikiTitle": "By Sun's Burning Hand",
@@ -373,6 +407,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "buling",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -386,6 +421,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "buling",
       "questId": "stagnant-dawn-on-wastelands",
       "wikiTitle": "Stagnant Dawn on Wastelands",
@@ -399,6 +435,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "calcharo",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -412,6 +449,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "camellya",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -425,6 +463,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cantarella",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -438,6 +477,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cantarella",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -451,6 +491,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cantarella",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -464,6 +505,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cantarella",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -477,6 +519,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cantarella",
       "questId": "the-maiden-the-defier-the-death-crier",
       "wikiTitle": "The Maiden, The Defier, The Death Crier",
@@ -490,6 +533,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "carlotta",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -503,6 +547,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "carlotta",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -516,6 +561,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "carlotta",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -529,6 +575,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "carlotta",
       "questId": "the-maiden-the-defier-the-death-crier",
       "wikiTitle": "The Maiden, The Defier, The Death Crier",
@@ -542,6 +589,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "carlotta",
       "questId": "veils-off-in-sun-or-shadow",
       "wikiTitle": "Veils Off in Sun or Shadow",
@@ -555,6 +603,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "carlotta",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",
@@ -568,6 +617,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -581,6 +631,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "dreamcatchers-in-the-secret-gardens",
       "wikiTitle": "Dreamcatchers in the Secret Gardens",
@@ -594,6 +645,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "flames-of-heart",
       "wikiTitle": "Flames of Heart",
@@ -607,6 +659,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -620,6 +673,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -633,6 +687,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "the-maiden-the-defier-the-death-crier",
       "wikiTitle": "The Maiden, The Defier, The Death Crier",
@@ -646,6 +701,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "cartethyia",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",
@@ -659,6 +715,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "changli",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
@@ -672,6 +729,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chisa",
       "questId": "flowing-starlight-in-the-iris",
       "wikiTitle": "Flowing Starlight in the Iris",
@@ -685,6 +743,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chisa",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -698,6 +757,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chisa",
       "questId": "stagnant-dawn-on-wastelands",
       "wikiTitle": "Stagnant Dawn on Wastelands",
@@ -711,6 +771,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chisa",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -724,6 +785,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chisa",
       "questId": "when-the-unknown-thrums",
       "wikiTitle": "When the Unknown Thrums",
@@ -737,6 +799,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "a-new-companion",
       "wikiTitle": "A New Companion",
@@ -750,6 +813,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "advance-toward-the-future-from-today",
       "wikiTitle": "Advance toward the Future from Today",
@@ -763,6 +827,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
@@ -776,6 +841,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -789,6 +855,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
@@ -802,6 +869,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
@@ -815,6 +883,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
@@ -828,6 +897,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
@@ -841,6 +911,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
@@ -854,6 +925,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
@@ -867,6 +939,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "chixia",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
@@ -880,6 +953,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "ciaccona",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -893,6 +967,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "ciaccona",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -906,6 +981,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "ciaccona",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -919,6 +995,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "ciaccona",
       "questId": "the-maiden-the-defier-the-death-crier",
       "wikiTitle": "The Maiden, The Defier, The Death Crier",
@@ -932,6 +1009,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "denia",
       "questId": "beneath-a-melting-night-sky",
       "wikiTitle": "Beneath a Melting Night Sky",
@@ -945,6 +1023,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "denia",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -958,6 +1037,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "denia",
       "questId": "rabbit-reflected-in-shades",
       "wikiTitle": "Rabbit Reflected in Shades",
@@ -971,6 +1051,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "denia",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -984,6 +1065,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "encore",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -997,6 +1079,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "galbrena",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1010,6 +1093,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "galbrena",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -1023,6 +1107,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "hiyuki",
       "questId": "beneath-a-melting-night-sky",
       "wikiTitle": "Beneath a Melting Night Sky",
@@ -1036,6 +1121,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "hiyuki",
       "questId": "rabbit-reflected-in-shades",
       "wikiTitle": "Rabbit Reflected in Shades",
@@ -1049,6 +1135,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "hiyuki",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1062,6 +1149,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "hiyuki",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -1075,6 +1163,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "hiyuki",
       "questId": "wishes-in-the-bell",
       "wikiTitle": "Wishes in the Bell",
@@ -1088,6 +1177,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "iuno",
       "questId": "by-moons-fated-light",
       "wikiTitle": "By Moon's Fated Light",
@@ -1101,6 +1191,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "iuno",
       "questId": "by-suns-burning-hand",
       "wikiTitle": "By Sun's Burning Hand",
@@ -1114,6 +1205,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "iuno",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1127,6 +1219,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "iuno",
       "questId": "rust-sword-and-the-sun",
       "wikiTitle": "Rust, Sword and the Sun",
@@ -1140,6 +1233,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "iuno",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -1153,6 +1247,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -1166,6 +1261,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
@@ -1179,6 +1275,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
@@ -1192,6 +1289,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
@@ -1205,6 +1303,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
@@ -1218,6 +1317,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
@@ -1231,6 +1331,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
@@ -1244,6 +1345,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "all-that-sunlight-touches",
       "wikiTitle": "All That Sunlight Touches",
@@ -1257,6 +1359,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -1270,6 +1373,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "rabbit-reflected-in-shades",
       "wikiTitle": "Rabbit Reflected in Shades",
@@ -1283,6 +1387,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1296,6 +1401,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "the-star-that-voyages-far",
       "wikiTitle": "The Star That Voyages Far",
@@ -1309,6 +1415,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -1322,6 +1429,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lucilla",
       "questId": "wishes-in-the-bell",
       "wikiTitle": "Wishes in the Bell",
@@ -1335,6 +1443,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lupa",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1348,6 +1457,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lupa",
       "questId": "flames-of-heart",
       "wikiTitle": "Flames of Heart",
@@ -1361,6 +1471,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lupa",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -1374,6 +1485,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "luuk-herssen",
       "questId": "all-that-sunlight-touches",
       "wikiTitle": "All That Sunlight Touches",
@@ -1387,6 +1499,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "luuk-herssen",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -1400,6 +1513,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "luuk-herssen",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1413,6 +1527,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "luuk-herssen",
       "questId": "the-star-that-voyages-far",
       "wikiTitle": "The Star That Voyages Far",
@@ -1426,6 +1541,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lynae",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -1439,6 +1555,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lynae",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1452,6 +1569,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lynae",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -1465,6 +1583,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "lynae",
       "questId": "when-the-unknown-thrums",
       "wikiTitle": "When the Unknown Thrums",
@@ -1478,6 +1597,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "mornye",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -1491,6 +1611,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "mornye",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1504,6 +1625,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "mornye",
       "questId": "the-star-that-voyages-far",
       "wikiTitle": "The Star That Voyages Far",
@@ -1517,6 +1639,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "mornye",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -1530,6 +1653,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -1543,6 +1667,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1556,6 +1681,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "old-man-and-the-whale",
       "wikiTitle": "Old Man and the Whale",
@@ -1569,6 +1695,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -1582,6 +1709,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "through-the-sea-thou-break",
       "wikiTitle": "Through the Sea Thou Break",
@@ -1595,6 +1723,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "veils-off-in-sun-or-shadow",
       "wikiTitle": "Veils Off in Sun or Shadow",
@@ -1608,6 +1737,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",
@@ -1621,6 +1751,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1634,6 +1765,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "dreamcatchers-in-the-secret-gardens",
       "wikiTitle": "Dreamcatchers in the Secret Gardens",
@@ -1647,6 +1779,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "flames-of-heart",
       "wikiTitle": "Flames of Heart",
@@ -1660,6 +1793,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "shadow-of-glory",
       "wikiTitle": "Shadow of Glory",
@@ -1673,6 +1807,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
@@ -1686,6 +1821,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "the-sacred-breeze-so-often-breathes",
       "wikiTitle": "The Sacred Breeze So Often Breathes",
@@ -1699,6 +1835,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "phrolova",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",
@@ -1712,6 +1849,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "qiuyuan",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -1725,6 +1863,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "qiuyuan",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1738,6 +1877,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "roccia",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -1751,6 +1891,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "roccia",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -1764,6 +1905,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "roccia",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",
@@ -1777,6 +1919,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sanhua",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
@@ -1790,6 +1933,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
@@ -1803,6 +1947,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "stagnant-dawn-on-wastelands",
       "wikiTitle": "Stagnant Dawn on Wastelands",
@@ -1816,6 +1961,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1829,6 +1975,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "through-the-sea-thou-break",
       "wikiTitle": "Through the Sea Thou Break",
@@ -1842,6 +1989,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
@@ -1855,6 +2003,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "when-the-unknown-thrums",
       "wikiTitle": "When the Unknown Thrums",
@@ -1868,6 +2017,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sigrika",
       "questId": "all-that-sunlight-touches",
       "wikiTitle": "All That Sunlight Touches",
@@ -1881,6 +2031,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sigrika",
       "questId": "beneath-a-melting-night-sky",
       "wikiTitle": "Beneath a Melting Night Sky",
@@ -1894,6 +2045,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sigrika",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
@@ -1907,6 +2059,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sigrika",
       "questId": "starlights-from-yesterdays",
       "wikiTitle": "Starlights from Yesterdays",
@@ -1920,6 +2073,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sigrika",
       "questId": "the-star-that-voyages-far",
       "wikiTitle": "The Star That Voyages Far",
@@ -1933,6 +2087,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "sigrika",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
@@ -1946,6 +2101,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "a-new-companion",
       "wikiTitle": "A New Companion",
@@ -1959,6 +2115,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "advance-toward-the-future-from-today",
       "wikiTitle": "Advance toward the Future from Today",
@@ -1972,6 +2129,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
@@ -1985,6 +2143,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -1998,6 +2157,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
@@ -2011,6 +2171,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
@@ -2024,6 +2185,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
@@ -2037,6 +2199,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
@@ -2050,6 +2213,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
@@ -2063,6 +2227,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
@@ -2076,6 +2241,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
@@ -2089,6 +2255,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "youhu",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
@@ -2102,6 +2269,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "youhu",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
@@ -2115,6 +2283,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "zani",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -2128,6 +2297,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "zani",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -2141,6 +2311,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "zani",
       "questId": "the-bygone-shall-always-return",
       "wikiTitle": "The Bygone Shall Always Return",
@@ -2154,6 +2325,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "zani",
       "questId": "the-sacred-breeze-so-often-breathes",
       "wikiTitle": "The Sacred Breeze So Often Breathes",
@@ -2167,6 +2339,7 @@
       ]
     },
     {
+      "locale": "zh-Hans",
       "characterId": "zani",
       "questId": "veils-off-in-sun-or-shadow",
       "wikiTitle": "Veils Off in Sun or Shadow",
@@ -2180,6 +2353,2498 @@
       ]
     },
     {
+      "locale": "zh-Hans",
+      "characterId": "zani",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 94,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 43,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        100014
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 94,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 90,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aemeath",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 36,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aemeath",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 361,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aemeath",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "augusta",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "augusta",
+      "questId": "by-moons-fated-light",
+      "wikiTitle": "By Moon's Fated Light",
+      "nameZh": "今夜，注定属于月亮",
+      "version": "2.6",
+      "half": "b",
+      "versionHalf": "2.6-b",
+      "lineCount": 43,
+      "encoreStoryIds": [
+        100026
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "augusta",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "lineCount": 306,
+      "encoreStoryIds": [
+        100025
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "augusta",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 69,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "augusta",
+      "questId": "rust-sword-and-the-sun",
+      "wikiTitle": "Rust, Sword and the Sun",
+      "nameZh": "铁锈，剑与烈阳",
+      "version": "2.3",
+      "half": "a",
+      "versionHalf": "2.3-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100024
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "augusta",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 26,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "brant",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "brant",
+      "questId": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
+      "version": "2.1",
+      "half": "a",
+      "versionHalf": "2.1-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100018
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "brant",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "brant",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 42,
+      "encoreStoryIds": [
+        100014
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "brant",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 144,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "buling",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        100025
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "buling",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 16,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "buling",
+      "questId": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
+      "version": "2.8",
+      "half": "a",
+      "versionHalf": "2.8-a",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100030
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "calcharo",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "camellya",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cantarella",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cantarella",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 56,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cantarella",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cantarella",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 20,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cantarella",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "lineCount": 267,
+      "encoreStoryIds": [
+        100019
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "carlotta",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "carlotta",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "carlotta",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "carlotta",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        100019
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "carlotta",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 213,
+      "encoreStoryIds": [
+        100016
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "carlotta",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 148,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 48,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "dreamcatchers-in-the-secret-gardens",
+      "wikiTitle": "Dreamcatchers in the Secret Gardens",
+      "nameZh": "捕梦于神秘园中",
+      "version": "2.5",
+      "half": "a",
+      "versionHalf": "2.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100023
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
+      "version": "2.4",
+      "half": "b",
+      "versionHalf": "2.4-b",
+      "lineCount": 85,
+      "encoreStoryIds": [
+        100022
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 39,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "lineCount": 320,
+      "encoreStoryIds": [
+        100019
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "cartethyia",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "changli",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
+      "version": "1.1",
+      "half": "a",
+      "versionHalf": "1.1-a",
+      "lineCount": 230,
+      "encoreStoryIds": [
+        100011
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chisa",
+      "questId": "flowing-starlight-in-the-iris",
+      "wikiTitle": "Flowing Starlight in the Iris",
+      "nameZh": "星光流转于眼眸之间",
+      "version": "2.8",
+      "half": "b",
+      "versionHalf": "2.8-b",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100031
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chisa",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chisa",
+      "questId": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
+      "version": "2.8",
+      "half": "a",
+      "versionHalf": "2.8-a",
+      "lineCount": 251,
+      "encoreStoryIds": [
+        100030
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chisa",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chisa",
+      "questId": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100032
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "a-new-companion",
+      "wikiTitle": "A New Companion",
+      "nameZh": "行路遇新知",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100010
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "ciaccona",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 26,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "ciaccona",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "ciaccona",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "ciaccona",
+      "questId": "the-maiden-the-defier-the-death-crier",
+      "wikiTitle": "The Maiden, The Defier, The Death Crier",
+      "nameZh": "圣者，忤逆者，告死者",
+      "version": "2.2",
+      "half": "a",
+      "versionHalf": "2.2-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100019
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "denia",
+      "questId": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
+      "version": "3.3",
+      "half": "b",
+      "versionHalf": "3.3-b",
+      "lineCount": 238,
+      "encoreStoryIds": [
+        100042
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "denia",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 51,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "denia",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100038
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "denia",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "encore",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "encore",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "galbrena",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 284,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "galbrena",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 93,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
+      "questId": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
+      "version": "3.3",
+      "half": "b",
+      "versionHalf": "3.3-b",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100042
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100038
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 75,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
+      "questId": "wishes-in-the-bell",
+      "wikiTitle": "Wishes in the Bell",
+      "nameZh": "愿系铃中",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 70,
+      "encoreStoryIds": [
+        100039
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "iuno",
+      "questId": "by-moons-fated-light",
+      "wikiTitle": "By Moon's Fated Light",
+      "nameZh": "今夜，注定属于月亮",
+      "version": "2.6",
+      "half": "b",
+      "versionHalf": "2.6-b",
+      "lineCount": 215,
+      "encoreStoryIds": [
+        100026
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "iuno",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "lineCount": 143,
+      "encoreStoryIds": [
+        100025
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "iuno",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 63,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "iuno",
+      "questId": "rust-sword-and-the-sun",
+      "wikiTitle": "Rust, Sword and the Sun",
+      "nameZh": "铁锈，剑与烈阳",
+      "version": "2.3",
+      "half": "a",
+      "versionHalf": "2.3-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100024
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "iuno",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jianxin",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 25,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
+      "version": "1.1",
+      "half": "a",
+      "versionHalf": "1.1-a",
+      "lineCount": 149,
+      "encoreStoryIds": [
+        100011
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jiyan",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 221,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lingyang",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        100036
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 128,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "rabbit-reflected-in-shades",
+      "wikiTitle": "Rabbit Reflected in Shades",
+      "nameZh": "影面颠倒的兔影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 233,
+      "encoreStoryIds": [
+        100038
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 38,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 36,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 321,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "wishes-in-the-bell",
+      "wikiTitle": "Wishes in the Bell",
+      "nameZh": "愿系铃中",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100039
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lupa",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lupa",
+      "questId": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
+      "version": "2.4",
+      "half": "b",
+      "versionHalf": "2.4-b",
+      "lineCount": 193,
+      "encoreStoryIds": [
+        100022
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lupa",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 258,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "luuk-herssen",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b",
+      "lineCount": 177,
+      "encoreStoryIds": [
+        100036
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "luuk-herssen",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "luuk-herssen",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "luuk-herssen",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 63,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lynae",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 52,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lynae",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lynae",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lynae",
+      "questId": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100032
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mornye",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mornye",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mornye",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mornye",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mortefi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "old-man-and-the-whale",
+      "wikiTitle": "Old Man and the Whale",
+      "nameZh": "老人鱼海",
+      "version": "2.1",
+      "half": "a",
+      "versionHalf": "2.1-a",
+      "lineCount": 100,
+      "encoreStoryIds": [
+        100018
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100014
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 61,
+      "encoreStoryIds": [
+        100016
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phoebe",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "dreamcatchers-in-the-secret-gardens",
+      "wikiTitle": "Dreamcatchers in the Secret Gardens",
+      "nameZh": "捕梦于神秘园中",
+      "version": "2.5",
+      "half": "a",
+      "versionHalf": "2.5-a",
+      "lineCount": 328,
+      "encoreStoryIds": [
+        100023
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "flames-of-heart",
+      "wikiTitle": "Flames of Heart",
+      "nameZh": "燃烧的心",
+      "version": "2.4",
+      "half": "b",
+      "versionHalf": "2.4-b",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100022
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "shadow-of-glory",
+      "wikiTitle": "Shadow of Glory",
+      "nameZh": "荣耀暗面",
+      "version": "2.4",
+      "half": "a",
+      "versionHalf": "2.4-a",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        100021
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
+      "version": "1.1",
+      "half": "a",
+      "versionHalf": "1.1-a",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        100011
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "the-sacred-breeze-so-often-breathes",
+      "wikiTitle": "The Sacred Breeze So Often Breathes",
+      "nameZh": "那神圣微风时常吹入",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100015
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "phrolova",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "qiuyuan",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 146,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "qiuyuan",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 31,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "roccia",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "roccia",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "roccia",
+      "questId": "what-yesterday-wept-today-doth-sing",
+      "wikiTitle": "What Yesterday Wept, Today Doth Sing",
+      "nameZh": "昔我悲伤，今却歌唱",
+      "version": "2.0",
+      "half": "b",
+      "versionHalf": "2.0-b",
+      "lineCount": 148,
+      "encoreStoryIds": [
+        100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sanhua",
+      "questId": "thaw-of-eons",
+      "wikiTitle": "Thaw of Eons",
+      "nameZh": "往岁乘霄醒惊蛰",
+      "version": "1.1",
+      "half": "a",
+      "versionHalf": "1.1-a",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        100011
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 308,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "stagnant-dawn-on-wastelands",
+      "wikiTitle": "Stagnant Dawn on Wastelands",
+      "nameZh": "曙光停摆于荒地之上",
+      "version": "2.8",
+      "half": "a",
+      "versionHalf": "2.8-a",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        100030
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "through-the-sea-thou-break",
+      "wikiTitle": "Through the Sea Thou Break",
+      "nameZh": "如一叶小舟穿行于茫茫海洋",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100014
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 308,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "when-the-unknown-thrums",
+      "wikiTitle": "When the Unknown Thrums",
+      "nameZh": "未知的既感",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        100032
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100036
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "beneath-a-melting-night-sky",
+      "wikiTitle": "Beneath a Melting Night Sky",
+      "nameZh": "在熔解的夜空下",
+      "version": "3.3",
+      "half": "b",
+      "versionHalf": "3.3-b",
+      "lineCount": 52,
+      "encoreStoryIds": [
+        100042
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "gold-suspended-in-shadows",
+      "wikiTitle": "Gold Suspended in Shadows",
+      "nameZh": "影下不落的黄金",
+      "version": "3.2",
+      "half": "a",
+      "versionHalf": "3.2-a",
+      "lineCount": 409,
+      "encoreStoryIds": [
+        100037
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "starlights-from-yesterdays",
+      "wikiTitle": "Starlights from Yesterdays",
+      "nameZh": "昨夜群星",
+      "version": "3.3",
+      "half": "a",
+      "versionHalf": "3.3-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "the-star-that-voyages-far",
+      "wikiTitle": "The Star That Voyages Far",
+      "nameZh": "远航星",
+      "version": "3.1",
+      "half": "a",
+      "versionHalf": "3.1-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "taoqi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 38,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "verina",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "a-new-companion",
+      "wikiTitle": "A New Companion",
+      "nameZh": "行路遇新知",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 31,
+      "encoreStoryIds": [
+        100010
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "advance-toward-the-future-from-today",
+      "wikiTitle": "Advance toward the Future from Today",
+      "nameZh": "便能在如今走向未来",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 54,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "utterance-of-marvels",
+      "wikiTitle": "Utterance of Marvels",
+      "nameZh": "万象新声",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 88,
+      "encoreStoryIds": [
+        100001
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "youhu",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 26,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "youhu",
+      "questId": "to-the-shores-end",
+      "wikiTitle": "To the Shore's End",
+      "nameZh": "行至海岸尽头",
+      "version": "1.3",
+      "half": "a",
+      "versionHalf": "1.3-a",
+      "lineCount": 26,
+      "encoreStoryIds": [
+        100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yuanwu",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zani",
+      "questId": "a-stranger-in-a-strange-land",
+      "wikiTitle": "A Stranger in a Strange Land",
+      "nameZh": "独在异乡为异客",
+      "version": "2.7",
+      "half": "b",
+      "versionHalf": "2.7-b",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100029
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zani",
+      "questId": "dawn-breaks-on-dark-tides",
+      "wikiTitle": "Dawn Breaks on Dark Tides",
+      "nameZh": "暗潮将映的黎明",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zani",
+      "questId": "the-bygone-shall-always-return",
+      "wikiTitle": "The Bygone Shall Always Return",
+      "nameZh": "已逝的必将归来",
+      "version": "2.7",
+      "half": "a",
+      "versionHalf": "2.7-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100027
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zani",
+      "questId": "the-sacred-breeze-so-often-breathes",
+      "wikiTitle": "The Sacred Breeze So Often Breathes",
+      "nameZh": "那神圣微风时常吹入",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 126,
+      "encoreStoryIds": [
+        100015
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zani",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 121,
+      "encoreStoryIds": [
+        100016
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "zani",
       "questId": "what-yesterday-wept-today-doth-sing",
       "wikiTitle": "What Yesterday Wept, Today Doth Sing",

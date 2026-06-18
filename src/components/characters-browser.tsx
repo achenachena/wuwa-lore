@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import type { Messages } from "@/lib/i18n/messages";
+
 export interface CharacterListItem {
   id: string;
   name: string;
@@ -13,16 +15,17 @@ export interface CharacterListItem {
   releaseVersion: string;
   voiceLineTotal: number;
   hasVoiceStats: boolean;
-  missingSourceLocales: number;
 }
 
 interface CharactersBrowserProps {
   items: CharacterListItem[];
+  labels: Messages["characters"];
+  common: Messages["common"];
 }
 
 type SortKey = "name" | "voice" | "release";
 
-export function CharactersBrowser({ items }: CharactersBrowserProps) {
+export function CharactersBrowser({ items, labels, common }: CharactersBrowserProps) {
   const [search, setSearch] = useState("");
   const [element, setElement] = useState("all");
   const [weapon, setWeapon] = useState("all");
@@ -85,36 +88,57 @@ export function CharactersBrowser({ items }: CharactersBrowserProps) {
       <div className="rounded-lg border border-zinc-200 bg-white p-4">
         <div className="grid gap-3 md:grid-cols-3 lg:grid-cols-6">
           <label className="flex flex-col gap-1 text-sm">
-            <span className="text-zinc-500">Search</span>
+            <span className="text-zinc-500">{labels.search}</span>
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="name or id"
+              placeholder={labels.searchPlaceholder}
               className="rounded-md border border-zinc-300 px-3 py-2"
             />
           </label>
-          <FilterSelect label="Element" value={element} onChange={setElement} options={elementOptions} />
-          <FilterSelect label="Weapon" value={weapon} onChange={setWeapon} options={weaponOptions} />
-          <FilterSelect label="Rarity" value={rarity} onChange={setRarity} options={rarityOptions} />
           <FilterSelect
-            label="Debut Version"
+            label={labels.element}
+            allLabel={common.all}
+            value={element}
+            onChange={setElement}
+            options={elementOptions}
+          />
+          <FilterSelect
+            label={labels.weapon}
+            allLabel={common.all}
+            value={weapon}
+            onChange={setWeapon}
+            options={weaponOptions}
+          />
+          <FilterSelect
+            label={labels.rarity}
+            allLabel={common.all}
+            value={rarity}
+            onChange={setRarity}
+            options={rarityOptions}
+          />
+          <FilterSelect
+            label={labels.debutVersion}
+            allLabel={common.all}
             value={releaseVersion}
             onChange={setReleaseVersion}
             options={versionOptions}
           />
           <FilterSelect
-            label="Sort"
+            label={labels.sort}
+            allLabel={common.all}
             value={sortBy}
             onChange={(value) => setSortBy(value as SortKey)}
             options={[
-              { value: "name", label: "Name" },
-              { value: "voice", label: "Voice Lines" },
-              { value: "release", label: "Debut Version" },
+              { value: "name", label: labels.sortName },
+              { value: "voice", label: labels.sortVoice },
+              { value: "release", label: labels.sortRelease },
             ]}
           />
         </div>
         <p className="mt-3 text-sm text-zinc-600">
-          Showing <strong>{filteredItems.length}</strong> / {items.length} characters.
+          {labels.showing} <strong>{filteredItems.length}</strong> {labels.of} {items.length}{" "}
+          {labels.characters}
         </p>
       </div>
 
@@ -131,35 +155,29 @@ export function CharactersBrowser({ items }: CharactersBrowserProps) {
 
             <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
               <div>
-                <dt className="text-zinc-500">Element</dt>
+                <dt className="text-zinc-500">{labels.element}</dt>
                 <dd>{character.element}</dd>
               </div>
               <div>
-                <dt className="text-zinc-500">Weapon</dt>
+                <dt className="text-zinc-500">{labels.weapon}</dt>
                 <dd>{character.weapon}</dd>
               </div>
               <div>
-                <dt className="text-zinc-500">Debut</dt>
+                <dt className="text-zinc-500">{labels.debut}</dt>
                 <dd>{character.releaseVersion}</dd>
               </div>
               <div>
-                <dt className="text-zinc-500">Voice Lines</dt>
+                <dt className="text-zinc-500">{labels.voiceLines}</dt>
                 <dd>{character.voiceLineTotal}</dd>
               </div>
             </dl>
 
             {!character.hasVoiceStats ? (
-              <p className="mt-2 text-xs text-amber-700">Voice statistics missing for this character.</p>
-            ) : character.missingSourceLocales > 0 ? (
-              <p className="mt-2 text-xs text-amber-700">
-                {character.missingSourceLocales} locale source page(s) unavailable.
-              </p>
-            ) : (
-              <p className="mt-2 text-xs text-emerald-700">All locale source pages verified.</p>
-            )}
+              <p className="mt-2 text-xs text-amber-700">{labels.noVoiceStats}</p>
+            ) : null}
 
             <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
-              View details →
+              {common.viewDetails}
             </Link>
           </article>
         ))}
@@ -170,15 +188,16 @@ export function CharactersBrowser({ items }: CharactersBrowserProps) {
 
 interface FilterSelectProps {
   label: string;
+  allLabel: string;
   value: string;
   onChange: (value: string) => void;
   options: Array<string> | Array<{ value: string; label: string }>;
 }
 
-function FilterSelect({ label, value, onChange, options }: FilterSelectProps) {
+function FilterSelect({ label, allLabel, value, onChange, options }: FilterSelectProps) {
   const normalized = options.map((option) =>
     typeof option === "string"
-      ? { value: option, label: option === "all" ? "All" : option }
+      ? { value: option, label: option === "all" ? allLabel : option }
       : option,
   );
   return (

@@ -11,6 +11,8 @@ type QuestHalfMap = {
   quests: QuestHalfEntry[];
 };
 
+type EncoreLocale = "en" | "zh-Hans";
+
 type EncoreRole = {
   Id: number;
   Name: string;
@@ -23,6 +25,7 @@ type EncoreStoryIndexItem = {
 };
 
 type StoryDialogueRow = {
+  locale: EncoreLocale;
   characterId: string;
   questId: string;
   wikiTitle: string;
@@ -39,19 +42,18 @@ type StoryDialogueSnapshot = {
   source: {
     name: string;
     baseUrl: string;
-    locale: string;
+    locales: EncoreLocale[];
     countMethod: string;
   };
-  questCount: number;
+  questCountByLocale: Record<EncoreLocale, number>;
   rows: StoryDialogueRow[];
 };
 
 const ENCORE_BASE = "https://api.encore.moe";
-const LOCALE = "zh-Hans";
+const ENCORE_LOCALES: EncoreLocale[] = ["zh-Hans", "en"];
 const nowIso = new Date().toISOString();
 
-/** Wiki quest title -> encore.moe story name(s) when zhs labels differ. */
-const WIKI_TO_ENCORE_STORY_NAMES: Record<string, string[]> = {
+const WIKI_TO_ENCORE_ZH: Record<string, string[]> = {
   "Utterance of Marvels": ["万象新声·上"],
   "First Resonance": ["万象新声·下"],
   "Echoing Marche": ["万象新声·上"],
@@ -61,6 +63,18 @@ const WIKI_TO_ENCORE_STORY_NAMES: Record<string, string[]> = {
   "Grand Warstorm": ["万象新声·上"],
   "Advance toward the Future from Today": ["万象新声·下"],
   "Beyond the Shore's End": ["行至海岸尽头"],
+};
+
+const WIKI_TO_ENCORE_EN: Record<string, string[]> = {
+  "Utterance of Marvels": ["Utterance of Marvels: Part I"],
+  "First Resonance": ["Utterance of Marvels: Part II"],
+  "Echoing Marche": ["Utterance of Marvels: Part I"],
+  "Ominous Star": ["Utterance of Marvels: Part I"],
+  "Clashing Blades": ["Utterance of Marvels: Part I"],
+  "Rewinding Raindrops": ["Utterance of Marvels: Part I"],
+  "Grand Warstorm": ["Grand Warstorm: Part I", "Grand Warstorm: Part II"],
+  "Advance toward the Future from Today": ["Utterance of Marvels: Part II"],
+  "Beyond the Shore's End": ["To the Shore's End"],
 };
 
 function slugify(value: string): string {
@@ -136,28 +150,39 @@ function flattenEncoreStories(storyTypes: Array<{ Stories?: EncoreStoryIndexItem
 }
 
 function resolveEncoreStoryIds(
+  locale: EncoreLocale,
   wikiTitle: string,
   nameZh: string,
   storyIdByName: Map<string, number>,
 ): number[] {
-  const aliases = WIKI_TO_ENCORE_STORY_NAMES[wikiTitle];
+  const aliases = locale === "zh-Hans" ? WIKI_TO_ENCORE_ZH[wikiTitle] : WIKI_TO_ENCORE_EN[wikiTitle];
   if (aliases) {
     return aliases
       .map((name) => storyIdByName.get(name))
       .filter((id): id is number => typeof id === "number");
   }
 
-  const direct = storyIdByName.get(nameZh);
+  if (locale === "en") {
+    const direct = storyIdByName.get(wikiTitle);
+    if (direct) {
+      return [direct];
+    }
+  }
+
+  const label = locale === "zh-Hans" ? nameZh : wikiTitle;
+  const direct = storyIdByName.get(label);
   if (direct) {
     return [direct];
   }
 
-  const normalized = nameZh.replace(/[·…?！!]/g, "").trim();
-  const fuzzy = [...storyIdByName.entries()].find(([name]) =>
-    name.replace(/[·…?！!]/g, "").includes(normalized),
-  );
-  if (fuzzy) {
-    return [fuzzy[1]];
+  if (locale === "zh-Hans") {
+    const normalized = nameZh.replace(/[·…?！!]/g, "").trim();
+    const fuzzy = [...storyIdByName.entries()].find(([name]) =>
+      name.replace(/[·…?！!]/g, "").includes(normalized),
+    );
+    if (fuzzy) {
+      return [fuzzy[1]];
+    }
   }
 
   return [];
@@ -186,7 +211,7 @@ function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
             (dialogue as Record<string, unknown>).SpeakerName ??
             "",
         ).trim();
-        if (!speaker || speaker === "{PlayerName}" || speaker === "漂泊者") {
+        if (!speaker || speaker === "{PlayerName}" || speaker === "漂泊者" || speaker === "Rover") {
           continue;
         }
         counts.set(speaker, (counts.get(speaker) ?? 0) + 1);
@@ -202,20 +227,20 @@ function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
 
 function buildSpeakerToCharacterId(params: {
   enRoles: EncoreRole[];
-  zhRoles: EncoreRole[];
+  localeRoles: EncoreRole[];
   knownCharacterIds: Set<string>;
 }): Map<string, string> {
-  const zhById = new Map(params.zhRoles.map((role) => [role.Id, role.Name]));
+  const localeById = new Map(params.localeRoles.map((role) => [role.Id, role.Name]));
   const speakerToCharacter = new Map<string, string>();
 
   for (const role of params.enRoles) {
-    const zhName = zhById.get(role.Id);
+    const localeName = localeById.get(role.Id);
     const characterId = EN_NAME_TO_ID[role.Name] ?? slugify(role.Name);
     if (!params.knownCharacterIds.has(characterId) && characterId !== "lucilla") {
       continue;
     }
-    if (zhName) {
-      speakerToCharacter.set(zhName, characterId);
+    if (localeName) {
+      speakerToCharacter.set(localeName, characterId);
     }
     speakerToCharacter.set(role.Name, characterId);
   }
@@ -226,57 +251,52 @@ function buildSpeakerToCharacterId(params: {
 function resolveSpeaker(
   speaker: string,
   speakerToCharacter: Map<string, string>,
-  zhNamesByCharacter: Map<string, string>,
+  localeNamesByCharacter: Map<string, string>,
 ): string | null {
   if (speakerToCharacter.has(speaker)) {
     return speakerToCharacter.get(speaker) ?? null;
   }
-  for (const [characterId, zhName] of zhNamesByCharacter.entries()) {
-    if (speaker.includes(zhName)) {
+  for (const [characterId, localeName] of localeNamesByCharacter.entries()) {
+    if (speaker.includes(localeName)) {
       return characterId;
     }
   }
   return null;
 }
 
-async function main() {
-  const mapPath = path.join(process.cwd(), "content", "stories", "quest-half-map.json");
-  const charactersDir = path.join(process.cwd(), "content", "characters");
-  const map = JSON.parse(await fs.readFile(mapPath, "utf8")) as QuestHalfMap;
-
-  const characterFiles = (await fs.readdir(charactersDir)).filter((file) => file.endsWith(".json"));
-  const knownCharacterIds = new Set(
-    characterFiles.map((file) => file.replace(/\.json$/, "")).concat(["lucilla"]),
-  );
-
-  const [enRolesPayload, zhRolesPayload, storyPayload] = await Promise.all([
-    fetchJson<{ roleList: EncoreRole[] }>(`${ENCORE_BASE}/en/character`),
-    fetchJson<{ roleList: EncoreRole[] }>(`${ENCORE_BASE}/${LOCALE}/character`),
+async function syncLocale(params: {
+  locale: EncoreLocale;
+  map: QuestHalfMap;
+  knownCharacterIds: Set<string>;
+  enRoles: EncoreRole[];
+}): Promise<{ rows: StoryDialogueRow[]; processedQuests: number }> {
+  const { locale, map, knownCharacterIds, enRoles } = params;
+  const [localeRolesPayload, storyPayload] = await Promise.all([
+    fetchJson<{ roleList: EncoreRole[] }>(`${ENCORE_BASE}/${locale}/character`),
     fetchJson<{ storyTypes: Array<{ Stories?: EncoreStoryIndexItem[] }> }>(
-      `${ENCORE_BASE}/${LOCALE}/story`,
+      `${ENCORE_BASE}/${locale}/story`,
     ),
   ]);
 
   const speakerToCharacter = buildSpeakerToCharacterId({
-    enRoles: enRolesPayload.roleList,
-    zhRoles: zhRolesPayload.roleList,
+    enRoles,
+    localeRoles: localeRolesPayload.roleList,
     knownCharacterIds,
   });
-  const zhNamesByCharacter = new Map<string, string>();
-  for (const role of zhRolesPayload.roleList) {
-    const enRole = enRolesPayload.roleList.find((item) => item.Id === role.Id);
+  const localeNamesByCharacter = new Map<string, string>();
+  for (const role of localeRolesPayload.roleList) {
+    const enRole = enRoles.find((item) => item.Id === role.Id);
     if (!enRole) {
       continue;
     }
     const characterId = EN_NAME_TO_ID[enRole.Name] ?? slugify(enRole.Name);
     if (knownCharacterIds.has(characterId)) {
-      zhNamesByCharacter.set(characterId, role.Name);
+      localeNamesByCharacter.set(characterId, role.Name);
     }
   }
 
-  const encoreStories = flattenEncoreStories(storyPayload.storyTypes);
   const storyIdByName = new Map<string, number>();
-  for (const story of encoreStories) {
+  for (const story of flattenEncoreStories(storyPayload.storyTypes)) {
     const name = story.Name ?? story.Title;
     if (name && typeof story.Id === "number") {
       storyIdByName.set(name, story.Id);
@@ -300,25 +320,25 @@ async function main() {
   for (const quest of map.quests) {
     const questId = slugify(quest.wikiTitle);
     const nameZh = await fetchQuestNameZh(quest.wikiTitle);
-    const storyIds = resolveEncoreStoryIds(quest.wikiTitle, nameZh, storyIdByName);
+    const storyIds = resolveEncoreStoryIds(locale, quest.wikiTitle, nameZh, storyIdByName);
     if (storyIds.length === 0) {
-      console.warn(`No encore story match for ${quest.wikiTitle} (${nameZh})`);
-      await new Promise((resolve) => setTimeout(resolve, 150));
+      console.warn(`[${locale}] No encore story match for ${quest.wikiTitle} (${nameZh})`);
+      await new Promise((resolve) => setTimeout(resolve, 120));
       continue;
     }
 
     const versionHalf = `${quest.version}-${quest.half}`;
     const speakerCounts = new Map<string, number>();
     for (const storyId of storyIds) {
-      const detail = await fetchJson<unknown>(`${ENCORE_BASE}/${LOCALE}/story/${storyId}`);
+      const detail = await fetchJson<unknown>(`${ENCORE_BASE}/${locale}/story/${storyId}`);
       for (const [speaker, count] of countDialoguesBySpeaker(detail).entries()) {
         speakerCounts.set(speaker, (speakerCounts.get(speaker) ?? 0) + count);
       }
-      await new Promise((resolve) => setTimeout(resolve, 80));
+      await new Promise((resolve) => setTimeout(resolve, 60));
     }
 
     for (const [speaker, count] of speakerCounts.entries()) {
-      const characterId = resolveSpeaker(speaker, speakerToCharacter, zhNamesByCharacter);
+      const characterId = resolveSpeaker(speaker, speakerToCharacter, localeNamesByCharacter);
       if (!characterId) {
         continue;
       }
@@ -340,13 +360,14 @@ async function main() {
     }
 
     processedQuests += 1;
-    await new Promise((resolve) => setTimeout(resolve, 120));
+    await new Promise((resolve) => setTimeout(resolve, 80));
   }
 
   const rows: StoryDialogueRow[] = [...aggregate.entries()]
     .map(([key, bucket]) => {
       const [characterId, questId] = key.split("::");
       return {
+        locale,
         characterId,
         questId,
         wikiTitle: bucket.wikiTitle,
@@ -366,23 +387,51 @@ async function main() {
       return a.questId.localeCompare(b.questId);
     });
 
+  return { rows, processedQuests };
+}
+
+async function main() {
+  const mapPath = path.join(process.cwd(), "content", "stories", "quest-half-map.json");
+  const charactersDir = path.join(process.cwd(), "content", "characters");
+  const map = JSON.parse(await fs.readFile(mapPath, "utf8")) as QuestHalfMap;
+
+  const characterFiles = (await fs.readdir(charactersDir)).filter((file) => file.endsWith(".json"));
+  const knownCharacterIds = new Set(
+    characterFiles.map((file) => file.replace(/\.json$/, "")).concat(["lucilla"]),
+  );
+
+  const enRolesPayload = await fetchJson<{ roleList: EncoreRole[] }>(`${ENCORE_BASE}/en/character`);
+
+  const allRows: StoryDialogueRow[] = [];
+  const questCountByLocale: Record<EncoreLocale, number> = { en: 0, "zh-Hans": 0 };
+
+  for (const locale of ENCORE_LOCALES) {
+    const { rows, processedQuests } = await syncLocale({
+      locale,
+      map,
+      knownCharacterIds,
+      enRoles: enRolesPayload.roleList,
+    });
+    allRows.push(...rows);
+    questCountByLocale[locale] = processedQuests;
+    console.log(`[${locale}] synced ${rows.length} dialogue rows from ${processedQuests} quests`);
+  }
+
   const snapshot: StoryDialogueSnapshot = {
     generatedAt: nowIso,
     source: {
       name: "encore.moe",
       baseUrl: ENCORE_BASE,
-      locale: LOCALE,
+      locales: ENCORE_LOCALES,
       countMethod: "main_story_dialogue_speaker_lines",
     },
-    questCount: processedQuests,
-    rows,
+    questCountByLocale,
+    rows: allRows,
   };
 
   const outPath = path.join(process.cwd(), "data", "derived", "story-dialogue-stats.json");
   await fs.writeFile(outPath, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
-  console.log(
-    `Story dialogue stats synced: ${rows.length} rows from ${processedQuests} quests -> ${outPath}`,
-  );
+  console.log(`Story dialogue stats synced: ${allRows.length} total rows -> ${outPath}`);
 }
 
 main().catch((error: unknown) => {

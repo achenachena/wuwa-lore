@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { LanguageSwitcher } from "@/components/language-switcher";
 import { SiteNav } from "@/components/site-nav";
+import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
@@ -16,41 +18,49 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Wuwa Lore",
-  description: "Wuthering Waves character archives and voice line analytics",
-  metadataBase: new URL(siteUrl),
-  openGraph: {
-    title: "Wuwa Lore",
-    description: "Wuthering Waves character archives and voice line analytics",
-    type: "website",
-    url: siteUrl,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Wuwa Lore",
-    description: "Wuthering Waves character archives and voice line analytics",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getMessages();
+  return {
+    title: t.siteTitle,
+    description: t.siteTagline,
+    metadataBase: new URL(siteUrl),
+    openGraph: {
+      title: t.siteTitle,
+      description: t.siteTagline,
+      type: "website",
+      url: siteUrl,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.siteTitle,
+      description: t.siteTagline,
+    },
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [locale, t] = await Promise.all([getSiteLocale(), getMessages()]);
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-zinc-50 text-zinc-900">
         <header className="border-b border-zinc-200 bg-white">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
             <div>
-              <p className="text-lg font-semibold">Wuwa Lore</p>
-              <p className="text-xs text-zinc-500">Character archive and version voice stats</p>
+              <p className="text-lg font-semibold">{t.siteTitle}</p>
+              <p className="text-xs text-zinc-500">{t.siteTagline}</p>
             </div>
-            <SiteNav />
+            <div className="flex flex-wrap items-center gap-4">
+              <LanguageSwitcher current={locale} labels={t.language} />
+              <SiteNav labels={t.nav} />
+            </div>
           </div>
         </header>
         <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">{children}</main>

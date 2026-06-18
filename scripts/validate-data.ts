@@ -6,6 +6,7 @@ import {
   loadGeneratedStats,
   loadOfficialVersionNotes,
   loadStoryAppearances,
+  loadAllStoryDialogueStats,
   loadStoryDialogueStats,
   loadStorySegments,
   loadVersionHalfVoiceStats,
@@ -21,7 +22,7 @@ async function main() {
     loadGeneratedStats(),
     loadOfficialVersionNotes(),
     loadStoryAppearances().catch(() => []),
-    loadStoryDialogueStats().catch(() => []),
+    loadAllStoryDialogueStats().catch(() => []),
     loadStorySegments().catch(() => []),
     loadVersionHalfVoiceStats().catch(() => []),
   ]);
@@ -42,12 +43,14 @@ async function main() {
   const storyValidation = {
     ok:
       storyAppearances.length > 0 &&
-      storyDialogueStats.length > 0 &&
+      storyDialogueStats.some((row) => row.locale === "zh-Hans") &&
+      storyDialogueStats.some((row) => row.locale === "en") &&
       storySegments.length > 0 &&
       versionHalfVoiceStats.length > 0,
     errors: [
       ...(storyAppearances.length === 0 ? ["Missing story appearance rows"] : []),
-      ...(storyDialogueStats.length === 0 ? ["Missing story dialogue stats rows"] : []),
+      ...(storyDialogueStats.some((row) => row.locale === "zh-Hans") ? [] : ["Missing zh-Hans story dialogue rows"]),
+      ...(storyDialogueStats.some((row) => row.locale === "en") ? [] : ["Missing en story dialogue rows"]),
       ...(storySegments.length === 0 ? ["Missing story segment registry"] : []),
       ...(versionHalfVoiceStats.length === 0 ? ["Missing version-half voice stats rows"] : []),
     ],

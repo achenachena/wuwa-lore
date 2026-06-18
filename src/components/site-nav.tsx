@@ -1,15 +1,21 @@
 import Link from "next/link";
 
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/characters", label: "Characters" },
-  { href: "/stats/versions", label: "Version Stats" },
-  { href: "/stats/version-halves", label: "Version Halves" },
-  { href: "/tools", label: "Tools" },
-  { href: "/methodology", label: "Methodology" },
-];
+import type { Messages } from "@/lib/i18n/messages";
 
-export function SiteNav() {
+type Props = {
+  labels: Messages["nav"];
+};
+
+export function SiteNav({ labels }: Props) {
+  const links = [
+    { href: "/", label: labels.home },
+    { href: "/characters", label: labels.characters },
+    { href: "/stats/versions", label: labels.versionStats },
+    { href: "/stats/version-halves", label: labels.storySegments },
+    { href: "/tools", label: labels.tools },
+    { href: "/methodology", label: labels.methodology },
+  ];
+
   return (
     <nav className="flex flex-wrap gap-3 text-sm">
       {links.map((link) => (
