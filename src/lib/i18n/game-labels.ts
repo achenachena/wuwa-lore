@@ -1,4 +1,4 @@
-import { isRoverCharacter, type SiteLocale } from "@/lib/i18n/locale";
+import { type SiteLocale } from "@/lib/i18n/locale";
 
 const ELEMENT_LABELS: Record<string, { en: string; zh: string }> = {
   Aero: { en: "Aero", zh: "气动" },

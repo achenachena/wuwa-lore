@@ -4,7 +4,7 @@ import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
-import { loadOfficialVersionNotes, loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
+import { loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
   const [characters, versionStats, stats, quality, validation, sourceDiff, siteLocale, t] =

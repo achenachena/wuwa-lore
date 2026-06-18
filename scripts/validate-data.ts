@@ -7,7 +7,6 @@ import {
   loadOfficialVersionNotes,
   loadStoryAppearances,
   loadAllStoryDialogueStats,
-  loadStoryDialogueStats,
   loadStorySegments,
   loadVersionHalfVoiceStats,
   loadVersions,
