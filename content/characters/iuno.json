@@ -1,7 +1,9 @@
 {
   "id": "iuno",
   "name": "Iuno",
-  "aliases": [],
+  "aliases": [
+    "尤诺"
+  ],
   "element": "Aero",
   "weapon": "Gauntlets",
   "faction": "Septimont",

@@ -1,7 +1,9 @@
 {
   "id": "phoebe",
   "name": "Phoebe",
-  "aliases": [],
+  "aliases": [
+    "菲比"
+  ],
   "element": "Spectro",
   "weapon": "Rectifier",
   "faction": "Ragunna",

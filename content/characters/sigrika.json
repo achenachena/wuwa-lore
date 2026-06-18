@@ -1,7 +1,9 @@
 {
   "id": "sigrika",
   "name": "Sigrika",
-  "aliases": [],
+  "aliases": [
+    "西格莉卡"
+  ],
   "element": "Aero",
   "weapon": "Gauntlets",
   "faction": "Roya Tribe",

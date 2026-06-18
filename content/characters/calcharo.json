@@ -1,7 +1,9 @@
 {
   "id": "calcharo",
   "name": "Calcharo",
-  "aliases": [],
+  "aliases": [
+    "卡卡罗"
+  ],
   "element": "Electro",
   "weapon": "Broadblade",
   "faction": "Ghost Hounds",

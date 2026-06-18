@@ -1,7 +1,9 @@
 {
   "id": "lingyang",
   "name": "Lingyang",
-  "aliases": [],
+  "aliases": [
+    "凌阳"
+  ],
   "element": "Glacio",
   "weapon": "Gauntlets",
   "faction": "Jinzhou",

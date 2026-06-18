@@ -1,7 +1,9 @@
 {
   "id": "jinhsi",
   "name": "Jinhsi",
-  "aliases": [],
+  "aliases": [
+    "今汐"
+  ],
   "element": "Spectro",
   "weapon": "Broadblade",
   "faction": "Jinzhou",

@@ -1,7 +1,9 @@
 {
   "id": "rover-spectro",
   "name": "Rover-Spectro",
-  "aliases": [],
+  "aliases": [
+    "漂泊者·衍射"
+  ],
   "element": "Spectro",
   "weapon": "Unknown",
   "faction": "Unknown",

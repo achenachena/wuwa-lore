@@ -1,7 +1,9 @@
 {
   "id": "rover-havoc",
   "name": "Rover-Havoc",
-  "aliases": [],
+  "aliases": [
+    "漂泊者·湮灭"
+  ],
   "element": "Havoc",
   "weapon": "Unknown",
   "faction": "Unknown",

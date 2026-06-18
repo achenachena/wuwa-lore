@@ -1,7 +1,9 @@
 {
   "id": "danjin",
   "name": "Danjin",
-  "aliases": [],
+  "aliases": [
+    "丹瑾"
+  ],
   "element": "Havoc",
   "weapon": "Sword",
   "faction": "Jinzhou",

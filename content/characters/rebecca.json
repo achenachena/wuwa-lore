@@ -1,7 +1,9 @@
 {
   "id": "rebecca",
   "name": "Rebecca",
-  "aliases": ["丽贝卡"],
+  "aliases": [
+    "丽贝卡"
+  ],
   "element": "Electro",
   "weapon": "Pistols",
   "faction": "Unknown",

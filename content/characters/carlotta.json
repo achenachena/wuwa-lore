@@ -1,7 +1,9 @@
 {
   "id": "carlotta",
   "name": "Carlotta",
-  "aliases": [],
+  "aliases": [
+    "珂莱塔"
+  ],
   "element": "Glacio",
   "weapon": "Pistols",
   "faction": "Ragunna",

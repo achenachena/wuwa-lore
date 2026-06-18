@@ -1,7 +1,9 @@
 {
   "id": "ciaccona",
   "name": "Ciaccona",
-  "aliases": [],
+  "aliases": [
+    "夏空"
+  ],
   "element": "Aero",
   "weapon": "Pistols",
   "faction": "Ragunna",

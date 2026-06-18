@@ -1,7 +1,9 @@
 {
   "id": "sanhua",
   "name": "Sanhua",
-  "aliases": [],
+  "aliases": [
+    "散华"
+  ],
   "element": "Glacio",
   "weapon": "Sword",
   "faction": "Jinzhou",

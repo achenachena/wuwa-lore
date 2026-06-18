@@ -1,7 +1,9 @@
 {
   "id": "aalto",
   "name": "Aalto",
-  "aliases": [],
+  "aliases": [
+    "秋水"
+  ],
   "element": "Aero",
   "weapon": "Pistols",
   "faction": "Black Shores",

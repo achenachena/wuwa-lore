@@ -13,7 +13,7 @@
     "format": "prettier --check .",
     "data:sync": "tsx scripts/sync-fandom-data.ts && npm run data:sync-official",
     "data:sync-official": "tsx scripts/sync-official-versions.ts",
-    "data:sync-stories": "tsx scripts/sync-story-appearances.ts && tsx scripts/sync-story-dialogue-stats.ts",
+    "data:sync-stories": "tsx scripts/sync-story-appearances.ts && tsx scripts/sync-story-dialogue-stats.ts && tsx scripts/sync-character-display-names.ts",
     "data:sync-story-dialogue": "tsx scripts/sync-story-dialogue-stats.ts",
     "data:generate-half-stats": "tsx scripts/generate-version-half-stats.ts",
     "data:generate": "tsx scripts/generate-voice-stats.ts && npm run data:generate-half-stats",

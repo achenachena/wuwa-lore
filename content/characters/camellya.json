@@ -1,7 +1,9 @@
 {
   "id": "camellya",
   "name": "Camellya",
-  "aliases": [],
+  "aliases": [
+    "椿"
+  ],
   "element": "Havoc",
   "weapon": "Sword",
   "faction": "Black Shores",

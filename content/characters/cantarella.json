@@ -1,7 +1,9 @@
 {
   "id": "cantarella",
   "name": "Cantarella",
-  "aliases": [],
+  "aliases": [
+    "坎特蕾拉"
+  ],
   "element": "Havoc",
   "weapon": "Rectifier",
   "faction": "Fisalia Family",

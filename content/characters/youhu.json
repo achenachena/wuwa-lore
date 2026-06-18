@@ -1,7 +1,9 @@
 {
   "id": "youhu",
   "name": "Youhu",
-  "aliases": [],
+  "aliases": [
+    "釉瑚"
+  ],
   "element": "Glacio",
   "weapon": "Gauntlets",
   "faction": "Chongzhou",

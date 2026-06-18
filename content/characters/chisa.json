@@ -1,7 +1,9 @@
 {
   "id": "chisa",
   "name": "Chisa",
-  "aliases": [],
+  "aliases": [
+    "千咲"
+  ],
   "element": "Havoc",
   "weapon": "Broadblade",
   "faction": "Startorch Academy",

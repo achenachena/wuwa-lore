@@ -1,7 +1,9 @@
 {
   "id": "augusta",
   "name": "Augusta",
-  "aliases": [],
+  "aliases": [
+    "奥古斯塔"
+  ],
   "element": "Electro",
   "weapon": "Broadblade",
   "faction": "Septimont",

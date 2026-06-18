@@ -162,6 +162,12 @@ function parseFirstDescriptionLine(wikitext: string): string {
       return cleanWikiText(line);
     }
   }
+  const inline = wikitext.match(
+    /(?:^|\n)([A-Z][^\n]{8,400}? is (?:a|an|the) [^\n]+?\.)/,
+  );
+  if (inline?.[1]) {
+    return cleanWikiText(inline[1]);
+  }
   return "Profile text unavailable from source.";
 }
 

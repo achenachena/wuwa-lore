@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T01:34:47.472Z",
+  "generatedAt": "2026-06-18T02:06:05.626Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
@@ -10,24 +10,10 @@
     "countMethod": "main_story_dialogue_speaker_lines"
   },
   "questCountByLocale": {
-    "en": 41,
-    "zh-Hans": 41
+    "en": 40,
+    "zh-Hans": 40
   },
   "rows": [
-    {
-      "locale": "zh-Hans",
-      "characterId": "aalto",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 94,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
     {
       "locale": "zh-Hans",
       "characterId": "aalto",
@@ -40,6 +26,35 @@
       "lineCount": 43,
       "encoreStoryIds": [
         100028
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "aalto",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "aalto",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 156,
+      "encoreStoryIds": [
+        100007
       ]
     },
     {
@@ -213,57 +228,15 @@
     {
       "locale": "zh-Hans",
       "characterId": "baizhi",
-      "questId": "advance-toward-the-future-from-today",
-      "wikiTitle": "Advance toward the Future from Today",
-      "nameZh": "便能在如今走向未来",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 11,
-      "encoreStoryIds": [
-        100002
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "baizhi",
-      "questId": "clashing-blades",
-      "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 19,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "baizhi",
-      "questId": "echoing-marche",
-      "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 19,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "baizhi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
       "nameZh": "第一次共振",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 11,
+      "lineCount": 78,
       "encoreStoryIds": [
-        100002
+        100003
       ]
     },
     {
@@ -275,23 +248,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 19,
+      "lineCount": 7,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "baizhi",
-      "questId": "ominous-star",
-      "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 19,
-      "encoreStoryIds": [
-        100001
+        100008,
+        100009
       ]
     },
     {
@@ -303,9 +263,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 19,
+      "lineCount": 3,
       "encoreStoryIds": [
-        100001
+        100007
       ]
     },
     {
@@ -317,9 +277,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 19,
+      "lineCount": 30,
       "encoreStoryIds": [
-        100001
+        100001,
+        100002
       ]
     },
     {
@@ -460,6 +421,20 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "camellya",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100007
       ]
     },
     {
@@ -717,6 +692,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "changli",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "changli",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
       "nameZh": "往岁乘霄醒惊蛰",
@@ -830,43 +819,15 @@
     {
       "locale": "zh-Hans",
       "characterId": "chixia",
-      "questId": "advance-toward-the-future-from-today",
-      "wikiTitle": "Advance toward the Future from Today",
-      "nameZh": "便能在如今走向未来",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 18,
-      "encoreStoryIds": [
-        100002
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "chixia",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 6,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "chixia",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
       "nameZh": "碰撞刀片",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 31,
       "encoreStoryIds": [
-        100001
+        100006
       ]
     },
     {
@@ -878,9 +839,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 16,
       "encoreStoryIds": [
-        100001
+        100004
       ]
     },
     {
@@ -892,9 +853,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 18,
+      "lineCount": 82,
       "encoreStoryIds": [
-        100002
+        100003
       ]
     },
     {
@@ -906,23 +867,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 14,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "chixia",
-      "questId": "ominous-star",
-      "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 103,
-      "encoreStoryIds": [
-        100001
+        100008,
+        100009
       ]
     },
     {
@@ -934,9 +882,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 58,
       "encoreStoryIds": [
-        100001
+        100007
       ]
     },
     {
@@ -962,9 +910,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 121,
       "encoreStoryIds": [
-        100001
+        100001,
+        100002
       ]
     },
     {
@@ -1040,20 +989,6 @@
     {
       "locale": "zh-Hans",
       "characterId": "denia",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 18,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "denia",
       "questId": "gold-suspended-in-shadows",
       "wikiTitle": "Gold Suspended in Shadows",
       "nameZh": "影下不落的黄金",
@@ -1119,6 +1054,35 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "encore",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "encore",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        100007
       ]
     },
     {
@@ -1292,6 +1256,49 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "jianxin",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100004
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jianxin",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jianxin",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -1299,23 +1306,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 14,
+      "lineCount": 132,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "jinhsi",
-      "questId": "echoing-marche",
-      "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100001
+        100006
       ]
     },
     {
@@ -1327,37 +1320,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 14,
+      "lineCount": 25,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "jinhsi",
-      "questId": "ominous-star",
-      "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "jinhsi",
-      "questId": "rewinding-raindrops",
-      "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100001
+        100008,
+        100009
       ]
     },
     {
@@ -1385,7 +1351,66 @@
       "versionHalf": "1.0-a",
       "lineCount": 14,
       "encoreStoryIds": [
-        100001
+        100001,
+        100002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jiyan",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jiyan",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 221,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lingyang",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lingyang",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100008,
+        100009
       ]
     },
     {
@@ -1859,6 +1884,35 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "mortefi",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 57,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "mortefi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "phoebe",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -2140,6 +2194,48 @@
     {
       "locale": "zh-Hans",
       "characterId": "sanhua",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "sanhua",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 41,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "sanhua",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "sanhua",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
       "nameZh": "往岁乘霄醒惊蛰",
@@ -2149,20 +2245,6 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100011
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "shorekeeper",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 308,
-      "encoreStoryIds": [
-        100012
       ]
     },
     {
@@ -2335,6 +2417,50 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "taoqi",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 38,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "verina",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100008,
+        100009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "verina",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100007
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "yangyang",
       "questId": "a-new-companion",
       "wikiTitle": "A New Companion",
@@ -2350,43 +2476,15 @@
     {
       "locale": "zh-Hans",
       "characterId": "yangyang",
-      "questId": "advance-toward-the-future-from-today",
-      "wikiTitle": "Advance toward the Future from Today",
-      "nameZh": "便能在如今走向未来",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 7,
-      "encoreStoryIds": [
-        100002
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "yangyang",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 33,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "yangyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
       "nameZh": "碰撞刀片",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 46,
       "encoreStoryIds": [
-        100001
+        100006
       ]
     },
     {
@@ -2400,7 +2498,7 @@
       "versionHalf": "1.0-a",
       "lineCount": 88,
       "encoreStoryIds": [
-        100001
+        100004
       ]
     },
     {
@@ -2412,9 +2510,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 7,
+      "lineCount": 152,
       "encoreStoryIds": [
-        100002
+        100003
       ]
     },
     {
@@ -2426,9 +2524,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 54,
       "encoreStoryIds": [
-        100001
+        100008,
+        100009
       ]
     },
     {
@@ -2440,9 +2539,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 112,
       "encoreStoryIds": [
-        100001
+        100005
       ]
     },
     {
@@ -2454,9 +2553,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 64,
       "encoreStoryIds": [
-        100001
+        100007
       ]
     },
     {
@@ -2482,23 +2581,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 95,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "youhu",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 26,
-      "encoreStoryIds": [
-        100012
+        100001,
+        100002
       ]
     },
     {
@@ -2513,6 +2599,35 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100012
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yuanwu",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yuanwu",
+      "questId": "grand-warstorm",
+      "wikiTitle": "Grand Warstorm",
+      "nameZh": "大战风暴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100008,
+        100009
       ]
     },
     {
@@ -2602,20 +2717,6 @@
     {
       "locale": "en",
       "characterId": "aalto",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 94,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "aalto",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
       "nameZh": "暗潮将映的黎明",
@@ -2640,6 +2741,20 @@
       "encoreStoryIds": [
         100008,
         100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aalto",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 156,
+      "encoreStoryIds": [
+        100007
       ]
     },
     {
@@ -2813,57 +2928,15 @@
     {
       "locale": "en",
       "characterId": "baizhi",
-      "questId": "advance-toward-the-future-from-today",
-      "wikiTitle": "Advance toward the Future from Today",
-      "nameZh": "便能在如今走向未来",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 11,
-      "encoreStoryIds": [
-        100002
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "baizhi",
-      "questId": "clashing-blades",
-      "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 19,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "baizhi",
-      "questId": "echoing-marche",
-      "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 19,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "baizhi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
       "nameZh": "第一次共振",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 11,
+      "lineCount": 78,
       "encoreStoryIds": [
-        100002
+        100003
       ]
     },
     {
@@ -2884,29 +2957,15 @@
     {
       "locale": "en",
       "characterId": "baizhi",
-      "questId": "ominous-star",
-      "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 19,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "baizhi",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
       "nameZh": "倒带雨滴",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 19,
+      "lineCount": 3,
       "encoreStoryIds": [
-        100001
+        100007
       ]
     },
     {
@@ -2918,9 +2977,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 19,
+      "lineCount": 30,
       "encoreStoryIds": [
-        100001
+        100001,
+        100002
       ]
     },
     {
@@ -3061,6 +3121,20 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "camellya",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100007
       ]
     },
     {
@@ -3318,6 +3392,20 @@
     {
       "locale": "en",
       "characterId": "changli",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100006
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "changli",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
       "nameZh": "往岁乘霄醒惊蛰",
@@ -3431,43 +3519,15 @@
     {
       "locale": "en",
       "characterId": "chixia",
-      "questId": "advance-toward-the-future-from-today",
-      "wikiTitle": "Advance toward the Future from Today",
-      "nameZh": "便能在如今走向未来",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 18,
-      "encoreStoryIds": [
-        100002
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "chixia",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 6,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "chixia",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
       "nameZh": "碰撞刀片",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 31,
       "encoreStoryIds": [
-        100001
+        100006
       ]
     },
     {
@@ -3479,9 +3539,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 16,
       "encoreStoryIds": [
-        100001
+        100004
       ]
     },
     {
@@ -3493,9 +3553,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 18,
+      "lineCount": 82,
       "encoreStoryIds": [
-        100002
+        100003
       ]
     },
     {
@@ -3516,29 +3576,15 @@
     {
       "locale": "en",
       "characterId": "chixia",
-      "questId": "ominous-star",
-      "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 103,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "chixia",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
       "nameZh": "倒带雨滴",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 58,
       "encoreStoryIds": [
-        100001
+        100007
       ]
     },
     {
@@ -3564,9 +3610,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 103,
+      "lineCount": 121,
       "encoreStoryIds": [
-        100001
+        100001,
+        100002
       ]
     },
     {
@@ -3712,6 +3759,20 @@
     },
     {
       "locale": "en",
+      "characterId": "encore",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        100007
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "galbrena",
       "questId": "dawn-breaks-on-dark-tides",
       "wikiTitle": "Dawn Breaks on Dark Tides",
@@ -3803,9 +3864,10 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a",
-      "lineCount": 70,
+      "lineCount": 111,
       "encoreStoryIds": [
-        100039
+        100039,
+        100041
       ]
     },
     {
@@ -3881,6 +3943,34 @@
     {
       "locale": "en",
       "characterId": "jianxin",
+      "questId": "echoing-marche",
+      "wikiTitle": "Echoing Marche",
+      "nameZh": "呼应马尔凯",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 103,
+      "encoreStoryIds": [
+        100004
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jianxin",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jianxin",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
       "nameZh": "大战风暴",
@@ -3902,23 +3992,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 14,
+      "lineCount": 132,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "jinhsi",
-      "questId": "echoing-marche",
-      "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100001
+        100006
       ]
     },
     {
@@ -3934,34 +4010,6 @@
       "encoreStoryIds": [
         100008,
         100009
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "jinhsi",
-      "questId": "ominous-star",
-      "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "jinhsi",
-      "questId": "rewinding-raindrops",
-      "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 14,
-      "encoreStoryIds": [
-        100001
       ]
     },
     {
@@ -3989,7 +4037,22 @@
       "versionHalf": "1.0-a",
       "lineCount": 14,
       "encoreStoryIds": [
-        100001
+        100001,
+        100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jiyan",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100006
       ]
     },
     {
@@ -4005,6 +4068,20 @@
       "encoreStoryIds": [
         100008,
         100009
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lingyang",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100006
       ]
     },
     {
@@ -4131,7 +4208,8 @@
       "versionHalf": "3.3-a",
       "lineCount": 19,
       "encoreStoryIds": [
-        100039
+        100039,
+        100041
       ]
     },
     {
@@ -4493,6 +4571,20 @@
     {
       "locale": "en",
       "characterId": "mortefi",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 57,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mortefi",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
       "nameZh": "大战风暴",
@@ -4788,6 +4880,48 @@
     {
       "locale": "en",
       "characterId": "sanhua",
+      "questId": "clashing-blades",
+      "wikiTitle": "Clashing Blades",
+      "nameZh": "碰撞刀片",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100006
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sanhua",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 41,
+      "encoreStoryIds": [
+        100003
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sanhua",
+      "questId": "ominous-star",
+      "wikiTitle": "Ominous Star",
+      "nameZh": "不祥之星",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100005
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sanhua",
       "questId": "thaw-of-eons",
       "wikiTitle": "Thaw of Eons",
       "nameZh": "往岁乘霄醒惊蛰",
@@ -4797,20 +4931,6 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100011
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "shorekeeper",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 308,
-      "encoreStoryIds": [
-        100012
       ]
     },
     {
@@ -5013,6 +5133,20 @@
     },
     {
       "locale": "en",
+      "characterId": "verina",
+      "questId": "rewinding-raindrops",
+      "wikiTitle": "Rewinding Raindrops",
+      "nameZh": "倒带雨滴",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100007
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "yangyang",
       "questId": "a-new-companion",
       "wikiTitle": "A New Companion",
@@ -5028,43 +5162,15 @@
     {
       "locale": "en",
       "characterId": "yangyang",
-      "questId": "advance-toward-the-future-from-today",
-      "wikiTitle": "Advance toward the Future from Today",
-      "nameZh": "便能在如今走向未来",
-      "version": "1.0",
-      "half": "a",
-      "versionHalf": "1.0-a",
-      "lineCount": 7,
-      "encoreStoryIds": [
-        100002
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "yangyang",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 33,
-      "encoreStoryIds": [
-        100012
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "yangyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
       "nameZh": "碰撞刀片",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 46,
       "encoreStoryIds": [
-        100001
+        100006
       ]
     },
     {
@@ -5078,7 +5184,7 @@
       "versionHalf": "1.0-a",
       "lineCount": 88,
       "encoreStoryIds": [
-        100001
+        100004
       ]
     },
     {
@@ -5090,9 +5196,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 7,
+      "lineCount": 152,
       "encoreStoryIds": [
-        100002
+        100003
       ]
     },
     {
@@ -5119,9 +5225,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 112,
       "encoreStoryIds": [
-        100001
+        100005
       ]
     },
     {
@@ -5133,9 +5239,9 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 64,
       "encoreStoryIds": [
-        100001
+        100007
       ]
     },
     {
@@ -5161,23 +5267,10 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 88,
+      "lineCount": 95,
       "encoreStoryIds": [
-        100001
-      ]
-    },
-    {
-      "locale": "en",
-      "characterId": "youhu",
-      "questId": "beyond-the-shores-end",
-      "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
-      "version": "1.4",
-      "half": "a",
-      "versionHalf": "1.4-a",
-      "lineCount": 26,
-      "encoreStoryIds": [
-        100012
+        100001,
+        100002
       ]
     },
     {
@@ -5192,6 +5285,20 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100012
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yuanwu",
+      "questId": "first-resonance",
+      "wikiTitle": "First Resonance",
+      "nameZh": "第一次共振",
+      "version": "1.0",
+      "half": "a",
+      "versionHalf": "1.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100003
       ]
     },
     {

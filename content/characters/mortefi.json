@@ -1,7 +1,9 @@
 {
   "id": "mortefi",
   "name": "Mortefi",
-  "aliases": [],
+  "aliases": [
+    "莫特斐"
+  ],
   "element": "Fusion",
   "weapon": "Pistols",
   "faction": "Jinzhou",

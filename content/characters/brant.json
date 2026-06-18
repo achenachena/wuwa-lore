@@ -1,7 +1,9 @@
 {
   "id": "brant",
   "name": "Brant",
-  "aliases": [],
+  "aliases": [
+    "布兰特"
+  ],
   "element": "Fusion",
   "weapon": "Sword",
   "faction": "Ragunna",

@@ -1,7 +1,9 @@
 {
   "id": "changli",
   "name": "Changli",
-  "aliases": [],
+  "aliases": [
+    "长离"
+  ],
   "element": "Fusion",
   "weapon": "Sword",
   "faction": "Jinzhou",

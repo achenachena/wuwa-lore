@@ -1,7 +1,9 @@
 {
   "id": "qiuyuan",
   "name": "Qiuyuan",
-  "aliases": [],
+  "aliases": [
+    "仇远"
+  ],
   "element": "Aero",
   "weapon": "Sword",
   "faction": "Mingting",

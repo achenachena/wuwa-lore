@@ -1,7 +1,9 @@
 {
   "id": "rover-aero",
   "name": "Rover-Aero",
-  "aliases": [],
+  "aliases": [
+    "漂泊者·气动"
+  ],
   "element": "Aero",
   "weapon": "Unknown",
   "faction": "Unknown",

@@ -1,7 +1,9 @@
 {
   "id": "taoqi",
   "name": "Taoqi",
-  "aliases": [],
+  "aliases": [
+    "桃祈"
+  ],
   "element": "Havoc",
   "weapon": "Broadblade",
   "faction": "Jinzhou",

@@ -1,7 +1,9 @@
 {
   "id": "lucy",
   "name": "Lucy",
-  "aliases": ["露西"],
+  "aliases": [
+    "露西"
+  ],
   "element": "Spectro",
   "weapon": "Pistols",
   "faction": "Unknown",

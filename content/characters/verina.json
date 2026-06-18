@@ -1,7 +1,9 @@
 {
   "id": "verina",
   "name": "Verina",
-  "aliases": [],
+  "aliases": [
+    "维里奈"
+  ],
   "element": "Spectro",
   "weapon": "Rectifier",
   "faction": "Jinzhou",

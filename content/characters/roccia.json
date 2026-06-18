@@ -1,7 +1,9 @@
 {
   "id": "roccia",
   "name": "Roccia",
-  "aliases": [],
+  "aliases": [
+    "洛可可"
+  ],
   "element": "Havoc",
   "weapon": "Gauntlets",
   "faction": "Troupe of Fools",

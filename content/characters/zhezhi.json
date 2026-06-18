@@ -1,7 +1,9 @@
 {
   "id": "zhezhi",
   "name": "Zhezhi",
-  "aliases": [],
+  "aliases": [
+    "折枝"
+  ],
   "element": "Glacio",
   "weapon": "Rectifier",
   "faction": "Jinzhou",

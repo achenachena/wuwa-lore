@@ -1,7 +1,9 @@
 {
   "id": "zani",
   "name": "Zani",
-  "aliases": [],
+  "aliases": [
+    "赞妮"
+  ],
   "element": "Spectro",
   "weapon": "Gauntlets",
   "faction": "Ragunna",

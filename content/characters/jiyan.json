@@ -1,7 +1,9 @@
 {
   "id": "jiyan",
   "name": "Jiyan",
-  "aliases": [],
+  "aliases": [
+    "忌炎"
+  ],
   "element": "Aero",
   "weapon": "Broadblade",
   "faction": "Jinzhou",

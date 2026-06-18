@@ -1,7 +1,9 @@
 {
   "id": "lucilla",
   "name": "Lucilla",
-  "aliases": ["洛瑟菈"],
+  "aliases": [
+    "洛瑟菈"
+  ],
   "element": "Glacio",
   "weapon": "Rectifier",
   "faction": "Startorch Academy",

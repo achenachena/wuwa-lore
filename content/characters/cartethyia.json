@@ -1,7 +1,9 @@
 {
   "id": "cartethyia",
   "name": "Cartethyia",
-  "aliases": [],
+  "aliases": [
+    "卡提希娅"
+  ],
   "element": "Aero",
   "weapon": "Sword",
   "faction": "Ragunna",

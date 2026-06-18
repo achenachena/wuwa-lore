@@ -1,7 +1,9 @@
 {
   "id": "luuk-herssen",
   "name": "Luuk Herssen",
-  "aliases": [],
+  "aliases": [
+    "陆·赫斯"
+  ],
   "element": "Spectro",
   "weapon": "Gauntlets",
   "faction": "Startorch Academy",

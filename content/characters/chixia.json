@@ -1,7 +1,9 @@
 {
   "id": "chixia",
   "name": "Chixia",
-  "aliases": [],
+  "aliases": [
+    "炽霞"
+  ],
   "element": "Fusion",
   "weapon": "Pistols",
   "faction": "Jinzhou",

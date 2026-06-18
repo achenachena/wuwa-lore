@@ -1,7 +1,9 @@
 {
   "id": "lynae",
   "name": "Lynae",
-  "aliases": [],
+  "aliases": [
+    "琳奈"
+  ],
   "element": "Spectro",
   "weapon": "Pistols",
   "faction": "Startorch Academy",

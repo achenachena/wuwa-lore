@@ -1,7 +1,9 @@
 {
   "id": "xiangli-yao",
   "name": "Xiangli Yao",
-  "aliases": [],
+  "aliases": [
+    "相里要"
+  ],
   "element": "Electro",
   "weapon": "Gauntlets",
   "faction": "Jinzhou",

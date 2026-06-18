@@ -1,7 +1,9 @@
 {
   "id": "yuanwu",
   "name": "Yuanwu",
-  "aliases": [],
+  "aliases": [
+    "渊武"
+  ],
   "element": "Electro",
   "weapon": "Gauntlets",
   "faction": "Jinzhou",

@@ -1,7 +1,9 @@
 {
   "id": "mornye",
   "name": "Mornye",
-  "aliases": [],
+  "aliases": [
+    "莫宁"
+  ],
   "element": "Fusion",
   "weapon": "Broadblade",
   "faction": "Spacetrek Collective",

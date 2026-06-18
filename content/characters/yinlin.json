@@ -1,7 +1,9 @@
 {
   "id": "yinlin",
   "name": "Yinlin",
-  "aliases": [],
+  "aliases": [
+    "吟霖"
+  ],
   "element": "Electro",
   "weapon": "Rectifier",
   "faction": "Jinzhou",

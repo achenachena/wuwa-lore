@@ -1,7 +1,9 @@
 {
   "id": "encore",
   "name": "Encore",
-  "aliases": [],
+  "aliases": [
+    "安可"
+  ],
   "element": "Fusion",
   "weapon": "Rectifier",
   "faction": "Black Shores",

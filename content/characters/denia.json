@@ -1,7 +1,9 @@
 {
   "id": "denia",
   "name": "Denia",
-  "aliases": [],
+  "aliases": [
+    "达妮娅"
+  ],
   "element": "Fusion",
   "weapon": "Rectifier",
   "faction": "Fractsidus",

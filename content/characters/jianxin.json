@@ -1,7 +1,9 @@
 {
   "id": "jianxin",
   "name": "Jianxin",
-  "aliases": [],
+  "aliases": [
+    "鉴心"
+  ],
   "element": "Aero",
   "weapon": "Gauntlets",
   "faction": "Jinzhou",

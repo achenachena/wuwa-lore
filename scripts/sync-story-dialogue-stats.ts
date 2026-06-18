@@ -54,29 +54,14 @@ const ENCORE_V2_BASE = "https://api-v2.encore.moe/api";
 const ENCORE_LOCALES: EncoreLocale[] = ["zh-Hans", "en"];
 const nowIso = new Date().toISOString();
 
-const WIKI_TO_ENCORE_ZH: Record<string, string[]> = {
-  "Utterance of Marvels": ["万象新声·上"],
-  "First Resonance": ["万象新声·下"],
-  "Echoing Marche": ["万象新声·上"],
-  "Ominous Star": ["万象新声·上"],
-  "Clashing Blades": ["万象新声·上"],
-  "Rewinding Raindrops": ["万象新声·上"],
-  "Grand Warstorm": ["万象新声·上"],
-  "Advance toward the Future from Today": ["万象新声·下"],
-  "Beyond the Shore's End": ["行至海岸尽头"],
+type WikiEncoreMapFile = {
+  mappings: Record<string, Partial<Record<EncoreLocale, string[]>>>;
 };
 
-const WIKI_TO_ENCORE_EN: Record<string, string[]> = {
-  "Utterance of Marvels": ["Utterance of Marvels: Part I"],
-  "First Resonance": ["Utterance of Marvels: Part II"],
-  "Echoing Marche": ["Utterance of Marvels: Part I"],
-  "Ominous Star": ["Utterance of Marvels: Part I"],
-  "Clashing Blades": ["Utterance of Marvels: Part I"],
-  "Rewinding Raindrops": ["Utterance of Marvels: Part I"],
-  "Grand Warstorm": ["Grand Warstorm: Part I", "Grand Warstorm: Part II"],
-  "Advance toward the Future from Today": ["Utterance of Marvels: Part II"],
-  "Beyond the Shore's End": ["To the Shore's End"],
-};
+async function loadWikiEncoreMap(): Promise<WikiEncoreMapFile> {
+  const mapPath = path.join(process.cwd(), "content", "stories", "wiki-encore-map.json");
+  return JSON.parse(await fs.readFile(mapPath, "utf8")) as WikiEncoreMapFile;
+}
 
 function slugify(value: string): string {
   return value
@@ -179,24 +164,16 @@ function resolveEncoreStoryIds(
   wikiTitle: string,
   nameZh: string,
   storyIdsByName: Map<string, number[]>,
+  wikiEncoreMap: WikiEncoreMapFile,
 ): number[] {
   const namesToTry: string[] = [];
-  const aliases = locale === "zh-Hans" ? WIKI_TO_ENCORE_ZH[wikiTitle] : WIKI_TO_ENCORE_EN[wikiTitle];
-  if (aliases) {
-    namesToTry.push(...aliases);
+  const mapped = wikiEncoreMap.mappings[wikiTitle]?.[locale];
+  if (mapped?.length) {
+    namesToTry.push(...mapped);
   } else if (locale === "en") {
     namesToTry.push(wikiTitle);
   } else {
     namesToTry.push(nameZh);
-  }
-
-  if (locale === "zh-Hans" && !aliases) {
-    const normalized = nameZh.replace(/[·…?！!]/g, "").trim();
-    for (const name of storyIdsByName.keys()) {
-      if (name.replace(/[·…?！!]/g, "").includes(normalized)) {
-        namesToTry.push(name);
-      }
-    }
   }
 
   const ids = new Set<number>();
@@ -306,10 +283,11 @@ function resolveSpeaker(
 async function syncLocale(params: {
   locale: EncoreLocale;
   map: QuestHalfMap;
+  wikiEncoreMap: WikiEncoreMapFile;
   knownCharacterIds: Set<string>;
   enRoles: EncoreRole[];
 }): Promise<{ rows: StoryDialogueRow[]; processedQuests: number }> {
-  const { locale, map, knownCharacterIds, enRoles } = params;
+  const { locale, map, wikiEncoreMap, knownCharacterIds, enRoles } = params;
   const [localeRolesPayload, storyPayload] = await Promise.all([
     fetchJson<{ roleList: EncoreRole[] }>(`${ENCORE_BASE}/${locale}/character`),
     fetchJson<{ storyTypes: Array<{ Stories?: EncoreStoryIndexItem[] }> }>(
@@ -361,7 +339,7 @@ async function syncLocale(params: {
   for (const quest of map.quests) {
     const questId = slugify(quest.wikiTitle);
     const nameZh = await fetchQuestNameZh(quest.wikiTitle);
-    const storyIds = resolveEncoreStoryIds(locale, quest.wikiTitle, nameZh, storyIdsByName);
+    const storyIds = resolveEncoreStoryIds(locale, quest.wikiTitle, nameZh, storyIdsByName, wikiEncoreMap);
     if (storyIds.length === 0) {
       console.warn(`[${locale}] No encore story match for ${quest.wikiTitle} (${nameZh})`);
       await new Promise((resolve) => setTimeout(resolve, 120));
@@ -438,6 +416,7 @@ async function main() {
   const mapPath = path.join(process.cwd(), "content", "stories", "quest-half-map.json");
   const charactersDir = path.join(process.cwd(), "content", "characters");
   const map = JSON.parse(await fs.readFile(mapPath, "utf8")) as QuestHalfMap;
+  const wikiEncoreMap = await loadWikiEncoreMap();
 
   const characterFiles = (await fs.readdir(charactersDir)).filter((file) => file.endsWith(".json"));
   const knownCharacterIds = new Set(characterFiles.map((file) => file.replace(/\.json$/, "")));
@@ -451,6 +430,7 @@ async function main() {
     const { rows, processedQuests } = await syncLocale({
       locale,
       map,
+      wikiEncoreMap,
       knownCharacterIds,
       enRoles: enRolesPayload.roleList,
     });

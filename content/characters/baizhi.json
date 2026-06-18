@@ -1,7 +1,9 @@
 {
   "id": "baizhi",
   "name": "Baizhi",
-  "aliases": [],
+  "aliases": [
+    "白芷"
+  ],
   "element": "Glacio",
   "weapon": "Rectifier",
   "faction": "Jinzhou",

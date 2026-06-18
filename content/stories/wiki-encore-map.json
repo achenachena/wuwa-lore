@@ -1,0 +1,171 @@
+{
+  "sourceUrl": "https://api.encore.moe",
+  "editor": "scripts/sync-story-dialogue-stats.ts",
+  "notes": "Maps Fandom main-story wiki quest titles to encore.moe story names per locale. Multiple names merge all matching story IDs.",
+  "mappings": {
+    "Utterance of Marvels": {
+      "zh-Hans": ["万象新声·上", "万象新声·下"],
+      "en": ["Utterance of Marvels: Part I", "Utterance of Marvels: Part II"]
+    },
+    "First Resonance": {
+      "zh-Hans": ["嘤鸣初相召"],
+      "en": ["First Resonance"]
+    },
+    "Echoing Marche": {
+      "zh-Hans": ["撞金止行阵"],
+      "en": ["Echoing Marche"]
+    },
+    "Ominous Star": {
+      "zh-Hans": ["奔策候残星"],
+      "en": ["Ominous Star"]
+    },
+    "Clashing Blades": {
+      "zh-Hans": ["庭际刀刃鸣"],
+      "en": ["Clashing Blades"]
+    },
+    "Rewinding Raindrops": {
+      "zh-Hans": ["欲知天将雨"],
+      "en": ["Rewinding Raindrops"]
+    },
+    "Grand Warstorm": {
+      "zh-Hans": ["千里卷戎旌·上", "千里卷戎旌·下"],
+      "en": ["Grand Warstorm: Part I", "Grand Warstorm: Part II"]
+    },
+    "A New Companion": {
+      "zh-Hans": ["行路遇新知"],
+      "en": ["A New Companion"]
+    },
+    "Advance toward the Future from Today": {
+      "zh-Hans": ["过去即是明天·前", "过去即是明天·后", "过去即是明天·后日谈"],
+      "en": [
+        "The Past is the Future: Introduction",
+        "The Past is the Future: Continued",
+        "The Past is the Future: Epilogue"
+      ]
+    },
+    "Thaw of Eons": {
+      "zh-Hans": ["往岁乘霄醒惊蛰"],
+      "en": ["Thaw of Eons"]
+    },
+    "To the Shore's End": {
+      "zh-Hans": ["行至海岸尽头"],
+      "en": ["To the Shore's End"]
+    },
+    "Through the Sea Thou Break": {
+      "zh-Hans": ["如一叶小舟穿行于茫茫海洋"],
+      "en": ["Through the Sea Thou Break"]
+    },
+    "The Sacred Breeze So Often Breathes": {
+      "zh-Hans": ["那神圣微风时常吹入"],
+      "en": ["The Sacred Breeze So Often Breathes"]
+    },
+    "Veils Off in Sun or Shadow": {
+      "zh-Hans": ["夜与昼，均请摘下面纱"],
+      "en": ["Veils Off in Sun or Shadow"]
+    },
+    "What Yesterday Wept, Today Doth Sing": {
+      "zh-Hans": ["昔我悲伤，今却歌唱"],
+      "en": ["What Yesterday Wept, Today Doth Sing"]
+    },
+    "Old Man and the Whale": {
+      "zh-Hans": ["老人鱼海"],
+      "en": ["Old Man and the Whale"]
+    },
+    "The Maiden, The Defier, The Death Crier": {
+      "zh-Hans": ["圣者，忤逆者，告死者"],
+      "en": ["The Maiden, The Defier, The Death Crier"]
+    },
+    "Rust, Sword and the Sun": {
+      "zh-Hans": ["铁锈，剑与烈阳"],
+      "en": ["Rust, Sword and the Sun"]
+    },
+    "Shadow of Glory": {
+      "zh-Hans": ["荣耀暗面"],
+      "en": ["Shadow of Glory"]
+    },
+    "Flames of Heart": {
+      "zh-Hans": ["燃烧的心"],
+      "en": ["Flames of Heart"]
+    },
+    "Dreamcatchers in the Secret Gardens": {
+      "zh-Hans": ["捕梦于神秘园中"],
+      "en": ["Dreamcatchers in the Secret Gardens"]
+    },
+    "By Sun's Burning Hand": {
+      "zh-Hans": ["灼我以烈阳"],
+      "en": ["By Sun's Burning Hand"]
+    },
+    "By Moon's Fated Light": {
+      "zh-Hans": ["今夜，注定属于月亮"],
+      "en": ["By Moon's Fated Light"]
+    },
+    "The Bygone Shall Always Return": {
+      "zh-Hans": ["已逝的必将归来"],
+      "en": ["The Bygone Shall Always Return"]
+    },
+    "Dawn Breaks on Dark Tides": {
+      "zh-Hans": ["暗潮将映的黎明"],
+      "en": ["Dawn Breaks on Dark Tides"]
+    },
+    "A Stranger in a Strange Land": {
+      "zh-Hans": ["独在异乡为异客"],
+      "en": ["A Stranger in a Strange Land"]
+    },
+    "Stagnant Dawn on Wastelands": {
+      "zh-Hans": ["曙光停摆于荒地之上"],
+      "en": ["Stagnant Dawn on Wastelands"]
+    },
+    "Flowing Starlight in the Iris": {
+      "zh-Hans": ["星光流转于眼眸之间"],
+      "en": ["Flowing Starlight in the Iris"]
+    },
+    "When the Unknown Thrums": {
+      "zh-Hans": ["未知的既感"],
+      "en": ["When the Unknown Thrums"]
+    },
+    "What Burns Beneath Frostlands": {
+      "zh-Hans": ["冰原下的星炬"],
+      "en": ["What Burns Beneath Frostlands"]
+    },
+    "Ode to the Second Sunrise": {
+      "zh-Hans": ["致第二次日出"],
+      "en": ["Ode to the Second Sunrise"]
+    },
+    "The Star That Voyages Far": {
+      "zh-Hans": ["远航星"],
+      "en": ["The Star That Voyages Far"]
+    },
+    "All That Sunlight Touches": {
+      "zh-Hans": ["日光落处"],
+      "en": ["All That Sunlight Touches"]
+    },
+    "Gold Suspended in Shadows": {
+      "zh-Hans": ["影下不落的黄金"],
+      "en": ["Gold Suspended in Shadows"]
+    },
+    "Rabbit Reflected in Shades": {
+      "zh-Hans": ["影面颠倒的兔影"],
+      "en": ["Rabbit Reflected in Shades"]
+    },
+    "Wishes in the Bell": {
+      "zh-Hans": ["愿系铃中", "愿系铃中·续"],
+      "en": ["Wishes in the Bell", "Wishes in the Bell: Epilogue"]
+    },
+    "Starlights from Yesterdays": {
+      "zh-Hans": ["昨夜群星"],
+      "en": ["Starlights from Yesterdays"]
+    },
+    "Beneath a Melting Night Sky": {
+      "zh-Hans": ["在熔解的夜空下"],
+      "en": ["Beneath a Melting Night Sky"]
+    },
+    "At Dream's Edge": {
+      "zh-Hans": ["边缘幻梦"],
+      "en": ["At Dream's Edge"]
+    },
+    "We Choose the Sky": {
+      "zh-Hans": ["我们选择天空"],
+      "en": ["We Choose the Sky"]
+    }
+  }
+}

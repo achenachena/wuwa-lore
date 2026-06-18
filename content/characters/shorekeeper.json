@@ -1,7 +1,9 @@
 {
   "id": "shorekeeper",
   "name": "Shorekeeper",
-  "aliases": [],
+  "aliases": [
+    "守岸人"
+  ],
   "element": "Spectro",
   "weapon": "Rectifier",
   "faction": "Black Shores",

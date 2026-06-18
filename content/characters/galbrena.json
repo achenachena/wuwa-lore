@@ -1,7 +1,9 @@
 {
   "id": "galbrena",
   "name": "Galbrena",
-  "aliases": [],
+  "aliases": [
+    "嘉贝莉娜"
+  ],
   "element": "Fusion",
   "weapon": "Pistols",
   "faction": "Black Shores",

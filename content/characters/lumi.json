@@ -1,7 +1,9 @@
 {
   "id": "lumi",
   "name": "Lumi",
-  "aliases": [],
+  "aliases": [
+    "灯灯"
+  ],
   "element": "Electro",
   "weapon": "Broadblade",
   "faction": "Yuezhou",

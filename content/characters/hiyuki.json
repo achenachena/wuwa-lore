@@ -1,7 +1,9 @@
 {
   "id": "hiyuki",
   "name": "Hiyuki",
-  "aliases": [],
+  "aliases": [
+    "绯雪"
+  ],
   "element": "Glacio",
   "weapon": "Sword",
   "faction": "Miko of Flaming Sakura",

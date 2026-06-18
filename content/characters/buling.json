@@ -1,7 +1,9 @@
 {
   "id": "buling",
   "name": "Buling",
-  "aliases": [],
+  "aliases": [
+    "卜灵"
+  ],
   "element": "Electro",
   "weapon": "Rectifier",
   "faction": "Black Shores",

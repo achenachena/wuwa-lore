@@ -1,7 +1,9 @@
 {
   "id": "aemeath",
   "name": "Aemeath",
-  "aliases": [],
+  "aliases": [
+    "爱弥斯"
+  ],
   "element": "Fusion",
   "weapon": "Sword",
   "faction": "Startorch Academy",

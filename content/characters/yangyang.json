@@ -1,7 +1,9 @@
 {
   "id": "yangyang",
   "name": "Yangyang",
-  "aliases": [],
+  "aliases": [
+    "秧秧"
+  ],
   "element": "Aero",
   "weapon": "Sword",
   "faction": "Jinzhou",

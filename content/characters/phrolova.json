@@ -1,7 +1,9 @@
 {
   "id": "phrolova",
   "name": "Phrolova",
-  "aliases": [],
+  "aliases": [
+    "弗洛洛"
+  ],
   "element": "Havoc",
   "weapon": "Rectifier",
   "faction": "Fractsidus",
