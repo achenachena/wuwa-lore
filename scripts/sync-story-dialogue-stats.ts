@@ -153,39 +153,34 @@ function resolveEncoreStoryIds(
   locale: EncoreLocale,
   wikiTitle: string,
   nameZh: string,
-  storyIdByName: Map<string, number>,
+  storyIdsByName: Map<string, number[]>,
 ): number[] {
+  const namesToTry: string[] = [];
   const aliases = locale === "zh-Hans" ? WIKI_TO_ENCORE_ZH[wikiTitle] : WIKI_TO_ENCORE_EN[wikiTitle];
   if (aliases) {
-    return aliases
-      .map((name) => storyIdByName.get(name))
-      .filter((id): id is number => typeof id === "number");
+    namesToTry.push(...aliases);
+  } else if (locale === "en") {
+    namesToTry.push(wikiTitle);
+  } else {
+    namesToTry.push(nameZh);
   }
 
-  if (locale === "en") {
-    const direct = storyIdByName.get(wikiTitle);
-    if (direct) {
-      return [direct];
-    }
-  }
-
-  const label = locale === "zh-Hans" ? nameZh : wikiTitle;
-  const direct = storyIdByName.get(label);
-  if (direct) {
-    return [direct];
-  }
-
-  if (locale === "zh-Hans") {
+  if (locale === "zh-Hans" && !aliases) {
     const normalized = nameZh.replace(/[·…?！!]/g, "").trim();
-    const fuzzy = [...storyIdByName.entries()].find(([name]) =>
-      name.replace(/[·…?！!]/g, "").includes(normalized),
-    );
-    if (fuzzy) {
-      return [fuzzy[1]];
+    for (const name of storyIdsByName.keys()) {
+      if (name.replace(/[·…?！!]/g, "").includes(normalized)) {
+        namesToTry.push(name);
+      }
     }
   }
 
-  return [];
+  const ids = new Set<number>();
+  for (const name of namesToTry) {
+    for (const id of storyIdsByName.get(name) ?? []) {
+      ids.add(id);
+    }
+  }
+  return [...ids];
 }
 
 function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
@@ -225,6 +220,14 @@ function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
   return counts;
 }
 
+function normalizeSpeakerKey(speaker: string): string {
+  return speaker
+    .replace(/[·•]/g, "")
+    .replace(/（[^）]*）/g, "")
+    .replace(/\([^)]*\)/g, "")
+    .trim();
+}
+
 function buildSpeakerToCharacterId(params: {
   enRoles: EncoreRole[];
   localeRoles: EncoreRole[];
@@ -241,8 +244,10 @@ function buildSpeakerToCharacterId(params: {
     }
     if (localeName) {
       speakerToCharacter.set(localeName, characterId);
+      speakerToCharacter.set(normalizeSpeakerKey(localeName), characterId);
     }
     speakerToCharacter.set(role.Name, characterId);
+    speakerToCharacter.set(normalizeSpeakerKey(role.Name), characterId);
   }
 
   return speakerToCharacter;
@@ -256,8 +261,17 @@ function resolveSpeaker(
   if (speakerToCharacter.has(speaker)) {
     return speakerToCharacter.get(speaker) ?? null;
   }
+  const normalized = normalizeSpeakerKey(speaker);
+  if (speakerToCharacter.has(normalized)) {
+    return speakerToCharacter.get(normalized) ?? null;
+  }
   for (const [characterId, localeName] of localeNamesByCharacter.entries()) {
-    if (speaker.includes(localeName)) {
+    const normalizedLocale = normalizeSpeakerKey(localeName);
+    if (
+      speaker.includes(localeName) ||
+      normalized.includes(normalizedLocale) ||
+      normalizedLocale.includes(normalized)
+    ) {
       return characterId;
     }
   }
@@ -295,11 +309,13 @@ async function syncLocale(params: {
     }
   }
 
-  const storyIdByName = new Map<string, number>();
+  const storyIdsByName = new Map<string, number[]>();
   for (const story of flattenEncoreStories(storyPayload.storyTypes)) {
     const name = story.Name ?? story.Title;
     if (name && typeof story.Id === "number") {
-      storyIdByName.set(name, story.Id);
+      const list = storyIdsByName.get(name) ?? [];
+      list.push(story.Id);
+      storyIdsByName.set(name, list);
     }
   }
 
@@ -320,7 +336,7 @@ async function syncLocale(params: {
   for (const quest of map.quests) {
     const questId = slugify(quest.wikiTitle);
     const nameZh = await fetchQuestNameZh(quest.wikiTitle);
-    const storyIds = resolveEncoreStoryIds(locale, quest.wikiTitle, nameZh, storyIdByName);
+    const storyIds = resolveEncoreStoryIds(locale, quest.wikiTitle, nameZh, storyIdsByName);
     if (storyIds.length === 0) {
       console.warn(`[${locale}] No encore story match for ${quest.wikiTitle} (${nameZh})`);
       await new Promise((resolve) => setTimeout(resolve, 120));

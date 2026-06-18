@@ -169,15 +169,14 @@ export function buildStorySegmentRanking(params: {
     dialogueByCharacter.set(row.characterId, (dialogueByCharacter.get(row.characterId) ?? 0) + row.lineCount);
   }
 
-  const appearancesByCharacter = new Map<string, number>();
+  const appearancesByCharacter = new Map<string, Set<string>>();
   for (const row of storyAppearances) {
     if (!selected.has(row.questId)) {
       continue;
     }
-    appearancesByCharacter.set(
-      row.characterId,
-      (appearancesByCharacter.get(row.characterId) ?? 0) + 1,
-    );
+    const halves = appearancesByCharacter.get(row.characterId) ?? new Set<string>();
+    halves.add(row.versionHalf);
+    appearancesByCharacter.set(row.characterId, halves);
   }
 
   const characterIds = unique([
@@ -190,7 +189,7 @@ export function buildStorySegmentRanking(params: {
   return characterIds
     .map((characterId) => {
       const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
-      const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
+      const appearanceCount = appearancesByCharacter.get(characterId)?.size ?? 0;
       return {
         characterId,
         characterName: characterById.get(characterId)?.name ?? characterId,

@@ -21,6 +21,7 @@ type MatrixRow = {
     segmentId: string;
     labelZh: string;
     version: string;
+    versionHalf: string;
     appeared: boolean;
     dialogueLineCount: number;
   }>;
@@ -72,16 +73,17 @@ export function VersionHalfStatsBrowser({
 
     for (const row of matrix) {
       let dialogueTotal = 0;
-      let appearanceTotal = 0;
+      const appearedHalves = new Set<string>();
       for (const cell of row.cells) {
         if (!selectedSegmentIds.includes(cell.segmentId)) {
           continue;
         }
         dialogueTotal += cell.dialogueLineCount;
         if (cell.appeared) {
-          appearanceTotal += 1;
+          appearedHalves.add(cell.versionHalf);
         }
       }
+      const appearanceTotal = appearedHalves.size;
       if (dialogueTotal > 0 || appearanceTotal > 0) {
         dialogueByCharacter.set(row.character.id, dialogueTotal);
         appearancesByCharacter.set(row.character.id, appearanceTotal);
@@ -209,7 +211,7 @@ export function VersionHalfStatsBrowser({
                 </th>
                 <th className="px-4 py-3">
                   <button type="button" className="hover:text-zinc-900" onClick={() => toggleSort("appearanceCount")}>
-                    {labels.appearanceSegments}
+                    {labels.versionAppearances}
                     {sortIndicator("appearanceCount")}
                   </button>
                 </th>

@@ -116,6 +116,7 @@ export async function getVersionHalfStatsPageData(params?: {
         segmentId: segment.id,
         labelZh: segment.nameZh,
         version: segment.version,
+        versionHalf: segment.versionHalf,
         appeared,
         dialogueLineCount,
       };
