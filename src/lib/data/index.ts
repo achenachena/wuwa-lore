@@ -1,15 +1,14 @@
 import {
   aggregateVersionStats,
-  aggregateVoiceLineStats,
   buildCharacterStorySegmentRows,
   buildStorySegmentRanking,
+  didCharacterAppearInQuest,
   filterStorySegmentsByRange,
 } from "@/lib/data/aggregate";
 import {
   loadCharacterImages,
   loadCharacters,
   loadGeneratedStats,
-  loadRawVoiceEntries,
   loadStoryAppearances,
   loadStoryDialogueStats,
   loadStorySegments,
@@ -104,13 +103,16 @@ export async function getVersionHalfStatsPageData(params?: {
       name: displayNames.get(character.id) ?? character.name,
     },
     cells: storySegments.map((segment) => {
-      const appeared = storyAppearances.some(
-        (row) => row.characterId === character.id && row.questId === segment.id,
-      );
       const dialogueLineCount =
         storyDialogueStats.find(
           (row) => row.characterId === character.id && row.questId === segment.id,
         )?.lineCount ?? 0;
+      const appeared = didCharacterAppearInQuest({
+        characterId: character.id,
+        questId: segment.id,
+        storyAppearances,
+        dialogueLineCount,
+      });
 
       return {
         segmentId: segment.id,
@@ -131,15 +133,6 @@ export async function getVersionHalfStatsPageData(params?: {
     ranking,
     matrix,
   };
-}
-
-export async function computeStatsFromRaw() {
-  const [versions, characters, entries] = await Promise.all([
-    loadVersions(),
-    loadCharacters(),
-    loadRawVoiceEntries(),
-  ]);
-  return aggregateVoiceLineStats({ characters, versions, entries });
 }
 
 export async function getVoiceStatsForSite(): Promise<VoiceLineStatRow[]> {

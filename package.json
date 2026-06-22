@@ -14,13 +14,14 @@
     "data:sync": "tsx scripts/sync-fandom-data.ts && npm run data:sync-official",
     "data:sync-official": "tsx scripts/sync-official-versions.ts",
     "data:sync-stories": "tsx scripts/sync-story-appearances.ts && tsx scripts/sync-story-dialogue-stats.ts && tsx scripts/sync-character-display-names.ts",
+    "data:audit-stories": "tsx scripts/audit-story-appearance-dialogue.ts && tsx scripts/verify-story-dialogue-coverage.ts",
     "data:sync-story-dialogue": "tsx scripts/sync-story-dialogue-stats.ts",
     "data:generate-half-stats": "tsx scripts/generate-version-half-stats.ts",
     "data:generate": "tsx scripts/generate-voice-stats.ts && npm run data:generate-half-stats",
     "data:validate": "tsx scripts/validate-data.ts",
     "data:compare": "tsx scripts/compare-official-vs-fandom.ts",
-    "data:check": "npm run data:generate && npm run data:validate && npm run data:compare",
-    "data:refresh-all": "npm run data:sync-stories && npm run data:generate && npm run data:validate"
+    "data:check": "npm run data:generate && npm run data:validate && npm run data:compare && npm run data:audit-stories",
+    "data:refresh-all": "npm run data:sync-stories && npm run data:generate && npm run data:validate && npm run data:audit-stories"
   },
   "dependencies": {
     "next": "16.2.6",

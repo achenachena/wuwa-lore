@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
-import { aggregateVoiceLineStats } from "@/lib/data/aggregate";
-import type { Character, VersionRecord, VoiceLineEntry } from "@/types/lore";
+import { aggregateVoiceLineStats, buildCharacterStorySegmentRows } from "@/lib/data/aggregate";
+import type { Character, StoryAppearanceRow, StoryDialogueRow, StorySegment, VersionRecord, VoiceLineEntry } from "@/types/lore";
 
 const characters: Character[] = [
   {
@@ -61,5 +61,47 @@ describe("aggregateVoiceLineStats", () => {
       { version: "1.0", lineCount: 2 },
       { version: "1.1", lineCount: 0 },
     ]);
+  });
+});
+
+describe("buildCharacterStorySegmentRows", () => {
+  test("counts dialogue-only segments as appeared", () => {
+    const segments: StorySegment[] = [
+      {
+        id: "to-the-shores-end",
+        wikiTitle: "To the Shore's End",
+        nameZh: "行至海岸尽头",
+        version: "1.3",
+        half: "a",
+        versionHalf: "1.3-a",
+        sortOrder: 0,
+      },
+    ];
+    const storyAppearances: StoryAppearanceRow[] = [];
+    const storyDialogueStats: StoryDialogueRow[] = [
+      {
+        locale: "zh-Hans",
+        characterId: "yangyang",
+        questId: "to-the-shores-end",
+        wikiTitle: "To the Shore's End",
+        nameZh: "行至海岸尽头",
+        version: "1.3",
+        half: "a",
+        versionHalf: "1.3-a",
+        lineCount: 33,
+        encoreStoryIds: [100012],
+      },
+    ];
+
+    const rows = buildCharacterStorySegmentRows({
+      characterId: "yangyang",
+      segments,
+      storyAppearances,
+      storyDialogueStats,
+    });
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0]?.appeared).toBe(true);
+    expect(rows[0]?.lineCount).toBe(33);
   });
 });

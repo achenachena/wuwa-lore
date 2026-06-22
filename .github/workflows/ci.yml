@@ -30,6 +30,9 @@ jobs:
       - name: Compare dual-source versions
         run: npm run data:compare
 
+      - name: Audit story appearance and dialogue
+        run: npx tsx scripts/audit-story-appearance-dialogue.ts
+
       - name: Typecheck
         run: npm run typecheck
 

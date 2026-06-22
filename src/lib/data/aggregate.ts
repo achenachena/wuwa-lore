@@ -11,6 +11,7 @@ import type {
   VoiceLineStatRow,
 } from "@/types/lore";
 import { isRoverCharacter } from "@/lib/i18n/locale";
+import { compareVersion } from "@/lib/version/compare";
 
 function unique<T>(values: T[]): T[] {
   return [...new Set(values)];
@@ -112,17 +113,28 @@ export function aggregateVersionStats(params: {
   });
 }
 
-function compareVersion(a: string, b: string): number {
-  const pa = a.split(".").map((x) => Number(x));
-  const pb = b.split(".").map((x) => Number(x));
-  for (let i = 0; i < Math.max(pa.length, pb.length); i += 1) {
-    const da = pa[i] ?? 0;
-    const db = pb[i] ?? 0;
-    if (da !== db) {
-      return da - db;
+function sumDialogueByQuest(rows: StoryDialogueRow[], characterId: string): Map<string, number> {
+  const dialogueByQuest = new Map<string, number>();
+  for (const row of rows) {
+    if (row.characterId !== characterId) {
+      continue;
     }
+    dialogueByQuest.set(row.questId, (dialogueByQuest.get(row.questId) ?? 0) + row.lineCount);
   }
-  return 0;
+  return dialogueByQuest;
+}
+
+export function didCharacterAppearInQuest(params: {
+  characterId: string;
+  questId: string;
+  storyAppearances: StoryAppearanceRow[];
+  dialogueLineCount: number;
+}): boolean {
+  const { characterId, questId, storyAppearances, dialogueLineCount } = params;
+  if (dialogueLineCount > 0) {
+    return true;
+  }
+  return storyAppearances.some((row) => row.characterId === characterId && row.questId === questId);
 }
 
 export function buildCharacterStorySegmentRows(params: {
@@ -132,19 +144,17 @@ export function buildCharacterStorySegmentRows(params: {
   storyDialogueStats: StoryDialogueRow[];
 }): CharacterStorySegmentRow[] {
   const { characterId, segments, storyAppearances, storyDialogueStats } = params;
-  const appearedQuestIds = new Set(
-    storyAppearances.filter((row) => row.characterId === characterId).map((row) => row.questId),
-  );
-  const dialogueByQuest = new Map(
-    storyDialogueStats
-      .filter((row) => row.characterId === characterId)
-      .map((row) => [row.questId, row.lineCount]),
-  );
+  const dialogueByQuest = sumDialogueByQuest(storyDialogueStats, characterId);
 
   return segments
     .map((segment) => {
-      const appeared = appearedQuestIds.has(segment.id);
       const lineCount = dialogueByQuest.get(segment.id) ?? 0;
+      const appeared = didCharacterAppearInQuest({
+        characterId,
+        questId: segment.id,
+        storyAppearances,
+        dialogueLineCount: lineCount,
+      });
       return { segment, appeared, lineCount };
     })
     .filter((row) => row.appeared || row.lineCount > 0);
@@ -172,6 +182,14 @@ export function buildStorySegmentRanking(params: {
   const appearancesByCharacter = new Map<string, Set<string>>();
   for (const row of storyAppearances) {
     if (!selected.has(row.questId)) {
+      continue;
+    }
+    const halves = appearancesByCharacter.get(row.characterId) ?? new Set<string>();
+    halves.add(row.versionHalf);
+    appearancesByCharacter.set(row.characterId, halves);
+  }
+  for (const row of storyDialogueStats) {
+    if (!selected.has(row.questId) || row.lineCount <= 0) {
       continue;
     }
     const halves = appearancesByCharacter.get(row.characterId) ?? new Set<string>();
@@ -232,14 +250,22 @@ export function buildVersionHalfRanking(params: {
   }
 
   const appearancesByCharacter = new Map<string, number>();
+  const appearanceKeys = new Set<string>();
   for (const row of storyAppearances) {
     if (!selected.has(row.versionHalf)) {
       continue;
     }
-    appearancesByCharacter.set(
-      row.characterId,
-      (appearancesByCharacter.get(row.characterId) ?? 0) + 1,
-    );
+    appearanceKeys.add(`${row.characterId}::${row.questId}`);
+  }
+  for (const row of storyDialogueStats) {
+    if (!selected.has(row.versionHalf) || row.lineCount <= 0) {
+      continue;
+    }
+    appearanceKeys.add(`${row.characterId}::${row.questId}`);
+  }
+  for (const key of appearanceKeys) {
+    const characterId = key.split("::")[0] ?? "";
+    appearancesByCharacter.set(characterId, (appearancesByCharacter.get(characterId) ?? 0) + 1);
   }
 
   const characterIds = unique([

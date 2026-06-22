@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { slugify } from "@/lib/slugify";
 
 type CharacterRecord = {
   id: string;
@@ -53,14 +54,6 @@ type StoryAppearanceSnapshot = {
 
 const API_ROOT = "https://wutheringwaves.fandom.com/api.php";
 const nowIso = new Date().toISOString();
-
-function slugify(value: string): string {
-  return value
-    .toLowerCase()
-    .replace(/['".]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 function cleanWikiText(value: string): string {
   return value

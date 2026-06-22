@@ -5,5 +5,5 @@ export function getSiteUrl(): string {
   if (process.env.VERCEL_URL) {
     return `https://${process.env.VERCEL_URL}`;
   }
-  return "https://wuwa-lore.vercel.app";
+  return "https://wuwalore.xyz";
 }

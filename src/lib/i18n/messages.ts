@@ -76,7 +76,7 @@ export const messages = {
       debutVersion: "Debut Version",
       storySectionTitle: "Main Story Appearances & Dialogue",
       storySectionDescription:
-        "Per main-story segment. Appearances from Fandom quest infobox; line counts from",
+        "Per main-story segment. Appearances use Fandom quest infobox, supplemented by encore dialogue when a character speaks but is missing from the wiki list. Lines from",
       storySegment: "Story segment",
       appeared: "Appeared",
       lineCount: "Lines",
@@ -192,7 +192,7 @@ export const messages = {
       faction: "阵营",
       debutVersion: "初版版本",
       storySectionTitle: "主线剧情登场与台词",
-      storySectionDescription: "按主线段落统计。登场依据 Fandom 任务 infobox；台词数来自",
+      storySectionDescription: "按主线段落统计。登场依据 Fandom 任务 infobox，若 wiki 未收录但有 encore 台词则计为登场；台词数来自",
       storySegment: "主线段落",
       appeared: "登场",
       lineCount: "台词数",
