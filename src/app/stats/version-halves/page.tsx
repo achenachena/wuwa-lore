@@ -26,6 +26,7 @@ export default async function VersionHalfStatsPage() {
         initialFromVersion={pageData.fromVersion}
         initialToVersion={pageData.toVersion}
         matrix={pageData.matrix}
+        characterPortraits={pageData.characterPortraits}
         labels={t.storySegments}
       />
     </section>

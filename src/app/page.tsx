@@ -1,17 +1,16 @@
 import Link from "next/link";
-import { getCharacterListData, getVersionStatsPageData, getVoiceStatsForSite } from "@/lib/data";
-import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
+import { getCharacterListData, getCharacterLineTotalsForSite, getVersionStatsPageData } from "@/lib/data";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
 import { loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
-  const [characters, versionStats, stats, quality, validation, sourceDiff, siteLocale, t] =
+  const [characters, versionStats, lineTotals, quality, validation, sourceDiff, siteLocale, t] =
     await Promise.all([
       getCharacterListData(),
       getVersionStatsPageData(),
-      getVoiceStatsForSite(),
+      getCharacterLineTotalsForSite(),
       loadQualityReport().catch(() => null),
       loadValidationReport().catch(() => null),
       loadSourceDiffReport().catch(() => null),
@@ -19,12 +18,7 @@ export default async function Home() {
       getMessages(),
     ]);
 
-  const totalLines = stats.reduce((sum, row) => {
-    if (isRoverCharacter(row.characterId)) {
-      return sum;
-    }
-    return sum + row.totalLineCount;
-  }, 0);
+  const totalLines = [...lineTotals.values()].reduce((sum, row) => sum + row.totalLines, 0);
 
   return (
     <section className="space-y-6">

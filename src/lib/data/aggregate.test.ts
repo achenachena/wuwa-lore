@@ -1,5 +1,9 @@
 import { describe, expect, test } from "vitest";
-import { aggregateVoiceLineStats, buildCharacterStorySegmentRows } from "@/lib/data/aggregate";
+import {
+  aggregateVersionStats,
+  aggregateVoiceLineStats,
+  buildCharacterStorySegmentRows,
+} from "@/lib/data/aggregate";
 import type { Character, StoryAppearanceRow, StoryDialogueRow, StorySegment, VersionRecord, VoiceLineEntry } from "@/types/lore";
 
 const characters: Character[] = [
@@ -61,6 +65,41 @@ describe("aggregateVoiceLineStats", () => {
       { version: "1.0", lineCount: 2 },
       { version: "1.1", lineCount: 0 },
     ]);
+  });
+});
+
+describe("aggregateVersionStats", () => {
+  test("uses main-story dialogue totals by version when provided", () => {
+    const voiceRows = aggregateVoiceLineStats({
+      characters,
+      versions,
+      entries,
+      generatedAt: "2026-05-30T00:00:00.000Z",
+    });
+    const storyDialogueStats: StoryDialogueRow[] = [
+      {
+        locale: "zh-Hans",
+        characterId: "yangyang",
+        questId: "quest-a",
+        wikiTitle: "Quest A",
+        nameZh: "任务A",
+        version: "1.1",
+        half: "a",
+        versionHalf: "1.1-a",
+        lineCount: 40,
+        encoreStoryIds: [1],
+      },
+    ];
+
+    const rows = aggregateVersionStats({
+      versions,
+      characters,
+      voiceStats: voiceRows,
+      storyDialogueStats,
+    });
+
+    expect(rows.find((row) => row.version === "1.0")?.totalVoiceLines).toBe(0);
+    expect(rows.find((row) => row.version === "1.1")?.totalVoiceLines).toBe(40);
   });
 });
 

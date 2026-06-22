@@ -83,26 +83,48 @@ export function aggregateVoiceLineStats(params: {
   });
 }
 
+export function sumStoryDialogueByCharacter(rows: StoryDialogueRow[]): Map<string, number> {
+  const totals = new Map<string, number>();
+  for (const row of rows) {
+    totals.set(row.characterId, (totals.get(row.characterId) ?? 0) + row.lineCount);
+  }
+  return totals;
+}
+
+export function sumStoryDialogueByVersion(rows: StoryDialogueRow[]): Map<string, number> {
+  const totals = new Map<string, number>();
+  for (const row of rows) {
+    totals.set(row.version, (totals.get(row.version) ?? 0) + row.lineCount);
+  }
+  return totals;
+}
+
 export function aggregateVersionStats(params: {
   versions: VersionRecord[];
   characters: Character[];
   voiceStats: VoiceLineStatRow[];
+  storyDialogueStats?: StoryDialogueRow[];
 }): VersionStatRow[] {
-  const { versions, characters, voiceStats } = params;
+  const { versions, characters, voiceStats, storyDialogueStats } = params;
   const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
+  const storyLinesByVersion = storyDialogueStats
+    ? sumStoryDialogueByVersion(storyDialogueStats)
+    : null;
 
   return versions.map((version) => {
     const characterCount = playableCharacters.filter(
       (character) => character.releaseVersion === version.version,
     ).length;
 
-    const totalVoiceLines = voiceStats.reduce((sum, row) => {
-      if (isRoverCharacter(row.characterId)) {
-        return sum;
-      }
-      const perVersion = row.perVersionLineCounts.find((item) => item.version === version.version);
-      return sum + (perVersion?.lineCount ?? 0);
-    }, 0);
+    const totalVoiceLines = storyLinesByVersion
+      ? (storyLinesByVersion.get(version.version) ?? 0)
+      : voiceStats.reduce((sum, row) => {
+          if (isRoverCharacter(row.characterId)) {
+            return sum;
+          }
+          const perVersion = row.perVersionLineCounts.find((item) => item.version === version.version);
+          return sum + (perVersion?.lineCount ?? 0);
+        }, 0);
 
     return {
       version: version.version,

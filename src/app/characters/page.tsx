@@ -1,14 +1,15 @@
 import { CharactersBrowser } from "@/components/characters-browser";
-import { getCharacterListData, getVoiceStatsForSite } from "@/lib/data";
+import { getCharacterListData, getCharacterLineTotalsForSite, getCharacterPortraitMap } from "@/lib/data";
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { localizeGameLabel } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
 
 export default async function CharactersPage() {
-  const [characters, stats, siteLocale, t] = await Promise.all([
+  const [characters, lineTotals, portraits, siteLocale, t] = await Promise.all([
     getCharacterListData(),
-    getVoiceStatsForSite(),
+    getCharacterLineTotalsForSite(),
+    getCharacterPortraitMap(),
     getSiteLocale(),
     getMessages(),
   ]);
@@ -19,7 +20,8 @@ export default async function CharactersPage() {
   }
 
   const listItems = characters.map((character) => {
-    const row = stats.find((item) => item.characterId === character.id);
+    const totals = lineTotals.get(character.id);
+    const totalLines = isRoverCharacter(character.id) ? 0 : (totals?.totalLines ?? 0);
     return {
       id: character.id,
       name: displayNames.get(character.id) ?? character.name,
@@ -28,8 +30,9 @@ export default async function CharactersPage() {
       faction: localizeGameLabel(character.faction, "faction", siteLocale),
       rarity: character.rarity,
       releaseVersion: character.releaseVersion,
-      voiceLineTotal: isRoverCharacter(character.id) ? 0 : (row?.totalLineCount ?? 0),
-      hasVoiceStats: Boolean(row?.totalLineCount),
+      voiceLineTotal: totalLines,
+      hasVoiceStats: totalLines > 0,
+      avatarUrl: portraits.get(character.id) ?? null,
     };
   });
 

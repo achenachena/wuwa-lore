@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import { CharacterAvatar } from "@/components/character-avatar";
 import type { Messages } from "@/lib/i18n/messages";
 
 export interface CharacterListItem {
@@ -15,6 +16,7 @@ export interface CharacterListItem {
   releaseVersion: string;
   voiceLineTotal: number;
   hasVoiceStats: boolean;
+  avatarUrl?: string | null;
 }
 
 interface CharactersBrowserProps {
@@ -145,41 +147,61 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {filteredItems.map((character) => (
-          <article key={character.id} className="rounded-lg border border-zinc-200 bg-white p-4">
-            <div className="flex items-start justify-between gap-2">
-              <div>
-                <h2 className="text-lg font-semibold">{character.name}</h2>
-                {showCharacterId ? <p className="text-sm text-zinc-500">{character.id}</p> : null}
-              </div>
-              <span className="rounded bg-zinc-100 px-2 py-1 text-xs">{character.rarity}★</span>
+          <article key={character.id} className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+            <div className="relative h-28 bg-gradient-to-b from-zinc-100 to-white">
+              {character.avatarUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={character.avatarUrl}
+                  alt=""
+                  className="h-full w-full object-cover object-top"
+                />
+              ) : (
+                <div className="flex h-full items-center justify-center">
+                  <CharacterAvatar name={character.name} size={64} />
+                </div>
+              )}
+              <span className="absolute top-2 right-2 rounded bg-black/70 px-2 py-1 text-xs text-white">
+                {character.rarity}★
+              </span>
             </div>
 
-            <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
-              <div>
-                <dt className="text-zinc-500">{labels.element}</dt>
-                <dd>{character.element}</dd>
+            <div className="p-4">
+              <div className="flex items-start gap-3">
+                <CharacterAvatar name={character.name} src={character.avatarUrl} size={44} />
+                <div className="min-w-0 flex-1">
+                  <h2 className="truncate text-lg font-semibold">{character.name}</h2>
+                  {showCharacterId ? <p className="truncate text-sm text-zinc-500">{character.id}</p> : null}
+                </div>
               </div>
-              <div>
-                <dt className="text-zinc-500">{labels.weapon}</dt>
-                <dd>{character.weapon}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">{labels.debut}</dt>
-                <dd>{character.releaseVersion}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">{labels.voiceLines}</dt>
-                <dd>{character.voiceLineTotal}</dd>
-              </div>
-            </dl>
 
-            {!character.hasVoiceStats ? (
-              <p className="mt-2 text-xs text-amber-700">{labels.noVoiceStats}</p>
-            ) : null}
+              <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
+                <div>
+                  <dt className="text-zinc-500">{labels.element}</dt>
+                  <dd>{character.element}</dd>
+                </div>
+                <div>
+                  <dt className="text-zinc-500">{labels.weapon}</dt>
+                  <dd>{character.weapon}</dd>
+                </div>
+                <div>
+                  <dt className="text-zinc-500">{labels.debut}</dt>
+                  <dd>{character.releaseVersion}</dd>
+                </div>
+                <div>
+                  <dt className="text-zinc-500">{labels.voiceLines}</dt>
+                  <dd className="font-medium">{character.voiceLineTotal}</dd>
+                </div>
+              </dl>
 
-            <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
-              {common.viewDetails}
-            </Link>
+              {!character.hasVoiceStats ? (
+                <p className="mt-2 text-xs text-amber-700">{labels.noVoiceStats}</p>
+              ) : null}
+
+              <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
+                {common.viewDetails}
+              </Link>
+            </div>
           </article>
         ))}
       </div>
