@@ -1,5 +1,3 @@
-"use client";
-
 import { MetricBar } from "@/components/metric-bar";
 
 type StorySegmentRow = {
