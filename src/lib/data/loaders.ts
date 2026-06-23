@@ -8,6 +8,9 @@ import { getSiteLocale } from "@/lib/i18n/server";
 import type {
   Character,
   CharacterImage,
+  OptionalQuestAppearanceRow,
+  OptionalQuestDialogueRow,
+  OptionalQuestRecord,
   StoryAppearanceRow,
   StoryDialogueRow,
   StorySegment,
@@ -23,6 +26,9 @@ import {
   characterImageSchema,
   generatedStatsSchema,
   rawVoiceSnapshotSchema,
+  optionalQuestAppearanceRowSchema,
+  optionalQuestDialogueRowSchema,
+  optionalQuestRecordSchema,
   storyAppearanceRowSchema,
   storyDialogueRowSchema,
   storySegmentSchema,
@@ -207,6 +213,34 @@ export async function loadAllStoryDialogueStats(): Promise<StoryDialogueRow[]> {
   const raw = await readJsonFile<unknown>(filePath);
   const parsed = z.object({ rows: z.array(storyDialogueRowSchema) }).parse(raw);
   return parsed.rows;
+}
+
+export async function loadOptionalQuestCatalog(): Promise<OptionalQuestRecord[]> {
+  const filePath = path.join(root, "content", "stories", "optional-quest-catalog.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ quests: z.array(optionalQuestRecordSchema) }).parse(raw);
+  return parsed.quests;
+}
+
+export async function loadOptionalQuestDialogueStats(params?: {
+  locale?: EncoreLocale;
+}): Promise<OptionalQuestDialogueRow[]> {
+  const filePath = path.join(root, "data", "derived", "optional-quest-dialogue-stats.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ rows: z.array(optionalQuestDialogueRowSchema) }).parse(raw);
+  const filtered = parsed.rows.filter((row) => !isRoverCharacter(row.characterId));
+  if (!params?.locale) {
+    const locale = toEncoreLocale(await getSiteLocale());
+    return filtered.filter((row) => row.locale === locale);
+  }
+  return filtered.filter((row) => row.locale === params.locale);
+}
+
+export async function loadOptionalQuestAppearances(): Promise<OptionalQuestAppearanceRow[]> {
+  const filePath = path.join(root, "data", "derived", "optional-quest-appearances.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z.object({ rows: z.array(optionalQuestAppearanceRowSchema) }).parse(raw);
+  return parsed.rows.filter((row) => !isRoverCharacter(row.characterId));
 }
 
 export async function loadVersionHalfVoiceStats(): Promise<VersionHalfVoiceRow[]> {

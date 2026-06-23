@@ -92,6 +92,8 @@ export interface VersionStatRow {
   totalVoiceLines: number;
 }
 
+export type QuestCategory = "companion" | "event" | "side";
+
 export type VersionHalfCode = "a" | "b";
 
 export interface VersionHalfRecord {
@@ -148,6 +150,39 @@ export interface StoryDialogueRow {
 
 export interface CharacterStorySegmentRow {
   segment: StorySegment;
+  appeared: boolean;
+  lineCount: number;
+}
+
+export interface OptionalQuestRecord {
+  id: string;
+  category: QuestCategory;
+  encoreStoryId: number;
+  nameZh: string;
+  nameEn: string;
+}
+
+export interface OptionalQuestDialogueRow {
+  locale: "en" | "zh-Hans";
+  category: QuestCategory;
+  characterId: string;
+  questId: string;
+  questName: string;
+  questNameZh: string;
+  lineCount: number;
+  encoreStoryIds: number[];
+}
+
+export interface OptionalQuestAppearanceRow {
+  category: QuestCategory;
+  characterId: string;
+  questId: string;
+  questName: string;
+  questNameZh: string;
+}
+
+export interface CharacterOptionalQuestRow {
+  quest: OptionalQuestRecord;
   appeared: boolean;
   lineCount: number;
 }

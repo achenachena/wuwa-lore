@@ -1,17 +1,23 @@
 import {
   aggregateVersionStats,
+  buildCharacterOptionalQuestRows,
   buildCharacterStorySegmentRows,
   buildFirstAppearanceVersionMap,
+  buildOptionalQuestRanking,
   buildStorySegmentRanking,
   didCharacterAppearInQuest,
   filterStorySegmentsByRange,
   getFirstAppearanceVersion,
+  sumOptionalDialogueByCharacter,
   sumStoryDialogueByCharacter,
 } from "@/lib/data/aggregate";
 import {
   loadCharacterImages,
   loadCharacters,
   loadGeneratedStats,
+  loadOptionalQuestAppearances,
+  loadOptionalQuestCatalog,
+  loadOptionalQuestDialogueStats,
   loadStoryAppearances,
   loadStoryDialogueStats,
   loadStorySegments,
@@ -20,7 +26,7 @@ import {
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter, toVoiceDataLocale, type SiteLocale } from "@/lib/i18n/locale";
-import type { VoiceLineStatRow } from "@/types/lore";
+import type { QuestCategory, VoiceLineStatRow } from "@/types/lore";
 import type { ImageType } from "@/types/lore";
 
 function filterVoiceStatsForSite(stats: VoiceLineStatRow[], siteLocale: SiteLocale): VoiceLineStatRow[] {
@@ -50,38 +56,92 @@ export async function getCharacterPortraitMap(): Promise<Map<string, string>> {
 }
 
 export async function getCharacterLineTotalsForSite(): Promise<
-  Map<string, { profileLines: number; storyLines: number; totalLines: number }>
+  Map<
+    string,
+    {
+      profileLines: number;
+      storyLines: number;
+      companionLines: number;
+      eventLines: number;
+      sideLines: number;
+      totalLines: number;
+    }
+  >
 > {
-  const [stats, storyDialogue, siteLocale] = await Promise.all([
+  const [stats, storyDialogue, optionalDialogue, siteLocale] = await Promise.all([
     loadGeneratedStats(),
     loadStoryDialogueStats(),
+    loadOptionalQuestDialogueStats(),
     getSiteLocale(),
   ]);
   const voiceStats = filterVoiceStatsForSite(stats, siteLocale);
   const storyByCharacter = sumStoryDialogueByCharacter(storyDialogue);
-  const totals = new Map<string, { profileLines: number; storyLines: number; totalLines: number }>();
+  const companionByCharacter = sumOptionalDialogueByCharacter(optionalDialogue, "companion");
+  const eventByCharacter = sumOptionalDialogueByCharacter(optionalDialogue, "event");
+  const sideByCharacter = sumOptionalDialogueByCharacter(optionalDialogue, "side");
+  const totals = new Map<
+    string,
+    {
+      profileLines: number;
+      storyLines: number;
+      companionLines: number;
+      eventLines: number;
+      sideLines: number;
+      totalLines: number;
+    }
+  >();
+
+  function ensure(characterId: string) {
+    const current = totals.get(characterId) ?? {
+      profileLines: 0,
+      storyLines: 0,
+      companionLines: 0,
+      eventLines: 0,
+      sideLines: 0,
+      totalLines: 0,
+    };
+    totals.set(characterId, current);
+    return current;
+  }
 
   for (const row of voiceStats) {
     if (isRoverCharacter(row.characterId)) {
       continue;
     }
-    const storyLines = storyByCharacter.get(row.characterId) ?? 0;
-    totals.set(row.characterId, {
-      profileLines: row.totalLineCount,
-      storyLines,
-      totalLines: row.totalLineCount + storyLines,
-    });
+    const bucket = ensure(row.characterId);
+    bucket.profileLines = row.totalLineCount;
   }
 
   for (const [characterId, storyLines] of storyByCharacter) {
-    if (isRoverCharacter(characterId) || totals.has(characterId)) {
+    if (isRoverCharacter(characterId)) {
       continue;
     }
-    totals.set(characterId, {
-      profileLines: 0,
-      storyLines,
-      totalLines: storyLines,
-    });
+    ensure(characterId).storyLines = storyLines;
+  }
+  for (const [characterId, lines] of companionByCharacter) {
+    if (!isRoverCharacter(characterId)) {
+      ensure(characterId).companionLines = lines;
+    }
+  }
+  for (const [characterId, lines] of eventByCharacter) {
+    if (!isRoverCharacter(characterId)) {
+      ensure(characterId).eventLines = lines;
+    }
+  }
+  for (const [characterId, lines] of sideByCharacter) {
+    if (!isRoverCharacter(characterId)) {
+      ensure(characterId).sideLines = lines;
+    }
+  }
+
+  for (const [characterId, bucket] of totals) {
+    bucket.totalLines =
+      bucket.profileLines +
+      bucket.storyLines +
+      bucket.companionLines +
+      bucket.eventLines +
+      bucket.sideLines;
+    totals.set(characterId, bucket);
   }
 
   return totals;
@@ -107,15 +167,27 @@ export async function getCharacterListData() {
 }
 
 export async function getCharacterDetailData(id: string) {
-  const [characters, images, storySegments, storyAppearances, storyDialogueStats, portraits] =
-    await Promise.all([
-      loadCharacters(),
-      loadCharacterImages(),
-      loadStorySegments(),
-      loadStoryAppearances(),
-      loadStoryDialogueStats(),
-      getCharacterPortraitMap(),
-    ]);
+  const [
+    characters,
+    images,
+    storySegments,
+    storyAppearances,
+    storyDialogueStats,
+    optionalQuests,
+    optionalAppearances,
+    optionalDialogueStats,
+    portraits,
+  ] = await Promise.all([
+    loadCharacters(),
+    loadCharacterImages(),
+    loadStorySegments(),
+    loadStoryAppearances(),
+    loadStoryDialogueStats(),
+    loadOptionalQuestCatalog(),
+    loadOptionalQuestAppearances(),
+    loadOptionalQuestDialogueStats(),
+    getCharacterPortraitMap(),
+  ]);
   const character = characters.find((item) => item.id === id);
   const characterImages = images.filter((item) => item.characterId === id);
   const characterStorySegments = buildCharacterStorySegmentRows({
@@ -133,12 +205,62 @@ export async function getCharacterDetailData(id: string) {
       })
     : null;
 
+  const optionalQuestStats = (["companion", "event", "side"] as QuestCategory[]).map((category) => ({
+    category,
+    rows: buildCharacterOptionalQuestRows({
+      characterId: id,
+      category,
+      quests: optionalQuests,
+      appearances: optionalAppearances,
+      dialogueStats: optionalDialogueStats,
+    }),
+  }));
+
   return {
     character,
     characterImages,
     storySegments: characterStorySegments,
+    optionalQuestStats,
     portraitUrl: portraits.get(id) ?? null,
     firstAppearanceVersion,
+  };
+}
+
+export async function getOptionalQuestStatsPageData(category: QuestCategory = "companion") {
+  const [characters, quests, appearances, dialogueStats, siteLocale, portraits] = await Promise.all([
+    loadCharacters(),
+    loadOptionalQuestCatalog(),
+    loadOptionalQuestAppearances(),
+    loadOptionalQuestDialogueStats(),
+    getSiteLocale(),
+    getCharacterPortraitMap(),
+  ]);
+  const displayNames = await getCharacterDisplayNameMap(siteLocale);
+  const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
+
+  const ranking = buildOptionalQuestRanking({
+    characters: playableCharacters,
+    category,
+    quests,
+    appearances,
+    dialogueStats,
+  }).map((row) => ({
+    ...row,
+    characterName: displayNames.get(row.characterId) ?? row.characterName,
+  }));
+
+  const categoryQuests = quests.filter((quest) => quest.category === category);
+
+  return {
+    category,
+    quests: categoryQuests,
+    ranking,
+    characterPortraits: Object.fromEntries(portraits),
+    questCounts: {
+      companion: quests.filter((quest) => quest.category === "companion").length,
+      event: quests.filter((quest) => quest.category === "event").length,
+      side: quests.filter((quest) => quest.category === "side").length,
+    },
   };
 }
 

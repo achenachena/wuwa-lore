@@ -1,0 +1,1994 @@
+{
+  "generatedAt": "2026-06-23T05:52:57.150Z",
+  "source": {
+    "name": "encore.moe",
+    "categories": {
+      "companion": 12,
+      "event": 45,
+      "side": 226
+    }
+  },
+  "quests": [
+    {
+      "id": "companion-101001",
+      "category": "companion",
+      "encoreStoryId": 101001,
+      "nameZh": "长夜将明",
+      "nameEn": "Daybreak at Last"
+    },
+    {
+      "id": "companion-101002",
+      "category": "companion",
+      "encoreStoryId": 101002,
+      "nameZh": "啸野归城",
+      "nameEn": "Wild Heart's Return"
+    },
+    {
+      "id": "companion-101003",
+      "category": "companion",
+      "encoreStoryId": 101003,
+      "nameZh": "此际我独行",
+      "nameEn": "Solitary Path"
+    },
+    {
+      "id": "companion-101004",
+      "category": "companion",
+      "encoreStoryId": 101004,
+      "nameZh": "离火弈长生",
+      "nameEn": "Immortal Blaze"
+    },
+    {
+      "id": "companion-101005",
+      "category": "companion",
+      "encoreStoryId": 101005,
+      "nameZh": "自问丹青",
+      "nameEn": "True Colors"
+    },
+    {
+      "id": "companion-101006",
+      "category": "companion",
+      "encoreStoryId": 101006,
+      "nameZh": "小小羊咩大冒险",
+      "nameEn": "Small Wooly, Big Adventures"
+    },
+    {
+      "id": "companion-101007",
+      "category": "companion",
+      "encoreStoryId": 101007,
+      "nameZh": "小径分岔的星海",
+      "nameEn": "Forking Paths Among the Stars"
+    },
+    {
+      "id": "companion-101008",
+      "category": "companion",
+      "encoreStoryId": 101008,
+      "nameZh": "如果在雨夜，一个家族",
+      "nameEn": "If On a Rainy Night a Family"
+    },
+    {
+      "id": "companion-101009",
+      "category": "companion",
+      "encoreStoryId": 101009,
+      "nameZh": "今夜星光灿烂",
+      "nameEn": "Starry is the Night"
+    },
+    {
+      "id": "companion-101010",
+      "category": "companion",
+      "encoreStoryId": 101010,
+      "nameZh": "启航日，船长！",
+      "nameEn": "Sail Day, Captain!"
+    },
+    {
+      "id": "companion-101011",
+      "category": "companion",
+      "encoreStoryId": 101011,
+      "nameZh": "幽夜幻梦",
+      "nameEn": "A Fleeting Night's Dream"
+    },
+    {
+      "id": "companion-101012",
+      "category": "companion",
+      "encoreStoryId": 101012,
+      "nameZh": "夜行的焰光",
+      "nameEn": "A Blaze in the Dark"
+    },
+    {
+      "id": "event-700001",
+      "category": "event",
+      "encoreStoryId": 700001,
+      "nameZh": "「烈阳昔叙之诗」第一章",
+      "nameEn": "Epic of the Blazing Sun - Chapter I"
+    },
+    {
+      "id": "event-700002",
+      "category": "event",
+      "encoreStoryId": 700002,
+      "nameZh": "「烈阳昔叙之诗」第二章",
+      "nameEn": "Epic of the Blazing Sun - Chapter II"
+    },
+    {
+      "id": "event-700003",
+      "category": "event",
+      "encoreStoryId": 700003,
+      "nameZh": "「烈阳昔叙之诗」第三章",
+      "nameEn": "Epic of the Blazing Sun - Chapter III"
+    },
+    {
+      "id": "event-700004",
+      "category": "event",
+      "encoreStoryId": 700004,
+      "nameZh": "「烈阳昔叙之诗」第四章",
+      "nameEn": "Epic of the Blazing Sun - Chapter IV"
+    },
+    {
+      "id": "event-158000001",
+      "category": "event",
+      "encoreStoryId": 158000001,
+      "nameZh": "已知的既感！",
+      "nameEn": "When the Known Thrums!"
+    },
+    {
+      "id": "event-158000002",
+      "category": "event",
+      "encoreStoryId": 158000002,
+      "nameZh": "如果你追到……",
+      "nameEn": "If You Catch Up to It..."
+    },
+    {
+      "id": "event-158000003",
+      "category": "event",
+      "encoreStoryId": 158000003,
+      "nameZh": "就给你看机器人",
+      "nameEn": "I'll Show You the Mech"
+    },
+    {
+      "id": "event-158000004",
+      "category": "event",
+      "encoreStoryId": 158000004,
+      "nameZh": "新雨的去处",
+      "nameEn": "Where the Iridescent Rain Falls"
+    },
+    {
+      "id": "event-159800004",
+      "category": "event",
+      "encoreStoryId": 159800004,
+      "nameZh": "拉古那急卖·四",
+      "nameEn": "Ragunna Sales Blitz IV"
+    },
+    {
+      "id": "event-159800005",
+      "category": "event",
+      "encoreStoryId": 159800005,
+      "nameZh": "拉古那急卖·五",
+      "nameEn": "Ragunna Sales Blitz V"
+    },
+    {
+      "id": "event-165800003",
+      "category": "event",
+      "encoreStoryId": 165800003,
+      "nameZh": "营养剂体验报告",
+      "nameEn": "Energy Supplement Trial Report"
+    },
+    {
+      "id": "event-165800004",
+      "category": "event",
+      "encoreStoryId": 165800004,
+      "nameZh": "场景变量调整",
+      "nameEn": "Environmental Variable Adjustment"
+    },
+    {
+      "id": "event-165800005",
+      "category": "event",
+      "encoreStoryId": 165800005,
+      "nameZh": "多巴胺分泌异常",
+      "nameEn": "Abnormal Dopamine Secretion"
+    },
+    {
+      "id": "event-165800006",
+      "category": "event",
+      "encoreStoryId": 165800006,
+      "nameZh": "幸福标准化",
+      "nameEn": "Standardized Happiness"
+    },
+    {
+      "id": "event-165800007",
+      "category": "event",
+      "encoreStoryId": 165800007,
+      "nameZh": "黄昏的西尔芙",
+      "nameEn": "Sylph at Twilight"
+    },
+    {
+      "id": "event-165800008",
+      "category": "event",
+      "encoreStoryId": 165800008,
+      "nameZh": "《庆典不再重来》",
+      "nameEn": "\"Festivals Don't Encore\""
+    },
+    {
+      "id": "event-165800009",
+      "category": "event",
+      "encoreStoryId": 165800009,
+      "nameZh": "《工学部修理场景》",
+      "nameEn": "\"Department of Engineering Repair Scene\""
+    },
+    {
+      "id": "event-165800010",
+      "category": "event",
+      "encoreStoryId": 165800010,
+      "nameZh": "《共鸣者的奇幻漂流》",
+      "nameEn": "\"Life of a Resonator\""
+    },
+    {
+      "id": "event-165800011",
+      "category": "event",
+      "encoreStoryId": 165800011,
+      "nameZh": "《四部半》",
+      "nameEn": "\"4½\""
+    },
+    {
+      "id": "event-165800012",
+      "category": "event",
+      "encoreStoryId": 165800012,
+      "nameZh": "《美丽人生》",
+      "nameEn": "\"Life is Beautiful\""
+    },
+    {
+      "id": "event-165800014",
+      "category": "event",
+      "encoreStoryId": 165800014,
+      "nameZh": "纸上折线",
+      "nameEn": "Creases on Paper"
+    },
+    {
+      "id": "event-165800015",
+      "category": "event",
+      "encoreStoryId": 165800015,
+      "nameZh": "地面刻印",
+      "nameEn": "Ground Engravings"
+    },
+    {
+      "id": "event-165800016",
+      "category": "event",
+      "encoreStoryId": 165800016,
+      "nameZh": "空羽留痕",
+      "nameEn": "Imprints of Wings"
+    },
+    {
+      "id": "event-165800017",
+      "category": "event",
+      "encoreStoryId": 165800017,
+      "nameZh": "宁静的语义",
+      "nameEn": "Essence of Tranquility"
+    },
+    {
+      "id": "event-165800018",
+      "category": "event",
+      "encoreStoryId": 165800018,
+      "nameZh": "幸福的咒语",
+      "nameEn": "The Happiness Spell"
+    },
+    {
+      "id": "event-165800019",
+      "category": "event",
+      "encoreStoryId": 165800019,
+      "nameZh": "华夫饼疗愈法",
+      "nameEn": "Waffle Therapy"
+    },
+    {
+      "id": "event-165800020",
+      "category": "event",
+      "encoreStoryId": 165800020,
+      "nameZh": "茶点缺失症",
+      "nameEn": "Snack Deficit Syndrome"
+    },
+    {
+      "id": "event-165800021",
+      "category": "event",
+      "encoreStoryId": 165800021,
+      "nameZh": "甜品免疫低下",
+      "nameEn": "Immunodeficiency of Snacks"
+    },
+    {
+      "id": "event-165800022",
+      "category": "event",
+      "encoreStoryId": 165800022,
+      "nameZh": "毛茸处方",
+      "nameEn": "A Fluffy Prescription"
+    },
+    {
+      "id": "event-165800023",
+      "category": "event",
+      "encoreStoryId": 165800023,
+      "nameZh": "生活的心跳",
+      "nameEn": "The Heartbeat of Life"
+    },
+    {
+      "id": "event-165800024",
+      "category": "event",
+      "encoreStoryId": 165800024,
+      "nameZh": "停泊的舟",
+      "nameEn": "The Moored Boat"
+    },
+    {
+      "id": "event-168000002",
+      "category": "event",
+      "encoreStoryId": 168000002,
+      "nameZh": "免费的午餐？",
+      "nameEn": "A Free Lunch?"
+    },
+    {
+      "id": "event-194800000",
+      "category": "event",
+      "encoreStoryId": 194800000,
+      "nameZh": "沿着节拍启航",
+      "nameEn": "Soar to the Beat"
+    },
+    {
+      "id": "event-194850001",
+      "category": "event",
+      "encoreStoryId": 194850001,
+      "nameZh": "漫游至终点",
+      "nameEn": "Roaming Till the End"
+    },
+    {
+      "id": "event-197750002",
+      "category": "event",
+      "encoreStoryId": 197750002,
+      "nameZh": "奔驰！箭速与激情！",
+      "nameEn": "Full Throttle! Bolt & Blitz!"
+    },
+    {
+      "id": "event-197800000",
+      "category": "event",
+      "encoreStoryId": 197800000,
+      "nameZh": "苇原的“巫女大人”",
+      "nameEn": "Ashinohara's Legendary Miko"
+    },
+    {
+      "id": "event-197800001",
+      "category": "event",
+      "encoreStoryId": 197800001,
+      "nameZh": "特别对策组",
+      "nameEn": "Special Response Force"
+    },
+    {
+      "id": "event-197800002",
+      "category": "event",
+      "encoreStoryId": 197800002,
+      "nameZh": "被救助的研究员",
+      "nameEn": "The Rescued Researcher"
+    },
+    {
+      "id": "event-197800003",
+      "category": "event",
+      "encoreStoryId": 197800003,
+      "nameZh": "爱看电影的幽灵巫女",
+      "nameEn": "The Film-Loving Ghost Miko"
+    },
+    {
+      "id": "event-197800004",
+      "category": "event",
+      "encoreStoryId": 197800004,
+      "nameZh": "日灵与神秘的朋友",
+      "nameEn": "A Soliskin and Its Mysterious Friend"
+    },
+    {
+      "id": "event-197800005",
+      "category": "event",
+      "encoreStoryId": 197800005,
+      "nameZh": "巫女的喜好",
+      "nameEn": "A Miko's Preferences"
+    },
+    {
+      "id": "event-207700000",
+      "category": "event",
+      "encoreStoryId": 207700000,
+      "nameZh": "叩响扉渊",
+      "nameEn": "Knock on Gate Fissure"
+    },
+    {
+      "id": "event-207700002",
+      "category": "event",
+      "encoreStoryId": 207700002,
+      "nameZh": "???",
+      "nameEn": "???"
+    },
+    {
+      "id": "event-312850000",
+      "category": "event",
+      "encoreStoryId": 312850000,
+      "nameZh": "深坠异想奇境·异构绮梦",
+      "nameEn": "Depths of Illusive Realm: Chromatic Fantasy"
+    },
+    {
+      "id": "event-312850001",
+      "category": "event",
+      "encoreStoryId": 312850001,
+      "nameZh": "dnt/经典肉鸽复刻后日谈",
+      "nameEn": "???"
+    },
+    {
+      "id": "side-11000030",
+      "category": "side",
+      "encoreStoryId": 11000030,
+      "nameZh": "失踪的孤鸿",
+      "nameEn": "Lost Ranger"
+    },
+    {
+      "id": "side-11000031",
+      "category": "side",
+      "encoreStoryId": 11000031,
+      "nameZh": "少年尚知读书时",
+      "nameEn": "Time to Study"
+    },
+    {
+      "id": "side-11900016",
+      "category": "side",
+      "encoreStoryId": 11900016,
+      "nameZh": "重嶂轶闻",
+      "nameEn": "Lores Beyond the Ranges"
+    },
+    {
+      "id": "side-106000000",
+      "category": "side",
+      "encoreStoryId": 106000000,
+      "nameZh": "当月光照进森林",
+      "nameEn": "When Moonlight Shines in the Forest"
+    },
+    {
+      "id": "side-106000005",
+      "category": "side",
+      "encoreStoryId": 106000005,
+      "nameZh": "拉古那假日",
+      "nameEn": "Ragunna Holiday"
+    },
+    {
+      "id": "side-106800000",
+      "category": "side",
+      "encoreStoryId": 106800000,
+      "nameZh": "古今多少故事·归墟港市",
+      "nameEn": "Tales of the Past and Present: Port City of Guixu"
+    },
+    {
+      "id": "side-106800001",
+      "category": "side",
+      "encoreStoryId": 106800001,
+      "nameZh": "古今多少故事·北落野",
+      "nameEn": "Tales of the Past and Present: Norfall Barrens"
+    },
+    {
+      "id": "side-106800002",
+      "category": "side",
+      "encoreStoryId": 106800002,
+      "nameZh": "古今多少故事·云陵谷",
+      "nameEn": "Tales of the Past and Present: Gorges of Spirits"
+    },
+    {
+      "id": "side-106800003",
+      "category": "side",
+      "encoreStoryId": 106800003,
+      "nameZh": "古今多少故事·中曲台地",
+      "nameEn": "Tales of the Past and Present: Central Plains"
+    },
+    {
+      "id": "side-106800004",
+      "category": "side",
+      "encoreStoryId": 106800004,
+      "nameZh": "古今多少故事·怨鸟泽",
+      "nameEn": "Tales of the Past and Present: Whining Aix's Mire"
+    },
+    {
+      "id": "side-106800005",
+      "category": "side",
+      "encoreStoryId": 106800005,
+      "nameZh": "古今多少故事·荒石高地",
+      "nameEn": "Tales of the Past and Present: Desorock Highland"
+    },
+    {
+      "id": "side-106800006",
+      "category": "side",
+      "encoreStoryId": 106800006,
+      "nameZh": "古今多少故事·虎口山脉",
+      "nameEn": "Tales of the Past and Present: Tiger's Maw"
+    },
+    {
+      "id": "side-106800007",
+      "category": "side",
+      "encoreStoryId": 106800007,
+      "nameZh": "古今多少故事·无光之森",
+      "nameEn": "Tales of the Past and Present: Dim Forest"
+    },
+    {
+      "id": "side-106900004",
+      "category": "side",
+      "encoreStoryId": 106900004,
+      "nameZh": "古今多少故事·拂风水畔",
+      "nameEn": "Tales of the Past and Present: Whisperwind Haven"
+    },
+    {
+      "id": "side-106900005",
+      "category": "side",
+      "encoreStoryId": 106900005,
+      "nameZh": "古今多少故事·悲叹墓岛",
+      "nameEn": "Tales of the Past and Present: Penitent's End"
+    },
+    {
+      "id": "side-106900006",
+      "category": "side",
+      "encoreStoryId": 106900006,
+      "nameZh": "古今多少故事·狄萨莱海脊",
+      "nameEn": "Tales of the Past and Present: Thessaleo Fells"
+    },
+    {
+      "id": "side-106900007",
+      "category": "side",
+      "encoreStoryId": 106900007,
+      "nameZh": "古今多少故事·赞悼圣迹",
+      "nameEn": "Tales of the Past and Present: Hallowed Reach"
+    },
+    {
+      "id": "side-106900008",
+      "category": "side",
+      "encoreStoryId": 106900008,
+      "nameZh": "古今多少故事·槲生半岛",
+      "nameEn": "Tales of the Past and Present: Fagaceae Peninsula"
+    },
+    {
+      "id": "side-106900009",
+      "category": "side",
+      "encoreStoryId": 106900009,
+      "nameZh": "古今多少故事·氤柔水境",
+      "nameEn": "Tales of the Past and Present: Nimbus Sanctum"
+    },
+    {
+      "id": "side-106900010",
+      "category": "side",
+      "encoreStoryId": 106900010,
+      "nameZh": "古今多少故事·拉古那城",
+      "nameEn": "Tales of the Past and Present: Ragunna City"
+    },
+    {
+      "id": "side-106900012",
+      "category": "side",
+      "encoreStoryId": 106900012,
+      "nameZh": "古今多少故事·埃弗拉德金库",
+      "nameEn": "Tales of the Past and Present: Averardo Vault"
+    },
+    {
+      "id": "side-109000000",
+      "category": "side",
+      "encoreStoryId": 109000000,
+      "nameZh": "过去即是明天·前",
+      "nameEn": "The Past is the Future: Introduction"
+    },
+    {
+      "id": "side-109000001",
+      "category": "side",
+      "encoreStoryId": 109000001,
+      "nameZh": "过去即是明天·后",
+      "nameEn": "The Past is the Future: Continued"
+    },
+    {
+      "id": "side-109000002",
+      "category": "side",
+      "encoreStoryId": 109000002,
+      "nameZh": "过去即是明天·后日谈",
+      "nameEn": "The Past is the Future: Epilogue"
+    },
+    {
+      "id": "side-109000006",
+      "category": "side",
+      "encoreStoryId": 109000006,
+      "nameZh": "天上掉馅饼？",
+      "nameEn": "A Free Meal?"
+    },
+    {
+      "id": "side-109000009",
+      "category": "side",
+      "encoreStoryId": 109000009,
+      "nameZh": "清刃奇侠",
+      "nameEn": "Hero of the Leap"
+    },
+    {
+      "id": "side-109850000",
+      "category": "side",
+      "encoreStoryId": 109850000,
+      "nameZh": "布偶小队堂堂复活",
+      "nameEn": "Plushie Squad's Clean Return"
+    },
+    {
+      "id": "side-109850002",
+      "category": "side",
+      "encoreStoryId": 109850002,
+      "nameZh": "踏上古龙之道",
+      "nameEn": "Walk the Path of the Dragon"
+    },
+    {
+      "id": "side-114000017",
+      "category": "side",
+      "encoreStoryId": 114000017,
+      "nameZh": "拍忆今州",
+      "nameEn": "Photos of Jinzhou"
+    },
+    {
+      "id": "side-115750000",
+      "category": "side",
+      "encoreStoryId": 115750000,
+      "nameZh": "冲破寒冰之镜",
+      "nameEn": "Fracture the Frozen Mirror"
+    },
+    {
+      "id": "side-119800000",
+      "category": "side",
+      "encoreStoryId": 119800000,
+      "nameZh": "奏者的愿望",
+      "nameEn": "Mummer's Wish"
+    },
+    {
+      "id": "side-121000032",
+      "category": "side",
+      "encoreStoryId": 121000032,
+      "nameZh": "于古榕的月光下",
+      "nameEn": "Under the Moonlit Banyan"
+    },
+    {
+      "id": "side-121000034",
+      "category": "side",
+      "encoreStoryId": 121000034,
+      "nameZh": "猎取残象之人",
+      "nameEn": "Tacet Discord Hunter"
+    },
+    {
+      "id": "side-121850001",
+      "category": "side",
+      "encoreStoryId": 121850001,
+      "nameZh": "春风祝颂你的旅途",
+      "nameEn": "A Zephyr-Kissed Journey to You"
+    },
+    {
+      "id": "side-121850002",
+      "category": "side",
+      "encoreStoryId": 121850002,
+      "nameZh": "如那融雪所愿般",
+      "nameEn": "So as the Melting Snow Desires"
+    },
+    {
+      "id": "side-122000004",
+      "category": "side",
+      "encoreStoryId": 122000004,
+      "nameZh": "重启雷达",
+      "nameEn": "Restart the radar"
+    },
+    {
+      "id": "side-125000127",
+      "category": "side",
+      "encoreStoryId": 125000127,
+      "nameZh": "三个愿望",
+      "nameEn": "Three Wishes"
+    },
+    {
+      "id": "side-125000128",
+      "category": "side",
+      "encoreStoryId": 125000128,
+      "nameZh": "我的搭档",
+      "nameEn": "Companionship"
+    },
+    {
+      "id": "side-126000006",
+      "category": "side",
+      "encoreStoryId": 126000006,
+      "nameZh": "今州刊物·创刊号",
+      "nameEn": "Journal of Jinzhou: Vo.1"
+    },
+    {
+      "id": "side-126000019",
+      "category": "side",
+      "encoreStoryId": 126000019,
+      "nameZh": "倾听动物之声·猫语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Cat's Language"
+    },
+    {
+      "id": "side-126700001",
+      "category": "side",
+      "encoreStoryId": 126700001,
+      "nameZh": "今州刊物·第二期",
+      "nameEn": "Journal of Jinzhou: Vol.2"
+    },
+    {
+      "id": "side-126700016",
+      "category": "side",
+      "encoreStoryId": 126700016,
+      "nameZh": "倾听动物之声·鸟语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Bird's Language"
+    },
+    {
+      "id": "side-126700017",
+      "category": "side",
+      "encoreStoryId": 126700017,
+      "nameZh": "倾听动物之声·兔语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Rabbit's Language"
+    },
+    {
+      "id": "side-126700018",
+      "category": "side",
+      "encoreStoryId": 126700018,
+      "nameZh": "倾听动物之声·蜥语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Lizard's Language"
+    },
+    {
+      "id": "side-126700019",
+      "category": "side",
+      "encoreStoryId": 126700019,
+      "nameZh": "倾听动物之声·犬语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Dog's Language"
+    },
+    {
+      "id": "side-126700020",
+      "category": "side",
+      "encoreStoryId": 126700020,
+      "nameZh": "倾听动物之声·鱼语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Fish's Language"
+    },
+    {
+      "id": "side-126700021",
+      "category": "side",
+      "encoreStoryId": 126700021,
+      "nameZh": "倾听动物之声·蛙语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Frog's Language"
+    },
+    {
+      "id": "side-126700023",
+      "category": "side",
+      "encoreStoryId": 126700023,
+      "nameZh": "倾听动物之声·续·鸟语翻译",
+      "nameEn": "Listen to Animals' Words: Translation of Bird's Language - Sequel"
+    },
+    {
+      "id": "side-133000002",
+      "category": "side",
+      "encoreStoryId": 133000002,
+      "nameZh": "出工日的厄运",
+      "nameEn": "Misfortune on a Workday"
+    },
+    {
+      "id": "side-133000003",
+      "category": "side",
+      "encoreStoryId": 133000003,
+      "nameZh": "逐猿委托",
+      "nameEn": "De-Hoochief"
+    },
+    {
+      "id": "side-133000004",
+      "category": "side",
+      "encoreStoryId": 133000004,
+      "nameZh": "曲问趣答-一",
+      "nameEn": "A Quest of Wits - I"
+    },
+    {
+      "id": "side-133000005",
+      "category": "side",
+      "encoreStoryId": 133000005,
+      "nameZh": "曲问趣答·二",
+      "nameEn": "A Quest of Wits - II"
+    },
+    {
+      "id": "side-133000006",
+      "category": "side",
+      "encoreStoryId": 133000006,
+      "nameZh": "曲问趣答·三",
+      "nameEn": "A Quest of Wits - III"
+    },
+    {
+      "id": "side-133000007",
+      "category": "side",
+      "encoreStoryId": 133000007,
+      "nameZh": "信使",
+      "nameEn": "Messenger"
+    },
+    {
+      "id": "side-133000008",
+      "category": "side",
+      "encoreStoryId": 133000008,
+      "nameZh": "暗探潜踪",
+      "nameEn": "Secret Investigation"
+    },
+    {
+      "id": "side-133000010",
+      "category": "side",
+      "encoreStoryId": 133000010,
+      "nameZh": "推演的边界",
+      "nameEn": "Boundary of Deduction"
+    },
+    {
+      "id": "side-133900004",
+      "category": "side",
+      "encoreStoryId": 133900004,
+      "nameZh": "奇怪的三兄弟",
+      "nameEn": "The Bizarre Brothers"
+    },
+    {
+      "id": "side-133900005",
+      "category": "side",
+      "encoreStoryId": 133900005,
+      "nameZh": "重建布偶村·一期",
+      "nameEn": "Restore Plushie Village I"
+    },
+    {
+      "id": "side-133900006",
+      "category": "side",
+      "encoreStoryId": 133900006,
+      "nameZh": "重建布偶村·二期",
+      "nameEn": "Restore Plushie Village II"
+    },
+    {
+      "id": "side-133900007",
+      "category": "side",
+      "encoreStoryId": 133900007,
+      "nameZh": "重建布偶村·三期",
+      "nameEn": "Restore Plushie Village III"
+    },
+    {
+      "id": "side-133900008",
+      "category": "side",
+      "encoreStoryId": 133900008,
+      "nameZh": "重建布偶村·四期",
+      "nameEn": "Restore Plushie Village IV"
+    },
+    {
+      "id": "side-134000000",
+      "category": "side",
+      "encoreStoryId": 134000000,
+      "nameZh": "传说中的密方机关术·一",
+      "nameEn": "The Fabled Magnetic Cube Mechanics - I"
+    },
+    {
+      "id": "side-134000001",
+      "category": "side",
+      "encoreStoryId": 134000001,
+      "nameZh": "传说中的密方机关术·二",
+      "nameEn": "The Fabled Magnetic Cube Mechanics - II"
+    },
+    {
+      "id": "side-134000002",
+      "category": "side",
+      "encoreStoryId": 134000002,
+      "nameZh": "传说中的密方机关术·三",
+      "nameEn": "The Fabled Magnetic Cube Mechanics - III"
+    },
+    {
+      "id": "side-134750001",
+      "category": "side",
+      "encoreStoryId": 134750001,
+      "nameZh": "黑海岸的秘密宝物",
+      "nameEn": "The Hidden Treasure of the Black Shores"
+    },
+    {
+      "id": "side-134750002",
+      "category": "side",
+      "encoreStoryId": 134750002,
+      "nameZh": "约兰的战术测试",
+      "nameEn": "Yhoran's Tactical Trial"
+    },
+    {
+      "id": "side-135000001",
+      "category": "side",
+      "encoreStoryId": 135000001,
+      "nameZh": "等待戈铎",
+      "nameEn": "Wait for Godo"
+    },
+    {
+      "id": "side-135000002",
+      "category": "side",
+      "encoreStoryId": 135000002,
+      "nameZh": "调查营地配给失窃一事",
+      "nameEn": "Investigate the Theft of Camp Supplies"
+    },
+    {
+      "id": "side-135000003",
+      "category": "side",
+      "encoreStoryId": 135000003,
+      "nameZh": "拯救世界？拯救猫咪！",
+      "nameEn": "Save the World? Save the Cat!"
+    },
+    {
+      "id": "side-135000005",
+      "category": "side",
+      "encoreStoryId": 135000005,
+      "nameZh": "角斗本色",
+      "nameEn": "A True Arena Champion"
+    },
+    {
+      "id": "side-135000007",
+      "category": "side",
+      "encoreStoryId": 135000007,
+      "nameZh": "修复位于无明湾灯塔",
+      "nameEn": "Repair the Lighthouse at the Wuming Bay"
+    },
+    {
+      "id": "side-135000008",
+      "category": "side",
+      "encoreStoryId": 135000008,
+      "nameZh": "修复荒石高地灯塔",
+      "nameEn": "Repair the lighthouse in Desorock Highland"
+    },
+    {
+      "id": "side-135000009",
+      "category": "side",
+      "encoreStoryId": 135000009,
+      "nameZh": "沉没的历史",
+      "nameEn": "Lost History"
+    },
+    {
+      "id": "side-136000000",
+      "category": "side",
+      "encoreStoryId": 136000000,
+      "nameZh": "营地突袭",
+      "nameEn": "Camp Raid"
+    },
+    {
+      "id": "side-136000001",
+      "category": "side",
+      "encoreStoryId": 136000001,
+      "nameZh": "永不消逝的琴声",
+      "nameEn": "The Eternal Concert"
+    },
+    {
+      "id": "side-139000017",
+      "category": "side",
+      "encoreStoryId": 139000017,
+      "nameZh": "银发声骸训练师·一",
+      "nameEn": "Silver-haired Echo Trainer - I"
+    },
+    {
+      "id": "side-139000020",
+      "category": "side",
+      "encoreStoryId": 139000020,
+      "nameZh": "银发声骸训练师·二",
+      "nameEn": "Silver-haired Echo Trainer - II"
+    },
+    {
+      "id": "side-139000021",
+      "category": "side",
+      "encoreStoryId": 139000021,
+      "nameZh": "银发声骸训练师·三",
+      "nameEn": "Silver-haired Echo Trainer - III"
+    },
+    {
+      "id": "side-139700000",
+      "category": "side",
+      "encoreStoryId": 139700000,
+      "nameZh": "终极枪客大挑战！",
+      "nameEn": "The Supreme Gunslinger!"
+    },
+    {
+      "id": "side-139700001",
+      "category": "side",
+      "encoreStoryId": 139700001,
+      "nameZh": "安可的火热大冒险！",
+      "nameEn": "Encore's Steaming Adventure!"
+    },
+    {
+      "id": "side-139700002",
+      "category": "side",
+      "encoreStoryId": 139700002,
+      "nameZh": "难解谜题",
+      "nameEn": "Puzzle of Puzzles"
+    },
+    {
+      "id": "side-139700003",
+      "category": "side",
+      "encoreStoryId": 139700003,
+      "nameZh": "待得团圆时",
+      "nameEn": "Riddle and Reunion"
+    },
+    {
+      "id": "side-139700004",
+      "category": "side",
+      "encoreStoryId": 139700004,
+      "nameZh": "仿声骸会梦到电子羊么",
+      "nameEn": "Do Echoids Dream of Electric Sheep?"
+    },
+    {
+      "id": "side-142000001",
+      "category": "side",
+      "encoreStoryId": 142000001,
+      "nameZh": "射击派对",
+      "nameEn": "Shooting Party"
+    },
+    {
+      "id": "side-142000002",
+      "category": "side",
+      "encoreStoryId": 142000002,
+      "nameZh": "今夜无人应答",
+      "nameEn": "No Response Tonight"
+    },
+    {
+      "id": "side-142000003",
+      "category": "side",
+      "encoreStoryId": 142000003,
+      "nameZh": "一触即炸",
+      "nameEn": "Danger! Explosive!"
+    },
+    {
+      "id": "side-142000004",
+      "category": "side",
+      "encoreStoryId": 142000004,
+      "nameZh": "旧日的试炼",
+      "nameEn": "Trials of Old"
+    },
+    {
+      "id": "side-142000006",
+      "category": "side",
+      "encoreStoryId": 142000006,
+      "nameZh": "天际奇旅",
+      "nameEn": "Skyward Voyage"
+    },
+    {
+      "id": "side-146700000",
+      "category": "side",
+      "encoreStoryId": 146700000,
+      "nameZh": "不思议怪谈·匿名的邀约者",
+      "nameEn": "Urban Legend: The Anonymous Inviter"
+    },
+    {
+      "id": "side-146700001",
+      "category": "side",
+      "encoreStoryId": 146700001,
+      "nameZh": "不思议怪谈·驶向何处的列车",
+      "nameEn": "Urban Legend: Train to Who-Knows-Where"
+    },
+    {
+      "id": "side-146700002",
+      "category": "side",
+      "encoreStoryId": 146700002,
+      "nameZh": "不思议怪谈·迷失在雾中隧道",
+      "nameEn": "Urban Legend: Lost in the Fog Tunnel"
+    },
+    {
+      "id": "side-146700003",
+      "category": "side",
+      "encoreStoryId": 146700003,
+      "nameZh": "不思议怪谈·造路悬仪暴乱中",
+      "nameEn": "Urban Legend: The Rogue Constructor"
+    },
+    {
+      "id": "side-146850000",
+      "category": "side",
+      "encoreStoryId": 146850000,
+      "nameZh": "寻“宝”行动",
+      "nameEn": "Find Me the TARD-Es"
+    },
+    {
+      "id": "side-146850001",
+      "category": "side",
+      "encoreStoryId": 146850001,
+      "nameZh": "最终杰作",
+      "nameEn": "Ultimate Masterpiece"
+    },
+    {
+      "id": "side-146900000",
+      "category": "side",
+      "encoreStoryId": 146900000,
+      "nameZh": "跃动吧，龟舞团！",
+      "nameEn": "Dance Dance Chelonian!"
+    },
+    {
+      "id": "side-147000000",
+      "category": "side",
+      "encoreStoryId": 147000000,
+      "nameZh": "骑士末歌",
+      "nameEn": "The Last Knight"
+    },
+    {
+      "id": "side-147900000",
+      "category": "side",
+      "encoreStoryId": 147900000,
+      "nameZh": "最佳观众",
+      "nameEn": "The Best Audience"
+    },
+    {
+      "id": "side-147900001",
+      "category": "side",
+      "encoreStoryId": 147900001,
+      "nameZh": "画中奇藏",
+      "nameEn": "Treasures in the Painting"
+    },
+    {
+      "id": "side-151000000",
+      "category": "side",
+      "encoreStoryId": 151000000,
+      "nameZh": "海风中失落的湛蓝回声·上",
+      "nameEn": "Cerulean Echoes Adrift in the Winds: Part I"
+    },
+    {
+      "id": "side-151000001",
+      "category": "side",
+      "encoreStoryId": 151000001,
+      "nameZh": "海风中失落的湛蓝回声·下",
+      "nameEn": "Cerulean Echoes Adrift in the Winds: Part II"
+    },
+    {
+      "id": "side-151750000",
+      "category": "side",
+      "encoreStoryId": 151750000,
+      "nameZh": "数据飞檐",
+      "nameEn": "Data Overdash"
+    },
+    {
+      "id": "side-151750001",
+      "category": "side",
+      "encoreStoryId": 151750001,
+      "nameZh": "海风中失落的湛蓝回声·后日谈",
+      "nameEn": "Cerulean Echoes Adrift in the Winds: Epilogue"
+    },
+    {
+      "id": "side-152750004",
+      "category": "side",
+      "encoreStoryId": 152750004,
+      "nameZh": "呜呜导航企划·五",
+      "nameEn": "Lollo Campaign: Navigation V"
+    },
+    {
+      "id": "side-152750005",
+      "category": "side",
+      "encoreStoryId": 152750005,
+      "nameZh": "呜呜导航企划·二",
+      "nameEn": "Lollo Campaign: Navigation II"
+    },
+    {
+      "id": "side-152750007",
+      "category": "side",
+      "encoreStoryId": 152750007,
+      "nameZh": "星海拾影",
+      "nameEn": "Amidst the Stars"
+    },
+    {
+      "id": "side-152750008",
+      "category": "side",
+      "encoreStoryId": 152750008,
+      "nameZh": "星海拾影",
+      "nameEn": "Amidst the Stars"
+    },
+    {
+      "id": "side-152750009",
+      "category": "side",
+      "encoreStoryId": 152750009,
+      "nameZh": "呜呜导航企划·三",
+      "nameEn": "Lollo Campaign: Navigation III"
+    },
+    {
+      "id": "side-152750010",
+      "category": "side",
+      "encoreStoryId": 152750010,
+      "nameZh": "呜呜导航企划·四",
+      "nameEn": "Lollo Campaign: Navigation IV"
+    },
+    {
+      "id": "side-152750011",
+      "category": "side",
+      "encoreStoryId": 152750011,
+      "nameZh": "呜呜导航企划·六",
+      "nameEn": "Lollo Campaign: Navigation VI"
+    },
+    {
+      "id": "side-152750012",
+      "category": "side",
+      "encoreStoryId": 152750012,
+      "nameZh": "呜呜导航企划·七",
+      "nameEn": "Lollo Campaign: Navigation VII"
+    },
+    {
+      "id": "side-152750015",
+      "category": "side",
+      "encoreStoryId": 152750015,
+      "nameZh": "呜呜导航企划·一",
+      "nameEn": "Lollo Campaign: Navigation I"
+    },
+    {
+      "id": "side-153700000",
+      "category": "side",
+      "encoreStoryId": 153700000,
+      "nameZh": "回归于光",
+      "nameEn": "Return to Light"
+    },
+    {
+      "id": "side-153700001",
+      "category": "side",
+      "encoreStoryId": 153700001,
+      "nameZh": "十六亿比特",
+      "nameEn": "Sixteen Centimillion Bits"
+    },
+    {
+      "id": "side-157700000",
+      "category": "side",
+      "encoreStoryId": 157700000,
+      "nameZh": "寻迹于智慧之光",
+      "nameEn": "Where Wisdom Lights the Way"
+    },
+    {
+      "id": "side-157700001",
+      "category": "side",
+      "encoreStoryId": 157700001,
+      "nameZh": "寻迹于智慧之光",
+      "nameEn": "Where Wisdom Lights the Way"
+    },
+    {
+      "id": "side-157750000",
+      "category": "side",
+      "encoreStoryId": 157750000,
+      "nameZh": "烬潮之梦",
+      "nameEn": "Dreams of Cindertide"
+    },
+    {
+      "id": "side-157850000",
+      "category": "side",
+      "encoreStoryId": 157850000,
+      "nameZh": "染秽之梦",
+      "nameEn": "Dream Contagion"
+    },
+    {
+      "id": "side-159800004",
+      "category": "side",
+      "encoreStoryId": 159800004,
+      "nameZh": "拉古那急卖·四",
+      "nameEn": "Ragunna Sales Blitz IV"
+    },
+    {
+      "id": "side-159800005",
+      "category": "side",
+      "encoreStoryId": 159800005,
+      "nameZh": "拉古那急卖·五",
+      "nameEn": "Ragunna Sales Blitz V"
+    },
+    {
+      "id": "side-161000000",
+      "category": "side",
+      "encoreStoryId": 161000000,
+      "nameZh": "布偶小队历险记",
+      "nameEn": "The Adventures of Plushie Squad"
+    },
+    {
+      "id": "side-161000001",
+      "category": "side",
+      "encoreStoryId": 161000001,
+      "nameZh": "布偶小队历险记",
+      "nameEn": "The Adventures of Plushie Squad"
+    },
+    {
+      "id": "side-161000002",
+      "category": "side",
+      "encoreStoryId": 161000002,
+      "nameZh": "布偶小队历险记",
+      "nameEn": "The Adventures of Plushie Squad"
+    },
+    {
+      "id": "side-162700005",
+      "category": "side",
+      "encoreStoryId": 162700005,
+      "nameZh": "千道门扉的异想",
+      "nameEn": "Fantasies of the Thousand Gateways"
+    },
+    {
+      "id": "side-162750012",
+      "category": "side",
+      "encoreStoryId": 162750012,
+      "nameZh": "来自雪白深处",
+      "nameEn": "From the Snow White"
+    },
+    {
+      "id": "side-162800000",
+      "category": "side",
+      "encoreStoryId": 162800000,
+      "nameZh": "升起的烟花，该从哪边看？",
+      "nameEn": "Where to Watch the Fireworks Show?"
+    },
+    {
+      "id": "side-165000001",
+      "category": "side",
+      "encoreStoryId": 165000001,
+      "nameZh": "水手的遗藏",
+      "nameEn": "The Sailor's Treasure"
+    },
+    {
+      "id": "side-165000002",
+      "category": "side",
+      "encoreStoryId": 165000002,
+      "nameZh": "岛上的面具人",
+      "nameEn": "Woman in Mask"
+    },
+    {
+      "id": "side-165850000",
+      "category": "side",
+      "encoreStoryId": 165850000,
+      "nameZh": "浪沫余音",
+      "nameEn": "Whispers of the Waves"
+    },
+    {
+      "id": "side-166850000",
+      "category": "side",
+      "encoreStoryId": 166850000,
+      "nameZh": "古今多少故事·阿维纽林",
+      "nameEn": "Tales of the Past and Present: Avinoleum"
+    },
+    {
+      "id": "side-167900017",
+      "category": "side",
+      "encoreStoryId": 167900017,
+      "nameZh": "往日幻影",
+      "nameEn": "Shadows of the Past"
+    },
+    {
+      "id": "side-169700000",
+      "category": "side",
+      "encoreStoryId": 169700000,
+      "nameZh": "平原的脉络",
+      "nameEn": "Pulses of the Plains"
+    },
+    {
+      "id": "side-170700000",
+      "category": "side",
+      "encoreStoryId": 170700000,
+      "nameZh": "遗愿清单",
+      "nameEn": "Bucket List"
+    },
+    {
+      "id": "side-171000001",
+      "category": "side",
+      "encoreStoryId": 171000001,
+      "nameZh": "一段善缘",
+      "nameEn": "Serendipity"
+    },
+    {
+      "id": "side-171700002",
+      "category": "side",
+      "encoreStoryId": 171700002,
+      "nameZh": "现状与未来",
+      "nameEn": "The Present and the Future"
+    },
+    {
+      "id": "side-171750009",
+      "category": "side",
+      "encoreStoryId": 171750009,
+      "nameZh": "追迹阿维纽林",
+      "nameEn": "Avinoleum Footsteps"
+    },
+    {
+      "id": "side-176750000",
+      "category": "side",
+      "encoreStoryId": 176750000,
+      "nameZh": "以呼嚎致意",
+      "nameEn": "May Applause Greet You"
+    },
+    {
+      "id": "side-176750001",
+      "category": "side",
+      "encoreStoryId": 176750001,
+      "nameZh": "朽剑之梦·下",
+      "nameEn": "Dream of A Rusted Sword: Part II"
+    },
+    {
+      "id": "side-176750003",
+      "category": "side",
+      "encoreStoryId": 176750003,
+      "nameZh": "朽剑之梦·尾声",
+      "nameEn": "Dream of A Rusted Sword: Finale"
+    },
+    {
+      "id": "side-176800001",
+      "category": "side",
+      "encoreStoryId": 176800001,
+      "nameZh": "同行忆旅",
+      "nameEn": "Memory Travelogue"
+    },
+    {
+      "id": "side-176800003",
+      "category": "side",
+      "encoreStoryId": 176800003,
+      "nameZh": "踏潮探历",
+      "nameEn": "Beyond the Waves"
+    },
+    {
+      "id": "side-176800029",
+      "category": "side",
+      "encoreStoryId": 176800029,
+      "nameZh": "钴蓝雪线的订单",
+      "nameEn": "A Snowbound Order from Cobalt Blue"
+    },
+    {
+      "id": "side-181700012",
+      "category": "side",
+      "encoreStoryId": 181700012,
+      "nameZh": "捕影捉风",
+      "nameEn": "Catch the Winds"
+    },
+    {
+      "id": "side-181700013",
+      "category": "side",
+      "encoreStoryId": 181700013,
+      "nameZh": "捕影捉风",
+      "nameEn": "Catch the Winds"
+    },
+    {
+      "id": "side-181700015",
+      "category": "side",
+      "encoreStoryId": 181700015,
+      "nameZh": "欢迎来到同好会",
+      "nameEn": "Welcome to the Fan Club"
+    },
+    {
+      "id": "side-181700016",
+      "category": "side",
+      "encoreStoryId": 181700016,
+      "nameZh": "星星闪烁的夜晚",
+      "nameEn": "A Night of Shimmering Stars"
+    },
+    {
+      "id": "side-181700017",
+      "category": "side",
+      "encoreStoryId": 181700017,
+      "nameZh": "终极难题",
+      "nameEn": "Ultimate Challenge"
+    },
+    {
+      "id": "side-181700022",
+      "category": "side",
+      "encoreStoryId": 181700022,
+      "nameZh": "不思议怪谈·无法离开的教室",
+      "nameEn": "Urban Legend: No-Escape Classroom"
+    },
+    {
+      "id": "side-181700023",
+      "category": "side",
+      "encoreStoryId": 181700023,
+      "nameZh": "药品补给",
+      "nameEn": "Medical Supplies"
+    },
+    {
+      "id": "side-181750000",
+      "category": "side",
+      "encoreStoryId": 181750000,
+      "nameZh": "朽剑之梦·上",
+      "nameEn": "Dream of A Rusted Sword: Part I"
+    },
+    {
+      "id": "side-181750012",
+      "category": "side",
+      "encoreStoryId": 181750012,
+      "nameZh": "谢谢，再见，世界上的另一个我",
+      "nameEn": "Thank you, and farewell, my other self"
+    },
+    {
+      "id": "side-186700000",
+      "category": "side",
+      "encoreStoryId": 186700000,
+      "nameZh": "暗海勘查",
+      "nameEn": "Deep Sea Survey"
+    },
+    {
+      "id": "side-189000001",
+      "category": "side",
+      "encoreStoryId": 189000001,
+      "nameZh": "故乡温情",
+      "nameEn": "The Comfort of Home"
+    },
+    {
+      "id": "side-189000002",
+      "category": "side",
+      "encoreStoryId": 189000002,
+      "nameZh": "思念之声",
+      "nameEn": "The Whisper of Memories"
+    },
+    {
+      "id": "side-189000003",
+      "category": "side",
+      "encoreStoryId": 189000003,
+      "nameZh": "秘密",
+      "nameEn": "A Secret"
+    },
+    {
+      "id": "side-189000004",
+      "category": "side",
+      "encoreStoryId": 189000004,
+      "nameZh": "醒悟",
+      "nameEn": "Realization"
+    },
+    {
+      "id": "side-189700001",
+      "category": "side",
+      "encoreStoryId": 189700001,
+      "nameZh": "捕影捉风",
+      "nameEn": "Catch the Winds"
+    },
+    {
+      "id": "side-189700006",
+      "category": "side",
+      "encoreStoryId": 189700006,
+      "nameZh": "暗黑决斗传说·上",
+      "nameEn": "Dark Duel Legends: Part I"
+    },
+    {
+      "id": "side-189700007",
+      "category": "side",
+      "encoreStoryId": 189700007,
+      "nameZh": "星海如故（二）",
+      "nameEn": "Where Starry Seas Endure II"
+    },
+    {
+      "id": "side-189700008",
+      "category": "side",
+      "encoreStoryId": 189700008,
+      "nameZh": "藏起来的童年",
+      "nameEn": "Hidden Childhood"
+    },
+    {
+      "id": "side-189700011",
+      "category": "side",
+      "encoreStoryId": 189700011,
+      "nameZh": "最后的回声（一）",
+      "nameEn": "Final Reverberation I"
+    },
+    {
+      "id": "side-189700013",
+      "category": "side",
+      "encoreStoryId": 189700013,
+      "nameZh": "最后的回声（二）",
+      "nameEn": "Final Reverberation II"
+    },
+    {
+      "id": "side-189700014",
+      "category": "side",
+      "encoreStoryId": 189700014,
+      "nameZh": "被光影定格的瞬间",
+      "nameEn": "Moments Captured in Light"
+    },
+    {
+      "id": "side-189700017",
+      "category": "side",
+      "encoreStoryId": 189700017,
+      "nameZh": "不思议怪谈·讲述怪谈之人",
+      "nameEn": "Urban Legend: The Tale Teller"
+    },
+    {
+      "id": "side-189800000",
+      "category": "side",
+      "encoreStoryId": 189800000,
+      "nameZh": "黎明之星（一）",
+      "nameEn": "Morning Star I"
+    },
+    {
+      "id": "side-189800001",
+      "category": "side",
+      "encoreStoryId": 189800001,
+      "nameZh": "黎明之星（二）",
+      "nameEn": "Morning Star II"
+    },
+    {
+      "id": "side-189800002",
+      "category": "side",
+      "encoreStoryId": 189800002,
+      "nameZh": "黎明之星（三）",
+      "nameEn": "Morning Star III"
+    },
+    {
+      "id": "side-189800003",
+      "category": "side",
+      "encoreStoryId": 189800003,
+      "nameZh": "黎明之星（四）",
+      "nameEn": "Morning Star IV"
+    },
+    {
+      "id": "side-189800005",
+      "category": "side",
+      "encoreStoryId": 189800005,
+      "nameZh": "黎明之星·留在黑夜中的人（上）",
+      "nameEn": "Morning Star: Those Who Remain in the Night Part I"
+    },
+    {
+      "id": "side-189800006",
+      "category": "side",
+      "encoreStoryId": 189800006,
+      "nameZh": "黎明之星·留在黑夜中的人（下）",
+      "nameEn": "Morning Star: Those Who Remain in the Night Part II"
+    },
+    {
+      "id": "side-195700000",
+      "category": "side",
+      "encoreStoryId": 195700000,
+      "nameZh": "世界上最近的海",
+      "nameEn": "The Sea Just Within Reach"
+    },
+    {
+      "id": "side-196700000",
+      "category": "side",
+      "encoreStoryId": 196700000,
+      "nameZh": "路网危情·上",
+      "nameEn": "Route Network Crisis Part I"
+    },
+    {
+      "id": "side-196700001",
+      "category": "side",
+      "encoreStoryId": 196700001,
+      "nameZh": "路网危情·下",
+      "nameEn": "Route Network Crisis Part II"
+    },
+    {
+      "id": "side-196700002",
+      "category": "side",
+      "encoreStoryId": 196700002,
+      "nameZh": "飞讯内线",
+      "nameEn": "WavesLine Insider"
+    },
+    {
+      "id": "side-197800007",
+      "category": "side",
+      "encoreStoryId": 197800007,
+      "nameZh": "寻猫大师",
+      "nameEn": "Cat-Finding Master"
+    },
+    {
+      "id": "side-211750004",
+      "category": "side",
+      "encoreStoryId": 211750004,
+      "nameZh": "冰川存忆",
+      "nameEn": "Footprints on Frostlands"
+    },
+    {
+      "id": "side-211850004",
+      "category": "side",
+      "encoreStoryId": 211850004,
+      "nameZh": "虚质之声",
+      "nameEn": "Sound of Voidmatter"
+    },
+    {
+      "id": "side-211850005",
+      "category": "side",
+      "encoreStoryId": 211850005,
+      "nameZh": "树与灵",
+      "nameEn": "Sol et Arbor"
+    },
+    {
+      "id": "side-211850006",
+      "category": "side",
+      "encoreStoryId": 211850006,
+      "nameZh": "恒黯的视线",
+      "nameEn": "Dimmr Sightlines"
+    },
+    {
+      "id": "side-211850007",
+      "category": "side",
+      "encoreStoryId": 211850007,
+      "nameZh": "拂光搁浅的旧讯",
+      "nameEn": "Message Stranded in Shimmer"
+    },
+    {
+      "id": "side-211850009",
+      "category": "side",
+      "encoreStoryId": 211850009,
+      "nameZh": "跳舞的日灵",
+      "nameEn": "Dancing Soliskin"
+    },
+    {
+      "id": "side-211850010",
+      "category": "side",
+      "encoreStoryId": 211850010,
+      "nameZh": "三只日灵",
+      "nameEn": "Three Soliskin"
+    },
+    {
+      "id": "side-211850011",
+      "category": "side",
+      "encoreStoryId": 211850011,
+      "nameZh": "孤单的日灵",
+      "nameEn": "Lonely Soliskin"
+    },
+    {
+      "id": "side-211850012",
+      "category": "side",
+      "encoreStoryId": 211850012,
+      "nameZh": "日灵与“夜灵”",
+      "nameEn": "Soliskin & \"Noxkin\""
+    },
+    {
+      "id": "side-211850014",
+      "category": "side",
+      "encoreStoryId": 211850014,
+      "nameZh": "跟进光能矩阵学科群的研究",
+      "nameEn": "Follow up on the Division of Light Array Engineering's Research"
+    },
+    {
+      "id": "side-211850015",
+      "category": "side",
+      "encoreStoryId": 211850015,
+      "nameZh": "跟进生态维持学科群的研究",
+      "nameEn": "Follow up on the Division of Ecology Conservation's Research"
+    },
+    {
+      "id": "side-211850017",
+      "category": "side",
+      "encoreStoryId": 211850017,
+      "nameZh": "跟进罗伊族学生的研究情况",
+      "nameEn": "Follow up on the Roya Student's Research"
+    },
+    {
+      "id": "side-237850001",
+      "category": "side",
+      "encoreStoryId": 237850001,
+      "nameZh": "毕业旅行",
+      "nameEn": "Graduation Trip"
+    },
+    {
+      "id": "side-317750001",
+      "category": "side",
+      "encoreStoryId": 317750001,
+      "nameZh": "狩原逐影",
+      "nameEn": "Prints of Plateaus"
+    },
+    {
+      "id": "side-320700000",
+      "category": "side",
+      "encoreStoryId": 320700000,
+      "nameZh": "“嘻嘻”不嘻嘻",
+      "nameEn": "Squeezy not Smiley"
+    },
+    {
+      "id": "side-320800006",
+      "category": "side",
+      "encoreStoryId": 320800006,
+      "nameZh": "帮切里送药",
+      "nameEn": "Help Cherry hand out the tonic"
+    },
+    {
+      "id": "side-692850000",
+      "category": "side",
+      "encoreStoryId": 692850000,
+      "nameZh": "刻于心间",
+      "nameEn": "Etched in the Heart"
+    },
+    {
+      "id": "side-693850000",
+      "category": "side",
+      "encoreStoryId": 693850000,
+      "nameZh": "没能忘记你的眼睛",
+      "nameEn": "The Memory of Your Eyes"
+    },
+    {
+      "id": "side-880000004",
+      "category": "side",
+      "encoreStoryId": 880000004,
+      "nameZh": "特色饮品",
+      "nameEn": "Specialty Drinks"
+    },
+    {
+      "id": "side-880000005",
+      "category": "side",
+      "encoreStoryId": 880000005,
+      "nameZh": "谷地的花海",
+      "nameEn": "Sea of Flowers in the Valley"
+    },
+    {
+      "id": "side-880000006",
+      "category": "side",
+      "encoreStoryId": 880000006,
+      "nameZh": "金黄的昆虫",
+      "nameEn": "Golden Insect"
+    },
+    {
+      "id": "side-880000007",
+      "category": "side",
+      "encoreStoryId": 880000007,
+      "nameZh": "无冠者？！",
+      "nameEn": "Crownless?"
+    },
+    {
+      "id": "side-880000008",
+      "category": "side",
+      "encoreStoryId": 880000008,
+      "nameZh": "难忘的菜肴",
+      "nameEn": "Unforgettable Dishes"
+    },
+    {
+      "id": "side-880000009",
+      "category": "side",
+      "encoreStoryId": 880000009,
+      "nameZh": "秘银",
+      "nameEn": "Mithril"
+    },
+    {
+      "id": "side-880000010",
+      "category": "side",
+      "encoreStoryId": 880000010,
+      "nameZh": "燃烧的光玉",
+      "nameEn": "Burning Jade"
+    },
+    {
+      "id": "side-880000011",
+      "category": "side",
+      "encoreStoryId": 880000011,
+      "nameZh": "百味荟萃",
+      "nameEn": "A Taste of Everything"
+    },
+    {
+      "id": "side-880000018",
+      "category": "side",
+      "encoreStoryId": 880000018,
+      "nameZh": "我邀朗月",
+      "nameEn": "Moon Shall Be My Guest"
+    },
+    {
+      "id": "side-880000019",
+      "category": "side",
+      "encoreStoryId": 880000019,
+      "nameZh": "愿逐月华",
+      "nameEn": "Chasing the Moon's Glory"
+    },
+    {
+      "id": "side-880000029",
+      "category": "side",
+      "encoreStoryId": 880000029,
+      "nameZh": "秘传占术",
+      "nameEn": "Professional Inheritance"
+    },
+    {
+      "id": "side-880000031",
+      "category": "side",
+      "encoreStoryId": 880000031,
+      "nameZh": "因何而战",
+      "nameEn": "Cause to Fight for"
+    },
+    {
+      "id": "side-880000040",
+      "category": "side",
+      "encoreStoryId": 880000040,
+      "nameZh": "世界漂流瓶",
+      "nameEn": "Message in a Bottle"
+    },
+    {
+      "id": "side-880000041",
+      "category": "side",
+      "encoreStoryId": 880000041,
+      "nameZh": "整点鱼条",
+      "nameEn": "Go Get Some Fish"
+    },
+    {
+      "id": "side-880000042",
+      "category": "side",
+      "encoreStoryId": 880000042,
+      "nameZh": "当当蟹怪味挑战",
+      "nameEn": "Every Flavor Bell-less Crab Challenge"
+    },
+    {
+      "id": "side-880000043",
+      "category": "side",
+      "encoreStoryId": 880000043,
+      "nameZh": "钓鱼风波",
+      "nameEn": "Hooked on Trouble"
+    },
+    {
+      "id": "side-880700001",
+      "category": "side",
+      "encoreStoryId": 880700001,
+      "nameZh": "行动代号：月下双雄",
+      "nameEn": "Operation: Lunar Duo"
+    },
+    {
+      "id": "side-880700002",
+      "category": "side",
+      "encoreStoryId": 880700002,
+      "nameZh": "愿此景永留你心",
+      "nameEn": "Wish You Were Here"
+    },
+    {
+      "id": "side-880700003",
+      "category": "side",
+      "encoreStoryId": 880700003,
+      "nameZh": "难忘今时月",
+      "nameEn": "Blessed Be the Moon"
+    },
+    {
+      "id": "side-880700004",
+      "category": "side",
+      "encoreStoryId": 880700004,
+      "nameZh": "追月进行时",
+      "nameEn": "Chasing the Moon, Here and Now"
+    },
+    {
+      "id": "side-880900002",
+      "category": "side",
+      "encoreStoryId": 880900002,
+      "nameZh": "呜呜企划·二",
+      "nameEn": "Lollo Campaign II"
+    },
+    {
+      "id": "side-880900003",
+      "category": "side",
+      "encoreStoryId": 880900003,
+      "nameZh": "呜呜企划·三",
+      "nameEn": "Lollo Campaign III"
+    },
+    {
+      "id": "side-880900004",
+      "category": "side",
+      "encoreStoryId": 880900004,
+      "nameZh": "呜呜企划·四",
+      "nameEn": "Lollo Campaign IV"
+    },
+    {
+      "id": "side-880900005",
+      "category": "side",
+      "encoreStoryId": 880900005,
+      "nameZh": "呜呜企划·五",
+      "nameEn": "Lollo Campaign V"
+    },
+    {
+      "id": "side-880900006",
+      "category": "side",
+      "encoreStoryId": 880900006,
+      "nameZh": "呜呜企划·六",
+      "nameEn": "Lollo Campaign VI"
+    },
+    {
+      "id": "side-880900007",
+      "category": "side",
+      "encoreStoryId": 880900007,
+      "nameZh": "呜呜企划·终",
+      "nameEn": "Lollo Campaign Finale"
+    },
+    {
+      "id": "side-898900004",
+      "category": "side",
+      "encoreStoryId": 898900004,
+      "nameZh": "虹镇百景图",
+      "nameEn": "Kaleidoscope of Hongzhen"
+    },
+    {
+      "id": "side-898900005",
+      "category": "side",
+      "encoreStoryId": 898900005,
+      "nameZh": "温泉大冒险",
+      "nameEn": "Spring Adventures"
+    },
+    {
+      "id": "side-899000001",
+      "category": "side",
+      "encoreStoryId": 899000001,
+      "nameZh": "失落之影",
+      "nameEn": "Quest of Faith"
+    },
+    {
+      "id": "side-923700000",
+      "category": "side",
+      "encoreStoryId": 923700000,
+      "nameZh": "最了不起的机兵",
+      "nameEn": "Unparalleled Mechascout"
+    },
+    {
+      "id": "side-936850001",
+      "category": "side",
+      "encoreStoryId": 936850001,
+      "nameZh": "战陵追痕",
+      "nameEn": "Uncovering Past Heroes"
+    },
+    {
+      "id": "side-939850002",
+      "category": "side",
+      "encoreStoryId": 939850002,
+      "nameZh": "命运的决斗",
+      "nameEn": "Duel of Destiny"
+    },
+    {
+      "id": "side-939850003",
+      "category": "side",
+      "encoreStoryId": 939850003,
+      "nameZh": "萨姆沙斯的宝物",
+      "nameEn": "Samousas's Treasure"
+    },
+    {
+      "id": "side-939850004",
+      "category": "side",
+      "encoreStoryId": 939850004,
+      "nameZh": "神奇啪嗒在哪里",
+      "nameEn": "Fantastic Ta-das and Where to Find Them"
+    }
+  ]
+}

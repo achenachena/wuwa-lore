@@ -1,6 +1,11 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import type { EncoreLocale, EncoreStoryIndexItem, WikiEncoreMapFile } from "@/lib/encore/types";
+import type {
+  EncoreLocale,
+  EncoreStoryIndexItem,
+  EncoreStoryType,
+  WikiEncoreMapFile,
+} from "@/lib/encore/types";
 
 export const ENCORE_BASE = "https://api.encore.moe";
 export const ENCORE_V2_BASE = "https://api-v2.encore.moe/api";
@@ -73,6 +78,45 @@ export function buildStoryIdsByName(
 ): Map<string, number[]> {
   const storyIdsByName = new Map<string, number[]>();
   for (const story of flattenEncoreStories(storyTypes)) {
+    const name = story.Name ?? story.Title;
+    if (name && typeof story.Id === "number") {
+      const list = storyIdsByName.get(name) ?? [];
+      list.push(story.Id);
+      storyIdsByName.set(name, list);
+    }
+  }
+  return storyIdsByName;
+}
+
+export function storyTypeIdKey(typeId: number | string): string {
+  return String(typeId);
+}
+
+export function collectEncoreStoriesByTypeIds(
+  storyTypes: EncoreStoryType[],
+  typeIds: Array<number | string>,
+): EncoreStoryIndexItem[] {
+  const allowed = new Set(typeIds.map(storyTypeIdKey));
+  const items: EncoreStoryIndexItem[] = [];
+  for (const type of storyTypes) {
+    if (!allowed.has(storyTypeIdKey(type.TypeId))) {
+      continue;
+    }
+    for (const story of flattenEncoreStories([type])) {
+      if (typeof story.Id === "number") {
+        items.push(story);
+      }
+    }
+  }
+  return items.sort((a, b) => a.Id - b.Id);
+}
+
+export function buildStoryIdsByNameForTypeIds(
+  storyTypes: EncoreStoryType[],
+  typeIds: Array<number | string>,
+): Map<string, number[]> {
+  const storyIdsByName = new Map<string, number[]>();
+  for (const story of collectEncoreStoriesByTypeIds(storyTypes, typeIds)) {
     const name = story.Name ?? story.Title;
     if (name && typeof story.Id === "number") {
       const list = storyIdsByName.get(name) ?? [];

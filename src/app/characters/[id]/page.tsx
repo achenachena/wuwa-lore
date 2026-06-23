@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CharacterOptionalQuestStats } from "@/components/character-optional-quest-stats";
 import { CharacterStoryStats } from "@/components/character-story-stats";
 import { CharacterAvatar } from "@/components/character-avatar";
 import { getCharacterDetailData } from "@/lib/data";
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: CharacterDetailProps): Promis
 
 export default async function CharacterDetailPage({ params }: CharacterDetailProps) {
   const { id } = await params;
-  const [locale, t, { character, characterImages, storySegments, portraitUrl, firstAppearanceVersion }] =
+  const [locale, t, { character, characterImages, storySegments, optionalQuestStats, portraitUrl, firstAppearanceVersion }] =
     await Promise.all([getSiteLocale(), getMessages(), getCharacterDetailData(id)]);
 
   if (!character) {
@@ -117,6 +118,30 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
           </div>
         )}
       </article>
+
+      {optionalQuestStats.map((section) =>
+        section.rows.length > 0 ? (
+          <article key={section.category} className="rounded-lg border border-zinc-200 bg-white p-4">
+            <h2 className="text-lg font-semibold">{t.optionalQuests.sectionTitles[section.category]}</h2>
+            <p className="mt-1 text-sm text-zinc-600">{t.optionalQuests.sectionDescriptions[section.category]}</p>
+            <div className="mt-4">
+              <CharacterOptionalQuestStats
+                rows={section.rows}
+                labels={{
+                  quest: t.optionalQuests.quest,
+                  appeared: t.characterDetail.appeared,
+                  lineCount: t.characterDetail.lineCount,
+                  totalLines: t.optionalQuests.totalLines,
+                  questAppearances: t.optionalQuests.questAppearances,
+                  yes: t.common.yes,
+                  dash: t.common.dash,
+                }}
+                questLabel={(row) => (locale === "zh" ? row.quest.nameZh : row.quest.nameEn)}
+              />
+            </div>
+          </article>
+        ) : null,
+      )}
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">{t.characterDetail.imagesTitle}</h2>

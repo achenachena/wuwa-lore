@@ -132,6 +132,35 @@ export const versionHalfVoiceRowSchema = z.object({
   lineCount: z.number().int().min(0),
 });
 
+export const questCategorySchema = z.enum(["companion", "event", "side"]);
+
+export const optionalQuestRecordSchema = z.object({
+  id: z.string().min(1),
+  category: questCategorySchema,
+  encoreStoryId: z.number().int(),
+  nameZh: z.string().min(1),
+  nameEn: z.string().min(1),
+});
+
+export const optionalQuestDialogueRowSchema = z.object({
+  locale: z.enum(["en", "zh-Hans"]),
+  category: questCategorySchema,
+  characterId: z.string().min(1),
+  questId: z.string().min(1),
+  questName: z.string().min(1),
+  questNameZh: z.string().min(1),
+  lineCount: z.number().int().min(0),
+  encoreStoryIds: z.array(z.number().int()),
+});
+
+export const optionalQuestAppearanceRowSchema = z.object({
+  category: questCategorySchema,
+  characterId: z.string().min(1),
+  questId: z.string().min(1),
+  questName: z.string().min(1),
+  questNameZh: z.string().min(1),
+});
+
 export const voiceLineDetailRowSchema = z.object({
   characterId: z.string().min(1),
   locale: localeSchema,

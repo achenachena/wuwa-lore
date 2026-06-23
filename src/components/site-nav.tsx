@@ -12,6 +12,7 @@ export function SiteNav({ labels }: Props) {
     { href: "/characters", label: labels.characters },
     { href: "/stats/versions", label: labels.versionStats },
     { href: "/stats/version-halves", label: labels.storySegments },
+    { href: "/stats/optional-quests", label: labels.optionalQuests },
   ];
 
   return (

@@ -1,6 +1,10 @@
 import type {
   Character,
+  CharacterOptionalQuestRow,
   CharacterStorySegmentRow,
+  OptionalQuestAppearanceRow,
+  OptionalQuestDialogueRow,
+  OptionalQuestRecord,
   StoryAppearanceRow,
   StoryDialogueRow,
   StorySegment,
@@ -9,6 +13,7 @@ import type {
   VersionStatRow,
   VoiceLineEntry,
   VoiceLineStatRow,
+  QuestCategory,
 } from "@/types/lore";
 import { isRoverCharacter } from "@/lib/i18n/locale";
 import { compareVersion } from "@/lib/version/compare";
@@ -398,4 +403,111 @@ export function filterStorySegmentsByRange(params: {
     const cmpTo = compareVersion(segment.version, toVersion);
     return cmpFrom >= 0 && cmpTo <= 0;
   });
+}
+
+export function sumOptionalDialogueByCharacter(
+  rows: OptionalQuestDialogueRow[],
+  category?: QuestCategory,
+): Map<string, number> {
+  const totals = new Map<string, number>();
+  for (const row of rows) {
+    if (category && row.category !== category) {
+      continue;
+    }
+    totals.set(row.characterId, (totals.get(row.characterId) ?? 0) + row.lineCount);
+  }
+  return totals;
+}
+
+export function buildCharacterOptionalQuestRows(params: {
+  characterId: string;
+  category: QuestCategory;
+  quests: OptionalQuestRecord[];
+  appearances: OptionalQuestAppearanceRow[];
+  dialogueStats: OptionalQuestDialogueRow[];
+}): CharacterOptionalQuestRow[] {
+  const { characterId, category, quests, appearances, dialogueStats } = params;
+  const dialogueByQuest = new Map<string, number>();
+  for (const row of dialogueStats) {
+    if (row.characterId !== characterId || row.category !== category) {
+      continue;
+    }
+    dialogueByQuest.set(row.questId, (dialogueByQuest.get(row.questId) ?? 0) + row.lineCount);
+  }
+
+  const appearedQuestIds = new Set(
+    appearances
+      .filter((row) => row.characterId === characterId && row.category === category)
+      .map((row) => row.questId),
+  );
+  for (const questId of dialogueByQuest.keys()) {
+    appearedQuestIds.add(questId);
+  }
+
+  return quests
+    .filter((quest) => quest.category === category && appearedQuestIds.has(quest.id))
+    .map((quest) => {
+      const lineCount = dialogueByQuest.get(quest.id) ?? 0;
+      return {
+        quest,
+        appeared: appearedQuestIds.has(quest.id),
+        lineCount,
+      };
+    })
+    .sort((a, b) => b.lineCount - a.lineCount || a.quest.nameZh.localeCompare(b.quest.nameZh, "zh-CN"));
+}
+
+export function buildOptionalQuestRanking(params: {
+  characters: Character[];
+  category: QuestCategory;
+  quests: OptionalQuestRecord[];
+  appearances: OptionalQuestAppearanceRow[];
+  dialogueStats: OptionalQuestDialogueRow[];
+}): VersionHalfRankingRow[] {
+  const { characters, category, quests, appearances, dialogueStats } = params;
+  const characterById = new Map(characters.map((character) => [character.id, character]));
+  const questIds = new Set(quests.filter((quest) => quest.category === category).map((quest) => quest.id));
+
+  const dialogueByCharacter = new Map<string, number>();
+  for (const row of dialogueStats) {
+    if (row.category !== category || !questIds.has(row.questId)) {
+      continue;
+    }
+    dialogueByCharacter.set(row.characterId, (dialogueByCharacter.get(row.characterId) ?? 0) + row.lineCount);
+  }
+
+  const appearancesByCharacter = new Map<string, number>();
+  for (const row of appearances) {
+    if (row.category !== category || !questIds.has(row.questId)) {
+      continue;
+    }
+    appearancesByCharacter.set(row.characterId, (appearancesByCharacter.get(row.characterId) ?? 0) + 1);
+  }
+
+  const characterIds = unique([...dialogueByCharacter.keys(), ...appearancesByCharacter.keys()])
+    .filter((characterId) => !isRoverCharacter(characterId))
+    .sort((a, b) => a.localeCompare(b));
+
+  return characterIds
+    .map((characterId) => {
+      const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
+      const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
+      return {
+        characterId,
+        characterName: characterById.get(characterId)?.name ?? characterId,
+        voiceLineCount,
+        appearanceCount,
+        linesPerAppearance:
+          appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
+      };
+    })
+    .sort((a, b) => {
+      if (b.voiceLineCount !== a.voiceLineCount) {
+        return b.voiceLineCount - a.voiceLineCount;
+      }
+      if (b.appearanceCount !== a.appearanceCount) {
+        return b.appearanceCount - a.appearanceCount;
+      }
+      return a.characterName.localeCompare(b.characterName);
+    });
 }

@@ -14,6 +14,7 @@
     "data:sync": "tsx scripts/sync-fandom-data.ts && npm run data:sync-official",
     "data:sync-official": "tsx scripts/sync-official-versions.ts",
     "data:sync-stories": "tsx scripts/sync-story-appearances.ts && tsx scripts/sync-story-dialogue-stats.ts && tsx scripts/sync-character-display-names.ts",
+    "data:sync-optional-quests": "tsx scripts/sync-optional-quest-stats.ts",
     "data:sync-portraits": "tsx scripts/sync-character-portraits.ts",
     "data:audit-stories": "tsx scripts/audit-story-appearance-dialogue.ts && tsx scripts/verify-story-dialogue-coverage.ts",
     "data:sync-story-dialogue": "tsx scripts/sync-story-dialogue-stats.ts",
@@ -22,7 +23,7 @@
     "data:validate": "tsx scripts/validate-data.ts",
     "data:compare": "tsx scripts/compare-official-vs-fandom.ts",
     "data:check": "npm run data:generate && npm run data:validate && npm run data:compare && npm run data:audit-stories",
-    "data:refresh-all": "npm run data:sync-stories && npm run data:generate && npm run data:validate && npm run data:audit-stories"
+    "data:refresh-all": "npm run data:sync-stories && npm run data:sync-optional-quests && npm run data:generate && npm run data:validate && npm run data:audit-stories"
   },
   "dependencies": {
     "next": "16.2.6",

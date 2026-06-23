@@ -1,0 +1,1934 @@
+{
+  "generatedAt": "2026-06-23T05:52:57.150Z",
+  "source": {
+    "name": "encore.moe",
+    "countMethod": "optional_quest_dialogue_speaker_lines",
+    "categories": {
+      "companion": 12,
+      "event": 45,
+      "side": 226
+    }
+  },
+  "rows": [
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "aemeath",
+      "questId": "event-165800024",
+      "questName": "停泊的舟",
+      "questNameZh": "停泊的舟",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        165800024
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "aemeath",
+      "questId": "event-165800024",
+      "questName": "The Moored Boat",
+      "questNameZh": "停泊的舟",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        165800024
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "aemeath",
+      "questId": "side-121850001",
+      "questName": "春风祝颂你的旅途",
+      "questNameZh": "春风祝颂你的旅途",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        121850001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "aemeath",
+      "questId": "side-121850001",
+      "questName": "A Zephyr-Kissed Journey to You",
+      "questNameZh": "春风祝颂你的旅途",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        121850001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "augusta",
+      "questId": "event-700002",
+      "questName": "「烈阳昔叙之诗」第二章",
+      "questNameZh": "「烈阳昔叙之诗」第二章",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        700002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "augusta",
+      "questId": "event-700002",
+      "questName": "Epic of the Blazing Sun - Chapter II",
+      "questNameZh": "「烈阳昔叙之诗」第二章",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        700002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "augusta",
+      "questId": "event-700003",
+      "questName": "「烈阳昔叙之诗」第三章",
+      "questNameZh": "「烈阳昔叙之诗」第三章",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        700003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "augusta",
+      "questId": "event-700003",
+      "questName": "Epic of the Blazing Sun - Chapter III",
+      "questNameZh": "「烈阳昔叙之诗」第三章",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        700003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "augusta",
+      "questId": "event-700004",
+      "questName": "「烈阳昔叙之诗」第四章",
+      "questNameZh": "「烈阳昔叙之诗」第四章",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        700004
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "augusta",
+      "questId": "event-700004",
+      "questName": "Epic of the Blazing Sun - Chapter IV",
+      "questNameZh": "「烈阳昔叙之诗」第四章",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        700004
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "brant",
+      "questId": "companion-101010",
+      "questName": "启航日，船长！",
+      "questNameZh": "启航日，船长！",
+      "lineCount": 223,
+      "encoreStoryIds": [
+        101010
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "brant",
+      "questId": "companion-101010",
+      "questName": "Sail Day, Captain!",
+      "questNameZh": "启航日，船长！",
+      "lineCount": 223,
+      "encoreStoryIds": [
+        101010
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "buling",
+      "questId": "side-171000001",
+      "questName": "一段善缘",
+      "questNameZh": "一段善缘",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        171000001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "buling",
+      "questId": "side-171000001",
+      "questName": "Serendipity",
+      "questNameZh": "一段善缘",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        171000001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "camellya",
+      "questId": "companion-101007",
+      "questName": "小径分岔的星海",
+      "questNameZh": "小径分岔的星海",
+      "lineCount": 303,
+      "encoreStoryIds": [
+        101007
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "camellya",
+      "questId": "companion-101007",
+      "questName": "Forking Paths Among the Stars",
+      "questNameZh": "小径分岔的星海",
+      "lineCount": 314,
+      "encoreStoryIds": [
+        101007
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "cantarella",
+      "questId": "companion-101011",
+      "questName": "幽夜幻梦",
+      "questNameZh": "幽夜幻梦",
+      "lineCount": 345,
+      "encoreStoryIds": [
+        101011
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "cantarella",
+      "questId": "companion-101011",
+      "questName": "A Fleeting Night's Dream",
+      "questNameZh": "幽夜幻梦",
+      "lineCount": 345,
+      "encoreStoryIds": [
+        101011
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "carlotta",
+      "questId": "companion-101008",
+      "questName": "如果在雨夜，一个家族",
+      "questNameZh": "如果在雨夜，一个家族",
+      "lineCount": 351,
+      "encoreStoryIds": [
+        101008
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "carlotta",
+      "questId": "companion-101008",
+      "questName": "If On a Rainy Night a Family",
+      "questNameZh": "如果在雨夜，一个家族",
+      "lineCount": 351,
+      "encoreStoryIds": [
+        101008
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "carlotta",
+      "questId": "side-186700000",
+      "questName": "暗海勘查",
+      "questNameZh": "暗海勘查",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        186700000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "carlotta",
+      "questId": "side-186700000",
+      "questName": "Deep Sea Survey",
+      "questNameZh": "暗海勘查",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        186700000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "cartethyia",
+      "questId": "side-125000127",
+      "questName": "三个愿望",
+      "questNameZh": "三个愿望",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        125000127
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "cartethyia",
+      "questId": "side-125000127",
+      "questName": "Three Wishes",
+      "questNameZh": "三个愿望",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        125000127
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "cartethyia",
+      "questId": "side-171700002",
+      "questName": "现状与未来",
+      "questNameZh": "现状与未来",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        171700002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "cartethyia",
+      "questId": "side-171700002",
+      "questName": "The Present and the Future",
+      "questNameZh": "现状与未来",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        171700002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "changli",
+      "questId": "companion-101004",
+      "questName": "离火弈长生",
+      "questNameZh": "离火弈长生",
+      "lineCount": 234,
+      "encoreStoryIds": [
+        101004
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "changli",
+      "questId": "companion-101004",
+      "questName": "Immortal Blaze",
+      "questNameZh": "离火弈长生",
+      "lineCount": 234,
+      "encoreStoryIds": [
+        101004
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "changli",
+      "questId": "side-139700002",
+      "questName": "难解谜题",
+      "questNameZh": "难解谜题",
+      "lineCount": 42,
+      "encoreStoryIds": [
+        139700002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "changli",
+      "questId": "side-139700002",
+      "questName": "Puzzle of Puzzles",
+      "questNameZh": "难解谜题",
+      "lineCount": 42,
+      "encoreStoryIds": [
+        139700002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "chisa",
+      "questId": "event-197800005",
+      "questName": "巫女的喜好",
+      "questNameZh": "巫女的喜好",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        197800005
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "chisa",
+      "questId": "event-197800005",
+      "questName": "A Miko's Preferences",
+      "questNameZh": "巫女的喜好",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        197800005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "chixia",
+      "questId": "companion-101003",
+      "questName": "此际我独行",
+      "questNameZh": "此际我独行",
+      "lineCount": 34,
+      "encoreStoryIds": [
+        101003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "chixia",
+      "questId": "companion-101003",
+      "questName": "Solitary Path",
+      "questNameZh": "此际我独行",
+      "lineCount": 34,
+      "encoreStoryIds": [
+        101003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "chixia",
+      "questId": "companion-101005",
+      "questName": "自问丹青",
+      "questNameZh": "自问丹青",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        101005
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "chixia",
+      "questId": "companion-101005",
+      "questName": "True Colors",
+      "questNameZh": "自问丹青",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        101005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139000017",
+      "questName": "银发声骸训练师·一",
+      "questNameZh": "银发声骸训练师·一",
+      "lineCount": 64,
+      "encoreStoryIds": [
+        139000017
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139000017",
+      "questName": "Silver-haired Echo Trainer - I",
+      "questNameZh": "银发声骸训练师·一",
+      "lineCount": 64,
+      "encoreStoryIds": [
+        139000017
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139000020",
+      "questName": "银发声骸训练师·二",
+      "questNameZh": "银发声骸训练师·二",
+      "lineCount": 27,
+      "encoreStoryIds": [
+        139000020
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139000020",
+      "questName": "Silver-haired Echo Trainer - II",
+      "questNameZh": "银发声骸训练师·二",
+      "lineCount": 27,
+      "encoreStoryIds": [
+        139000020
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139000021",
+      "questName": "银发声骸训练师·三",
+      "questNameZh": "银发声骸训练师·三",
+      "lineCount": 41,
+      "encoreStoryIds": [
+        139000021
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139000021",
+      "questName": "Silver-haired Echo Trainer - III",
+      "questNameZh": "银发声骸训练师·三",
+      "lineCount": 41,
+      "encoreStoryIds": [
+        139000021
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139700000",
+      "questName": "终极枪客大挑战！",
+      "questNameZh": "终极枪客大挑战！",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        139700000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-139700000",
+      "questName": "The Supreme Gunslinger!",
+      "questNameZh": "终极枪客大挑战！",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        139700000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-880000011",
+      "questName": "百味荟萃",
+      "questNameZh": "百味荟萃",
+      "lineCount": 95,
+      "encoreStoryIds": [
+        880000011
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "chixia",
+      "questId": "side-880000011",
+      "questName": "A Taste of Everything",
+      "questNameZh": "百味荟萃",
+      "lineCount": 95,
+      "encoreStoryIds": [
+        880000011
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "encore",
+      "questId": "companion-101006",
+      "questName": "小小羊咩大冒险",
+      "questNameZh": "小小羊咩大冒险",
+      "lineCount": 415,
+      "encoreStoryIds": [
+        101006
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "encore",
+      "questId": "companion-101006",
+      "questName": "Small Wooly, Big Adventures",
+      "questNameZh": "小小羊咩大冒险",
+      "lineCount": 415,
+      "encoreStoryIds": [
+        101006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "encore",
+      "questId": "side-139700001",
+      "questName": "安可的火热大冒险！",
+      "questNameZh": "安可的火热大冒险！",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        139700001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "encore",
+      "questId": "side-139700001",
+      "questName": "Encore's Steaming Adventure!",
+      "questNameZh": "安可的火热大冒险！",
+      "lineCount": 33,
+      "encoreStoryIds": [
+        139700001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "hiyuki",
+      "questId": "side-121850002",
+      "questName": "如那融雪所愿般",
+      "questNameZh": "如那融雪所愿般",
+      "lineCount": 16,
+      "encoreStoryIds": [
+        121850002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "hiyuki",
+      "questId": "side-121850002",
+      "questName": "So as the Melting Snow Desires",
+      "questNameZh": "如那融雪所愿般",
+      "lineCount": 16,
+      "encoreStoryIds": [
+        121850002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "jianxin",
+      "questId": "side-880000029",
+      "questName": "秘传占术",
+      "questNameZh": "秘传占术",
+      "lineCount": 55,
+      "encoreStoryIds": [
+        880000029
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "jianxin",
+      "questId": "side-880000029",
+      "questName": "Professional Inheritance",
+      "questNameZh": "秘传占术",
+      "lineCount": 55,
+      "encoreStoryIds": [
+        880000029
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "jinhsi",
+      "questId": "side-880000031",
+      "questName": "Cause to Fight for",
+      "questNameZh": "因何而战",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        880000031
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "jinhsi",
+      "questId": "side-880700003",
+      "questName": "难忘今时月",
+      "questNameZh": "难忘今时月",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        880700003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "jinhsi",
+      "questId": "side-880700003",
+      "questName": "Blessed Be the Moon",
+      "questNameZh": "难忘今时月",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        880700003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "jiyan",
+      "questId": "companion-101001",
+      "questName": "长夜将明",
+      "questNameZh": "长夜将明",
+      "lineCount": 174,
+      "encoreStoryIds": [
+        101001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "jiyan",
+      "questId": "companion-101001",
+      "questName": "Daybreak at Last",
+      "questNameZh": "长夜将明",
+      "lineCount": 174,
+      "encoreStoryIds": [
+        101001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "jiyan",
+      "questId": "side-880000031",
+      "questName": "因何而战",
+      "questNameZh": "因何而战",
+      "lineCount": 28,
+      "encoreStoryIds": [
+        880000031
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "jiyan",
+      "questId": "side-880000031",
+      "questName": "Cause to Fight for",
+      "questNameZh": "因何而战",
+      "lineCount": 28,
+      "encoreStoryIds": [
+        880000031
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "lingyang",
+      "questId": "companion-101001",
+      "questName": "Daybreak at Last",
+      "questNameZh": "长夜将明",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        101001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "lingyang",
+      "questId": "companion-101002",
+      "questName": "啸野归城",
+      "questNameZh": "啸野归城",
+      "lineCount": 335,
+      "encoreStoryIds": [
+        101002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "lingyang",
+      "questId": "companion-101002",
+      "questName": "Wild Heart's Return",
+      "questNameZh": "啸野归城",
+      "lineCount": 335,
+      "encoreStoryIds": [
+        101002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "lingyang",
+      "questId": "side-121000032",
+      "questName": "于古榕的月光下",
+      "questNameZh": "于古榕的月光下",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        121000032
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "lingyang",
+      "questId": "side-121000032",
+      "questName": "Under the Moonlit Banyan",
+      "questNameZh": "于古榕的月光下",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        121000032
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800008",
+      "questName": "《庆典不再重来》",
+      "questNameZh": "《庆典不再重来》",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165800008
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800008",
+      "questName": "\"Festivals Don't Encore\"",
+      "questNameZh": "《庆典不再重来》",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165800008
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800009",
+      "questName": "《工学部修理场景》",
+      "questNameZh": "《工学部修理场景》",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        165800009
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800009",
+      "questName": "\"Department of Engineering Repair Scene\"",
+      "questNameZh": "《工学部修理场景》",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        165800009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800010",
+      "questName": "《共鸣者的奇幻漂流》",
+      "questNameZh": "《共鸣者的奇幻漂流》",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        165800010
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800010",
+      "questName": "\"Life of a Resonator\"",
+      "questNameZh": "《共鸣者的奇幻漂流》",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        165800010
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800011",
+      "questName": "《四部半》",
+      "questNameZh": "《四部半》",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        165800011
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800011",
+      "questName": "\"4½\"",
+      "questNameZh": "《四部半》",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        165800011
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800012",
+      "questName": "《美丽人生》",
+      "questNameZh": "《美丽人生》",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800012
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-165800012",
+      "questName": "\"Life is Beautiful\"",
+      "questNameZh": "《美丽人生》",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800012
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-194850001",
+      "questName": "漫游至终点",
+      "questNameZh": "漫游至终点",
+      "lineCount": 16,
+      "encoreStoryIds": [
+        194850001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lucilla",
+      "questId": "event-194850001",
+      "questName": "Roaming Till the End",
+      "questNameZh": "漫游至终点",
+      "lineCount": 16,
+      "encoreStoryIds": [
+        194850001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "lupa",
+      "questId": "side-125000128",
+      "questName": "我的搭档",
+      "questNameZh": "我的搭档",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        125000128
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "lupa",
+      "questId": "side-125000128",
+      "questName": "Companionship",
+      "questNameZh": "我的搭档",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        125000128
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800019",
+      "questName": "华夫饼疗愈法",
+      "questNameZh": "华夫饼疗愈法",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        165800019
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800019",
+      "questName": "Waffle Therapy",
+      "questNameZh": "华夫饼疗愈法",
+      "lineCount": 29,
+      "encoreStoryIds": [
+        165800019
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800020",
+      "questName": "茶点缺失症",
+      "questNameZh": "茶点缺失症",
+      "lineCount": 28,
+      "encoreStoryIds": [
+        165800020
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800020",
+      "questName": "Snack Deficit Syndrome",
+      "questNameZh": "茶点缺失症",
+      "lineCount": 28,
+      "encoreStoryIds": [
+        165800020
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800021",
+      "questName": "甜品免疫低下",
+      "questNameZh": "甜品免疫低下",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800021
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800021",
+      "questName": "Immunodeficiency of Snacks",
+      "questNameZh": "甜品免疫低下",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800021
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800022",
+      "questName": "毛茸处方",
+      "questNameZh": "毛茸处方",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165800022
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800022",
+      "questName": "A Fluffy Prescription",
+      "questNameZh": "毛茸处方",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165800022
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800023",
+      "questName": "生活的心跳",
+      "questNameZh": "生活的心跳",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        165800023
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "luuk-herssen",
+      "questId": "event-165800023",
+      "questName": "The Heartbeat of Life",
+      "questNameZh": "生活的心跳",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        165800023
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000001",
+      "questName": "已知的既感！",
+      "questNameZh": "已知的既感！",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        158000001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000001",
+      "questName": "When the Known Thrums!",
+      "questNameZh": "已知的既感！",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        158000001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000002",
+      "questName": "如果你追到……",
+      "questNameZh": "如果你追到……",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        158000002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000002",
+      "questName": "If You Catch Up to It...",
+      "questNameZh": "如果你追到……",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        158000002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000003",
+      "questName": "就给你看机器人",
+      "questNameZh": "就给你看机器人",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        158000003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000003",
+      "questName": "I'll Show You the Mech",
+      "questNameZh": "就给你看机器人",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        158000003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000004",
+      "questName": "新雨的去处",
+      "questNameZh": "新雨的去处",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        158000004
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-158000004",
+      "questName": "Where the Iridescent Rain Falls",
+      "questNameZh": "新雨的去处",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        158000004
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-168000002",
+      "questName": "免费的午餐？",
+      "questNameZh": "免费的午餐？",
+      "lineCount": 31,
+      "encoreStoryIds": [
+        168000002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-168000002",
+      "questName": "A Free Lunch?",
+      "questNameZh": "免费的午餐？",
+      "lineCount": 31,
+      "encoreStoryIds": [
+        168000002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-194800000",
+      "questName": "沿着节拍启航",
+      "questNameZh": "沿着节拍启航",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        194800000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "lynae",
+      "questId": "event-194800000",
+      "questName": "Soar to the Beat",
+      "questNameZh": "沿着节拍启航",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        194800000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800003",
+      "questName": "营养剂体验报告",
+      "questNameZh": "营养剂体验报告",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165800003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800003",
+      "questName": "Energy Supplement Trial Report",
+      "questNameZh": "营养剂体验报告",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165800003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800004",
+      "questName": "场景变量调整",
+      "questNameZh": "场景变量调整",
+      "lineCount": 24,
+      "encoreStoryIds": [
+        165800004
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800004",
+      "questName": "Environmental Variable Adjustment",
+      "questNameZh": "场景变量调整",
+      "lineCount": 24,
+      "encoreStoryIds": [
+        165800004
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800005",
+      "questName": "多巴胺分泌异常",
+      "questNameZh": "多巴胺分泌异常",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800005
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800005",
+      "questName": "Abnormal Dopamine Secretion",
+      "questNameZh": "多巴胺分泌异常",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800006",
+      "questName": "幸福标准化",
+      "questNameZh": "幸福标准化",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        165800006
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800006",
+      "questName": "Standardized Happiness",
+      "questNameZh": "幸福标准化",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        165800006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800007",
+      "questName": "黄昏的西尔芙",
+      "questNameZh": "黄昏的西尔芙",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        165800007
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-165800007",
+      "questName": "Sylph at Twilight",
+      "questNameZh": "黄昏的西尔芙",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        165800007
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-194800000",
+      "questName": "沿着节拍启航",
+      "questNameZh": "沿着节拍启航",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        194800000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "mornye",
+      "questId": "event-194800000",
+      "questName": "Soar to the Beat",
+      "questNameZh": "沿着节拍启航",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        194800000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "mornye",
+      "questId": "side-195700000",
+      "questName": "世界上最近的海",
+      "questNameZh": "世界上最近的海",
+      "lineCount": 34,
+      "encoreStoryIds": [
+        195700000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "mornye",
+      "questId": "side-195700000",
+      "questName": "The Sea Just Within Reach",
+      "questNameZh": "世界上最近的海",
+      "lineCount": 34,
+      "encoreStoryIds": [
+        195700000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "mortefi",
+      "questId": "companion-101001",
+      "questName": "长夜将明",
+      "questNameZh": "长夜将明",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        101001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "mortefi",
+      "questId": "companion-101001",
+      "questName": "Daybreak at Last",
+      "questNameZh": "长夜将明",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        101001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "phoebe",
+      "questId": "side-106000005",
+      "questName": "拉古那假日",
+      "questNameZh": "拉古那假日",
+      "lineCount": 191,
+      "encoreStoryIds": [
+        106000005
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "phoebe",
+      "questId": "side-106000005",
+      "questName": "Ragunna Holiday",
+      "questNameZh": "拉古那假日",
+      "lineCount": 191,
+      "encoreStoryIds": [
+        106000005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "phoebe",
+      "questId": "side-165000001",
+      "questName": "水手的遗藏",
+      "questNameZh": "水手的遗藏",
+      "lineCount": 20,
+      "encoreStoryIds": [
+        165000001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "phoebe",
+      "questId": "side-165000001",
+      "questName": "The Sailor's Treasure",
+      "questNameZh": "水手的遗藏",
+      "lineCount": 20,
+      "encoreStoryIds": [
+        165000001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "phoebe",
+      "questId": "side-189800000",
+      "questName": "黎明之星（一）",
+      "questNameZh": "黎明之星（一）",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        189800000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "phoebe",
+      "questId": "side-189800000",
+      "questName": "Morning Star I",
+      "questNameZh": "黎明之星（一）",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        189800000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "qiuyuan",
+      "questId": "companion-101002",
+      "questName": "Wild Heart's Return",
+      "questNameZh": "啸野归城",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        101002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "roccia",
+      "questId": "companion-101009",
+      "questName": "今夜星光灿烂",
+      "questNameZh": "今夜星光灿烂",
+      "lineCount": 267,
+      "encoreStoryIds": [
+        101009
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "roccia",
+      "questId": "companion-101009",
+      "questName": "Starry is the Night",
+      "questNameZh": "今夜星光灿烂",
+      "lineCount": 267,
+      "encoreStoryIds": [
+        101009
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "roccia",
+      "questId": "companion-101010",
+      "questName": "启航日，船长！",
+      "questNameZh": "启航日，船长！",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        101010
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "roccia",
+      "questId": "companion-101010",
+      "questName": "Sail Day, Captain!",
+      "questNameZh": "启航日，船长！",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        101010
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "shorekeeper",
+      "questId": "side-151750001",
+      "questName": "海风中失落的湛蓝回声·后日谈",
+      "questNameZh": "海风中失落的湛蓝回声·后日谈",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        151750001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "shorekeeper",
+      "questId": "side-151750001",
+      "questName": "Cerulean Echoes Adrift in the Winds: Epilogue",
+      "questNameZh": "海风中失落的湛蓝回声·后日谈",
+      "lineCount": 30,
+      "encoreStoryIds": [
+        151750001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800014",
+      "questName": "纸上折线",
+      "questNameZh": "纸上折线",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        165800014
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800014",
+      "questName": "Creases on Paper",
+      "questNameZh": "纸上折线",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        165800014
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800016",
+      "questName": "空羽留痕",
+      "questNameZh": "空羽留痕",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800016
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800016",
+      "questName": "Imprints of Wings",
+      "questNameZh": "空羽留痕",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        165800016
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800017",
+      "questName": "宁静的语义",
+      "questNameZh": "宁静的语义",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        165800017
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800017",
+      "questName": "Essence of Tranquility",
+      "questNameZh": "宁静的语义",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        165800017
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800018",
+      "questName": "幸福的咒语",
+      "questNameZh": "幸福的咒语",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        165800018
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800018",
+      "questName": "The Happiness Spell",
+      "questNameZh": "幸福的咒语",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        165800018
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "verina",
+      "questId": "companion-101006",
+      "questName": "小小羊咩大冒险",
+      "questNameZh": "小小羊咩大冒险",
+      "lineCount": 24,
+      "encoreStoryIds": [
+        101006
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "verina",
+      "questId": "companion-101006",
+      "questName": "Small Wooly, Big Adventures",
+      "questNameZh": "小小羊咩大冒险",
+      "lineCount": 24,
+      "encoreStoryIds": [
+        101006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "xiangli-yao",
+      "questId": "side-880000018",
+      "questName": "我邀朗月",
+      "questNameZh": "我邀朗月",
+      "lineCount": 40,
+      "encoreStoryIds": [
+        880000018
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "xiangli-yao",
+      "questId": "side-880000018",
+      "questName": "Moon Shall Be My Guest",
+      "questNameZh": "我邀朗月",
+      "lineCount": 40,
+      "encoreStoryIds": [
+        880000018
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "yangyang",
+      "questId": "companion-101005",
+      "questName": "True Colors",
+      "questNameZh": "自问丹青",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        101005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "yangyang",
+      "questId": "side-139700003",
+      "questName": "待得团圆时",
+      "questNameZh": "待得团圆时",
+      "lineCount": 35,
+      "encoreStoryIds": [
+        139700003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "yangyang",
+      "questId": "side-139700003",
+      "questName": "Riddle and Reunion",
+      "questNameZh": "待得团圆时",
+      "lineCount": 35,
+      "encoreStoryIds": [
+        139700003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "yinlin",
+      "questId": "companion-101003",
+      "questName": "此际我独行",
+      "questNameZh": "此际我独行",
+      "lineCount": 302,
+      "encoreStoryIds": [
+        101003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "yinlin",
+      "questId": "companion-101003",
+      "questName": "Solitary Path",
+      "questNameZh": "此际我独行",
+      "lineCount": 302,
+      "encoreStoryIds": [
+        101003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "yinlin",
+      "questId": "side-880700001",
+      "questName": "行动代号：月下双雄",
+      "questNameZh": "行动代号：月下双雄",
+      "lineCount": 54,
+      "encoreStoryIds": [
+        880700001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "yinlin",
+      "questId": "side-880700001",
+      "questName": "Operation: Lunar Duo",
+      "questNameZh": "行动代号：月下双雄",
+      "lineCount": 54,
+      "encoreStoryIds": [
+        880700001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "zani",
+      "questId": "companion-101012",
+      "questName": "夜行的焰光",
+      "questNameZh": "夜行的焰光",
+      "lineCount": 216,
+      "encoreStoryIds": [
+        101012
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "zani",
+      "questId": "companion-101012",
+      "questName": "A Blaze in the Dark",
+      "questNameZh": "夜行的焰光",
+      "lineCount": 216,
+      "encoreStoryIds": [
+        101012
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "zani",
+      "questId": "side-171700002",
+      "questName": "现状与未来",
+      "questNameZh": "现状与未来",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        171700002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "zani",
+      "questId": "side-171700002",
+      "questName": "The Present and the Future",
+      "questNameZh": "现状与未来",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        171700002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "companion",
+      "characterId": "zhezhi",
+      "questId": "companion-101005",
+      "questName": "自问丹青",
+      "questNameZh": "自问丹青",
+      "lineCount": 319,
+      "encoreStoryIds": [
+        101005
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "zhezhi",
+      "questId": "companion-101005",
+      "questName": "True Colors",
+      "questNameZh": "自问丹青",
+      "lineCount": 319,
+      "encoreStoryIds": [
+        101005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "zhezhi",
+      "questId": "side-880000019",
+      "questName": "愿逐月华",
+      "questNameZh": "愿逐月华",
+      "lineCount": 40,
+      "encoreStoryIds": [
+        880000019
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "zhezhi",
+      "questId": "side-880000019",
+      "questName": "Chasing the Moon's Glory",
+      "questNameZh": "愿逐月华",
+      "lineCount": 40,
+      "encoreStoryIds": [
+        880000019
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "zhezhi",
+      "questId": "side-880700002",
+      "questName": "愿此景永留你心",
+      "questNameZh": "愿此景永留你心",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        880700002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "zhezhi",
+      "questId": "side-880700002",
+      "questName": "Wish You Were Here",
+      "questNameZh": "愿此景永留你心",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        880700002
+      ]
+    }
+  ]
+}
