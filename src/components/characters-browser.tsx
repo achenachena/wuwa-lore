@@ -13,7 +13,7 @@ export interface CharacterListItem {
   weapon: string;
   faction: string;
   rarity: number;
-  releaseVersion: string;
+  appearanceVersion: string;
   voiceLineTotal: number;
   hasVoiceStats: boolean;
   avatarUrl?: string | null;
@@ -26,14 +26,14 @@ interface CharactersBrowserProps {
   showCharacterId?: boolean;
 }
 
-type SortKey = "name" | "voice" | "release";
+type SortKey = "name" | "voice" | "appearance";
 
 export function CharactersBrowser({ items, labels, common, showCharacterId = true }: CharactersBrowserProps) {
   const [search, setSearch] = useState("");
   const [element, setElement] = useState("all");
   const [weapon, setWeapon] = useState("all");
   const [rarity, setRarity] = useState("all");
-  const [releaseVersion, setReleaseVersion] = useState("all");
+  const [appearanceVersion, setAppearanceVersion] = useState("all");
   const [sortBy, setSortBy] = useState<SortKey>("name");
 
   const elementOptions = useMemo(
@@ -50,8 +50,16 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
   );
   const versionOptions = useMemo(
     () =>
-      ["all", ...new Set(items.map((item) => item.releaseVersion).sort((a, b) => a.localeCompare(b, "en")))],
-    [items],
+      [
+        "all",
+        ...new Set(
+          items
+            .map((item) => item.appearanceVersion)
+            .filter((version) => version !== common.dash)
+            .sort((a, b) => a.localeCompare(b, "en")),
+        ),
+      ],
+    [common.dash, items],
   );
 
   const filteredItems = useMemo(() => {
@@ -67,7 +75,7 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
         if (rarity !== "all" && String(item.rarity) !== rarity) {
           return false;
         }
-        if (releaseVersion !== "all" && item.releaseVersion !== releaseVersion) {
+        if (appearanceVersion !== "all" && item.appearanceVersion !== appearanceVersion) {
           return false;
         }
         if (!normalized) {
@@ -79,12 +87,15 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
         if (sortBy === "voice") {
           return b.voiceLineTotal - a.voiceLineTotal || a.name.localeCompare(b.name);
         }
-        if (sortBy === "release") {
-          return a.releaseVersion.localeCompare(b.releaseVersion, "en") || a.name.localeCompare(b.name);
+        if (sortBy === "appearance") {
+          return (
+            a.appearanceVersion.localeCompare(b.appearanceVersion, "en", { numeric: true }) ||
+            a.name.localeCompare(b.name)
+          );
         }
         return a.name.localeCompare(b.name);
       });
-  }, [items, search, element, weapon, rarity, releaseVersion, sortBy]);
+  }, [appearanceVersion, common.dash, element, items, rarity, search, sortBy, weapon]);
 
   return (
     <section className="space-y-4">
@@ -121,10 +132,10 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
             options={rarityOptions}
           />
           <FilterSelect
-            label={labels.debutVersion}
+            label={labels.appearanceVersion}
             allLabel={common.all}
-            value={releaseVersion}
-            onChange={setReleaseVersion}
+            value={appearanceVersion}
+            onChange={setAppearanceVersion}
             options={versionOptions}
           />
           <FilterSelect
@@ -135,7 +146,7 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
             options={[
               { value: "name", label: labels.sortName },
               { value: "voice", label: labels.sortVoice },
-              { value: "release", label: labels.sortRelease },
+              { value: "appearance", label: labels.sortAppearance },
             ]}
           />
         </div>
@@ -147,61 +158,48 @@ export function CharactersBrowser({ items, labels, common, showCharacterId = tru
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {filteredItems.map((character) => (
-          <article key={character.id} className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
-            <div className="relative h-28 bg-gradient-to-b from-zinc-100 to-white">
-              {character.avatarUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={character.avatarUrl}
-                  alt=""
-                  className="h-full w-full object-cover object-top"
-                />
-              ) : (
-                <div className="flex h-full items-center justify-center">
-                  <CharacterAvatar name={character.name} size={64} />
-                </div>
-              )}
-              <span className="absolute top-2 right-2 rounded bg-black/70 px-2 py-1 text-xs text-white">
-                {character.rarity}★
-              </span>
-            </div>
-
-            <div className="p-4">
-              <div className="flex items-start gap-3">
-                <CharacterAvatar name={character.name} src={character.avatarUrl} size={44} />
-                <div className="min-w-0 flex-1">
-                  <h2 className="truncate text-lg font-semibold">{character.name}</h2>
-                  {showCharacterId ? <p className="truncate text-sm text-zinc-500">{character.id}</p> : null}
+          <article key={character.id} className="rounded-lg border border-zinc-200 bg-white p-4">
+            <div className="flex items-start gap-3">
+              <CharacterAvatar name={character.name} src={character.avatarUrl} size={56} />
+              <div className="min-w-0 flex-1">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <h2 className="truncate text-lg font-semibold">{character.name}</h2>
+                    {showCharacterId ? (
+                      <p className="truncate text-sm text-zinc-500">{character.id}</p>
+                    ) : null}
+                  </div>
+                  <span className="shrink-0 rounded bg-zinc-100 px-2 py-1 text-xs">{character.rarity}★</span>
                 </div>
               </div>
-
-              <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
-                <div>
-                  <dt className="text-zinc-500">{labels.element}</dt>
-                  <dd>{character.element}</dd>
-                </div>
-                <div>
-                  <dt className="text-zinc-500">{labels.weapon}</dt>
-                  <dd>{character.weapon}</dd>
-                </div>
-                <div>
-                  <dt className="text-zinc-500">{labels.debut}</dt>
-                  <dd>{character.releaseVersion}</dd>
-                </div>
-                <div>
-                  <dt className="text-zinc-500">{labels.voiceLines}</dt>
-                  <dd className="font-medium">{character.voiceLineTotal}</dd>
-                </div>
-              </dl>
-
-              {!character.hasVoiceStats ? (
-                <p className="mt-2 text-xs text-amber-700">{labels.noVoiceStats}</p>
-              ) : null}
-
-              <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
-                {common.viewDetails}
-              </Link>
             </div>
+
+            <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
+              <div>
+                <dt className="text-zinc-500">{labels.element}</dt>
+                <dd>{character.element}</dd>
+              </div>
+              <div>
+                <dt className="text-zinc-500">{labels.weapon}</dt>
+                <dd>{character.weapon}</dd>
+              </div>
+              <div>
+                <dt className="text-zinc-500">{labels.appearance}</dt>
+                <dd>{character.appearanceVersion}</dd>
+              </div>
+              <div>
+                <dt className="text-zinc-500">{labels.voiceLines}</dt>
+                <dd className="font-medium">{character.voiceLineTotal}</dd>
+              </div>
+            </dl>
+
+            {!character.hasVoiceStats ? (
+              <p className="mt-2 text-xs text-amber-700">{labels.noVoiceStats}</p>
+            ) : null}
+
+            <Link href={`/characters/${character.id}`} className="mt-4 inline-block text-sm font-medium">
+              {common.viewDetails}
+            </Link>
           </article>
         ))}
       </div>

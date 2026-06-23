@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CharacterStoryStats } from "@/components/character-story-stats";
+import { CharacterAvatar } from "@/components/character-avatar";
 import { getCharacterDetailData } from "@/lib/data";
 import { getCharacterDisplayName } from "@/lib/i18n/character-names";
 import { localizeGameLabel, localizeImageType } from "@/lib/i18n/game-labels";
@@ -34,11 +36,8 @@ export async function generateMetadata({ params }: CharacterDetailProps): Promis
 
 export default async function CharacterDetailPage({ params }: CharacterDetailProps) {
   const { id } = await params;
-  const [locale, t, { character, characterImages, storySegments }] = await Promise.all([
-    getSiteLocale(),
-    getMessages(),
-    getCharacterDetailData(id),
-  ]);
+  const [locale, t, { character, characterImages, storySegments, portraitUrl, firstAppearanceVersion }] =
+    await Promise.all([getSiteLocale(), getMessages(), getCharacterDetailData(id)]);
 
   if (!character) {
     notFound();
@@ -53,23 +52,28 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
         <Link href="/characters" className="text-sm text-zinc-500">
           {t.common.backToCharacters}
         </Link>
-        <h1 className="mt-2 text-3xl font-semibold">{displayName}</h1>
-        {profileText ? (
-          <p className="mt-2 max-w-3xl text-zinc-700">{profileText}</p>
-        ) : (
-          <p className="mt-2 max-w-3xl text-zinc-500">{t.characterDetail.noProfile}</p>
-        )}
-        <p className="mt-2 text-xs text-zinc-500">
-          {t.common.source}:{" "}
-          <a
-            href={character.source.sourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="underline"
-          >
-            {character.source.sourceUrl}
-          </a>
-        </p>
+        <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-start">
+          <CharacterAvatar name={displayName} src={portraitUrl} size={88} />
+          <div className="min-w-0 flex-1">
+            <h1 className="text-3xl font-semibold">{displayName}</h1>
+            {profileText ? (
+              <p className="mt-2 max-w-3xl text-zinc-700">{profileText}</p>
+            ) : (
+              <p className="mt-2 max-w-3xl text-zinc-500">{t.characterDetail.noProfile}</p>
+            )}
+            <p className="mt-2 text-xs text-zinc-500">
+              {t.common.source}:{" "}
+              <a
+                href={character.source.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                {character.source.sourceUrl}
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-4">
@@ -86,8 +90,8 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
           <p className="mt-1 font-medium">{localizeGameLabel(character.faction, "faction", locale)}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
-          <p className="text-sm text-zinc-500">{t.characterDetail.debutVersion}</p>
-          <p className="mt-1 font-medium">{character.releaseVersion}</p>
+          <p className="text-sm text-zinc-500">{t.characterDetail.appearanceVersion}</p>
+          <p className="mt-1 font-medium">{firstAppearanceVersion ?? t.common.dash}</p>
         </article>
       </div>
 
@@ -96,27 +100,20 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
         {storySegments.length === 0 ? (
           <p className="mt-2 text-zinc-600">{t.characterDetail.noStoryData}</p>
         ) : (
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full min-w-[480px] border-collapse text-sm">
-              <thead>
-                <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                  <th className="py-2 pr-4">{t.characterDetail.storySegment}</th>
-                  <th className="py-2 pr-4">{t.characterDetail.appeared}</th>
-                  <th className="py-2">{t.characterDetail.lineCount}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {storySegments.map((row) => (
-                  <tr key={row.segment.id} className="border-b border-zinc-100">
-                    <td className="py-2 pr-4 font-medium">
-                      {formatStorySegmentLabel(row.segment, locale)}
-                    </td>
-                    <td className="py-2 pr-4">{row.appeared ? t.common.yes : t.common.dash}</td>
-                    <td className="py-2">{row.lineCount > 0 ? row.lineCount : t.common.dash}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="mt-4">
+            <CharacterStoryStats
+              rows={storySegments}
+              labels={{
+                storySegment: t.characterDetail.storySegment,
+                appeared: t.characterDetail.appeared,
+                lineCount: t.characterDetail.lineCount,
+                totalStoryLines: t.characterDetail.totalStoryLines,
+                segmentAppearances: t.characterDetail.segmentAppearances,
+                yes: t.common.yes,
+                dash: t.common.dash,
+              }}
+              formatSegmentLabel={(segment) => formatStorySegmentLabel(segment, locale)}
+            />
           </div>
         )}
       </article>
@@ -137,7 +134,10 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
                   className="h-auto w-full rounded"
                 />
                 <figcaption className="mt-2 text-xs text-zinc-600">
-                  {locale === "en" ? `${image.title} (${localizeImageType(image.type, locale)})` : localizeImageType(image.type, locale)} · {t.common.source}: {image.source.sourceUrl}
+                  {locale === "en"
+                    ? `${image.title} (${localizeImageType(image.type, locale)})`
+                    : localizeImageType(image.type, locale)}{" "}
+                  · {t.common.source}: {image.source.sourceUrl}
                 </figcaption>
               </figure>
             ))}

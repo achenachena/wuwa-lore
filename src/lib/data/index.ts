@@ -1,9 +1,11 @@
 import {
   aggregateVersionStats,
   buildCharacterStorySegmentRows,
+  buildFirstAppearanceVersionMap,
   buildStorySegmentRanking,
   didCharacterAppearInQuest,
   filterStorySegmentsByRange,
+  getFirstAppearanceVersion,
   sumStoryDialogueByCharacter,
 } from "@/lib/data/aggregate";
 import {
@@ -29,8 +31,8 @@ function filterVoiceStatsForSite(stats: VoiceLineStatRow[], siteLocale: SiteLoca
 export async function getCharacterPortraitMap(): Promise<Map<string, string>> {
   const images = await loadCharacterImages();
   const priority: Record<ImageType, number> = {
-    card: 0,
-    portrait: 1,
+    portrait: 0,
+    card: 1,
     splash: 2,
     other: 3,
   };
@@ -85,18 +87,34 @@ export async function getCharacterLineTotalsForSite(): Promise<
   return totals;
 }
 
+export async function getCharacterAppearanceVersionMap(): Promise<Map<string, string | null>> {
+  const [characters, segments, storyAppearances, storyDialogueStats] = await Promise.all([
+    loadCharacters(),
+    loadStorySegments(),
+    loadStoryAppearances(),
+    loadStoryDialogueStats(),
+  ]);
+  return buildFirstAppearanceVersionMap({
+    characters,
+    segments,
+    storyAppearances,
+    storyDialogueStats,
+  });
+}
+
 export async function getCharacterListData() {
   return loadCharacters();
 }
 
 export async function getCharacterDetailData(id: string) {
-  const [characters, images, storySegments, storyAppearances, storyDialogueStats] =
+  const [characters, images, storySegments, storyAppearances, storyDialogueStats, portraits] =
     await Promise.all([
       loadCharacters(),
       loadCharacterImages(),
       loadStorySegments(),
       loadStoryAppearances(),
       loadStoryDialogueStats(),
+      getCharacterPortraitMap(),
     ]);
   const character = characters.find((item) => item.id === id);
   const characterImages = images.filter((item) => item.characterId === id);
@@ -106,11 +124,21 @@ export async function getCharacterDetailData(id: string) {
     storyAppearances,
     storyDialogueStats,
   });
+  const firstAppearanceVersion = character
+    ? getFirstAppearanceVersion({
+        characterId: id,
+        segments: storySegments,
+        storyAppearances,
+        storyDialogueStats,
+      })
+    : null;
 
   return {
     character,
     characterImages,
     storySegments: characterStorySegments,
+    portraitUrl: portraits.get(id) ?? null,
+    firstAppearanceVersion,
   };
 }
 

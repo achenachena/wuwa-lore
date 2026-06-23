@@ -13,6 +13,19 @@
     }
   },
   {
+    "id": "aalto-portrait",
+    "characterId": "aalto",
+    "type": "portrait",
+    "title": "Aalto Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1c/Resonator_Aalto.png/revision/latest?cb=20240523015427",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aalto",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "aemeath-card",
     "characterId": "aemeath",
     "type": "card",
@@ -23,6 +36,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aemeath",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "aemeath-portrait",
+    "characterId": "aemeath",
+    "type": "portrait",
+    "title": "Aemeath Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e8/Resonator_Aemeath.png/revision/latest?cb=20260203014703",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aemeath",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -39,6 +65,19 @@
     }
   },
   {
+    "id": "augusta-portrait",
+    "characterId": "augusta",
+    "type": "portrait",
+    "title": "Augusta Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a5/Resonator_Augusta.png/revision/latest?cb=20250827031031",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Augusta",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "baizhi-card",
     "characterId": "baizhi",
     "type": "card",
@@ -49,6 +88,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Baizhi",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "baizhi-portrait",
+    "characterId": "baizhi",
+    "type": "portrait",
+    "title": "Baizhi Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/2/2a/Resonator_Baizhi.png/revision/latest?cb=20240523015334",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Baizhi",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -65,6 +117,19 @@
     }
   },
   {
+    "id": "brant-portrait",
+    "characterId": "brant",
+    "type": "portrait",
+    "title": "Brant Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/df/Resonator_Brant.png/revision/latest?cb=20250213184622",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Brant",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "buling-card",
     "characterId": "buling",
     "type": "card",
@@ -75,6 +140,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Buling",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "buling-portrait",
+    "characterId": "buling",
+    "type": "portrait",
+    "title": "Buling Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/7/70/Resonator_Buling.png/revision/latest?cb=20251018043729",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Buling",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -91,6 +169,19 @@
     }
   },
   {
+    "id": "calcharo-portrait",
+    "characterId": "calcharo",
+    "type": "portrait",
+    "title": "Calcharo Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/16/Resonator_Calcharo.png/revision/latest?cb=20240523015359",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Calcharo",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "camellya-card",
     "characterId": "camellya",
     "type": "card",
@@ -101,6 +192,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Camellya",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "camellya-portrait",
+    "characterId": "camellya",
+    "type": "portrait",
+    "title": "Camellya Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/9/9f/Resonator_Camellya.png/revision/latest?cb=20241116001919",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Camellya",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -117,6 +221,19 @@
     }
   },
   {
+    "id": "cantarella-portrait",
+    "characterId": "cantarella",
+    "type": "portrait",
+    "title": "Cantarella Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/c/cd/Resonator_Cantarella.png/revision/latest?cb=20250327030321",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cantarella",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "carlotta-card",
     "characterId": "carlotta",
     "type": "card",
@@ -127,6 +244,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Carlotta",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "carlotta-portrait",
+    "characterId": "carlotta",
+    "type": "portrait",
+    "title": "Carlotta Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d6/Resonator_Carlotta.png/revision/latest?cb=20250102025428",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Carlotta",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -143,6 +273,19 @@
     }
   },
   {
+    "id": "cartethyia-portrait",
+    "characterId": "cartethyia",
+    "type": "portrait",
+    "title": "Cartethyia Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d6/Resonator_Cartethyia.png/revision/latest?cb=20250610083508",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cartethyia",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "changli-card",
     "characterId": "changli",
     "type": "card",
@@ -153,6 +296,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Changli",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "changli-portrait",
+    "characterId": "changli",
+    "type": "portrait",
+    "title": "Changli Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/11/Resonator_Changli.png/revision/latest?cb=20240629210403",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Changli",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -169,6 +325,19 @@
     }
   },
   {
+    "id": "chisa-portrait",
+    "characterId": "chisa",
+    "type": "portrait",
+    "title": "Chisa Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d7/Resonator_Chisa.png/revision/latest?cb=20251018043830",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Chisa",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "chixia-card",
     "characterId": "chixia",
     "type": "card",
@@ -179,6 +348,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Chixia",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "chixia-portrait",
+    "characterId": "chixia",
+    "type": "portrait",
+    "title": "Chixia Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/10/Resonator_Chixia.png/revision/latest?cb=20240523010958",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Chixia",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -195,6 +377,19 @@
     }
   },
   {
+    "id": "ciaccona-portrait",
+    "characterId": "ciaccona",
+    "type": "portrait",
+    "title": "Ciaccona Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Resonator_Ciaccona.png/revision/latest?cb=20250429222234",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Ciaccona",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "danjin-card",
     "characterId": "danjin",
     "type": "card",
@@ -205,6 +400,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Danjin",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "danjin-portrait",
+    "characterId": "danjin",
+    "type": "portrait",
+    "title": "Danjin Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1f/Resonator_Danjin.png/revision/latest?cb=20240523015142",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Danjin",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -221,6 +429,19 @@
     }
   },
   {
+    "id": "denia-portrait",
+    "characterId": "denia",
+    "type": "portrait",
+    "title": "Denia Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/c/cc/Resonator_Denia.png/revision/latest?cb=20260519215928",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Denia",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "encore-card",
     "characterId": "encore",
     "type": "card",
@@ -231,6 +452,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Encore",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "encore-portrait",
+    "characterId": "encore",
+    "type": "portrait",
+    "title": "Encore Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/42/Resonator_Encore.png/revision/latest?cb=20240523015109",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Encore",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -247,6 +481,19 @@
     }
   },
   {
+    "id": "galbrena-portrait",
+    "characterId": "galbrena",
+    "type": "portrait",
+    "title": "Galbrena Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/57/Resonator_Galbrena.png/revision/latest?cb=20251008035601",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Galbrena",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "hiyuki-card",
     "characterId": "hiyuki",
     "type": "card",
@@ -257,6 +504,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hiyuki",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "hiyuki-portrait",
+    "characterId": "hiyuki",
+    "type": "portrait",
+    "title": "Hiyuki Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8e/Resonator_Hiyuki.png/revision/latest?cb=20260501160450",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hiyuki",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -273,6 +533,19 @@
     }
   },
   {
+    "id": "iuno-portrait",
+    "characterId": "iuno",
+    "type": "portrait",
+    "title": "Iuno Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8c/Resonator_Iuno.png/revision/latest?cb=20250827031142",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Iuno",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "jianxin-card",
     "characterId": "jianxin",
     "type": "card",
@@ -283,6 +556,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jianxin",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "jianxin-portrait",
+    "characterId": "jianxin",
+    "type": "portrait",
+    "title": "Jianxin Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/0/00/Resonator_Jianxin.png/revision/latest?cb=20240523015413",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jianxin",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -299,6 +585,19 @@
     }
   },
   {
+    "id": "jinhsi-portrait",
+    "characterId": "jinhsi",
+    "type": "portrait",
+    "title": "Jinhsi Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f5/Resonator_Jinhsi.png/revision/latest?cb=20240628171752",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jinhsi",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "jiyan-card",
     "characterId": "jiyan",
     "type": "card",
@@ -309,6 +608,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jiyan",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "jiyan-portrait",
+    "characterId": "jiyan",
+    "type": "portrait",
+    "title": "Jiyan Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/da/Resonator_Jiyan.png/revision/latest?cb=20240523015123",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jiyan",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -325,6 +637,71 @@
     }
   },
   {
+    "id": "lingyang-portrait",
+    "characterId": "lingyang",
+    "type": "portrait",
+    "title": "Lingyang Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/3/39/Resonator_Lingyang.png/revision/latest?cb=20240523015345",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lingyang",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "lucilla-card",
+    "characterId": "lucilla",
+    "type": "card",
+    "title": "Lucilla Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/51/Lucilla_Card.jpg/revision/latest?cb=20260602122727",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucilla",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "lucilla-portrait",
+    "characterId": "lucilla",
+    "type": "portrait",
+    "title": "Lucilla Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a0/Resonator_Lucilla.png/revision/latest?cb=20260608172652",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucilla",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "lucy-card",
+    "characterId": "lucy",
+    "type": "card",
+    "title": "Lucy Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/3/32/Lucy_Card.jpg/revision/latest?cb=20260603133404",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucy",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "lucy-portrait",
+    "characterId": "lucy",
+    "type": "portrait",
+    "title": "Lucy Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/5/57/Resonator_Lucy.png/revision/latest?cb=20260608172024",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucy",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "lumi-card",
     "characterId": "lumi",
     "type": "card",
@@ -335,6 +712,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lumi",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "lumi-portrait",
+    "characterId": "lumi",
+    "type": "portrait",
+    "title": "Lumi Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Resonator_Lumi.png/revision/latest?cb=20241116002925",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lumi",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -351,6 +741,19 @@
     }
   },
   {
+    "id": "lupa-portrait",
+    "characterId": "lupa",
+    "type": "portrait",
+    "title": "Lupa Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Resonator_Lupa.png/revision/latest?cb=20250610083417",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lupa",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "luuk-herssen-card",
     "characterId": "luuk-herssen",
     "type": "card",
@@ -361,6 +764,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "luuk-herssen-portrait",
+    "characterId": "luuk-herssen",
+    "type": "portrait",
+    "title": "Luuk Herssen Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/e/eb/Resonator_Luuk_Herssen.png/revision/latest?cb=20260330181213",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -377,6 +793,19 @@
     }
   },
   {
+    "id": "lynae-portrait",
+    "characterId": "lynae",
+    "type": "portrait",
+    "title": "Lynae Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/3/34/Resonator_Lynae.png/revision/latest?cb=20260101050739",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lynae",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "mornye-card",
     "characterId": "mornye",
     "type": "card",
@@ -387,6 +816,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mornye",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "mornye-portrait",
+    "characterId": "mornye",
+    "type": "portrait",
+    "title": "Mornye Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/2/25/Resonator_Mornye.png/revision/latest?cb=20260101050827",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mornye",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -403,6 +845,19 @@
     }
   },
   {
+    "id": "mortefi-portrait",
+    "characterId": "mortefi",
+    "type": "portrait",
+    "title": "Mortefi Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4f/Resonator_Mortefi.png/revision/latest?cb=20240523015259",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mortefi",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "phoebe-card",
     "characterId": "phoebe",
     "type": "card",
@@ -413,6 +868,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phoebe",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "phoebe-portrait",
+    "characterId": "phoebe",
+    "type": "portrait",
+    "title": "Phoebe Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b7/Resonator_Phoebe.png/revision/latest?cb=20250213184424",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phoebe",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -429,6 +897,19 @@
     }
   },
   {
+    "id": "phrolova-portrait",
+    "characterId": "phrolova",
+    "type": "portrait",
+    "title": "Phrolova Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a2/Resonator_Phrolova.png/revision/latest?cb=20250727105200",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phrolova",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "qiuyuan-card",
     "characterId": "qiuyuan",
     "type": "card",
@@ -439,6 +920,45 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "qiuyuan-portrait",
+    "characterId": "qiuyuan",
+    "type": "portrait",
+    "title": "Qiuyuan Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/da/Resonator_Qiuyuan.png/revision/latest?cb=20251008035512",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "rebecca-card",
+    "characterId": "rebecca",
+    "type": "card",
+    "title": "Rebecca Card",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c5/Rebecca_Card.jpg/revision/latest?cb=20260602120436",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rebecca",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "rebecca-portrait",
+    "characterId": "rebecca",
+    "type": "portrait",
+    "title": "Rebecca Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/b/bd/Resonator_Rebecca.png/revision/latest?cb=20260608172211",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rebecca",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -455,6 +975,19 @@
     }
   },
   {
+    "id": "roccia-portrait",
+    "characterId": "roccia",
+    "type": "portrait",
+    "title": "Roccia Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1a/Resonator_Roccia.png/revision/latest?cb=20250102034114",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Roccia",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "rover-aero-card",
     "characterId": "rover-aero",
     "type": "card",
@@ -465,6 +998,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Aero",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "rover-aero-portrait",
+    "characterId": "rover-aero",
+    "type": "portrait",
+    "title": "Rover-Aero Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/47/Resonator_Rover.png/revision/latest?cb=20240523011434",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Aero",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -494,6 +1040,32 @@
     }
   },
   {
+    "id": "rover-havoc-portrait",
+    "characterId": "rover-havoc",
+    "type": "portrait",
+    "title": "Rover-Havoc Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/47/Resonator_Rover.png/revision/latest?cb=20240523011434",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Havoc",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
+    "id": "rover-portrait",
+    "characterId": "rover",
+    "type": "portrait",
+    "title": "Rover Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/47/Resonator_Rover.png/revision/latest?cb=20240523011434",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "rover-spectro-card",
     "characterId": "rover-spectro",
     "type": "card",
@@ -504,6 +1076,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Spectro",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "rover-spectro-portrait",
+    "characterId": "rover-spectro",
+    "type": "portrait",
+    "title": "Rover-Spectro Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/47/Resonator_Rover.png/revision/latest?cb=20240523011434",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Spectro",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -520,6 +1105,19 @@
     }
   },
   {
+    "id": "sanhua-portrait",
+    "characterId": "sanhua",
+    "type": "portrait",
+    "title": "Sanhua Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d4/Resonator_Sanhua.png/revision/latest?cb=20240523015219",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sanhua",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "shorekeeper-card",
     "characterId": "shorekeeper",
     "type": "card",
@@ -530,6 +1128,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Shorekeeper",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "shorekeeper-portrait",
+    "characterId": "shorekeeper",
+    "type": "portrait",
+    "title": "Shorekeeper Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/da/Resonator_Shorekeeper.png/revision/latest?cb=20240929033648",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Shorekeeper",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -546,6 +1157,19 @@
     }
   },
   {
+    "id": "sigrika-portrait",
+    "characterId": "sigrika",
+    "type": "portrait",
+    "title": "Sigrika Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/6/67/Resonator_Sigrika.png/revision/latest?cb=20260319201628",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sigrika",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "taoqi-card",
     "characterId": "taoqi",
     "type": "card",
@@ -556,6 +1180,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Taoqi",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "taoqi-portrait",
+    "characterId": "taoqi",
+    "type": "portrait",
+    "title": "Taoqi Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/6/66/Resonator_Taoqi.png/revision/latest?cb=20240523015200",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Taoqi",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -572,6 +1209,19 @@
     }
   },
   {
+    "id": "verina-portrait",
+    "characterId": "verina",
+    "type": "portrait",
+    "title": "Verina Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Resonator_Verina.png/revision/latest?cb=20240523015325",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Verina",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "xiangli-yao-card",
     "characterId": "xiangli-yao",
     "type": "card",
@@ -582,6 +1232,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "xiangli-yao-portrait",
+    "characterId": "xiangli-yao",
+    "type": "portrait",
+    "title": "Xiangli Yao Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/16/Resonator_Xiangli_Yao.png/revision/latest?cb=20260330182959",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -598,6 +1261,19 @@
     }
   },
   {
+    "id": "yangyang-portrait",
+    "characterId": "yangyang",
+    "type": "portrait",
+    "title": "Yangyang Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/c/cf/Resonator_Yangyang.png/revision/latest?cb=20240523011247",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "yinlin-card",
     "characterId": "yinlin",
     "type": "card",
@@ -608,6 +1284,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yinlin",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "yinlin-portrait",
+    "characterId": "yinlin",
+    "type": "portrait",
+    "title": "Yinlin Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/4/41/Resonator_Yinlin.png/revision/latest?cb=20240523015514",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yinlin",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -624,6 +1313,19 @@
     }
   },
   {
+    "id": "youhu-portrait",
+    "characterId": "youhu",
+    "type": "portrait",
+    "title": "Youhu Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/9/93/Resonator_Youhu.png/revision/latest?cb=20240929033850",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Youhu",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "yuanwu-card",
     "characterId": "yuanwu",
     "type": "card",
@@ -634,6 +1336,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yuanwu",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "yuanwu-portrait",
+    "characterId": "yuanwu",
+    "type": "portrait",
+    "title": "Yuanwu Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d6/Resonator_Yuanwu.png/revision/latest?cb=20240523015241",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yuanwu",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   },
   {
@@ -650,6 +1365,19 @@
     }
   },
   {
+    "id": "zani-portrait",
+    "characterId": "zani",
+    "type": "portrait",
+    "title": "Zani Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/1/12/Resonator_Zani.png/revision/latest?cb=20250429222139",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zani",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
+    }
+  },
+  {
     "id": "zhezhi-card",
     "characterId": "zhezhi",
     "type": "card",
@@ -660,6 +1388,19 @@
       "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zhezhi",
       "scrapedAt": "2026-06-02T19:30:43.185Z",
       "editor": "scripts/sync-fandom-data.ts"
+    }
+  },
+  {
+    "id": "zhezhi-portrait",
+    "characterId": "zhezhi",
+    "type": "portrait",
+    "title": "Zhezhi Portrait",
+    "localPath": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a0/Resonator_Zhezhi.png/revision/latest?cb=20240812052258",
+    "copyright": "Fandom / Kuro Games",
+    "source": {
+      "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zhezhi",
+      "scrapedAt": "2026-06-23T05:12:44.118Z",
+      "editor": "scripts/sync-character-portraits.ts"
     }
   }
 ]

@@ -135,6 +135,60 @@ export function aggregateVersionStats(params: {
   });
 }
 
+export function getFirstAppearanceVersion(params: {
+  characterId: string;
+  segments: StorySegment[];
+  storyAppearances: StoryAppearanceRow[];
+  storyDialogueStats: StoryDialogueRow[];
+}): string | null {
+  const { characterId, segments, storyAppearances, storyDialogueStats } = params;
+  const dialogueByQuest = sumDialogueByQuest(storyDialogueStats, characterId);
+  let earliest: string | null = null;
+
+  for (const segment of segments) {
+    const lineCount = dialogueByQuest.get(segment.id) ?? 0;
+    const appeared = didCharacterAppearInQuest({
+      characterId,
+      questId: segment.id,
+      storyAppearances,
+      dialogueLineCount: lineCount,
+    });
+    if (!appeared && lineCount <= 0) {
+      continue;
+    }
+    if (!earliest || compareVersion(segment.version, earliest) < 0) {
+      earliest = segment.version;
+    }
+  }
+
+  return earliest;
+}
+
+export function buildFirstAppearanceVersionMap(params: {
+  characters: Character[];
+  segments: StorySegment[];
+  storyAppearances: StoryAppearanceRow[];
+  storyDialogueStats: StoryDialogueRow[];
+}): Map<string, string | null> {
+  const { characters, segments, storyAppearances, storyDialogueStats } = params;
+  const map = new Map<string, string | null>();
+  for (const character of characters) {
+    if (isRoverCharacter(character.id)) {
+      continue;
+    }
+    map.set(
+      character.id,
+      getFirstAppearanceVersion({
+        characterId: character.id,
+        segments,
+        storyAppearances,
+        storyDialogueStats,
+      }),
+    );
+  }
+  return map;
+}
+
 function sumDialogueByQuest(rows: StoryDialogueRow[], characterId: string): Map<string, number> {
   const dialogueByQuest = new Map<string, number>();
   for (const row of rows) {

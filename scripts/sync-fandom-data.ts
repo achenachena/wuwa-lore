@@ -304,6 +304,31 @@ async function fetchWikitext(page: string): Promise<string> {
   return data.parse?.wikitext["*"] ?? "";
 }
 
+async function fetchFileUrl(fileTitle: string): Promise<string | null> {
+  type Res = {
+    query: {
+      pages: Record<
+        string,
+        {
+          missing?: boolean;
+          imageinfo?: Array<{ url?: string }>;
+        }
+      >;
+    };
+  };
+  const data = await fetchJson<Res>({
+    action: "query",
+    titles: fileTitle,
+    prop: "imageinfo",
+    iiprop: "url",
+  });
+  const page = Object.values(data.query.pages)[0];
+  if (page?.missing) {
+    return null;
+  }
+  return page?.imageinfo?.[0]?.url ?? null;
+}
+
 async function fetchCharacterImage(page: string): Promise<string | null> {
   type Page = {
     title: string;
@@ -437,7 +462,11 @@ async function main() {
 
   for (const name of characterNames) {
     const pageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(name).replace(/%20/g, "_")}`;
-    const [wikitext, imageUrl] = await Promise.all([fetchWikitext(name), fetchCharacterImage(name)]);
+    const [wikitext, imageUrl, portraitUrl] = await Promise.all([
+      fetchWikitext(name),
+      fetchCharacterImage(name),
+      fetchFileUrl(`File:Resonator ${name}.png`),
+    ]);
 
     const id = slugify(name);
     const rarity = Number(parseTemplateField(wikitext, "rarity") ?? 0);
@@ -479,6 +508,22 @@ async function main() {
         type: "card",
         title: `${name} Card`,
         localPath: imageUrl,
+        copyright: "Fandom / Kuro Games",
+        source: {
+          sourceUrl: pageUrl,
+          scrapedAt: nowIso,
+          editor: "scripts/sync-fandom-data.ts",
+        },
+      });
+    }
+
+    if (portraitUrl) {
+      imageRecords.push({
+        id: `${id}-portrait`,
+        characterId: id,
+        type: "portrait",
+        title: `${name} Portrait`,
+        localPath: portraitUrl,
         copyright: "Fandom / Kuro Games",
         source: {
           sourceUrl: pageUrl,

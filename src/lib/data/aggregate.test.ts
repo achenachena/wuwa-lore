@@ -3,6 +3,7 @@ import {
   aggregateVersionStats,
   aggregateVoiceLineStats,
   buildCharacterStorySegmentRows,
+  getFirstAppearanceVersion,
 } from "@/lib/data/aggregate";
 import type { Character, StoryAppearanceRow, StoryDialogueRow, StorySegment, VersionRecord, VoiceLineEntry } from "@/types/lore";
 
@@ -100,6 +101,52 @@ describe("aggregateVersionStats", () => {
 
     expect(rows.find((row) => row.version === "1.0")?.totalVoiceLines).toBe(0);
     expect(rows.find((row) => row.version === "1.1")?.totalVoiceLines).toBe(40);
+  });
+});
+
+describe("getFirstAppearanceVersion", () => {
+  test("uses earliest main-story segment instead of banner release version", () => {
+    const segments: StorySegment[] = [
+      {
+        id: "unknown-deja-vu",
+        wikiTitle: "Unknown Deja Vu",
+        nameZh: "未知的既感",
+        version: "3.0",
+        half: "a",
+        versionHalf: "3.0-a",
+        sortOrder: 0,
+      },
+      {
+        id: "voyage-star",
+        wikiTitle: "Voyage Star",
+        nameZh: "远航星",
+        version: "3.1",
+        half: "a",
+        versionHalf: "3.1-a",
+        sortOrder: 1,
+      },
+    ];
+    const storyAppearances: StoryAppearanceRow[] = [
+      {
+        characterId: "aemeath",
+        questId: "unknown-deja-vu",
+        wikiTitle: "Unknown Deja Vu",
+        nameZh: "未知的既感",
+        version: "3.0",
+        half: "a",
+        versionHalf: "3.0-a",
+      },
+    ];
+    const storyDialogueStats: StoryDialogueRow[] = [];
+
+    expect(
+      getFirstAppearanceVersion({
+        characterId: "aemeath",
+        segments,
+        storyAppearances,
+        storyDialogueStats,
+      }),
+    ).toBe("3.0");
   });
 });
 
