@@ -17,7 +17,9 @@ import {
   loadGeneratedStats,
   loadOptionalQuestAppearances,
   loadOptionalQuestCatalog,
+  loadOptionalQuestCoverage,
   loadOptionalQuestDialogueStats,
+  loadOptionalQuestUnmappedSpeakers,
   loadStoryAppearances,
   loadStoryDialogueStats,
   loadStorySegments,
@@ -227,11 +229,14 @@ export async function getCharacterDetailData(id: string) {
 }
 
 export async function getOptionalQuestStatsPageData(category: QuestCategory = "companion") {
-  const [characters, quests, appearances, dialogueStats, siteLocale, portraits] = await Promise.all([
+  const [characters, quests, appearances, dialogueStats, coverage, unmappedSpeakers, siteLocale, portraits] =
+    await Promise.all([
     loadCharacters(),
     loadOptionalQuestCatalog(),
     loadOptionalQuestAppearances(),
     loadOptionalQuestDialogueStats(),
+    loadOptionalQuestCoverage(),
+    loadOptionalQuestUnmappedSpeakers(),
     getSiteLocale(),
     getCharacterPortraitMap(),
   ]);
@@ -255,6 +260,8 @@ export async function getOptionalQuestStatsPageData(category: QuestCategory = "c
     category,
     quests: categoryQuests,
     ranking,
+    coverage,
+    unmappedSpeakers,
     characterPortraits: Object.fromEntries(portraits),
     questCounts: {
       companion: quests.filter((quest) => quest.category === "companion").length,

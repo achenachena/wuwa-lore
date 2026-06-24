@@ -28,12 +28,110 @@ export type OptionalQuestAppearanceRow = {
   questNameZh: string;
 };
 
+export type OptionalQuestCoverageRow = {
+  category: QuestCategory;
+  questCount: number;
+  questsWithDialogue: number;
+  questsWithPlayableDialogue: number;
+  totalRawLines: number;
+  playableCharacterLines: number;
+  unmappedLines: number;
+  playableCharacterCount: number;
+};
+
+export type UnmappedSpeakerRow = {
+  category: QuestCategory;
+  name: string;
+  lineCount: number;
+};
+
+const CATEGORY_PRIORITY: Record<QuestCategory, number> = {
+  companion: 0,
+  event: 1,
+  side: 2,
+};
+
+const UNMAPPED_SPEAKER_SKIP = /^(Speaker_\d+|Speaker_undefined|Narrator|问卷反馈)$/i;
+
 function questIdFor(category: QuestCategory, encoreStoryId: number): string {
   return `${category}-${encoreStoryId}`;
 }
 
 function storyName(story: { Name?: string; Title?: string }): string {
   return (story.Name ?? story.Title ?? "").trim();
+}
+
+function delay(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function createCoverageBuckets() {
+  const byCategory = new Map<
+    QuestCategory,
+    {
+      questCount: number;
+      questsWithDialogue: number;
+      questsWithPlayableDialogue: number;
+      totalRawLines: number;
+      playableCharacterLines: number;
+      playableCharacters: Set<string>;
+      unmappedSpeakers: Map<string, number>;
+    }
+  >();
+  for (const category of ["companion", "event", "side"] as QuestCategory[]) {
+    byCategory.set(category, {
+      questCount: 0,
+      questsWithDialogue: 0,
+      questsWithPlayableDialogue: 0,
+      totalRawLines: 0,
+      playableCharacterLines: 0,
+      playableCharacters: new Set(),
+      unmappedSpeakers: new Map(),
+    });
+  }
+  return byCategory;
+}
+
+function finalizeCoverage(
+  byCategory: Map<
+    QuestCategory,
+    {
+      questCount: number;
+      questsWithDialogue: number;
+      questsWithPlayableDialogue: number;
+      totalRawLines: number;
+      playableCharacterLines: number;
+      playableCharacters: Set<string>;
+      unmappedSpeakers: Map<string, number>;
+    }
+  >,
+): { coverage: OptionalQuestCoverageRow[]; unmappedSpeakers: UnmappedSpeakerRow[] } {
+  const coverage = (["companion", "event", "side"] as QuestCategory[]).map((category) => {
+    const bucket = byCategory.get(category)!;
+    return {
+      category,
+      questCount: bucket.questCount,
+      questsWithDialogue: bucket.questsWithDialogue,
+      questsWithPlayableDialogue: bucket.questsWithPlayableDialogue,
+      totalRawLines: bucket.totalRawLines,
+      playableCharacterLines: bucket.playableCharacterLines,
+      unmappedLines: bucket.totalRawLines - bucket.playableCharacterLines,
+      playableCharacterCount: bucket.playableCharacters.size,
+    };
+  });
+
+  const unmappedSpeakers: UnmappedSpeakerRow[] = [];
+  for (const category of ["companion", "event", "side"] as QuestCategory[]) {
+    const bucket = byCategory.get(category)!;
+    for (const [name, lineCount] of [...bucket.unmappedSpeakers.entries()]
+      .filter(([speaker]) => speaker.trim() && !UNMAPPED_SPEAKER_SKIP.test(speaker))
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 6)) {
+      unmappedSpeakers.push({ category, name, lineCount });
+    }
+  }
+
+  return { coverage, unmappedSpeakers };
 }
 
 export function buildOptionalQuestCatalog(params: {
@@ -47,21 +145,34 @@ export function buildOptionalQuestCatalog(params: {
     }
   }
 
+  const claimed = new Map<number, QuestCategory>();
   const quests: OptionalQuestRecord[] = [];
-  for (const category of Object.keys(ENCORE_OPTIONAL_QUEST_TYPE_IDS) as QuestCategory[]) {
+
+  for (const category of ["companion", "event", "side"] as QuestCategory[]) {
     for (const story of collectEncoreStoriesByTypeIds(
       params.zhStoryTypes,
       ENCORE_OPTIONAL_QUEST_TYPE_IDS[category],
     )) {
+      const existing = claimed.get(story.Id);
+      if (existing && CATEGORY_PRIORITY[existing] <= CATEGORY_PRIORITY[category]) {
+        continue;
+      }
+      claimed.set(story.Id, category);
       const nameZh = storyName(story);
       const nameEn = enNameById.get(story.Id) ?? nameZh;
-      quests.push({
+      const record: OptionalQuestRecord = {
         id: questIdFor(category, story.Id),
         category,
         encoreStoryId: story.Id,
         nameZh,
         nameEn,
-      });
+      };
+      const index = quests.findIndex((quest) => quest.encoreStoryId === story.Id);
+      if (index >= 0) {
+        quests[index] = record;
+      } else {
+        quests.push(record);
+      }
     }
   }
 
@@ -79,7 +190,13 @@ export async function syncOptionalQuestStatsForLocale(params: {
   quests: OptionalQuestRecord[];
   knownCharacterIds: Set<string>;
   enRoles: EncoreRole[];
-}): Promise<{ dialogueRows: OptionalQuestDialogueRow[]; appearanceRows: OptionalQuestAppearanceRow[] }> {
+  collectMetadata?: boolean;
+}): Promise<{
+  dialogueRows: OptionalQuestDialogueRow[];
+  appearanceRows: OptionalQuestAppearanceRow[];
+  coverage?: OptionalQuestCoverageRow[];
+  unmappedSpeakers?: UnmappedSpeakerRow[];
+}> {
   const localeRolesPayload = await fetchEncoreJson<{ roleList: EncoreRole[] }>(
     `${ENCORE_BASE}/${params.locale}/character`,
   );
@@ -91,8 +208,13 @@ export async function syncOptionalQuestStatsForLocale(params: {
 
   const dialogueRows: OptionalQuestDialogueRow[] = [];
   const appearanceKeys = new Set<string>();
+  const coverageBuckets = params.collectMetadata ? createCoverageBuckets() : null;
 
   for (const quest of params.quests) {
+    if (coverageBuckets) {
+      coverageBuckets.get(quest.category)!.questCount += 1;
+    }
+
     const detail = await fetchEncoreStoryDetail(params.locale, quest.encoreStoryId, {
       logFallback: false,
     });
@@ -105,22 +227,51 @@ export async function syncOptionalQuestStatsForLocale(params: {
     const questName = params.locale === "en" ? quest.nameEn : quest.nameZh;
     const questNameZh = quest.nameZh;
 
+    let questRaw = 0;
+    let questPlayable = 0;
+
     for (const [speaker, count] of speakerCounts.entries()) {
-      const characterId = resolveSpeaker(speaker);
-      if (!characterId || count <= 0) {
+      if (count <= 0) {
         continue;
       }
-      dialogueRows.push({
-        locale: params.locale,
-        category: quest.category,
-        characterId,
-        questId: quest.id,
-        questName,
-        questNameZh,
-        lineCount: count,
-        encoreStoryIds: [quest.encoreStoryId],
-      });
-      appearanceKeys.add(`${quest.category}::${characterId}::${quest.id}`);
+      questRaw += count;
+
+      const characterId = resolveSpeaker(speaker);
+      if (characterId) {
+        questPlayable += count;
+        if (coverageBuckets && params.locale === "zh-Hans") {
+          coverageBuckets.get(quest.category)!.playableCharacters.add(characterId);
+        }
+        dialogueRows.push({
+          locale: params.locale,
+          category: quest.category,
+          characterId,
+          questId: quest.id,
+          questName,
+          questNameZh,
+          lineCount: count,
+          encoreStoryIds: [quest.encoreStoryId],
+        });
+        appearanceKeys.add(`${quest.category}::${characterId}::${quest.id}`);
+        continue;
+      }
+
+      if (coverageBuckets && params.locale === "zh-Hans") {
+        const bucket = coverageBuckets.get(quest.category)!;
+        bucket.unmappedSpeakers.set(speaker, (bucket.unmappedSpeakers.get(speaker) ?? 0) + count);
+      }
+    }
+
+    if (coverageBuckets && params.locale === "zh-Hans") {
+      const bucket = coverageBuckets.get(quest.category)!;
+      bucket.totalRawLines += questRaw;
+      bucket.playableCharacterLines += questPlayable;
+      if (questRaw > 0) {
+        bucket.questsWithDialogue += 1;
+      }
+      if (questPlayable > 0) {
+        bucket.questsWithPlayableDialogue += 1;
+      }
     }
 
     await delay(50);
@@ -138,11 +289,12 @@ export async function syncOptionalQuestStatsForLocale(params: {
     };
   });
 
-  return { dialogueRows, appearanceRows };
-}
+  if (!coverageBuckets) {
+    return { dialogueRows, appearanceRows };
+  }
 
-function delay(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  const { coverage, unmappedSpeakers } = finalizeCoverage(coverageBuckets);
+  return { dialogueRows, appearanceRows, coverage, unmappedSpeakers };
 }
 
 export function mergeOptionalDialogueRows(rows: OptionalQuestDialogueRow[]): OptionalQuestDialogueRow[] {
@@ -187,12 +339,4 @@ export function dedupeOptionalAppearances(rows: OptionalQuestAppearanceRow[]): O
 export async function fetchEncoreStoryTypes(locale: EncoreLocale): Promise<EncoreStoryType[]> {
   const payload = await fetchEncoreJson<{ storyTypes: EncoreStoryType[] }>(`${ENCORE_BASE}/${locale}/story`);
   return payload.storyTypes;
-}
-
-export function summarizeOptionalQuestCounts(storyTypes: EncoreStoryType[]): Record<QuestCategory, number> {
-  return {
-    companion: collectEncoreStoriesByTypeIds(storyTypes, ENCORE_OPTIONAL_QUEST_TYPE_IDS.companion).length,
-    event: collectEncoreStoriesByTypeIds(storyTypes, ENCORE_OPTIONAL_QUEST_TYPE_IDS.event).length,
-    side: collectEncoreStoriesByTypeIds(storyTypes, ENCORE_OPTIONAL_QUEST_TYPE_IDS.side).length,
-  };
 }

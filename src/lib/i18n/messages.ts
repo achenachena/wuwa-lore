@@ -121,7 +121,7 @@ export const messages = {
     optionalQuests: {
       title: "Companion, Event & Side Quest Stats",
       description:
-        "Track character appearances and dialogue lines in companion stories (伴星), event quests (活动), and side quests (支线). Data from encore.moe.",
+        "Track playable character appearances and dialogue in companion stories, event quests, and side quests. Lines from encore.moe; companion/event appearances also include Fandom wiki infobox data.",
       companion: "Companion",
       event: "Event",
       side: "Side",
@@ -135,6 +135,9 @@ export const messages = {
       lines: "Lines",
       appearances: "Appearances",
       linesPerAppearance: "Lines / appearance",
+      coverageNote:
+        "Playable-character lines only · {playableChars} chars · {playableLines} lines · {unmappedLines} NPC/unmapped · {questsWithDialogue}/{questCount} quests with dialogue",
+      unmappedSpeakersHint: "Other speakers (non-playable, reference only)",
       sectionTitles: {
         companion: "Companion Story Appearances & Dialogue",
         event: "Event Quest Appearances & Dialogue",
@@ -268,7 +271,7 @@ export const messages = {
     optionalQuests: {
       title: "伴星 / 活动 / 支线统计",
       description:
-        "统计角色在伴星、活动任务与支线中的登场与台词数，数据来自 encore.moe。",
+        "统计可玩角色在伴星、活动与支线中的登场与台词。台词来自 encore.moe；伴星/活动登场另含 Fandom 维基 infobox 补充。",
       companion: "伴星",
       event: "活动",
       side: "支线",
@@ -282,6 +285,9 @@ export const messages = {
       lines: "台词",
       appearances: "登场",
       linesPerAppearance: "台词/登场",
+      coverageNote:
+        "仅统计可玩角色台词 · {playableChars} 人 · {playableLines} 句 · NPC/未映射 {unmappedLines} · 有台词任务 {questsWithDialogue}/{questCount}",
+      unmappedSpeakersHint: "其他说话人（非可玩角色，仅供参考）",
       sectionTitles: {
         companion: "伴星任务登场与台词",
         event: "活动任务登场与台词",

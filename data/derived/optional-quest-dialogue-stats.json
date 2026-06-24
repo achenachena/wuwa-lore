@@ -1,13 +1,137 @@
 {
-  "generatedAt": "2026-06-23T05:52:57.150Z",
+  "generatedAt": "2026-06-24T10:13:16.105Z",
   "source": {
     "name": "encore.moe",
     "countMethod": "optional_quest_dialogue_speaker_lines",
     "categories": {
       "companion": 12,
       "event": 45,
-      "side": 226
-    }
+      "side": 224
+    },
+    "coverage": [
+      {
+        "category": "companion",
+        "questCount": 12,
+        "questsWithDialogue": 12,
+        "questsWithPlayableDialogue": 12,
+        "totalRawLines": 6804,
+        "playableCharacterLines": 3588,
+        "unmappedLines": 3216,
+        "playableCharacterCount": 15
+      },
+      {
+        "category": "event",
+        "questCount": 45,
+        "questsWithDialogue": 44,
+        "questsWithPlayableDialogue": 31,
+        "totalRawLines": 1135,
+        "playableCharacterLines": 543,
+        "unmappedLines": 592,
+        "playableCharacterCount": 8
+      },
+      {
+        "category": "side",
+        "questCount": 224,
+        "questsWithDialogue": 218,
+        "questsWithPlayableDialogue": 28,
+        "totalRawLines": 11677,
+        "playableCharacterLines": 1062,
+        "unmappedLines": 10615,
+        "playableCharacterCount": 21
+      }
+    ],
+    "unmappedSpeakers": [
+      {
+        "category": "companion",
+        "name": "小盈",
+        "lineCount": 123
+      },
+      {
+        "category": "companion",
+        "name": "小女孩",
+        "lineCount": 90
+      },
+      {
+        "category": "companion",
+        "name": "贝诗",
+        "lineCount": 67
+      },
+      {
+        "category": "companion",
+        "name": "文叔",
+        "lineCount": 63
+      },
+      {
+        "category": "companion",
+        "name": "贝济",
+        "lineCount": 55
+      },
+      {
+        "category": "companion",
+        "name": "？？？",
+        "lineCount": 51
+      },
+      {
+        "category": "event",
+        "name": "桔梗",
+        "lineCount": 105
+      },
+      {
+        "category": "event",
+        "name": "波仔",
+        "lineCount": 83
+      },
+      {
+        "category": "event",
+        "name": "阿兰娜",
+        "lineCount": 42
+      },
+      {
+        "category": "event",
+        "name": "慌乱的学生",
+        "lineCount": 33
+      },
+      {
+        "category": "event",
+        "name": "卡托",
+        "lineCount": 23
+      },
+      {
+        "category": "event",
+        "name": "基诺乌",
+        "lineCount": 17
+      },
+      {
+        "category": "side",
+        "name": "景烛",
+        "lineCount": 216
+      },
+      {
+        "category": "side",
+        "name": "阿布",
+        "lineCount": 214
+      },
+      {
+        "category": "side",
+        "name": "马计",
+        "lineCount": 165
+      },
+      {
+        "category": "side",
+        "name": "思染",
+        "lineCount": 164
+      },
+      {
+        "category": "side",
+        "name": "索南",
+        "lineCount": 156
+      },
+      {
+        "category": "side",
+        "name": "马琪",
+        "lineCount": 154
+      }
+    ]
   },
   "rows": [
     {

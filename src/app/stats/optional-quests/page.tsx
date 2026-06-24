@@ -28,6 +28,8 @@ export default async function OptionalQuestStatsPage({ searchParams }: PageProps
         questCounts={pageData.questCounts}
         ranking={pageData.ranking}
         characterPortraits={pageData.characterPortraits}
+        coverage={pageData.coverage}
+        unmappedSpeakers={pageData.unmappedSpeakers}
         labels={t.optionalQuests}
       />
     </section>

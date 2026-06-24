@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-23T05:52:57.150Z",
+  "generatedAt": "2026-06-24T10:13:16.105Z",
   "source": {
     "name": "encore.moe",
     "categories": {
       "companion": 12,
       "event": 45,
-      "side": 226
+      "side": 224
     }
   },
   "quests": [
@@ -1226,20 +1226,6 @@
       "encoreStoryId": 157850000,
       "nameZh": "染秽之梦",
       "nameEn": "Dream Contagion"
-    },
-    {
-      "id": "side-159800004",
-      "category": "side",
-      "encoreStoryId": 159800004,
-      "nameZh": "拉古那急卖·四",
-      "nameEn": "Ragunna Sales Blitz IV"
-    },
-    {
-      "id": "side-159800005",
-      "category": "side",
-      "encoreStoryId": 159800005,
-      "nameZh": "拉古那急卖·五",
-      "nameEn": "Ragunna Sales Blitz V"
     },
     {
       "id": "side-161000000",

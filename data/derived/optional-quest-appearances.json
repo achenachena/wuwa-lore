@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-06-23T05:52:57.150Z",
+  "generatedAt": "2026-06-24T10:13:16.105Z",
   "source": {
-    "name": "encore.moe",
-    "appearanceRule": "optional_quest_dialogue_speakers",
+    "name": "encore.moe+fandom",
+    "appearanceRule": "optional_quest_dialogue_speakers_plus_fandom_infobox_companion_event",
     "categories": {
       "companion": 12,
       "event": 45,
-      "side": 226
-    }
+      "side": 224
+    },
+    "fandomAppearanceCount": 15
   },
   "rows": [
     {

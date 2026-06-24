@@ -29,6 +29,7 @@ import {
   optionalQuestAppearanceRowSchema,
   optionalQuestDialogueRowSchema,
   optionalQuestRecordSchema,
+  questCategorySchema,
   storyAppearanceRowSchema,
   storyDialogueRowSchema,
   storySegmentSchema,
@@ -234,6 +235,74 @@ export async function loadOptionalQuestDialogueStats(params?: {
     return filtered.filter((row) => row.locale === locale);
   }
   return filtered.filter((row) => row.locale === params.locale);
+}
+
+export async function loadOptionalQuestCoverage(): Promise<
+  Array<{
+    category: "companion" | "event" | "side";
+    questCount: number;
+    questsWithDialogue: number;
+    questsWithPlayableDialogue: number;
+    totalRawLines: number;
+    playableCharacterLines: number;
+    unmappedLines: number;
+    playableCharacterCount: number;
+  }> | null
+> {
+  const filePath = path.join(root, "data", "derived", "optional-quest-dialogue-stats.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z
+    .object({
+      source: z
+        .object({
+          coverage: z
+            .array(
+              z.object({
+                category: questCategorySchema,
+                questCount: z.number().int(),
+                questsWithDialogue: z.number().int(),
+                questsWithPlayableDialogue: z.number().int(),
+                totalRawLines: z.number().int(),
+                playableCharacterLines: z.number().int(),
+                unmappedLines: z.number().int(),
+                playableCharacterCount: z.number().int(),
+              }),
+            )
+            .optional(),
+        })
+        .optional(),
+    })
+    .safeParse(raw);
+  return parsed.success ? (parsed.data.source?.coverage ?? null) : null;
+}
+
+export async function loadOptionalQuestUnmappedSpeakers(): Promise<
+  Array<{
+    category: "companion" | "event" | "side";
+    name: string;
+    lineCount: number;
+  }> | null
+> {
+  const filePath = path.join(root, "data", "derived", "optional-quest-dialogue-stats.json");
+  const raw = await readJsonFile<unknown>(filePath);
+  const parsed = z
+    .object({
+      source: z
+        .object({
+          unmappedSpeakers: z
+            .array(
+              z.object({
+                category: questCategorySchema,
+                name: z.string(),
+                lineCount: z.number().int(),
+              }),
+            )
+            .optional(),
+        })
+        .optional(),
+    })
+    .safeParse(raw);
+  return parsed.success ? (parsed.data.source?.unmappedSpeakers ?? null) : null;
 }
 
 export async function loadOptionalQuestAppearances(): Promise<OptionalQuestAppearanceRow[]> {
