@@ -194,3 +194,10 @@ export interface VersionHalfRankingRow {
   appearanceCount: number;
   linesPerAppearance: number | null;
 }
+
+export interface CharacterWordCloudRow {
+  characterId: string;
+  locale: "en" | "zh-Hans";
+  lineCount: number;
+  terms: Array<{ term: string; count: number }>;
+}

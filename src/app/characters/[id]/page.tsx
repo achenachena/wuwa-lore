@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CharacterOptionalQuestStats } from "@/components/character-optional-quest-stats";
 import { CharacterStoryStats } from "@/components/character-story-stats";
+import { CharacterWordCloud } from "@/components/character-word-cloud";
 import { CharacterAvatar } from "@/components/character-avatar";
 import { getCharacterDetailData } from "@/lib/data";
 import { getCharacterDisplayName } from "@/lib/i18n/character-names";
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: CharacterDetailProps): Promis
 
 export default async function CharacterDetailPage({ params }: CharacterDetailProps) {
   const { id } = await params;
-  const [locale, t, { character, characterImages, storySegments, optionalQuestStats, portraitUrl, firstAppearanceVersion }] =
+  const [locale, t, { character, characterImages, storySegments, optionalQuestStats, portraitUrl, firstAppearanceVersion, wordCloud }] =
     await Promise.all([getSiteLocale(), getMessages(), getCharacterDetailData(id)]);
 
   if (!character) {
@@ -95,6 +96,23 @@ export default async function CharacterDetailPage({ params }: CharacterDetailPro
           <p className="mt-1 font-medium">{firstAppearanceVersion ?? t.common.dash}</p>
         </article>
       </div>
+
+      <article className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h2 className="text-lg font-semibold">{t.characterDetail.wordCloudTitle}</h2>
+        <div className="mt-4">
+          <CharacterWordCloud
+            terms={wordCloud?.terms ?? []}
+            lineCount={wordCloud?.lineCount ?? 0}
+            labels={{
+              title: t.characterDetail.wordCloudTitle,
+              description: t.characterDetail.wordCloudDescription,
+              lineCount: t.characterDetail.wordCloudLineCount,
+              termCount: t.characterDetail.wordCloudTermCount,
+              empty: t.characterDetail.wordCloudEmpty,
+            }}
+          />
+        </div>
+      </article>
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">{t.characterDetail.storySectionTitle}</h2>

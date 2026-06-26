@@ -20,12 +20,14 @@ import {
   loadOptionalQuestCoverage,
   loadOptionalQuestDialogueStats,
   loadOptionalQuestUnmappedSpeakers,
+  loadCharacterWordCloud,
   loadStoryAppearances,
   loadStoryDialogueStats,
   loadStorySegments,
   loadVersions,
 } from "@/lib/data/loaders";
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
+import { toEncoreLocale } from "@/lib/i18n/locale";
 import { getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter, toVoiceDataLocale, type SiteLocale } from "@/lib/i18n/locale";
 import type { QuestCategory, VoiceLineStatRow } from "@/types/lore";
@@ -169,6 +171,9 @@ export async function getCharacterListData() {
 }
 
 export async function getCharacterDetailData(id: string) {
+  const siteLocale = await getSiteLocale();
+  const encoreLocale = toEncoreLocale(siteLocale);
+
   const [
     characters,
     images,
@@ -179,6 +184,7 @@ export async function getCharacterDetailData(id: string) {
     optionalAppearances,
     optionalDialogueStats,
     portraits,
+    wordCloud,
   ] = await Promise.all([
     loadCharacters(),
     loadCharacterImages(),
@@ -189,6 +195,7 @@ export async function getCharacterDetailData(id: string) {
     loadOptionalQuestAppearances(),
     loadOptionalQuestDialogueStats(),
     getCharacterPortraitMap(),
+    loadCharacterWordCloud(id, encoreLocale),
   ]);
   const character = characters.find((item) => item.id === id);
   const characterImages = images.filter((item) => item.characterId === id);
@@ -225,6 +232,7 @@ export async function getCharacterDetailData(id: string) {
     optionalQuestStats,
     portraitUrl: portraits.get(id) ?? null,
     firstAppearanceVersion,
+    wordCloud,
   };
 }
 

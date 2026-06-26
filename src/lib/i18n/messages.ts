@@ -87,6 +87,12 @@ export const messages = {
       noProfile: "No English profile available.",
       imagesTitle: "Images",
       noImages: "No images registered for this character.",
+      wordCloudTitle: "Dialogue Word Cloud",
+      wordCloudDescription:
+        "Most frequent terms from this character's lines across main story, companion/event/side quests, and UI voicelines.",
+      wordCloudLineCount: "Based on {count} dialogue lines",
+      wordCloudTermCount: "Top {count} terms",
+      wordCloudEmpty: "Not enough dialogue text to build a word cloud yet.",
     },
     versionStats: {
       title: "Version Stats",
@@ -237,6 +243,11 @@ export const messages = {
       noProfile: "暂无中文简介。",
       imagesTitle: "图片",
       noImages: "该角色暂无图片。",
+      wordCloudTitle: "台词词云",
+      wordCloudDescription: "汇总该角色在主线、伴星/活动/支线及系统语音中的台词，展示高频词语。",
+      wordCloudLineCount: "基于 {count} 条台词",
+      wordCloudTermCount: "展示前 {count} 个高频词",
+      wordCloudEmpty: "台词文本不足，暂无法生成词云。",
     },
     versionStats: {
       title: "版本统计",

@@ -184,3 +184,15 @@ export const voiceLineDetailRowSchema = z.object({
         })),
     ),
 });
+
+export const characterWordCloudRowSchema = z.object({
+  characterId: z.string().min(1),
+  locale: z.enum(["en", "zh-Hans"]),
+  lineCount: z.number().int().min(0),
+  terms: z.array(
+    z.object({
+      term: z.string().min(1),
+      count: z.number().int().min(1),
+    }),
+  ),
+});

@@ -20,6 +20,7 @@ import type {
   VoiceLineDetailRow,
   VoiceLineEntry,
   VoiceLineStatRow,
+  CharacterWordCloudRow,
 } from "@/types/lore";
 import {
   characterSchema,
@@ -37,6 +38,7 @@ import {
   versionHalfVoiceRowSchema,
   versionSchema,
   voiceLineDetailRowSchema,
+  characterWordCloudRowSchema,
 } from "@/lib/data/schemas";
 
 const root = process.cwd();
@@ -97,6 +99,20 @@ export async function loadVoiceLineDetails(): Promise<VoiceLineDetailRow[]> {
   const raw = await readJsonFile<unknown>(filePath);
   const parsed = z.object({ rows: z.array(voiceLineDetailRowSchema) }).parse(raw);
   return parsed.rows;
+}
+
+export async function loadCharacterWordCloud(
+  characterId: string,
+  locale: EncoreLocale,
+): Promise<CharacterWordCloudRow | null> {
+  const filePath = path.join(root, "data", "derived", "character-word-clouds.json");
+  try {
+    const raw = await readJsonFile<unknown>(filePath);
+    const parsed = z.object({ rows: z.array(characterWordCloudRowSchema) }).parse(raw);
+    return parsed.rows.find((row) => row.characterId === characterId && row.locale === locale) ?? null;
+  } catch {
+    return null;
+  }
 }
 
 export async function loadValidationReport() {
