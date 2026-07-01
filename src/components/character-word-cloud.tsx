@@ -1,14 +1,17 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
-type WordCloudTerm = {
-  term: string;
-  count: number;
-};
+import {
+  decoratePlacedWords,
+  hashString,
+  prepareWordCloudWords,
+  type PlacedWordCloudTerm,
+  type WordCloudInput,
+} from "@/lib/text/word-cloud-layout";
 
 type Props = {
-  terms: WordCloudTerm[];
+  terms: WordCloudInput[];
   lineCount: number;
   labels: {
     title: string;
@@ -19,80 +22,75 @@ type Props = {
   };
 };
 
-const COLORS = [
-  "#6d28d9",
-  "#1d4ed8",
-  "#047857",
-  "#b45309",
-  "#be123c",
-  "#0e7490",
-  "#4338ca",
-  "#0f766e",
-  "#c2410c",
-  "#7c3aed",
-];
+type CloudDimensions = {
+  width: number;
+  height: number;
+};
 
-const MIN_FONT_PX = 13;
-const MAX_FONT_PX = 56;
-
-function hashString(value: string): number {
-  let hash = 0;
-  for (let index = 0; index < value.length; index += 1) {
-    hash = (hash * 31 + value.charCodeAt(index)) >>> 0;
-  }
-  return hash;
-}
-
-function scaleFontSize(count: number, minCount: number, maxCount: number): number {
-  if (maxCount <= minCount) {
-    return (MIN_FONT_PX + MAX_FONT_PX) / 2;
-  }
-  const normalized =
-    (Math.log(count) - Math.log(minCount)) / (Math.log(maxCount) - Math.log(minCount));
-  const clamped = Math.max(0, Math.min(1, normalized));
-  return MIN_FONT_PX + clamped * (MAX_FONT_PX - MIN_FONT_PX);
-}
-
-function fontWeightForRatio(ratio: number): number {
-  if (ratio >= 0.82) {
-    return 800;
-  }
-  if (ratio >= 0.62) {
-    return 700;
-  }
-  if (ratio >= 0.42) {
-    return 600;
-  }
-  if (ratio >= 0.24) {
-    return 500;
-  }
-  return 400;
-}
+const FONT_FAMILY = 'system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif';
 
 export function CharacterWordCloud({ terms, lineCount, labels }: Props) {
-  const layout = useMemo(() => {
-    if (terms.length === 0) {
-      return [];
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [dimensions, setDimensions] = useState<CloudDimensions>({ width: 640, height: 380 });
+  const [placedWords, setPlacedWords] = useState<PlacedWordCloudTerm[]>([]);
+
+  const preparedWords = useMemo(() => prepareWordCloudWords(terms), [terms]);
+
+  useEffect(() => {
+    const element = containerRef.current;
+    if (!element) {
+      return;
     }
 
-    const maxCount = terms[0]?.count ?? 1;
-    const minCount = terms[terms.length - 1]?.count ?? 1;
+    const updateSize = () => {
+      const width = Math.max(300, Math.floor(element.clientWidth));
+      setDimensions({
+        width,
+        height: Math.max(300, Math.min(420, Math.round(width * 0.62))),
+      });
+    };
 
-    return [...terms]
-      .map((item) => {
-        const ratio = maxCount === minCount ? 1 : (item.count - minCount) / (maxCount - minCount);
-        const fontSizePx = scaleFontSize(item.count, minCount, maxCount);
-        return {
-          ...item,
-          ratio,
-          fontSizePx,
-          fontWeight: fontWeightForRatio(ratio),
-          color: COLORS[hashString(item.term) % COLORS.length],
-          order: hashString(item.term),
-        };
-      })
-      .sort((left, right) => left.order - right.order);
-  }, [terms]);
+    updateSize();
+    const observer = new ResizeObserver(updateSize);
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (preparedWords.length === 0) {
+      setPlacedWords([]);
+      return;
+    }
+
+    let cancelled = false;
+
+    void import("d3-cloud").then(({ default: cloud }) => {
+      const layout = cloud<{ text: string; count: number; size: number; ratio: number }>()
+        .size([dimensions.width, dimensions.height])
+        .words(preparedWords)
+        .padding(5)
+        .spiral("archimedean")
+        .rotate((word, index) => {
+          if (index === 0) {
+            return 0;
+          }
+          return hashString(word.text) % 9 === 0 ? 90 : 0;
+        })
+        .font(FONT_FAMILY)
+        .fontSize((word) => word.size)
+        .on("end", (words) => {
+          if (!cancelled) {
+            setPlacedWords(decoratePlacedWords(words));
+          }
+        });
+
+      layout.start();
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [preparedWords, dimensions]);
 
   if (terms.length === 0) {
     return <p className="mt-2 text-sm text-zinc-500">{labels.empty}</p>;
@@ -106,28 +104,37 @@ export function CharacterWordCloud({ terms, lineCount, labels }: Props) {
         {labels.termCount.replace("{count}", String(terms.length))}
       </p>
       <div
-        className="relative min-h-[220px] overflow-hidden rounded-xl border border-zinc-200 bg-gradient-to-br from-zinc-50 via-white to-zinc-100 px-4 py-8"
+        ref={containerRef}
+        className="overflow-hidden rounded-xl border border-zinc-200 bg-white"
         role="img"
         aria-label={labels.title}
       >
-        <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center leading-none">
-          {layout.map((item) => (
-            <span
-              key={item.term}
-              className="inline-block cursor-default select-none whitespace-nowrap transition-transform duration-150 hover:scale-105"
-              style={{
-                fontSize: `${item.fontSizePx}px`,
-                fontWeight: item.fontWeight,
-                color: item.color,
-                lineHeight: 1.05,
-                padding: `${Math.max(2, item.fontSizePx * 0.08)}px ${Math.max(3, item.fontSizePx * 0.12)}px`,
-              }}
-              title={`${item.term}: ${item.count}`}
-            >
-              {item.term}
-            </span>
-          ))}
-        </div>
+        <svg
+          width={dimensions.width}
+          height={dimensions.height}
+          viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
+          className="mx-auto block"
+        >
+          <rect width="100%" height="100%" fill="#ffffff" />
+          <g transform={`translate(${dimensions.width / 2}, ${dimensions.height / 2})`}>
+            {placedWords.map((word) => (
+              <text
+                key={word.term}
+                transform={`translate(${word.x}, ${word.y}) rotate(${word.rotate})`}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontFamily={FONT_FAMILY}
+                fontSize={word.fontSize}
+                fontWeight={word.fontWeight}
+                fill={word.color}
+                className="cursor-default select-none"
+              >
+                <title>{`${word.term}: ${word.count}`}</title>
+                {word.term}
+              </text>
+            ))}
+          </g>
+        </svg>
       </div>
     </div>
   );

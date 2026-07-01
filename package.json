@@ -28,6 +28,7 @@
     "data:refresh-all": "npm run data:sync-stories && npm run data:sync-optional-quests && npm run data:generate && npm run data:validate && npm run data:audit-stories"
   },
   "dependencies": {
+    "d3-cloud": "^1.2.9",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/d3-cloud": "^1.2.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
