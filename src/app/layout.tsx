@@ -19,21 +19,35 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getMessages();
+  const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
   return {
-    title: t.siteTitle,
+    title: {
+      default: t.siteTitle,
+      template: `%s | ${t.siteTitle}`,
+    },
     description: t.siteTagline,
+    keywords: t.siteKeywords,
     metadataBase: new URL(siteUrl),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
     openGraph: {
       title: t.siteTitle,
       description: t.siteTagline,
       type: "website",
       url: siteUrl,
+      locale: locale === "zh" ? "zh_CN" : "en_US",
+      siteName: t.siteTitle,
     },
     twitter: {
       card: "summary_large_image",
       title: t.siteTitle,
       description: t.siteTagline,
+    },
+    alternates: {
+      canonical: siteUrl,
     },
   };
 }

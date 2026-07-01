@@ -1,9 +1,16 @@
 import { NextResponse } from "next/server";
 
+import { isProduction } from "@/lib/security/headers";
 import { SITE_LOCALE_COOKIE, type SiteLocale } from "@/lib/i18n/locale";
 
 export async function POST(request: Request) {
-  const body = (await request.json()) as { locale?: string };
+  let body: { locale?: string };
+  try {
+    body = (await request.json()) as { locale?: string };
+  } catch {
+    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+  }
+
   if (body.locale !== "en" && body.locale !== "zh") {
     return NextResponse.json({ error: "Invalid locale" }, { status: 400 });
   }
@@ -13,6 +20,8 @@ export async function POST(request: Request) {
     path: "/",
     maxAge: 60 * 60 * 24 * 365,
     sameSite: "lax",
+    httpOnly: true,
+    secure: isProduction(),
   });
   return response;
 }

@@ -4,6 +4,7 @@ import {
   loadSourceDiffReport,
   loadValidationReport,
 } from "@/lib/data/loaders";
+import { isProduction } from "@/lib/security/headers";
 
 export async function GET() {
   try {
@@ -17,6 +18,16 @@ export async function GET() {
     const missingSourceRatio =
       quality.actualRows > 0 ? quality.missingSourceRows / quality.actualRows : 0;
     const ok = validation.ok && (sourceDiff?.summary.ok ?? true);
+
+    if (isProduction()) {
+      return Response.json({
+        ok,
+        generatedAt: validation.generatedAt,
+        warnings: {
+          highMissingSourceRatio: missingSourceRatio > 0.2,
+        },
+      });
+    }
 
     return Response.json({
       ok,
@@ -42,13 +53,7 @@ export async function GET() {
         : null,
       changes,
     });
-  } catch (error) {
-    return Response.json(
-      {
-        ok: false,
-        error: error instanceof Error ? error.message : "Unknown error",
-      },
-      { status: 503 },
-    );
+  } catch {
+    return Response.json({ ok: false }, { status: 503 });
   }
 }
