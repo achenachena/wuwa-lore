@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-24T10:13:16.105Z",
+  "generatedAt": "2026-07-11T23:51:01.168Z",
   "source": {
     "name": "encore.moe",
     "categories": {
       "companion": 12,
       "event": 45,
-      "side": 224
+      "side": 254
     }
   },
   "quests": [
@@ -428,6 +428,13 @@
       "encoreStoryId": 11900016,
       "nameZh": "重嶂轶闻",
       "nameEn": "Lores Beyond the Ranges"
+    },
+    {
+      "id": "side-102750000",
+      "category": "side",
+      "encoreStoryId": 102750000,
+      "nameZh": "???",
+      "nameEn": "???"
     },
     {
       "id": "side-106000000",
@@ -1081,6 +1088,20 @@
       "nameEn": "The Last Knight"
     },
     {
+      "id": "side-147000006",
+      "category": "side",
+      "encoreStoryId": 147000006,
+      "nameZh": "潜在风险：致富好项目·一",
+      "nameEn": "Potential Risk: A Road to Riches I"
+    },
+    {
+      "id": "side-147750001",
+      "category": "side",
+      "encoreStoryId": 147750001,
+      "nameZh": "四时之苑",
+      "nameEn": "Garden of Seasons"
+    },
+    {
       "id": "side-147900000",
       "category": "side",
       "encoreStoryId": 147900000,
@@ -1200,6 +1221,13 @@
       "nameEn": "Sixteen Centimillion Bits"
     },
     {
+      "id": "side-153750000",
+      "category": "side",
+      "encoreStoryId": 153750000,
+      "nameZh": "“五狐山”下",
+      "nameEn": "At the Foot of Five-Fox Mountain"
+    },
+    {
       "id": "side-157700000",
       "category": "side",
       "encoreStoryId": 157700000,
@@ -1270,6 +1298,20 @@
       "nameEn": "Where to Watch the Fireworks Show?"
     },
     {
+      "id": "side-164750000",
+      "category": "side",
+      "encoreStoryId": 164750000,
+      "nameZh": "悠然一日",
+      "nameEn": "A Chill Day Out"
+    },
+    {
+      "id": "side-164750001",
+      "category": "side",
+      "encoreStoryId": 164750001,
+      "nameZh": "定玄之外·其一",
+      "nameEn": "More Than a Warden: Part I"
+    },
+    {
       "id": "side-165000001",
       "category": "side",
       "encoreStoryId": 165000001,
@@ -1282,6 +1324,20 @@
       "encoreStoryId": 165000002,
       "nameZh": "岛上的面具人",
       "nameEn": "Woman in Mask"
+    },
+    {
+      "id": "side-165750000",
+      "category": "side",
+      "encoreStoryId": 165750000,
+      "nameZh": "失落的味道",
+      "nameEn": "Lost Taste"
+    },
+    {
+      "id": "side-165750002",
+      "category": "side",
+      "encoreStoryId": 165750002,
+      "nameZh": "不白之罪",
+      "nameEn": "Silence of the Guilty"
     },
     {
       "id": "side-165850000",
@@ -1312,6 +1368,13 @@
       "nameEn": "Pulses of the Plains"
     },
     {
+      "id": "side-169750002",
+      "category": "side",
+      "encoreStoryId": 169750002,
+      "nameZh": "失踪事件：今州来客",
+      "nameEn": "Disappearance Case: The Visitor from Jinzhou"
+    },
+    {
       "id": "side-170700000",
       "category": "side",
       "encoreStoryId": 170700000,
@@ -1338,6 +1401,20 @@
       "encoreStoryId": 171750009,
       "nameZh": "追迹阿维纽林",
       "nameEn": "Avinoleum Footsteps"
+    },
+    {
+      "id": "side-172750000",
+      "category": "side",
+      "encoreStoryId": 172750000,
+      "nameZh": "超级云帛机骑挑战",
+      "nameEn": "The Super, Ultra, Extreme... Super Challenge!"
+    },
+    {
+      "id": "side-172750002",
+      "category": "side",
+      "encoreStoryId": 172750002,
+      "nameZh": "耳畔终于安静",
+      "nameEn": "Silence at Last"
     },
     {
       "id": "side-176750000",
@@ -1380,6 +1457,20 @@
       "encoreStoryId": 176800029,
       "nameZh": "钴蓝雪线的订单",
       "nameEn": "A Snowbound Order from Cobalt Blue"
+    },
+    {
+      "id": "side-180000001",
+      "category": "side",
+      "encoreStoryId": 180000001,
+      "nameZh": "战火炊烟",
+      "nameEn": "The Smoke Still Rises"
+    },
+    {
+      "id": "side-180000002",
+      "category": "side",
+      "encoreStoryId": 180000002,
+      "nameZh": "小身材，大麻烦",
+      "nameEn": "Small But Mighty"
     },
     {
       "id": "side-181700012",
@@ -1445,11 +1536,53 @@
       "nameEn": "Thank you, and farewell, my other self"
     },
     {
+      "id": "side-182750000",
+      "category": "side",
+      "encoreStoryId": 182750000,
+      "nameZh": "潜在风险：致富好项目·二",
+      "nameEn": "Potential Risk: A Road to Riches II"
+    },
+    {
       "id": "side-186700000",
       "category": "side",
       "encoreStoryId": 186700000,
       "nameZh": "暗海勘查",
       "nameEn": "Deep Sea Survey"
+    },
+    {
+      "id": "side-188750000",
+      "category": "side",
+      "encoreStoryId": 188750000,
+      "nameZh": "雾隐阁·烟海囿间",
+      "nameEn": "Fogveil Pagoda - Fuming Archive Chamber"
+    },
+    {
+      "id": "side-188750001",
+      "category": "side",
+      "encoreStoryId": 188750001,
+      "nameZh": "雾隐阁·逐影囿间",
+      "nameEn": "Fogveil Pagoda - Hunting Chamber"
+    },
+    {
+      "id": "side-188750002",
+      "category": "side",
+      "encoreStoryId": 188750002,
+      "nameZh": "雾隐阁·傀儡囿间",
+      "nameEn": "Fogveil Pagoda - Puppet Chamber"
+    },
+    {
+      "id": "side-188750003",
+      "category": "side",
+      "encoreStoryId": 188750003,
+      "nameZh": "雾隐阁·虚映囿间",
+      "nameEn": "Fogveil Pagoda - Shadowcast Chamber"
+    },
+    {
+      "id": "side-188750004",
+      "category": "side",
+      "encoreStoryId": 188750004,
+      "nameZh": "雾隐阁·巧匣囿间",
+      "nameEn": "Fogveil Pagoda - Replica Chamber"
     },
     {
       "id": "side-189000001",
@@ -1578,6 +1711,13 @@
       "nameEn": "Morning Star: Those Who Remain in the Night Part II"
     },
     {
+      "id": "side-191750001",
+      "category": "side",
+      "encoreStoryId": 191750001,
+      "nameZh": "危构悬天问丹心·后日谈",
+      "nameEn": "Faithful Heart Tested at Skyfall: Epilogue"
+    },
+    {
       "id": "side-195700000",
       "category": "side",
       "encoreStoryId": 195700000,
@@ -1704,6 +1844,20 @@
       "nameEn": "Graduation Trip"
     },
     {
+      "id": "side-263750001",
+      "category": "side",
+      "encoreStoryId": 263750001,
+      "nameZh": "归期未有期（一）",
+      "nameEn": "No Date for Return I"
+    },
+    {
+      "id": "side-263750002",
+      "category": "side",
+      "encoreStoryId": 263750002,
+      "nameZh": "归期未有期（一）",
+      "nameEn": "No Date for Return I"
+    },
+    {
       "id": "side-317750001",
       "category": "side",
       "encoreStoryId": 317750001,
@@ -1718,11 +1872,60 @@
       "nameEn": "Squeezy not Smiley"
     },
     {
+      "id": "side-320750017",
+      "category": "side",
+      "encoreStoryId": 320750017,
+      "nameZh": "不改旧时影",
+      "nameEn": "Shape of Yesterday"
+    },
+    {
       "id": "side-320800006",
       "category": "side",
       "encoreStoryId": 320800006,
       "nameZh": "帮切里送药",
       "nameEn": "Help Cherry hand out the tonic"
+    },
+    {
+      "id": "side-686000000",
+      "category": "side",
+      "encoreStoryId": 686000000,
+      "nameZh": "金兽起舞，八方来财",
+      "nameEn": "Smeltguard Dances, Fortune Surges"
+    },
+    {
+      "id": "side-686000001",
+      "category": "side",
+      "encoreStoryId": 686000001,
+      "nameZh": "雾灯夜行",
+      "nameEn": "A Street Lighter's Night Walk"
+    },
+    {
+      "id": "side-686750001",
+      "category": "side",
+      "encoreStoryId": 686750001,
+      "nameZh": "实战考核",
+      "nameEn": "Combat Qualification"
+    },
+    {
+      "id": "side-686750002",
+      "category": "side",
+      "encoreStoryId": 686750002,
+      "nameZh": "岂曰无衣，与机同袍",
+      "nameEn": "Autopuppets in Arms"
+    },
+    {
+      "id": "side-686750004",
+      "category": "side",
+      "encoreStoryId": 686750004,
+      "nameZh": "正是河豚跃上时",
+      "nameEn": "Jump Puffs, Jump!"
+    },
+    {
+      "id": "side-686750005",
+      "category": "side",
+      "encoreStoryId": 686750005,
+      "nameZh": "反残象动能投射装置",
+      "nameEn": "Anti-TD Kinetic Stake"
     },
     {
       "id": "side-692850000",
@@ -1954,6 +2157,13 @@
       "encoreStoryId": 936850001,
       "nameZh": "战陵追痕",
       "nameEn": "Uncovering Past Heroes"
+    },
+    {
+      "id": "side-938750000",
+      "category": "side",
+      "encoreStoryId": 938750000,
+      "nameZh": "修补之心",
+      "nameEn": "Heart of Repair"
     },
     {
       "id": "side-939850002",

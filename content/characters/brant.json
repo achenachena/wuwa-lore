@@ -1,19 +1,17 @@
 {
   "id": "brant",
   "name": "Brant",
-  "aliases": [
-    "布兰特"
-  ],
+  "aliases": [],
   "element": "Fusion",
   "weapon": "Sword",
   "faction": "Ragunna",
   "rarity": 5,
   "releaseVersion": "2.1",
-  "profile": "Beneath his flamboyant persona lies a genuine heart, deeply devoted to his family and companions. His life is dedicated to securing a safe haven for the Troupe's members|His introduction on the Official Website.}}",
+  "profile": "Beneath his flamboyant persona lies a genuine heart, deeply devoted to his family and companions. His life is dedicated to securing a safe haven for the Troupe's members|Introduction on the Official Website.}}",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Brant",
-    "scrapedAt": "2026-06-02T19:30:43.185Z",
+    "scrapedAt": "2026-07-11T23:46:56.240Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

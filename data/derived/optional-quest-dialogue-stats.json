@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-24T10:13:16.105Z",
+  "generatedAt": "2026-07-11T23:51:01.168Z",
   "source": {
     "name": "encore.moe",
     "countMethod": "optional_quest_dialogue_speaker_lines",
     "categories": {
       "companion": 12,
       "event": 45,
-      "side": 224
+      "side": 254
     },
     "coverage": [
       {
@@ -31,13 +31,13 @@
       },
       {
         "category": "side",
-        "questCount": 224,
-        "questsWithDialogue": 218,
-        "questsWithPlayableDialogue": 28,
-        "totalRawLines": 11677,
-        "playableCharacterLines": 1062,
-        "unmappedLines": 10615,
-        "playableCharacterCount": 21
+        "questCount": 254,
+        "questsWithDialogue": 248,
+        "questsWithPlayableDialogue": 32,
+        "totalRawLines": 13373,
+        "playableCharacterLines": 1186,
+        "unmappedLines": 12187,
+        "playableCharacterCount": 23
       }
     ],
     "unmappedSpeakers": [
@@ -103,13 +103,18 @@
       },
       {
         "category": "side",
+        "name": "阿布",
+        "lineCount": 350
+      },
+      {
+        "category": "side",
         "name": "景烛",
         "lineCount": 216
       },
       {
         "category": "side",
-        "name": "阿布",
-        "lineCount": 214
+        "name": "机巧伶",
+        "lineCount": 180
       },
       {
         "category": "side",
@@ -125,11 +130,6 @@
         "category": "side",
         "name": "索南",
         "lineCount": 156
-      },
-      {
-        "category": "side",
-        "name": "马琪",
-        "lineCount": 154
       }
     ]
   },
@@ -684,6 +684,30 @@
       "lineCount": 95,
       "encoreStoryIds": [
         880000011
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "danjin",
+      "questId": "side-191750001",
+      "questName": "危构悬天问丹心·后日谈",
+      "questNameZh": "危构悬天问丹心·后日谈",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        191750001
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "danjin",
+      "questId": "side-191750001",
+      "questName": "Faithful Heart Tested at Skyfall: Epilogue",
+      "questNameZh": "危构悬天问丹心·后日谈",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        191750001
       ]
     },
     {
@@ -1551,6 +1575,18 @@
       ]
     },
     {
+      "locale": "en",
+      "category": "side",
+      "characterId": "mortefi",
+      "questId": "side-686000000",
+      "questName": "Smeltguard Dances, Fortune Surges",
+      "questNameZh": "金兽起舞，八方来财",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        686000000
+      ]
+    },
+    {
       "locale": "zh-Hans",
       "category": "side",
       "characterId": "phoebe",
@@ -1708,6 +1744,30 @@
     },
     {
       "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "shorekeeper",
+      "questId": "side-165750000",
+      "questName": "失落的味道",
+      "questNameZh": "失落的味道",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165750000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "shorekeeper",
+      "questId": "side-165750000",
+      "questName": "Lost Taste",
+      "questNameZh": "失落的味道",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        165750000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "category": "event",
       "characterId": "sigrika",
       "questId": "event-165800014",
@@ -1803,6 +1863,42 @@
       ]
     },
     {
+      "locale": "en",
+      "category": "companion",
+      "characterId": "suisui",
+      "questId": "companion-101005",
+      "questName": "True Colors",
+      "questNameZh": "自问丹青",
+      "lineCount": 6,
+      "encoreStoryIds": [
+        101005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "suisui",
+      "questId": "side-164750000",
+      "questName": "悠然一日",
+      "questNameZh": "悠然一日",
+      "lineCount": 77,
+      "encoreStoryIds": [
+        164750000
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "suisui",
+      "questId": "side-164750000",
+      "questName": "A Chill Day Out",
+      "questNameZh": "悠然一日",
+      "lineCount": 77,
+      "encoreStoryIds": [
+        164750000
+      ]
+    },
+    {
       "locale": "zh-Hans",
       "category": "companion",
       "characterId": "verina",
@@ -1884,6 +1980,30 @@
       "lineCount": 35,
       "encoreStoryIds": [
         139700003
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "yangyang",
+      "questId": "side-165750002",
+      "questName": "不白之罪",
+      "questNameZh": "不白之罪",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        165750002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "yangyang",
+      "questId": "side-165750002",
+      "questName": "Silence of the Guilty",
+      "questNameZh": "不白之罪",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        165750002
       ]
     },
     {

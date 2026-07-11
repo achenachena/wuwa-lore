@@ -5,9 +5,12 @@ export const ENCORE_NAME_TO_CHARACTER_ID: Record<string, string> = {
   "Rover: Spectro": "rover-spectro",
   "Rover: Havoc": "rover-havoc",
   "Rover: Aero": "rover-aero",
+  "Rover: Electro": "rover-electro",
+  "Yangyang: Xuanling": "yangyang-xuanling",
   Lucilla: "lucilla",
   Lucy: "lucy",
   Rebecca: "rebecca",
+  Suisui: "suisui",
 };
 
 export function slugify(value: string): string {

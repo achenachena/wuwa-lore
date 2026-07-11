@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T02:06:05.626Z",
+  "generatedAt": "2026-07-11T23:50:01.054Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
@@ -10,8 +10,8 @@
     "countMethod": "main_story_dialogue_speaker_lines"
   },
   "questCountByLocale": {
-    "en": 40,
-    "zh-Hans": 40
+    "en": 43,
+    "zh-Hans": 43
   },
   "rows": [
     {
@@ -125,6 +125,20 @@
       "lineCount": 361,
       "encoreStoryIds": [
         100035
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "aemeath",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -271,6 +285,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "baizhi",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "baizhi",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
       "nameZh": "万象新声",
@@ -281,6 +309,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "baizhi",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -762,6 +804,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "chisa",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "chisa",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -890,6 +946,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "chixia",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "chixia",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
       "nameZh": "行至海岸尽头",
@@ -914,6 +984,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "chixia",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -1158,6 +1242,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "hiyuki",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hiyuki",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -1343,6 +1441,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "jinhsi",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jinhsi",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
       "nameZh": "万象新声",
@@ -1353,6 +1465,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jinhsi",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -1495,6 +1621,20 @@
       "lineCount": 36,
       "encoreStoryIds": [
         100035
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lucilla",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -1670,6 +1810,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "luuk-herssen",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "luuk-herssen",
       "questId": "what-burns-beneath-frostlands",
       "wikiTitle": "What Burns Beneath Frostlands",
       "nameZh": "冰原下的星炬",
@@ -1737,6 +1891,20 @@
       "lineCount": 23,
       "encoreStoryIds": [
         100040
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lynae",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -1851,6 +2019,20 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100035
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "mornye",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -2249,6 +2431,20 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "sanhua",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "shorekeeper",
       "questId": "stagnant-dawn-on-wastelands",
       "wikiTitle": "Stagnant Dawn on Wastelands",
@@ -2404,6 +2600,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "sigrika",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "sigrika",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -2413,6 +2623,48 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100044
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "suisui",
+      "questId": "the-chant-of-unseen-ties",
+      "wikiTitle": "The Chant of Unseen Ties",
+      "nameZh": "灵籁之契冥相因",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100047
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "suisui",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 50,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "suisui",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 189,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -2457,6 +2709,34 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100007
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "xiangli-yao",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "xiangli-yao",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -2561,6 +2841,34 @@
     {
       "locale": "zh-Hans",
       "characterId": "yangyang",
+      "questId": "the-chant-of-unseen-ties",
+      "wikiTitle": "The Chant of Unseen Ties",
+      "nameZh": "灵籁之契冥相因",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 42,
+      "encoreStoryIds": [
+        100047
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yangyang",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 213,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yangyang",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
       "nameZh": "行至海岸尽头",
@@ -2585,6 +2893,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yangyang",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 149,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -2715,6 +3037,34 @@
       ]
     },
     {
+      "locale": "zh-Hans",
+      "characterId": "zhezhi",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "zhezhi",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100046
+      ]
+    },
+    {
       "locale": "en",
       "characterId": "aalto",
       "questId": "dawn-breaks-on-dark-tides",
@@ -2825,6 +3175,20 @@
       "lineCount": 361,
       "encoreStoryIds": [
         100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "aemeath",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -2971,6 +3335,20 @@
     {
       "locale": "en",
       "characterId": "baizhi",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 10,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
       "nameZh": "万象新声",
@@ -2981,6 +3359,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "baizhi",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -3462,6 +3854,20 @@
     {
       "locale": "en",
       "characterId": "chisa",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chisa",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -3590,6 +3996,20 @@
     {
       "locale": "en",
       "characterId": "chixia",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
       "nameZh": "行至海岸尽头",
@@ -3614,6 +4034,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "chixia",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -3844,6 +4278,20 @@
     {
       "locale": "en",
       "characterId": "hiyuki",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -4029,6 +4477,20 @@
     {
       "locale": "en",
       "characterId": "jinhsi",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 21,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
       "questId": "utterance-of-marvels",
       "wikiTitle": "Utterance of Marvels",
       "nameZh": "万象新声",
@@ -4039,6 +4501,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jinhsi",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -4181,6 +4657,20 @@
       "lineCount": 36,
       "encoreStoryIds": [
         100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 5,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -4356,6 +4846,20 @@
     {
       "locale": "en",
       "characterId": "luuk-herssen",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "luuk-herssen",
       "questId": "what-burns-beneath-frostlands",
       "wikiTitle": "What Burns Beneath Frostlands",
       "nameZh": "冰原下的星炬",
@@ -4423,6 +4927,20 @@
       "lineCount": 23,
       "encoreStoryIds": [
         100040
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lynae",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -4537,6 +5055,20 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100035
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "mornye",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
       ]
     },
     {
@@ -4935,6 +5467,20 @@
     },
     {
       "locale": "en",
+      "characterId": "sanhua",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "shorekeeper",
       "questId": "stagnant-dawn-on-wastelands",
       "wikiTitle": "Stagnant Dawn on Wastelands",
@@ -5090,6 +5636,20 @@
     {
       "locale": "en",
       "characterId": "sigrika",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "sigrika",
       "questId": "we-choose-the-sky",
       "wikiTitle": "We Choose the Sky",
       "nameZh": "我们选择天空",
@@ -5099,6 +5659,48 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100044
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "suisui",
+      "questId": "the-chant-of-unseen-ties",
+      "wikiTitle": "The Chant of Unseen Ties",
+      "nameZh": "灵籁之契冥相因",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 18,
+      "encoreStoryIds": [
+        100047
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "suisui",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 50,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "suisui",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 189,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -5143,6 +5745,34 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100007
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "xiangli-yao",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "xiangli-yao",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 4,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -5247,6 +5877,34 @@
     {
       "locale": "en",
       "characterId": "yangyang",
+      "questId": "the-chant-of-unseen-ties",
+      "wikiTitle": "The Chant of Unseen Ties",
+      "nameZh": "灵籁之契冥相因",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 42,
+      "encoreStoryIds": [
+        100047
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 213,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
       "questId": "to-the-shores-end",
       "wikiTitle": "To the Shore's End",
       "nameZh": "行至海岸尽头",
@@ -5271,6 +5929,20 @@
       "encoreStoryIds": [
         100001,
         100002
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 149,
+      "encoreStoryIds": [
+        100046
       ]
     },
     {
@@ -5398,6 +6070,34 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100017
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zhezhi",
+      "questId": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100045
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "zhezhi",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100046
       ]
     }
   ]

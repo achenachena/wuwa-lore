@@ -91,7 +91,12 @@
   },
   {
     "version": "3.4",
-    "releaseDate": "2026-06-08T10:00",
+    "releaseDate": "2026-06-08T08:43",
     "notes": "Version 3.4: The Dream Not Dreamed"
+  },
+  {
+    "version": "3.5",
+    "releaseDate": "2026-07-10T09:10",
+    "notes": "Version 3.5: Blade of Past Resounds, Lingering Dream Hymns"
   }
 ]

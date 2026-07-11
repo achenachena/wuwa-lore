@@ -6,7 +6,7 @@ import { loadVersions } from "@/lib/data/loaders";
 
 export default async function VersionHalfStatsPage() {
   const [pageData, versions, locale, t] = await Promise.all([
-    getVersionHalfStatsPageData({ fromVersion: "3.0", toVersion: "3.4" }),
+    getVersionHalfStatsPageData({ fromVersion: "3.0", toVersion: "3.5" }),
     loadVersions(),
     getSiteLocale(),
     getMessages(),

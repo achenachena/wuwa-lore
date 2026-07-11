@@ -1,19 +1,17 @@
 {
   "id": "rebecca",
   "name": "Rebecca",
-  "aliases": [
-    "丽贝卡"
-  ],
+  "aliases": [],
   "element": "Electro",
   "weapon": "Pistols",
   "faction": "Unknown",
   "rarity": 5,
   "releaseVersion": "3.4",
-  "profile": "《赛博朋克：边缘行者》联动共鸣者。",
-  "locale": "zh-CN",
+  "profile": ":Lucy: Back in our world, David's already dead. And so are you, Rebecca... You both died that night. Adam Smasher killed you.</ref>",
+  "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rebecca",
-    "scrapedAt": "2026-06-02T22:00:00.000Z",
-    "editor": "manual"
+    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "editor": "scripts/sync-fandom-data.ts"
   }
 }

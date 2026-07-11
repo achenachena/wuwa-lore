@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T19:30:43.185Z",
+  "generatedAt": "2026-07-11T23:46:56.240Z",
   "rows": [
     {
       "characterId": "aalto",
@@ -8,7 +8,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-25T23:17:46Z",
       "sourceRevisionCount": 16,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -465,9 +465,9 @@
       "locale": "zh-CN",
       "sourcePageTitle": "Aalto/Voicelines/Chinese",
       "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2024-06-25T19:39:56Z",
-      "sourceRevisionCount": 4,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "sourceLatestRevisionAt": "2026-06-29T15:40:46Z",
+      "sourceRevisionCount": 8,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -478,21 +478,21 @@
         },
         {
           "key": "chest_2",
-          "text": "|chest_3_tx_s = 让我猜猜里面有什么好东西。",
-          "sourceFieldPath": "chest_2_tx_t",
+          "text": "又一笔稳赚不赔的买卖。",
+          "sourceFieldPath": "chest_2_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "chest_3",
-          "text": "}}",
-          "sourceFieldPath": "chest_3_tx_t",
+          "text": "让我猜猜里面有什么好东西。",
+          "sourceFieldPath": "chest_3_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "dash_1",
-          "text": "(语气词)",
+          "text": "（语气词）",
           "sourceFieldPath": "dash_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
@@ -513,29 +513,29 @@
         },
         {
           "key": "etransform_1",
-          "text": "<!-- Concerto Skills -->",
-          "sourceFieldPath": "etransform_1_tx_t",
+          "text": "藏起来避避风头。",
+          "sourceFieldPath": "etransform_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "fallen_1",
-          "text": "雾，不会消散⋯⋯",
+          "text": "雾，不会消散……",
           "sourceFieldPath": "fallen_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "fallen_2",
-          "text": "|fallen_3_tx_s = 先保存实力。",
-          "sourceFieldPath": "fallen_2_tx_t",
+          "text": "别担心，障眼法而已。",
+          "sourceFieldPath": "fallen_2_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "fallen_3",
-          "text": "<!-- Echo -->",
-          "sourceFieldPath": "fallen_3_tx_t",
+          "text": "先保存实力。",
+          "sourceFieldPath": "fallen_3_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
@@ -548,29 +548,29 @@
         },
         {
           "key": "forte_2",
-          "text": "|forte_3_tx_s = 完美谢幕。",
-          "sourceFieldPath": "forte_2_tx_t",
+          "text": "再快一点儿。",
+          "sourceFieldPath": "forte_2_tx_s",
           "firstSeenAt": "2024-06-18T23:30:40Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "forte_3",
-          "text": "<!-- Resonance Liberation -->",
-          "sourceFieldPath": "forte_3_tx_t",
+          "text": "完美谢幕。",
+          "sourceFieldPath": "forte_3_tx_s",
           "firstSeenAt": "2024-06-18T23:30:40Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "glider_1",
-          "text": "呼——换个角度。",
+          "text": "呼&mdash;&mdash;换个角度。",
           "sourceFieldPath": "glider_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "grapple_1",
-          "text": "|sensor_1_tx_s = 又是新的情报。",
-          "sourceFieldPath": "grapple_1_tx_t",
+          "text": "（语气词）",
+          "sourceFieldPath": "grapple_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
@@ -583,15 +583,15 @@
         },
         {
           "key": "hit_2",
-          "text": "|hit_3_tx_s = 哇，来真的？",
-          "sourceFieldPath": "hit_2_tx_t",
+          "text": "哎，和气生财嘛。",
+          "sourceFieldPath": "hit_2_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "hit_3",
-          "text": "<!-- Injured -->",
-          "sourceFieldPath": "hit_3_tx_t",
+          "text": "哇，来真的？",
+          "sourceFieldPath": "hit_3_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
@@ -604,22 +604,15 @@
         },
         {
           "key": "injured_2",
-          "text": "|injured_3_tx_s = 该认真了。",
-          "sourceFieldPath": "injured_2_tx_t",
+          "text": "雾变薄了。",
+          "sourceFieldPath": "injured_2_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "injured_3",
-          "text": "<!-- Fallen -->",
-          "sourceFieldPath": "injured_3_tx_t",
-          "firstSeenAt": "2024-06-18T15:36:06Z",
-          "firstSeenVersion": "1.0"
-        },
-        {
-          "key": "introoutro_1",
-          "text": "算我一个！",
-          "sourceFieldPath": "introoutro_1_tx_s",
+          "text": "该认真了。",
+          "sourceFieldPath": "injured_3_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
@@ -632,15 +625,15 @@
         },
         {
           "key": "resliberation_2",
-          "text": "|resliberation_3_tx_s = 雾里看花。",
-          "sourceFieldPath": "resliberation_2_tx_t",
+          "text": "嘣！完美交易。",
+          "sourceFieldPath": "resliberation_2_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "resliberation_3",
-          "text": "<!-- Hit -->",
-          "sourceFieldPath": "resliberation_3_tx_t",
+          "text": "雾里看花。",
+          "sourceFieldPath": "resliberation_3_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
@@ -653,22 +646,22 @@
         },
         {
           "key": "resskill_2",
-          "text": "|resskill_3_tx_s = 喜欢我的魔术吗？",
-          "sourceFieldPath": "resskill_2_tx_t",
+          "text": "这次是……金蝉脱壳！",
+          "sourceFieldPath": "resskill_2_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "resskill_3",
-          "text": "<!-- Forte -->",
-          "sourceFieldPath": "resskill_3_tx_t",
+          "text": "喜欢我的魔术吗？",
+          "sourceFieldPath": "resskill_3_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "sensor_1",
-          "text": "<!-- Dash -->",
-          "sourceFieldPath": "sensor_1_tx_t",
+          "text": "又是新的情报。",
+          "sourceFieldPath": "sensor_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
@@ -681,35 +674,35 @@
         },
         {
           "key": "vo_01_02",
-          "text": "|vo_01_02_tx_t =",
+          "text": "看在朋友的份上，告诉你一些情报技巧吧。瑝珑有句话叫“彼之蜜糖，汝之砒霜”，用来形容情报最好不过，同样的事情，对不同客户来说价值不同。所以，一条情报只要用点技巧稍加包装，就能卖出高价。嗯？你说这是欺骗？这应该叫合理洞察客户需求。",
           "sourceFieldPath": "vo_01_02_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_01_03",
-          "text": "|vo_01_03_tx_t =",
+          "text": "“万事通”这个称呼带来的不止是财源，还有一些小麻烦，偶尔也会遇上不讲道理的客户，强买强卖，缠人得很。好在对付这种“客户”，还算容易。哎，要是个个客户都像你一样好沟通，那就万事大吉了。",
           "sourceFieldPath": "vo_01_03_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_01_04",
-          "text": "|vo_01_04_tx_t =",
+          "text": "情报商说的话就像一团雾气，不能轻信，也不可不信。只有拨开虚虚实实的迷雾，才能窥见话语里暗藏的真实。当然，我除外，毕竟我对你这位朋友向来坦诚相待噢。",
           "sourceFieldPath": "vo_01_04_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_01_05",
-          "text": "|vo_01_05_tx_t =",
+          "text": "总有人说，在我眼中没有真朋友，只有利益相关的客户，此话不假，纯粹的交易关系才能保证判断的准确性。不过，你是特例，无论是朋友还是客户，你的存在本身就能影响我的判断。",
           "sourceFieldPath": "vo_01_05_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_02_01",
-          "text": "做我们这行的，与人太过交心容易暴露弱点，嗯⋯⋯如果是你的话，倒是可以放心聊聊。其实我没什么特别的爱好，只是喜欢用雾气变变魔术，博大家一笑。",
+          "text": "做我们这行的，与人太过交心容易暴露弱点，嗯……如果是你的话，倒是可以放心聊聊。其实我没什么特别的爱好，只是喜欢用雾气变变魔术，博大家一笑。",
           "sourceFieldPath": "vo_02_01_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
@@ -723,7 +716,7 @@
         },
         {
           "key": "vo_02_03",
-          "text": "安可烹饪的珊瑚钙饭卖相奇特，口感却十分不错。入口即化，余味醇香，有机会的话，你也试试。嗯？你的眼神不会是在怀疑吧?放心放心，食材只是长得像珊瑚而已，绝对无害。",
+          "text": "安可烹饪的珊瑚钙饭卖相奇特，口感却十分不错。入口即化，余味醇香，有机会的话，你也试试。嗯？你的眼神不会是在怀疑吧？放心放心，食材只是长得像珊瑚而已，绝对无害。",
           "sourceFieldPath": "vo_02_03_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
@@ -758,56 +751,56 @@
         },
         {
           "key": "vo_04_01",
-          "text": "|vo_04_01_tx_t =",
+          "text": "有时候，就连我都搞不清楚，安可的精力究竟来自哪里。每次到达目的地后，她都能很快和当地的小孩成为朋友，兴致勃勃地把一路见闻编织成自己的故事。有好几次，我的情报也是安可结识的朋友提供的。",
           "sourceFieldPath": "vo_04_01_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_02",
-          "text": "|vo_04_02_tx_t =",
+          "text": "-今州的镇戍将军不是常人能胜任的，纵观全局的视野，敏锐细腻的洞察，当机立断的果决，缺一不可。只要和忌炎有过接触，就会发现他全都做到了。",
           "sourceFieldPath": "vo_04_02_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_03",
-          "text": "|vo_04_03_tx_t =",
+          "text": "啊哈哈，炽霞啊，我和她也算是不打不相识吧。之前在今州城行商，她一度认为我是江湖骗子，想要把我抓去巡宁所，还闹了点误会。",
           "sourceFieldPath": "vo_04_03_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_04",
-          "text": "|vo_04_04_tx_t =",
+          "text": "秧秧？我们接触不多，但我一直都想和她谈点合作，感知流息中的信息对我们情报商来说，十分重要。说不定还能邀请她成为我的线人。",
           "sourceFieldPath": "vo_04_04_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_05",
-          "text": "|vo_04_05_tx_t =",
+          "text": "嗯……她应该不会成为我的客户，在她眼中，经他人之手获得的情报，远不如亲自验证得出的结论可靠。",
           "sourceFieldPath": "vo_04_05_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_06",
-          "text": "|vo_04_06_tx_t =",
+          "text": "那位红头发的外籍研究员？听说他有一套对付古怪甲方的方法，其实……有时候挺想拜托他帮我打发下那种难缠的客户。",
           "sourceFieldPath": "vo_04_06_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_07",
-          "text": "|vo_04_07_tx_t =",
+          "text": "我喜欢和幽灵猎犬打交道。讲规矩，够爽快，能节省不少时间。",
           "sourceFieldPath": "vo_04_07_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_04_08",
-          "text": "|vo_04_08_tx_t =",
+          "text": "里格斯小队的那个小女孩儿？我还在新联邦的时候曾见过她。她送了我一朵星星花，想打听母亲的消息。不过，这笔交易没谈成，因为她给不到我想要的报酬。你问什么报酬？嗯……一株永不凋零的真花。她说，植物有自己的生命规律，凋零也是生命的一部分。当时我好像告诉她，人也一样。",
           "sourceFieldPath": "vo_04_08_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
@@ -842,7 +835,7 @@
         },
         {
           "key": "vo_07_01",
-          "text": "哟——我是情报商人秋水，各种情报应有尽有，明码标价，童叟无欺。出门在外，掌握各地情报就是掌握先机，怎么样?要买一份吗？",
+          "text": "哟&mdash;&mdash;我是情报商人秋水，各种情报应有尽有，明码标价，童叟无欺。出门在外，掌握各地情报就是掌握先机，怎么样？要买一份吗？",
           "sourceFieldPath": "vo_07_01_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
@@ -877,43 +870,43 @@
         },
         {
           "key": "vo_09_01",
-          "text": "|vo_09_01_tx_t =",
+          "text": "呼&mdash;&mdash;造雾变得更容易了。作为交换，送你一份情报如何？",
           "sourceFieldPath": "vo_09_01_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_09_02",
-          "text": "|vo_09_02_tx_t =",
+          "text": "嗯？你总能给我惊喜，雾气的覆盖范围越来越广了，谢啦！再送你一条价值连城的情报吧。",
           "sourceFieldPath": "vo_09_02_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_09_03",
-          "text": "|vo_09_03_tx_t =",
+          "text": "浓雾薄雾变换自如，真是帮大忙啦！这次想知道什么尽管问，我一定知无不言。",
           "sourceFieldPath": "vo_09_03_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_09_04",
-          "text": "|vo_09_04_tx_t =",
+          "text": "哇，诚意十足，放心，我也不会让你吃亏的。今后雾会一直在你身边，把周围交给我吧。",
           "sourceFieldPath": "vo_09_04_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_09_05",
-          "text": "|vo_09_05_tx_t =",
+          "text": "老顾客，之前的情报账单也该一次性付清了吧，让我想想……从你需要的情报中我也收获了不少，那就算扯平了，之后的生意还需你多多照顾哟。",
           "sourceFieldPath": "vo_09_05_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "walldash_1",
-          "text": "<!-- Chest -->",
-          "sourceFieldPath": "walldash_1_tx_t",
+          "text": "（语气词）",
+          "sourceFieldPath": "walldash_1_tx_s",
           "firstSeenAt": "2024-06-18T15:36:06Z",
           "firstSeenVersion": "1.0"
         }
@@ -923,11 +916,250 @@
       "characterId": "aalto",
       "locale": "ja-JP",
       "sourcePageTitle": "Aalto/Voicelines/Japanese",
-      "sourcePageExists": false,
-      "sourceLatestRevisionAt": null,
-      "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
-      "lines": []
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2026-06-29T16:04:37Z",
+      "sourceRevisionCount": 4,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": [
+        {
+          "key": "vo_01_01",
+          "text": "俺みたいな商売人が、安定した顧客源を保つには、広く良好的な関係を築くことが要だ。お客さま、この世界についてまだ多くの疑問を抱えているようだね。俺とお友達になってみないか？それから、何か聞きたいことがあれば、特別価格でお答えしてあげよう。",
+          "sourceFieldPath": "vo_01_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_01_02",
+          "text": "友達である以上、少しコツでも教えてやろう。「人への毒は、別人への薬」っていう<te href=850093>瑝瓏</te>の諺があってな……。情報とはつまりそういうもんで……違うお客さんには、違う価値が生まれる。だから少し手を加えれば、相場以上の値段で売れるってわけだ。騙す？とんでもない！これをビジネスって言うんだよ。",
+          "sourceFieldPath": "vo_01_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_01_03",
+          "text": "「何でも屋」ってのは聞こえがいいが、しつこいお客さんには手を焼くよ。少し実力を見せてやれば収まるんだけど……君のような上客がもう少しいれば、うちの商売もやりやすくなるのにな……。",
+          "sourceFieldPath": "vo_01_03_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_01_04",
+          "text": "情報ってのはまさに霧だ……その中にある答えを自力で見つけなくちゃならない。……もちろん、君という友人には……いつも包み隠さず話してる……だよな？",
+          "sourceFieldPath": "vo_01_04_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_01_05",
+          "text": "「本当の友達を持っていない」とよく言われる。でも考えてみろ。純粋で簡単な関係が保たれているからこそ、儲かる商売ができる。だが君だけは特別だ……友人であれ、客であれ、君と一緒にいるだけで、俺は儲かるんだよ。",
+          "sourceFieldPath": "vo_01_05_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_02_01",
+          "text": "情報商売をやる人間だ。喋りすぎてぼろが出ちゃうと困るんだけど……君なら……まぁ、大丈夫だろう。趣味ってほど大層なものじゃないが……人に手品を見せて笑わせるのは好き、かな。",
+          "sourceFieldPath": "vo_02_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_02_02",
+          "text": "明日があるかも分からないこの世界において、思い悩むなんて時間の無駄だ。そんな時は俺に教えてくれ。一発で笑顔にさせてあげよう。……いくらかって？そんなことで金をとるつもりなんてないよ。",
+          "sourceFieldPath": "vo_02_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_02_03",
+          "text": "アンコの作った珊瑚「回戦」丼はあんな見た目だけど、味は中々悪くない。舌でとろける食感と、癖になる後味……君も一度試すといいさ。うん？その目、疑ってるのか？心配せずとも、「珊瑚」ってのは食材の見た目が似てるってだけ。決して本物を使ってるわけじゃ……",
+          "sourceFieldPath": "vo_02_03_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_02_04",
+          "text": "御大層な名目でもつけてやれば、ただの自堕落だって許されるのさ。俺の酔っ払い親父も、現実逃避のために散々やってきたからね。感覚を麻痺させるもの、そういったものには触れない方がいい……。",
+          "sourceFieldPath": "vo_02_04_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_02_05",
+          "text": "霧のように自由に、思いのまま楽しく&mdash;&mdash;これでよくない？",
+          "sourceFieldPath": "vo_02_05_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_03_01",
+          "text": "うん？こいつが気になる？違う違う、笛じゃなくてレコーダーなんだ。こんな小道具でも、ちゃんと使い道はある。そうだ！今度は面白い物でも用意してやろう。",
+          "sourceFieldPath": "vo_03_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_03_02",
+          "text": "信じられないかもしれないが……あの博打好きだった親父のお陰で、俺は色んな借金取りとやり合ってきた。でもやっぱり人の顔を伺いながら生きるのは……辛いよ。ってわけで、不憫なアールトのためにドンドン、上客を連れて来てくれよな？",
+          "sourceFieldPath": "vo_03_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_01",
+          "text": "アンコの底なしの体力には毎度驚かされる。行く先々で、気づいた頃には友達を作ってるんだからな。その友達も貴重な情報源として、いつも利用させてもらってるよ。",
+          "sourceFieldPath": "vo_04_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_02",
+          "text": "<te href=850091>今州</te>で鎮戍軍の将軍を務めるのは簡単なことじゃない。全体を見渡す広い視野、本質を見抜く鋭い洞察力、そして決断を下す果敢な勇気。あの忌炎は……すべてを持っている、稀な人だ。",
+          "sourceFieldPath": "vo_04_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_03",
+          "text": "熾霞との出会い？あははっ、それはもう大変だったよ。<te href=850091>今州</te>城で商売してたら、怪しい人物だって思われて……危うく捕まるところだった。",
+          "sourceFieldPath": "vo_04_03_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_04",
+          "text": "秧秧か？商談を持ち掛けたいのは山々だけど、機会がなくてね。その「風」から情報を読み取る能力は素晴らしい。諜報員としてうちに来てくれないかな……",
+          "sourceFieldPath": "vo_04_04_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_05",
+          "text": "彼女は……お客さんになれない人間だね。他人から聞くより、自ら探しに行くタイプなんだ。",
+          "sourceFieldPath": "vo_04_05_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_06",
+          "text": "赤い髪の、あの派遣の事か？しつこいクライアントに対応する独自の術があるとか……うちの迷惑客にも、一度試したいものだね。",
+          "sourceFieldPath": "vo_04_06_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_07",
+          "text": "「幽霊猟犬」はお客さんとして一流だ。ルールを守るし、気前もいい……ありがたい限りだよ。",
+          "sourceFieldPath": "vo_04_07_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_04_08",
+          "text": "リーグスチームのあの子？ネオユニオンにいた頃から面識ぐらいはあった。以前、彼女から<te href=850133>綺羅花</te>を条件に、母さんについて教えて欲しいと言われたんだが……俺が提示した報酬が払えないようだったから、商談自体もなかったことにした。提示したのは確か……「永遠に散らない花」……だっけか。その時あの子は、植物にも命があって散る事は命の定めだ、と言っていた。人も同じだと思わないか？",
+          "sourceFieldPath": "vo_04_08_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_05_01",
+          "text": "やあやあ、お得意さん。お誕生日おめでとう。今日は特製の小道具を差し上げよう。見た目は普通、だけどここをこうしていじってやると……なんと色んな形の霧が出てくる！今回は可愛い猫ちゃんだね。悩める時も辛い時も、これを開けば嫌な事は霧のように全て消えてなくなるよ。",
+          "sourceFieldPath": "vo_05_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_06_01",
+          "text": "信用第一、お客さん至上主義。よろしくな。",
+          "sourceFieldPath": "vo_06_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_06_02",
+          "text": "損はさせないよ？俺に任せてくれればね。",
+          "sourceFieldPath": "vo_06_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_06_03",
+          "text": "ほれ、へこむなよ、こいつはどうだ？",
+          "sourceFieldPath": "vo_06_03_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_07_01",
+          "text": "よう&mdash;&mdash;情報屋の、アールトだ。うちはあらゆる情報を扱っていて、それでもって明朗会計。各地を旅するなら、情報は欠かせないと思うよ？どう、買ってみる？",
+          "sourceFieldPath": "vo_07_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_07_02",
+          "text": "これはこれは御贔屓様。今日は何がご入用で？",
+          "sourceFieldPath": "vo_07_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_08_01",
+          "text": "どんなに些細な事でも、情報となり得るさ。",
+          "sourceFieldPath": "vo_08_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_08_02",
+          "text": "いいぜ？今回も、損はさせないさ。",
+          "sourceFieldPath": "vo_08_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_08_03",
+          "text": "行こう。霧はいつも、君の傍にある。",
+          "sourceFieldPath": "vo_08_03_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_09_01",
+          "text": "ひゅ～なんか体が軽くなったね。代わりに、とっておきの情報でもどう？",
+          "sourceFieldPath": "vo_09_01_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_09_02",
+          "text": "ん？君には驚かされるばかりだ……俺の霧が前より強くなってるよ。ありがとな！おまけに1つ貴重な情報を教えよう！",
+          "sourceFieldPath": "vo_09_02_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_09_03",
+          "text": "今の俺はどんな霧にでも化ける。助かるぜ！今回は特別に、何でも答えてやろう。何でも、だ。",
+          "sourceFieldPath": "vo_09_03_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_09_04",
+          "text": "わーお……これは、予想以上だね。心配しなくとも、キッチリ働くさ。君の背中、俺が預かるよ。霧は……いつも、君の傍にある。",
+          "sourceFieldPath": "vo_09_04_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        },
+        {
+          "key": "vo_09_05",
+          "text": "御贔屓様……そろそろ、これまでの情報料を払っていただけると……あ、いや……よく考えてみれば、俺もこれまでのやり取りでたくさん儲けた事だし……。んじゃ、差し引いてタダってことで。これからもご愛顧のほど、よろしくお願いいたしますね？",
+          "sourceFieldPath": "vo_09_05_tx",
+          "firstSeenAt": "2026-06-29T16:01:22Z",
+          "firstSeenVersion": "3.4"
+        }
+      ]
     },
     {
       "characterId": "aalto",
@@ -936,7 +1168,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -946,7 +1178,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2026-03-18T21:22:35Z",
       "sourceRevisionCount": 10,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -1769,7 +2001,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -1779,7 +2011,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2026-05-21T07:14:14Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -1789,7 +2021,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -1799,7 +2031,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-12-23T22:14:37Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -2286,7 +2518,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -2296,7 +2528,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -2306,7 +2538,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -2314,9 +2546,9 @@
       "locale": "en-US",
       "sourcePageTitle": "Baizhi/Voicelines",
       "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2025-11-19T02:30:50Z",
-      "sourceRevisionCount": 15,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "sourceLatestRevisionAt": "2026-06-28T05:38:43Z",
+      "sourceRevisionCount": 16,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -2516,14 +2748,14 @@
         },
         {
           "key": "vo_01_02",
-          "text": "Some believe Remnant Creatures are embodiments of souls. Indeed, their frequencies are pure and clear—qualities commonly associated with the idea of a \"soul\". That said, I have a question... You'tan stays with me because it embodies my ideals. Then, all those Mutterflies that are attracted to you... What do they represent that is yours? Perhaps... the answer lies within your lost memories.",
+          "text": "Some believe Creatures are embodiments of souls. Indeed, their frequencies are pure and clear—qualities commonly associated with the idea of a \"soul\". That said, I have a question... stays with me because it embodies my ideals. Then, all those Mutterflies that are attracted to you... What do they represent that is yours? Perhaps... the answer lies within your lost memories.",
           "sourceFieldPath": "vo_01_02_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_01_03",
-          "text": "My doubt of the then universally accepted Ecoacoustic theories provoked me to direct my research accordingly. I questioned the long-held notion that Remnant Creatures are intangible, and I continued to explore the possibilities, chasing every clue I could find. Eventually, I received a response from You'tan in one of the ruins, disproving that theory. Now, I am posed with a variety of other questions that I'm attempting to answer. I believe a claim is always verifiable before it is discredited entirely, and I will keep striving to uncover the truths.",
+          "text": "My doubt of the then universally accepted Ecoacoustic theories provoked me to direct my research accordingly. I questioned the long-held notion that Creatures are intangible, and I continued to explore the possibilities, chasing every clue I could find. Eventually, I received a response from in one of the ruins, disproving that theory. Now, I am posed with a variety of other questions that I'm attempting to answer. I believe a claim is always verifiable before it is discredited entirely, and I will keep striving to uncover the truths.",
           "sourceFieldPath": "vo_01_03_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2544,7 +2776,7 @@
         },
         {
           "key": "vo_02_01",
-          "text": "When I have the time, I travel around Huanglong to explore. I sample local delicacies, talk to people, and observe their daily lives. Theory alone cannot convey the full truth; to reach an accurate conclusion, I must experience it firsthand.",
+          "text": "When I have the time, I travel around to explore. I sample local delicacies, talk to people, and observe their daily lives. Theory alone cannot convey the full truth; to reach an accurate conclusion, I must experience it firsthand.",
           "sourceFieldPath": "vo_02_01_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2572,7 +2804,7 @@
         },
         {
           "key": "vo_02_05",
-          "text": "I wouldn't call the emergence of Waveworn phenomena a 'disaster' that overturned mankind's established knowledge of the world. I believe it has broadened our horizons, prompting us to rethink and reconstruct our system of knowledge. Though we haven't made much progress yet, our continued effort will bring us closer to understanding.",
+          "text": "I wouldn't call the emergence of a 'disaster' that overturned mankind's established knowledge of the world. I believe it has broadened our horizons, prompting us to rethink and reconstruct our system of knowledge. Though we haven't made much progress yet, our continued effort will bring us closer to understanding.",
           "sourceFieldPath": "vo_02_05_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2586,7 +2818,7 @@
         },
         {
           "key": "vo_03_02",
-          "text": "Withdraw a portion of one's ego, then attach it to the existence of another being in the form of vibrating energy... sounds incredible, doesn't it? It was in this manner that You'tan came into existence. I am yet to uncover all the secrets of the Remnant Creatures, but perhaps that's why You'tan responded to my call—so I may devote my life in search of the answer.",
+          "text": "Withdraw a portion of one's ego, then attach it to the existence of another being in the form of vibrating energy... sounds incredible, doesn't it? It was in this manner that came into existence. I am yet to uncover all the secrets of the Creatures, but perhaps that's why You'tan responded to my call—so I may devote my life in search of the answer.",
           "sourceFieldPath": "vo_03_02_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2628,7 +2860,7 @@
         },
         {
           "key": "vo_05_01",
-          "text": "You deserve preferential treatment on the day of your birth... Yes, please lean in closer, just like that... You'tan's embrace soothes the body. It has never embraced anyone other than me before today. Happy birthday, Rover. You'tan and I wanted to do something for you. We hope you like it.",
+          "text": "You deserve preferential treatment on the day of your birth... Yes, please lean in closer, just like that... 's embrace soothes the body. It has never embraced anyone other than me before today. Happy birthday, Rover. You'tan and I wanted to do something for you. We hope you like it.",
           "sourceFieldPath": "vo_05_01_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2656,7 +2888,7 @@
         },
         {
           "key": "vo_07_01",
-          "text": "I am Baizhi, a researcher at the Huaxu Academy. I specialize in Ecoacoustic studies, and I'm always open to answering questions related to my field. Hmm... I don't mind other types of questions, but please note that I may not be able to answer all of them. It would be best to let me know what you are going to ask in advance, so I can prepare accordingly.",
+          "text": "I am Baizhi, a researcher at the . I specialize in Ecoacoustic studies, and I'm always open to answering questions related to my field. Hmm... I don't mind other types of questions, but please note that I may not be able to answer all of them. It would be best to let me know what you are going to ask in advance, so I can prepare accordingly.",
           "sourceFieldPath": "vo_07_01_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2684,14 +2916,14 @@
         },
         {
           "key": "vo_08_03",
-          "text": "You'tan and I will ensure your safety.",
+          "text": "and I will ensure your safety.",
           "sourceFieldPath": "vo_08_03_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
         },
         {
           "key": "vo_09_01",
-          "text": "My thoughts are clearing up, and my resonance with You'tan is getting stronger… This is all because of your help, isn't it?",
+          "text": "My thoughts are clearing up, and my resonance with is getting stronger… This is all because of your help, isn't it?",
           "sourceFieldPath": "vo_09_01_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2705,7 +2937,7 @@
         },
         {
           "key": "vo_09_03",
-          "text": "Your help has opened up a world of potential for You'tan and me. It feels a bit foreign to me to be presented with many options, instead of one single truth... but I rather enjoy this feeling.",
+          "text": "Your help has opened up a world of potential for and me. It feels a bit foreign to me to be presented with many options, instead of one single truth... but I rather enjoy this feeling.",
           "sourceFieldPath": "vo_09_03_tx",
           "firstSeenAt": "2024-06-07T16:12:03Z",
           "firstSeenVersion": "1.0"
@@ -2740,7 +2972,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:33:21Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -3157,7 +3389,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:46:19Z",
       "sourceRevisionCount": 4,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -3574,7 +3806,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T18:03:25Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -3991,7 +4223,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-09-24T00:20:05Z",
       "sourceRevisionCount": 7,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -4436,7 +4668,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4446,7 +4678,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4456,7 +4688,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4466,7 +4698,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4476,7 +4708,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4486,7 +4718,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4496,7 +4728,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -4506,7 +4738,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-12T04:39:15Z",
       "sourceRevisionCount": 33,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -5000,7 +5232,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-25T19:43:28Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -5487,7 +5719,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -5497,7 +5729,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -5507,7 +5739,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-17T04:19:17Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -5952,7 +6184,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -5962,7 +6194,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -5972,7 +6204,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -5982,7 +6214,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-09-08T05:37:19Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -6448,7 +6680,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -6458,7 +6690,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -6468,7 +6700,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -6476,9 +6708,9 @@
       "locale": "en-US",
       "sourcePageTitle": "Carlotta/Voicelines",
       "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2025-01-05T15:26:26Z",
-      "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "sourceLatestRevisionAt": "2026-06-24T21:45:26Z",
+      "sourceRevisionCount": 2,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -6678,7 +6910,7 @@
         },
         {
           "key": "resliberation_1",
-          "text": "The world is mind.",
+          "text": "The world is mine.",
           "sourceFieldPath": "resliberation_1_tx",
           "firstSeenAt": "2025-01-05T15:26:26Z",
           "firstSeenVersion": "2.0"
@@ -7000,7 +7232,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -7010,7 +7242,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -7020,7 +7252,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -7030,7 +7262,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-09-08T05:49:11Z",
       "sourceRevisionCount": 8,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -7727,7 +7959,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -7737,7 +7969,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -7747,7 +7979,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -7757,7 +7989,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-24T13:05:27Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -8223,17 +8455,17 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
       "characterId": "changli",
       "locale": "ja-JP",
       "sourcePageTitle": "Changli/Voicelines/Japanese",
-      "sourcePageExists": false,
-      "sourceLatestRevisionAt": null,
-      "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2026-06-20T16:27:35Z",
+      "sourceRevisionCount": 1,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -8243,7 +8475,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -8253,7 +8485,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2026-01-08T14:45:24Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "vo_01_01",
@@ -8474,7 +8706,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -8484,7 +8716,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -8494,7 +8726,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -8504,7 +8736,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-13T00:09:45Z",
       "sourceRevisionCount": 16,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -9012,7 +9244,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T19:07:58Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -9513,7 +9745,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T19:13:30Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -10014,7 +10246,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T19:24:57Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -10515,7 +10747,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-09-07T00:19:01Z",
       "sourceRevisionCount": 7,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "basic_1",
@@ -10925,7 +11157,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -10935,7 +11167,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -10945,7 +11177,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -10955,7 +11187,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-13T09:11:00Z",
       "sourceRevisionCount": 18,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -11393,7 +11625,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-11T17:31:27Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -11824,7 +12056,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-11T18:48:55Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -12255,7 +12487,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-11T18:52:46Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -12683,11 +12915,663 @@
       "characterId": "denia",
       "locale": "en-US",
       "sourcePageTitle": "Denia/Voicelines",
-      "sourcePageExists": false,
-      "sourceLatestRevisionAt": null,
-      "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
-      "lines": []
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2026-06-07T11:13:44Z",
+      "sourceRevisionCount": 4,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": [
+        {
+          "key": "aerial_1",
+          "text": "Do we have to fight?",
+          "sourceFieldPath": "aerial_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "aerial_2",
+          "text": "Are we done yet?",
+          "sourceFieldPath": "aerial_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "aerial_3",
+          "text": "*Yawn* I'm beat.",
+          "sourceFieldPath": "aerial_3_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "aerial_4",
+          "text": "Meaningless fight.",
+          "sourceFieldPath": "aerial_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "aerial_5",
+          "text": "I'm done being soft.",
+          "sourceFieldPath": "aerial_5_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "aerial_6",
+          "text": "Just give up.",
+          "sourceFieldPath": "aerial_6_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_1",
+          "text": "Piece by piece!",
+          "sourceFieldPath": "basic_1_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_2",
+          "text": "Bit by bit!",
+          "sourceFieldPath": "basic_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_3",
+          "text": "Get lost.",
+          "sourceFieldPath": "basic_3_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_4",
+          "text": "Burn!",
+          "sourceFieldPath": "basic_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_5",
+          "text": "Disintegrate!",
+          "sourceFieldPath": "basic_5_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_6",
+          "text": "Shut up.",
+          "sourceFieldPath": "basic_6_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_7",
+          "text": "Oh, please...",
+          "sourceFieldPath": "basic_7_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_1",
+          "text": "Well, better than nothing.",
+          "sourceFieldPath": "chest_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_2",
+          "text": "A little pocket money.",
+          "sourceFieldPath": "chest_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_3",
+          "text": "Can I trade these for desserts?",
+          "sourceFieldPath": "chest_3_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_4",
+          "text": "They'd better be worth something.",
+          "sourceFieldPath": "chest_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_5",
+          "text": "Now they're mine!",
+          "sourceFieldPath": "chest_5_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_6",
+          "text": "Make sure no one sees it.",
+          "sourceFieldPath": "chest_6_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "counter_1",
+          "text": "Quiet!",
+          "sourceFieldPath": "counter_1_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "counter_2",
+          "text": "Right back at ya!",
+          "sourceFieldPath": "counter_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "counter_3",
+          "text": "Anything else?",
+          "sourceFieldPath": "counter_3_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "counter_4",
+          "text": "Mm-hmm?",
+          "sourceFieldPath": "counter_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dash_1",
+          "text": "My feet hurt...",
+          "sourceFieldPath": "dash_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dash_2",
+          "text": "Make it quick.",
+          "sourceFieldPath": "dash_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dodge_1",
+          "text": "Too slow.",
+          "sourceFieldPath": "dodge_1_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dodge_2",
+          "text": "Too close!",
+          "sourceFieldPath": "dodge_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dodge_3",
+          "text": "How disappointing.",
+          "sourceFieldPath": "dodge_3_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "enemynear_1",
+          "text": "Wait, again?",
+          "sourceFieldPath": "enemynear_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "enemynear_2",
+          "text": "Don't push your luck.",
+          "sourceFieldPath": "enemynear_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "esummon_1",
+          "text": "Now, do as I say.",
+          "sourceFieldPath": "esummon_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "etransform_1",
+          "text": "Lend me your hand.",
+          "sourceFieldPath": "etransform_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "fallen_1",
+          "text": "Everything, fading into oblivion...",
+          "sourceFieldPath": "fallen_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "fallen_2",
+          "text": "The void, and the darkness...",
+          "sourceFieldPath": "fallen_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "fallen_3",
+          "text": "Someone's still... waiting for me...",
+          "sourceFieldPath": "fallen_3_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "glider_1",
+          "text": "My body feels so light.",
+          "sourceFieldPath": "glider_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "glider_2",
+          "text": "It's okay to fly sometimes, I guess.",
+          "sourceFieldPath": "glider_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_1",
+          "text": "Over here.",
+          "sourceFieldPath": "heavy_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_2",
+          "text": "Surprise, surprise!",
+          "sourceFieldPath": "heavy_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_3",
+          "text": "No hiding!",
+          "sourceFieldPath": "heavy_3_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_4",
+          "text": "So annoying!",
+          "sourceFieldPath": "heavy_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "hit_1",
+          "text": "You're getting on my nerves.",
+          "sourceFieldPath": "hit_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "hit_2",
+          "text": "Wait. That's not fair!",
+          "sourceFieldPath": "hit_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_1",
+          "text": "Need to focus...",
+          "sourceFieldPath": "injured_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_2",
+          "text": "Ugh... My head...",
+          "sourceFieldPath": "injured_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_3",
+          "text": "Let's get this over with.",
+          "sourceFieldPath": "injured_3_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_4",
+          "text": "I... I can still...",
+          "sourceFieldPath": "injured_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "intro_1",
+          "text": "Is it my turn?",
+          "sourceFieldPath": "intro_1_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "intro_2",
+          "text": "Hah. Tired of running?",
+          "sourceFieldPath": "intro_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_1",
+          "text": "Please don't... pity me.",
+          "sourceFieldPath": "resliberation_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_2",
+          "text": "Please don't... look at me.",
+          "sourceFieldPath": "resliberation_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_3",
+          "text": "Please don't... forgive me.",
+          "sourceFieldPath": "resliberation_3_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_4",
+          "text": "Ashes to ashes!",
+          "sourceFieldPath": "resliberation_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_5",
+          "text": "Radiance no more!",
+          "sourceFieldPath": "resliberation_5_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_6",
+          "text": "Darkness. End. Permanent.",
+          "sourceFieldPath": "resliberation_6_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_1",
+          "text": "Enough!",
+          "sourceFieldPath": "resskill_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_2",
+          "text": "Stay down!",
+          "sourceFieldPath": "resskill_2_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_3",
+          "text": "Wanna come in?",
+          "sourceFieldPath": "resskill_3_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_4",
+          "text": "Banish!",
+          "sourceFieldPath": "resskill_4_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_5",
+          "text": "Devour.",
+          "sourceFieldPath": "resskill_5_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_6",
+          "text": "Take a bite?",
+          "sourceFieldPath": "resskill_6_tx",
+          "firstSeenAt": "2026-06-07T11:13:09Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "sensor_1",
+          "text": "Hiding something, are we?",
+          "sourceFieldPath": "sensor_1_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_01",
+          "text": "What's so bad about a pretty illusion? Even an empty gift box is still nice to look at, right? Since people only believe the \"truth\" they want to believe, maybe the real truth isn't all that important. If the world is made of little lies to begin with, why be afraid of all the deception in our lives?",
+          "sourceFieldPath": "vo_01_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_02",
+          "text": "So, how've you been sleeping? I heard if you get enough rest, you wake up refreshed and happy every single day. Haha... Must be nice, I wouldn't know. But sleeping itself is nice, I think. After all, every time I drift off, it feels like a death rehearsal.<br>So... if falling asleep feels like a kindness, then maybe death isn't really all that scary, right?",
+          "sourceFieldPath": "vo_01_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_03",
+          "text": "You seem so sweet and dependable on the outside, but deep down… you're always a little guarded... What? Got fooled too many times that now it's just a reflex? Poor thing, that's got to be tiring. Well, it's not like I have anything to hide from you. So maybe, every now and then, you could try trusting me.",
+          "sourceFieldPath": "vo_01_03_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_04",
+          "text": "I used to think the world was rotten right down to its core. Like everything was hopeless. Meaningless. And I never believed any of the things the Spacetrek Collective likes to say. I mean, if life is such a gift, then why do babies cry the moment they're born? It's like they're scared, like they already know. They know it all just goes back to the Void, back to darkness. But... whenever someone holds my hand and shares their heart with me, I can feel that annoying warmth again. It feels real. It coaxes me. Tries to show me happiness might actually be real... Ha. What a joke.",
+          "sourceFieldPath": "vo_01_04_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_05",
+          "text": "Even now, I still believe the Void is unbeatable.",
+          "sourceFieldPath": "vo_01_05_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_01",
+          "text": "I'm a total sucker for those obscure lectures from sweet professors, plus anything warm and sugary... Oh, and those reference books that make zero sense. They help me pass out so much faster! You get it, right? It's impossible to get good sleep at home.",
+          "sourceFieldPath": "vo_02_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_02",
+          "text": "Well, the side effects aren't as bad now, but I'd give anything for Aleph-1 to just stop mumbling nonsense in my head.",
+          "sourceFieldPath": "vo_02_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_03",
+          "text": "A birthday cake, of course. The kind with tons of fresh fruit and way too much whipped cream. And candles on top, for sure... Why? Because I've never actually had one before.",
+          "sourceFieldPath": "vo_02_03_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_04",
+          "text": "I hate eating anything raw! Especially that fancy sliced meat on a platter.",
+          "sourceFieldPath": "vo_02_04_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_05",
+          "text": "Good sleep, good food, and... good friends together. Every single day.",
+          "sourceFieldPath": "vo_02_05_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_03_01",
+          "text": "People keep asking why I don't wear the uniform... Well, the whole point of the Academy uniform is its Voidmatter protection, right? But guess what the Academy has my Forte registered as? \"Capable of creating bubbles that can isolate Voidmatter and offer protection.\" Hehe, surprise, surprise.",
+          "sourceFieldPath": "vo_03_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_03_02",
+          "text": "It was just... a lot of time in a dim room. Surgeries. Performance tests. Over and over... Nothing but bad memories, really. But I did like that little garden outside my room. True, they were just plants that grew under the Voidmatter's influence, but they had these colors... Unique and beautiful.",
+          "sourceFieldPath": "vo_03_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_01",
+          "text": "I find myself wondering... how nice would it be if Sigrika were just an ordinary girl?<br>Without all that weight on her shoulders. They say you eventually have to pay for being innocent, but what did the kind and pure ever do to deserve that? The world can be so cruel. It punishes the kindest people and calls it \"growth.\" Like that makes any sense.<br>But through it all, Siggy has never been afraid... She really is amazing.",
+          "sourceFieldPath": "vo_04_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_02",
+          "text": "That miko from Ashinohara is so powerful. Like she's cheating, you know? Yeah, I'd heard the stories before. But facing that power myself was a whole different story.",
+          "sourceFieldPath": "vo_04_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_03",
+          "text": "She was one of the few Overseers in the Fractsidus who would talk to me. When I was floating in the Voidmatter pod, she'd even play the violin for me. I really enjoyed her music. It's just... I never figured out how someone who could make such beautiful melodies... would ever want to help a maniac like the Grand Architect.",
+          "sourceFieldPath": "vo_04_03_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_04",
+          "text": "Professor Mornye fits every idea I've ever had of a perfect teacher: She has a soft voice, a sweet heart, she knows her stuff inside and out, and her classes are seriously intense. And the best part? She never, ever calls on me to answer questions when I'm napping in her class! Although... it might also be that no one has ever dared to sleep in her class before.",
+          "sourceFieldPath": "vo_04_04_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_05",
+          "text": "She's the legendary Fleet Snowfluff, right? I totally recognized her back in Voidspace.<br>The Academy's former beloved star—even the toughest professors still talk about her after all these years. Plus, she still holds the top score on every single machine at the Mind Dive Arcade! Honestly, if you want your classmates to trust you, all you have to do is try to act like her... Her charm is seriously next level.<br>Speaking of which... you must be really proud of her, huh? Make sure you protect her well this time. Don't ever lose her again.",
+          "sourceFieldPath": "vo_04_05_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_05_01",
+          "text": "Seriously? You picked me to celebrate your birthday with you? But your cake does look pretty good... Mind if I steal a bite?<br>Haha, just kidding. This is your big day, huh? Happy birthday!<br>I sincerely wish that, as you journey forward, your heart stays full of happiness, and that nothing—no matter how absurd or painful—ever truly defeats you.",
+          "sourceFieldPath": "vo_05_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_06_01",
+          "text": "Better start running. Oh? You actually got away. Hmph, lucky for you.",
+          "sourceFieldPath": "vo_06_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_06_02",
+          "text": "One. Two. Three. Four… A bit off, maybe?<br>Fi-five! No!",
+          "sourceFieldPath": "vo_06_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_06_03",
+          "text": "Now, a volunteer from the audience...<br>Want me put you down? Well, since you asked nicely… Hehe.",
+          "sourceFieldPath": "vo_06_03_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_07_01",
+          "text": "Surprised to see me? Haha, relax. I told you we'd meet again.",
+          "sourceFieldPath": "vo_07_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_07_02",
+          "text": "Shh... Keep this between us, will you?",
+          "sourceFieldPath": "vo_07_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_08_01",
+          "text": "Fine, fine... I'll help.",
+          "sourceFieldPath": "vo_08_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_08_02",
+          "text": "Fighting alongside you? Okay, that's new.",
+          "sourceFieldPath": "vo_08_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_08_03",
+          "text": "I'm not much of a fighter... Can I just slack off?",
+          "sourceFieldPath": "vo_08_03_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_01",
+          "text": "It feels like I can control more Voidmatter now. Hmm... Getting stronger is always a good thing, right?",
+          "sourceFieldPath": "vo_09_01_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_02",
+          "text": "So you just need more power? I see... But to borrow my power? That's far too risky.",
+          "sourceFieldPath": "vo_09_02_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_03",
+          "text": "Be careful. I can feel it, Aleph-1... It never really left.",
+          "sourceFieldPath": "vo_09_03_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_04",
+          "text": "You knew the risks, and yet... you still came this far. You are just... impossible. Always. But thanks to you, I can stabilize Voidmatter now. It's a bit embarrassing to say, but... I think I want to use this power to protect everyone.",
+          "sourceFieldPath": "vo_09_04_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_05",
+          "text": "Existence is meaningless. Life is meaningless. We are meaningless. And thinking about this meaningless world is meaningless too—or so Aleph-1 says. But meaningless as I am, I can still hear my own heartbeat. I can still hear the laughter we shared... And now, I believe some things are real. Maybe that's how it's always been: I'm more afraid of being alone than I ever was of the void.",
+          "sourceFieldPath": "vo_09_05_tx",
+          "firstSeenAt": "2026-06-03T14:18:51Z",
+          "firstSeenVersion": "3.3"
+        }
+      ]
     },
     {
       "characterId": "denia",
@@ -12696,7 +13580,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -12706,7 +13590,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -12716,7 +13600,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -12726,7 +13610,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-09-24T00:38:48Z",
       "sourceRevisionCount": 13,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -13192,7 +14076,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-07T17:33:58Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -13658,7 +14542,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-12-19T20:09:26Z",
       "sourceRevisionCount": 11,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -14026,7 +14910,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14036,7 +14920,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-12-09T00:26:31Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "vo_01_01",
@@ -14131,7 +15015,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14141,7 +15025,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14151,7 +15035,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14159,9 +15043,9 @@
       "locale": "en-US",
       "sourcePageTitle": "Hiyuki/Voicelines",
       "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2026-06-02T04:39:28Z",
-      "sourceRevisionCount": 7,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "sourceLatestRevisionAt": "2026-06-27T18:44:37Z",
+      "sourceRevisionCount": 9,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -14207,7 +15091,7 @@
         },
         {
           "key": "esummon_1",
-          "text": "<!-- Echo Transform --> Lend me your strenght,",
+          "text": "<!-- Echo Transform --> Lend me your strength.",
           "sourceFieldPath": "esummon_1_tx",
           "firstSeenAt": "2026-05-01T15:39:31Z",
           "firstSeenVersion": "3.3"
@@ -14235,7 +15119,7 @@
         },
         {
           "key": "glider_1",
-          "text": "A intruiguing device.",
+          "text": "An intriguing device.",
           "sourceFieldPath": "glider_1_tx",
           "firstSeenAt": "2026-05-01T15:39:31Z",
           "firstSeenVersion": "3.3"
@@ -14515,7 +15399,7 @@
         },
         {
           "key": "vo_05_01",
-          "text": "<!-- Idles --> A joyous birthday to you. The day of one's birth signifies the commencement of all things. It is a guidepost to your origin and an anchor should you ever drift. I first tought to prepare a traditional grift. Yet upon reflection, there is no offering more fitting than this single, blank paper. Please, write your wish here. Hold nothing back. Whatever it may be, I shall make it come true.",
+          "text": "<!-- Idles --> A joyous birthday to you. The day of one's birth signifies the commencement of all things. It is a guidepost to your origin and an anchor should you ever drift. I first thought to prepare a traditional gift. Yet upon reflection, there is no offering more fitting than this single, blank paper. Please, write your wish here. Hold nothing back. Whatever it may be, I shall make it come true.",
           "sourceFieldPath": "vo_05_01_tx",
           "firstSeenAt": "2026-05-01T15:39:31Z",
           "firstSeenVersion": "3.3"
@@ -14627,7 +15511,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14637,7 +15521,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14647,7 +15531,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -14657,7 +15541,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-11T02:07:46Z",
       "sourceRevisionCount": 9,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -15221,7 +16105,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -15231,7 +16115,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -15241,7 +16125,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -15251,7 +16135,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-03-31T03:06:19Z",
       "sourceRevisionCount": 12,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -15661,7 +16545,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-17T10:56:48Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -16071,7 +16955,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:58:46Z",
       "sourceRevisionCount": 4,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -16474,7 +17358,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T18:01:10Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -16877,7 +17761,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-03T15:36:15Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -17406,7 +18290,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-01T11:13:23Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -17928,7 +18812,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-01-08T17:40:28Z",
       "sourceRevisionCount": 7,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -18450,7 +19334,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-01T11:17:48Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -18972,7 +19856,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-12T23:30:22Z",
       "sourceRevisionCount": 26,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -19417,7 +20301,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-10-27T02:31:02Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -19855,7 +20739,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-12-13T23:29:24Z",
       "sourceRevisionCount": 7,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -20293,7 +21177,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:56:25Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -20731,7 +21615,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-12T23:45:37Z",
       "sourceRevisionCount": 20,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -21302,7 +22186,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T16:24:00Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -21866,7 +22750,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:52:32Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -22430,7 +23314,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:53:36Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -22988,13 +23872,93 @@
       ]
     },
     {
+      "characterId": "lucilla",
+      "locale": "en-US",
+      "sourcePageTitle": "Lucilla/Voicelines",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "zh-CN",
+      "sourcePageTitle": "Lucilla/Voicelines/Chinese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "ja-JP",
+      "sourcePageTitle": "Lucilla/Voicelines/Japanese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "ko-KR",
+      "sourcePageTitle": "Lucilla/Voicelines/Korean",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucy",
+      "locale": "en-US",
+      "sourcePageTitle": "Lucy/Voicelines",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucy",
+      "locale": "zh-CN",
+      "sourcePageTitle": "Lucy/Voicelines/Chinese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucy",
+      "locale": "ja-JP",
+      "sourcePageTitle": "Lucy/Voicelines/Japanese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "lucy",
+      "locale": "ko-KR",
+      "sourcePageTitle": "Lucy/Voicelines/Korean",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
       "characterId": "lumi",
       "locale": "en-US",
       "sourcePageTitle": "Lumi/Voicelines",
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-08-08T02:41:06Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -23355,7 +24319,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -23365,7 +24329,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -23375,7 +24339,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -23385,7 +24349,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-12-23T22:23:57Z",
       "sourceRevisionCount": 8,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -23900,7 +24864,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -23910,7 +24874,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -23920,7 +24884,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -23930,7 +24894,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2026-04-15T13:30:41Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -24312,7 +25276,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -24322,7 +25286,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -24332,7 +25296,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -24342,7 +25306,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-12-30T17:46:10Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -24780,7 +25744,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -24790,7 +25754,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -24800,7 +25764,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -24810,7 +25774,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2026-01-19T23:22:48Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -25192,7 +26156,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -25202,7 +26166,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -25212,7 +26176,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -25222,7 +26186,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-08-31T02:44:07Z",
       "sourceRevisionCount": 29,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -25660,7 +26624,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-09-01T00:17:50Z",
       "sourceRevisionCount": 12,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -26098,7 +27062,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -26108,7 +27072,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -26118,7 +27082,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-02-13T22:46:19Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -26542,7 +27506,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -26552,7 +27516,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -26562,7 +27526,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -26572,7 +27536,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-09T13:44:12Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "basic_1",
@@ -27052,7 +28016,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27062,7 +28026,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27072,7 +28036,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27080,10 +28044,508 @@
       "locale": "en-US",
       "sourcePageTitle": "Qiuyuan/Voicelines",
       "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2025-10-31T16:38:41Z",
-      "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
-      "lines": []
+      "sourceLatestRevisionAt": "2026-06-07T01:06:47Z",
+      "sourceRevisionCount": 2,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": [
+        {
+          "key": "basic_1",
+          "text": "Step fourth.",
+          "sourceFieldPath": "basic_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_2",
+          "text": "Off with you.",
+          "sourceFieldPath": "basic_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_3",
+          "text": "Answer my call.",
+          "sourceFieldPath": "basic_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "basic_4",
+          "text": "Stars realigned.",
+          "sourceFieldPath": "basic_4_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_1",
+          "text": "You may keep it.",
+          "sourceFieldPath": "chest_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_2",
+          "text": "Good.",
+          "sourceFieldPath": "chest_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "chest_3",
+          "text": "If you insist.",
+          "sourceFieldPath": "chest_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "counter_1",
+          "text": "A flawed stance.",
+          "sourceFieldPath": "counter_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dash_1",
+          "text": "Onward.",
+          "sourceFieldPath": "dash_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "dash_2",
+          "text": "Can you keep up?",
+          "sourceFieldPath": "dash_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "enemynear_1",
+          "text": "Let's not linger.",
+          "sourceFieldPath": "enemynear_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "esummon_1",
+          "text": "Behold this blade.",
+          "sourceFieldPath": "esummon_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "etransform_1",
+          "text": "Constant in change.",
+          "sourceFieldPath": "etransform_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "fallen_1",
+          "text": "I'll repay your trust... in another life.",
+          "sourceFieldPath": "fallen_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "fallen_2",
+          "text": "The winds... settled.",
+          "sourceFieldPath": "fallen_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "fallen_3",
+          "text": "I see... darkness.",
+          "sourceFieldPath": "fallen_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "glider_1",
+          "text": "Into the wind.",
+          "sourceFieldPath": "glider_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_1",
+          "text": "Fall.",
+          "sourceFieldPath": "heavy_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_2",
+          "text": "Vanish.",
+          "sourceFieldPath": "heavy_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "heavy_3",
+          "text": "Break like bamboo.",
+          "sourceFieldPath": "heavy_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "hit_1",
+          "text": "Did I mishear?",
+          "sourceFieldPath": "hit_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "hit_2",
+          "text": "Retreat to gain ground.",
+          "sourceFieldPath": "hit_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_1",
+          "text": "Nothing that won't heal.",
+          "sourceFieldPath": "injured_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_2",
+          "text": "Interesting.",
+          "sourceFieldPath": "injured_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "injured_3",
+          "text": "Feints demand restraint.",
+          "sourceFieldPath": "injured_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "introoutro_1",
+          "text": "What sleeps within bamboo.",
+          "sourceFieldPath": "introoutro_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_1",
+          "text": "Your life, is mine to take.",
+          "sourceFieldPath": "resliberation_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_2",
+          "text": "Mandate calls, judgement falls.",
+          "sourceFieldPath": "resliberation_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resliberation_3",
+          "text": "One strike, to settle it all.",
+          "sourceFieldPath": "resliberation_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_1",
+          "text": "Next.",
+          "sourceFieldPath": "resskill_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_10",
+          "text": "Surrender.",
+          "sourceFieldPath": "resskill_10_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_2",
+          "text": "Winds howling.",
+          "sourceFieldPath": "resskill_2_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_3",
+          "text": "I hear you.",
+          "sourceFieldPath": "resskill_3_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_4",
+          "text": "I move as the blade.",
+          "sourceFieldPath": "resskill_4_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_5",
+          "text": "Rise.",
+          "sourceFieldPath": "resskill_5_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_6",
+          "text": "Slash.",
+          "sourceFieldPath": "resskill_6_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_7",
+          "text": "No escape.",
+          "sourceFieldPath": "resskill_7_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_8",
+          "text": "Blend into the woods.",
+          "sourceFieldPath": "resskill_8_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "resskill_9",
+          "text": "Found you.",
+          "sourceFieldPath": "resskill_9_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "sensor_1",
+          "text": "I hear it.",
+          "sourceFieldPath": "sensor_1_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_01",
+          "text": "Mingting's eyes are everywhere.<br>When war broke out in Jinzhou, your profile was submitted to the Grand Library. Within the hour, the briefs reached me. Hm? How do I read these? It's simple: text-to-speech.",
+          "sourceFieldPath": "vo_01_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_02",
+          "text": "Rules bind all. Those who breach them must be held to justice, regardless of background or past merits. The Internal Security Agency's work is never simple.<br>When Grandmaster Liang led, our every action fulfilled our duty to Mingting and Huanglong's greater good. But much has changed since...",
+          "sourceFieldPath": "vo_01_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_03",
+          "text": "I'm blind, but I can still \"see\" what's in people's hearts.<br>Arrogance, hatred, malice, pleasure... Through my mind's eye, they take form in shifting hues and silhouettes. But I can't see yours. A rare exception. Maybe, just as she once said—you are exactly as you are.",
+          "sourceFieldPath": "vo_01_03_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_04",
+          "text": "For all these years, I've never tasted defeat. Being blind hasn't dulled me. In fact, it sharpens my focus on swordplay. If the opportunity arises, I'd welcome a duel with you.",
+          "sourceFieldPath": "vo_01_04_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_01_05",
+          "text": "<!-- Miscellaneous -->",
+          "sourceFieldPath": "vo_01_05_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_01",
+          "text": "Those years I stayed with Master Zhang, I cooked for his patients. Each meal was carefully crafted for their individual need. Beyond those, I know a few spicier dishes from Chongzhou. Whether they suit you, that, I cannot say.",
+          "sourceFieldPath": "vo_02_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_02",
+          "text": "Agents of the Internal Security Agency work from a list—names to arrest, names to eliminate. It's all there. Now, only two names remain on mine: the Fractsidus operative who murdered the man who saved my life, and Geshu Lin.<br>Blood debts are paid in blood. That's the natural order. Until my blade ends them, my mission will never end.",
+          "sourceFieldPath": "vo_02_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_03",
+          "text": "Years ago, I'd just wrapped up a case in Yuezhou and had to rush back to Mingting overnight. I was exhausted and famished when I stumbled into a diner by the roadside. A bowl of rice, braised pork, a bottle of rice wine. A humble meal, yet nothing has ever filled me like that night.",
+          "sourceFieldPath": "vo_02_03_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_04",
+          "text": "Mingting has a certain... drink. Greenish-gray, with a smell you don't forget. Trust me, you don't want to find out how it tastes...",
+          "sourceFieldPath": "vo_02_04_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_02_05",
+          "text": "Ideals, wishes... those things mean little to someone who lies down each night unsure if tomorrow comes. So I see no point in dwelling on them. All I know is I can't die yet. Not before I've had my revenge, not before I've fulfilled my duty. What happens after that... I'll leave that to fate to decide.",
+          "sourceFieldPath": "vo_02_05_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_03_01",
+          "text": "This is not wine. It's medicine. I was on death's door in Chongzhou when Master Zhang saved me with this potent regimen. But it came at a cost. Ever since then, I've relied on it to \"see\" with my mind. It sharpens perception but brings the risk of madness. Most people aren't worth my blade, though. For them, this bamboo stick will do.",
+          "sourceFieldPath": "vo_03_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_03_02",
+          "text": "Curious about my past? Heh... if that's what you want, I've no intention to hide. But maybe we should talk over a good pot of wine.",
+          "sourceFieldPath": "vo_03_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_01",
+          "text": "My master once told me some of my ancestors moved from Chongzhou to the borderlands.<br>Sanhua comes from that branch of lineage. Like me, her only interest used to be swordplay. But now, it seems she's found a purpose for her blade in Jinzhou's Magistrate. I'm glad for her.",
+          "sourceFieldPath": "vo_04_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_02",
+          "text": "In Mingting, people like me rarely got the chance to meet the high-ups—and understandably so. We only show up where there's trouble. As for her, all I know is that ever since she stepped down as Secretary-General, no one's been able to truly fill her place.",
+          "sourceFieldPath": "vo_04_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_03",
+          "text": "Across the troops under Huanglong's Ministry of War, you'd find no one other than him competent enough to earn the title of General at such a young age. I heard he used to be a medic before joining the Midnight Rangers... He's saving lives, one way or another.",
+          "sourceFieldPath": "vo_04_03_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_04",
+          "text": "|vo_04_04_mention = Scar",
+          "sourceFieldPath": "vo_04_04_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_04_05",
+          "text": "|vo_04_05_mention =",
+          "sourceFieldPath": "vo_04_05_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_05_01",
+          "text": "Happy birthday. As your path unfolds, more will join you on your journey. The world is like an inn we stay briefly before we set off on our destinations. Perhaps I'm just another passenger in your story, but on this special day, allow me to share this temporary shelter with you.",
+          "sourceFieldPath": "vo_05_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_06_01",
+          "text": "(Effort sound)",
+          "sourceFieldPath": "vo_06_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_06_02",
+          "text": "(Effort sound)",
+          "sourceFieldPath": "vo_06_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_06_03",
+          "text": "(Effort sound)",
+          "sourceFieldPath": "vo_06_03_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_07_01",
+          "text": "Qiuyuan, a blade drawn at your word. Wield me as you will.",
+          "sourceFieldPath": "vo_07_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_07_02",
+          "text": "Name the target. I'll take care of the rest.",
+          "sourceFieldPath": "vo_07_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_08_01",
+          "text": "A blade is honed to strike.",
+          "sourceFieldPath": "vo_08_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_08_02",
+          "text": "Let us proceed.",
+          "sourceFieldPath": "vo_08_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_08_03",
+          "text": "Leave the dangers to me.",
+          "sourceFieldPath": "vo_08_03_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_01",
+          "text": "Clarity within, precision without. You've learned this well.",
+          "sourceFieldPath": "vo_09_01_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_02",
+          "text": "A chance given is a future rewritten.",
+          "sourceFieldPath": "vo_09_02_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_03",
+          "text": "A sharp sword is honed on whetstones, clashing blades, and shattered armor, then tempered in the fire of life. Even if it breaks, it must remain sharp.",
+          "sourceFieldPath": "vo_09_03_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_04",
+          "text": "Since you've come this far, why not cross blades with mightier foes and test your mettle?",
+          "sourceFieldPath": "vo_09_04_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        },
+        {
+          "key": "vo_09_05",
+          "text": "In my younger days, all I cared about was keeping my blade sharp. It once felt weightless in my hand. But now, with the lives I've touched and choices I carry, my blade seems to grow heavier with each swing. My skill never falters, but something has changed...",
+          "sourceFieldPath": "vo_09_05_tx",
+          "firstSeenAt": "2026-06-07T01:06:47Z",
+          "firstSeenVersion": "3.3"
+        }
+      ]
     },
     {
       "characterId": "qiuyuan",
@@ -27092,7 +28554,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27102,7 +28564,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27112,7 +28574,47 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "en-US",
+      "sourcePageTitle": "Rebecca/Voicelines",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "zh-CN",
+      "sourcePageTitle": "Rebecca/Voicelines/Chinese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "ja-JP",
+      "sourcePageTitle": "Rebecca/Voicelines/Japanese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "ko-KR",
+      "sourcePageTitle": "Rebecca/Voicelines/Korean",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27122,7 +28624,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-11-10T17:04:06Z",
       "sourceRevisionCount": 4,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -27539,7 +29041,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27549,7 +29051,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27559,7 +29061,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -27569,7 +29071,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-06T14:17:43Z",
       "sourceRevisionCount": 60,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -27951,7 +29453,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-18T20:15:32Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -28326,7 +29828,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-06-01T19:10:48Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -28708,7 +30210,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -28718,7 +30220,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-06T14:17:43Z",
       "sourceRevisionCount": 60,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -29100,7 +30602,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-18T20:15:32Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -29475,7 +30977,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-06-01T19:10:48Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -29857,7 +31359,1156 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "en-US",
+      "sourcePageTitle": "Rover/Voicelines",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2025-10-06T14:17:43Z",
+      "sourceRevisionCount": 60,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": [
+        {
+          "key": "aerial_1",
+          "text": "<!-- Resonance Skill -->",
+          "sourceFieldPath": "aerial_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "chest_1",
+          "text": "An unexpected discovery.",
+          "sourceFieldPath": "chest_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "chest_2",
+          "text": "Remnants of the past.",
+          "sourceFieldPath": "chest_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "chest_3",
+          "text": "Cherish every gain.",
+          "sourceFieldPath": "chest_3_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "dash_1",
+          "text": "*Effort Sound*",
+          "sourceFieldPath": "dash_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "enemynear_1",
+          "text": "Leave it to me.",
+          "sourceFieldPath": "enemynear_1_tx",
+          "firstSeenAt": "2024-06-12T20:15:54Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "esummon_1",
+          "text": "Hopefully this helps.",
+          "sourceFieldPath": "esummon_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "etransform_1",
+          "text": "One with the sounds.",
+          "sourceFieldPath": "etransform_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "fallen_1",
+          "text": "I must not... falter.",
+          "sourceFieldPath": "fallen_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "fallen_2",
+          "text": "Is this the end...",
+          "sourceFieldPath": "fallen_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "fallen_3",
+          "text": "Sounds... are fading...",
+          "sourceFieldPath": "fallen_3_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "glider_1",
+          "text": "Wind guide me.",
+          "sourceFieldPath": "glider_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "grapple_1",
+          "text": "*Effort Sound*",
+          "sourceFieldPath": "grapple_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "heavy_1",
+          "text": "The show begins.",
+          "sourceFieldPath": "heavy_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "heavy_2",
+          "text": "Begone!",
+          "sourceFieldPath": "heavy_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "hit_1",
+          "text": "*Effort Sound*",
+          "sourceFieldPath": "hit_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "hit_2",
+          "text": "Ugh... Bad timing.",
+          "sourceFieldPath": "hit_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "hit_3",
+          "text": "One more time.",
+          "sourceFieldPath": "hit_3_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "injured_1",
+          "text": "*Exhale.*",
+          "sourceFieldPath": "injured_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "injured_2",
+          "text": "Keep it together.",
+          "sourceFieldPath": "injured_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "injured_3",
+          "text": "Last chance...",
+          "sourceFieldPath": "injured_3_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "introoutro_1",
+          "text": "Swift and resolute.",
+          "sourceFieldPath": "introoutro_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_1",
+          "text": "Moment of resonance.",
+          "sourceFieldPath": "resliberation_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_2",
+          "text": "The hour is upon us.",
+          "sourceFieldPath": "resliberation_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_3",
+          "text": "The end has come.",
+          "sourceFieldPath": "resliberation_3_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_4",
+          "text": "None shall whisper.",
+          "sourceFieldPath": "resliberation_4_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_5",
+          "text": "You will obey.",
+          "sourceFieldPath": "resliberation_5_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_6",
+          "text": "Down with the curtain.",
+          "sourceFieldPath": "resliberation_6_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_1",
+          "text": "Break!",
+          "sourceFieldPath": "resskill_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_10",
+          "text": "Nowhere to hide.",
+          "sourceFieldPath": "resskill_10_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_11",
+          "text": "Endure and defy.",
+          "sourceFieldPath": "resskill_11_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_12",
+          "text": "Shadows descends.",
+          "sourceFieldPath": "resskill_12_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_2",
+          "text": "Disperse.",
+          "sourceFieldPath": "resskill_2_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_3",
+          "text": "Sounds, come forth.",
+          "sourceFieldPath": "resskill_3_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_4",
+          "text": "I sense your weakness.",
+          "sourceFieldPath": "resskill_4_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_5",
+          "text": "No hesitation.",
+          "sourceFieldPath": "resskill_5_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_6",
+          "text": "Strike from the shadows.",
+          "sourceFieldPath": "resskill_6_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_7",
+          "text": "Shadow follows.",
+          "sourceFieldPath": "resskill_7_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_8",
+          "text": "Checkmate.",
+          "sourceFieldPath": "resskill_8_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_9",
+          "text": "No hesitation!",
+          "sourceFieldPath": "resskill_9_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "sensor_1",
+          "text": "Seems like a new discovery.",
+          "sourceFieldPath": "sensor_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_01",
+          "text": "(Hmm...)",
+          "sourceFieldPath": "vo_06_01_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_02",
+          "text": "This is a testament to my connection with the world around me, and it's very much my companion now, bearing witness to everything I've experienced on this journey.",
+          "sourceFieldPath": "vo_06_02_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_03",
+          "text": "It is natural to feel dreadful of the unknown, yet... there are times when the unknown harbors hope, like how I can never know what else this power has to offer.",
+          "sourceFieldPath": "vo_06_03_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_01",
+          "text": "We still have a long journey ahead of us. Let's press on.",
+          "sourceFieldPath": "vo_08_01_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_02",
+          "text": "Will there be new discoveries?",
+          "sourceFieldPath": "vo_08_02_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_03",
+          "text": "I will be there for everyone... As we head toward our shared future, leaving the past behind.",
+          "sourceFieldPath": "vo_08_03_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_01",
+          "text": "The world around me... I can hear it clearer now.",
+          "sourceFieldPath": "vo_09_01_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_02",
+          "text": "This power... it's mysterious, yet reassuring nonetheless.",
+          "sourceFieldPath": "vo_09_02_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_03",
+          "text": "I still need more time to acquaint myself with this unfamiliar world.",
+          "sourceFieldPath": "vo_09_03_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_04",
+          "text": "A new journey awaits? Brimming with novel sounds, stories, and... fragmented memories.",
+          "sourceFieldPath": "vo_09_04_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_05",
+          "text": "The place where the land ends is where the ocean begins. Our journey is far from ending.",
+          "sourceFieldPath": "vo_09_05_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "walldash_1",
+          "text": "*Effort Sound*",
+          "sourceFieldPath": "walldash_1_tx",
+          "firstSeenAt": "2024-06-08T11:50:48Z",
+          "firstSeenVersion": "1.0"
+        }
+      ]
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "zh-CN",
+      "sourcePageTitle": "Rover/Voicelines/Chinese",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2024-06-18T20:15:32Z",
+      "sourceRevisionCount": 6,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": [
+        {
+          "key": "chest_1",
+          "text": "意外的发现。",
+          "sourceFieldPath": "chest_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "chest_2",
+          "text": "过去留存的证明。",
+          "sourceFieldPath": "chest_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "chest_3",
+          "text": "珍惜好旅途中每一份收获。",
+          "sourceFieldPath": "chest_3_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "dash_1",
+          "text": "(语气词)",
+          "sourceFieldPath": "dash_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "enemynear_1",
+          "text": "交给我吧。",
+          "sourceFieldPath": "enemynear_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "esummon_1",
+          "text": "希望这个有用。",
+          "sourceFieldPath": "esummon_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "etransform_1",
+          "text": "声形合一。",
+          "sourceFieldPath": "etransform_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "fallen_1",
+          "text": "还不能……结束",
+          "sourceFieldPath": "fallen_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "fallen_2",
+          "text": "到极限了吗……",
+          "sourceFieldPath": "fallen_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "fallen_3",
+          "text": "声音在消逝……",
+          "sourceFieldPath": "fallen_3_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "glider_1",
+          "text": "跟随风的方向。",
+          "sourceFieldPath": "glider_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "grapple_1",
+          "text": "(语气词)",
+          "sourceFieldPath": "grapple_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "heavy_1",
+          "text": "揭开帷幕。",
+          "sourceFieldPath": "heavy_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "heavy_2",
+          "text": "就此消失!",
+          "sourceFieldPath": "heavy_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "hit_1",
+          "text": "(语气词)",
+          "sourceFieldPath": "hit_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "hit_2",
+          "text": "唔……找准时机。",
+          "sourceFieldPath": "hit_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "hit_3",
+          "text": "再来一次。",
+          "sourceFieldPath": "hit_3_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "injured_1",
+          "text": "呼……",
+          "sourceFieldPath": "injured_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "injured_2",
+          "text": "保持冷静。",
+          "sourceFieldPath": "injured_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "injured_3",
+          "text": "最后的机会……",
+          "sourceFieldPath": "injured_3_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "introoutro_1",
+          "text": "速战速决。",
+          "sourceFieldPath": "introoutro_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_1",
+          "text": "回声，于此共鸣。",
+          "sourceFieldPath": "resliberation_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_2",
+          "text": "弥光之际。",
+          "sourceFieldPath": "resliberation_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_3",
+          "text": "已至终时。",
+          "sourceFieldPath": "resliberation_3_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_4",
+          "text": "化羽，湮灭万律。",
+          "sourceFieldPath": "resliberation_4_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_5",
+          "text": "为我所用。",
+          "sourceFieldPath": "resliberation_5_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resliberation_6",
+          "text": "熄灭，残响之音。",
+          "sourceFieldPath": "resliberation_6_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_1",
+          "text": "破!",
+          "sourceFieldPath": "resskill_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_10",
+          "text": "无所遁形。",
+          "sourceFieldPath": "resskill_10_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_11",
+          "text": "从未破灭。",
+          "sourceFieldPath": "resskill_11_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_12",
+          "text": "随影而去。",
+          "sourceFieldPath": "resskill_12_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_2",
+          "text": "消散吧。",
+          "sourceFieldPath": "resskill_2_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_3",
+          "text": "声形回束。",
+          "sourceFieldPath": "resskill_3_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_4",
+          "text": "破绽百出。",
+          "sourceFieldPath": "resskill_4_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_5",
+          "text": "不要犹豫。",
+          "sourceFieldPath": "resskill_5_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_6",
+          "text": "和光尘影。",
+          "sourceFieldPath": "resskill_6_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_7",
+          "text": "随影而来。",
+          "sourceFieldPath": "resskill_7_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_8",
+          "text": "胜负已定。",
+          "sourceFieldPath": "resskill_8_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "resskill_9",
+          "text": "不再犹豫!",
+          "sourceFieldPath": "resskill_9_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "sensor_1",
+          "text": "旅途中总是充满惊喜。",
+          "sourceFieldPath": "sensor_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_01",
+          "text": "(语气词)",
+          "sourceFieldPath": "vo_06_01_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_02",
+          "text": "它是我与这世界的连结，见证我所经历的一切。",
+          "sourceFieldPath": "vo_06_02_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_03",
+          "text": "(语气词)",
+          "sourceFieldPath": "vo_06_03_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_01",
+          "text": "路途还很遥远，继续前进吧。",
+          "sourceFieldPath": "vo_08_01_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_02",
+          "text": "新的发现吗?",
+          "sourceFieldPath": "vo_08_02_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_03",
+          "text": "我想留在大家身边……从过去，一同迈向明天。",
+          "sourceFieldPath": "vo_08_03_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_01",
+          "text": "世界……似乎变得更加清晰。",
+          "sourceFieldPath": "vo_09_01_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_02",
+          "text": "这股力量虽有些不可思议，却让我感到十分的安心。",
+          "sourceFieldPath": "vo_09_02_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_03",
+          "text": "|vo_09_03_tx_t =",
+          "sourceFieldPath": "vo_09_03_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_04",
+          "text": "|vo_09_04_tx_t =",
+          "sourceFieldPath": "vo_09_04_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_05",
+          "text": "|vo_09_05_tx_t =",
+          "sourceFieldPath": "vo_09_05_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "walldash_1",
+          "text": "(语气词)",
+          "sourceFieldPath": "walldash_1_tx_s",
+          "firstSeenAt": "2024-06-16T19:29:55Z",
+          "firstSeenVersion": "1.0"
+        }
+      ]
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "ja-JP",
+      "sourcePageTitle": "Rover/Voicelines/Japanese",
+      "sourcePageExists": true,
+      "sourceLatestRevisionAt": "2025-06-01T19:10:48Z",
+      "sourceRevisionCount": 5,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": [
+        {
+          "key": "aerial_1",
+          "text": "<!-- Resonance Skill -->",
+          "sourceFieldPath": "aerial_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "chest_1",
+          "text": "これは...予想外ね。",
+          "sourceFieldPath": "chest_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "chest_2",
+          "text": "歴史を感じるね。",
+          "sourceFieldPath": "chest_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "chest_3",
+          "text": "大事にしないとね。",
+          "sourceFieldPath": "chest_3_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "dash_1",
+          "text": "行こう！",
+          "sourceFieldPath": "dash_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "enemynear_1",
+          "text": "任せて。",
+          "sourceFieldPath": "enemynear_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "esummon_1",
+          "text": "聞いてみよ。",
+          "sourceFieldPath": "esummon_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "etransform_1",
+          "text": "これも音の力ね。",
+          "sourceFieldPath": "etransform_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "fallen_1",
+          "text": "まだ...負けるわけには...",
+          "sourceFieldPath": "fallen_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "fallen_2",
+          "text": "ここまで...か...？",
+          "sourceFieldPath": "fallen_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "fallen_3",
+          "text": "音が薄れていく...",
+          "sourceFieldPath": "fallen_3_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "glider_1",
+          "text": "風の導きのままに。",
+          "sourceFieldPath": "glider_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "grapple_1",
+          "text": "はっ！",
+          "sourceFieldPath": "grapple_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "heavy_1",
+          "text": "幕開けよ！",
+          "sourceFieldPath": "heavy_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "heavy_2",
+          "text": "消え去れ！",
+          "sourceFieldPath": "heavy_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "hit_1",
+          "text": "うっ...! しまった...",
+          "sourceFieldPath": "hit_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "hit_2",
+          "text": "うっ...油断した",
+          "sourceFieldPath": "hit_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "hit_3",
+          "text": "うっ...これからよ。",
+          "sourceFieldPath": "hit_3_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "injured_1",
+          "text": "*Exhale*",
+          "sourceFieldPath": "injured_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "injured_2",
+          "text": "ここは冷静に。",
+          "sourceFieldPath": "injured_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "injured_3",
+          "text": "チャンスはあるはず。",
+          "sourceFieldPath": "injured_3_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "introoutro_1",
+          "text": "行くよ。",
+          "sourceFieldPath": "introoutro_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resliberation_1",
+          "text": "響け。",
+          "sourceFieldPath": "resliberation_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resliberation_2",
+          "text": "この光で...！",
+          "sourceFieldPath": "resliberation_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resliberation_3",
+          "text": "これで終わりを！",
+          "sourceFieldPath": "resliberation_3_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resliberation_4",
+          "text": "静まれ。",
+          "sourceFieldPath": "resliberation_4_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resliberation_5",
+          "text": "その力使わせてもらう！",
+          "sourceFieldPath": "resliberation_5_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resliberation_6",
+          "text": "静寂に沈め！",
+          "sourceFieldPath": "resliberation_6_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_1",
+          "text": "はっ！",
+          "sourceFieldPath": "resskill_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_10",
+          "text": "逃さない！",
+          "sourceFieldPath": "resskill_10_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_11",
+          "text": "未来のために！",
+          "sourceFieldPath": "resskill_11_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_12",
+          "text": "影にとける！",
+          "sourceFieldPath": "resskill_12_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_2",
+          "text": "消えろ！",
+          "sourceFieldPath": "resskill_2_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_3",
+          "text": "この手に集え!",
+          "sourceFieldPath": "resskill_3_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_4",
+          "text": "すきだらけね。",
+          "sourceFieldPath": "resskill_4_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_5",
+          "text": "一気にに行くよ！",
+          "sourceFieldPath": "resskill_5_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_6",
+          "text": "光をまえ?",
+          "sourceFieldPath": "resskill_6_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_7",
+          "text": "影まっとう。",
+          "sourceFieldPath": "resskill_7_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_8",
+          "text": "勝負よ！",
+          "sourceFieldPath": "resskill_8_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "resskill_9",
+          "text": "私が決める！",
+          "sourceFieldPath": "resskill_9_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "sensor_1",
+          "text": "旅のだいごみ...それは道の出会い。",
+          "sourceFieldPath": "sensor_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        },
+        {
+          "key": "vo_06_01",
+          "text": "......よし。",
+          "sourceFieldPath": "vo_06_01_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_02",
+          "text": "旅をともにをしてきたこれが、世界との ・繋がりを証明してくる。",
+          "sourceFieldPath": "vo_06_02_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_06_03",
+          "text": "台詞なし",
+          "sourceFieldPath": "vo_06_03_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_01",
+          "text": "先は長い。急ごう。",
+          "sourceFieldPath": "vo_08_01_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_02",
+          "text": "見つけに行こう。まだ見ぬ世界へ。",
+          "sourceFieldPath": "vo_08_02_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_08_03",
+          "text": "皆と一緒に居たい...これからも。",
+          "sourceFieldPath": "vo_08_03_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_01",
+          "text": "世界が...より鮮明に聞こえた。",
+          "sourceFieldPath": "vo_09_01_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_02",
+          "text": "不思議な力...だけど何故か、親近感 がある。",
+          "sourceFieldPath": "vo_09_02_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_03",
+          "text": "|vo_09_03_rm =",
+          "sourceFieldPath": "vo_09_03_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_04",
+          "text": "|vo_09_04_rm =",
+          "sourceFieldPath": "vo_09_04_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "vo_09_05",
+          "text": "|vo_09_05_rm =",
+          "sourceFieldPath": "vo_09_05_tx",
+          "firstSeenAt": "2024-06-08T12:19:30Z",
+          "firstSeenVersion": "1.0"
+        },
+        {
+          "key": "walldash_1",
+          "text": "はっ！",
+          "sourceFieldPath": "walldash_1_tx",
+          "firstSeenAt": "2025-06-01T18:45:31Z",
+          "firstSeenVersion": "2.3"
+        }
+      ]
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "ko-KR",
+      "sourcePageTitle": "Rover/Voicelines/Korean",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -29867,7 +32518,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-06T14:17:43Z",
       "sourceRevisionCount": 60,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -30249,7 +32900,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-18T20:15:32Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -30624,7 +33275,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-06-01T19:10:48Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -31006,7 +33657,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -31016,7 +33667,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-06T14:17:43Z",
       "sourceRevisionCount": 60,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -31398,7 +34049,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-18T20:15:32Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -31773,7 +34424,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-06-01T19:10:48Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -32155,7 +34806,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -32165,7 +34816,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-17T18:50:38Z",
       "sourceRevisionCount": 20,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -32582,7 +35233,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-03T11:31:03Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -32999,7 +35650,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -33009,7 +35660,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -33019,7 +35670,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-08-27T14:25:23Z",
       "sourceRevisionCount": 15,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -33506,7 +36157,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -33516,7 +36167,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -33526,7 +36177,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -33536,7 +36187,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2026-04-15T13:13:26Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -33988,7 +36639,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -33998,7 +36649,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -34008,7 +36659,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -34018,7 +36669,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-17T18:53:35Z",
       "sourceRevisionCount": 39,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -34470,7 +37121,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-02T19:43:31Z",
       "sourceRevisionCount": 6,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -34922,7 +37573,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -34932,7 +37583,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -34942,7 +37593,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-02T13:18:27Z",
       "sourceRevisionCount": 45,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -35366,7 +38017,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-03T15:44:20Z",
       "sourceRevisionCount": 5,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -35790,7 +38441,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -35800,7 +38451,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -35808,9 +38459,9 @@
       "locale": "en-US",
       "sourcePageTitle": "Xiangli Yao/Voicelines",
       "sourcePageExists": true,
-      "sourceLatestRevisionAt": "2024-09-07T09:51:43Z",
-      "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "sourceLatestRevisionAt": "2026-06-10T10:55:12Z",
+      "sourceRevisionCount": 4,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -36248,7 +38899,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -36258,7 +38909,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-10-18T11:13:39Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -36675,7 +39326,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -36685,7 +39336,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-13T09:29:00Z",
       "sourceRevisionCount": 10,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -37102,7 +39753,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-08T15:24:54Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -37519,7 +40170,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-06T18:30:51Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -37936,7 +40587,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-06T18:49:41Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -38347,13 +40998,53 @@
       ]
     },
     {
+      "characterId": "yangyang-xuanling",
+      "locale": "en-US",
+      "sourcePageTitle": "Yangyang: Xuanling/Voicelines",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "zh-CN",
+      "sourcePageTitle": "Yangyang: Xuanling/Voicelines/Chinese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "ja-JP",
+      "sourcePageTitle": "Yangyang: Xuanling/Voicelines/Japanese",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "ko-KR",
+      "sourcePageTitle": "Yangyang: Xuanling/Voicelines/Korean",
+      "sourcePageExists": false,
+      "sourceLatestRevisionAt": null,
+      "sourceRevisionCount": 0,
+      "generatedAt": "2026-07-11T23:46:56.240Z",
+      "lines": []
+    },
+    {
       "characterId": "yinlin",
       "locale": "en-US",
       "sourcePageTitle": "Yinlin/Voicelines",
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-12T23:52:01Z",
       "sourceRevisionCount": 8,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -38819,7 +41510,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-11-16T06:09:06Z",
       "sourceRevisionCount": 3,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -39278,7 +41969,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:49:54Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -39737,7 +42428,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-06-10T17:51:00Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -40196,7 +42887,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-03-31T03:50:38Z",
       "sourceRevisionCount": 2,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "aerial_1",
@@ -40669,7 +43360,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -40679,7 +43370,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -40689,7 +43380,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -40699,7 +43390,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-07-30T19:35:51Z",
       "sourceRevisionCount": 21,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -41137,7 +43828,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-10-11T01:57:25Z",
       "sourceRevisionCount": 7,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -41575,7 +44266,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -41585,7 +44276,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -41595,7 +44286,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2025-05-08T00:52:40Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "basic_1",
@@ -42110,7 +44801,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -42120,7 +44811,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -42130,7 +44821,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -42140,7 +44831,7 @@
       "sourcePageExists": true,
       "sourceLatestRevisionAt": "2024-08-16T13:00:16Z",
       "sourceRevisionCount": 1,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": [
         {
           "key": "chest_1",
@@ -42543,7 +45234,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -42553,7 +45244,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     },
     {
@@ -42563,7 +45254,7 @@
       "sourcePageExists": false,
       "sourceLatestRevisionAt": null,
       "sourceRevisionCount": 0,
-      "generatedAt": "2026-06-02T19:30:43.185Z",
+      "generatedAt": "2026-07-11T23:46:56.240Z",
       "lines": []
     }
   ]

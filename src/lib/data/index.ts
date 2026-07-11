@@ -337,7 +337,7 @@ export async function getVersionHalfStatsPageData(params?: {
   const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
 
   const fromVersion = params?.fromVersion ?? versions[0]?.version ?? "1.0";
-  const toVersion = params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.4";
+  const toVersion = params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.5";
   const selectedSegments = filterStorySegmentsByRange({
     segments: storySegments,
     fromVersion,

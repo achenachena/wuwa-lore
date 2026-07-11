@@ -1,19 +1,17 @@
 {
   "id": "lumi",
   "name": "Lumi",
-  "aliases": [
-    "灯灯"
-  ],
+  "aliases": [],
   "element": "Electro",
   "weapon": "Broadblade",
   "faction": "Yuezhou",
   "rarity": 4,
   "releaseVersion": "1.4",
-  "profile": "--> She is a navigator at Lollo Logistics and leader of a transport squad team.",
+  "profile": "Born disciplined, she is now enjoying her daily tasks as a diligent courier, honoring her duty of punctual delivery.|Her introduction on the Official Website.}}",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lumi",
-    "scrapedAt": "2026-06-02T19:30:43.185Z",
+    "scrapedAt": "2026-07-11T23:46:56.240Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
   "editor": "scripts/sync-story-appearances.ts",
-  "generatedAt": "2026-06-18T02:05:47.293Z",
+  "generatedAt": "2026-07-11T23:49:07.263Z",
   "segments": [
     {
       "id": "utterance-of-marvels",
@@ -380,6 +380,33 @@
       "half": "b",
       "versionHalf": "3.4-b",
       "sortOrder": 41
+    },
+    {
+      "id": "the-wind-before-the-storm",
+      "wikiTitle": "The Wind Before the Storm",
+      "nameZh": "山雨欲来风满楼",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "sortOrder": 42
+    },
+    {
+      "id": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "sortOrder": 43
+    },
+    {
+      "id": "the-chant-of-unseen-ties",
+      "wikiTitle": "The Chant of Unseen Ties",
+      "nameZh": "灵籁之契冥相因",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "sortOrder": 44
     }
   ]
 }

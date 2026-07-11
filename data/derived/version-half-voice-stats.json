@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-17T23:12:20.556Z",
+  "generatedAt": "2026-07-11T23:54:12.037Z",
   "localeDefault": "zh-CN",
-  "halfCount": 38,
+  "halfCount": 40,
   "rows": [
     {
       "characterId": "aalto",
@@ -21,11 +21,19 @@
     },
     {
       "characterId": "aalto",
+      "locale": "ja-JP",
+      "versionHalf": "3.4-b",
+      "version": "3.4",
+      "half": "b",
+      "lineCount": 34
+    },
+    {
+      "characterId": "aalto",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 64
+      "lineCount": 63
     },
     {
       "characterId": "aemeath",
@@ -274,6 +282,14 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 60
+    },
+    {
+      "characterId": "denia",
+      "locale": "en-US",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "lineCount": 93
     },
     {
       "characterId": "encore",
@@ -588,6 +604,14 @@
       "lineCount": 67
     },
     {
+      "characterId": "qiuyuan",
+      "locale": "en-US",
+      "versionHalf": "3.3-b",
+      "version": "3.3",
+      "half": "b",
+      "lineCount": 71
+    },
+    {
       "characterId": "roccia",
       "locale": "en-US",
       "versionHalf": "2.1-a",
@@ -677,6 +701,46 @@
     },
     {
       "characterId": "rover-aero",
+      "locale": "zh-CN",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "en-US",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 52
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "en-US",
+      "versionHalf": "1.0-b",
+      "version": "1.0",
+      "half": "b",
+      "lineCount": 1
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "ja-JP",
+      "versionHalf": "1.0-a",
+      "version": "1.0",
+      "half": "a",
+      "lineCount": 11
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "ja-JP",
+      "versionHalf": "2.3-b",
+      "version": "2.3",
+      "half": "b",
+      "lineCount": 42
+    },
+    {
+      "characterId": "rover-electro",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",

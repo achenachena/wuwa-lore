@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T19:33:57.139Z",
+  "generatedAt": "2026-07-11T23:57:14.246Z",
   "toleranceMinutes": 180,
   "sources": {
     "fandomVersionsFile": "content/versions/versions.json",
@@ -8,11 +8,11 @@
     "officialSourceName": "kuro-official-mainmenu-en"
   },
   "summary": {
-    "fandomVersionCount": 19,
-    "officialVersionCount": 19,
+    "fandomVersionCount": 20,
+    "officialVersionCount": 20,
     "missingInOfficial": 0,
     "missingInFandom": 0,
-    "alignedDate": 19,
+    "alignedDate": 20,
     "mismatchedDate": 0,
     "ok": true
   },
@@ -37,7 +37,8 @@
     "3.1",
     "3.2",
     "3.3",
-    "3.4"
+    "3.4",
+    "3.5"
   ],
   "mismatchedDate": []
 }

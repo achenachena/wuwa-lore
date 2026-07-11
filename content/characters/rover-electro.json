@@ -1,16 +1,16 @@
 {
-  "id": "rover-spectro",
-  "name": "Rover-Spectro",
+  "id": "rover-electro",
+  "name": "Rover-Electro",
   "aliases": [],
-  "element": "Spectro",
+  "element": "Electro",
   "weapon": "Unknown",
   "faction": "Unknown",
   "rarity": 0,
-  "releaseVersion": "1.0",
+  "releaseVersion": "3.5",
   "profile": "Profile text unavailable from source.",
   "locale": "en-US",
   "source": {
-    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Spectro",
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Electro",
     "scrapedAt": "2026-07-11T23:46:56.240Z",
     "editor": "scripts/sync-fandom-data.ts"
   }

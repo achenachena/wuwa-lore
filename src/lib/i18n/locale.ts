@@ -19,6 +19,7 @@ export const ROVER_CHARACTER_IDS = new Set([
   "rover-havoc",
   "rover-spectro",
   "rover-aero",
+  "rover-electro",
 ]);
 
 export function isRoverCharacter(characterId: string): boolean {

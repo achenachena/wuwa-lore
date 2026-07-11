@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-24T10:13:16.105Z",
+  "generatedAt": "2026-07-11T23:51:01.168Z",
   "source": {
     "name": "encore.moe+fandom",
     "appearanceRule": "optional_quest_dialogue_speakers_plus_fandom_infobox_companion_event",
     "categories": {
       "companion": 12,
       "event": 45,
-      "side": 224
+      "side": 254
     },
     "fandomAppearanceCount": 15
   },
@@ -171,6 +171,13 @@
       "questId": "side-880000011",
       "questName": "A Taste of Everything",
       "questNameZh": "百味荟萃"
+    },
+    {
+      "category": "side",
+      "characterId": "danjin",
+      "questId": "side-191750001",
+      "questName": "Faithful Heart Tested at Skyfall: Epilogue",
+      "questNameZh": "危构悬天问丹心·后日谈"
     },
     {
       "category": "companion",
@@ -433,6 +440,13 @@
     },
     {
       "category": "side",
+      "characterId": "mortefi",
+      "questId": "side-686000000",
+      "questName": "Smeltguard Dances, Fortune Surges",
+      "questNameZh": "金兽起舞，八方来财"
+    },
+    {
+      "category": "side",
       "characterId": "phoebe",
       "questId": "side-106000005",
       "questName": "Ragunna Holiday",
@@ -481,6 +495,13 @@
       "questNameZh": "海风中失落的湛蓝回声·后日谈"
     },
     {
+      "category": "side",
+      "characterId": "shorekeeper",
+      "questId": "side-165750000",
+      "questName": "Lost Taste",
+      "questNameZh": "失落的味道"
+    },
+    {
       "category": "event",
       "characterId": "sigrika",
       "questId": "event-165800014",
@@ -510,6 +531,20 @@
     },
     {
       "category": "companion",
+      "characterId": "suisui",
+      "questId": "companion-101005",
+      "questName": "True Colors",
+      "questNameZh": "自问丹青"
+    },
+    {
+      "category": "side",
+      "characterId": "suisui",
+      "questId": "side-164750000",
+      "questName": "A Chill Day Out",
+      "questNameZh": "悠然一日"
+    },
+    {
+      "category": "companion",
       "characterId": "verina",
       "questId": "companion-101006",
       "questName": "Small Wooly, Big Adventures",
@@ -535,6 +570,13 @@
       "questId": "side-139700003",
       "questName": "Riddle and Reunion",
       "questNameZh": "待得团圆时"
+    },
+    {
+      "category": "side",
+      "characterId": "yangyang",
+      "questId": "side-165750002",
+      "questName": "Silence of the Guilty",
+      "questNameZh": "不白之罪"
     },
     {
       "category": "companion",

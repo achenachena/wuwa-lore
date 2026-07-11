@@ -166,6 +166,18 @@
     "We Choose the Sky": {
       "zh-Hans": ["我们选择天空"],
       "en": ["We Choose the Sky"]
+    },
+    "The Wind Before the Storm": {
+      "zh-Hans": ["山雨欲来风满楼"],
+      "en": ["The Wind Before the Storm"]
+    },
+    "Xuanling Sings, Storm Quelled": {
+      "zh-Hans": ["玄翎振壑定澜音"],
+      "en": ["Xuanling Sings, Storm Quelled"]
+    },
+    "The Chant of Unseen Ties": {
+      "zh-Hans": ["灵籁之契冥相因"],
+      "en": ["The Chant of Unseen Ties"]
     }
   }
 }

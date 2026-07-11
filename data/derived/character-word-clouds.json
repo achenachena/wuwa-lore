@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T17:51:51.134Z",
+  "generatedAt": "2026-07-11T23:54:12.417Z",
   "source": {
     "name": "encore.moe+fandom-voicelines",
     "tokenMethod": "intl-segmenter+bigram",
@@ -8,13 +8,13 @@
       "optional_quest",
       "ui_voiceline"
     ],
-    "storyCount": 325
+    "storyCount": 358
   },
   "rows": [
     {
       "characterId": "aalto",
       "locale": "zh-Hans",
-      "lineCount": 486,
+      "lineCount": 485,
       "terms": [
         {
           "term": "海岸",
@@ -23,6 +23,10 @@
         {
           "term": "黑海",
           "count": 63
+        },
+        {
+          "term": "情报",
+          "count": 60
         },
         {
           "term": "系统",
@@ -41,32 +45,28 @@
           "count": 40
         },
         {
-          "term": "情报",
-          "count": 38
-        },
-        {
           "term": "鸣式",
           "count": 32
+        },
+        {
+          "term": "想要",
+          "count": 30
         },
         {
           "term": "频率",
           "count": 28
         },
         {
-          "term": "它的",
+          "term": "你的",
           "count": 26
         },
         {
-          "term": "想要",
+          "term": "它的",
           "count": 26
         },
         {
           "term": "这么",
           "count": 25
-        },
-        {
-          "term": "你的",
-          "count": 24
         },
         {
           "term": "泰缇",
@@ -79,6 +79,14 @@
         {
           "term": "校长",
           "count": 24
+        },
+        {
+          "term": "也是",
+          "count": 24
+        },
+        {
+          "term": "成为",
+          "count": 22
         },
         {
           "term": "稷廷",
@@ -105,7 +113,15 @@
           "count": 21
         },
         {
+          "term": "客户",
+          "count": 21
+        },
+        {
           "term": "溯洄",
+          "count": 21
+        },
+        {
+          "term": "我的",
           "count": 21
         },
         {
@@ -117,11 +133,11 @@
           "count": 20
         },
         {
-          "term": "也是",
-          "count": 20
+          "term": "宝石",
+          "count": 19
         },
         {
-          "term": "宝石",
+          "term": "的话",
           "count": 19
         },
         {
@@ -153,11 +169,19 @@
           "count": 18
         },
         {
+          "term": "那位",
+          "count": 18
+        },
+        {
           "term": "能量",
           "count": 18
         },
         {
-          "term": "的话",
+          "term": "研究",
+          "count": 18
+        },
+        {
+          "term": "到了",
           "count": 17
         },
         {
@@ -169,11 +193,11 @@
           "count": 17
         },
         {
-          "term": "成为",
-          "count": 16
+          "term": "这次",
+          "count": 17
         },
         {
-          "term": "到了",
+          "term": "部分",
           "count": 16
         },
         {
@@ -191,37 +215,13 @@
         {
           "term": "家伙",
           "count": 16
-        },
-        {
-          "term": "那位",
-          "count": 16
-        },
-        {
-          "term": "能够",
-          "count": 16
-        },
-        {
-          "term": "研究",
-          "count": 16
-        },
-        {
-          "term": "部分",
-          "count": 15
-        },
-        {
-          "term": "就在",
-          "count": 15
-        },
-        {
-          "term": "是我",
-          "count": 15
         }
       ]
     },
     {
       "characterId": "aalto",
       "locale": "en",
-      "lineCount": 486,
+      "lineCount": 520,
       "terms": [
         {
           "term": "black",
@@ -428,7 +428,7 @@
     {
       "characterId": "aemeath",
       "locale": "zh-Hans",
-      "lineCount": 438,
+      "lineCount": 442,
       "terms": [
         {
           "term": "我的",
@@ -635,7 +635,7 @@
     {
       "characterId": "aemeath",
       "locale": "en",
-      "lineCount": 554,
+      "lineCount": 558,
       "terms": [
         {
           "term": "exostrider",
@@ -1256,7 +1256,7 @@
     {
       "characterId": "baizhi",
       "locale": "zh-Hans",
-      "lineCount": 176,
+      "lineCount": 194,
       "terms": [
         {
           "term": "你的",
@@ -1463,7 +1463,7 @@
     {
       "characterId": "baizhi",
       "locale": "en",
-      "lineCount": 293,
+      "lineCount": 311,
       "terms": [
         {
           "term": "tacet",
@@ -1502,10 +1502,6 @@
           "count": 10
         },
         {
-          "term": "academy",
-          "count": 9
-        },
-        {
           "term": "before",
           "count": 9
         },
@@ -1522,11 +1518,11 @@
           "count": 9
         },
         {
-          "term": "terminal",
+          "term": "academy",
           "count": 8
         },
         {
-          "term": "you'tan",
+          "term": "terminal",
           "count": 8
         },
         {
@@ -1626,10 +1622,6 @@
           "count": 5
         },
         {
-          "term": "remnant",
-          "count": 5
-        },
-        {
           "term": "see",
           "count": 5
         },
@@ -1663,6 +1655,14 @@
         },
         {
           "term": "answer",
+          "count": 4
+        },
+        {
+          "term": "anything",
+          "count": 4
+        },
+        {
+          "term": "archives",
           "count": 4
         }
       ]
@@ -4982,7 +4982,7 @@
     {
       "characterId": "chisa",
       "locale": "zh-Hans",
-      "lineCount": 318,
+      "lineCount": 321,
       "terms": [
         {
           "term": "悲鸣",
@@ -5189,7 +5189,7 @@
     {
       "characterId": "chisa",
       "locale": "en",
-      "lineCount": 348,
+      "lineCount": 351,
       "terms": [
         {
           "term": "time",
@@ -5396,7 +5396,7 @@
     {
       "characterId": "chixia",
       "locale": "zh-Hans",
-      "lineCount": 748,
+      "lineCount": 769,
       "terms": [
         {
           "term": "就是",
@@ -5603,7 +5603,7 @@
     {
       "characterId": "chixia",
       "locale": "en",
-      "lineCount": 889,
+      "lineCount": 910,
       "terms": [
         {
           "term": "right",
@@ -6224,8 +6224,12 @@
     {
       "characterId": "danjin",
       "locale": "zh-Hans",
-      "lineCount": 60,
+      "lineCount": 77,
       "terms": [
+        {
+          "term": "龙须",
+          "count": 12
+        },
         {
           "term": "那么",
           "count": 10
@@ -6240,10 +6244,6 @@
         },
         {
           "term": "黑暗",
-          "count": 8
-        },
-        {
-          "term": "龙须",
           "count": 8
         },
         {
@@ -6279,8 +6279,20 @@
           "count": 6
         },
         {
+          "term": "训练",
+          "count": 6
+        },
+        {
           "term": "野外",
           "count": 6
+        },
+        {
+          "term": "就是",
+          "count": 5
+        },
+        {
+          "term": "须酥",
+          "count": 5
         },
         {
           "term": "并不",
@@ -6288,6 +6300,10 @@
         },
         {
           "term": "不错",
+          "count": 4
+        },
+        {
+          "term": "的时",
           "count": 4
         },
         {
@@ -6300,6 +6316,10 @@
         },
         {
           "term": "复仇",
+          "count": 4
+        },
+        {
+          "term": "感觉",
           "count": 4
         },
         {
@@ -6359,7 +6379,19 @@
           "count": 4
         },
         {
+          "term": "一次",
+          "count": 4
+        },
+        {
+          "term": "一码",
+          "count": 4
+        },
+        {
           "term": "一阵",
+          "count": 4
+        },
+        {
+          "term": "意义",
           "count": 4
         },
         {
@@ -6387,43 +6419,11 @@
           "count": 3
         },
         {
-          "term": "的时",
-          "count": 3
-        },
-        {
           "term": "的事",
           "count": 3
         },
         {
           "term": "光明",
-          "count": 3
-        },
-        {
-          "term": "好的",
-          "count": 3
-        },
-        {
-          "term": "了一",
-          "count": 3
-        },
-        {
-          "term": "明断",
-          "count": 3
-        },
-        {
-          "term": "起来",
-          "count": 3
-        },
-        {
-          "term": "行的",
-          "count": 3
-        },
-        {
-          "term": "须酥",
-          "count": 3
-        },
-        {
-          "term": "悠悠",
           "count": 3
         }
       ]
@@ -6431,11 +6431,43 @@
     {
       "characterId": "danjin",
       "locale": "en",
-      "lineCount": 181,
+      "lineCount": 198,
       "terms": [
         {
           "term": "always",
           "count": 7
+        },
+        {
+          "term": "i'll",
+          "count": 6
+        },
+        {
+          "term": "i'm",
+          "count": 6
+        },
+        {
+          "term": "whiskers",
+          "count": 6
+        },
+        {
+          "term": "crisps",
+          "count": 5
+        },
+        {
+          "term": "get",
+          "count": 5
+        },
+        {
+          "term": "i've",
+          "count": 5
+        },
+        {
+          "term": "loong",
+          "count": 5
+        },
+        {
+          "term": "try",
+          "count": 5
         },
         {
           "term": "blade",
@@ -6443,14 +6475,6 @@
         },
         {
           "term": "crimson",
-          "count": 4
-        },
-        {
-          "term": "get",
-          "count": 4
-        },
-        {
-          "term": "i'm",
           "count": 4
         },
         {
@@ -6462,7 +6486,15 @@
           "count": 4
         },
         {
-          "term": "whiskers",
+          "term": "never",
+          "count": 4
+        },
+        {
+          "term": "that's",
+          "count": 4
+        },
+        {
+          "term": "time",
           "count": 4
         },
         {
@@ -6474,11 +6506,15 @@
           "count": 3
         },
         {
-          "term": "crisps",
+          "term": "can't",
           "count": 3
         },
         {
           "term": "enjoy",
+          "count": 3
+        },
+        {
+          "term": "even",
           "count": 3
         },
         {
@@ -6490,7 +6526,23 @@
           "count": 3
         },
         {
+          "term": "feel",
+          "count": 3
+        },
+        {
+          "term": "finally",
+          "count": 3
+        },
+        {
+          "term": "going",
+          "count": 3
+        },
+        {
           "term": "having",
+          "count": 3
+        },
+        {
+          "term": "hmm",
           "count": 3
         },
         {
@@ -6498,15 +6550,7 @@
           "count": 3
         },
         {
-          "term": "i've",
-          "count": 3
-        },
-        {
           "term": "keep",
-          "count": 3
-        },
-        {
-          "term": "loong",
           "count": 3
         },
         {
@@ -6522,7 +6566,15 @@
           "count": 3
         },
         {
-          "term": "never",
+          "term": "myself",
+          "count": 3
+        },
+        {
+          "term": "once",
+          "count": 3
+        },
+        {
+          "term": "right",
           "count": 3
         },
         {
@@ -6534,10 +6586,6 @@
           "count": 3
         },
         {
-          "term": "that's",
-          "count": 3
-        },
-        {
           "term": "while",
           "count": 3
         },
@@ -6546,7 +6594,15 @@
           "count": 3
         },
         {
+          "term": "ah",
+          "count": 2
+        },
+        {
           "term": "any",
+          "count": 2
+        },
+        {
+          "term": "anyone",
           "count": 2
         },
         {
@@ -6554,83 +6610,27 @@
           "count": 2
         },
         {
+          "term": "back",
+          "count": 2
+        },
+        {
+          "term": "battle",
+          "count": 2
+        },
+        {
+          "term": "before",
+          "count": 2
+        },
+        {
           "term": "birthday",
           "count": 2
         },
         {
-          "term": "can't",
+          "term": "clear",
           "count": 2
         },
         {
           "term": "danjin",
-          "count": 2
-        },
-        {
-          "term": "dark",
-          "count": 2
-        },
-        {
-          "term": "darkness",
-          "count": 2
-        },
-        {
-          "term": "down",
-          "count": 2
-        },
-        {
-          "term": "fading",
-          "count": 2
-        },
-        {
-          "term": "feel",
-          "count": 2
-        },
-        {
-          "term": "finally",
-          "count": 2
-        },
-        {
-          "term": "find",
-          "count": 2
-        },
-        {
-          "term": "first",
-          "count": 2
-        },
-        {
-          "term": "free",
-          "count": 2
-        },
-        {
-          "term": "go",
-          "count": 2
-        },
-        {
-          "term": "going",
-          "count": 2
-        },
-        {
-          "term": "great",
-          "count": 2
-        },
-        {
-          "term": "greetings",
-          "count": 2
-        },
-        {
-          "term": "hmm",
-          "count": 2
-        },
-        {
-          "term": "i'll",
-          "count": 2
-        },
-        {
-          "term": "injustice",
-          "count": 2
-        },
-        {
-          "term": "journey",
           "count": 2
         }
       ]
@@ -6845,70 +6845,126 @@
     {
       "characterId": "denia",
       "locale": "en",
-      "lineCount": 295,
+      "lineCount": 388,
       "terms": [
         {
           "term": "right",
-          "count": 21
+          "count": 29
         },
         {
           "term": "i'm",
+          "count": 26
+        },
+        {
+          "term": "get",
+          "count": 22
+        },
+        {
+          "term": "don't",
+          "count": 20
+        },
+        {
+          "term": "know",
+          "count": 20
+        },
+        {
+          "term": "that's",
           "count": 20
         },
         {
           "term": "way",
+          "count": 19
+        },
+        {
+          "term": "still",
           "count": 18
         },
         {
-          "term": "get",
-          "count": 17
+          "term": "want",
+          "count": 18
         },
         {
           "term": "go",
           "count": 17
         },
         {
-          "term": "know",
+          "term": "good",
+          "count": 17
+        },
+        {
+          "term": "time",
           "count": 16
         },
         {
-          "term": "that's",
+          "term": "you're",
+          "count": 16
+        },
+        {
+          "term": "never",
           "count": 15
         },
         {
-          "term": "don't",
-          "count": 14
-        },
-        {
-          "term": "you're",
+          "term": "oh",
           "count": 14
         },
         {
           "term": "siggy",
-          "count": 13
+          "count": 14
         },
         {
           "term": "sigrika",
-          "count": 13
+          "count": 14
         },
         {
-          "term": "time",
+          "term": "even",
           "count": 13
-        },
-        {
-          "term": "want",
-          "count": 13
-        },
-        {
-          "term": "good",
-          "count": 11
         },
         {
           "term": "guess",
+          "count": 13
+        },
+        {
+          "term": "birthday",
+          "count": 12
+        },
+        {
+          "term": "make",
+          "count": 12
+        },
+        {
+          "term": "maybe",
+          "count": 12
+        },
+        {
+          "term": "think",
+          "count": 12
+        },
+        {
+          "term": "always",
           "count": 11
         },
         {
-          "term": "oh",
+          "term": "back",
+          "count": 11
+        },
+        {
+          "term": "being",
+          "count": 11
+        },
+        {
+          "term": "ever",
+          "count": 11
+        },
+        {
+          "term": "feels",
+          "count": 11
+        },
+        {
+          "term": "kind",
+          "count": 11
+        },
+        {
+          "term": "over",
           "count": 11
         },
         {
@@ -6916,43 +6972,67 @@
           "count": 11
         },
         {
-          "term": "birthday",
-          "count": 9
-        },
-        {
-          "term": "even",
-          "count": 9
-        },
-        {
-          "term": "i'll",
-          "count": 9
-        },
-        {
-          "term": "kind",
-          "count": 9
-        },
-        {
-          "term": "never",
-          "count": 9
-        },
-        {
-          "term": "still",
-          "count": 9
-        },
-        {
           "term": "things",
-          "count": 9
-        },
-        {
-          "term": "think",
-          "count": 9
+          "count": 11
         },
         {
           "term": "those",
+          "count": 11
+        },
+        {
+          "term": "actually",
+          "count": 10
+        },
+        {
+          "term": "help",
+          "count": 10
+        },
+        {
+          "term": "i'll",
+          "count": 10
+        },
+        {
+          "term": "off",
+          "count": 10
+        },
+        {
+          "term": "say",
+          "count": 10
+        },
+        {
+          "term": "see",
+          "count": 10
+        },
+        {
+          "term": "better",
           "count": 9
         },
         {
-          "term": "being",
+          "term": "let's",
+          "count": 9
+        },
+        {
+          "term": "life",
+          "count": 9
+        },
+        {
+          "term": "little",
+          "count": 9
+        },
+        {
+          "term": "running",
+          "count": 9
+        },
+        {
+          "term": "again",
+          "count": 8
+        },
+        {
+          "term": "bit",
+          "count": 8
+        },
+        {
+          "term": "cake",
           "count": 8
         },
         {
@@ -6960,92 +7040,12 @@
           "count": 8
         },
         {
-          "term": "least",
+          "term": "i've",
           "count": 8
         },
         {
-          "term": "let's",
+          "term": "keep",
           "count": 8
-        },
-        {
-          "term": "person",
-          "count": 8
-        },
-        {
-          "term": "see",
-          "count": 8
-        },
-        {
-          "term": "actually",
-          "count": 7
-        },
-        {
-          "term": "always",
-          "count": 7
-        },
-        {
-          "term": "back",
-          "count": 7
-        },
-        {
-          "term": "didn't",
-          "count": 7
-        },
-        {
-          "term": "help",
-          "count": 7
-        },
-        {
-          "term": "life",
-          "count": 7
-        },
-        {
-          "term": "make",
-          "count": 7
-        },
-        {
-          "term": "maybe",
-          "count": 7
-        },
-        {
-          "term": "off",
-          "count": 7
-        },
-        {
-          "term": "over",
-          "count": 7
-        },
-        {
-          "term": "put",
-          "count": 7
-        },
-        {
-          "term": "running",
-          "count": 7
-        },
-        {
-          "term": "today",
-          "count": 7
-        },
-        {
-          "term": "you'd",
-          "count": 7
-        },
-        {
-          "term": "ago",
-          "count": 6
-        },
-        {
-          "term": "better",
-          "count": 6
-        },
-        {
-          "term": "cake",
-          "count": 6
-        },
-        {
-          "term": "come",
-          "count": 6
         }
       ]
     },
@@ -7880,7 +7880,7 @@
     {
       "characterId": "hiyuki",
       "locale": "zh-Hans",
-      "lineCount": 219,
+      "lineCount": 223,
       "terms": [
         {
           "term": "孩子",
@@ -8087,7 +8087,7 @@
     {
       "characterId": "hiyuki",
       "locale": "en",
-      "lineCount": 284,
+      "lineCount": 288,
       "terms": [
         {
           "term": "wish",
@@ -8222,6 +8222,10 @@
           "count": 8
         },
         {
+          "term": "strength",
+          "count": 8
+        },
+        {
           "term": "threnodian",
           "count": 8
         },
@@ -8267,10 +8271,6 @@
         },
         {
           "term": "simply",
-          "count": 7
-        },
-        {
-          "term": "strength",
           "count": 7
         },
         {
@@ -9122,7 +9122,7 @@
     {
       "characterId": "jinhsi",
       "locale": "zh-Hans",
-      "lineCount": 425,
+      "lineCount": 455,
       "terms": [
         {
           "term": "今州",
@@ -9329,7 +9329,7 @@
     {
       "characterId": "jinhsi",
       "locale": "en",
-      "lineCount": 576,
+      "lineCount": 606,
       "terms": [
         {
           "term": "jinzhou",
@@ -10364,7 +10364,7 @@
     {
       "characterId": "lucilla",
       "locale": "zh-Hans",
-      "lineCount": 884,
+      "lineCount": 889,
       "terms": [
         {
           "term": "学院",
@@ -10571,7 +10571,7 @@
     {
       "characterId": "lucilla",
       "locale": "en",
-      "lineCount": 884,
+      "lineCount": 889,
       "terms": [
         {
           "term": "dark",
@@ -11813,7 +11813,7 @@
     {
       "characterId": "luuk-herssen",
       "locale": "zh-Hans",
-      "lineCount": 448,
+      "lineCount": 451,
       "terms": [
         {
           "term": "学院",
@@ -12020,7 +12020,7 @@
     {
       "characterId": "luuk-herssen",
       "locale": "en",
-      "lineCount": 501,
+      "lineCount": 504,
       "terms": [
         {
           "term": "time",
@@ -12227,7 +12227,7 @@
     {
       "characterId": "lynae",
       "locale": "zh-Hans",
-      "lineCount": 666,
+      "lineCount": 669,
       "terms": [
         {
           "term": "学院",
@@ -12434,7 +12434,7 @@
     {
       "characterId": "lynae",
       "locale": "en",
-      "lineCount": 727,
+      "lineCount": 730,
       "terms": [
         {
           "term": "you're",
@@ -12641,7 +12641,7 @@
     {
       "characterId": "mornye",
       "locale": "zh-Hans",
-      "lineCount": 598,
+      "lineCount": 601,
       "terms": [
         {
           "term": "前辈",
@@ -12848,7 +12848,7 @@
     {
       "characterId": "mornye",
       "locale": "en",
-      "lineCount": 651,
+      "lineCount": 654,
       "terms": [
         {
           "term": "time",
@@ -13262,11 +13262,11 @@
     {
       "characterId": "mortefi",
       "locale": "en",
-      "lineCount": 160,
+      "lineCount": 183,
       "terms": [
         {
           "term": "need",
-          "count": 12
+          "count": 13
         },
         {
           "term": "should",
@@ -13274,10 +13274,18 @@
         },
         {
           "term": "time",
-          "count": 9
+          "count": 11
+        },
+        {
+          "term": "good",
+          "count": 10
         },
         {
           "term": "any",
+          "count": 8
+        },
+        {
+          "term": "find",
           "count": 8
         },
         {
@@ -13289,11 +13297,7 @@
           "count": 7
         },
         {
-          "term": "find",
-          "count": 7
-        },
-        {
-          "term": "good",
+          "term": "i'm",
           "count": 7
         },
         {
@@ -13309,6 +13313,10 @@
           "count": 6
         },
         {
+          "term": "coins",
+          "count": 6
+        },
+        {
           "term": "disruptor",
           "count": 6
         },
@@ -13317,11 +13325,19 @@
           "count": 6
         },
         {
-          "term": "i'm",
+          "term": "fortune",
+          "count": 6
+        },
+        {
+          "term": "make",
           "count": 6
         },
         {
           "term": "missing",
+          "count": 6
+        },
+        {
+          "term": "most",
           "count": 6
         },
         {
@@ -13345,11 +13361,19 @@
           "count": 5
         },
         {
+          "term": "come",
+          "count": 5
+        },
+        {
           "term": "component",
           "count": 5
         },
         {
           "term": "data",
+          "count": 5
+        },
+        {
+          "term": "done",
           "count": 5
         },
         {
@@ -13365,15 +13389,23 @@
           "count": 5
         },
         {
-          "term": "make",
-          "count": 5
-        },
-        {
           "term": "may",
           "count": 5
         },
         {
+          "term": "must",
+          "count": 5
+        },
+        {
           "term": "news",
+          "count": 5
+        },
+        {
+          "term": "people",
+          "count": 5
+        },
+        {
+          "term": "place",
           "count": 5
         },
         {
@@ -13382,6 +13414,18 @@
         },
         {
           "term": "research",
+          "count": 5
+        },
+        {
+          "term": "see",
+          "count": 5
+        },
+        {
+          "term": "smeltguard's",
+          "count": 5
+        },
+        {
+          "term": "someone",
           "count": 5
         },
         {
@@ -13405,64 +13449,20 @@
           "count": 5
         },
         {
+          "term": "that's",
+          "count": 5
+        },
+        {
+          "term": "through",
+          "count": 5
+        },
+        {
           "term": "way",
           "count": 5
         },
         {
           "term": "we've",
           "count": 5
-        },
-        {
-          "term": "along",
-          "count": 4
-        },
-        {
-          "term": "back",
-          "count": 4
-        },
-        {
-          "term": "between",
-          "count": 4
-        },
-        {
-          "term": "done",
-          "count": 4
-        },
-        {
-          "term": "else",
-          "count": 4
-        },
-        {
-          "term": "ever",
-          "count": 4
-        },
-        {
-          "term": "go",
-          "count": 4
-        },
-        {
-          "term": "i'll",
-          "count": 4
-        },
-        {
-          "term": "indeed",
-          "count": 4
-        },
-        {
-          "term": "most",
-          "count": 4
-        },
-        {
-          "term": "much",
-          "count": 4
-        },
-        {
-          "term": "music",
-          "count": 4
-        },
-        {
-          "term": "must",
-          "count": 4
         }
       ]
     },
@@ -14504,7 +14504,7 @@
     {
       "characterId": "qiuyuan",
       "locale": "en",
-      "lineCount": 190,
+      "lineCount": 261,
       "terms": [
         {
           "term": "dark",
@@ -14515,19 +14515,47 @@
           "count": 13
         },
         {
+          "term": "blade",
+          "count": 12
+        },
+        {
+          "term": "see",
+          "count": 12
+        },
+        {
           "term": "threnodian",
           "count": 12
         },
         {
           "term": "i'll",
-          "count": 8
+          "count": 11
         },
         {
-          "term": "still",
-          "count": 8
+          "term": "only",
+          "count": 10
         },
         {
           "term": "that's",
+          "count": 10
+        },
+        {
+          "term": "i've",
+          "count": 9
+        },
+        {
+          "term": "still",
+          "count": 9
+        },
+        {
+          "term": "before",
+          "count": 8
+        },
+        {
+          "term": "must",
+          "count": 8
+        },
+        {
+          "term": "those",
           "count": 8
         },
         {
@@ -14535,11 +14563,15 @@
           "count": 7
         },
         {
-          "term": "only",
+          "term": "jinzhou",
           "count": 7
         },
         {
-          "term": "see",
+          "term": "know",
+          "count": 7
+        },
+        {
+          "term": "mingting",
           "count": 7
         },
         {
@@ -14547,11 +14579,35 @@
           "count": 7
         },
         {
-          "term": "jinzhou",
+          "term": "another",
           "count": 6
         },
         {
-          "term": "must",
+          "term": "end",
+          "count": 6
+        },
+        {
+          "term": "grandmaster",
+          "count": 6
+        },
+        {
+          "term": "liang",
+          "count": 6
+        },
+        {
+          "term": "never",
+          "count": 6
+        },
+        {
+          "term": "once",
+          "count": 6
+        },
+        {
+          "term": "people",
+          "count": 6
+        },
+        {
+          "term": "place",
           "count": 6
         },
         {
@@ -14559,23 +14615,51 @@
           "count": 6
         },
         {
+          "term": "these",
+          "count": 6
+        },
+        {
           "term": "threnodian's",
           "count": 6
+        },
+        {
+          "term": "through",
+          "count": 6
+        },
+        {
+          "term": "back",
+          "count": 5
+        },
+        {
+          "term": "blood",
+          "count": 5
+        },
+        {
+          "term": "darkness",
+          "count": 5
+        },
+        {
+          "term": "die",
+          "count": 5
         },
         {
           "term": "discords",
           "count": 5
         },
         {
-          "term": "end",
+          "term": "enough",
           "count": 5
         },
         {
-          "term": "grandmaster",
+          "term": "even",
           "count": 5
         },
         {
-          "term": "liang",
+          "term": "life",
+          "count": 5
+        },
+        {
+          "term": "lives",
           "count": 5
         },
         {
@@ -14583,128 +14667,44 @@
           "count": 5
         },
         {
-          "term": "place",
+          "term": "seems",
           "count": 5
         },
         {
-          "term": "through",
+          "term": "such",
           "count": 5
+        },
+        {
+          "term": "there's",
+          "count": 5
+        },
+        {
+          "term": "work",
+          "count": 5
+        },
+        {
+          "term": "years",
+          "count": 5
+        },
+        {
+          "term": "yet",
+          "count": 5
+        },
+        {
+          "term": "agency",
+          "count": 4
         },
         {
           "term": "already",
           "count": 4
         },
         {
-          "term": "back",
+          "term": "chance",
           "count": 4
         },
         {
-          "term": "before",
+          "term": "come",
           "count": 4
-        },
-        {
-          "term": "darkness",
-          "count": 4
-        },
-        {
-          "term": "dead",
-          "count": 4
-        },
-        {
-          "term": "die",
-          "count": 4
-        },
-        {
-          "term": "enough",
-          "count": 4
-        },
-        {
-          "term": "even",
-          "count": 4
-        },
-        {
-          "term": "fenrico",
-          "count": 4
-        },
-        {
-          "term": "first",
-          "count": 4
-        },
-        {
-          "term": "kill",
-          "count": 4
-        },
-        {
-          "term": "know",
-          "count": 4
-        },
-        {
-          "term": "met",
-          "count": 4
-        },
-        {
-          "term": "people",
-          "count": 4
-        },
-        {
-          "term": "power",
-          "count": 4
-        },
-        {
-          "term": "primus",
-          "count": 4
-        },
-        {
-          "term": "rinascita",
-          "count": 4
-        },
-        {
-          "term": "sense",
-          "count": 4
-        },
-        {
-          "term": "such",
-          "count": 4
-        },
-        {
-          "term": "there's",
-          "count": 4
-        },
-        {
-          "term": "these",
-          "count": 4
-        },
-        {
-          "term": "those",
-          "count": 4
-        },
-        {
-          "term": "again",
-          "count": 3
-        },
-        {
-          "term": "agency",
-          "count": 3
-        },
-        {
-          "term": "ambition",
-          "count": 3
-        },
-        {
-          "term": "another",
-          "count": 3
-        },
-        {
-          "term": "asked",
-          "count": 3
-        },
-        {
-          "term": "away",
-          "count": 3
-        },
-        {
-          "term": "blade",
-          "count": 3
         }
       ]
     },
@@ -15539,7 +15539,7 @@
     {
       "characterId": "sanhua",
       "locale": "zh-Hans",
-      "lineCount": 132,
+      "lineCount": 136,
       "terms": [
         {
           "term": "令尹",
@@ -15746,7 +15746,7 @@
     {
       "characterId": "sanhua",
       "locale": "en",
-      "lineCount": 132,
+      "lineCount": 136,
       "terms": [
         {
           "term": "madam",
@@ -15953,7 +15953,7 @@
     {
       "characterId": "shorekeeper",
       "locale": "zh-Hans",
-      "lineCount": 427,
+      "lineCount": 446,
       "terms": [
         {
           "term": "海岸",
@@ -16000,15 +16000,15 @@
           "count": 29
         },
         {
+          "term": "你的",
+          "count": 28
+        },
+        {
           "term": "故事",
           "count": 26
         },
         {
           "term": "能够",
-          "count": 26
-        },
-        {
-          "term": "你的",
           "count": 26
         },
         {
@@ -16020,6 +16020,10 @@
           "count": 24
         },
         {
+          "term": "作为",
+          "count": 23
+        },
+        {
           "term": "传送",
           "count": 22
         },
@@ -16029,6 +16033,10 @@
         },
         {
           "term": "回来",
+          "count": 22
+        },
+        {
+          "term": "或许",
           "count": 22
         },
         {
@@ -16048,14 +16056,6 @@
           "count": 21
         },
         {
-          "term": "作为",
-          "count": 21
-        },
-        {
-          "term": "或许",
-          "count": 20
-        },
-        {
           "term": "情感",
           "count": 20
         },
@@ -16072,6 +16072,14 @@
           "count": 20
         },
         {
+          "term": "这种",
+          "count": 20
+        },
+        {
+          "term": "之前",
+          "count": 20
+        },
+        {
           "term": "城市",
           "count": 18
         },
@@ -16080,7 +16088,11 @@
           "count": 18
         },
         {
-          "term": "之前",
+          "term": "似乎",
+          "count": 18
+        },
+        {
+          "term": "准备",
           "count": 18
         },
         {
@@ -16112,15 +16124,15 @@
           "count": 16
         },
         {
+          "term": "你在",
+          "count": 16
+        },
+        {
           "term": "身体",
           "count": 16
         },
         {
           "term": "噬亡",
-          "count": 16
-        },
-        {
-          "term": "似乎",
           "count": 16
         },
         {
@@ -16136,31 +16148,19 @@
           "count": 16
         },
         {
-          "term": "这种",
-          "count": 16
-        },
-        {
           "term": "只有",
           "count": 16
         },
         {
           "term": "状态",
           "count": 16
-        },
-        {
-          "term": "准备",
-          "count": 16
-        },
-        {
-          "term": "我会",
-          "count": 15
         }
       ]
     },
     {
       "characterId": "shorekeeper",
       "locale": "en",
-      "lineCount": 495,
+      "lineCount": 514,
       "terms": [
         {
           "term": "black",
@@ -16184,7 +16184,7 @@
         },
         {
           "term": "time",
-          "count": 22
+          "count": 23
         },
         {
           "term": "system",
@@ -16255,6 +16255,10 @@
           "count": 13
         },
         {
+          "term": "within",
+          "count": 13
+        },
+        {
           "term": "again",
           "count": 12
         },
@@ -16263,15 +16267,23 @@
           "count": 12
         },
         {
+          "term": "data",
+          "count": 12
+        },
+        {
           "term": "journey",
           "count": 12
         },
         {
-          "term": "until",
+          "term": "those",
           "count": 12
         },
         {
-          "term": "within",
+          "term": "through",
+          "count": 12
+        },
+        {
+          "term": "until",
           "count": 12
         },
         {
@@ -16287,11 +16299,7 @@
           "count": 11
         },
         {
-          "term": "those",
-          "count": 11
-        },
-        {
-          "term": "through",
+          "term": "these",
           "count": 11
         },
         {
@@ -16307,11 +16315,7 @@
           "count": 10
         },
         {
-          "term": "data",
-          "count": 10
-        },
-        {
-          "term": "these",
+          "term": "lahai",
           "count": 10
         },
         {
@@ -16323,11 +16327,11 @@
           "count": 9
         },
         {
-          "term": "lahai",
+          "term": "many",
           "count": 9
         },
         {
-          "term": "many",
+          "term": "may",
           "count": 9
         },
         {
@@ -16335,8 +16339,20 @@
           "count": 9
         },
         {
+          "term": "return",
+          "count": 9
+        },
+        {
+          "term": "roi",
+          "count": 9
+        },
+        {
           "term": "want",
           "count": 9
+        },
+        {
+          "term": "don't",
+          "count": 8
         },
         {
           "term": "emotions",
@@ -16345,29 +16361,13 @@
         {
           "term": "everything",
           "count": 8
-        },
-        {
-          "term": "frequencies",
-          "count": 8
-        },
-        {
-          "term": "keep",
-          "count": 8
-        },
-        {
-          "term": "other",
-          "count": 8
-        },
-        {
-          "term": "own",
-          "count": 8
         }
       ]
     },
     {
       "characterId": "sigrika",
       "locale": "zh-Hans",
-      "lineCount": 562,
+      "lineCount": 565,
       "terms": [
         {
           "term": "前辈",
@@ -16574,7 +16574,7 @@
     {
       "characterId": "sigrika",
       "locale": "en",
-      "lineCount": 625,
+      "lineCount": 628,
       "terms": [
         {
           "term": "i'm",
@@ -16775,6 +16775,420 @@
         {
           "term": "new",
           "count": 13
+        }
+      ]
+    },
+    {
+      "characterId": "suisui",
+      "locale": "zh-Hans",
+      "lineCount": 334,
+      "terms": [
+        {
+          "term": "老板",
+          "count": 25
+        },
+        {
+          "term": "商会",
+          "count": 10
+        },
+        {
+          "term": "挑战",
+          "count": 10
+        },
+        {
+          "term": "昭明",
+          "count": 10
+        },
+        {
+          "term": "这么",
+          "count": 10
+        },
+        {
+          "term": "白玉",
+          "count": 8
+        },
+        {
+          "term": "地界",
+          "count": 8
+        },
+        {
+          "term": "美人",
+          "count": 8
+        },
+        {
+          "term": "生意",
+          "count": 8
+        },
+        {
+          "term": "看看",
+          "count": 7
+        },
+        {
+          "term": "起来",
+          "count": 7
+        },
+        {
+          "term": "一起",
+          "count": 7
+        },
+        {
+          "term": "之后",
+          "count": 7
+        },
+        {
+          "term": "阿布",
+          "count": 6
+        },
+        {
+          "term": "不止",
+          "count": 6
+        },
+        {
+          "term": "逛逛",
+          "count": 6
+        },
+        {
+          "term": "好像",
+          "count": 6
+        },
+        {
+          "term": "喝水",
+          "count": 6
+        },
+        {
+          "term": "手里",
+          "count": 6
+        },
+        {
+          "term": "天下",
+          "count": 6
+        },
+        {
+          "term": "喜欢",
+          "count": 6
+        },
+        {
+          "term": "一样",
+          "count": 6
+        },
+        {
+          "term": "有些",
+          "count": 6
+        },
+        {
+          "term": "真是",
+          "count": 6
+        },
+        {
+          "term": "哎呀",
+          "count": 5
+        },
+        {
+          "term": "明商",
+          "count": 5
+        },
+        {
+          "term": "玄方",
+          "count": 5
+        },
+        {
+          "term": "拜托",
+          "count": 4
+        },
+        {
+          "term": "别的",
+          "count": 4
+        },
+        {
+          "term": "才是",
+          "count": 4
+        },
+        {
+          "term": "大家",
+          "count": 4
+        },
+        {
+          "term": "倒是",
+          "count": 4
+        },
+        {
+          "term": "地方",
+          "count": 4
+        },
+        {
+          "term": "的货",
+          "count": 4
+        },
+        {
+          "term": "方地",
+          "count": 4
+        },
+        {
+          "term": "逛街",
+          "count": 4
+        },
+        {
+          "term": "活动",
+          "count": 4
+        },
+        {
+          "term": "或许",
+          "count": 4
+        },
+        {
+          "term": "货物",
+          "count": 4
+        },
+        {
+          "term": "就是",
+          "count": 4
+        },
+        {
+          "term": "看来",
+          "count": 4
+        },
+        {
+          "term": "厉害",
+          "count": 4
+        },
+        {
+          "term": "妹妹",
+          "count": 4
+        },
+        {
+          "term": "那边",
+          "count": 4
+        },
+        {
+          "term": "渠道",
+          "count": 4
+        },
+        {
+          "term": "时间",
+          "count": 4
+        },
+        {
+          "term": "适合",
+          "count": 4
+        },
+        {
+          "term": "说得",
+          "count": 4
+        },
+        {
+          "term": "说的",
+          "count": 4
+        },
+        {
+          "term": "我要",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "characterId": "suisui",
+      "locale": "en",
+      "lineCount": 340,
+      "terms": [
+        {
+          "term": "jade",
+          "count": 10
+        },
+        {
+          "term": "know",
+          "count": 9
+        },
+        {
+          "term": "let's",
+          "count": 9
+        },
+        {
+          "term": "little",
+          "count": 9
+        },
+        {
+          "term": "mr",
+          "count": 9
+        },
+        {
+          "term": "i'll",
+          "count": 8
+        },
+        {
+          "term": "take",
+          "count": 8
+        },
+        {
+          "term": "two",
+          "count": 8
+        },
+        {
+          "term": "oh",
+          "count": 7
+        },
+        {
+          "term": "right",
+          "count": 7
+        },
+        {
+          "term": "yubai",
+          "count": 7
+        },
+        {
+          "term": "abby",
+          "count": 6
+        },
+        {
+          "term": "don't",
+          "count": 6
+        },
+        {
+          "term": "go",
+          "count": 6
+        },
+        {
+          "term": "time",
+          "count": 6
+        },
+        {
+          "term": "commerce",
+          "count": 5
+        },
+        {
+          "term": "fun",
+          "count": 5
+        },
+        {
+          "term": "make",
+          "count": 5
+        },
+        {
+          "term": "off",
+          "count": 5
+        },
+        {
+          "term": "over",
+          "count": 5
+        },
+        {
+          "term": "something",
+          "count": 5
+        },
+        {
+          "term": "there's",
+          "count": 5
+        },
+        {
+          "term": "together",
+          "count": 5
+        },
+        {
+          "term": "zhaoming",
+          "count": 5
+        },
+        {
+          "term": "alright",
+          "count": 4
+        },
+        {
+          "term": "beauties",
+          "count": 4
+        },
+        {
+          "term": "come",
+          "count": 4
+        },
+        {
+          "term": "even",
+          "count": 4
+        },
+        {
+          "term": "ever",
+          "count": 4
+        },
+        {
+          "term": "get",
+          "count": 4
+        },
+        {
+          "term": "goods",
+          "count": 4
+        },
+        {
+          "term": "i'm",
+          "count": 4
+        },
+        {
+          "term": "look",
+          "count": 4
+        },
+        {
+          "term": "shangming",
+          "count": 4
+        },
+        {
+          "term": "should",
+          "count": 4
+        },
+        {
+          "term": "stop",
+          "count": 4
+        },
+        {
+          "term": "sure",
+          "count": 4
+        },
+        {
+          "term": "these",
+          "count": 4
+        },
+        {
+          "term": "things",
+          "count": 4
+        },
+        {
+          "term": "water",
+          "count": 4
+        },
+        {
+          "term": "way",
+          "count": 4
+        },
+        {
+          "term": "white",
+          "count": 4
+        },
+        {
+          "term": "xuanfang",
+          "count": 4
+        },
+        {
+          "term": "you're",
+          "count": 4
+        },
+        {
+          "term": "you've",
+          "count": 4
+        },
+        {
+          "term": "after",
+          "count": 3
+        },
+        {
+          "term": "any",
+          "count": 3
+        },
+        {
+          "term": "around",
+          "count": 3
+        },
+        {
+          "term": "better",
+          "count": 3
+        },
+        {
+          "term": "course",
+          "count": 3
         }
       ]
     },
@@ -17609,7 +18023,7 @@
     {
       "characterId": "xiangli-yao",
       "locale": "zh-Hans",
-      "lineCount": 40,
+      "lineCount": 56,
       "terms": [
         {
           "term": "时间",
@@ -17816,7 +18230,7 @@
     {
       "characterId": "xiangli-yao",
       "locale": "en",
-      "lineCount": 159,
+      "lineCount": 175,
       "terms": [
         {
           "term": "time",
@@ -18023,7 +18437,7 @@
     {
       "characterId": "yangyang",
       "locale": "zh-Hans",
-      "lineCount": 767,
+      "lineCount": 1182,
       "terms": [
         {
           "term": "时间",
@@ -18035,7 +18449,7 @@
         },
         {
           "term": "今州",
-          "count": 52
+          "count": 53
         },
         {
           "term": "信息",
@@ -18086,6 +18500,10 @@
           "count": 32
         },
         {
+          "term": "或许",
+          "count": 31
+        },
+        {
           "term": "似乎",
           "count": 31
         },
@@ -18120,10 +18538,6 @@
         {
           "term": "想要",
           "count": 28
-        },
-        {
-          "term": "或许",
-          "count": 27
         },
         {
           "term": "记得",
@@ -18230,7 +18644,7 @@
     {
       "characterId": "yangyang",
       "locale": "en",
-      "lineCount": 884,
+      "lineCount": 1299,
       "terms": [
         {
           "term": "tacet",
@@ -18238,7 +18652,7 @@
         },
         {
           "term": "jinzhou",
-          "count": 43
+          "count": 44
         },
         {
           "term": "discords",
@@ -18254,11 +18668,11 @@
         },
         {
           "term": "something",
-          "count": 31
+          "count": 32
         },
         {
           "term": "don't",
-          "count": 30
+          "count": 31
         },
         {
           "term": "must",
@@ -18281,12 +18695,12 @@
           "count": 27
         },
         {
-          "term": "time",
+          "term": "feel",
           "count": 27
         },
         {
-          "term": "feel",
-          "count": 25
+          "term": "time",
+          "count": 27
         },
         {
           "term": "only",
@@ -18294,6 +18708,10 @@
         },
         {
           "term": "look",
+          "count": 24
+        },
+        {
+          "term": "please",
           "count": 24
         },
         {
@@ -18313,6 +18731,10 @@
           "count": 22
         },
         {
+          "term": "other",
+          "count": 22
+        },
+        {
           "term": "those",
           "count": 22
         },
@@ -18325,11 +18747,7 @@
           "count": 21
         },
         {
-          "term": "other",
-          "count": 21
-        },
-        {
-          "term": "please",
+          "term": "little",
           "count": 21
         },
         {
@@ -18361,7 +18779,7 @@
           "count": 19
         },
         {
-          "term": "little",
+          "term": "leave",
           "count": 19
         },
         {
@@ -18370,10 +18788,6 @@
         },
         {
           "term": "before",
-          "count": 18
-        },
-        {
-          "term": "leave",
           "count": 18
         },
         {
@@ -18386,6 +18800,14 @@
         },
         {
           "term": "going",
+          "count": 17
+        },
+        {
+          "term": "i'm",
+          "count": 17
+        },
+        {
+          "term": "once",
           "count": 17
         },
         {
@@ -18413,7 +18835,7 @@
           "count": 16
         },
         {
-          "term": "i'm",
+          "term": "make",
           "count": 16
         },
         {
@@ -18421,15 +18843,7 @@
           "count": 16
         },
         {
-          "term": "once",
-          "count": 16
-        },
-        {
-          "term": "people",
-          "count": 16
-        },
-        {
-          "term": "seems",
+          "term": "might",
           "count": 16
         }
       ]
@@ -20093,7 +20507,7 @@
     {
       "characterId": "zhezhi",
       "locale": "zh-Hans",
-      "lineCount": 376,
+      "lineCount": 385,
       "terms": [
         {
           "term": "能力",
@@ -20300,7 +20714,7 @@
     {
       "characterId": "zhezhi",
       "locale": "en",
-      "lineCount": 432,
+      "lineCount": 441,
       "terms": [
         {
           "term": "i'm",

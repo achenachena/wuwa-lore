@@ -1,0 +1,17 @@
+{
+  "id": "yangyang-xuanling",
+  "name": "Yangyang: Xuanling",
+  "aliases": ["秧秧·玄翎", "玄翎"],
+  "element": "Havoc",
+  "weapon": "Sword",
+  "faction": "Ministry of War",
+  "rarity": 5,
+  "releaseVersion": "3.5",
+  "profile": "Profile text unavailable from source.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang%3A_Xuanling",
+    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

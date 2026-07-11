@@ -1,6 +1,6 @@
 {
   "source": "encore.moe",
-  "generatedAt": "2026-06-18",
+  "generatedAt": "2026-07-11",
   "names": {
     "yangyang": {
       "en": "Yangyang",
@@ -213,6 +213,18 @@
     "hiyuki": {
       "en": "Hiyuki",
       "zh": "绯雪"
+    },
+    "rover-electro": {
+      "en": "Rover: Electro",
+      "zh": "漂泊者·导电"
+    },
+    "yangyang-xuanling": {
+      "en": "Yangyang: Xuanling",
+      "zh": "秧秧·玄翎"
+    },
+    "suisui": {
+      "en": "Suisui",
+      "zh": "穗穗"
     }
   }
 }

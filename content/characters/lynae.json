@@ -1,9 +1,7 @@
 {
   "id": "lynae",
   "name": "Lynae",
-  "aliases": [
-    "琳奈"
-  ],
+  "aliases": [],
   "element": "Spectro",
   "weapon": "Pistols",
   "faction": "Startorch Academy",
@@ -13,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lynae",
-    "scrapedAt": "2026-06-02T19:30:43.185Z",
+    "scrapedAt": "2026-07-11T23:46:56.240Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

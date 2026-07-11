@@ -1,0 +1,17 @@
+{
+  "id": "suisui",
+  "name": "Suisui",
+  "aliases": ["穗穗"],
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "faction": "Mingting",
+  "rarity": 5,
+  "releaseVersion": "3.5",
+  "profile": "Born into a noble family of Mingting, she is the brilliant young director of the Zhaoming Commerce Guild.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Suisui",
+    "scrapedAt": "2026-07-11T23:50:00.000Z",
+    "editor": "manual"
+  }
+}

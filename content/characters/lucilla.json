@@ -1,19 +1,17 @@
 {
   "id": "lucilla",
   "name": "Lucilla",
-  "aliases": [
-    "洛瑟菈"
-  ],
+  "aliases": [],
   "element": "Glacio",
   "weapon": "Rectifier",
   "faction": "Startorch Academy",
   "rarity": 5,
   "releaseVersion": "3.4",
-  "profile": "星炬学院院长，拉古那常态共鸣者。",
-  "locale": "zh-CN",
+  "profile": "Profile text unavailable from source.",
+  "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucilla",
-    "scrapedAt": "2026-06-02T22:00:00.000Z",
-    "editor": "manual"
+    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "editor": "scripts/sync-fandom-data.ts"
   }
 }
