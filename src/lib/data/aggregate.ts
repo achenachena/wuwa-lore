@@ -32,22 +32,28 @@ export function aggregateVoiceLineStats(params: {
   const generatedAt = params.generatedAt ?? new Date().toISOString();
 
   const versionIds = versions.map((version) => version.version);
-  const grouped = new Map<string, VoiceLineEntry[]>();
+  const grouped = new Map<
+    string,
+    { entries: VoiceLineEntry[]; versionCounts: Map<string, number>; sources: Set<string> }
+  >();
 
   for (const entry of entries) {
     const key = `${entry.characterId}::${entry.locale}`;
-    const value = grouped.get(key);
-    if (value) {
-      value.push(entry);
-    } else {
-      grouped.set(key, [entry]);
-    }
+    const bucket = grouped.get(key) ?? {
+      entries: [],
+      versionCounts: new Map<string, number>(),
+      sources: new Set<string>(),
+    };
+    bucket.entries.push(entry);
+    bucket.versionCounts.set(entry.version, (bucket.versionCounts.get(entry.version) ?? 0) + 1);
+    bucket.sources.add(entry.source.sourceUrl);
+    grouped.set(key, bucket);
   }
 
   const rows: VoiceLineStatRow[] = [];
   const characterById = new Map(characters.map((character) => [character.id, character]));
 
-  for (const [key, groupedEntries] of grouped.entries()) {
+  for (const [key, bucket] of grouped.entries()) {
     const [characterId, locale] = key.split("::");
     const character = characterById.get(characterId);
     if (!character) {
@@ -56,8 +62,9 @@ export function aggregateVoiceLineStats(params: {
 
     const counts = versionIds.map((version) => ({
       version,
-      lineCount: groupedEntries.filter((entry) => entry.version === version).length,
+      lineCount: bucket.versionCounts.get(version) ?? 0,
     }));
+    const totalLineCount = counts.reduce((sum, item) => sum + item.lineCount, 0);
 
     rows.push({
       characterId,
@@ -66,15 +73,13 @@ export function aggregateVoiceLineStats(params: {
       sourcePageTitle: "raw-voice-entry",
       sourcePageExists: true,
       sourceLatestRevisionAt: null,
-      sourceRevisionCount: groupedEntries.length,
+      sourceRevisionCount: bucket.entries.length,
       countMethod: "tx_key_unique_nonempty",
       qualityStatus: "verified",
-      currentLineCount: counts.reduce((sum, item) => sum + item.lineCount, 0),
+      currentLineCount: totalLineCount,
       perVersionLineCounts: counts,
-      totalLineCount: counts.reduce((sum, item) => sum + item.lineCount, 0),
-      sources: unique(groupedEntries.map((entry) => entry.source.sourceUrl)).sort((a, b) =>
-        a.localeCompare(b),
-      ),
+      totalLineCount,
+      sources: [...bucket.sources].sort((a, b) => a.localeCompare(b)),
       generatedAt,
     });
   }
@@ -111,33 +116,67 @@ export function aggregateVersionStats(params: {
   storyDialogueStats?: StoryDialogueRow[];
 }): VersionStatRow[] {
   const { versions, characters, voiceStats, storyDialogueStats } = params;
-  const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
+  const debutCountByVersion = new Map<string, number>();
+  for (const character of characters) {
+    if (isRoverCharacter(character.id)) {
+      continue;
+    }
+    debutCountByVersion.set(
+      character.releaseVersion,
+      (debutCountByVersion.get(character.releaseVersion) ?? 0) + 1,
+    );
+  }
+
   const storyLinesByVersion = storyDialogueStats
     ? sumStoryDialogueByVersion(storyDialogueStats)
     : null;
 
-  return versions.map((version) => {
-    const characterCount = playableCharacters.filter(
-      (character) => character.releaseVersion === version.version,
-    ).length;
+  const voiceLinesByVersion = new Map<string, number>();
+  if (!storyLinesByVersion) {
+    for (const row of voiceStats) {
+      if (isRoverCharacter(row.characterId)) {
+        continue;
+      }
+      for (const item of row.perVersionLineCounts) {
+        voiceLinesByVersion.set(
+          item.version,
+          (voiceLinesByVersion.get(item.version) ?? 0) + item.lineCount,
+        );
+      }
+    }
+  }
 
-    const totalVoiceLines = storyLinesByVersion
+  return versions.map((version) => ({
+    version: version.version,
+    releaseDate: version.releaseDate,
+    characterCount: debutCountByVersion.get(version.version) ?? 0,
+    totalVoiceLines: storyLinesByVersion
       ? (storyLinesByVersion.get(version.version) ?? 0)
-      : voiceStats.reduce((sum, row) => {
-          if (isRoverCharacter(row.characterId)) {
-            return sum;
-          }
-          const perVersion = row.perVersionLineCounts.find((item) => item.version === version.version);
-          return sum + (perVersion?.lineCount ?? 0);
-        }, 0);
+      : (voiceLinesByVersion.get(version.version) ?? 0),
+  }));
+}
 
-    return {
-      version: version.version,
-      releaseDate: version.releaseDate,
-      characterCount,
-      totalVoiceLines,
-    };
-  });
+export function appearanceKey(characterId: string, questId: string): string {
+  return `${characterId}::${questId}`;
+}
+
+export function buildAppearanceIndex(storyAppearances: StoryAppearanceRow[]): Set<string> {
+  const index = new Set<string>();
+  for (const row of storyAppearances) {
+    index.add(appearanceKey(row.characterId, row.questId));
+  }
+  return index;
+}
+
+export function buildDialogueIndex(
+  storyDialogueStats: StoryDialogueRow[],
+): Map<string, number> {
+  const index = new Map<string, number>();
+  for (const row of storyDialogueStats) {
+    const key = appearanceKey(row.characterId, row.questId);
+    index.set(key, (index.get(key) ?? 0) + row.lineCount);
+  }
+  return index;
 }
 
 export function getFirstAppearanceVersion(params: {
@@ -145,20 +184,18 @@ export function getFirstAppearanceVersion(params: {
   segments: StorySegment[];
   storyAppearances: StoryAppearanceRow[];
   storyDialogueStats: StoryDialogueRow[];
+  appearanceIndex?: Set<string>;
+  dialogueIndex?: Map<string, number>;
 }): string | null {
-  const { characterId, segments, storyAppearances, storyDialogueStats } = params;
-  const dialogueByQuest = sumDialogueByQuest(storyDialogueStats, characterId);
+  const { characterId, segments } = params;
+  const appearanceIndex = params.appearanceIndex ?? buildAppearanceIndex(params.storyAppearances);
+  const dialogueIndex = params.dialogueIndex ?? buildDialogueIndex(params.storyDialogueStats);
   let earliest: string | null = null;
 
   for (const segment of segments) {
-    const lineCount = dialogueByQuest.get(segment.id) ?? 0;
-    const appeared = didCharacterAppearInQuest({
-      characterId,
-      questId: segment.id,
-      storyAppearances,
-      dialogueLineCount: lineCount,
-    });
-    if (!appeared && lineCount <= 0) {
+    const key = appearanceKey(characterId, segment.id);
+    const lineCount = dialogueIndex.get(key) ?? 0;
+    if (lineCount <= 0 && !appearanceIndex.has(key)) {
       continue;
     }
     if (!earliest || compareVersion(segment.version, earliest) < 0) {
@@ -176,6 +213,8 @@ export function buildFirstAppearanceVersionMap(params: {
   storyDialogueStats: StoryDialogueRow[];
 }): Map<string, string | null> {
   const { characters, segments, storyAppearances, storyDialogueStats } = params;
+  const appearanceIndex = buildAppearanceIndex(storyAppearances);
+  const dialogueIndex = buildDialogueIndex(storyDialogueStats);
   const map = new Map<string, string | null>();
   for (const character of characters) {
     if (isRoverCharacter(character.id)) {
@@ -188,6 +227,8 @@ export function buildFirstAppearanceVersionMap(params: {
         segments,
         storyAppearances,
         storyDialogueStats,
+        appearanceIndex,
+        dialogueIndex,
       }),
     );
   }
@@ -210,12 +251,18 @@ export function didCharacterAppearInQuest(params: {
   questId: string;
   storyAppearances: StoryAppearanceRow[];
   dialogueLineCount: number;
+  appearanceIndex?: Set<string>;
 }): boolean {
-  const { characterId, questId, storyAppearances, dialogueLineCount } = params;
+  const { characterId, questId, dialogueLineCount } = params;
   if (dialogueLineCount > 0) {
     return true;
   }
-  return storyAppearances.some((row) => row.characterId === characterId && row.questId === questId);
+  if (params.appearanceIndex) {
+    return params.appearanceIndex.has(appearanceKey(characterId, questId));
+  }
+  return params.storyAppearances.some(
+    (row) => row.characterId === characterId && row.questId === questId,
+  );
 }
 
 export function buildCharacterStorySegmentRows(params: {
@@ -226,6 +273,9 @@ export function buildCharacterStorySegmentRows(params: {
 }): CharacterStorySegmentRow[] {
   const { characterId, segments, storyAppearances, storyDialogueStats } = params;
   const dialogueByQuest = sumDialogueByQuest(storyDialogueStats, characterId);
+  const appearanceIndex = buildAppearanceIndex(
+    storyAppearances.filter((row) => row.characterId === characterId),
+  );
 
   return segments
     .map((segment) => {
@@ -235,6 +285,7 @@ export function buildCharacterStorySegmentRows(params: {
         questId: segment.id,
         storyAppearances,
         dialogueLineCount: lineCount,
+        appearanceIndex,
       });
       return { segment, appeared, lineCount };
     })
@@ -289,77 +340,6 @@ export function buildStorySegmentRanking(params: {
     .map((characterId) => {
       const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
       const appearanceCount = appearancesByCharacter.get(characterId)?.size ?? 0;
-      return {
-        characterId,
-        characterName: characterById.get(characterId)?.name ?? characterId,
-        voiceLineCount,
-        appearanceCount,
-        linesPerAppearance:
-          appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
-      };
-    })
-    .sort((a, b) => {
-      const aScore = a.linesPerAppearance ?? -1;
-      const bScore = b.linesPerAppearance ?? -1;
-      if (bScore !== aScore) {
-        return bScore - aScore;
-      }
-      if (b.voiceLineCount !== a.voiceLineCount) {
-        return b.voiceLineCount - a.voiceLineCount;
-      }
-      return a.characterName.localeCompare(b.characterName);
-    });
-}
-
-export function buildVersionHalfRanking(params: {
-  characters: Character[];
-  versionHalves: { id: string }[];
-  storyAppearances: StoryAppearanceRow[];
-  storyDialogueStats: StoryDialogueRow[];
-  selectedHalfIds: string[];
-}): VersionHalfRankingRow[] {
-  const { characters, storyAppearances, storyDialogueStats, selectedHalfIds } = params;
-  const selected = new Set(selectedHalfIds);
-  const characterById = new Map(characters.map((character) => [character.id, character]));
-
-  const dialogueByCharacter = new Map<string, number>();
-  for (const row of storyDialogueStats) {
-    if (!selected.has(row.versionHalf)) {
-      continue;
-    }
-    dialogueByCharacter.set(row.characterId, (dialogueByCharacter.get(row.characterId) ?? 0) + row.lineCount);
-  }
-
-  const appearancesByCharacter = new Map<string, number>();
-  const appearanceKeys = new Set<string>();
-  for (const row of storyAppearances) {
-    if (!selected.has(row.versionHalf)) {
-      continue;
-    }
-    appearanceKeys.add(`${row.characterId}::${row.questId}`);
-  }
-  for (const row of storyDialogueStats) {
-    if (!selected.has(row.versionHalf) || row.lineCount <= 0) {
-      continue;
-    }
-    appearanceKeys.add(`${row.characterId}::${row.questId}`);
-  }
-  for (const key of appearanceKeys) {
-    const characterId = key.split("::")[0] ?? "";
-    appearancesByCharacter.set(characterId, (appearancesByCharacter.get(characterId) ?? 0) + 1);
-  }
-
-  const characterIds = unique([
-    ...dialogueByCharacter.keys(),
-    ...appearancesByCharacter.keys(),
-  ])
-    .filter((characterId) => !isRoverCharacter(characterId))
-    .sort((a, b) => a.localeCompare(b));
-
-  return characterIds
-    .map((characterId) => {
-      const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
-      const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
       return {
         characterId,
         characterName: characterById.get(characterId)?.name ?? characterId,

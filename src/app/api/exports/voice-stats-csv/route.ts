@@ -1,4 +1,5 @@
 import { loadGeneratedStats } from "@/lib/data/loaders";
+import { exportHeaders } from "@/lib/security/exports";
 
 function escapeCsvCell(value: string | number | boolean): string {
   const text = String(value);
@@ -53,9 +54,6 @@ export async function GET() {
 
   const csv = `${headers.join(",")}\n${lineRows.join("\n")}\n`;
   return new Response(csv, {
-    headers: {
-      "content-type": "text/csv; charset=utf-8",
-      "content-disposition": 'attachment; filename="wuwa-voice-stats.csv"',
-    },
+    headers: exportHeaders("wuwa-voice-stats.csv", "text/csv; charset=utf-8"),
   });
 }

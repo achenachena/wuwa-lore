@@ -41,21 +41,19 @@ export function isProbePath(pathname: string): boolean {
 export function isSameOriginRequest(request: Request): boolean {
   const origin = request.headers.get("origin");
   const host = request.headers.get("host");
-  if (!origin || !host) {
-    return true;
+  if (!origin) {
+    // Browsers always send Origin on cross-site POST; missing Origin on mutating
+    // requests is treated as unsafe for our write endpoints.
+    return false;
+  }
+  if (!host) {
+    return false;
   }
   try {
     return new URL(origin).host === host;
   } catch {
     return false;
   }
-}
-
-export function applySecurityHeaders(response: Response): void {
-  for (const [key, value] of Object.entries(productionSecurityHeaders())) {
-    response.headers.set(key, value);
-  }
-  response.headers.delete("x-powered-by");
 }
 
 export function isProduction(): boolean {

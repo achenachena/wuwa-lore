@@ -57,18 +57,20 @@ export function VersionHalfStatsBrowser({
   const [sortKey, setSortKey] = useState<SortKey>("linesPerAppearance");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
-  const selectedSegmentIds = useMemo(() => {
-    return segmentOptions
-      .filter((segment) => {
-        const [major, minor] = segment.version.split(".").map(Number);
-        const [fromMajor, fromMinor] = fromVersion.split(".").map(Number);
-        const [toMajor, toMinor] = toVersion.split(".").map(Number);
-        const value = major * 100 + minor;
-        const fromValue = fromMajor * 100 + fromMinor;
-        const toValue = toMajor * 100 + toMinor;
-        return value >= fromValue && value <= toValue;
-      })
-      .map((segment) => segment.id);
+  const selectedSegmentIdSet = useMemo(() => {
+    const ids = new Set<string>();
+    for (const segment of segmentOptions) {
+      const [major, minor] = segment.version.split(".").map(Number);
+      const [fromMajor, fromMinor] = fromVersion.split(".").map(Number);
+      const [toMajor, toMinor] = toVersion.split(".").map(Number);
+      const value = major * 100 + minor;
+      const fromValue = fromMajor * 100 + fromMinor;
+      const toValue = toMajor * 100 + toMinor;
+      if (value >= fromValue && value <= toValue) {
+        ids.add(segment.id);
+      }
+    }
+    return ids;
   }, [fromVersion, segmentOptions, toVersion]);
 
   const filteredRanking = useMemo(() => {
@@ -79,7 +81,7 @@ export function VersionHalfStatsBrowser({
       let dialogueTotal = 0;
       const appearedHalves = new Set<string>();
       for (const cell of row.cells) {
-        if (!selectedSegmentIds.includes(cell.segmentId)) {
+        if (!selectedSegmentIdSet.has(cell.segmentId)) {
           continue;
         }
         dialogueTotal += cell.dialogueLineCount;
@@ -120,7 +122,9 @@ export function VersionHalfStatsBrowser({
       }
       return a.characterName.localeCompare(b.characterName);
     });
-  }, [matrix, selectedSegmentIds, sortDirection, sortKey]);
+  }, [matrix, selectedSegmentIdSet, sortDirection, sortKey]);
+
+  const selectedSegmentIds = useMemo(() => [...selectedSegmentIdSet], [selectedSegmentIdSet]);
 
   const rankingMax = useMemo(() => {
     return {
@@ -134,10 +138,10 @@ export function VersionHalfStatsBrowser({
     return matrix
       .map((row) => ({
         ...row,
-        cells: row.cells.filter((cell) => selectedSegmentIds.includes(cell.segmentId)),
+        cells: row.cells.filter((cell) => selectedSegmentIdSet.has(cell.segmentId)),
       }))
       .filter((row) => row.cells.some((cell) => cell.appeared || cell.dialogueLineCount > 0));
-  }, [matrix, selectedSegmentIds]);
+  }, [matrix, selectedSegmentIdSet]);
 
   const matrixMaxLines = useMemo(() => {
     let max = 1;

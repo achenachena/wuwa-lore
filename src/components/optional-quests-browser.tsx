@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useMemo } from "react";
 
 import { CharacterAvatar } from "@/components/character-avatar";
 import { MetricBar } from "@/components/metric-bar";
@@ -51,14 +48,11 @@ export function OptionalQuestsBrowser({
   const categoryUnmappedSpeakers =
     unmappedSpeakers?.filter((row) => row.category === category) ?? [];
 
-  const max = useMemo(
-    () => ({
-      lines: Math.max(...ranking.map((row) => row.voiceLineCount), 1),
-      appearances: Math.max(...ranking.map((row) => row.appearanceCount), 1),
-      ratio: Math.max(...ranking.map((row) => row.linesPerAppearance ?? 0), 1),
-    }),
-    [ranking],
-  );
+  const max = {
+    lines: Math.max(...ranking.map((row) => row.voiceLineCount), 1),
+    appearances: Math.max(...ranking.map((row) => row.appearanceCount), 1),
+    ratio: Math.max(...ranking.map((row) => row.linesPerAppearance ?? 0), 1),
+  };
 
   const categories: Array<{ id: QuestCategory; label: string; count: number }> = [
     { id: "companion", label: labels.companion, count: questCounts.companion },

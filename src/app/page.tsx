@@ -1,24 +1,18 @@
 import Link from "next/link";
-import { getCharacterListData, getCharacterLineTotalsForSite, getVersionStatsPageData } from "@/lib/data";
+import { getHomeSummary } from "@/lib/data";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
-import { isRoverCharacter } from "@/lib/i18n/locale";
 import { loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
-  const [characters, versionStats, lineTotals, quality, validation, sourceDiff, siteLocale, t] =
-    await Promise.all([
-      getCharacterListData(),
-      getVersionStatsPageData(),
-      getCharacterLineTotalsForSite(),
-      loadQualityReport().catch(() => null),
-      loadValidationReport().catch(() => null),
-      loadSourceDiffReport().catch(() => null),
-      getSiteLocale(),
-      getMessages(),
-    ]);
-
-  const totalLines = [...lineTotals.values()].reduce((sum, row) => sum + row.totalLines, 0);
+  const [summary, quality, validation, sourceDiff, siteLocale, t] = await Promise.all([
+    getHomeSummary(),
+    loadQualityReport().catch(() => null),
+    loadValidationReport().catch(() => null),
+    loadSourceDiffReport().catch(() => null),
+    getSiteLocale(),
+    getMessages(),
+  ]);
 
   return (
     <section className="space-y-6">
@@ -28,7 +22,9 @@ export default async function Home() {
         <span className="rounded-full border border-zinc-300 bg-white px-3 py-1">
           {t.home.quality}:{" "}
           <strong>
-            {quality ? `${quality.coveredCharacters}/${quality.totalCharacters} ${t.home.charactersCovered}` : t.common.notAvailable}
+            {quality
+              ? `${quality.coveredCharacters}/${quality.totalCharacters} ${t.home.charactersCovered}`
+              : t.common.notAvailable}
           </strong>
         </span>
         <span
@@ -66,17 +62,15 @@ export default async function Home() {
       <div className="grid gap-4 md:grid-cols-3">
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <h2 className="text-sm font-medium text-zinc-500">{t.home.trackedCharacters}</h2>
-          <p className="mt-2 text-2xl font-semibold">
-            {characters.filter((character) => !isRoverCharacter(character.id)).length}
-          </p>
+          <p className="mt-2 text-2xl font-semibold">{summary.characterCount}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <h2 className="text-sm font-medium text-zinc-500">{t.home.trackedVersions}</h2>
-          <p className="mt-2 text-2xl font-semibold">{versionStats.length}</p>
+          <p className="mt-2 text-2xl font-semibold">{summary.versionCount}</p>
         </article>
         <article className="rounded-lg border border-zinc-200 bg-white p-4">
           <h2 className="text-sm font-medium text-zinc-500">{t.home.totalVoiceLines}</h2>
-          <p className="mt-2 text-2xl font-semibold">{totalLines}</p>
+          <p className="mt-2 text-2xl font-semibold">{summary.totalLines}</p>
         </article>
       </div>
       <div className="flex flex-wrap gap-3">

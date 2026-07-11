@@ -1,10 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-import {
-  applySecurityHeaders,
-  isProbePath,
-  isSameOriginRequest,
-} from "@/lib/security/headers";
+import { isProbePath, isSameOriginRequest } from "@/lib/security/headers";
 import { checkRateLimit } from "@/lib/security/rate-limit";
 
 function clientKey(request: NextRequest): string {
@@ -15,36 +11,34 @@ function clientKey(request: NextRequest): string {
   );
 }
 
-function withSecurityHeaders(response: NextResponse): NextResponse {
-  applySecurityHeaders(response);
-  return response;
-}
-
-export function middleware(request: NextRequest) {
+/**
+ * Next.js 16: `proxy` replaces the deprecated `middleware` file convention.
+ * Static security headers live in next.config.ts; proxy only handles request gating.
+ */
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (isProbePath(pathname)) {
-    return withSecurityHeaders(new NextResponse(null, { status: 404 }));
+    return new NextResponse(null, { status: 404 });
   }
 
   if (pathname.startsWith("/api/")) {
     const limit = checkRateLimit(`api:${clientKey(request)}`, {
       windowMs: 60_000,
-      max: 120,
+      max: 60,
     });
     if (!limit.allowed) {
       const response = NextResponse.json({ error: "Too many requests" }, { status: 429 });
       response.headers.set("Retry-After", String(limit.retryAfterSeconds));
-      return withSecurityHeaders(response);
+      return response;
     }
 
     if (request.method !== "GET" && request.method !== "HEAD" && !isSameOriginRequest(request)) {
-      const response = NextResponse.json({ error: "Forbidden" }, { status: 403 });
-      return withSecurityHeaders(response);
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
   }
 
-  return withSecurityHeaders(NextResponse.next());
+  return NextResponse.next();
 }
 
 export const config = {

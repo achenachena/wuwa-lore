@@ -1,16 +1,13 @@
 import { loadGeneratedStats } from "@/lib/data/loaders";
+import { jsonExport } from "@/lib/security/exports";
 
 export async function GET() {
   const rows = await loadGeneratedStats();
-  return Response.json(
+  return jsonExport(
     {
       generatedAt: new Date().toISOString(),
       rows,
     },
-    {
-      headers: {
-        "content-disposition": 'attachment; filename="wuwa-voice-stats.json"',
-      },
-    },
+    "wuwa-voice-stats.json",
   );
 }

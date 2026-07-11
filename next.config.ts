@@ -19,7 +19,11 @@ const nextConfig: NextConfig = {
         headers: Object.entries(productionSecurityHeaders()).map(([key, value]) => ({ key, value })),
       },
       {
-        source: "/api/(.*)",
+        source: "/api/health/(.*)",
+        headers: [{ key: "Cache-Control", value: "no-store" }],
+      },
+      {
+        source: "/api/locale",
         headers: [{ key: "Cache-Control", value: "no-store" }],
       },
     ];

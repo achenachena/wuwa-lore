@@ -21,10 +21,9 @@ describe("isSameOriginRequest", () => {
     expect(isSameOriginRequest(request)).toBe(true);
   });
 
-  it("rejects cross-origin posts", () => {
+  it("rejects requests without origin", () => {
     const request = new Request("https://wuwalore.xyz/api/locale", {
       headers: {
-        origin: "https://evil.example",
         host: "wuwalore.xyz",
       },
     });
