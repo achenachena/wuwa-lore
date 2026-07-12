@@ -56,6 +56,7 @@ export function VersionHalfStatsBrowser({
   const [view, setView] = useState<"ranking" | "matrix">("ranking");
   const [sortKey, setSortKey] = useState<SortKey>("linesPerAppearance");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
+  const [matrixSortDirection, setMatrixSortDirection] = useState<SortDirection>("desc");
 
   const selectedSegmentIdSet = useMemo(() => {
     const ids = new Set<string>();
@@ -135,13 +136,22 @@ export function VersionHalfStatsBrowser({
   }, [filteredRanking]);
 
   const filteredMatrix = useMemo(() => {
-    return matrix
-      .map((row) => ({
-        ...row,
-        cells: row.cells.filter((cell) => selectedSegmentIdSet.has(cell.segmentId)),
-      }))
+    const rows = matrix
+      .map((row) => {
+        const cells = row.cells.filter((cell) => selectedSegmentIdSet.has(cell.segmentId));
+        const totalLines = cells.reduce((sum, cell) => sum + cell.dialogueLineCount, 0);
+        return { ...row, cells, totalLines };
+      })
       .filter((row) => row.cells.some((cell) => cell.appeared || cell.dialogueLineCount > 0));
-  }, [matrix, selectedSegmentIdSet]);
+
+    const direction = matrixSortDirection === "asc" ? 1 : -1;
+    return rows.sort((left, right) => {
+      if (left.totalLines !== right.totalLines) {
+        return (left.totalLines - right.totalLines) * direction;
+      }
+      return left.character.name.localeCompare(right.character.name);
+    });
+  }, [matrix, matrixSortDirection, selectedSegmentIdSet]);
 
   const matrixMaxLines = useMemo(() => {
     let max = 1;
@@ -307,7 +317,21 @@ export function VersionHalfStatsBrowser({
           <table className="w-full min-w-[960px] border-collapse text-xs">
             <thead>
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                <th className="sticky left-0 z-10 bg-white px-3 py-2">{labels.character}</th>
+                <th className="sticky left-0 z-10 bg-white px-3 py-2">{labels.rank}</th>
+                <th className="sticky left-8 z-10 bg-white px-3 py-2">{labels.character}</th>
+                <th className="px-3 py-2 whitespace-nowrap">
+                  <button
+                    type="button"
+                    className="hover:text-zinc-900"
+                    onClick={() =>
+                      setMatrixSortDirection((current) => (current === "asc" ? "desc" : "asc"))
+                    }
+                    title={labels.sortByLines}
+                  >
+                    {labels.totalLines}
+                    {matrixSortDirection === "asc" ? " ↑" : " ↓"}
+                  </button>
+                </th>
                 {selectedSegmentIds.map((segmentId) => (
                   <th key={segmentId} className="px-3 py-2 whitespace-nowrap">
                     {segmentOptions.find((item) => item.id === segmentId)?.label ?? segmentId}
@@ -316,9 +340,10 @@ export function VersionHalfStatsBrowser({
               </tr>
             </thead>
             <tbody>
-              {filteredMatrix.map((row) => (
+              {filteredMatrix.map((row, index) => (
                 <tr key={row.character.id} className="border-b border-zinc-100">
-                  <td className="sticky left-0 z-10 bg-white px-3 py-2 font-medium whitespace-nowrap">
+                  <td className="sticky left-0 z-10 bg-white px-3 py-2 text-zinc-500">{index + 1}</td>
+                  <td className="sticky left-8 z-10 bg-white px-3 py-2 font-medium whitespace-nowrap">
                     <Link
                       className="flex items-center gap-2 hover:underline"
                       href={`/characters/${row.character.id}`}
@@ -331,6 +356,7 @@ export function VersionHalfStatsBrowser({
                       <span>{row.character.name}</span>
                     </Link>
                   </td>
+                  <td className="px-3 py-2 text-sm font-semibold text-zinc-800">{row.totalLines}</td>
                   {row.cells.map((cell) => (
                     <td key={cell.segmentId} className="px-2 py-2 align-middle">
                       <SegmentCell cell={cell} labels={labels} maxLines={matrixMaxLines} />

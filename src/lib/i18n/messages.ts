@@ -132,6 +132,8 @@ export const messages = {
       linesPerAppearance: "Lines / appearance",
       appeared: "Appeared",
       lines: "lines",
+      totalLines: "Total lines",
+      sortByLines: "Sort by lines",
     },
     optionalQuests: {
       title: "Companion, Event & Side Quest Stats",
@@ -288,6 +290,8 @@ export const messages = {
       linesPerAppearance: "台词/登场",
       appeared: "登场",
       lines: "句",
+      totalLines: "台词合计",
+      sortByLines: "按台词数排序",
     },
     optionalQuests: {
       title: "伴星 / 活动 / 支线统计",
