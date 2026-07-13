@@ -1,14 +1,14 @@
-import { getCharacterListData, getVersionStatsPageData } from "@/lib/data";
+import { getVersionStatsPageData } from "@/lib/data";
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
-import { loadOfficialVersionNotes, loadSourceDiffReport } from "@/lib/data/loaders";
+import { loadCharacters, loadOfficialVersionNotes, loadSourceDiffReport } from "@/lib/data/loaders";
 
 export default async function VersionStatsPage() {
   const [rows, characters, official, sourceDiff, siteLocale, t] = await Promise.all([
     getVersionStatsPageData(),
-    getCharacterListData(),
+    loadCharacters(),
     loadOfficialVersionNotes().catch(() => null),
     loadSourceDiffReport().catch(() => null),
     getSiteLocale(),

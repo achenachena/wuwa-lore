@@ -1,15 +1,12 @@
 import Link from "next/link";
-import { getHomeSummary } from "@/lib/data";
+import { getHomeSummary, loadSiteHealthReports } from "@/lib/data";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
-import { loadQualityReport, loadSourceDiffReport, loadValidationReport } from "@/lib/data/loaders";
 
 export default async function Home() {
-  const [summary, quality, validation, sourceDiff, siteLocale, t] = await Promise.all([
+  const [summary, { quality, validation, sourceDiff }, siteLocale, t] = await Promise.all([
     getHomeSummary(),
-    loadQualityReport().catch(() => null),
-    loadValidationReport().catch(() => null),
-    loadSourceDiffReport().catch(() => null),
+    loadSiteHealthReports(),
     getSiteLocale(),
     getMessages(),
   ]);

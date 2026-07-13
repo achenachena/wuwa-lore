@@ -1,13 +1,7 @@
 import { notFound } from "next/navigation";
 
-import { getCharacterListData } from "@/lib/data";
-import {
-  loadChangeReport,
-  loadGeneratedStats,
-  loadQualityReport,
-  loadSourceDiffReport,
-  loadValidationReport,
-} from "@/lib/data/loaders";
+import { loadSiteHealthReports } from "@/lib/data";
+import { loadCharacters, loadGeneratedStats } from "@/lib/data/loaders";
 import { isProduction } from "@/lib/security/headers";
 
 export default async function ToolsPage() {
@@ -15,13 +9,10 @@ export default async function ToolsPage() {
     notFound();
   }
 
-  const [stats, report, characters, quality, changes, sourceDiff] = await Promise.all([
+  const [{ quality, validation, sourceDiff, changes }, stats, characters] = await Promise.all([
+    loadSiteHealthReports(),
     loadGeneratedStats().catch(() => []),
-    loadValidationReport().catch(() => null),
-    getCharacterListData().catch(() => []),
-    loadQualityReport().catch(() => null),
-    loadChangeReport().catch(() => null),
-    loadSourceDiffReport().catch(() => null),
+    loadCharacters().catch(() => []),
   ]);
 
   const coveredCharacterIds = new Set(stats.map((row) => row.characterId));
@@ -38,19 +29,19 @@ export default async function ToolsPage() {
 
       <article className="rounded-lg border border-zinc-200 bg-white p-4">
         <h2 className="text-lg font-semibold">Validation Report</h2>
-        {!report ? (
+        {!validation ? (
           <p className="mt-2 text-zinc-600">No validation report found yet.</p>
         ) : (
           <div className="mt-2 space-y-2 text-sm">
             <p>
               Status:{" "}
-              <span className={report.ok ? "font-semibold text-emerald-600" : "font-semibold text-red-600"}>
-                {report.ok ? "OK" : "FAILED"}
+              <span className={validation.ok ? "font-semibold text-emerald-600" : "font-semibold text-red-600"}>
+                {validation.ok ? "OK" : "FAILED"}
               </span>
             </p>
-            <p>Generated: {report.generatedAt}</p>
-            <p>Identity errors: {report.checks.identityValidation.errors.length}</p>
-            <p>Stat errors: {report.checks.statValidation.errors.length}</p>
+            <p>Generated: {validation.generatedAt}</p>
+            <p>Identity errors: {validation.checks.identityValidation.errors.length}</p>
+            <p>Stat errors: {validation.checks.statValidation.errors.length}</p>
           </div>
         )}
       </article>

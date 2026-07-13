@@ -3,8 +3,7 @@ import path from "node:path";
 import { cache } from "react";
 import { z } from "zod";
 
-import { toEncoreLocale, isRoverCharacter, type EncoreLocale } from "@/lib/i18n/locale";
-import { getSiteLocale } from "@/lib/i18n/server";
+import { isRoverCharacter, type EncoreLocale } from "@/lib/i18n/locale";
 
 import type {
   Character,
@@ -274,14 +273,17 @@ export const loadAllStoryDialogueStats = cache((): Promise<StoryDialogueRow[]> =
   }),
 );
 
-export const loadStoryDialogueStats = cache(
-  async (params?: { locale?: EncoreLocale }): Promise<StoryDialogueRow[]> => {
+export const loadStoryDialogueStatsForLocale = cache(
+  async (locale: EncoreLocale): Promise<StoryDialogueRow[]> => {
     const rows = await loadAllStoryDialogueStats();
-    const filtered = rows.filter((row) => !isRoverCharacter(row.characterId));
-    const locale = params?.locale ?? toEncoreLocale(await getSiteLocale());
-    return filtered.filter((row) => row.locale === locale);
+    return rows.filter(
+      (row) => !isRoverCharacter(row.characterId) && row.locale === locale,
+    );
   },
 );
+
+/** @deprecated Use loadStoryDialogueStatsForLocale with an explicit locale. */
+export const loadStoryDialogueStats = loadStoryDialogueStatsForLocale;
 
 export const loadOptionalQuestCatalog = cache((): Promise<OptionalQuestRecord[]> =>
   memoize("optional-quest-catalog", async () => {
@@ -314,14 +316,17 @@ const loadOptionalQuestDialogueFile = cache((): Promise<OptionalQuestDialogueFil
   }),
 );
 
-export const loadOptionalQuestDialogueStats = cache(
-  async (params?: { locale?: EncoreLocale }): Promise<OptionalQuestDialogueRow[]> => {
+export const loadOptionalQuestDialogueStatsForLocale = cache(
+  async (locale: EncoreLocale): Promise<OptionalQuestDialogueRow[]> => {
     const file = await loadOptionalQuestDialogueFile();
-    const filtered = file.rows.filter((row) => !isRoverCharacter(row.characterId));
-    const locale = params?.locale ?? toEncoreLocale(await getSiteLocale());
-    return filtered.filter((row) => row.locale === locale);
+    return file.rows.filter(
+      (row) => !isRoverCharacter(row.characterId) && row.locale === locale,
+    );
   },
 );
+
+/** @deprecated Use loadOptionalQuestDialogueStatsForLocale with an explicit locale. */
+export const loadOptionalQuestDialogueStats = loadOptionalQuestDialogueStatsForLocale;
 
 export const loadOptionalQuestCoverage = cache(async () => {
   const file = await loadOptionalQuestDialogueFile();

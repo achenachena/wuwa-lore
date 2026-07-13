@@ -1,6 +1,8 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
+import { compareVersion } from "@/lib/version/compare";
+
 type Locale = "en-US" | "zh-CN" | "ja-JP" | "ko-KR";
 
 type SourceTrace = {
@@ -192,19 +194,6 @@ function extractVoiceLineEntries(wikitext: string): Map<string, ParsedVoiceLineE
     }
   }
   return entries;
-}
-
-function compareVersion(a: string, b: string): number {
-  const pa = a.split(".").map((x) => Number(x));
-  const pb = b.split(".").map((x) => Number(x));
-  for (let i = 0; i < Math.max(pa.length, pb.length); i += 1) {
-    const da = pa[i] ?? 0;
-    const db = pb[i] ?? 0;
-    if (da !== db) {
-      return da - db;
-    }
-  }
-  return 0;
 }
 
 function findVersionForReleaseDate(

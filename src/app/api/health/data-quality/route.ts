@@ -1,19 +1,13 @@
-import {
-  loadChangeReport,
-  loadQualityReport,
-  loadSourceDiffReport,
-  loadValidationReport,
-} from "@/lib/data/loaders";
+import { loadSiteHealthReports } from "@/lib/data";
 import { isProduction } from "@/lib/security/headers";
 
 export async function GET() {
   try {
-    const [quality, validation, changes, sourceDiff] = await Promise.all([
-      loadQualityReport(),
-      loadValidationReport(),
-      loadChangeReport().catch(() => null),
-      loadSourceDiffReport().catch(() => null),
-    ]);
+    const { quality, validation, changes, sourceDiff } = await loadSiteHealthReports();
+
+    if (!quality || !validation) {
+      return Response.json({ ok: false }, { status: 503 });
+    }
 
     const missingSourceRatio =
       quality.actualRows > 0 ? quality.missingSourceRows / quality.actualRows : 0;

@@ -1,22 +1,18 @@
 import Link from "next/link";
 
-import { CharacterRankingTable } from "@/components/character-ranking-table";
+import {
+  CharacterRankingTable,
+  type CharacterRankingRow,
+} from "@/components/character-ranking-table";
+import { toggleTabClassName } from "@/components/toggle-tab";
 import { QUEST_CATEGORIES } from "@/lib/data/quest-categories";
 import type { Messages } from "@/lib/i18n/messages";
 import type { QuestCategory } from "@/types/lore";
 
-type RankingRow = {
-  characterId: string;
-  characterName: string;
-  voiceLineCount: number;
-  appearanceCount: number;
-  linesPerAppearance: number | null;
-};
-
 type Props = {
   initialCategory: QuestCategory;
   questCounts: Record<QuestCategory, number>;
-  ranking: RankingRow[];
+  ranking: CharacterRankingRow[];
   characterPortraits: Record<string, string>;
   coverage: Array<{
     category: QuestCategory;
@@ -55,9 +51,7 @@ export function OptionalQuestsBrowser({
           <Link
             key={id}
             href={`/stats/optional-quests?category=${id}`}
-            className={`rounded-md px-3 py-2 text-sm ${
-              category === id ? "bg-zinc-900 text-white" : "border border-zinc-300 bg-white"
-            }`}
+            className={toggleTabClassName(category === id)}
           >
             {labels[id]} ({questCounts[id]})
           </Link>

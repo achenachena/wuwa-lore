@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 
 import { CharacterAvatar } from "@/components/character-avatar";
 import { CharacterRankingTable } from "@/components/character-ranking-table";
+import { ToggleTab } from "@/components/toggle-tab";
 import type { Messages } from "@/lib/i18n/messages";
 import { isVersionInRange } from "@/lib/version/compare";
 
@@ -225,20 +226,12 @@ export function VersionHalfStatsBrowser({
           </select>
         </label>
         <div className="flex gap-2">
-          <button
-            type="button"
-            className={`rounded-md px-3 py-2 text-sm ${view === "ranking" ? "bg-zinc-900 text-white" : "border border-zinc-300"}`}
-            onClick={() => setView("ranking")}
-          >
+          <ToggleTab active={view === "ranking"} onClick={() => setView("ranking")}>
             {labels.rankingTab}
-          </button>
-          <button
-            type="button"
-            className={`rounded-md px-3 py-2 text-sm ${view === "matrix" ? "bg-zinc-900 text-white" : "border border-zinc-300"}`}
-            onClick={() => setView("matrix")}
-          >
+          </ToggleTab>
+          <ToggleTab active={view === "matrix"} onClick={() => setView("matrix")}>
             {labels.matrixTab}
-          </button>
+          </ToggleTab>
         </div>
       </div>
 

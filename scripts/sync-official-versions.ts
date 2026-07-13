@@ -1,6 +1,8 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
+import { compareVersion } from "@/lib/version/compare";
+
 type Article = {
   articleId: number;
   articleTitle: string;
@@ -28,19 +30,6 @@ const MAIN_MENU_EN_URL =
   "https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/json/G152/en/MainMenu.json";
 const NOTICE_URL_PREFIX = "https://wutheringwaves.kurogames.com/en/main/news/detail/";
 const VERSION_IN_TITLE = /Version\s*(\d+\.\d+)/i;
-
-function compareVersion(a: string, b: string): number {
-  const pa = a.split(".").map((x) => Number(x));
-  const pb = b.split(".").map((x) => Number(x));
-  for (let i = 0; i < Math.max(pa.length, pb.length); i += 1) {
-    const da = pa[i] ?? 0;
-    const db = pb[i] ?? 0;
-    if (da !== db) {
-      return da - db;
-    }
-  }
-  return 0;
-}
 
 function scoreArticle(title: string): number {
   const normalized = title.toLowerCase();
