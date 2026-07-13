@@ -27,11 +27,15 @@ type CloudDimensions = {
   height: number;
 };
 
-const FONT_FAMILY = 'system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif';
+const FONT_FAMILY =
+  'system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif';
 
 export function CharacterWordCloud({ terms, lineCount, labels }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [dimensions, setDimensions] = useState<CloudDimensions>({ width: 640, height: 380 });
+  const [dimensions, setDimensions] = useState<CloudDimensions>({
+    width: 640,
+    height: 380,
+  });
   const [placedWords, setPlacedWords] = useState<PlacedWordCloudTerm[]>([]);
 
   const preparedWords = useMemo(() => prepareWordCloudWords(terms), [terms]);
@@ -58,14 +62,18 @@ export function CharacterWordCloud({ terms, lineCount, labels }: Props) {
 
   useEffect(() => {
     if (preparedWords.length === 0) {
-      setPlacedWords([]);
       return;
     }
 
     let cancelled = false;
 
     void import("d3-cloud").then(({ default: cloud }) => {
-      const layout = cloud<{ text: string; count: number; size: number; ratio: number }>()
+      const layout = cloud<{
+        text: string;
+        count: number;
+        size: number;
+        ratio: number;
+      }>()
         .size([dimensions.width, dimensions.height])
         .words(preparedWords)
         .padding(5)
@@ -116,7 +124,9 @@ export function CharacterWordCloud({ terms, lineCount, labels }: Props) {
           className="mx-auto block"
         >
           <rect width="100%" height="100%" fill="#ffffff" />
-          <g transform={`translate(${dimensions.width / 2}, ${dimensions.height / 2})`}>
+          <g
+            transform={`translate(${dimensions.width / 2}, ${dimensions.height / 2})`}
+          >
             {placedWords.map((word) => (
               <text
                 key={word.term}

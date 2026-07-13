@@ -22,6 +22,7 @@ export default async function VersionHalfStatsPage() {
           id: segment.id,
           label: formatStorySegmentLabel(segment, locale),
           version: segment.version,
+          versionHalf: segment.versionHalf,
         }))}
         initialFromVersion={pageData.fromVersion}
         initialToVersion={pageData.toVersion}

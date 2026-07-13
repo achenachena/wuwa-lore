@@ -1,4 +1,4 @@
-import { encoreNameToCharacterId, slugify } from "@/lib/slugify";
+import { encoreNameToCharacterId } from "@/lib/slugify";
 import type { EncoreRole } from "@/lib/encore/types";
 
 const SKIPPED_SPEAKERS = new Set(["{PlayerName}", "漂泊者", "Rover"]);
@@ -58,7 +58,9 @@ export function buildSpeakerResolver(params: {
   localeRoles: EncoreRole[];
   knownCharacterIds: Set<string>;
 }): SpeakerResolver {
-  const localeById = new Map(params.localeRoles.map((role) => [role.Id, role.Name]));
+  const localeById = new Map(
+    params.localeRoles.map((role) => [role.Id, role.Name]),
+  );
   const speakerToCharacter = new Map<string, string>();
   const localeNamesByCharacter = new Map<string, string>();
 
@@ -100,5 +102,3 @@ export function buildSpeakerResolver(params: {
 
   return { resolveSpeaker, localeNamesByCharacter };
 }
-
-/** @deprecated Use encoreNameToCharacterId — kept for scripts importing slugify only. */

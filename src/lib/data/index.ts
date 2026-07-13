@@ -44,31 +44,41 @@ import {
 import { getSiteLocale } from "@/lib/i18n/server";
 import type { ImageType, QuestCategory, VoiceLineStatRow } from "@/types/lore";
 
-function filterVoiceStatsForSite(stats: VoiceLineStatRow[], siteLocale: SiteLocale): VoiceLineStatRow[] {
+function filterVoiceStatsForSite(
+  stats: VoiceLineStatRow[],
+  siteLocale: SiteLocale,
+): VoiceLineStatRow[] {
   const locale = toVoiceDataLocale(siteLocale);
   return stats.filter((row) => row.locale === locale);
 }
 
-export const getCharacterPortraitMap = cache(async (): Promise<Map<string, string>> => {
-  const images = await loadCharacterImages();
-  const priority: Record<ImageType, number> = {
-    portrait: 0,
-    card: 1,
-    splash: 2,
-    other: 3,
-  };
-  const map = new Map<string, { path: string; rank: number }>();
+export const getCharacterPortraitMap = cache(
+  async (): Promise<Map<string, string>> => {
+    const images = await loadCharacterImages();
+    const priority: Record<ImageType, number> = {
+      portrait: 0,
+      card: 1,
+      splash: 2,
+      other: 3,
+    };
+    const map = new Map<string, { path: string; rank: number }>();
 
-  for (const image of images) {
-    const rank = priority[image.type];
-    const current = map.get(image.characterId);
-    if (!current || rank < current.rank) {
-      map.set(image.characterId, { path: image.localPath, rank });
+    for (const image of images) {
+      const rank = priority[image.type];
+      const current = map.get(image.characterId);
+      if (!current || rank < current.rank) {
+        map.set(image.characterId, { path: image.localPath, rank });
+      }
     }
-  }
 
-  return new Map([...map.entries()].map(([characterId, value]) => [characterId, value.path]));
-});
+    return new Map(
+      [...map.entries()].map(([characterId, value]) => [
+        characterId,
+        value.path,
+      ]),
+    );
+  },
+);
 
 export async function getCharacterLineTotalsForSite(): Promise<
   Map<
@@ -83,12 +93,13 @@ export async function getCharacterLineTotalsForSite(): Promise<
     }
   >
 > {
-  const [stats, storyDialogue, optionalDialogue, siteLocale] = await Promise.all([
-    loadGeneratedStats(),
-    loadStoryDialogueStats(),
-    loadOptionalQuestDialogueStats(),
-    getSiteLocale(),
-  ]);
+  const [stats, storyDialogue, optionalDialogue, siteLocale] =
+    await Promise.all([
+      loadGeneratedStats(),
+      loadStoryDialogueStats(),
+      loadOptionalQuestDialogueStats(),
+      getSiteLocale(),
+    ]);
   const voiceStats = filterVoiceStatsForSite(stats, siteLocale);
   const storyByCharacter = sumStoryDialogueByCharacter(storyDialogue);
   const optionalByCategory = Object.fromEntries(
@@ -124,7 +135,10 @@ export async function getCharacterLineTotalsForSite(): Promise<
     return current;
   }
 
-  function applyMap(source: Map<string, number>, assign: (bucket: TotalsBucket, value: number) => void) {
+  function applyMap(
+    source: Map<string, number>,
+    assign: (bucket: TotalsBucket, value: number) => void,
+  ) {
     for (const [characterId, value] of source) {
       if (isRoverCharacter(characterId)) {
         continue;
@@ -155,7 +169,10 @@ export async function getCharacterLineTotalsForSite(): Promise<
     bucket.totalLines =
       bucket.profileLines +
       bucket.storyLines +
-      QUEST_CATEGORIES.reduce((sum, category) => sum + bucket[`${category}Lines`], 0);
+      QUEST_CATEGORIES.reduce(
+        (sum, category) => sum + bucket[`${category}Lines`],
+        0,
+      );
   }
 
   return totals;
@@ -172,19 +189,24 @@ export async function getHomeSummary() {
     totalLines += row.totalLines;
   }
   return {
-    characterCount: characters.filter((character) => !isRoverCharacter(character.id)).length,
+    characterCount: characters.filter(
+      (character) => !isRoverCharacter(character.id),
+    ).length,
     versionCount: versions.length,
     totalLines,
   };
 }
 
-export async function getCharacterAppearanceVersionMap(): Promise<Map<string, string | null>> {
-  const [characters, segments, storyAppearances, storyDialogueStats] = await Promise.all([
-    loadCharacters(),
-    loadStorySegments(),
-    loadStoryAppearances(),
-    loadStoryDialogueStats(),
-  ]);
+export async function getCharacterAppearanceVersionMap(): Promise<
+  Map<string, string | null>
+> {
+  const [characters, segments, storyAppearances, storyDialogueStats] =
+    await Promise.all([
+      loadCharacters(),
+      loadStorySegments(),
+      loadStoryAppearances(),
+      loadStoryDialogueStats(),
+    ]);
   return buildFirstAppearanceVersionMap({
     characters,
     segments,
@@ -263,20 +285,32 @@ export const getCharacterDetailData = cache(async (id: string) => {
   };
 });
 
-export async function getOptionalQuestStatsPageData(category: QuestCategory = "companion") {
-  const [characters, quests, appearances, dialogueStats, coverage, unmappedSpeakers, siteLocale, portraits] =
-    await Promise.all([
-      loadCharacters(),
-      loadOptionalQuestCatalog(),
-      loadOptionalQuestAppearances(),
-      loadOptionalQuestDialogueStats(),
-      loadOptionalQuestCoverage(),
-      loadOptionalQuestUnmappedSpeakers(),
-      getSiteLocale(),
-      getCharacterPortraitMap(),
-    ]);
+export async function getOptionalQuestStatsPageData(
+  category: QuestCategory = "companion",
+) {
+  const [
+    characters,
+    quests,
+    appearances,
+    dialogueStats,
+    coverage,
+    unmappedSpeakers,
+    siteLocale,
+    portraits,
+  ] = await Promise.all([
+    loadCharacters(),
+    loadOptionalQuestCatalog(),
+    loadOptionalQuestAppearances(),
+    loadOptionalQuestDialogueStats(),
+    loadOptionalQuestCoverage(),
+    loadOptionalQuestUnmappedSpeakers(),
+    getSiteLocale(),
+    getCharacterPortraitMap(),
+  ]);
   const displayNames = await getCharacterDisplayNameMap(siteLocale);
-  const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
+  const playableCharacters = characters.filter(
+    (character) => !isRoverCharacter(character.id),
+  );
 
   const ranking = buildOptionalQuestRanking({
     characters: playableCharacters,
@@ -301,36 +335,52 @@ export async function getOptionalQuestStatsPageData(category: QuestCategory = "c
 }
 
 export async function getVersionStatsPageData() {
-  const [versions, characters, stats, storyDialogueStats, siteLocale] = await Promise.all([
-    loadVersions(),
-    loadCharacters(),
-    loadGeneratedStats(),
-    loadStoryDialogueStats(),
-    getSiteLocale(),
-  ]);
+  const [versions, characters, stats, storyDialogueStats, siteLocale] =
+    await Promise.all([
+      loadVersions(),
+      loadCharacters(),
+      loadGeneratedStats(),
+      loadStoryDialogueStats(),
+      getSiteLocale(),
+    ]);
   const voiceStats = filterVoiceStatsForSite(stats, siteLocale);
-  return aggregateVersionStats({ versions, characters, voiceStats, storyDialogueStats });
+  return aggregateVersionStats({
+    versions,
+    characters,
+    voiceStats,
+    storyDialogueStats,
+  });
 }
 
 export async function getVersionHalfStatsPageData(params?: {
   fromVersion?: string;
   toVersion?: string;
 }) {
-  const [characters, storySegments, storyAppearances, storyDialogueStats, versions, siteLocale, portraits] =
-    await Promise.all([
-      loadCharacters(),
-      loadStorySegments(),
-      loadStoryAppearances(),
-      loadStoryDialogueStats(),
-      loadVersions(),
-      getSiteLocale(),
-      getCharacterPortraitMap(),
-    ]);
+  const [
+    characters,
+    storySegments,
+    storyAppearances,
+    storyDialogueStats,
+    versions,
+    siteLocale,
+    portraits,
+  ] = await Promise.all([
+    loadCharacters(),
+    loadStorySegments(),
+    loadStoryAppearances(),
+    loadStoryDialogueStats(),
+    loadVersions(),
+    getSiteLocale(),
+    getCharacterPortraitMap(),
+  ]);
   const displayNames = await getCharacterDisplayNameMap(siteLocale);
-  const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
+  const playableCharacters = characters.filter(
+    (character) => !isRoverCharacter(character.id),
+  );
 
   const fromVersion = params?.fromVersion ?? versions[0]?.version ?? "1.0";
-  const toVersion = params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.5";
+  const toVersion =
+    params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.5";
 
   const appearanceIndex = buildAppearanceIndex(storyAppearances);
   const dialogueIndex = buildDialogueIndex(storyDialogueStats);
@@ -341,7 +391,7 @@ export async function getVersionHalfStatsPageData(params?: {
       name: displayNames.get(character.id) ?? character.name,
       releaseVersion: character.releaseVersion,
     },
-    cells: storySegments.map((segment) => {
+    cells: storySegments.flatMap((segment) => {
       const dialogueLineCount =
         dialogueIndex.get(appearanceKey(character.id, segment.id)) ?? 0;
       const appeared = didCharacterAppearInQuest({
@@ -352,14 +402,11 @@ export async function getVersionHalfStatsPageData(params?: {
         appearanceIndex,
       });
 
-      return {
-        segmentId: segment.id,
-        labelZh: segment.nameZh,
-        version: segment.version,
-        versionHalf: segment.versionHalf,
-        appeared,
-        dialogueLineCount,
-      };
+      if (!appeared && dialogueLineCount <= 0) {
+        return [];
+      }
+
+      return [{ segmentId: segment.id, appeared, dialogueLineCount }];
     }),
   }));
 

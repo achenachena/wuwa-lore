@@ -12,6 +12,7 @@ type SegmentOption = {
   id: string;
   label: string;
   version: string;
+  versionHalf: string;
 };
 
 type MatrixRow = {
@@ -22,9 +23,6 @@ type MatrixRow = {
   };
   cells: Array<{
     segmentId: string;
-    labelZh: string;
-    version: string;
-    versionHalf: string;
     appeared: boolean;
     dialogueLineCount: number;
   }>;
@@ -57,7 +55,13 @@ export function VersionHalfStatsBrowser({
   const [view, setView] = useState<"ranking" | "matrix">("ranking");
   const [sortKey, setSortKey] = useState<SortKey>("linesPerAppearance");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
-  const [matrixSortDirection, setMatrixSortDirection] = useState<SortDirection>("desc");
+  const [matrixSortDirection, setMatrixSortDirection] =
+    useState<SortDirection>("desc");
+
+  const segmentOptionById = useMemo(
+    () => new Map(segmentOptions.map((segment) => [segment.id, segment])),
+    [segmentOptions],
+  );
 
   const selectedSegmentIdSet = useMemo(() => {
     const ids = new Set<string>();
@@ -70,10 +74,7 @@ export function VersionHalfStatsBrowser({
   }, [fromVersion, segmentOptions, toVersion]);
 
   const filteredRanking = useMemo(() => {
-    const dialogueByCharacter = new Map<string, number>();
-    const appearancesByCharacter = new Map<string, number>();
-
-    for (const row of matrix) {
+    const rows = matrix.flatMap((row) => {
       let dialogueTotal = 0;
       const appearedHalves = new Set<string>();
       for (const cell of row.cells) {
@@ -82,54 +83,78 @@ export function VersionHalfStatsBrowser({
         }
         dialogueTotal += cell.dialogueLineCount;
         if (cell.appeared) {
-          appearedHalves.add(cell.versionHalf);
+          const versionHalf = segmentOptionById.get(
+            cell.segmentId,
+          )?.versionHalf;
+          if (versionHalf) {
+            appearedHalves.add(versionHalf);
+          }
         }
       }
       const appearanceTotal = appearedHalves.size;
-      if (dialogueTotal > 0 || appearanceTotal > 0) {
-        dialogueByCharacter.set(row.character.id, dialogueTotal);
-        appearancesByCharacter.set(row.character.id, appearanceTotal);
+      if (dialogueTotal <= 0 && appearanceTotal <= 0) {
+        return [];
       }
-    }
 
-    const ids = new Set([...dialogueByCharacter.keys(), ...appearancesByCharacter.keys()]);
-    const rows = [...ids].map((characterId) => {
-      const source = matrix.find((row) => row.character.id === characterId);
-      const voiceLineCount = dialogueByCharacter.get(characterId) ?? 0;
-      const appearanceCount = appearancesByCharacter.get(characterId) ?? 0;
-      return {
-        characterId,
-        characterName: source?.character.name ?? characterId,
-        voiceLineCount,
-        appearanceCount,
-        linesPerAppearance:
-          appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
-      };
+      return [
+        {
+          characterId: row.character.id,
+          characterName: row.character.name,
+          voiceLineCount: dialogueTotal,
+          appearanceCount: appearanceTotal,
+          linesPerAppearance:
+            appearanceTotal > 0
+              ? Number((dialogueTotal / appearanceTotal).toFixed(2))
+              : null,
+        },
+      ];
     });
 
     return rows.sort((a, b) => {
       const direction = sortDirection === "asc" ? 1 : -1;
       const aValue =
-        sortKey === "linesPerAppearance" ? (a.linesPerAppearance ?? -1) : a[sortKey];
+        sortKey === "linesPerAppearance"
+          ? (a.linesPerAppearance ?? -1)
+          : a[sortKey];
       const bValue =
-        sortKey === "linesPerAppearance" ? (b.linesPerAppearance ?? -1) : b[sortKey];
+        sortKey === "linesPerAppearance"
+          ? (b.linesPerAppearance ?? -1)
+          : b[sortKey];
       if (aValue !== bValue) {
         return (aValue - bValue) * direction;
       }
       return a.characterName.localeCompare(b.characterName);
     });
-  }, [matrix, selectedSegmentIdSet, sortDirection, sortKey]);
+  }, [matrix, segmentOptionById, selectedSegmentIdSet, sortDirection, sortKey]);
 
-  const selectedSegmentIds = useMemo(() => [...selectedSegmentIdSet], [selectedSegmentIdSet]);
+  const selectedSegmentIds = useMemo(
+    () => [...selectedSegmentIdSet],
+    [selectedSegmentIdSet],
+  );
 
   const filteredMatrix = useMemo(() => {
     const rows = matrix
       .map((row) => {
-        const cells = row.cells.filter((cell) => selectedSegmentIdSet.has(cell.segmentId));
-        const totalLines = cells.reduce((sum, cell) => sum + cell.dialogueLineCount, 0);
+        const cellsBySegmentId = new Map(
+          row.cells.map((cell) => [cell.segmentId, cell]),
+        );
+        const cells = selectedSegmentIds.map(
+          (segmentId) =>
+            cellsBySegmentId.get(segmentId) ?? {
+              segmentId,
+              appeared: false,
+              dialogueLineCount: 0,
+            },
+        );
+        const totalLines = cells.reduce(
+          (sum, cell) => sum + cell.dialogueLineCount,
+          0,
+        );
         return { ...row, cells, totalLines };
       })
-      .filter((row) => row.cells.some((cell) => cell.appeared || cell.dialogueLineCount > 0));
+      .filter((row) =>
+        row.cells.some((cell) => cell.appeared || cell.dialogueLineCount > 0),
+      );
 
     const direction = matrixSortDirection === "asc" ? 1 : -1;
     return rows.sort((left, right) => {
@@ -138,7 +163,7 @@ export function VersionHalfStatsBrowser({
       }
       return left.character.name.localeCompare(right.character.name);
     });
-  }, [matrix, matrixSortDirection, selectedSegmentIdSet]);
+  }, [matrix, matrixSortDirection, selectedSegmentIds]);
 
   const matrixMaxLines = useMemo(() => {
     let max = 1;
@@ -218,8 +243,8 @@ export function VersionHalfStatsBrowser({
       </div>
 
       <p className="text-sm text-zinc-600">
-        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments} ({fromVersion}–
-        {toVersion})
+        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments}{" "}
+        ({fromVersion}–{toVersion})
       </p>
 
       {view === "ranking" ? (
@@ -246,14 +271,20 @@ export function VersionHalfStatsBrowser({
           <table className="w-full min-w-[960px] border-collapse text-xs">
             <thead>
               <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                <th className="sticky left-0 z-10 bg-white px-3 py-2">{labels.rank}</th>
-                <th className="sticky left-8 z-10 bg-white px-3 py-2">{labels.character}</th>
+                <th className="sticky left-0 z-10 bg-white px-3 py-2">
+                  {labels.rank}
+                </th>
+                <th className="sticky left-8 z-10 bg-white px-3 py-2">
+                  {labels.character}
+                </th>
                 <th className="px-3 py-2 whitespace-nowrap">
                   <button
                     type="button"
                     className="hover:text-zinc-900"
                     onClick={() =>
-                      setMatrixSortDirection((current) => (current === "asc" ? "desc" : "asc"))
+                      setMatrixSortDirection((current) =>
+                        current === "asc" ? "desc" : "asc",
+                      )
                     }
                     title={labels.sortByLines}
                   >
@@ -263,7 +294,7 @@ export function VersionHalfStatsBrowser({
                 </th>
                 {selectedSegmentIds.map((segmentId) => (
                   <th key={segmentId} className="px-3 py-2 whitespace-nowrap">
-                    {segmentOptions.find((item) => item.id === segmentId)?.label ?? segmentId}
+                    {segmentOptionById.get(segmentId)?.label ?? segmentId}
                   </th>
                 ))}
               </tr>
@@ -271,7 +302,9 @@ export function VersionHalfStatsBrowser({
             <tbody>
               {filteredMatrix.map((row, index) => (
                 <tr key={row.character.id} className="border-b border-zinc-100">
-                  <td className="sticky left-0 z-10 bg-white px-3 py-2 text-zinc-500">{index + 1}</td>
+                  <td className="sticky left-0 z-10 bg-white px-3 py-2 text-zinc-500">
+                    {index + 1}
+                  </td>
                   <td className="sticky left-8 z-10 bg-white px-3 py-2 font-medium whitespace-nowrap">
                     <Link
                       className="flex items-center gap-2 hover:underline"
@@ -285,10 +318,16 @@ export function VersionHalfStatsBrowser({
                       <span>{row.character.name}</span>
                     </Link>
                   </td>
-                  <td className="px-3 py-2 text-sm font-semibold text-zinc-800">{row.totalLines}</td>
+                  <td className="px-3 py-2 text-sm font-semibold text-zinc-800">
+                    {row.totalLines}
+                  </td>
                   {row.cells.map((cell) => (
                     <td key={cell.segmentId} className="px-2 py-2 align-middle">
-                      <SegmentCell cell={cell} labels={labels} maxLines={matrixMaxLines} />
+                      <SegmentCell
+                        cell={cell}
+                        labels={labels}
+                        maxLines={matrixMaxLines}
+                      />
                     </td>
                   ))}
                 </tr>
@@ -315,7 +354,9 @@ function SegmentCell({
   }
 
   const lineIntensity =
-    cell.dialogueLineCount > 0 ? 0.18 + (cell.dialogueLineCount / maxLines) * 0.62 : 0;
+    cell.dialogueLineCount > 0
+      ? 0.18 + (cell.dialogueLineCount / maxLines) * 0.62
+      : 0;
   const backgroundColor =
     cell.dialogueLineCount > 0
       ? `rgba(14, 165, 233, ${lineIntensity})`
@@ -336,10 +377,15 @@ function SegmentCell({
       }
     >
       {cell.appeared ? (
-        <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" aria-label={labels.appeared} />
+        <span
+          className="inline-block h-2 w-2 rounded-full bg-emerald-500"
+          aria-label={labels.appeared}
+        />
       ) : null}
       {cell.dialogueLineCount > 0 ? (
-        <span className="text-sm font-semibold text-zinc-800">{cell.dialogueLineCount}</span>
+        <span className="text-sm font-semibold text-zinc-800">
+          {cell.dialogueLineCount}
+        </span>
       ) : cell.appeared ? (
         <span className="text-[10px] text-emerald-700">{labels.appeared}</span>
       ) : null}
