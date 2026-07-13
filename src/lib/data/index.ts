@@ -1,6 +1,10 @@
 import { cache } from "react";
 
 import {
+  QUEST_CATEGORIES,
+  countQuestsByCategory,
+} from "@/lib/data/quest-categories";
+import {
   aggregateVersionStats,
   appearanceKey,
   buildAppearanceIndex,
@@ -9,9 +13,7 @@ import {
   buildDialogueIndex,
   buildFirstAppearanceVersionMap,
   buildOptionalQuestRanking,
-  buildStorySegmentRanking,
   didCharacterAppearInQuest,
-  filterStorySegmentsByRange,
   getFirstAppearanceVersion,
   sumOptionalDialogueByCharacter,
   sumStoryDialogueByCharacter,
@@ -89,32 +91,46 @@ export async function getCharacterLineTotalsForSite(): Promise<
   ]);
   const voiceStats = filterVoiceStatsForSite(stats, siteLocale);
   const storyByCharacter = sumStoryDialogueByCharacter(storyDialogue);
-  const companionByCharacter = sumOptionalDialogueByCharacter(optionalDialogue, "companion");
-  const eventByCharacter = sumOptionalDialogueByCharacter(optionalDialogue, "event");
-  const sideByCharacter = sumOptionalDialogueByCharacter(optionalDialogue, "side");
-  const totals = new Map<
-    string,
-    {
-      profileLines: number;
-      storyLines: number;
-      companionLines: number;
-      eventLines: number;
-      sideLines: number;
-      totalLines: number;
-    }
-  >();
+  const optionalByCategory = Object.fromEntries(
+    QUEST_CATEGORIES.map((category) => [
+      category,
+      sumOptionalDialogueByCharacter(optionalDialogue, category),
+    ]),
+  ) as Record<(typeof QUEST_CATEGORIES)[number], Map<string, number>>;
 
-  function ensure(characterId: string) {
-    const current = totals.get(characterId) ?? {
-      profileLines: 0,
-      storyLines: 0,
-      companionLines: 0,
-      eventLines: 0,
-      sideLines: 0,
-      totalLines: 0,
-    };
+  type TotalsBucket = {
+    profileLines: number;
+    storyLines: number;
+    companionLines: number;
+    eventLines: number;
+    sideLines: number;
+    totalLines: number;
+  };
+
+  const emptyBucket = (): TotalsBucket => ({
+    profileLines: 0,
+    storyLines: 0,
+    companionLines: 0,
+    eventLines: 0,
+    sideLines: 0,
+    totalLines: 0,
+  });
+
+  const totals = new Map<string, TotalsBucket>();
+
+  function ensure(characterId: string): TotalsBucket {
+    const current = totals.get(characterId) ?? emptyBucket();
     totals.set(characterId, current);
     return current;
+  }
+
+  function applyMap(source: Map<string, number>, assign: (bucket: TotalsBucket, value: number) => void) {
+    for (const [characterId, value] of source) {
+      if (isRoverCharacter(characterId)) {
+        continue;
+      }
+      assign(ensure(characterId), value);
+    }
   }
 
   for (const row of voiceStats) {
@@ -124,36 +140,22 @@ export async function getCharacterLineTotalsForSite(): Promise<
     ensure(row.characterId).profileLines = row.totalLineCount;
   }
 
-  for (const [characterId, storyLines] of storyByCharacter) {
-    if (isRoverCharacter(characterId)) {
-      continue;
-    }
-    ensure(characterId).storyLines = storyLines;
-  }
-  for (const [characterId, lines] of companionByCharacter) {
-    if (!isRoverCharacter(characterId)) {
-      ensure(characterId).companionLines = lines;
-    }
-  }
-  for (const [characterId, lines] of eventByCharacter) {
-    if (!isRoverCharacter(characterId)) {
-      ensure(characterId).eventLines = lines;
-    }
-  }
-  for (const [characterId, lines] of sideByCharacter) {
-    if (!isRoverCharacter(characterId)) {
-      ensure(characterId).sideLines = lines;
-    }
+  applyMap(storyByCharacter, (bucket, value) => {
+    bucket.storyLines = value;
+  });
+
+  for (const category of QUEST_CATEGORIES) {
+    const field = `${category}Lines` as const;
+    applyMap(optionalByCategory[category], (bucket, value) => {
+      bucket[field] = value;
+    });
   }
 
-  for (const [characterId, bucket] of totals) {
+  for (const bucket of totals.values()) {
     bucket.totalLines =
       bucket.profileLines +
       bucket.storyLines +
-      bucket.companionLines +
-      bucket.eventLines +
-      bucket.sideLines;
-    totals.set(characterId, bucket);
+      QUEST_CATEGORIES.reduce((sum, category) => sum + bucket[`${category}Lines`], 0);
   }
 
   return totals;
@@ -239,7 +241,7 @@ export const getCharacterDetailData = cache(async (id: string) => {
       })
     : null;
 
-  const optionalQuestStats = (["companion", "event", "side"] as QuestCategory[]).map((category) => ({
+  const optionalQuestStats = QUEST_CATEGORIES.map((category) => ({
     category,
     rows: buildCharacterOptionalQuestRows({
       characterId: id,
@@ -287,15 +289,6 @@ export async function getOptionalQuestStatsPageData(category: QuestCategory = "c
     characterName: displayNames.get(row.characterId) ?? row.characterName,
   }));
 
-  const questCounts = {
-    companion: 0,
-    event: 0,
-    side: 0,
-  } satisfies Record<QuestCategory, number>;
-  for (const quest of quests) {
-    questCounts[quest.category] += 1;
-  }
-
   return {
     category,
     quests: quests.filter((quest) => quest.category === category),
@@ -303,7 +296,7 @@ export async function getOptionalQuestStatsPageData(category: QuestCategory = "c
     coverage,
     unmappedSpeakers,
     characterPortraits: Object.fromEntries(portraits),
-    questCounts,
+    questCounts: countQuestsByCategory(quests),
   };
 }
 
@@ -338,23 +331,6 @@ export async function getVersionHalfStatsPageData(params?: {
 
   const fromVersion = params?.fromVersion ?? versions[0]?.version ?? "1.0";
   const toVersion = params?.toVersion ?? versions[versions.length - 1]?.version ?? "3.5";
-  const selectedSegments = filterStorySegmentsByRange({
-    segments: storySegments,
-    fromVersion,
-    toVersion,
-  });
-  const selectedSegmentIds = selectedSegments.map((segment) => segment.id);
-
-  const ranking = buildStorySegmentRanking({
-    characters: playableCharacters,
-    storySegments,
-    storyAppearances,
-    storyDialogueStats,
-    selectedSegmentIds,
-  }).map((row) => ({
-    ...row,
-    characterName: displayNames.get(row.characterId) ?? row.characterName,
-  }));
 
   const appearanceIndex = buildAppearanceIndex(storyAppearances);
   const dialogueIndex = buildDialogueIndex(storyDialogueStats);
@@ -391,14 +367,7 @@ export async function getVersionHalfStatsPageData(params?: {
     fromVersion,
     toVersion,
     storySegments,
-    selectedSegments,
-    ranking,
     matrix,
     characterPortraits: Object.fromEntries(portraits),
   };
-}
-
-export async function getVoiceStatsForSite(): Promise<VoiceLineStatRow[]> {
-  const [stats, siteLocale] = await Promise.all([loadGeneratedStats(), getSiteLocale()]);
-  return filterVoiceStatsForSite(stats, siteLocale);
 }

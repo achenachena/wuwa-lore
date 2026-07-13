@@ -1,5 +1,6 @@
 import { OptionalQuestsBrowser } from "@/components/optional-quests-browser";
 import { getOptionalQuestStatsPageData } from "@/lib/data";
+import { isQuestCategory } from "@/lib/data/quest-categories";
 import { getMessages } from "@/lib/i18n/server";
 import type { QuestCategory } from "@/types/lore";
 
@@ -8,10 +9,7 @@ type PageProps = {
 };
 
 function parseCategory(value?: string): QuestCategory {
-  if (value === "event" || value === "side" || value === "companion") {
-    return value;
-  }
-  return "companion";
+  return isQuestCategory(value) ? value : "companion";
 }
 
 export default async function OptionalQuestStatsPage({ searchParams }: PageProps) {

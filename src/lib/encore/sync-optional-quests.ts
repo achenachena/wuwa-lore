@@ -7,6 +7,7 @@ import {
 import { buildSpeakerResolver, countDialoguesBySpeaker } from "@/lib/encore/speakers";
 import type { EncoreLocale, EncoreRole, EncoreStoryType } from "@/lib/encore/types";
 import { ENCORE_OPTIONAL_QUEST_TYPE_IDS } from "@/lib/encore/types";
+import { QUEST_CATEGORIES } from "@/lib/data/quest-categories";
 import type { OptionalQuestRecord, QuestCategory } from "@/types/lore";
 
 export type OptionalQuestDialogueRow = {
@@ -45,11 +46,9 @@ export type UnmappedSpeakerRow = {
   lineCount: number;
 };
 
-const CATEGORY_PRIORITY: Record<QuestCategory, number> = {
-  companion: 0,
-  event: 1,
-  side: 2,
-};
+const CATEGORY_PRIORITY = Object.fromEntries(
+  QUEST_CATEGORIES.map((category, index) => [category, index]),
+) as Record<QuestCategory, number>;
 
 const UNMAPPED_SPEAKER_SKIP = /^(Speaker_\d+|Speaker_undefined|Narrator|问卷反馈)$/i;
 
@@ -78,7 +77,7 @@ function createCoverageBuckets() {
       unmappedSpeakers: Map<string, number>;
     }
   >();
-  for (const category of ["companion", "event", "side"] as QuestCategory[]) {
+  for (const category of QUEST_CATEGORIES) {
     byCategory.set(category, {
       questCount: 0,
       questsWithDialogue: 0,
@@ -106,7 +105,7 @@ function finalizeCoverage(
     }
   >,
 ): { coverage: OptionalQuestCoverageRow[]; unmappedSpeakers: UnmappedSpeakerRow[] } {
-  const coverage = (["companion", "event", "side"] as QuestCategory[]).map((category) => {
+  const coverage = QUEST_CATEGORIES.map((category) => {
     const bucket = byCategory.get(category)!;
     return {
       category,
@@ -121,7 +120,7 @@ function finalizeCoverage(
   });
 
   const unmappedSpeakers: UnmappedSpeakerRow[] = [];
-  for (const category of ["companion", "event", "side"] as QuestCategory[]) {
+  for (const category of QUEST_CATEGORIES) {
     const bucket = byCategory.get(category)!;
     for (const [name, lineCount] of [...bucket.unmappedSpeakers.entries()]
       .filter(([speaker]) => speaker.trim() && !UNMAPPED_SPEAKER_SKIP.test(speaker))
@@ -148,7 +147,7 @@ export function buildOptionalQuestCatalog(params: {
   const claimed = new Map<number, QuestCategory>();
   const quests: OptionalQuestRecord[] = [];
 
-  for (const category of ["companion", "event", "side"] as QuestCategory[]) {
+  for (const category of QUEST_CATEGORIES) {
     for (const story of collectEncoreStoriesByTypeIds(
       params.zhStoryTypes,
       ENCORE_OPTIONAL_QUEST_TYPE_IDS[category],

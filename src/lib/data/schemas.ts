@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { QUEST_CATEGORIES } from "@/lib/data/quest-categories";
+
 export const localeSchema = z.enum(["zh-CN", "en-US", "ja-JP", "ko-KR"]);
 
 export const sourceTraceSchema = z.object({
@@ -132,7 +134,7 @@ export const versionHalfVoiceRowSchema = z.object({
   lineCount: z.number().int().min(0),
 });
 
-export const questCategorySchema = z.enum(["companion", "event", "side"]);
+export const questCategorySchema = z.enum(QUEST_CATEGORIES);
 
 export const optionalQuestRecordSchema = z.object({
   id: z.string().min(1),

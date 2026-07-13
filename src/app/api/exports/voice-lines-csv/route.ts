@@ -1,51 +1,39 @@
 import { loadVoiceLineDetails } from "@/lib/data/loaders";
-import { exportHeaders } from "@/lib/security/exports";
-
-function escapeCsvCell(value: string | number | boolean): string {
-  const text = String(value);
-  if (text.includes(",") || text.includes('"') || text.includes("\n")) {
-    return `"${text.replace(/"/g, '""')}"`;
-  }
-  return text;
-}
+import { csvExport } from "@/lib/security/exports";
 
 export async function GET() {
   const rows = await loadVoiceLineDetails();
-  const headers = [
-    "characterId",
-    "locale",
-    "sourcePageTitle",
-    "sourcePageExists",
-    "key",
-    "sourceFieldPath",
-    "text",
-    "firstSeenAt",
-    "firstSeenVersion",
-  ];
-  const lineRows: string[] = [];
+  const lineRows: Array<Array<string | number | boolean>> = [];
 
   for (const row of rows) {
     for (const line of row.lines) {
-      lineRows.push(
-        [
-          row.characterId,
-          row.locale,
-          row.sourcePageTitle,
-          row.sourcePageExists,
-          line.key,
-          line.sourceFieldPath,
-          line.text,
-          line.firstSeenAt ?? "",
-          line.firstSeenVersion ?? "",
-        ]
-          .map((cell) => escapeCsvCell(cell))
-          .join(","),
-      );
+      lineRows.push([
+        row.characterId,
+        row.locale,
+        row.sourcePageTitle,
+        row.sourcePageExists,
+        line.key,
+        line.sourceFieldPath,
+        line.text,
+        line.firstSeenAt ?? "",
+        line.firstSeenVersion ?? "",
+      ]);
     }
   }
 
-  const csv = `${headers.join(",")}\n${lineRows.join("\n")}\n`;
-  return new Response(csv, {
-    headers: exportHeaders("wuwa-voice-lines.csv", "text/csv; charset=utf-8"),
-  });
+  return csvExport(
+    [
+      "characterId",
+      "locale",
+      "sourcePageTitle",
+      "sourcePageExists",
+      "key",
+      "sourceFieldPath",
+      "text",
+      "firstSeenAt",
+      "firstSeenVersion",
+    ],
+    lineRows,
+    "wuwa-voice-lines.csv",
+  );
 }

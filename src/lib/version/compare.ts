@@ -11,3 +11,7 @@ export function compareVersion(a: string, b: string): number {
   }
   return 0;
 }
+
+export function isVersionInRange(version: string, fromVersion: string, toVersion: string): boolean {
+  return compareVersion(version, fromVersion) >= 0 && compareVersion(version, toVersion) <= 0;
+}

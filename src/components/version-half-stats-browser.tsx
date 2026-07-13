@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import { CharacterAvatar } from "@/components/character-avatar";
-import { MetricBar } from "@/components/metric-bar";
+import { CharacterRankingTable } from "@/components/character-ranking-table";
 import type { Messages } from "@/lib/i18n/messages";
+import { isVersionInRange } from "@/lib/version/compare";
 
 type SegmentOption = {
   id: string;
@@ -61,13 +62,7 @@ export function VersionHalfStatsBrowser({
   const selectedSegmentIdSet = useMemo(() => {
     const ids = new Set<string>();
     for (const segment of segmentOptions) {
-      const [major, minor] = segment.version.split(".").map(Number);
-      const [fromMajor, fromMinor] = fromVersion.split(".").map(Number);
-      const [toMajor, toMinor] = toVersion.split(".").map(Number);
-      const value = major * 100 + minor;
-      const fromValue = fromMajor * 100 + fromMinor;
-      const toValue = toMajor * 100 + toMinor;
-      if (value >= fromValue && value <= toValue) {
+      if (isVersionInRange(segment.version, fromVersion, toVersion)) {
         ids.add(segment.id);
       }
     }
@@ -126,14 +121,6 @@ export function VersionHalfStatsBrowser({
   }, [matrix, selectedSegmentIdSet, sortDirection, sortKey]);
 
   const selectedSegmentIds = useMemo(() => [...selectedSegmentIdSet], [selectedSegmentIdSet]);
-
-  const rankingMax = useMemo(() => {
-    return {
-      lines: Math.max(...filteredRanking.map((row) => row.voiceLineCount), 1),
-      appearances: Math.max(...filteredRanking.map((row) => row.appearanceCount), 1),
-      ratio: Math.max(...filteredRanking.map((row) => row.linesPerAppearance ?? 0), 1),
-    };
-  }, [filteredRanking]);
 
   const filteredMatrix = useMemo(() => {
     const rows = matrix
@@ -231,87 +218,29 @@ export function VersionHalfStatsBrowser({
       </div>
 
       <p className="text-sm text-zinc-600">
-        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments} ({fromVersion}–{toVersion})
+        {labels.selectedSegments} {selectedSegmentIds.length} {labels.segments} ({fromVersion}–
+        {toVersion})
       </p>
 
       {view === "ranking" ? (
-        <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
-          <table className="w-full min-w-[760px] border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-zinc-200 text-left text-zinc-500">
-                <th className="px-4 py-3">{labels.rank}</th>
-                <th className="px-4 py-3">{labels.character}</th>
-                <th className="px-4 py-3">
-                  <button type="button" className="hover:text-zinc-900" onClick={() => toggleSort("voiceLineCount")}>
-                    {labels.storyLines}
-                    {sortIndicator("voiceLineCount")}
-                  </button>
-                </th>
-                <th className="px-4 py-3">
-                  <button type="button" className="hover:text-zinc-900" onClick={() => toggleSort("appearanceCount")}>
-                    {labels.versionAppearances}
-                    {sortIndicator("appearanceCount")}
-                  </button>
-                </th>
-                <th className="px-4 py-3">
-                  <button
-                    type="button"
-                    className="hover:text-zinc-900"
-                    onClick={() => toggleSort("linesPerAppearance")}
-                  >
-                    {labels.linesPerAppearance}
-                    {sortIndicator("linesPerAppearance")}
-                  </button>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredRanking.map((row, index) => (
-                <tr key={row.characterId} className="border-b border-zinc-100">
-                  <td className="px-4 py-3 text-zinc-500">{index + 1}</td>
-                  <td className="px-4 py-3 font-medium">
-                    <Link
-                      className="flex items-center gap-3 hover:underline"
-                      href={`/characters/${row.characterId}`}
-                    >
-                      <CharacterAvatar
-                        name={row.characterName}
-                        src={characterPortraits[row.characterId]}
-                        size={36}
-                      />
-                      <span>{row.characterName}</span>
-                    </Link>
-                  </td>
-                  <td className="px-4 py-3">
-                    <MetricBar
-                      value={row.voiceLineCount}
-                      max={rankingMax.lines}
-                      colorClass="bg-sky-500"
-                    />
-                  </td>
-                  <td className="px-4 py-3">
-                    <MetricBar
-                      value={row.appearanceCount}
-                      max={rankingMax.appearances}
-                      colorClass="bg-violet-500"
-                    />
-                  </td>
-                  <td className="px-4 py-3">
-                    {row.linesPerAppearance !== null ? (
-                      <MetricBar
-                        value={row.linesPerAppearance}
-                        max={rankingMax.ratio}
-                        colorClass="bg-amber-500"
-                      />
-                    ) : (
-                      "—"
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <CharacterRankingTable
+          rows={filteredRanking}
+          characterPortraits={characterPortraits}
+          labels={{
+            rank: labels.rank,
+            character: labels.character,
+            lines: labels.storyLines,
+            appearances: labels.versionAppearances,
+            linesPerAppearance: labels.linesPerAppearance,
+          }}
+          lineColorClass="bg-sky-500"
+          appearanceColorClass="bg-violet-500"
+          ratioColorClass="bg-amber-500"
+          onSortLines={() => toggleSort("voiceLineCount")}
+          onSortAppearances={() => toggleSort("appearanceCount")}
+          onSortRatio={() => toggleSort("linesPerAppearance")}
+          sortIndicator={sortIndicator}
+        />
       ) : (
         <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
           <table className="w-full min-w-[960px] border-collapse text-xs">
