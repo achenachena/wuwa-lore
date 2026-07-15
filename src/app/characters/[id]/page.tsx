@@ -11,6 +11,12 @@ import { getCharacterDisplayName } from "@/lib/i18n/character-names";
 import { localizeGameLabel, localizeImageType } from "@/lib/i18n/game-labels";
 import { formatStorySegmentLabel } from "@/lib/i18n/locale";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
+import {
+  breadcrumbJsonLd,
+  characterJsonLd,
+  jsonLdScript,
+  pageMetadata,
+} from "@/lib/seo/metadata";
 import { profileForLocale } from "@/lib/i18n/text-locale";
 
 type CharacterDetailProps = {
@@ -21,25 +27,34 @@ export async function generateMetadata({
   params,
 }: CharacterDetailProps): Promise<Metadata> {
   const { id } = await params;
-  const [t, siteLocale, { character }] = await Promise.all([
+  const [t, siteLocale, detail] = await Promise.all([
     getMessages(),
     getSiteLocale(),
     getCharacterDetailData(id),
   ]);
-  if (!character) {
+  if (!detail.character) {
     return {
       title: t.characterDetail.notFoundTitle,
     };
   }
   const displayName = await getCharacterDisplayName(
-    character.id,
-    character.name,
+    detail.character.id,
+    detail.character.name,
     siteLocale,
   );
-  return {
-    title: `${displayName} | ${t.siteTitle}`,
-    description: `${displayName} ${t.characterDetail.metaDescription}`,
-  };
+  const description = `${displayName} — ${t.characterDetail.metaDescription}`;
+  return pageMetadata({
+    title: displayName,
+    description,
+    path: `/characters/${id}`,
+    locale: siteLocale,
+    keywords: [
+      displayName,
+      detail.character.name,
+      ...t.siteKeywords.slice(0, 8),
+    ],
+    images: detail.portraitUrl ? [detail.portraitUrl] : undefined,
+  });
 }
 
 export default async function CharacterDetailPage({
@@ -74,9 +89,27 @@ export default async function CharacterDetailPage({
     locale,
   );
   const profileText = profileForLocale(character.profile, locale);
+  const description = `${displayName} — ${t.characterDetail.metaDescription}`;
 
   return (
     <section className="space-y-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript([
+          characterJsonLd({
+            name: displayName,
+            description,
+            path: `/characters/${id}`,
+            image: portraitUrl,
+            gameName: locale === "zh" ? "鸣潮" : "Wuthering Waves",
+          }),
+          breadcrumbJsonLd([
+            { name: t.nav.home, path: "/" },
+            { name: t.nav.characters, path: "/characters" },
+            { name: displayName, path: `/characters/${id}` },
+          ]),
+        ])}
+      />
       <div>
         <Link href="/characters" className="text-sm text-zinc-500">
           {t.common.backToCharacters}

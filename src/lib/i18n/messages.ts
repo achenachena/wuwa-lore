@@ -5,15 +5,23 @@ export type Messages = (typeof messages)["en"];
 export const messages = {
   en: {
     siteTitle: "WuWa Dialogue Stats",
-    siteTagline: "Character line counts, story appearances & dialogue word clouds",
+    siteTagline:
+      "Wuthering Waves character dialogue counts, main story appearances, companion/event quests, and word clouds",
+    siteDescription:
+      "Track Wuthering Waves (WuWa) character dialogue line counts across main story, companion, event, and side quests. Compare version stats, story-segment rankings, and per-character word clouds with reproducible sources.",
     siteKeywords: [
       "Wuthering Waves",
       "WuWa",
-      "dialogue stats",
-      "voice lines",
-      "character lines",
+      "鸣潮",
+      "鸣潮台词",
+      "鸣潮台词统计",
+      "Wuthering Waves dialogue",
+      "Wuthering Waves voicelines",
+      "character dialogue count",
       "story appearances",
+      "companion quest dialogue",
       "word cloud",
+      "version stats",
     ],
     nav: {
       home: "Home",
@@ -79,7 +87,8 @@ export const messages = {
     },
     characterDetail: {
       notFoundTitle: "Character Not Found",
-      metaDescription: "dialogue stats, story appearances & word cloud",
+      metaDescription:
+        "dialogue stats for Wuthering Waves — main story lines, quest appearances, and word cloud analysis",
       element: "Element",
       weapon: "Weapon",
       faction: "Faction",
@@ -175,7 +184,24 @@ export const messages = {
   zh: {
     siteTitle: "鸣潮台词库",
     siteTagline: "角色台词统计 · 主线登场 · 伴星活动 · 词云分析",
-    siteKeywords: ["鸣潮", "鸣潮台词", "台词统计", "角色台词", "主线剧情", "伴星", "活动任务", "词云", "登场统计"],
+    siteDescription:
+      "鸣潮台词库：查询鸣潮角色台词数量、主线剧情登场、伴星/活动/支线台词统计、版本对比与台词词云。数据可溯源、可持续更新。",
+    siteKeywords: [
+      "鸣潮",
+      "鸣潮台词",
+      "鸣潮台词库",
+      "鸣潮台词统计",
+      "鸣潮角色台词",
+      "鸣潮台词数量",
+      "鸣潮主线台词",
+      "鸣潮伴星",
+      "鸣潮活动任务",
+      "鸣潮支线",
+      "鸣潮词云",
+      "鸣潮登场统计",
+      "Wuthering Waves",
+      "WuWa",
+    ],
     nav: {
       home: "首页",
       characters: "角色",
@@ -239,7 +265,8 @@ export const messages = {
     },
     characterDetail: {
       notFoundTitle: "未找到角色",
-      metaDescription: "台词统计、主线登场与词云",
+      metaDescription:
+        "鸣潮台词统计：主线台词数量、伴星活动支线登场与台词词云分析",
       element: "元素",
       weapon: "武器",
       faction: "阵营",

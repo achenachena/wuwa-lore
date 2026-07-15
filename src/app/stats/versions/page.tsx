@@ -1,9 +1,23 @@
+import type { Metadata } from "next";
+
 import { getVersionStatsPageData } from "@/lib/data";
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
 import { loadCharacters, loadOfficialVersionNotes, loadSourceDiffReport } from "@/lib/data/loaders";
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
+  return pageMetadata({
+    title: t.versionStats.title,
+    description: t.versionStats.description,
+    path: "/stats/versions",
+    locale,
+    keywords: t.siteKeywords,
+  });
+}
 
 export default async function VersionStatsPage() {
   const [rows, characters, official, sourceDiff, siteLocale, t] = await Promise.all([

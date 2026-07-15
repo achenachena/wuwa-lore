@@ -1,7 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getHomeSummary, loadSiteHealthReports } from "@/lib/data";
 import { formatLocaleDateTime } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
+  return pageMetadata({
+    title: t.home.title,
+    description: t.siteDescription,
+    path: "/",
+    locale,
+    keywords: t.siteKeywords,
+  });
+}
 
 export default async function Home() {
   const [summary, { quality, validation, sourceDiff }, siteLocale, t] = await Promise.all([
@@ -70,14 +83,20 @@ export default async function Home() {
           <p className="mt-2 text-2xl font-semibold">{summary.totalLines}</p>
         </article>
       </div>
-      <div className="flex flex-wrap gap-3">
+      <nav aria-label={t.nav.home} className="flex flex-wrap gap-3">
         <Link className="rounded-md bg-zinc-900 px-4 py-2 text-white" href="/characters">
           {t.home.browseCharacters}
         </Link>
         <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/stats/versions">
           {t.home.viewVersionAnalytics}
         </Link>
-      </div>
+        <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/stats/version-halves">
+          {t.nav.storySegments}
+        </Link>
+        <Link className="rounded-md border border-zinc-300 bg-white px-4 py-2" href="/stats/optional-quests">
+          {t.nav.optionalQuests}
+        </Link>
+      </nav>
     </section>
   );
 }

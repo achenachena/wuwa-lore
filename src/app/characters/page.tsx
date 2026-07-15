@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import { CharactersBrowser } from "@/components/characters-browser";
 import {
   getCharacterAppearanceVersionMap,
@@ -9,19 +11,39 @@ import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { localizeGameLabel } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
+import { pageMetadata } from "@/lib/seo/metadata";
 
-export default async function CharactersPage() {
-  const [characters, lineTotals, portraits, appearanceVersions, siteLocale, t] = await Promise.all([
-    loadCharacters(),
-    getCharacterLineTotalsForSite(),
-    getCharacterPortraitMap(),
-    getCharacterAppearanceVersionMap(),
-    getSiteLocale(),
-    getMessages(),
-  ]);
+type PageProps = {
+  searchParams: Promise<{ q?: string }>;
+};
+
+export async function generateMetadata(): Promise<Metadata> {
+  const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
+  return pageMetadata({
+    title: t.characters.title,
+    description: t.characters.description,
+    path: "/characters",
+    locale,
+    keywords: t.siteKeywords,
+  });
+}
+
+export default async function CharactersPage({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const [characters, lineTotals, portraits, appearanceVersions, siteLocale, t] =
+    await Promise.all([
+      loadCharacters(),
+      getCharacterLineTotalsForSite(),
+      getCharacterPortraitMap(),
+      getCharacterAppearanceVersionMap(),
+      getSiteLocale(),
+      getMessages(),
+    ]);
   const displayNames = await getCharacterDisplayNameMap(siteLocale);
 
-  const playableCharacters = characters.filter((character) => !isRoverCharacter(character.id));
+  const playableCharacters = characters.filter(
+    (character) => !isRoverCharacter(character.id),
+  );
 
   if (playableCharacters.length === 0) {
     return <p className="text-zinc-600">{t.characters.empty}</p>;
@@ -49,7 +71,13 @@ export default async function CharactersPage() {
     <section className="space-y-4">
       <h1 className="text-2xl font-semibold">{t.characters.title}</h1>
       <p className="text-zinc-600">{t.characters.description}</p>
-      <CharactersBrowser items={listItems} labels={t.characters} common={t.common} showCharacterId={siteLocale === "en"} />
+      <CharactersBrowser
+        items={listItems}
+        labels={t.characters}
+        common={t.common}
+        showCharacterId={siteLocale === "en"}
+        initialSearch={params.q?.trim() ?? ""}
+      />
     </section>
   );
 }

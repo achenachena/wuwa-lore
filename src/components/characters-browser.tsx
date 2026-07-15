@@ -24,6 +24,7 @@ interface CharactersBrowserProps {
   labels: Messages["characters"];
   common: Messages["common"];
   showCharacterId?: boolean;
+  initialSearch?: string;
 }
 
 type SortKey = "name" | "voice" | "appearance";
@@ -33,8 +34,9 @@ export function CharactersBrowser({
   labels,
   common,
   showCharacterId = true,
+  initialSearch = "",
 }: CharactersBrowserProps) {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(initialSearch);
   const [element, setElement] = useState("all");
   const [weapon, setWeapon] = useState("all");
   const [rarity, setRarity] = useState("all");

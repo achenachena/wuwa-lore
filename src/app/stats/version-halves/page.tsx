@@ -1,8 +1,22 @@
+import type { Metadata } from "next";
+
 import { VersionHalfStatsBrowser } from "@/components/version-half-stats-browser";
 import { getVersionHalfStatsPageData } from "@/lib/data";
 import { formatStorySegmentLabel } from "@/lib/i18n/locale";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { loadVersions } from "@/lib/data/loaders";
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
+  return pageMetadata({
+    title: t.storySegments.title,
+    description: t.storySegments.description,
+    path: "/stats/version-halves",
+    locale,
+    keywords: t.siteKeywords,
+  });
+}
 
 export default async function VersionHalfStatsPage() {
   const [pageData, versions, locale, t] = await Promise.all([

@@ -1,7 +1,10 @@
+import type { Metadata } from "next";
+
 import { OptionalQuestsBrowser } from "@/components/optional-quests-browser";
 import { getOptionalQuestStatsPageData } from "@/lib/data";
 import { isQuestCategory } from "@/lib/data/quest-categories";
-import { getMessages } from "@/lib/i18n/server";
+import { getMessages, getSiteLocale } from "@/lib/i18n/server";
+import { pageMetadata } from "@/lib/seo/metadata";
 import type { QuestCategory } from "@/types/lore";
 
 type PageProps = {
@@ -10,6 +13,23 @@ type PageProps = {
 
 function parseCategory(value?: string): QuestCategory {
   return isQuestCategory(value) ? value : "companion";
+}
+
+export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
+  const params = await searchParams;
+  const category = parseCategory(params.category);
+  const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
+  const categoryLabel = t.optionalQuests[category];
+  return pageMetadata({
+    title: `${t.optionalQuests.title} · ${categoryLabel}`,
+    description: t.optionalQuests.description,
+    path:
+      category === "companion"
+        ? "/stats/optional-quests"
+        : `/stats/optional-quests?category=${category}`,
+    locale,
+    keywords: t.siteKeywords,
+  });
 }
 
 export default async function OptionalQuestStatsPage({ searchParams }: PageProps) {

@@ -1,3 +1,23 @@
+import type { Metadata } from "next";
+
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export function generateMetadata(): Metadata {
+  return pageMetadata({
+    title: "Data Methodology",
+    description:
+      "How WuWa Dialogue Stats / 鸣潮台词库 counts dialogue lines, attributes versions, and combines Fandom and encore.moe sources.",
+    path: "/methodology",
+    locale: "en",
+    keywords: [
+      "鸣潮台词",
+      "methodology",
+      "Wuthering Waves dialogue counting",
+      "voice line methodology",
+    ],
+  });
+}
+
 export default function MethodologyPage() {
   return (
     <section className="space-y-6">
