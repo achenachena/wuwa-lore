@@ -1,8 +1,18 @@
 import { z } from "zod";
 
-import { QUEST_CATEGORIES } from "@/lib/data/quest-categories";
+import {
+  ENCORE_STORY_LOCALES,
+  IMAGE_TYPES,
+  QUEST_CATEGORIES,
+  VERSION_HALVES,
+  VOICE_LOCALES,
+} from "@/lib/domain/catalog";
 
-export const localeSchema = z.enum(["zh-CN", "en-US", "ja-JP", "ko-KR"]);
+export const localeSchema = z.enum(VOICE_LOCALES);
+export const imageTypeSchema = z.enum(IMAGE_TYPES);
+export const versionHalfSchema = z.enum(VERSION_HALVES);
+export const encoreStoryLocaleSchema = z.enum(ENCORE_STORY_LOCALES);
+export const questCategorySchema = z.enum(QUEST_CATEGORIES);
 
 export const sourceTraceSchema = z.object({
   sourceUrl: z.url(),
@@ -28,7 +38,7 @@ export const characterSchema = z.object({
 export const characterImageSchema = z.object({
   id: z.string().min(1),
   characterId: z.string().min(1),
-  type: z.enum(["portrait", "card", "splash", "other"]),
+  type: imageTypeSchema,
   title: z.string().min(1),
   localPath: z.string().min(1),
   copyright: z.string().min(1),
@@ -85,7 +95,7 @@ export const generatedStatsSchema = z.object({
 export const versionHalfRecordSchema = z.object({
   id: z.string().min(1),
   version: z.string().min(1),
-  half: z.enum(["a", "b"]),
+  half: versionHalfSchema,
   label: z.string().min(1),
   labelZh: z.string().min(1),
   startDate: z.string().min(1),
@@ -97,7 +107,7 @@ export const storySegmentSchema = z.object({
   wikiTitle: z.string().min(1),
   nameZh: z.string().min(1),
   version: z.string().min(1),
-  half: z.enum(["a", "b"]),
+  half: versionHalfSchema,
   versionHalf: z.string().min(1),
   sortOrder: z.number().int().min(0),
 });
@@ -108,18 +118,18 @@ export const storyAppearanceRowSchema = z.object({
   wikiTitle: z.string().min(1),
   nameZh: z.string().min(1),
   version: z.string().min(1),
-  half: z.enum(["a", "b"]),
+  half: versionHalfSchema,
   versionHalf: z.string().min(1),
 });
 
 export const storyDialogueRowSchema = z.object({
-  locale: z.enum(["en", "zh-Hans"]),
+  locale: encoreStoryLocaleSchema,
   characterId: z.string().min(1),
   questId: z.string().min(1),
   wikiTitle: z.string().min(1),
   nameZh: z.string().min(1),
   version: z.string().min(1),
-  half: z.enum(["a", "b"]),
+  half: versionHalfSchema,
   versionHalf: z.string().min(1),
   lineCount: z.number().int().min(0),
   encoreStoryIds: z.array(z.number().int()),
@@ -130,11 +140,9 @@ export const versionHalfVoiceRowSchema = z.object({
   locale: localeSchema,
   versionHalf: z.string().min(1),
   version: z.string().min(1),
-  half: z.enum(["a", "b"]),
+  half: versionHalfSchema,
   lineCount: z.number().int().min(0),
 });
-
-export const questCategorySchema = z.enum(QUEST_CATEGORIES);
 
 export const optionalQuestRecordSchema = z.object({
   id: z.string().min(1),
@@ -145,7 +153,7 @@ export const optionalQuestRecordSchema = z.object({
 });
 
 export const optionalQuestDialogueRowSchema = z.object({
-  locale: z.enum(["en", "zh-Hans"]),
+  locale: encoreStoryLocaleSchema,
   category: questCategorySchema,
   characterId: z.string().min(1),
   questId: z.string().min(1),
@@ -163,6 +171,23 @@ export const optionalQuestAppearanceRowSchema = z.object({
   questNameZh: z.string().min(1),
 });
 
+export const optionalQuestCoverageSchema = z.object({
+  category: questCategorySchema,
+  questCount: z.number().int(),
+  questsWithDialogue: z.number().int(),
+  questsWithPlayableDialogue: z.number().int(),
+  totalRawLines: z.number().int(),
+  playableCharacterLines: z.number().int(),
+  unmappedLines: z.number().int(),
+  playableCharacterCount: z.number().int(),
+});
+
+export const optionalQuestUnmappedSpeakerSchema = z.object({
+  category: questCategorySchema,
+  name: z.string(),
+  lineCount: z.number().int(),
+});
+
 export const voiceLineDetailRowSchema = z.object({
   characterId: z.string().min(1),
   locale: localeSchema,
@@ -172,24 +197,24 @@ export const voiceLineDetailRowSchema = z.object({
   sourceRevisionCount: z.number().int().min(0),
   generatedAt: z.iso.datetime(),
   lines: z.array(
-      z
-        .object({
-          key: z.string().min(1),
-          text: z.string().min(1),
-          sourceFieldPath: z.string().min(1).optional(),
-          firstSeenAt: z.iso.datetime().nullable(),
-          firstSeenVersion: z.string().nullable(),
-        })
-        .transform((line) => ({
-          ...line,
-          sourceFieldPath: line.sourceFieldPath ?? `${line.key}_tx`,
-        })),
-    ),
+    z
+      .object({
+        key: z.string().min(1),
+        text: z.string().min(1),
+        sourceFieldPath: z.string().min(1).optional(),
+        firstSeenAt: z.iso.datetime().nullable(),
+        firstSeenVersion: z.string().nullable(),
+      })
+      .transform((line) => ({
+        ...line,
+        sourceFieldPath: line.sourceFieldPath ?? `${line.key}_tx`,
+      })),
+  ),
 });
 
 export const characterWordCloudRowSchema = z.object({
   characterId: z.string().min(1),
-  locale: z.enum(["en", "zh-Hans"]),
+  locale: encoreStoryLocaleSchema,
   lineCount: z.number().int().min(0),
   terms: z.array(
     z.object({
@@ -198,3 +223,23 @@ export const characterWordCloudRowSchema = z.object({
     }),
   ),
 });
+
+/** Persisted / loaded domain types — derived from Zod so parse results stay aligned. */
+export type SourceTrace = z.infer<typeof sourceTraceSchema>;
+export type Character = z.infer<typeof characterSchema>;
+export type CharacterImage = z.infer<typeof characterImageSchema>;
+export type VersionRecord = z.infer<typeof versionSchema>;
+export type VoiceLineEntry = z.infer<typeof voiceLineEntrySchema>;
+export type VoiceLineStatRow = z.infer<typeof voiceLineStatRowSchema>;
+export type VoiceLineDetailRow = z.infer<typeof voiceLineDetailRowSchema>;
+export type VersionHalfRecord = z.infer<typeof versionHalfRecordSchema>;
+export type StorySegment = z.infer<typeof storySegmentSchema>;
+export type StoryAppearanceRow = z.infer<typeof storyAppearanceRowSchema>;
+export type StoryDialogueRow = z.infer<typeof storyDialogueRowSchema>;
+export type VersionHalfVoiceRow = z.infer<typeof versionHalfVoiceRowSchema>;
+export type OptionalQuestRecord = z.infer<typeof optionalQuestRecordSchema>;
+export type OptionalQuestDialogueRow = z.infer<typeof optionalQuestDialogueRowSchema>;
+export type OptionalQuestAppearanceRow = z.infer<typeof optionalQuestAppearanceRowSchema>;
+export type OptionalQuestCoverageRow = z.infer<typeof optionalQuestCoverageSchema>;
+export type UnmappedSpeakerRow = z.infer<typeof optionalQuestUnmappedSpeakerSchema>;
+export type CharacterWordCloudRow = z.infer<typeof characterWordCloudRowSchema>;

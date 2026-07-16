@@ -1,8 +1,18 @@
-export type SiteLocale = "en" | "zh";
+import {
+  ENCORE_STORY_LOCALES,
+  SITE_LOCALES,
+  type EncoreStoryLocale,
+  type SiteLocaleCode,
+} from "@/lib/domain/catalog";
+
+export type SiteLocale = SiteLocaleCode;
+export type EncoreLocale = EncoreStoryLocale;
 
 export const SITE_LOCALE_COOKIE = "wuwa-lore-locale";
 
-export type EncoreLocale = "en" | "zh-Hans";
+export function isSiteLocale(value: string | undefined): value is SiteLocale {
+  return SITE_LOCALES.includes(value as SiteLocale);
+}
 
 export function toEncoreLocale(siteLocale: SiteLocale): EncoreLocale {
   return siteLocale === "zh" ? "zh-Hans" : "en";
@@ -13,6 +23,8 @@ export type VoiceDataLocale = "zh-CN" | "en-US";
 export function toVoiceDataLocale(siteLocale: SiteLocale): VoiceDataLocale {
   return siteLocale === "zh" ? "zh-CN" : "en-US";
 }
+
+export { SITE_LOCALES, ENCORE_STORY_LOCALES };
 
 export const ROVER_CHARACTER_IDS = new Set([
   "rover",

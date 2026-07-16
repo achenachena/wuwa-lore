@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { isProduction } from "@/lib/security/headers";
-import { SITE_LOCALE_COOKIE, type SiteLocale } from "@/lib/i18n/locale";
+import { isSiteLocale, SITE_LOCALE_COOKIE } from "@/lib/i18n/locale";
 
 export async function POST(request: Request) {
   let body: { locale?: string };
@@ -11,11 +11,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  if (body.locale !== "en" && body.locale !== "zh") {
+  if (!isSiteLocale(body.locale)) {
     return NextResponse.json({ error: "Invalid locale" }, { status: 400 });
   }
 
-  const response = NextResponse.json({ ok: true, locale: body.locale satisfies SiteLocale });
+  const response = NextResponse.json({ ok: true, locale: body.locale });
   response.cookies.set(SITE_LOCALE_COOKIE, body.locale, {
     path: "/",
     maxAge: 60 * 60 * 24 * 365,

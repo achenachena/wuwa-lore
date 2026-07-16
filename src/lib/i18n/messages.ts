@@ -1,9 +1,6 @@
 import type { SiteLocale } from "@/lib/i18n/locale";
 
-export type Messages = (typeof messages)["en"];
-
-export const messages = {
-  en: {
+const en = {
     siteTitle: "WuWa Dialogue Stats",
     siteTagline:
       "Wuthering Waves character dialogue counts, main story appearances, companion/event quests, and word clouds",
@@ -180,7 +177,12 @@ export const messages = {
       description: "The page you requested does not exist.",
       backHome: "Back to home",
     },
-  },
+  };
+
+export type Messages = typeof en;
+
+export const messages: Record<SiteLocale, Messages> = {
+  en,
   zh: {
     siteTitle: "鸣潮台词库",
     siteTagline: "角色台词统计 · 主线登场 · 伴星活动 · 词云分析",
@@ -357,4 +359,4 @@ export const messages = {
       backHome: "返回首页",
     },
   },
-} satisfies Record<SiteLocale, Record<string, unknown>>;
+};

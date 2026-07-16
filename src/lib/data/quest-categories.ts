@@ -1,12 +1,13 @@
-import type { QuestCategory } from "@/types/lore";
+import type { QuestCategory } from "@/lib/domain/catalog";
+import { QUEST_CATEGORIES } from "@/lib/domain/catalog";
+
+export { QUEST_CATEGORIES };
+export type { QuestCategory };
 
 /**
- * Single registry for optional-quest categories.
- * Add a category here (+ i18n + Encore type IDs) instead of hunting hardcoded triples.
+ * Optional-quest category helpers.
+ * Add a category in `domain/catalog` (+ i18n + Encore type IDs), then helpers stay in sync.
  */
-export const QUEST_CATEGORIES = ["companion", "event", "side"] as const satisfies readonly QuestCategory[];
-
-export type RegisteredQuestCategory = (typeof QUEST_CATEGORIES)[number];
 
 export function isQuestCategory(value: string | undefined): value is QuestCategory {
   return QUEST_CATEGORIES.includes(value as QuestCategory);

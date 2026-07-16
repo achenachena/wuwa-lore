@@ -1,161 +1,118 @@
 import { promises as fs } from "node:fs";
-import path from "node:path";
 import { cache } from "react";
 import { z } from "zod";
 
-import { isRoverCharacter, type EncoreLocale } from "@/lib/i18n/locale";
-
-import type {
-  Character,
-  CharacterImage,
-  OptionalQuestAppearanceRow,
-  OptionalQuestDialogueRow,
-  OptionalQuestRecord,
-  StoryAppearanceRow,
-  StoryDialogueRow,
-  StorySegment,
-  VersionHalfVoiceRow,
-  VersionRecord,
-  VoiceLineDetailRow,
-  VoiceLineStatRow,
-  CharacterWordCloudRow,
-} from "@/types/lore";
 import {
-  characterSchema,
+  dataPath,
+  defineLoader,
+  defineParsedJsonLoader,
+  readJsonFile,
+} from "@/lib/data/loaders-helpers";
+import {
   characterImageSchema,
+  characterSchema,
+  characterWordCloudRowSchema,
   generatedStatsSchema,
   optionalQuestAppearanceRowSchema,
+  optionalQuestCoverageSchema,
   optionalQuestDialogueRowSchema,
   optionalQuestRecordSchema,
-  questCategorySchema,
+  optionalQuestUnmappedSpeakerSchema,
   storyAppearanceRowSchema,
   storyDialogueRowSchema,
   storySegmentSchema,
   versionHalfVoiceRowSchema,
   versionSchema,
   voiceLineDetailRowSchema,
-  characterWordCloudRowSchema,
+  type Character,
+  type CharacterImage,
+  type CharacterWordCloudRow,
+  type OptionalQuestAppearanceRow,
+  type OptionalQuestCoverageRow,
+  type OptionalQuestDialogueRow,
+  type OptionalQuestRecord,
+  type StoryAppearanceRow,
+  type StoryDialogueRow,
+  type StorySegment,
+  type UnmappedSpeakerRow,
+  type VersionHalfVoiceRow,
+  type VersionRecord,
+  type VoiceLineDetailRow,
+  type VoiceLineStatRow,
 } from "@/lib/data/schemas";
-
-const root = process.cwd();
-const cacheForever = process.env.NODE_ENV === "production";
-const processCache = new Map<string, Promise<unknown>>();
-
-async function readJsonFile<T>(filePath: string): Promise<T> {
-  const text = await fs.readFile(filePath, "utf8");
-  return JSON.parse(text) as T;
-}
-
-function memoize<T>(key: string, loader: () => Promise<T>): Promise<T> {
-  if (!cacheForever) {
-    return loader();
-  }
-  const existing = processCache.get(key);
-  if (existing) {
-    return existing as Promise<T>;
-  }
-  const promise = loader().catch((error: unknown) => {
-    processCache.delete(key);
-    throw error;
-  });
-  processCache.set(key, promise);
-  return promise;
-}
-
-const optionalQuestCoverageSchema = z.object({
-  category: questCategorySchema,
-  questCount: z.number().int(),
-  questsWithDialogue: z.number().int(),
-  questsWithPlayableDialogue: z.number().int(),
-  totalRawLines: z.number().int(),
-  playableCharacterLines: z.number().int(),
-  unmappedLines: z.number().int(),
-  playableCharacterCount: z.number().int(),
-});
-
-const optionalQuestUnmappedSpeakerSchema = z.object({
-  category: questCategorySchema,
-  name: z.string(),
-  lineCount: z.number().int(),
-});
+import { isRoverCharacter, type EncoreLocale } from "@/lib/i18n/locale";
 
 type OptionalQuestDialogueFile = {
   rows: OptionalQuestDialogueRow[];
-  coverage: z.infer<typeof optionalQuestCoverageSchema>[] | null;
-  unmappedSpeakers: z.infer<typeof optionalQuestUnmappedSpeakerSchema>[] | null;
+  coverage: OptionalQuestCoverageRow[] | null;
+  unmappedSpeakers: UnmappedSpeakerRow[] | null;
 };
 
-const loadCharactersUncached = async (): Promise<Character[]> => {
-  const dir = path.join(root, "content", "characters");
+export const loadCharacters = defineLoader("characters", async () => {
+  const dir = dataPath("content", "characters");
   const files = (await fs.readdir(dir)).filter((name) => name.endsWith(".json"));
   const characters = await Promise.all(
     files.map(async (file) => {
-      const data = await readJsonFile<unknown>(path.join(dir, file));
+      const data = await readJsonFile<unknown>(dataPath("content", "characters", file));
       return characterSchema.parse(data);
     }),
   );
   return characters.sort((a, b) => a.id.localeCompare(b.id));
-};
-
-export const loadCharacters = cache((): Promise<Character[]> =>
-  memoize("characters", loadCharactersUncached),
-);
+});
 
 export const loadCharacterById = cache(async (id: string): Promise<Character | null> => {
-  const filePath = path.join(root, "content", "characters", `${id}.json`);
   try {
-    const data = await readJsonFile<unknown>(filePath);
+    const data = await readJsonFile<unknown>(dataPath("content", "characters", `${id}.json`));
     return characterSchema.parse(data);
   } catch {
     return null;
   }
 });
 
-export const loadVersions = cache((): Promise<VersionRecord[]> =>
-  memoize("versions", async () => {
-    const filePath = path.join(root, "content", "versions", "versions.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    const parsed = versionSchema.array().parse(raw);
-    return parsed.sort((a, b) => a.version.localeCompare(b.version, "en"));
-  }),
+export const loadVersions = defineParsedJsonLoader(
+  "versions",
+  "content/versions/versions.json",
+  (raw): VersionRecord[] =>
+    versionSchema
+      .array()
+      .parse(raw)
+      .sort((a, b) => a.version.localeCompare(b.version, "en")),
 );
 
-export const loadCharacterImages = cache((): Promise<CharacterImage[]> =>
-  memoize("character-images", async () => {
-    const filePath = path.join(root, "content", "images", "images.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    const parsed = characterImageSchema.array().parse(raw);
-    return parsed.sort((a, b) => a.id.localeCompare(b.id));
-  }),
+export const loadCharacterImages = defineParsedJsonLoader(
+  "character-images",
+  "content/images/images.json",
+  (raw): CharacterImage[] =>
+    characterImageSchema
+      .array()
+      .parse(raw)
+      .sort((a, b) => a.id.localeCompare(b.id)),
 );
 
-export const loadGeneratedStats = cache((): Promise<VoiceLineStatRow[]> =>
-  memoize("voice-line-stats", async () => {
-    const filePath = path.join(root, "data", "derived", "voice-line-stats.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    return generatedStatsSchema.parse(raw).rows;
-  }),
+export const loadGeneratedStats = defineParsedJsonLoader(
+  "voice-line-stats",
+  "data/derived/voice-line-stats.json",
+  (raw): VoiceLineStatRow[] => generatedStatsSchema.parse(raw).rows,
 );
 
-export const loadVoiceLineDetails = cache((): Promise<VoiceLineDetailRow[]> =>
-  memoize("voice-line-details", async () => {
-    const filePath = path.join(root, "data", "derived", "voice-line-details.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    return z.object({ rows: z.array(voiceLineDetailRowSchema) }).parse(raw).rows;
-  }),
+export const loadVoiceLineDetails = defineParsedJsonLoader(
+  "voice-line-details",
+  "data/derived/voice-line-details.json",
+  (raw): VoiceLineDetailRow[] =>
+    z.object({ rows: z.array(voiceLineDetailRowSchema) }).parse(raw).rows,
 );
 
-const loadWordCloudIndex = cache((): Promise<Map<string, CharacterWordCloudRow>> =>
-  memoize("character-word-clouds-index", async () => {
-    const filePath = path.join(root, "data", "derived", "character-word-clouds.json");
-    const raw = await readJsonFile<unknown>(filePath);
+const loadWordCloudIndex = defineParsedJsonLoader(
+  "character-word-clouds-index",
+  "data/derived/character-word-clouds.json",
+  (raw): Map<string, CharacterWordCloudRow> => {
     const parsed = z.object({ rows: z.array(characterWordCloudRowSchema) }).parse(raw);
     const index = new Map<string, CharacterWordCloudRow>();
     for (const row of parsed.rows) {
       index.set(`${row.characterId}::${row.locale}`, row);
     }
     return index;
-  }),
+  },
 );
 
 export const loadCharacterWordCloud = cache(
@@ -169,108 +126,99 @@ export const loadCharacterWordCloud = cache(
   },
 );
 
-export const loadValidationReport = cache(() =>
-  memoize("validation-report", () =>
-    readJsonFile<{
-      generatedAt: string;
-      ok: boolean;
-      checks: {
-        identityValidation: { ok: boolean; errors: string[] };
-        statValidation: { ok: boolean; errors: string[] };
-        officialValidation?: { ok: boolean; errors: string[] };
-      };
-    }>(path.join(root, "data", "derived", "validation-report.json")),
-  ),
+export const loadValidationReport = defineLoader("validation-report", () =>
+  readJsonFile<{
+    generatedAt: string;
+    ok: boolean;
+    checks: {
+      identityValidation: { ok: boolean; errors: string[] };
+      statValidation: { ok: boolean; errors: string[] };
+      officialValidation?: { ok: boolean; errors: string[] };
+    };
+  }>(dataPath("data", "derived", "validation-report.json")),
 );
 
-export const loadQualityReport = cache(() =>
-  memoize("quality-report", () =>
-    readJsonFile<{
-      generatedAt: string;
-      totalCharacters: number;
-      expectedRows: number;
-      actualRows: number;
-      coveredCharacters: number;
-      rowsWithContent: number;
-      rowsWithoutContent: number;
-      verifiedRows: number;
-      missingSourceRows: number;
-    }>(path.join(root, "data", "derived", "quality-report.json")),
-  ),
+export const loadQualityReport = defineLoader("quality-report", () =>
+  readJsonFile<{
+    generatedAt: string;
+    totalCharacters: number;
+    expectedRows: number;
+    actualRows: number;
+    coveredCharacters: number;
+    rowsWithContent: number;
+    rowsWithoutContent: number;
+    verifiedRows: number;
+    missingSourceRows: number;
+  }>(dataPath("data", "derived", "quality-report.json")),
 );
 
-export const loadChangeReport = cache(() =>
-  memoize("change-report", () =>
-    readJsonFile<{
-      generatedAt: string;
-      rowCoverage: {
-        oldRowCount: number;
-        newRowCount: number;
-        addedRows: number;
-        removedRows: number;
-        changedRows: number;
-      };
-      currentLineCountDelta: {
-        increasedRows: number;
-        decreasedRows: number;
-        unchangedRows: number;
-      };
-      samples: {
-        added: Array<{ key: string; currentLineCount: number }>;
-        removed: Array<{ key: string; previousLineCount: number }>;
-        changed: Array<{
-          key: string;
-          previousLineCount: number;
-          currentLineCount: number;
-          delta: number;
-        }>;
-      };
-    }>(path.join(root, "data", "derived", "change-report.json")),
-  ),
-);
-
-export const loadOfficialVersionNotes = cache(() =>
-  memoize("official-version-notes", () =>
-    readJsonFile<{
-      sourceName: string;
-      sourceUrl: string;
-      scrapedAt: string;
-      editor: string;
-      rows: Array<{
-        version: string;
-        releaseDate: string;
-        noticeUrl: string;
-        title: string;
-        articleId: number | null;
-        matchMethod: string;
+export const loadChangeReport = defineLoader("change-report", () =>
+  readJsonFile<{
+    generatedAt: string;
+    rowCoverage: {
+      oldRowCount: number;
+      newRowCount: number;
+      addedRows: number;
+      removedRows: number;
+      changedRows: number;
+    };
+    currentLineCountDelta: {
+      increasedRows: number;
+      decreasedRows: number;
+      unchangedRows: number;
+    };
+    samples: {
+      added: Array<{ key: string; currentLineCount: number }>;
+      removed: Array<{ key: string; previousLineCount: number }>;
+      changed: Array<{
+        key: string;
+        previousLineCount: number;
+        currentLineCount: number;
+        delta: number;
       }>;
-    }>(path.join(root, "content", "official", "version-notes.json")),
-  ),
+    };
+  }>(dataPath("data", "derived", "change-report.json")),
 );
 
-export const loadStorySegments = cache((): Promise<StorySegment[]> =>
-  memoize("story-segments", async () => {
-    const filePath = path.join(root, "content", "stories", "story-segments.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    return z.object({ segments: z.array(storySegmentSchema) }).parse(raw).segments;
-  }),
+export const loadOfficialVersionNotes = defineLoader("official-version-notes", () =>
+  readJsonFile<{
+    sourceName: string;
+    sourceUrl: string;
+    scrapedAt: string;
+    editor: string;
+    rows: Array<{
+      version: string;
+      releaseDate: string;
+      noticeUrl: string;
+      title: string;
+      articleId: number | null;
+      matchMethod: string;
+    }>;
+  }>(dataPath("content", "official", "version-notes.json")),
 );
 
-export const loadStoryAppearances = cache((): Promise<StoryAppearanceRow[]> =>
-  memoize("story-appearances", async () => {
-    const filePath = path.join(root, "data", "derived", "story-appearances.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    const parsed = z.object({ rows: z.array(storyAppearanceRowSchema) }).parse(raw);
-    return parsed.rows.filter((row) => !isRoverCharacter(row.characterId));
-  }),
+export const loadStorySegments = defineParsedJsonLoader(
+  "story-segments",
+  "content/stories/story-segments.json",
+  (raw): StorySegment[] =>
+    z.object({ segments: z.array(storySegmentSchema) }).parse(raw).segments,
 );
 
-export const loadAllStoryDialogueStats = cache((): Promise<StoryDialogueRow[]> =>
-  memoize("story-dialogue-stats", async () => {
-    const filePath = path.join(root, "data", "derived", "story-dialogue-stats.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    return z.object({ rows: z.array(storyDialogueRowSchema) }).parse(raw).rows;
-  }),
+export const loadStoryAppearances = defineParsedJsonLoader(
+  "story-appearances",
+  "data/derived/story-appearances.json",
+  (raw): StoryAppearanceRow[] =>
+    z
+      .object({ rows: z.array(storyAppearanceRowSchema) })
+      .parse(raw)
+      .rows.filter((row) => !isRoverCharacter(row.characterId)),
+);
+
+export const loadAllStoryDialogueStats = defineParsedJsonLoader(
+  "story-dialogue-stats",
+  "data/derived/story-dialogue-stats.json",
+  (raw): StoryDialogueRow[] =>
+    z.object({ rows: z.array(storyDialogueRowSchema) }).parse(raw).rows,
 );
 
 export const loadStoryDialogueStatsForLocale = cache(
@@ -285,18 +233,17 @@ export const loadStoryDialogueStatsForLocale = cache(
 /** @deprecated Use loadStoryDialogueStatsForLocale with an explicit locale. */
 export const loadStoryDialogueStats = loadStoryDialogueStatsForLocale;
 
-export const loadOptionalQuestCatalog = cache((): Promise<OptionalQuestRecord[]> =>
-  memoize("optional-quest-catalog", async () => {
-    const filePath = path.join(root, "content", "stories", "optional-quest-catalog.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    return z.object({ quests: z.array(optionalQuestRecordSchema) }).parse(raw).quests;
-  }),
+export const loadOptionalQuestCatalog = defineParsedJsonLoader(
+  "optional-quest-catalog",
+  "content/stories/optional-quest-catalog.json",
+  (raw): OptionalQuestRecord[] =>
+    z.object({ quests: z.array(optionalQuestRecordSchema) }).parse(raw).quests,
 );
 
-const loadOptionalQuestDialogueFile = cache((): Promise<OptionalQuestDialogueFile> =>
-  memoize("optional-quest-dialogue-file", async () => {
-    const filePath = path.join(root, "data", "derived", "optional-quest-dialogue-stats.json");
-    const raw = await readJsonFile<unknown>(filePath);
+const loadOptionalQuestDialogueFile = defineParsedJsonLoader(
+  "optional-quest-dialogue-file",
+  "data/derived/optional-quest-dialogue-stats.json",
+  (raw): OptionalQuestDialogueFile => {
     const parsed = z
       .object({
         rows: z.array(optionalQuestDialogueRowSchema),
@@ -313,7 +260,7 @@ const loadOptionalQuestDialogueFile = cache((): Promise<OptionalQuestDialogueFil
       coverage: parsed.source?.coverage ?? null,
       unmappedSpeakers: parsed.source?.unmappedSpeakers ?? null,
     };
-  }),
+  },
 );
 
 export const loadOptionalQuestDialogueStatsForLocale = cache(
@@ -338,54 +285,52 @@ export const loadOptionalQuestUnmappedSpeakers = cache(async () => {
   return file.unmappedSpeakers;
 });
 
-export const loadOptionalQuestAppearances = cache((): Promise<OptionalQuestAppearanceRow[]> =>
-  memoize("optional-quest-appearances", async () => {
-    const filePath = path.join(root, "data", "derived", "optional-quest-appearances.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    const parsed = z.object({ rows: z.array(optionalQuestAppearanceRowSchema) }).parse(raw);
-    return parsed.rows.filter((row) => !isRoverCharacter(row.characterId));
-  }),
+export const loadOptionalQuestAppearances = defineParsedJsonLoader(
+  "optional-quest-appearances",
+  "data/derived/optional-quest-appearances.json",
+  (raw): OptionalQuestAppearanceRow[] =>
+    z
+      .object({ rows: z.array(optionalQuestAppearanceRowSchema) })
+      .parse(raw)
+      .rows.filter((row) => !isRoverCharacter(row.characterId)),
 );
 
-export const loadVersionHalfVoiceStats = cache((): Promise<VersionHalfVoiceRow[]> =>
-  memoize("version-half-voice-stats", async () => {
-    const filePath = path.join(root, "data", "derived", "version-half-voice-stats.json");
-    const raw = await readJsonFile<unknown>(filePath);
-    return z.object({ rows: z.array(versionHalfVoiceRowSchema) }).parse(raw).rows;
-  }),
+export const loadVersionHalfVoiceStats = defineParsedJsonLoader(
+  "version-half-voice-stats",
+  "data/derived/version-half-voice-stats.json",
+  (raw): VersionHalfVoiceRow[] =>
+    z.object({ rows: z.array(versionHalfVoiceRowSchema) }).parse(raw).rows,
 );
 
-export const loadSourceDiffReport = cache(() =>
-  memoize("source-diff-report", () =>
-    readJsonFile<{
-      generatedAt: string;
-      toleranceMinutes?: number;
-      sources: {
-        fandomVersionsFile: string;
-        officialVersionsFile: string;
-        officialSourceUrl: string;
-        officialSourceName?: string;
-      };
-      summary: {
-        fandomVersionCount: number;
-        officialVersionCount: number;
-        missingInOfficial: number;
-        missingInFandom: number;
-        alignedDate?: number;
-        mismatchedDate: number;
-        ok: boolean;
-      };
-      missingInOfficial: string[];
-      missingInFandom: string[];
-      alignedDate?: string[];
-      mismatchedDate: Array<{
-        version: string;
-        fandomReleaseDate: string;
-        officialReleaseDate: string;
-        deltaMinutes: number;
-        noticeUrl: string;
-        officialMatchMethod?: string | null;
-      }>;
-    }>(path.join(root, "data", "derived", "source-diff-report.json")),
-  ),
+export const loadSourceDiffReport = defineLoader("source-diff-report", () =>
+  readJsonFile<{
+    generatedAt: string;
+    toleranceMinutes?: number;
+    sources: {
+      fandomVersionsFile: string;
+      officialVersionsFile: string;
+      officialSourceUrl: string;
+      officialSourceName?: string;
+    };
+    summary: {
+      fandomVersionCount: number;
+      officialVersionCount: number;
+      missingInOfficial: number;
+      missingInFandom: number;
+      alignedDate?: number;
+      mismatchedDate: number;
+      ok: boolean;
+    };
+    missingInOfficial: string[];
+    missingInFandom: string[];
+    alignedDate?: string[];
+    mismatchedDate: Array<{
+      version: string;
+      fandomReleaseDate: string;
+      officialReleaseDate: string;
+      deltaMinutes: number;
+      noticeUrl: string;
+      officialMatchMethod?: string | null;
+    }>;
+  }>(dataPath("data", "derived", "source-diff-report.json")),
 );

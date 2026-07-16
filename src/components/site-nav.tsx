@@ -1,29 +1,22 @@
 import Link from "next/link";
 
 import type { Messages } from "@/lib/i18n/messages";
+import { navRoutes } from "@/lib/site-routes";
 
 type Props = {
   labels: Messages["nav"];
 };
 
 export function SiteNav({ labels }: Props) {
-  const links = [
-    { href: "/", label: labels.home },
-    { href: "/characters", label: labels.characters },
-    { href: "/stats/versions", label: labels.versionStats },
-    { href: "/stats/version-halves", label: labels.storySegments },
-    { href: "/stats/optional-quests", label: labels.optionalQuests },
-  ];
-
   return (
     <nav className="flex flex-wrap gap-3 text-sm">
-      {links.map((link) => (
+      {navRoutes().map((route) => (
         <Link
-          key={link.href}
-          href={link.href}
+          key={route.path}
+          href={route.path}
           className="rounded-md border border-zinc-300 px-3 py-1.5 hover:bg-zinc-100"
         >
-          {link.label}
+          {labels[route.navKey]}
         </Link>
       ))}
     </nav>

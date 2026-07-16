@@ -8,42 +8,20 @@ import { buildSpeakerResolver, countDialoguesBySpeaker } from "@/lib/encore/spea
 import type { EncoreLocale, EncoreRole, EncoreStoryType } from "@/lib/encore/types";
 import { ENCORE_OPTIONAL_QUEST_TYPE_IDS } from "@/lib/encore/types";
 import { QUEST_CATEGORIES } from "@/lib/data/quest-categories";
-import type { OptionalQuestRecord, QuestCategory } from "@/types/lore";
+import type {
+  OptionalQuestAppearanceRow,
+  OptionalQuestCoverageRow,
+  OptionalQuestDialogueRow,
+  OptionalQuestRecord,
+  QuestCategory,
+  UnmappedSpeakerRow,
+} from "@/types/lore";
 
-export type OptionalQuestDialogueRow = {
-  locale: EncoreLocale;
-  category: QuestCategory;
-  characterId: string;
-  questId: string;
-  questName: string;
-  questNameZh: string;
-  lineCount: number;
-  encoreStoryIds: number[];
-};
-
-export type OptionalQuestAppearanceRow = {
-  category: QuestCategory;
-  characterId: string;
-  questId: string;
-  questName: string;
-  questNameZh: string;
-};
-
-export type OptionalQuestCoverageRow = {
-  category: QuestCategory;
-  questCount: number;
-  questsWithDialogue: number;
-  questsWithPlayableDialogue: number;
-  totalRawLines: number;
-  playableCharacterLines: number;
-  unmappedLines: number;
-  playableCharacterCount: number;
-};
-
-export type UnmappedSpeakerRow = {
-  category: QuestCategory;
-  name: string;
-  lineCount: number;
+export type {
+  OptionalQuestAppearanceRow,
+  OptionalQuestCoverageRow,
+  OptionalQuestDialogueRow,
+  UnmappedSpeakerRow,
 };
 
 const CATEGORY_PRIORITY = Object.fromEntries(

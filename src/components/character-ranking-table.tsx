@@ -3,13 +3,9 @@ import Link from "next/link";
 import { CharacterAvatar } from "@/components/character-avatar";
 import { MetricBar } from "@/components/metric-bar";
 
-export type CharacterRankingRow = {
-  characterId: string;
-  characterName: string;
-  voiceLineCount: number;
-  appearanceCount: number;
-  linesPerAppearance: number | null;
-};
+import type { CharacterRankingRow } from "@/types/lore";
+
+export type { CharacterRankingRow };
 
 type Labels = {
   rank: string;

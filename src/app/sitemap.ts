@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { loadCharacters, loadQualityReport } from "@/lib/data/loaders";
 import { isRoverCharacter } from "@/lib/i18n/locale";
+import { SITE_ROUTES } from "@/lib/site-routes";
 import { getSiteUrl } from "@/lib/site-url";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -14,39 +15,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ? new Date(quality.generatedAt)
     : new Date();
 
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${base}/`, changeFrequency: "daily", priority: 1, lastModified },
-    {
-      url: `${base}/characters`,
-      changeFrequency: "daily",
-      priority: 0.95,
-      lastModified,
-    },
-    {
-      url: `${base}/stats/version-halves`,
-      changeFrequency: "daily",
-      priority: 0.9,
-      lastModified,
-    },
-    {
-      url: `${base}/stats/optional-quests`,
-      changeFrequency: "daily",
-      priority: 0.9,
-      lastModified,
-    },
-    {
-      url: `${base}/stats/versions`,
-      changeFrequency: "daily",
-      priority: 0.85,
-      lastModified,
-    },
-    {
-      url: `${base}/methodology`,
-      changeFrequency: "monthly",
-      priority: 0.4,
-      lastModified,
-    },
-  ];
+  const staticRoutes: MetadataRoute.Sitemap = SITE_ROUTES.map((route) => ({
+    url: `${base}${route.path === "/" ? "/" : route.path}`,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
+    lastModified,
+  }));
 
   const characterRoutes = characters
     .filter((character) => !isRoverCharacter(character.id))

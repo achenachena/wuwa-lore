@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 
-import type { SiteLocale } from "@/lib/i18n/locale";
+import { SITE_LOCALES, type SiteLocale } from "@/lib/i18n/locale";
 
 type Props = {
   current: SiteLocale;
@@ -33,7 +33,7 @@ export function LanguageSwitcher({ current, labels }: Props) {
 
   return (
     <div className="flex items-center gap-1 rounded-md border border-zinc-300 p-0.5 text-xs">
-      {(["en", "zh"] as const).map((locale) => (
+      {SITE_LOCALES.map((locale) => (
         <button
           key={locale}
           type="button"
