@@ -93,7 +93,12 @@ type ChangeReport = {
   samples: {
     added: Array<{ key: string; currentLineCount: number }>;
     removed: Array<{ key: string; previousLineCount: number }>;
-    changed: Array<{ key: string; previousLineCount: number; currentLineCount: number; delta: number }>;
+    changed: Array<{
+      key: string;
+      previousLineCount: number;
+      currentLineCount: number;
+      delta: number;
+    }>;
   };
 };
 
@@ -128,6 +133,7 @@ function parseWikiDate(raw: string): string {
 function cleanWikiText(value: string): string {
   return value
     .replace(/<ref[^>]*>[\s\S]*?<\/ref>/g, "")
+    .replace(/{{\s*w\|([^}|]+)(?:\|[^}]*)?}}/gi, "$1")
     .replace(/{{[^{}]*}}/g, "")
     .replace(/\[\[([^|\]]*\|)?([^\]]+)\]\]/g, "$2")
     .replace(/\[[^\s\]]+\s([^\]]+)\]/g, "$1")
@@ -146,6 +152,12 @@ function parseTemplateField(wikitext: string, key: string): string | undefined {
   return cleanWikiText(match[1] ?? "");
 }
 
+function meaningfulField(value: string | undefined): string | undefined {
+  return value && !/^(?:unknown|n\/a|none)$/i.test(value.trim())
+    ? value
+    : undefined;
+}
+
 function parseChangeHistoryVersion(wikitext: string): string | undefined {
   const template = wikitext.match(/{{\s*Change History\|([^}\n]+)}}/i)?.[1];
   const versions = template?.match(/\d+\.\d+/g) ?? [];
@@ -153,7 +165,9 @@ function parseChangeHistoryVersion(wikitext: string): string | undefined {
 }
 
 function parseFirstDescriptionLine(wikitext: string): string {
-  const intro = wikitext.match(/{{\s*Intro\/Resonator\|[^}\n]+}}[ \t]*([^\n]+)/i)?.[1];
+  const intro = wikitext.match(
+    /{{\s*Intro\/Resonator(?:\|[^}\n]+)?}}[ \t]*([^\n]+)/i,
+  )?.[1];
   if (intro) {
     return cleanWikiText(intro);
   }
@@ -162,7 +176,11 @@ function parseFirstDescriptionLine(wikitext: string): string {
     .map((line) => line.trim())
     .filter(Boolean);
   for (const line of lines) {
-    if (line.startsWith("{{") || line.startsWith("==") || line.startsWith("|")) {
+    if (
+      line.startsWith("{{") ||
+      line.startsWith("==") ||
+      line.startsWith("|")
+    ) {
       continue;
     }
     if (line.includes(" is ") || line.includes(" are ")) {
@@ -194,9 +212,13 @@ type ParsedVoiceLineEntry = {
   sourceFieldPath: string;
 };
 
-function extractVoiceLineEntries(wikitext: string): Map<string, ParsedVoiceLineEntry> {
+function extractVoiceLineEntries(
+  wikitext: string,
+): Map<string, ParsedVoiceLineEntry> {
   const entries = new Map<string, ParsedVoiceLineEntry>();
-  for (const match of wikitext.matchAll(/\|([a-z0-9_]+?_tx(?:_[a-z]+)?)\s*=\s*([^\n]*)/gi)) {
+  for (const match of wikitext.matchAll(
+    /\|([a-z0-9_]+?_tx(?:_[a-z]+)?)\s*=\s*([^\n]*)/gi,
+  )) {
     const sourceFieldPath = match[1]?.trim() ?? "";
     const key = sourceFieldPath.replace(/_tx(?:_[a-z]+)?$/i, "");
     const rawValue = match[2]?.trim() ?? "";
@@ -244,7 +266,9 @@ async function fetchJson<T>(params: Record<string, string>): Promise<T> {
   }).toString();
   const response = await fetch(`${API_ROOT}?${query}`);
   if (!response.ok) {
-    throw new Error(`API request failed: ${response.status} ${response.statusText}`);
+    throw new Error(
+      `API request failed: ${response.status} ${response.statusText}`,
+    );
   }
   return (await response.json()) as T;
 }
@@ -264,7 +288,10 @@ async function fetchCharacterNames(): Promise<string[]> {
       categorymembers: Array<{ title: string }>;
     };
   };
-  const categories = ["Category:Playable_Resonators", "Category:Upcoming_Resonators"];
+  const categories = [
+    "Category:Playable_Resonators",
+    "Category:Upcoming_Resonators",
+  ];
   const results = await Promise.all(
     categories.map((category) =>
       fetchJson<Res>({
@@ -275,7 +302,13 @@ async function fetchCharacterNames(): Promise<string[]> {
       }),
     ),
   );
-  return [...new Set(results.flatMap((data) => data.query.categorymembers.map((item) => item.title)))]
+  return [
+    ...new Set(
+      results.flatMap((data) =>
+        data.query.categorymembers.map((item) => item.title),
+      ),
+    ),
+  ]
     .filter((title) => !title.includes("/"))
     .sort((a, b) => a.localeCompare(b));
 }
@@ -295,7 +328,9 @@ async function fetchVersionPages(): Promise<string[]> {
   return data.query.allpages
     .map((item) => item.title)
     .filter((title) => /^Version\/\d+\.\d+$/.test(title))
-    .sort((a, b) => compareVersion(a.replace("Version/", ""), b.replace("Version/", "")));
+    .sort((a, b) =>
+      compareVersion(a.replace("Version/", ""), b.replace("Version/", "")),
+    );
 }
 
 async function fetchWikitext(page: string): Promise<string> {
@@ -359,7 +394,9 @@ async function fetchCharacterImage(page: string): Promise<string | null> {
   return pageData?.original?.source ?? pageData?.thumbnail?.source ?? null;
 }
 
-async function fetchAllRevisions(page: string): Promise<Array<{ timestamp: string; content: string }>> {
+async function fetchAllRevisions(
+  page: string,
+): Promise<Array<{ timestamp: string; content: string }>> {
   type Revision = {
     timestamp: string;
     slots?: { main?: { content?: string; "*"?: string } };
@@ -416,7 +453,10 @@ function buildZeroPerVersionCounts(versions: VersionRecord[]) {
   }));
 }
 
-function findVersionForTimestamp(timestamp: string, versions: VersionRecord[]): string | null {
+function findVersionForTimestamp(
+  timestamp: string,
+  versions: VersionRecord[],
+): string | null {
   const target = new Date(timestamp).getTime();
   if (Number.isNaN(target) || versions.length === 0) {
     return null;
@@ -440,17 +480,28 @@ async function main() {
   const root = process.cwd();
   const charactersDir = path.join(root, "content", "characters");
   const existingCharacters = new Map<string, CharacterRecord>();
-  for (const file of await fs.readdir(charactersDir).catch(() => [] as string[])) {
+  for (const file of await fs
+    .readdir(charactersDir)
+    .catch(() => [] as string[])) {
     if (!file.endsWith(".json")) {
       continue;
     }
-    const character = await readJsonIfExists<CharacterRecord>(path.join(charactersDir, file));
+    const character = await readJsonIfExists<CharacterRecord>(
+      path.join(charactersDir, file),
+    );
     if (character) {
       existingCharacters.set(character.id, character);
     }
   }
-  const prevStatsPath = path.join(root, "data", "derived", "voice-line-stats.json");
-  const previousStats = await readJsonIfExists<{ rows?: VoiceLineStatRow[] }>(prevStatsPath);
+  const prevStatsPath = path.join(
+    root,
+    "data",
+    "derived",
+    "voice-line-stats.json",
+  );
+  const previousStats = await readJsonIfExists<{ rows?: VoiceLineStatRow[] }>(
+    prevStatsPath,
+  );
   const [characterNames, versionPages] = await Promise.all([
     fetchCharacterNames(),
     fetchVersionPages(),
@@ -498,26 +549,32 @@ async function main() {
     if (
       ((!Number.isFinite(rarity) || rarity <= 0) && !/^Rover-/.test(name)) ||
       releaseVersion === "unknown" ||
-      (latestKnownVersion && compareVersion(releaseVersion, latestKnownVersion) > 0)
+      (latestKnownVersion &&
+        compareVersion(releaseVersion, latestKnownVersion) > 0)
     ) {
       continue;
     }
     const element = parseTemplateField(wikitext, "attribute") ?? "Unknown";
-    const weapon = parseTemplateField(wikitext, "weapon") ?? "Unknown";
+    const weapon =
+      meaningfulField(parseTemplateField(wikitext, "weapon")) ?? "Unknown";
     const faction =
-      parseTemplateField(wikitext, "affiliation") ??
-      parseTemplateField(wikitext, "nation") ??
+      meaningfulField(parseTemplateField(wikitext, "affiliation")) ??
+      meaningfulField(parseTemplateField(wikitext, "affiliation2")) ??
+      meaningfulField(parseTemplateField(wikitext, "nation")) ??
       "Unknown";
     const parsedProfile = parseFirstDescriptionLine(wikitext);
     const existingCharacter = existingCharacters.get(id);
     const profile =
-      parsedProfile === "Profile text unavailable from source." || parsedProfile.startsWith("*")
+      parsedProfile === "Profile text unavailable from source." ||
+      parsedProfile.startsWith("*")
         ? existingCharacter?.profile || parsedProfile
         : parsedProfile;
     const aliases = [
       ...(existingCharacter?.aliases ?? []),
       ...(parseChineseAlias(wikitext) ? [parseChineseAlias(wikitext)!] : []),
-    ].filter((alias, index, values) => alias && values.indexOf(alias) === index);
+    ].filter(
+      (alias, index, values) => alias && values.indexOf(alias) === index,
+    );
 
     characters.push({
       id,
@@ -599,7 +656,10 @@ async function main() {
             compareVersion(inferredVersion, releaseVersion) < 0
               ? releaseVersion
               : inferredVersion;
-          firstSeenCountByVersion.set(version, (firstSeenCountByVersion.get(version) ?? 0) + 1);
+          firstSeenCountByVersion.set(
+            version,
+            (firstSeenCountByVersion.get(version) ?? 0) + 1,
+          );
         }
         finalized = versions.map((version) => ({
           version: version.version,
@@ -620,7 +680,8 @@ async function main() {
                   firstSeenAtByKey.get(entry.key)!,
                   versions,
                 );
-                return inferredVersion && compareVersion(inferredVersion, releaseVersion) < 0
+                return inferredVersion &&
+                  compareVersion(inferredVersion, releaseVersion) < 0
                   ? releaseVersion
                   : inferredVersion;
               })()
@@ -634,13 +695,19 @@ async function main() {
         locale: localeDef.locale,
         sourcePageTitle: voicePage,
         sourcePageExists: revisions.length > 0,
-        sourceLatestRevisionAt: revisions.length > 0 ? revisions[revisions.length - 1]?.timestamp ?? null : null,
+        sourceLatestRevisionAt:
+          revisions.length > 0
+            ? (revisions[revisions.length - 1]?.timestamp ?? null)
+            : null,
         sourceRevisionCount: revisions.length,
         countMethod: "tx_key_unique_nonempty",
         qualityStatus: revisions.length > 0 ? "verified" : "missing_source",
         currentLineCount,
         perVersionLineCounts: finalized,
-        totalLineCount: finalized.reduce((sum, entry) => sum + entry.lineCount, 0),
+        totalLineCount: finalized.reduce(
+          (sum, entry) => sum + entry.lineCount,
+          0,
+        ),
         sources: [voicePageUrl],
         generatedAt: nowIso,
       });
@@ -650,11 +717,27 @@ async function main() {
         locale: localeDef.locale,
         sourcePageTitle: voicePage,
         sourcePageExists: revisions.length > 0,
-        sourceLatestRevisionAt: revisions.length > 0 ? revisions[revisions.length - 1]?.timestamp ?? null : null,
+        sourceLatestRevisionAt:
+          revisions.length > 0
+            ? (revisions[revisions.length - 1]?.timestamp ?? null)
+            : null,
         sourceRevisionCount: revisions.length,
         generatedAt: nowIso,
         lines: detailLines,
       });
+    }
+  }
+
+  const baseRover = characters.find((character) => character.id === "rover");
+  if (baseRover) {
+    for (const character of characters) {
+      if (!character.id.startsWith("rover-")) {
+        continue;
+      }
+      character.weapon = baseRover.weapon;
+      character.faction = baseRover.faction;
+      character.rarity = baseRover.rarity;
+      character.profile = baseRover.profile;
     }
   }
 
@@ -674,7 +757,9 @@ async function main() {
   await fs.mkdir(path.join(root, "data", "raw"), { recursive: true });
   await fs.mkdir(path.join(root, "data", "derived"), { recursive: true });
 
-  const existingCharacterFiles = await fs.readdir(path.join(root, "content", "characters"));
+  const existingCharacterFiles = await fs.readdir(
+    path.join(root, "content", "characters"),
+  );
   await Promise.all(
     existingCharacterFiles
       .filter((file) => file.endsWith(".json"))
@@ -722,8 +807,12 @@ async function main() {
     "utf8",
   );
 
-  const coveredCharacterIds = new Set(allVoiceRows.map((row) => row.characterId));
-  const rowsWithContent = allVoiceRows.filter((row) => row.totalLineCount > 0).length;
+  const coveredCharacterIds = new Set(
+    allVoiceRows.map((row) => row.characterId),
+  );
+  const rowsWithContent = allVoiceRows.filter(
+    (row) => row.totalLineCount > 0,
+  ).length;
   const qualityReport = {
     generatedAt: nowIso,
     totalCharacters: characters.length,
@@ -732,8 +821,11 @@ async function main() {
     coveredCharacters: coveredCharacterIds.size,
     rowsWithContent,
     rowsWithoutContent: allVoiceRows.length - rowsWithContent,
-    verifiedRows: allVoiceRows.filter((row) => row.qualityStatus === "verified").length,
-    missingSourceRows: allVoiceRows.filter((row) => row.qualityStatus === "missing_source").length,
+    verifiedRows: allVoiceRows.filter((row) => row.qualityStatus === "verified")
+      .length,
+    missingSourceRows: allVoiceRows.filter(
+      (row) => row.qualityStatus === "missing_source",
+    ).length,
   };
   await fs.writeFile(
     path.join(root, "data", "derived", "quality-report.json"),
@@ -749,12 +841,20 @@ async function main() {
     ]),
   );
   const newMap = new Map(
-    allVoiceRows.map((row) => [`${row.characterId}::${row.locale}`, row.currentLineCount]),
+    allVoiceRows.map((row) => [
+      `${row.characterId}::${row.locale}`,
+      row.currentLineCount,
+    ]),
   );
 
   const added: Array<{ key: string; currentLineCount: number }> = [];
   const removed: Array<{ key: string; previousLineCount: number }> = [];
-  const changed: Array<{ key: string; previousLineCount: number; currentLineCount: number; delta: number }> = [];
+  const changed: Array<{
+    key: string;
+    previousLineCount: number;
+    currentLineCount: number;
+    delta: number;
+  }> = [];
   let increasedRows = 0;
   let decreasedRows = 0;
   let unchangedRows = 0;

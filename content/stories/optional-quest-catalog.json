@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-11T23:51:01.168Z",
+  "generatedAt": "2026-08-23T04:13:41.087Z",
   "source": {
     "name": "encore.moe",
     "categories": {
       "companion": 12,
-      "event": 45,
-      "side": 254
+      "event": 52,
+      "side": 259
     }
   },
   "quests": [
@@ -393,6 +393,55 @@
       "encoreStoryId": 207700002,
       "nameZh": "???",
       "nameEn": "???"
+    },
+    {
+      "id": "event-264800002",
+      "category": "event",
+      "encoreStoryId": 264800002,
+      "nameZh": "清弦纪流年·一弦",
+      "nameEn": "The Strings Remember: First String"
+    },
+    {
+      "id": "event-264800004",
+      "category": "event",
+      "encoreStoryId": 264800004,
+      "nameZh": "清弦纪流年·二弦",
+      "nameEn": "The Strings Remember: Second String"
+    },
+    {
+      "id": "event-264800005",
+      "category": "event",
+      "encoreStoryId": 264800005,
+      "nameZh": "清弦纪流年·三弦",
+      "nameEn": "The Strings Remember: Third String"
+    },
+    {
+      "id": "event-264800006",
+      "category": "event",
+      "encoreStoryId": 264800006,
+      "nameZh": "清弦纪流年·四弦",
+      "nameEn": "The Strings Remember: Fourth String"
+    },
+    {
+      "id": "event-264800007",
+      "category": "event",
+      "encoreStoryId": 264800007,
+      "nameZh": "清弦纪流年·五弦",
+      "nameEn": "The Strings Remember: Fifth String"
+    },
+    {
+      "id": "event-264800008",
+      "category": "event",
+      "encoreStoryId": 264800008,
+      "nameZh": "清弦纪流年·六弦",
+      "nameEn": "The Strings Remember: Sixth String"
+    },
+    {
+      "id": "event-264800009",
+      "category": "event",
+      "encoreStoryId": 264800009,
+      "nameZh": "清弦纪流年·七弦",
+      "nameEn": "The Strings Remember: Seventh String"
     },
     {
       "id": "event-312850000",
@@ -1406,7 +1455,7 @@
       "id": "side-172750000",
       "category": "side",
       "encoreStoryId": 172750000,
-      "nameZh": "超级云帛机骑挑战",
+      "nameZh": "超级超级……超级挑战！",
       "nameEn": "The Super, Ultra, Extreme... Super Challenge!"
     },
     {
@@ -1844,6 +1893,13 @@
       "nameEn": "Graduation Trip"
     },
     {
+      "id": "side-259750000",
+      "category": "side",
+      "encoreStoryId": 259750000,
+      "nameZh": "最后的方庭演武",
+      "nameEn": "The Last Squarefield Sparring"
+    },
+    {
       "id": "side-263750001",
       "category": "side",
       "encoreStoryId": 263750001,
@@ -1856,6 +1912,34 @@
       "encoreStoryId": 263750002,
       "nameZh": "归期未有期（一）",
       "nameEn": "No Date for Return I"
+    },
+    {
+      "id": "side-264800003",
+      "category": "side",
+      "encoreStoryId": 264800003,
+      "nameZh": "生死界限",
+      "nameEn": "The Line Between Life and Death"
+    },
+    {
+      "id": "side-268800001",
+      "category": "side",
+      "encoreStoryId": 268800001,
+      "nameZh": "隐藏数据",
+      "nameEn": "Hidden Data"
+    },
+    {
+      "id": "side-268800002",
+      "category": "side",
+      "encoreStoryId": 268800002,
+      "nameZh": "隐藏数据·其二",
+      "nameEn": "Hidden Data II"
+    },
+    {
+      "id": "side-269800000",
+      "category": "side",
+      "encoreStoryId": 269800000,
+      "nameZh": "定玄之外·其二",
+      "nameEn": "More Than a Warden: Part II"
     },
     {
       "id": "side-317750001",

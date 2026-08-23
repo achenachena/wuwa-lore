@@ -5,7 +5,14 @@ import {
   buildCharacterStorySegmentRows,
   getFirstAppearanceVersion,
 } from "@/lib/data/aggregate";
-import type { Character, StoryAppearanceRow, StoryDialogueRow, StorySegment, VersionRecord, VoiceLineEntry } from "@/types/lore";
+import type {
+  Character,
+  StoryAppearanceRow,
+  StoryDialogueRow,
+  StorySegment,
+  VersionRecord,
+  VoiceLineEntry,
+} from "@/types/lore";
 
 const characters: Character[] = [
   {
@@ -39,7 +46,11 @@ const entries: VoiceLineEntry[] = [
     version: "1.0",
     locale: "en-US",
     line: "line a",
-    source: { sourceUrl: "https://a.com", scrapedAt: "2026-05-30T00:00:00.000Z", editor: "test" },
+    source: {
+      sourceUrl: "https://a.com",
+      scrapedAt: "2026-05-30T00:00:00.000Z",
+      editor: "test",
+    },
   },
   {
     id: "2",
@@ -47,7 +58,11 @@ const entries: VoiceLineEntry[] = [
     version: "1.0",
     locale: "en-US",
     line: "line b",
-    source: { sourceUrl: "https://a.com", scrapedAt: "2026-05-30T00:00:00.000Z", editor: "test" },
+    source: {
+      sourceUrl: "https://a.com",
+      scrapedAt: "2026-05-30T00:00:00.000Z",
+      editor: "test",
+    },
   },
 ];
 
@@ -89,6 +104,8 @@ describe("aggregateVersionStats", () => {
         versionHalf: "1.1-a",
         lineCount: 40,
         encoreStoryIds: [1],
+        source: "encore",
+        sourceUrls: ["https://api.encore.moe/zh-Hans/story/1"],
       },
     ];
 
@@ -176,6 +193,8 @@ describe("buildCharacterStorySegmentRows", () => {
         versionHalf: "1.3-a",
         lineCount: 33,
         encoreStoryIds: [100012],
+        source: "encore",
+        sourceUrls: ["https://api.encore.moe/zh-Hans/story/100012"],
       },
     ];
 
@@ -189,5 +208,44 @@ describe("buildCharacterStorySegmentRows", () => {
     expect(rows).toHaveLength(1);
     expect(rows[0]?.appeared).toBe(true);
     expect(rows[0]?.lineCount).toBe(33);
+  });
+
+  test("shares canonical Yangyang dialogue with the Xuanling form detail page", () => {
+    const segments: StorySegment[] = [
+      {
+        id: "xuanling-sings",
+        wikiTitle: "Xuanling Sings",
+        nameZh: "玄翎振壑定澜音",
+        version: "3.5",
+        half: "a",
+        versionHalf: "3.5-a",
+        sortOrder: 0,
+      },
+    ];
+    const dialogue: StoryDialogueRow[] = [
+      {
+        locale: "zh-Hans",
+        characterId: "yangyang",
+        questId: "xuanling-sings",
+        wikiTitle: "Xuanling Sings",
+        nameZh: "玄翎振壑定澜音",
+        version: "3.5",
+        half: "a",
+        versionHalf: "3.5-a",
+        lineCount: 149,
+        encoreStoryIds: [100046],
+        source: "encore",
+        sourceUrls: ["https://api.encore.moe/zh-Hans/story/100046"],
+      },
+    ];
+
+    const rows = buildCharacterStorySegmentRows({
+      characterId: "yangyang-xuanling",
+      segments,
+      storyAppearances: [],
+      storyDialogueStats: dialogue,
+    });
+
+    expect(rows[0]?.lineCount).toBe(149);
   });
 });

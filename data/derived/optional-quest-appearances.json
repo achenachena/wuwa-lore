@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-07-11T23:51:01.168Z",
+  "generatedAt": "2026-08-23T04:13:41.087Z",
   "source": {
     "name": "encore.moe+fandom",
     "appearanceRule": "optional_quest_dialogue_speakers_plus_fandom_infobox_companion_event",
     "categories": {
       "companion": 12,
-      "event": 45,
-      "side": 254
+      "event": 52,
+      "side": 259
     },
-    "fandomAppearanceCount": 15
+    "fandomAppearanceCount": 41
   },
   "rows": [
     {
@@ -59,6 +59,13 @@
       "questId": "side-171000001",
       "questName": "Serendipity",
       "questNameZh": "一段善缘"
+    },
+    {
+      "category": "side",
+      "characterId": "buling",
+      "questId": "side-264800003",
+      "questName": "The Line Between Life and Death",
+      "questNameZh": "生死界限"
     },
     {
       "category": "companion",
@@ -467,6 +474,62 @@
       "questNameZh": "黎明之星（一）"
     },
     {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800002",
+      "questName": "The Strings Remember: First String",
+      "questNameZh": "清弦纪流年·一弦"
+    },
+    {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800004",
+      "questName": "The Strings Remember: Second String",
+      "questNameZh": "清弦纪流年·二弦"
+    },
+    {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800005",
+      "questName": "The Strings Remember: Third String",
+      "questNameZh": "清弦纪流年·三弦"
+    },
+    {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800006",
+      "questName": "The Strings Remember: Fourth String",
+      "questNameZh": "清弦纪流年·四弦"
+    },
+    {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800007",
+      "questName": "The Strings Remember: Fifth String",
+      "questNameZh": "清弦纪流年·五弦"
+    },
+    {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800008",
+      "questName": "The Strings Remember: Sixth String",
+      "questNameZh": "清弦纪流年·六弦"
+    },
+    {
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800009",
+      "questName": "The Strings Remember: Seventh String",
+      "questNameZh": "清弦纪流年·七弦"
+    },
+    {
+      "category": "side",
+      "characterId": "qingxiao",
+      "questId": "side-139700000",
+      "questName": "The Supreme Gunslinger!",
+      "questNameZh": "终极枪客大挑战！"
+    },
+    {
       "category": "companion",
       "characterId": "qiuyuan",
       "questId": "companion-101002",
@@ -507,6 +570,13 @@
       "questId": "event-165800014",
       "questName": "Creases on Paper",
       "questNameZh": "纸上折线"
+    },
+    {
+      "category": "event",
+      "characterId": "sigrika",
+      "questId": "event-165800015",
+      "questName": "Ground Engravings",
+      "questNameZh": "地面刻印"
     },
     {
       "category": "event",

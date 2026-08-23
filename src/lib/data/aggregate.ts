@@ -34,7 +34,11 @@ export function aggregateVoiceLineStats(params: {
   const versionIds = versions.map((version) => version.version);
   const grouped = new Map<
     string,
-    { entries: VoiceLineEntry[]; versionCounts: Map<string, number>; sources: Set<string> }
+    {
+      entries: VoiceLineEntry[];
+      versionCounts: Map<string, number>;
+      sources: Set<string>;
+    }
   >();
 
   for (const entry of entries) {
@@ -45,13 +49,18 @@ export function aggregateVoiceLineStats(params: {
       sources: new Set<string>(),
     };
     bucket.entries.push(entry);
-    bucket.versionCounts.set(entry.version, (bucket.versionCounts.get(entry.version) ?? 0) + 1);
+    bucket.versionCounts.set(
+      entry.version,
+      (bucket.versionCounts.get(entry.version) ?? 0) + 1,
+    );
     bucket.sources.add(entry.source.sourceUrl);
     grouped.set(key, bucket);
   }
 
   const rows: VoiceLineStatRow[] = [];
-  const characterById = new Map(characters.map((character) => [character.id, character]));
+  const characterById = new Map(
+    characters.map((character) => [character.id, character]),
+  );
 
   for (const [key, bucket] of grouped.entries()) {
     const [characterId, locale] = key.split("::");
@@ -64,7 +73,10 @@ export function aggregateVoiceLineStats(params: {
       version,
       lineCount: bucket.versionCounts.get(version) ?? 0,
     }));
-    const totalLineCount = counts.reduce((sum, item) => sum + item.lineCount, 0);
+    const totalLineCount = counts.reduce(
+      (sum, item) => sum + item.lineCount,
+      0,
+    );
 
     rows.push({
       characterId,
@@ -93,15 +105,22 @@ export function aggregateVoiceLineStats(params: {
   });
 }
 
-export function sumStoryDialogueByCharacter(rows: StoryDialogueRow[]): Map<string, number> {
+export function sumStoryDialogueByCharacter(
+  rows: StoryDialogueRow[],
+): Map<string, number> {
   const totals = new Map<string, number>();
   for (const row of rows) {
-    totals.set(row.characterId, (totals.get(row.characterId) ?? 0) + row.lineCount);
+    totals.set(
+      row.characterId,
+      (totals.get(row.characterId) ?? 0) + row.lineCount,
+    );
   }
   return totals;
 }
 
-export function sumStoryDialogueByVersion(rows: StoryDialogueRow[]): Map<string, number> {
+export function sumStoryDialogueByVersion(
+  rows: StoryDialogueRow[],
+): Map<string, number> {
   const totals = new Map<string, number>();
   for (const row of rows) {
     totals.set(row.version, (totals.get(row.version) ?? 0) + row.lineCount);
@@ -160,7 +179,9 @@ export function appearanceKey(characterId: string, questId: string): string {
   return `${characterId}::${questId}`;
 }
 
-export function buildAppearanceIndex(storyAppearances: StoryAppearanceRow[]): Set<string> {
+export function buildAppearanceIndex(
+  storyAppearances: StoryAppearanceRow[],
+): Set<string> {
   const index = new Set<string>();
   for (const row of storyAppearances) {
     index.add(appearanceKey(row.characterId, row.questId));
@@ -188,8 +209,10 @@ export function getFirstAppearanceVersion(params: {
   dialogueIndex?: Map<string, number>;
 }): string | null {
   const { characterId, segments } = params;
-  const appearanceIndex = params.appearanceIndex ?? buildAppearanceIndex(params.storyAppearances);
-  const dialogueIndex = params.dialogueIndex ?? buildDialogueIndex(params.storyDialogueStats);
+  const appearanceIndex =
+    params.appearanceIndex ?? buildAppearanceIndex(params.storyAppearances);
+  const dialogueIndex =
+    params.dialogueIndex ?? buildDialogueIndex(params.storyDialogueStats);
   let earliest: string | null = null;
 
   for (const segment of segments) {
@@ -235,13 +258,28 @@ export function buildFirstAppearanceVersionMap(params: {
   return map;
 }
 
-function sumDialogueByQuest(rows: StoryDialogueRow[], characterId: string): Map<string, number> {
+function storyIdentityIds(characterId: string): Set<string> {
+  // Encore labels both forms simply as Yangyang. Share the canonical story
+  // identity on character detail pages without duplicating global rankings.
+  if (characterId === "yangyang" || characterId === "yangyang-xuanling") {
+    return new Set(["yangyang", "yangyang-xuanling"]);
+  }
+  return new Set([characterId]);
+}
+
+function sumDialogueByQuest(
+  rows: StoryDialogueRow[],
+  characterIds: Set<string>,
+): Map<string, number> {
   const dialogueByQuest = new Map<string, number>();
   for (const row of rows) {
-    if (row.characterId !== characterId) {
+    if (!characterIds.has(row.characterId)) {
       continue;
     }
-    dialogueByQuest.set(row.questId, (dialogueByQuest.get(row.questId) ?? 0) + row.lineCount);
+    dialogueByQuest.set(
+      row.questId,
+      (dialogueByQuest.get(row.questId) ?? 0) + row.lineCount,
+    );
   }
   return dialogueByQuest;
 }
@@ -271,17 +309,22 @@ export function buildCharacterStorySegmentRows(params: {
   storyAppearances: StoryAppearanceRow[];
   storyDialogueStats: StoryDialogueRow[];
 }): CharacterStorySegmentRow[] {
-  const { characterId, segments, storyAppearances, storyDialogueStats } = params;
-  const dialogueByQuest = sumDialogueByQuest(storyDialogueStats, characterId);
+  const { characterId, segments, storyAppearances, storyDialogueStats } =
+    params;
+  const identityIds = storyIdentityIds(characterId);
+  const dialogueByQuest = sumDialogueByQuest(storyDialogueStats, identityIds);
   const appearanceIndex = buildAppearanceIndex(
-    storyAppearances.filter((row) => row.characterId === characterId),
+    storyAppearances.filter((row) => identityIds.has(row.characterId)),
   );
 
   return segments
     .map((segment) => {
       const lineCount = dialogueByQuest.get(segment.id) ?? 0;
       const appeared = didCharacterAppearInQuest({
-        characterId,
+        characterId:
+          [...identityIds].find((id) =>
+            appearanceIndex.has(appearanceKey(id, segment.id)),
+          ) ?? characterId,
         questId: segment.id,
         storyAppearances,
         dialogueLineCount: lineCount,
@@ -301,7 +344,10 @@ export function sumOptionalDialogueByCharacter(
     if (category && row.category !== category) {
       continue;
     }
-    totals.set(row.characterId, (totals.get(row.characterId) ?? 0) + row.lineCount);
+    totals.set(
+      row.characterId,
+      (totals.get(row.characterId) ?? 0) + row.lineCount,
+    );
   }
   return totals;
 }
@@ -319,12 +365,17 @@ export function buildCharacterOptionalQuestRows(params: {
     if (row.characterId !== characterId || row.category !== category) {
       continue;
     }
-    dialogueByQuest.set(row.questId, (dialogueByQuest.get(row.questId) ?? 0) + row.lineCount);
+    dialogueByQuest.set(
+      row.questId,
+      (dialogueByQuest.get(row.questId) ?? 0) + row.lineCount,
+    );
   }
 
   const appearedQuestIds = new Set(
     appearances
-      .filter((row) => row.characterId === characterId && row.category === category)
+      .filter(
+        (row) => row.characterId === characterId && row.category === category,
+      )
       .map((row) => row.questId),
   );
   for (const questId of dialogueByQuest.keys()) {
@@ -332,7 +383,9 @@ export function buildCharacterOptionalQuestRows(params: {
   }
 
   return quests
-    .filter((quest) => quest.category === category && appearedQuestIds.has(quest.id))
+    .filter(
+      (quest) => quest.category === category && appearedQuestIds.has(quest.id),
+    )
     .map((quest) => {
       const lineCount = dialogueByQuest.get(quest.id) ?? 0;
       return {
@@ -341,7 +394,11 @@ export function buildCharacterOptionalQuestRows(params: {
         lineCount,
       };
     })
-    .sort((a, b) => b.lineCount - a.lineCount || a.quest.nameZh.localeCompare(b.quest.nameZh, "zh-CN"));
+    .sort(
+      (a, b) =>
+        b.lineCount - a.lineCount ||
+        a.quest.nameZh.localeCompare(b.quest.nameZh, "zh-CN"),
+    );
 }
 
 export function buildOptionalQuestRanking(params: {
@@ -352,15 +409,24 @@ export function buildOptionalQuestRanking(params: {
   dialogueStats: OptionalQuestDialogueRow[];
 }): VersionHalfRankingRow[] {
   const { characters, category, quests, appearances, dialogueStats } = params;
-  const characterById = new Map(characters.map((character) => [character.id, character]));
-  const questIds = new Set(quests.filter((quest) => quest.category === category).map((quest) => quest.id));
+  const characterById = new Map(
+    characters.map((character) => [character.id, character]),
+  );
+  const questIds = new Set(
+    quests
+      .filter((quest) => quest.category === category)
+      .map((quest) => quest.id),
+  );
 
   const dialogueByCharacter = new Map<string, number>();
   for (const row of dialogueStats) {
     if (row.category !== category || !questIds.has(row.questId)) {
       continue;
     }
-    dialogueByCharacter.set(row.characterId, (dialogueByCharacter.get(row.characterId) ?? 0) + row.lineCount);
+    dialogueByCharacter.set(
+      row.characterId,
+      (dialogueByCharacter.get(row.characterId) ?? 0) + row.lineCount,
+    );
   }
 
   const appearancesByCharacter = new Map<string, number>();
@@ -368,10 +434,16 @@ export function buildOptionalQuestRanking(params: {
     if (row.category !== category || !questIds.has(row.questId)) {
       continue;
     }
-    appearancesByCharacter.set(row.characterId, (appearancesByCharacter.get(row.characterId) ?? 0) + 1);
+    appearancesByCharacter.set(
+      row.characterId,
+      (appearancesByCharacter.get(row.characterId) ?? 0) + 1,
+    );
   }
 
-  const characterIds = unique([...dialogueByCharacter.keys(), ...appearancesByCharacter.keys()])
+  const characterIds = unique([
+    ...dialogueByCharacter.keys(),
+    ...appearancesByCharacter.keys(),
+  ])
     .filter((characterId) => !isRoverCharacter(characterId))
     .sort((a, b) => a.localeCompare(b));
 
@@ -385,7 +457,9 @@ export function buildOptionalQuestRanking(params: {
         voiceLineCount,
         appearanceCount,
         linesPerAppearance:
-          appearanceCount > 0 ? Number((voiceLineCount / appearanceCount).toFixed(2)) : null,
+          appearanceCount > 0
+            ? Number((voiceLineCount / appearanceCount).toFixed(2))
+            : null,
       };
     })
     .sort((a, b) => {

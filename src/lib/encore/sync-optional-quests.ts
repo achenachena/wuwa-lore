@@ -4,8 +4,15 @@ import {
   fetchEncoreJson,
   fetchEncoreStoryDetail,
 } from "@/lib/encore/client";
-import { buildSpeakerResolver, countDialoguesBySpeaker } from "@/lib/encore/speakers";
-import type { EncoreLocale, EncoreRole, EncoreStoryType } from "@/lib/encore/types";
+import {
+  buildSpeakerResolver,
+  countDialoguesBySpeaker,
+} from "@/lib/encore/speakers";
+import type {
+  EncoreLocale,
+  EncoreRole,
+  EncoreStoryType,
+} from "@/lib/encore/types";
 import { ENCORE_OPTIONAL_QUEST_TYPE_IDS } from "@/lib/encore/types";
 import { QUEST_CATEGORIES } from "@/lib/data/quest-categories";
 import type {
@@ -28,7 +35,8 @@ const CATEGORY_PRIORITY = Object.fromEntries(
   QUEST_CATEGORIES.map((category, index) => [category, index]),
 ) as Record<QuestCategory, number>;
 
-const UNMAPPED_SPEAKER_SKIP = /^(Speaker_\d+|Speaker_undefined|Narrator|问卷反馈)$/i;
+const UNMAPPED_SPEAKER_SKIP =
+  /^(Speaker_\d+|Speaker_undefined|Narrator|问卷反馈)$/i;
 
 function questIdFor(category: QuestCategory, encoreStoryId: number): string {
   return `${category}-${encoreStoryId}`;
@@ -82,7 +90,10 @@ function finalizeCoverage(
       unmappedSpeakers: Map<string, number>;
     }
   >,
-): { coverage: OptionalQuestCoverageRow[]; unmappedSpeakers: UnmappedSpeakerRow[] } {
+): {
+  coverage: OptionalQuestCoverageRow[];
+  unmappedSpeakers: UnmappedSpeakerRow[];
+} {
   const coverage = QUEST_CATEGORIES.map((category) => {
     const bucket = byCategory.get(category)!;
     return {
@@ -101,7 +112,9 @@ function finalizeCoverage(
   for (const category of QUEST_CATEGORIES) {
     const bucket = byCategory.get(category)!;
     for (const [name, lineCount] of [...bucket.unmappedSpeakers.entries()]
-      .filter(([speaker]) => speaker.trim() && !UNMAPPED_SPEAKER_SKIP.test(speaker))
+      .filter(
+        ([speaker]) => speaker.trim() && !UNMAPPED_SPEAKER_SKIP.test(speaker),
+      )
       .sort((a, b) => b[1] - a[1])
       .slice(0, 6)) {
       unmappedSpeakers.push({ category, name, lineCount });
@@ -116,8 +129,13 @@ export function buildOptionalQuestCatalog(params: {
   enStoryTypes: EncoreStoryType[];
 }): OptionalQuestRecord[] {
   const enNameById = new Map<number, string>();
-  for (const category of Object.keys(ENCORE_OPTIONAL_QUEST_TYPE_IDS) as QuestCategory[]) {
-    for (const story of collectEncoreStoriesByTypeIds(params.enStoryTypes, ENCORE_OPTIONAL_QUEST_TYPE_IDS[category])) {
+  for (const category of Object.keys(
+    ENCORE_OPTIONAL_QUEST_TYPE_IDS,
+  ) as QuestCategory[]) {
+    for (const story of collectEncoreStoriesByTypeIds(
+      params.enStoryTypes,
+      ENCORE_OPTIONAL_QUEST_TYPE_IDS[category],
+    )) {
       enNameById.set(story.Id, storyName(story));
     }
   }
@@ -131,7 +149,10 @@ export function buildOptionalQuestCatalog(params: {
       ENCORE_OPTIONAL_QUEST_TYPE_IDS[category],
     )) {
       const existing = claimed.get(story.Id);
-      if (existing && CATEGORY_PRIORITY[existing] <= CATEGORY_PRIORITY[category]) {
+      if (
+        existing &&
+        CATEGORY_PRIORITY[existing] <= CATEGORY_PRIORITY[category]
+      ) {
         continue;
       }
       claimed.set(story.Id, category);
@@ -144,7 +165,9 @@ export function buildOptionalQuestCatalog(params: {
         nameZh,
         nameEn,
       };
-      const index = quests.findIndex((quest) => quest.encoreStoryId === story.Id);
+      const index = quests.findIndex(
+        (quest) => quest.encoreStoryId === story.Id,
+      );
       if (index >= 0) {
         quests[index] = record;
       } else {
@@ -177,7 +200,7 @@ export async function syncOptionalQuestStatsForLocale(params: {
   const localeRolesPayload = await fetchEncoreJson<{ roleList: EncoreRole[] }>(
     `${ENCORE_BASE}/${params.locale}/character`,
   );
-  const { resolveSpeaker } = buildSpeakerResolver({
+  const { resolveSpeakers } = buildSpeakerResolver({
     enRoles: params.enRoles,
     localeRoles: localeRolesPayload.roleList,
     knownCharacterIds: params.knownCharacterIds,
@@ -185,16 +208,22 @@ export async function syncOptionalQuestStatsForLocale(params: {
 
   const dialogueRows: OptionalQuestDialogueRow[] = [];
   const appearanceKeys = new Set<string>();
-  const coverageBuckets = params.collectMetadata ? createCoverageBuckets() : null;
+  const coverageBuckets = params.collectMetadata
+    ? createCoverageBuckets()
+    : null;
 
   for (const quest of params.quests) {
     if (coverageBuckets) {
       coverageBuckets.get(quest.category)!.questCount += 1;
     }
 
-    const detail = await fetchEncoreStoryDetail(params.locale, quest.encoreStoryId, {
-      logFallback: false,
-    });
+    const detail = await fetchEncoreStoryDetail(
+      params.locale,
+      quest.encoreStoryId,
+      {
+        logFallback: false,
+      },
+    );
     if (!detail) {
       await delay(40);
       continue;
@@ -213,29 +242,36 @@ export async function syncOptionalQuestStatsForLocale(params: {
       }
       questRaw += count;
 
-      const characterId = resolveSpeaker(speaker);
-      if (characterId) {
+      const characterIds = resolveSpeakers(speaker);
+      if (characterIds.length > 0) {
         questPlayable += count;
-        if (coverageBuckets && params.locale === "zh-Hans") {
-          coverageBuckets.get(quest.category)!.playableCharacters.add(characterId);
+        for (const characterId of characterIds) {
+          if (coverageBuckets && params.locale === "zh-Hans") {
+            coverageBuckets
+              .get(quest.category)!
+              .playableCharacters.add(characterId);
+          }
+          dialogueRows.push({
+            locale: params.locale,
+            category: quest.category,
+            characterId,
+            questId: quest.id,
+            questName,
+            questNameZh,
+            lineCount: count,
+            encoreStoryIds: [quest.encoreStoryId],
+          });
+          appearanceKeys.add(`${quest.category}::${characterId}::${quest.id}`);
         }
-        dialogueRows.push({
-          locale: params.locale,
-          category: quest.category,
-          characterId,
-          questId: quest.id,
-          questName,
-          questNameZh,
-          lineCount: count,
-          encoreStoryIds: [quest.encoreStoryId],
-        });
-        appearanceKeys.add(`${quest.category}::${characterId}::${quest.id}`);
         continue;
       }
 
       if (coverageBuckets && params.locale === "zh-Hans") {
         const bucket = coverageBuckets.get(quest.category)!;
-        bucket.unmappedSpeakers.set(speaker, (bucket.unmappedSpeakers.get(speaker) ?? 0) + count);
+        bucket.unmappedSpeakers.set(
+          speaker,
+          (bucket.unmappedSpeakers.get(speaker) ?? 0) + count,
+        );
       }
     }
 
@@ -254,17 +290,23 @@ export async function syncOptionalQuestStatsForLocale(params: {
     await delay(50);
   }
 
-  const appearanceRows: OptionalQuestAppearanceRow[] = [...appearanceKeys].map((key) => {
-    const [category, characterId, questId] = key.split("::") as [QuestCategory, string, string];
-    const quest = params.quests.find((item) => item.id === questId);
-    return {
-      category,
-      characterId,
-      questId,
-      questName: quest?.nameEn ?? questId,
-      questNameZh: quest?.nameZh ?? questId,
-    };
-  });
+  const appearanceRows: OptionalQuestAppearanceRow[] = [...appearanceKeys].map(
+    (key) => {
+      const [category, characterId, questId] = key.split("::") as [
+        QuestCategory,
+        string,
+        string,
+      ];
+      const quest = params.quests.find((item) => item.id === questId);
+      return {
+        category,
+        characterId,
+        questId,
+        questName: quest?.nameEn ?? questId,
+        questNameZh: quest?.nameZh ?? questId,
+      };
+    },
+  );
 
   if (!coverageBuckets) {
     return { dialogueRows, appearanceRows };
@@ -274,7 +316,9 @@ export async function syncOptionalQuestStatsForLocale(params: {
   return { dialogueRows, appearanceRows, coverage, unmappedSpeakers };
 }
 
-export function mergeOptionalDialogueRows(rows: OptionalQuestDialogueRow[]): OptionalQuestDialogueRow[] {
+export function mergeOptionalDialogueRows(
+  rows: OptionalQuestDialogueRow[],
+): OptionalQuestDialogueRow[] {
   const merged = new Map<string, OptionalQuestDialogueRow>();
   for (const row of rows) {
     const key = `${row.locale}::${row.characterId}::${row.questId}`;
@@ -299,7 +343,9 @@ export function mergeOptionalDialogueRows(rows: OptionalQuestDialogueRow[]): Opt
   });
 }
 
-export function dedupeOptionalAppearances(rows: OptionalQuestAppearanceRow[]): OptionalQuestAppearanceRow[] {
+export function dedupeOptionalAppearances(
+  rows: OptionalQuestAppearanceRow[],
+): OptionalQuestAppearanceRow[] {
   const map = new Map<string, OptionalQuestAppearanceRow>();
   for (const row of rows) {
     map.set(`${row.category}::${row.characterId}::${row.questId}`, row);
@@ -313,7 +359,11 @@ export function dedupeOptionalAppearances(rows: OptionalQuestAppearanceRow[]): O
   });
 }
 
-export async function fetchEncoreStoryTypes(locale: EncoreLocale): Promise<EncoreStoryType[]> {
-  const payload = await fetchEncoreJson<{ storyTypes: EncoreStoryType[] }>(`${ENCORE_BASE}/${locale}/story`);
+export async function fetchEncoreStoryTypes(
+  locale: EncoreLocale,
+): Promise<EncoreStoryType[]> {
+  const payload = await fetchEncoreJson<{ storyTypes: EncoreStoryType[] }>(
+    `${ENCORE_BASE}/${locale}/story`,
+  );
   return payload.storyTypes;
 }

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-11T23:51:01.168Z",
+  "generatedAt": "2026-08-23T04:13:41.087Z",
   "source": {
     "name": "encore.moe",
     "countMethod": "optional_quest_dialogue_speaker_lines",
     "categories": {
       "companion": 12,
-      "event": 45,
-      "side": 254
+      "event": 52,
+      "side": 259
     },
     "coverage": [
       {
@@ -21,22 +21,22 @@
       },
       {
         "category": "event",
-        "questCount": 45,
-        "questsWithDialogue": 44,
-        "questsWithPlayableDialogue": 31,
-        "totalRawLines": 1135,
-        "playableCharacterLines": 543,
+        "questCount": 52,
+        "questsWithDialogue": 51,
+        "questsWithPlayableDialogue": 38,
+        "totalRawLines": 1243,
+        "playableCharacterLines": 651,
         "unmappedLines": 592,
-        "playableCharacterCount": 8
+        "playableCharacterCount": 9
       },
       {
         "category": "side",
-        "questCount": 254,
-        "questsWithDialogue": 248,
-        "questsWithPlayableDialogue": 32,
-        "totalRawLines": 13373,
-        "playableCharacterLines": 1186,
-        "unmappedLines": 12187,
+        "questCount": 259,
+        "questsWithDialogue": 253,
+        "questsWithPlayableDialogue": 33,
+        "totalRawLines": 13700,
+        "playableCharacterLines": 1265,
+        "unmappedLines": 12435,
         "playableCharacterCount": 23
       }
     ],
@@ -104,7 +104,7 @@
       {
         "category": "side",
         "name": "阿布",
-        "lineCount": 350
+        "lineCount": 377
       },
       {
         "category": "side",
@@ -300,6 +300,30 @@
       "lineCount": 9,
       "encoreStoryIds": [
         171000001
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "side",
+      "characterId": "buling",
+      "questId": "side-264800003",
+      "questName": "生死界限",
+      "questNameZh": "生死界限",
+      "lineCount": 79,
+      "encoreStoryIds": [
+        264800003
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "buling",
+      "questId": "side-264800003",
+      "questName": "The Line Between Life and Death",
+      "questNameZh": "生死界限",
+      "lineCount": 79,
+      "encoreStoryIds": [
+        264800003
       ]
     },
     {
@@ -1656,6 +1680,186 @@
       "lineCount": 8,
       "encoreStoryIds": [
         189800000
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800002",
+      "questName": "清弦纪流年·一弦",
+      "questNameZh": "清弦纪流年·一弦",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        264800002
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800002",
+      "questName": "The Strings Remember: First String",
+      "questNameZh": "清弦纪流年·一弦",
+      "lineCount": 23,
+      "encoreStoryIds": [
+        264800002
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800004",
+      "questName": "清弦纪流年·二弦",
+      "questNameZh": "清弦纪流年·二弦",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        264800004
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800004",
+      "questName": "The Strings Remember: Second String",
+      "questNameZh": "清弦纪流年·二弦",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        264800004
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800005",
+      "questName": "清弦纪流年·三弦",
+      "questNameZh": "清弦纪流年·三弦",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        264800005
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800005",
+      "questName": "The Strings Remember: Third String",
+      "questNameZh": "清弦纪流年·三弦",
+      "lineCount": 14,
+      "encoreStoryIds": [
+        264800005
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800006",
+      "questName": "清弦纪流年·四弦",
+      "questNameZh": "清弦纪流年·四弦",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        264800006
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800006",
+      "questName": "The Strings Remember: Fourth String",
+      "questNameZh": "清弦纪流年·四弦",
+      "lineCount": 12,
+      "encoreStoryIds": [
+        264800006
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800007",
+      "questName": "清弦纪流年·五弦",
+      "questNameZh": "清弦纪流年·五弦",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        264800007
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800007",
+      "questName": "The Strings Remember: Fifth String",
+      "questNameZh": "清弦纪流年·五弦",
+      "lineCount": 11,
+      "encoreStoryIds": [
+        264800007
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800008",
+      "questName": "清弦纪流年·六弦",
+      "questNameZh": "清弦纪流年·六弦",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        264800008
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800008",
+      "questName": "The Strings Remember: Sixth String",
+      "questNameZh": "清弦纪流年·六弦",
+      "lineCount": 19,
+      "encoreStoryIds": [
+        264800008
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800009",
+      "questName": "清弦纪流年·七弦",
+      "questNameZh": "清弦纪流年·七弦",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        264800009
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "event",
+      "characterId": "qingxiao",
+      "questId": "event-264800009",
+      "questName": "The Strings Remember: Seventh String",
+      "questNameZh": "清弦纪流年·七弦",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        264800009
+      ]
+    },
+    {
+      "locale": "en",
+      "category": "side",
+      "characterId": "qingxiao",
+      "questId": "side-139700000",
+      "questName": "The Supreme Gunslinger!",
+      "questNameZh": "终极枪客大挑战！",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        139700000
       ]
     },
     {
