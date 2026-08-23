@@ -133,6 +133,8 @@ export const storyDialogueRowSchema = z.object({
   versionHalf: z.string().min(1),
   lineCount: z.number().int().min(0),
   encoreStoryIds: z.array(z.number().int()),
+  source: z.enum(["encore", "fandom-fallback"]),
+  sourceUrls: z.array(z.string().url()).min(1),
 });
 
 export const versionHalfVoiceRowSchema = z.object({
@@ -238,8 +240,16 @@ export type StoryAppearanceRow = z.infer<typeof storyAppearanceRowSchema>;
 export type StoryDialogueRow = z.infer<typeof storyDialogueRowSchema>;
 export type VersionHalfVoiceRow = z.infer<typeof versionHalfVoiceRowSchema>;
 export type OptionalQuestRecord = z.infer<typeof optionalQuestRecordSchema>;
-export type OptionalQuestDialogueRow = z.infer<typeof optionalQuestDialogueRowSchema>;
-export type OptionalQuestAppearanceRow = z.infer<typeof optionalQuestAppearanceRowSchema>;
-export type OptionalQuestCoverageRow = z.infer<typeof optionalQuestCoverageSchema>;
-export type UnmappedSpeakerRow = z.infer<typeof optionalQuestUnmappedSpeakerSchema>;
+export type OptionalQuestDialogueRow = z.infer<
+  typeof optionalQuestDialogueRowSchema
+>;
+export type OptionalQuestAppearanceRow = z.infer<
+  typeof optionalQuestAppearanceRowSchema
+>;
+export type OptionalQuestCoverageRow = z.infer<
+  typeof optionalQuestCoverageSchema
+>;
+export type UnmappedSpeakerRow = z.infer<
+  typeof optionalQuestUnmappedSpeakerSchema
+>;
 export type CharacterWordCloudRow = z.infer<typeof characterWordCloudRowSchema>;

@@ -31,7 +31,7 @@ jobs:
         run: npm run data:compare
 
       - name: Audit story appearance and dialogue
-        run: npx tsx scripts/audit-story-appearance-dialogue.ts
+        run: npm run data:audit-stories
 
       - name: Typecheck
         run: npm run typecheck

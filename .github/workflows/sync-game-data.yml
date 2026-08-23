@@ -45,6 +45,9 @@ jobs:
       - name: Compare official and community sources
         run: npm run data:compare
 
+      - name: Audit story dialogue attribution
+        run: npm run data:audit-stories
+
       - name: Run application quality checks
         run: |
           npm run typecheck

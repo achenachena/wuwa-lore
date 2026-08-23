@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-23T00:19:38.017Z",
+  "generatedAt": "2026-08-23T04:07:10.130Z",
   "source": {
-    "name": "encore.moe",
+    "name": "encore.moe+wutheringwaves.fandom.com",
     "baseUrl": "https://api.encore.moe",
     "locales": [
       "zh-Hans",
       "en"
     ],
-    "countMethod": "main_story_dialogue_speaker_lines"
+    "countMethod": "main_story_dialogue_speaker_lines_with_fandom_audio_fallback"
   },
   "questCountByLocale": {
-    "en": 45,
-    "zh-Hans": 45
+    "en": 47,
+    "zh-Hans": 47
   },
   "rows": [
     {
@@ -26,6 +26,10 @@
       "lineCount": 43,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -41,6 +45,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -55,6 +64,10 @@
       "lineCount": 156,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -69,6 +82,10 @@
       "lineCount": 17,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100014"
       ]
     },
     {
@@ -83,6 +100,10 @@
       "lineCount": 94,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100012"
       ]
     },
     {
@@ -97,6 +118,10 @@
       "lineCount": 90,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -111,6 +136,10 @@
       "lineCount": 36,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -125,6 +154,10 @@
       "lineCount": 361,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100035"
       ]
     },
     {
@@ -139,6 +172,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -153,6 +190,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -167,6 +208,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -181,6 +226,10 @@
       "lineCount": 43,
       "encoreStoryIds": [
         100026
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100026"
       ]
     },
     {
@@ -195,6 +244,10 @@
       "lineCount": 306,
       "encoreStoryIds": [
         100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100025"
       ]
     },
     {
@@ -209,6 +262,10 @@
       "lineCount": 69,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -223,6 +280,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100024
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100024"
       ]
     },
     {
@@ -237,6 +298,10 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -251,6 +316,10 @@
       "lineCount": 78,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -266,6 +335,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -280,6 +354,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -294,6 +372,10 @@
       "lineCount": 10,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -309,6 +391,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100001",
+        "https://api.encore.moe/zh-Hans/story/100002"
       ]
     },
     {
@@ -323,6 +410,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -337,6 +428,10 @@
       "lineCount": 11,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -351,6 +446,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100018
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100018"
       ]
     },
     {
@@ -365,6 +464,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -379,6 +482,10 @@
       "lineCount": 42,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100014"
       ]
     },
     {
@@ -393,6 +500,10 @@
       "lineCount": 144,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -407,6 +518,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100025"
       ]
     },
     {
@@ -421,6 +536,10 @@
       "lineCount": 16,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -435,6 +554,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100030
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100030"
       ]
     },
     {
@@ -449,6 +572,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -463,6 +590,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -477,6 +608,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -491,6 +626,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -505,6 +644,10 @@
       "lineCount": 56,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -519,6 +662,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -533,6 +680,10 @@
       "lineCount": 20,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -547,6 +698,10 @@
       "lineCount": 267,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100019"
       ]
     },
     {
@@ -561,6 +716,10 @@
       "lineCount": 7,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -575,6 +734,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -589,6 +752,10 @@
       "lineCount": 13,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -603,6 +770,10 @@
       "lineCount": 10,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100019"
       ]
     },
     {
@@ -617,6 +788,10 @@
       "lineCount": 213,
       "encoreStoryIds": [
         100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100016"
       ]
     },
     {
@@ -631,6 +806,10 @@
       "lineCount": 147,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -645,6 +824,10 @@
       "lineCount": 48,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -659,6 +842,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100023
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100023"
       ]
     },
     {
@@ -673,6 +860,10 @@
       "lineCount": 85,
       "encoreStoryIds": [
         100022
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100022"
       ]
     },
     {
@@ -687,6 +878,10 @@
       "lineCount": 39,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -701,6 +896,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -712,9 +911,13 @@
       "version": "2.2",
       "half": "a",
       "versionHalf": "2.2-a",
-      "lineCount": 320,
+      "lineCount": 353,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100019"
       ]
     },
     {
@@ -729,6 +932,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -743,6 +950,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -757,6 +968,10 @@
       "lineCount": 230,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100011"
       ]
     },
     {
@@ -771,6 +986,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100031
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100031"
       ]
     },
     {
@@ -785,6 +1004,10 @@
       "lineCount": 22,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -799,6 +1022,10 @@
       "lineCount": 251,
       "encoreStoryIds": [
         100030
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100030"
       ]
     },
     {
@@ -813,6 +1040,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -827,6 +1058,10 @@
       "lineCount": 7,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -842,6 +1077,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100033",
+        "https://api.encore.moe/zh-Hans/story/103"
       ]
     },
     {
@@ -856,6 +1096,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100032
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100032"
       ]
     },
     {
@@ -870,6 +1114,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100010
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100010"
       ]
     },
     {
@@ -884,6 +1132,10 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -898,6 +1150,10 @@
       "lineCount": 16,
       "encoreStoryIds": [
         100004
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100004"
       ]
     },
     {
@@ -912,6 +1168,10 @@
       "lineCount": 82,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -927,6 +1187,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -941,6 +1206,10 @@
       "lineCount": 58,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -955,6 +1224,10 @@
       "lineCount": 19,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -969,6 +1242,10 @@
       "lineCount": 6,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100012"
       ]
     },
     {
@@ -984,6 +1261,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100001",
+        "https://api.encore.moe/zh-Hans/story/100002"
       ]
     },
     {
@@ -998,6 +1280,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -1012,6 +1298,10 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -1026,6 +1316,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -1040,6 +1334,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -1054,6 +1352,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100019"
       ]
     },
     {
@@ -1068,6 +1370,10 @@
       "lineCount": 238,
       "encoreStoryIds": [
         100042
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100042"
       ]
     },
     {
@@ -1082,6 +1388,10 @@
       "lineCount": 51,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -1096,6 +1406,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100038
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100038"
       ]
     },
     {
@@ -1110,6 +1424,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -1124,6 +1442,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100012"
       ]
     },
     {
@@ -1138,6 +1460,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -1153,6 +1479,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -1167,6 +1498,10 @@
       "lineCount": 29,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -1178,9 +1513,13 @@
       "version": "2.7",
       "half": "a",
       "versionHalf": "2.7-a",
-      "lineCount": 284,
+      "lineCount": 320,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -1195,6 +1534,10 @@
       "lineCount": 93,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -1209,6 +1552,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100042
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100042"
       ]
     },
     {
@@ -1223,6 +1570,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100038
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100038"
       ]
     },
     {
@@ -1237,6 +1588,26 @@
       "lineCount": 75,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hiyuki",
+      "questId": "the-flaming-red-from-tomorrow",
+      "wikiTitle": "The Flaming Red from Tomorrow",
+      "nameZh": "明日摇曳的绯影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 8,
+      "encoreStoryIds": [],
+      "source": "fandom-fallback",
+      "sourceUrls": [
+        "https://wutheringwaves.fandom.com/wiki/The_Flaming_Red_from_Tomorrow"
       ]
     },
     {
@@ -1251,6 +1622,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -1265,6 +1640,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -1280,6 +1659,11 @@
       "encoreStoryIds": [
         100039,
         100041
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100039",
+        "https://api.encore.moe/zh-Hans/story/100041"
       ]
     },
     {
@@ -1294,6 +1678,10 @@
       "lineCount": 215,
       "encoreStoryIds": [
         100026
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100026"
       ]
     },
     {
@@ -1308,6 +1696,10 @@
       "lineCount": 143,
       "encoreStoryIds": [
         100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100025"
       ]
     },
     {
@@ -1322,6 +1714,10 @@
       "lineCount": 63,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -1336,6 +1732,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100024
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100024"
       ]
     },
     {
@@ -1350,6 +1750,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -1364,6 +1768,10 @@
       "lineCount": 103,
       "encoreStoryIds": [
         100004
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100004"
       ]
     },
     {
@@ -1378,6 +1786,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -1393,6 +1805,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -1407,6 +1824,10 @@
       "lineCount": 25,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100048"
       ]
     },
     {
@@ -1418,9 +1839,13 @@
       "version": "3.6",
       "half": "a",
       "versionHalf": "3.6-a",
-      "lineCount": 64,
+      "lineCount": 77,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100048"
       ]
     },
     {
@@ -1435,6 +1860,28 @@
       "lineCount": 34,
       "encoreStoryIds": [
         100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100049"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jingran",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -1449,6 +1896,10 @@
       "lineCount": 132,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -1460,10 +1911,15 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 25,
+      "lineCount": 26,
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -1478,6 +1934,10 @@
       "lineCount": 149,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100011"
       ]
     },
     {
@@ -1492,6 +1952,10 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -1507,6 +1971,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100001",
+        "https://api.encore.moe/zh-Hans/story/100002"
       ]
     },
     {
@@ -1521,6 +1990,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -1535,6 +2008,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -1550,6 +2027,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -1564,6 +2046,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -1579,6 +2065,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -1593,6 +2084,10 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100036"
       ]
     },
     {
@@ -1607,6 +2102,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -1621,6 +2120,10 @@
       "lineCount": 128,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -1635,6 +2138,10 @@
       "lineCount": 233,
       "encoreStoryIds": [
         100038
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100038"
       ]
     },
     {
@@ -1649,6 +2156,26 @@
       "lineCount": 38,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lucilla",
+      "questId": "the-flaming-red-from-tomorrow",
+      "wikiTitle": "The Flaming Red from Tomorrow",
+      "nameZh": "明日摇曳的绯影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 19,
+      "encoreStoryIds": [],
+      "source": "fandom-fallback",
+      "sourceUrls": [
+        "https://wutheringwaves.fandom.com/wiki/The_Flaming_Red_from_Tomorrow"
       ]
     },
     {
@@ -1663,6 +2190,10 @@
       "lineCount": 36,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100035"
       ]
     },
     {
@@ -1677,6 +2208,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -1691,6 +2226,10 @@
       "lineCount": 321,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -1706,6 +2245,11 @@
       "encoreStoryIds": [
         100039,
         100041
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100039",
+        "https://api.encore.moe/zh-Hans/story/100041"
       ]
     },
     {
@@ -1720,6 +2264,10 @@
       "lineCount": 274,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -1734,6 +2282,10 @@
       "lineCount": 14,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -1748,6 +2300,10 @@
       "lineCount": 193,
       "encoreStoryIds": [
         100022
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100022"
       ]
     },
     {
@@ -1762,6 +2318,10 @@
       "lineCount": 258,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -1776,6 +2336,10 @@
       "lineCount": 177,
       "encoreStoryIds": [
         100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100036"
       ]
     },
     {
@@ -1790,6 +2354,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -1804,6 +2372,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -1819,6 +2391,11 @@
       "encoreStoryIds": [
         115,
         100034
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100034",
+        "https://api.encore.moe/zh-Hans/story/115"
       ]
     },
     {
@@ -1833,6 +2410,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -1847,6 +2428,10 @@
       "lineCount": 63,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100035"
       ]
     },
     {
@@ -1861,6 +2446,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -1876,6 +2465,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100033",
+        "https://api.encore.moe/zh-Hans/story/103"
       ]
     },
     {
@@ -1890,6 +2484,10 @@
       "lineCount": 58,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -1904,6 +2502,10 @@
       "lineCount": 52,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -1919,6 +2521,11 @@
       "encoreStoryIds": [
         115,
         100034
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100034",
+        "https://api.encore.moe/zh-Hans/story/115"
       ]
     },
     {
@@ -1933,6 +2540,10 @@
       "lineCount": 23,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -1947,6 +2558,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -1961,6 +2576,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -1976,6 +2595,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100033",
+        "https://api.encore.moe/zh-Hans/story/103"
       ]
     },
     {
@@ -1990,6 +2614,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100032
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100032"
       ]
     },
     {
@@ -2004,6 +2632,10 @@
       "lineCount": 41,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -2018,6 +2650,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -2033,6 +2669,11 @@
       "encoreStoryIds": [
         115,
         100034
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100034",
+        "https://api.encore.moe/zh-Hans/story/115"
       ]
     },
     {
@@ -2047,6 +2688,10 @@
       "lineCount": 19,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -2061,6 +2706,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100035"
       ]
     },
     {
@@ -2075,6 +2724,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -2089,6 +2742,10 @@
       "lineCount": 13,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -2104,6 +2761,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100033",
+        "https://api.encore.moe/zh-Hans/story/103"
       ]
     },
     {
@@ -2118,6 +2780,10 @@
       "lineCount": 57,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -2133,6 +2799,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -2147,6 +2818,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -2161,6 +2836,10 @@
       "lineCount": 17,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -2175,6 +2854,10 @@
       "lineCount": 100,
       "encoreStoryIds": [
         100018
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100018"
       ]
     },
     {
@@ -2189,6 +2872,10 @@
       "lineCount": 7,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -2203,6 +2890,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100014"
       ]
     },
     {
@@ -2217,6 +2908,10 @@
       "lineCount": 61,
       "encoreStoryIds": [
         100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100016"
       ]
     },
     {
@@ -2231,6 +2926,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -2245,6 +2944,10 @@
       "lineCount": 6,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -2259,6 +2962,10 @@
       "lineCount": 328,
       "encoreStoryIds": [
         100023
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100023"
       ]
     },
     {
@@ -2273,6 +2980,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100022
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100022"
       ]
     },
     {
@@ -2287,6 +2998,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100021"
       ]
     },
     {
@@ -2301,6 +3016,10 @@
       "lineCount": 14,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100011"
       ]
     },
     {
@@ -2315,6 +3034,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100015
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100015"
       ]
     },
     {
@@ -2329,6 +3052,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -2343,6 +3070,10 @@
       "lineCount": 410,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100048"
       ]
     },
     {
@@ -2357,6 +3088,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -2371,6 +3106,10 @@
       "lineCount": 146,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -2385,6 +3124,10 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -2399,6 +3142,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100049"
       ]
     },
     {
@@ -2413,6 +3160,10 @@
       "lineCount": 272,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -2427,6 +3178,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -2441,6 +3196,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -2455,6 +3214,10 @@
       "lineCount": 148,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -2469,6 +3232,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -2483,6 +3250,10 @@
       "lineCount": 41,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -2497,6 +3268,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100005
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100005"
       ]
     },
     {
@@ -2511,6 +3286,10 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100011"
       ]
     },
     {
@@ -2525,6 +3304,26 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "shorekeeper",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 18,
+      "encoreStoryIds": [],
+      "source": "fandom-fallback",
+      "sourceUrls": [
+        "https://wutheringwaves.fandom.com/wiki/Beyond_the_Shore's_End"
       ]
     },
     {
@@ -2539,6 +3338,10 @@
       "lineCount": 6,
       "encoreStoryIds": [
         100030
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100030"
       ]
     },
     {
@@ -2553,6 +3356,10 @@
       "lineCount": 17,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -2567,6 +3374,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100014"
       ]
     },
     {
@@ -2581,6 +3392,10 @@
       "lineCount": 308,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100012"
       ]
     },
     {
@@ -2595,6 +3410,10 @@
       "lineCount": 29,
       "encoreStoryIds": [
         100032
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100032"
       ]
     },
     {
@@ -2609,6 +3428,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100036"
       ]
     },
     {
@@ -2623,6 +3446,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100043"
       ]
     },
     {
@@ -2637,6 +3464,10 @@
       "lineCount": 52,
       "encoreStoryIds": [
         100042
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100042"
       ]
     },
     {
@@ -2651,6 +3482,10 @@
       "lineCount": 409,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100037"
       ]
     },
     {
@@ -2665,6 +3500,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100040"
       ]
     },
     {
@@ -2679,6 +3518,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100035"
       ]
     },
     {
@@ -2693,6 +3536,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -2707,6 +3554,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
       ]
     },
     {
@@ -2721,6 +3572,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100048"
       ]
     },
     {
@@ -2735,6 +3590,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100047
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100047"
       ]
     },
     {
@@ -2749,6 +3608,10 @@
       "lineCount": 50,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -2763,6 +3626,10 @@
       "lineCount": 189,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -2778,6 +3645,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -2793,6 +3665,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -2807,6 +3684,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -2821,6 +3702,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -2835,6 +3720,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -2849,6 +3738,10 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100010
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100010"
       ]
     },
     {
@@ -2863,6 +3756,10 @@
       "lineCount": 46,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100006"
       ]
     },
     {
@@ -2877,6 +3774,10 @@
       "lineCount": 88,
       "encoreStoryIds": [
         100004
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100004"
       ]
     },
     {
@@ -2891,6 +3792,10 @@
       "lineCount": 152,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -2906,6 +3811,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -2920,6 +3830,10 @@
       "lineCount": 112,
       "encoreStoryIds": [
         100005
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100005"
       ]
     },
     {
@@ -2934,6 +3848,10 @@
       "lineCount": 64,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100007"
       ]
     },
     {
@@ -2948,6 +3866,10 @@
       "lineCount": 45,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100048"
       ]
     },
     {
@@ -2962,6 +3884,10 @@
       "lineCount": 42,
       "encoreStoryIds": [
         100047
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100047"
       ]
     },
     {
@@ -2976,6 +3902,10 @@
       "lineCount": 213,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -2990,6 +3920,10 @@
       "lineCount": 33,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100012"
       ]
     },
     {
@@ -3005,6 +3939,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100001",
+        "https://api.encore.moe/zh-Hans/story/100002"
       ]
     },
     {
@@ -3019,6 +3958,10 @@
       "lineCount": 149,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -3033,6 +3976,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100049"
       ]
     },
     {
@@ -3047,6 +3994,10 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100012"
       ]
     },
     {
@@ -3061,6 +4012,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100003"
       ]
     },
     {
@@ -3076,6 +4031,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100008",
+        "https://api.encore.moe/zh-Hans/story/100009"
       ]
     },
     {
@@ -3090,6 +4050,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100029"
       ]
     },
     {
@@ -3104,6 +4068,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100028"
       ]
     },
     {
@@ -3118,6 +4086,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100027"
       ]
     },
     {
@@ -3132,6 +4104,10 @@
       "lineCount": 126,
       "encoreStoryIds": [
         100015
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100015"
       ]
     },
     {
@@ -3146,6 +4122,10 @@
       "lineCount": 121,
       "encoreStoryIds": [
         100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100016"
       ]
     },
     {
@@ -3160,6 +4140,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100017"
       ]
     },
     {
@@ -3174,6 +4158,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100045"
       ]
     },
     {
@@ -3188,6 +4176,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
       ]
     },
     {
@@ -3202,6 +4194,10 @@
       "lineCount": 43,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3217,6 +4213,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -3231,6 +4232,10 @@
       "lineCount": 156,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -3245,6 +4250,10 @@
       "lineCount": 17,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100014"
       ]
     },
     {
@@ -3259,6 +4268,10 @@
       "lineCount": 94,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100012"
       ]
     },
     {
@@ -3273,6 +4286,10 @@
       "lineCount": 90,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -3287,6 +4304,10 @@
       "lineCount": 36,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -3301,6 +4322,10 @@
       "lineCount": 361,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100035"
       ]
     },
     {
@@ -3315,6 +4340,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -3329,6 +4358,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -3343,6 +4376,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -3357,6 +4394,10 @@
       "lineCount": 43,
       "encoreStoryIds": [
         100026
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100026"
       ]
     },
     {
@@ -3371,6 +4412,10 @@
       "lineCount": 306,
       "encoreStoryIds": [
         100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100025"
       ]
     },
     {
@@ -3385,6 +4430,10 @@
       "lineCount": 69,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3399,6 +4448,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100024
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100024"
       ]
     },
     {
@@ -3413,6 +4466,10 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -3427,6 +4484,10 @@
       "lineCount": 78,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -3442,6 +4503,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -3456,6 +4522,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -3470,6 +4540,10 @@
       "lineCount": 10,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -3485,6 +4559,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100001",
+        "https://api.encore.moe/en/story/100002"
       ]
     },
     {
@@ -3499,6 +4578,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -3513,6 +4596,10 @@
       "lineCount": 11,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3527,6 +4614,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100018
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100018"
       ]
     },
     {
@@ -3541,6 +4632,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -3555,6 +4650,10 @@
       "lineCount": 42,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100014"
       ]
     },
     {
@@ -3569,6 +4668,10 @@
       "lineCount": 144,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -3583,6 +4686,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100025"
       ]
     },
     {
@@ -3597,6 +4704,10 @@
       "lineCount": 16,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -3611,6 +4722,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100030
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100030"
       ]
     },
     {
@@ -3625,6 +4740,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3639,6 +4758,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3653,6 +4776,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -3667,6 +4794,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -3681,6 +4812,10 @@
       "lineCount": 56,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3695,6 +4830,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -3709,6 +4848,10 @@
       "lineCount": 20,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -3723,6 +4866,10 @@
       "lineCount": 267,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100019"
       ]
     },
     {
@@ -3737,6 +4884,10 @@
       "lineCount": 7,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -3751,6 +4902,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3765,6 +4920,10 @@
       "lineCount": 13,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -3779,6 +4938,10 @@
       "lineCount": 10,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100019"
       ]
     },
     {
@@ -3793,6 +4956,10 @@
       "lineCount": 213,
       "encoreStoryIds": [
         100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100016"
       ]
     },
     {
@@ -3807,6 +4974,10 @@
       "lineCount": 148,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -3821,6 +4992,10 @@
       "lineCount": 48,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -3835,6 +5010,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100023
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100023"
       ]
     },
     {
@@ -3849,6 +5028,10 @@
       "lineCount": 85,
       "encoreStoryIds": [
         100022
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100022"
       ]
     },
     {
@@ -3863,6 +5046,10 @@
       "lineCount": 39,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -3877,6 +5064,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -3888,9 +5079,13 @@
       "version": "2.2",
       "half": "a",
       "versionHalf": "2.2-a",
-      "lineCount": 320,
+      "lineCount": 353,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100019"
       ]
     },
     {
@@ -3905,6 +5100,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -3919,6 +5118,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -3933,6 +5136,10 @@
       "lineCount": 230,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100011"
       ]
     },
     {
@@ -3947,6 +5154,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100031
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100031"
       ]
     },
     {
@@ -3961,6 +5172,10 @@
       "lineCount": 22,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -3975,6 +5190,10 @@
       "lineCount": 251,
       "encoreStoryIds": [
         100030
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100030"
       ]
     },
     {
@@ -3989,6 +5208,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -4003,6 +5226,10 @@
       "lineCount": 7,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -4018,6 +5245,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100033",
+        "https://api.encore.moe/en/story/103"
       ]
     },
     {
@@ -4032,6 +5264,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100032
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100032"
       ]
     },
     {
@@ -4046,6 +5282,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100010
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100010"
       ]
     },
     {
@@ -4060,6 +5300,10 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -4074,6 +5318,10 @@
       "lineCount": 16,
       "encoreStoryIds": [
         100004
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100004"
       ]
     },
     {
@@ -4088,6 +5336,10 @@
       "lineCount": 82,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -4103,6 +5355,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -4117,6 +5374,10 @@
       "lineCount": 58,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -4131,6 +5392,10 @@
       "lineCount": 19,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -4145,6 +5410,10 @@
       "lineCount": 6,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100012"
       ]
     },
     {
@@ -4160,6 +5429,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100001",
+        "https://api.encore.moe/en/story/100002"
       ]
     },
     {
@@ -4174,6 +5448,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -4188,6 +5466,10 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -4202,6 +5484,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -4216,6 +5502,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -4230,6 +5520,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100019
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100019"
       ]
     },
     {
@@ -4244,6 +5538,10 @@
       "lineCount": 238,
       "encoreStoryIds": [
         100042
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100042"
       ]
     },
     {
@@ -4258,6 +5556,10 @@
       "lineCount": 51,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -4272,6 +5574,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100038
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100038"
       ]
     },
     {
@@ -4286,6 +5592,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -4300,6 +5610,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -4315,6 +5629,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -4329,6 +5648,10 @@
       "lineCount": 29,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -4340,9 +5663,13 @@
       "version": "2.7",
       "half": "a",
       "versionHalf": "2.7-a",
-      "lineCount": 284,
+      "lineCount": 320,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -4357,6 +5684,10 @@
       "lineCount": 93,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -4371,6 +5702,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100042
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100042"
       ]
     },
     {
@@ -4385,6 +5720,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100038
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100038"
       ]
     },
     {
@@ -4399,6 +5738,26 @@
       "lineCount": 75,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hiyuki",
+      "questId": "the-flaming-red-from-tomorrow",
+      "wikiTitle": "The Flaming Red from Tomorrow",
+      "nameZh": "明日摇曳的绯影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 8,
+      "encoreStoryIds": [],
+      "source": "fandom-fallback",
+      "sourceUrls": [
+        "https://wutheringwaves.fandom.com/wiki/The_Flaming_Red_from_Tomorrow"
       ]
     },
     {
@@ -4413,6 +5772,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -4427,6 +5790,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -4442,6 +5809,11 @@
       "encoreStoryIds": [
         100039,
         100041
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100039",
+        "https://api.encore.moe/en/story/100041"
       ]
     },
     {
@@ -4456,6 +5828,10 @@
       "lineCount": 215,
       "encoreStoryIds": [
         100026
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100026"
       ]
     },
     {
@@ -4470,6 +5846,10 @@
       "lineCount": 143,
       "encoreStoryIds": [
         100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100025"
       ]
     },
     {
@@ -4484,6 +5864,10 @@
       "lineCount": 63,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -4498,6 +5882,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100024
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100024"
       ]
     },
     {
@@ -4512,6 +5900,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -4526,6 +5918,10 @@
       "lineCount": 103,
       "encoreStoryIds": [
         100004
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100004"
       ]
     },
     {
@@ -4540,6 +5936,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -4555,6 +5955,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -4566,9 +5971,13 @@
       "version": "3.6",
       "half": "a",
       "versionHalf": "3.6-a",
-      "lineCount": 64,
+      "lineCount": 77,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100048"
       ]
     },
     {
@@ -4583,6 +5992,28 @@
       "lineCount": 34,
       "encoreStoryIds": [
         100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100049"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jingran",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 22,
+      "encoreStoryIds": [
+        100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -4597,6 +6028,10 @@
       "lineCount": 132,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -4608,10 +6043,15 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 25,
+      "lineCount": 26,
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -4626,6 +6066,10 @@
       "lineCount": 149,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100011"
       ]
     },
     {
@@ -4640,6 +6084,10 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -4655,6 +6103,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100001",
+        "https://api.encore.moe/en/story/100002"
       ]
     },
     {
@@ -4669,6 +6122,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -4683,6 +6140,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -4698,6 +6159,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -4712,6 +6178,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -4727,6 +6197,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -4741,6 +6216,10 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100036"
       ]
     },
     {
@@ -4755,6 +6234,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -4769,6 +6252,10 @@
       "lineCount": 128,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -4783,6 +6270,10 @@
       "lineCount": 233,
       "encoreStoryIds": [
         100038
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100038"
       ]
     },
     {
@@ -4797,6 +6288,26 @@
       "lineCount": 38,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "the-flaming-red-from-tomorrow",
+      "wikiTitle": "The Flaming Red from Tomorrow",
+      "nameZh": "明日摇曳的绯影",
+      "version": "3.2",
+      "half": "b",
+      "versionHalf": "3.2-b",
+      "lineCount": 19,
+      "encoreStoryIds": [],
+      "source": "fandom-fallback",
+      "sourceUrls": [
+        "https://wutheringwaves.fandom.com/wiki/The_Flaming_Red_from_Tomorrow"
       ]
     },
     {
@@ -4811,6 +6322,10 @@
       "lineCount": 36,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100035"
       ]
     },
     {
@@ -4825,6 +6340,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -4839,6 +6358,10 @@
       "lineCount": 321,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -4854,6 +6377,11 @@
       "encoreStoryIds": [
         100039,
         100041
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100039",
+        "https://api.encore.moe/en/story/100041"
       ]
     },
     {
@@ -4868,6 +6396,10 @@
       "lineCount": 274,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -4882,6 +6414,10 @@
       "lineCount": 14,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -4896,6 +6432,10 @@
       "lineCount": 193,
       "encoreStoryIds": [
         100022
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100022"
       ]
     },
     {
@@ -4910,6 +6450,10 @@
       "lineCount": 258,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -4924,6 +6468,10 @@
       "lineCount": 177,
       "encoreStoryIds": [
         100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100036"
       ]
     },
     {
@@ -4938,6 +6486,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -4952,6 +6504,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -4967,6 +6523,11 @@
       "encoreStoryIds": [
         115,
         100034
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100034",
+        "https://api.encore.moe/en/story/115"
       ]
     },
     {
@@ -4981,6 +6542,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -4995,6 +6560,10 @@
       "lineCount": 63,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100035"
       ]
     },
     {
@@ -5009,6 +6578,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -5024,6 +6597,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100033",
+        "https://api.encore.moe/en/story/103"
       ]
     },
     {
@@ -5038,6 +6616,10 @@
       "lineCount": 58,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -5052,6 +6634,10 @@
       "lineCount": 52,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -5067,6 +6653,11 @@
       "encoreStoryIds": [
         115,
         100034
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100034",
+        "https://api.encore.moe/en/story/115"
       ]
     },
     {
@@ -5081,6 +6672,10 @@
       "lineCount": 23,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -5095,6 +6690,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -5109,6 +6708,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -5124,6 +6727,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100033",
+        "https://api.encore.moe/en/story/103"
       ]
     },
     {
@@ -5138,6 +6746,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100032
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100032"
       ]
     },
     {
@@ -5152,6 +6764,10 @@
       "lineCount": 41,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -5166,6 +6782,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -5181,6 +6801,11 @@
       "encoreStoryIds": [
         115,
         100034
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100034",
+        "https://api.encore.moe/en/story/115"
       ]
     },
     {
@@ -5195,6 +6820,10 @@
       "lineCount": 19,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -5209,6 +6838,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100035"
       ]
     },
     {
@@ -5223,6 +6856,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -5237,6 +6874,10 @@
       "lineCount": 13,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -5252,6 +6893,11 @@
       "encoreStoryIds": [
         103,
         100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100033",
+        "https://api.encore.moe/en/story/103"
       ]
     },
     {
@@ -5266,6 +6912,10 @@
       "lineCount": 57,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -5281,6 +6931,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -5295,6 +6950,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -5309,6 +6968,10 @@
       "lineCount": 17,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -5323,6 +6986,10 @@
       "lineCount": 100,
       "encoreStoryIds": [
         100018
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100018"
       ]
     },
     {
@@ -5337,6 +7004,10 @@
       "lineCount": 7,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -5351,6 +7022,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100014"
       ]
     },
     {
@@ -5365,6 +7040,10 @@
       "lineCount": 61,
       "encoreStoryIds": [
         100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100016"
       ]
     },
     {
@@ -5379,6 +7058,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -5393,6 +7076,10 @@
       "lineCount": 6,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -5407,6 +7094,10 @@
       "lineCount": 328,
       "encoreStoryIds": [
         100023
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100023"
       ]
     },
     {
@@ -5421,6 +7112,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100022
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100022"
       ]
     },
     {
@@ -5435,6 +7130,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100021
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100021"
       ]
     },
     {
@@ -5449,6 +7148,10 @@
       "lineCount": 14,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100011"
       ]
     },
     {
@@ -5463,6 +7166,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100015
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100015"
       ]
     },
     {
@@ -5477,6 +7184,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -5491,6 +7202,10 @@
       "lineCount": 410,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100048"
       ]
     },
     {
@@ -5505,6 +7220,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -5519,6 +7238,10 @@
       "lineCount": 146,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -5533,6 +7256,10 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -5547,6 +7274,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100049"
       ]
     },
     {
@@ -5561,6 +7292,10 @@
       "lineCount": 272,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -5575,6 +7310,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -5589,6 +7328,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -5603,6 +7346,10 @@
       "lineCount": 148,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -5617,6 +7364,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -5631,6 +7382,10 @@
       "lineCount": 41,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -5645,6 +7400,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100005
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100005"
       ]
     },
     {
@@ -5659,6 +7418,10 @@
       "lineCount": 21,
       "encoreStoryIds": [
         100011
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100011"
       ]
     },
     {
@@ -5673,6 +7436,26 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
+      "questId": "beyond-the-shores-end",
+      "wikiTitle": "Beyond the Shore's End",
+      "nameZh": "海岸尽头……之后?",
+      "version": "1.4",
+      "half": "a",
+      "versionHalf": "1.4-a",
+      "lineCount": 18,
+      "encoreStoryIds": [],
+      "source": "fandom-fallback",
+      "sourceUrls": [
+        "https://wutheringwaves.fandom.com/wiki/Beyond_the_Shore's_End"
       ]
     },
     {
@@ -5687,6 +7470,10 @@
       "lineCount": 6,
       "encoreStoryIds": [
         100030
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100030"
       ]
     },
     {
@@ -5701,6 +7488,10 @@
       "lineCount": 17,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -5715,6 +7506,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100014
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100014"
       ]
     },
     {
@@ -5729,6 +7524,10 @@
       "lineCount": 308,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100012"
       ]
     },
     {
@@ -5743,6 +7542,10 @@
       "lineCount": 29,
       "encoreStoryIds": [
         100032
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100032"
       ]
     },
     {
@@ -5757,6 +7560,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100036"
       ]
     },
     {
@@ -5771,6 +7578,10 @@
       "lineCount": 30,
       "encoreStoryIds": [
         100043
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100043"
       ]
     },
     {
@@ -5785,6 +7596,10 @@
       "lineCount": 52,
       "encoreStoryIds": [
         100042
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100042"
       ]
     },
     {
@@ -5799,6 +7614,10 @@
       "lineCount": 409,
       "encoreStoryIds": [
         100037
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100037"
       ]
     },
     {
@@ -5813,6 +7632,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100040
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100040"
       ]
     },
     {
@@ -5827,6 +7650,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100035
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100035"
       ]
     },
     {
@@ -5841,6 +7668,10 @@
       "lineCount": 3,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -5855,6 +7686,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100044"
       ]
     },
     {
@@ -5869,6 +7704,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100048"
       ]
     },
     {
@@ -5883,6 +7722,10 @@
       "lineCount": 18,
       "encoreStoryIds": [
         100047
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100047"
       ]
     },
     {
@@ -5897,6 +7740,10 @@
       "lineCount": 50,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -5911,6 +7758,10 @@
       "lineCount": 189,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -5926,6 +7777,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -5941,6 +7797,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -5955,6 +7816,10 @@
       "lineCount": 37,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -5969,6 +7834,10 @@
       "lineCount": 12,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -5983,6 +7852,10 @@
       "lineCount": 4,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -5997,6 +7870,10 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100010
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100010"
       ]
     },
     {
@@ -6011,6 +7888,10 @@
       "lineCount": 46,
       "encoreStoryIds": [
         100006
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100006"
       ]
     },
     {
@@ -6025,6 +7906,10 @@
       "lineCount": 88,
       "encoreStoryIds": [
         100004
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100004"
       ]
     },
     {
@@ -6039,6 +7924,10 @@
       "lineCount": 152,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -6054,6 +7943,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -6068,6 +7962,10 @@
       "lineCount": 112,
       "encoreStoryIds": [
         100005
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100005"
       ]
     },
     {
@@ -6082,6 +7980,10 @@
       "lineCount": 64,
       "encoreStoryIds": [
         100007
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100007"
       ]
     },
     {
@@ -6096,6 +7998,10 @@
       "lineCount": 45,
       "encoreStoryIds": [
         100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100048"
       ]
     },
     {
@@ -6110,6 +8016,10 @@
       "lineCount": 42,
       "encoreStoryIds": [
         100047
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100047"
       ]
     },
     {
@@ -6124,6 +8034,10 @@
       "lineCount": 213,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -6138,6 +8052,10 @@
       "lineCount": 33,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100012"
       ]
     },
     {
@@ -6153,6 +8071,11 @@
       "encoreStoryIds": [
         100001,
         100002
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100001",
+        "https://api.encore.moe/en/story/100002"
       ]
     },
     {
@@ -6167,6 +8090,10 @@
       "lineCount": 149,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     },
     {
@@ -6181,6 +8108,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100049"
       ]
     },
     {
@@ -6195,6 +8126,10 @@
       "lineCount": 26,
       "encoreStoryIds": [
         100012
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100012"
       ]
     },
     {
@@ -6209,6 +8144,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100003
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100003"
       ]
     },
     {
@@ -6224,6 +8163,11 @@
       "encoreStoryIds": [
         100008,
         100009
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100008",
+        "https://api.encore.moe/en/story/100009"
       ]
     },
     {
@@ -6238,6 +8182,10 @@
       "lineCount": 2,
       "encoreStoryIds": [
         100029
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100029"
       ]
     },
     {
@@ -6252,6 +8200,10 @@
       "lineCount": 5,
       "encoreStoryIds": [
         100028
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100028"
       ]
     },
     {
@@ -6266,6 +8218,10 @@
       "lineCount": 15,
       "encoreStoryIds": [
         100027
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100027"
       ]
     },
     {
@@ -6280,6 +8236,10 @@
       "lineCount": 126,
       "encoreStoryIds": [
         100015
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100015"
       ]
     },
     {
@@ -6294,6 +8254,10 @@
       "lineCount": 121,
       "encoreStoryIds": [
         100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100016"
       ]
     },
     {
@@ -6308,6 +8272,10 @@
       "lineCount": 9,
       "encoreStoryIds": [
         100017
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100017"
       ]
     },
     {
@@ -6322,6 +8290,10 @@
       "lineCount": 8,
       "encoreStoryIds": [
         100045
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100045"
       ]
     },
     {
@@ -6336,6 +8308,10 @@
       "lineCount": 1,
       "encoreStoryIds": [
         100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100046"
       ]
     }
   ]

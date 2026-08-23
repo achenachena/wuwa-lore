@@ -3,6 +3,24 @@ import type { EncoreRole } from "@/lib/encore/types";
 
 const SKIPPED_SPEAKERS = new Set(["{PlayerName}", "漂泊者", "Rover"]);
 
+/**
+ * Plot identities used before a playable character's canonical name is revealed.
+ * Keep these explicit: fuzzy matching cannot safely distinguish named disguises
+ * from NPCs. Sources are documented in scripts/audit-dialogue-attribution.ts.
+ */
+const SPEAKER_ALIASES: Record<string, string> = {
+  '"Cat of the Nether Lamp"': "jingran",
+  "Cat of the Nether Lamp": "jingran",
+  "「鬼猫挈灯」": "jingran",
+  Fleurdelys: "cartethyia",
+  芙露德莉斯: "cartethyia",
+  Kharon: "galbrena",
+  卡戎: "galbrena",
+  "The Shorekeeper": "shorekeeper",
+};
+
+const MULTI_SPEAKER_SEPARATOR = /\s*(?:&|＆)\s*/;
+
 export function normalizeSpeakerKey(speaker: string): string {
   return speaker
     .replace(/[·•]/g, "")
@@ -50,6 +68,7 @@ export function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
 
 export type SpeakerResolver = {
   resolveSpeaker: (speaker: string) => string | null;
+  resolveSpeakers: (speaker: string) => string[];
   localeNamesByCharacter: Map<string, string>;
 };
 
@@ -79,6 +98,13 @@ export function buildSpeakerResolver(params: {
     speakerToCharacter.set(normalizeSpeakerKey(role.Name), characterId);
   }
 
+  for (const [speaker, characterId] of Object.entries(SPEAKER_ALIASES)) {
+    if (params.knownCharacterIds.has(characterId)) {
+      speakerToCharacter.set(speaker, characterId);
+      speakerToCharacter.set(normalizeSpeakerKey(speaker), characterId);
+    }
+  }
+
   function resolveSpeaker(speaker: string): string | null {
     if (speakerToCharacter.has(speaker)) {
       return speakerToCharacter.get(speaker) ?? null;
@@ -100,5 +126,33 @@ export function buildSpeakerResolver(params: {
     return null;
   }
 
-  return { resolveSpeaker, localeNamesByCharacter };
+  function resolveSpeakers(speaker: string): string[] {
+    const direct = resolveSpeaker(speaker);
+    const parts = speaker.split(MULTI_SPEAKER_SEPARATOR).filter(Boolean);
+    if (parts.length < 2) {
+      return direct ? [direct] : [];
+    }
+    const resolved = parts
+      .map(resolveSpeaker)
+      .filter((id): id is string => Boolean(id));
+    if (resolved.length > 0) {
+      return [...new Set(resolved)];
+    }
+    return direct ? [direct] : [];
+  }
+
+  return { resolveSpeaker, resolveSpeakers, localeNamesByCharacter };
+}
+
+export function storyLineCountAdjustments(params: {
+  locale: "en" | "zh-Hans";
+  storyId: number;
+}): Map<string, number> {
+  // In Xuanling Sings, Storm Quelled (Encore 100046), Jingran speaks seven
+  // anonymous lines immediately before being named "Cat of the Nether Lamp".
+  // Fandom quest dialogue and The Nethermancer's Requiem establish that alias.
+  if (params.storyId === 100046) {
+    return new Map([["jingran", 7]]);
+  }
+  return new Map();
 }
