@@ -1,17 +1,19 @@
 {
   "id": "qiuyuan",
   "name": "Qiuyuan",
-  "aliases": [],
+  "aliases": [
+    "仇远"
+  ],
   "element": "Aero",
   "weapon": "Sword",
   "faction": "Mingting",
   "rarity": 5,
   "releaseVersion": "2.7",
-  "profile": "* is a Chinese surname.",
+  "profile": "Former senior agent of Mingting's Internal Security Agency, he is a swordsman of cool resilience and absolute integrity, wandering Huanglong alone and seeks not fame nor high office, but mastery of swordsmanship and a life guided by high morals. He was framed by the Grand Architect for the murder of his master, and is now a fugitive throughout all of Huanglong.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

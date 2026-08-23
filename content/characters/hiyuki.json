@@ -7,11 +7,11 @@
   "faction": "Miko of Flaming Sakura",
   "rarity": 5,
   "releaseVersion": "3.3",
-  "profile": "Profile text unavailable from source.",
+  "profile": "She is a and member of the Special Response Force with a long-standing connection to the Threnodians. Her stoic, aloof demeanor and formidable combat experience conceal guilt and regret for failing to protect her homeland that continues to weigh heavily in her heart. Having served as a miko for over a century, Hiyuki derives her most anomalous capabilities from \"Suzu\", one of the five Legacy Talismans left behind by the Sentinels, which grants the bearer the ability to perceive and utilize \"certain possibilities\" of oneself.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hiyuki",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

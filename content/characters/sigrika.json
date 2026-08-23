@@ -7,11 +7,11 @@
   "faction": "Roya Tribe",
   "rarity": 5,
   "releaseVersion": "3.2",
-  "profile": "* is the name the Iceland epic poem Sigrdrífumál associates with the valkyrie Brynhildr.",
+  "profile": "She is a student in the Preparatory Program at Startorch Academy and a member of its Birding Fan Club as well as a from the Roya Tribe. Although she shoulders the heavy responsibility of being a Heliodic Six Successor, she is an overwhelmingly kind and gentle woman dedicated to helping her classmates through their struggles.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sigrika",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

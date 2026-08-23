@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T23:50:01.054Z",
+  "generatedAt": "2026-08-23T00:19:38.017Z",
   "source": {
     "name": "encore.moe",
     "baseUrl": "https://api.encore.moe",
@@ -10,8 +10,8 @@
     "countMethod": "main_story_dialogue_speaker_lines"
   },
   "questCountByLocale": {
-    "en": 43,
-    "zh-Hans": 43
+    "en": 45,
+    "zh-Hans": 45
   },
   "rows": [
     {
@@ -1397,6 +1397,48 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "jianxin",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 25,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jingran",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 64,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "jingran",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 34,
+      "encoreStoryIds": [
+        100049
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "jinhsi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -2291,6 +2333,34 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "qingxiao",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 410,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "qingxiao",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100046
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "qiuyuan",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -2315,6 +2385,20 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100028
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "qiuyuan",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100049
       ]
     },
     {
@@ -2628,6 +2712,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "suisui",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "suisui",
       "questId": "the-chant-of-unseen-ties",
       "wikiTitle": "The Chant of Unseen Ties",
       "nameZh": "灵籁之契冥相因",
@@ -2841,6 +2939,20 @@
     {
       "locale": "zh-Hans",
       "characterId": "yangyang",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 45,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yangyang",
       "questId": "the-chant-of-unseen-ties",
       "wikiTitle": "The Chant of Unseen Ties",
       "nameZh": "灵籁之契冥相因",
@@ -2907,6 +3019,20 @@
       "lineCount": 149,
       "encoreStoryIds": [
         100046
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yinlin",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100049
       ]
     },
     {
@@ -4433,6 +4559,34 @@
     },
     {
       "locale": "en",
+      "characterId": "jingran",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 64,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "jingran",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 34,
+      "encoreStoryIds": [
+        100049
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "jinhsi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -5327,6 +5481,34 @@
     },
     {
       "locale": "en",
+      "characterId": "qingxiao",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 410,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "qingxiao",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100046
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "qiuyuan",
       "questId": "a-stranger-in-a-strange-land",
       "wikiTitle": "A Stranger in a Strange Land",
@@ -5351,6 +5533,20 @@
       "lineCount": 31,
       "encoreStoryIds": [
         100028
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "qiuyuan",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100049
       ]
     },
     {
@@ -5664,6 +5860,20 @@
     {
       "locale": "en",
       "characterId": "suisui",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 37,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "suisui",
       "questId": "the-chant-of-unseen-ties",
       "wikiTitle": "The Chant of Unseen Ties",
       "nameZh": "灵籁之契冥相因",
@@ -5877,6 +6087,20 @@
     {
       "locale": "en",
       "characterId": "yangyang",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 45,
+      "encoreStoryIds": [
+        100048
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
       "questId": "the-chant-of-unseen-ties",
       "wikiTitle": "The Chant of Unseen Ties",
       "nameZh": "灵籁之契冥相因",
@@ -5943,6 +6167,20 @@
       "lineCount": 149,
       "encoreStoryIds": [
         100046
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yinlin",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 8,
+      "encoreStoryIds": [
+        100049
       ]
     },
     {

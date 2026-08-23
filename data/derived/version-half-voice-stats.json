@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-11T23:54:12.037Z",
+  "generatedAt": "2026-08-23T00:15:41.982Z",
   "localeDefault": "zh-CN",
-  "halfCount": 40,
+  "halfCount": 42,
   "rows": [
     {
       "characterId": "aalto",
@@ -29,11 +29,27 @@
     },
     {
       "characterId": "aalto",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 30
+    },
+    {
+      "characterId": "aalto",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "aalto",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 63
+      "lineCount": 64
     },
     {
       "characterId": "aemeath",
@@ -41,6 +57,30 @@
       "versionHalf": "3.1-b",
       "version": "3.1",
       "half": "b",
+      "lineCount": 116
+    },
+    {
+      "characterId": "aemeath",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 116
+    },
+    {
+      "characterId": "aemeath",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 116
+    },
+    {
+      "characterId": "aemeath",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 116
     },
     {
@@ -57,7 +97,39 @@
       "versionHalf": "2.8-b",
       "version": "2.8",
       "half": "b",
-      "lineCount": 38
+      "lineCount": 33
+    },
+    {
+      "characterId": "augusta",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 5
+    },
+    {
+      "characterId": "augusta",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "augusta",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "augusta",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
     },
     {
       "characterId": "baizhi",
@@ -85,11 +157,27 @@
     },
     {
       "characterId": "baizhi",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "baizhi",
       "locale": "ko-KR",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
       "lineCount": 58
+    },
+    {
+      "characterId": "baizhi",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
     },
     {
       "characterId": "baizhi",
@@ -100,12 +188,76 @@
       "lineCount": 58
     },
     {
+      "characterId": "baizhi",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
       "characterId": "brant",
       "locale": "en-US",
       "versionHalf": "2.1-b",
       "version": "2.1",
       "half": "b",
       "lineCount": 62
+    },
+    {
+      "characterId": "brant",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 62
+    },
+    {
+      "characterId": "brant",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 62
+    },
+    {
+      "characterId": "brant",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 62
+    },
+    {
+      "characterId": "buling",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 74
+    },
+    {
+      "characterId": "buling",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 74
+    },
+    {
+      "characterId": "buling",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 74
+    },
+    {
+      "characterId": "buling",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 74
     },
     {
       "characterId": "calcharo",
@@ -125,6 +277,22 @@
     },
     {
       "characterId": "calcharo",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 69
+    },
+    {
+      "characterId": "calcharo",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 69
+    },
+    {
+      "characterId": "calcharo",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",
@@ -132,11 +300,43 @@
       "lineCount": 68
     },
     {
+      "characterId": "calcharo",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
       "characterId": "camellya",
       "locale": "en-US",
       "versionHalf": "1.3-b",
       "version": "1.3",
       "half": "b",
+      "lineCount": 62
+    },
+    {
+      "characterId": "camellya",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 62
+    },
+    {
+      "characterId": "camellya",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 62
+    },
+    {
+      "characterId": "camellya",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 62
     },
     {
@@ -156,12 +356,60 @@
       "lineCount": 34
     },
     {
+      "characterId": "cantarella",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 65
+    },
+    {
+      "characterId": "cantarella",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 65
+    },
+    {
+      "characterId": "cantarella",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 65
+    },
+    {
       "characterId": "carlotta",
       "locale": "en-US",
       "versionHalf": "2.0-a",
       "version": "2.0",
       "half": "a",
-      "lineCount": 73
+      "lineCount": 70
+    },
+    {
+      "characterId": "carlotta",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 70
+    },
+    {
+      "characterId": "carlotta",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 70
+    },
+    {
+      "characterId": "carlotta",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 70
     },
     {
       "characterId": "cartethyia",
@@ -180,11 +428,75 @@
       "lineCount": 1
     },
     {
+      "characterId": "cartethyia",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "cartethyia",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 99
+    },
+    {
+      "characterId": "cartethyia",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 99
+    },
+    {
+      "characterId": "cartethyia",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 99
+    },
+    {
       "characterId": "changli",
       "locale": "en-US",
       "versionHalf": "1.1-b",
       "version": "1.1",
       "half": "b",
+      "lineCount": 62
+    },
+    {
+      "characterId": "changli",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "changli",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 65
+    },
+    {
+      "characterId": "changli",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 65
+    },
+    {
+      "characterId": "changli",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 65
     },
     {
@@ -204,6 +516,38 @@
       "lineCount": 14
     },
     {
+      "characterId": "chisa",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 38
+    },
+    {
+      "characterId": "chisa",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "chisa",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "chisa",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
       "characterId": "chixia",
       "locale": "en-US",
       "versionHalf": "1.0-b",
@@ -221,11 +565,27 @@
     },
     {
       "characterId": "chixia",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "chixia",
       "locale": "ko-KR",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
       "lineCount": 70
+    },
+    {
+      "characterId": "chixia",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
     },
     {
       "characterId": "chixia",
@@ -236,11 +596,43 @@
       "lineCount": 70
     },
     {
+      "characterId": "chixia",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
       "characterId": "ciaccona",
       "locale": "en-US",
       "versionHalf": "2.4-b",
       "version": "2.4",
       "half": "b",
+      "lineCount": 57
+    },
+    {
+      "characterId": "ciaccona",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
+    },
+    {
+      "characterId": "ciaccona",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
+    },
+    {
+      "characterId": "ciaccona",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 57
     },
     {
@@ -269,11 +661,27 @@
     },
     {
       "characterId": "danjin",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "danjin",
       "locale": "ko-KR",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
       "lineCount": 60
+    },
+    {
+      "characterId": "danjin",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
     },
     {
       "characterId": "danjin",
@@ -284,11 +692,51 @@
       "lineCount": 60
     },
     {
+      "characterId": "danjin",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
       "characterId": "denia",
       "locale": "en-US",
       "versionHalf": "3.3-b",
       "version": "3.3",
       "half": "b",
+      "lineCount": 92
+    },
+    {
+      "characterId": "denia",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "denia",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 93
+    },
+    {
+      "characterId": "denia",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 93
+    },
+    {
+      "characterId": "denia",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 93
     },
     {
@@ -301,11 +749,35 @@
     },
     {
       "characterId": "encore",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "encore",
       "locale": "ja-JP",
       "versionHalf": "1.1-a",
       "version": "1.1",
       "half": "a",
-      "lineCount": 51
+      "lineCount": 58
+    },
+    {
+      "characterId": "encore",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 8
+    },
+    {
+      "characterId": "encore",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 66
     },
     {
       "characterId": "encore",
@@ -313,7 +785,7 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 65
+      "lineCount": 66
     },
     {
       "characterId": "galbrena",
@@ -324,12 +796,44 @@
       "lineCount": 12
     },
     {
+      "characterId": "galbrena",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 58
+    },
+    {
+      "characterId": "galbrena",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 70
+    },
+    {
+      "characterId": "galbrena",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 70
+    },
+    {
+      "characterId": "galbrena",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 70
+    },
+    {
       "characterId": "hiyuki",
       "locale": "en-US",
       "versionHalf": "3.3-a",
       "version": "3.3",
       "half": "a",
-      "lineCount": 54
+      "lineCount": 51
     },
     {
       "characterId": "hiyuki",
@@ -337,7 +841,39 @@
       "versionHalf": "3.3-b",
       "version": "3.3",
       "half": "b",
-      "lineCount": 11
+      "lineCount": 8
+    },
+    {
+      "characterId": "hiyuki",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 20
+    },
+    {
+      "characterId": "hiyuki",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 79
+    },
+    {
+      "characterId": "hiyuki",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 79
+    },
+    {
+      "characterId": "hiyuki",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 79
     },
     {
       "characterId": "iuno",
@@ -345,7 +881,39 @@
       "versionHalf": "2.6-b",
       "version": "2.6",
       "half": "b",
-      "lineCount": 79
+      "lineCount": 74
+    },
+    {
+      "characterId": "iuno",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 6
+    },
+    {
+      "characterId": "iuno",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 80
+    },
+    {
+      "characterId": "iuno",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 80
+    },
+    {
+      "characterId": "iuno",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 80
     },
     {
       "characterId": "jianxin",
@@ -373,11 +941,27 @@
     },
     {
       "characterId": "jianxin",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jianxin",
       "locale": "ko-KR",
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
       "lineCount": 56
+    },
+    {
+      "characterId": "jianxin",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
     },
     {
       "characterId": "jianxin",
@@ -409,7 +993,7 @@
       "versionHalf": "2.6-b",
       "version": "2.6",
       "half": "b",
-      "lineCount": 1
+      "lineCount": 2
     },
     {
       "characterId": "jinhsi",
@@ -421,6 +1005,14 @@
     },
     {
       "characterId": "jinhsi",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 2
+    },
+    {
+      "characterId": "jinhsi",
       "locale": "ko-KR",
       "versionHalf": "1.1-a",
       "version": "1.1",
@@ -429,11 +1021,27 @@
     },
     {
       "characterId": "jinhsi",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 2
+    },
+    {
+      "characterId": "jinhsi",
       "locale": "zh-CN",
       "versionHalf": "1.1-a",
       "version": "1.1",
       "half": "a",
       "lineCount": 73
+    },
+    {
+      "characterId": "jinhsi",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 2
     },
     {
       "characterId": "jiyan",
@@ -461,6 +1069,14 @@
     },
     {
       "characterId": "jiyan",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jiyan",
       "locale": "ko-KR",
       "versionHalf": "1.0-a",
       "version": "1.0",
@@ -469,11 +1085,27 @@
     },
     {
       "characterId": "jiyan",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "jiyan",
       "locale": "zh-CN",
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
       "lineCount": 61
+    },
+    {
+      "characterId": "jiyan",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
     },
     {
       "characterId": "lingyang",
@@ -493,6 +1125,14 @@
     },
     {
       "characterId": "lingyang",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "lingyang",
       "locale": "ko-KR",
       "versionHalf": "1.0-b",
       "version": "1.0",
@@ -501,11 +1141,91 @@
     },
     {
       "characterId": "lingyang",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "lingyang",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
       "lineCount": 79
+    },
+    {
+      "characterId": "lingyang",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "lucilla",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 68
+    },
+    {
+      "characterId": "lucy",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 96
+    },
+    {
+      "characterId": "lucy",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 96
+    },
+    {
+      "characterId": "lucy",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 96
+    },
+    {
+      "characterId": "lucy",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 96
     },
     {
       "characterId": "lumi",
@@ -524,12 +1244,36 @@
       "lineCount": 19
     },
     {
+      "characterId": "lumi",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 50
+    },
+    {
+      "characterId": "lumi",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 50
+    },
+    {
+      "characterId": "lumi",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 50
+    },
+    {
       "characterId": "lupa",
       "locale": "en-US",
       "versionHalf": "2.4-b",
       "version": "2.4",
       "half": "b",
-      "lineCount": 70
+      "lineCount": 69
     },
     {
       "characterId": "lupa",
@@ -548,12 +1292,68 @@
       "lineCount": 1
     },
     {
+      "characterId": "lupa",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 71
+    },
+    {
+      "characterId": "lupa",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 71
+    },
+    {
+      "characterId": "lupa",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 71
+    },
+    {
       "characterId": "luuk-herssen",
       "locale": "en-US",
       "versionHalf": "3.2-b",
       "version": "3.2",
       "half": "b",
-      "lineCount": 53
+      "lineCount": 49
+    },
+    {
+      "characterId": "luuk-herssen",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 28
+    },
+    {
+      "characterId": "luuk-herssen",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 77
+    },
+    {
+      "characterId": "luuk-herssen",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 77
+    },
+    {
+      "characterId": "luuk-herssen",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 77
     },
     {
       "characterId": "lynae",
@@ -564,12 +1364,76 @@
       "lineCount": 61
     },
     {
+      "characterId": "lynae",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "lynae",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "lynae",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
+      "characterId": "lynae",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 64
+    },
+    {
       "characterId": "mornye",
       "locale": "en-US",
       "versionHalf": "3.0-b",
       "version": "3.0",
       "half": "b",
-      "lineCount": 53
+      "lineCount": 51
+    },
+    {
+      "characterId": "mornye",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 21
+    },
+    {
+      "characterId": "mornye",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 72
+    },
+    {
+      "characterId": "mornye",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 72
+    },
+    {
+      "characterId": "mornye",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 72
     },
     {
       "characterId": "mortefi",
@@ -577,6 +1441,22 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
+      "lineCount": 61
+    },
+    {
+      "characterId": "mortefi",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "mortefi",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 61
     },
     {
@@ -593,13 +1473,69 @@
       "versionHalf": "2.1-a",
       "version": "2.1",
       "half": "a",
-      "lineCount": 59
+      "lineCount": 58
+    },
+    {
+      "characterId": "phoebe",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 2
+    },
+    {
+      "characterId": "phoebe",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
+    },
+    {
+      "characterId": "phoebe",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
+    },
+    {
+      "characterId": "phoebe",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
     },
     {
       "characterId": "phrolova",
       "locale": "en-US",
       "versionHalf": "2.5-a",
       "version": "2.5",
+      "half": "a",
+      "lineCount": 67
+    },
+    {
+      "characterId": "phrolova",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 67
+    },
+    {
+      "characterId": "phrolova",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 67
+    },
+    {
+      "characterId": "phrolova",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
       "half": "a",
       "lineCount": 67
     },
@@ -612,6 +1548,70 @@
       "lineCount": 71
     },
     {
+      "characterId": "qiuyuan",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 2
+    },
+    {
+      "characterId": "qiuyuan",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "qiuyuan",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "qiuyuan",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 69
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 69
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 69
+    },
+    {
+      "characterId": "rebecca",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 69
+    },
+    {
       "characterId": "roccia",
       "locale": "en-US",
       "versionHalf": "2.1-a",
@@ -621,11 +1621,27 @@
     },
     {
       "characterId": "roccia",
-      "locale": "en-US",
-      "versionHalf": "2.7-b",
-      "version": "2.7",
-      "half": "b",
-      "lineCount": 1
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
+    },
+    {
+      "characterId": "roccia",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
+    },
+    {
+      "characterId": "roccia",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
     },
     {
       "characterId": "rover",
@@ -633,7 +1649,7 @@
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
-      "lineCount": 52
+      "lineCount": 48
     },
     {
       "characterId": "rover",
@@ -642,6 +1658,14 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 1
+    },
+    {
+      "characterId": "rover",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover",
@@ -657,7 +1681,23 @@
       "versionHalf": "2.3-b",
       "version": "2.3",
       "half": "b",
-      "lineCount": 42
+      "lineCount": 38
+    },
+    {
+      "characterId": "rover",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "rover",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 52
     },
     {
       "characterId": "rover",
@@ -665,7 +1705,15 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 52
+      "lineCount": 49
+    },
+    {
+      "characterId": "rover",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-aero",
@@ -673,7 +1721,7 @@
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
-      "lineCount": 52
+      "lineCount": 48
     },
     {
       "characterId": "rover-aero",
@@ -682,6 +1730,14 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 1
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-aero",
@@ -697,7 +1753,23 @@
       "versionHalf": "2.3-b",
       "version": "2.3",
       "half": "b",
-      "lineCount": 42
+      "lineCount": 38
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 52
     },
     {
       "characterId": "rover-aero",
@@ -705,7 +1777,15 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 52
+      "lineCount": 49
+    },
+    {
+      "characterId": "rover-aero",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-electro",
@@ -713,7 +1793,7 @@
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
-      "lineCount": 52
+      "lineCount": 48
     },
     {
       "characterId": "rover-electro",
@@ -722,6 +1802,14 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 1
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-electro",
@@ -737,7 +1825,23 @@
       "versionHalf": "2.3-b",
       "version": "2.3",
       "half": "b",
-      "lineCount": 42
+      "lineCount": 38
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 52
     },
     {
       "characterId": "rover-electro",
@@ -745,7 +1849,15 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 52
+      "lineCount": 49
+    },
+    {
+      "characterId": "rover-electro",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-havoc",
@@ -753,7 +1865,7 @@
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
-      "lineCount": 52
+      "lineCount": 48
     },
     {
       "characterId": "rover-havoc",
@@ -762,6 +1874,14 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 1
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-havoc",
@@ -777,7 +1897,23 @@
       "versionHalf": "2.3-b",
       "version": "2.3",
       "half": "b",
-      "lineCount": 42
+      "lineCount": 38
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 52
     },
     {
       "characterId": "rover-havoc",
@@ -785,7 +1921,15 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 52
+      "lineCount": 49
+    },
+    {
+      "characterId": "rover-havoc",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-spectro",
@@ -793,7 +1937,7 @@
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
-      "lineCount": 52
+      "lineCount": 48
     },
     {
       "characterId": "rover-spectro",
@@ -802,6 +1946,14 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 1
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "rover-spectro",
@@ -817,7 +1969,23 @@
       "versionHalf": "2.3-b",
       "version": "2.3",
       "half": "b",
-      "lineCount": 42
+      "lineCount": 38
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 52
     },
     {
       "characterId": "rover-spectro",
@@ -825,7 +1993,15 @@
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 52
+      "lineCount": 49
+    },
+    {
+      "characterId": "rover-spectro",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 3
     },
     {
       "characterId": "sanhua",
@@ -833,7 +2009,7 @@
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
-      "lineCount": 27
+      "lineCount": 28
     },
     {
       "characterId": "sanhua",
@@ -845,6 +2021,22 @@
     },
     {
       "characterId": "sanhua",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 59
+    },
+    {
+      "characterId": "sanhua",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 59
+    },
+    {
+      "characterId": "sanhua",
       "locale": "zh-CN",
       "versionHalf": "1.1-a",
       "version": "1.1",
@@ -852,12 +2044,20 @@
       "lineCount": 58
     },
     {
+      "characterId": "sanhua",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
       "characterId": "shorekeeper",
       "locale": "en-US",
       "versionHalf": "1.2-b",
       "version": "1.2",
       "half": "b",
-      "lineCount": 53
+      "lineCount": 47
     },
     {
       "characterId": "shorekeeper",
@@ -865,7 +2065,31 @@
       "versionHalf": "1.4-a",
       "version": "1.4",
       "half": "a",
-      "lineCount": 15
+      "lineCount": 13
+    },
+    {
+      "characterId": "shorekeeper",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
+    },
+    {
+      "characterId": "shorekeeper",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
+    },
+    {
+      "characterId": "shorekeeper",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
     },
     {
       "characterId": "sigrika",
@@ -881,7 +2105,7 @@
       "versionHalf": "3.2-a",
       "version": "3.2",
       "half": "a",
-      "lineCount": 49
+      "lineCount": 47
     },
     {
       "characterId": "sigrika",
@@ -890,6 +2114,70 @@
       "version": "3.2",
       "half": "b",
       "lineCount": 10
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 12
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "sigrika",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 73
+    },
+    {
+      "characterId": "suisui",
+      "locale": "en-US",
+      "versionHalf": "3.5-b",
+      "version": "3.5",
+      "half": "b",
+      "lineCount": 78
+    },
+    {
+      "characterId": "suisui",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-b",
+      "version": "3.5",
+      "half": "b",
+      "lineCount": 78
+    },
+    {
+      "characterId": "suisui",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-b",
+      "version": "3.5",
+      "half": "b",
+      "lineCount": 78
+    },
+    {
+      "characterId": "suisui",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-b",
+      "version": "3.5",
+      "half": "b",
+      "lineCount": 78
     },
     {
       "characterId": "taoqi",
@@ -906,6 +2194,22 @@
       "version": "1.0",
       "half": "b",
       "lineCount": 37
+    },
+    {
+      "characterId": "taoqi",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 63
+    },
+    {
+      "characterId": "taoqi",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 63
     },
     {
       "characterId": "taoqi",
@@ -933,11 +2237,35 @@
     },
     {
       "characterId": "verina",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "verina",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
+    },
+    {
+      "characterId": "verina",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 60
+    },
+    {
+      "characterId": "verina",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",
       "half": "b",
-      "lineCount": 59
+      "lineCount": 60
     },
     {
       "characterId": "xiangli-yao",
@@ -945,7 +2273,7 @@
       "versionHalf": "1.2-a",
       "version": "1.2",
       "half": "a",
-      "lineCount": 52
+      "lineCount": 48
     },
     {
       "characterId": "xiangli-yao",
@@ -961,7 +2289,23 @@
       "versionHalf": "1.3-a",
       "version": "1.3",
       "half": "a",
-      "lineCount": 58
+      "lineCount": 57
+    },
+    {
+      "characterId": "xiangli-yao",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
+    },
+    {
+      "characterId": "xiangli-yao",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 57
     },
     {
       "characterId": "yangyang",
@@ -994,6 +2338,38 @@
       "version": "1.0",
       "half": "a",
       "lineCount": 58
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 78
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 78
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 78
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 78
     },
     {
       "characterId": "yinlin",
@@ -1021,11 +2397,27 @@
     },
     {
       "characterId": "yinlin",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "yinlin",
       "locale": "ko-KR",
       "versionHalf": "1.0-a",
       "version": "1.0",
       "half": "a",
       "lineCount": 64
+    },
+    {
+      "characterId": "yinlin",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
     },
     {
       "characterId": "yinlin",
@@ -1036,12 +2428,44 @@
       "lineCount": 64
     },
     {
+      "characterId": "yinlin",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
       "characterId": "youhu",
       "locale": "en-US",
       "versionHalf": "1.4-a",
       "version": "1.4",
       "half": "a",
-      "lineCount": 66
+      "lineCount": 59
+    },
+    {
+      "characterId": "youhu",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 59
+    },
+    {
+      "characterId": "youhu",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 59
+    },
+    {
+      "characterId": "youhu",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 59
     },
     {
       "characterId": "yuanwu",
@@ -1061,6 +2485,22 @@
     },
     {
       "characterId": "yuanwu",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "yuanwu",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 61
+    },
+    {
+      "characterId": "yuanwu",
       "locale": "zh-CN",
       "versionHalf": "1.0-b",
       "version": "1.0",
@@ -1073,6 +2513,38 @@
       "versionHalf": "2.3-a",
       "version": "2.3",
       "half": "a",
+      "lineCount": 71
+    },
+    {
+      "characterId": "zani",
+      "locale": "en-US",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 1
+    },
+    {
+      "characterId": "zani",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 72
+    },
+    {
+      "characterId": "zani",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 72
+    },
+    {
+      "characterId": "zani",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
       "lineCount": 72
     },
     {
@@ -1080,6 +2552,30 @@
       "locale": "en-US",
       "versionHalf": "1.2-a",
       "version": "1.2",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "zhezhi",
+      "locale": "ja-JP",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "zhezhi",
+      "locale": "ko-KR",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
+      "half": "a",
+      "lineCount": 56
+    },
+    {
+      "characterId": "zhezhi",
+      "locale": "zh-CN",
+      "versionHalf": "3.5-a",
+      "version": "3.5",
       "half": "a",
       "lineCount": 56
     }

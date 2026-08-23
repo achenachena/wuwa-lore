@@ -1,6 +1,6 @@
 {
   "source": "encore.moe",
-  "generatedAt": "2026-07-11",
+  "generatedAt": "2026-08-23",
   "names": {
     "yangyang": {
       "en": "Yangyang",
@@ -225,6 +225,14 @@
     "suisui": {
       "en": "Suisui",
       "zh": "穗穗"
+    },
+    "qingxiao": {
+      "en": "Qingxiao",
+      "zh": "清宵"
+    },
+    "jingran": {
+      "en": "Jingran",
+      "zh": "景燃"
     }
   }
 }

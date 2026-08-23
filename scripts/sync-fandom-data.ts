@@ -147,11 +147,16 @@ function parseTemplateField(wikitext: string, key: string): string | undefined {
 }
 
 function parseChangeHistoryVersion(wikitext: string): string | undefined {
-  const match = wikitext.match(/{{\s*Change History\|([\d.]+)/i);
-  return match?.[1];
+  const template = wikitext.match(/{{\s*Change History\|([^}\n]+)}}/i)?.[1];
+  const versions = template?.match(/\d+\.\d+/g) ?? [];
+  return versions.sort(compareVersion).at(-1);
 }
 
 function parseFirstDescriptionLine(wikitext: string): string {
+  const intro = wikitext.match(/{{\s*Intro\/Resonator\|[^}\n]+}}[ \t]*([^\n]+)/i)?.[1];
+  if (intro) {
+    return cleanWikiText(intro);
+  }
   const lines = wikitext
     .split("\n")
     .map((line) => line.trim())
@@ -161,16 +166,26 @@ function parseFirstDescriptionLine(wikitext: string): string {
       continue;
     }
     if (line.includes(" is ") || line.includes(" are ")) {
-      return cleanWikiText(line);
+      const cleaned = cleanWikiText(line);
+      if (cleaned) {
+        return cleaned;
+      }
     }
   }
   const inline = wikitext.match(
     /(?:^|\n)([A-Z][^\n]{8,400}? is (?:a|an|the) [^\n]+?\.)/,
   );
   if (inline?.[1]) {
-    return cleanWikiText(inline[1]);
+    const cleaned = cleanWikiText(inline[1]);
+    if (cleaned) {
+      return cleaned;
+    }
   }
   return "Profile text unavailable from source.";
+}
+
+function parseChineseAlias(wikitext: string): string | undefined {
+  return wikitext.match(/lang=zh=([^}|\n]+)/i)?.[1]?.trim();
 }
 
 type ParsedVoiceLineEntry = {
@@ -243,20 +258,24 @@ async function readJsonIfExists<T>(filePath: string): Promise<T | null> {
   }
 }
 
-async function fetchPlayableCharacters(): Promise<string[]> {
+async function fetchCharacterNames(): Promise<string[]> {
   type Res = {
     query: {
       categorymembers: Array<{ title: string }>;
     };
   };
-  const data = await fetchJson<Res>({
-    action: "query",
-    list: "categorymembers",
-    cmtitle: "Category:Playable_Resonators",
-    cmlimit: "500",
-  });
-  return data.query.categorymembers
-    .map((item) => item.title)
+  const categories = ["Category:Playable_Resonators", "Category:Upcoming_Resonators"];
+  const results = await Promise.all(
+    categories.map((category) =>
+      fetchJson<Res>({
+        action: "query",
+        list: "categorymembers",
+        cmtitle: category,
+        cmlimit: "500",
+      }),
+    ),
+  );
+  return [...new Set(results.flatMap((data) => data.query.categorymembers.map((item) => item.title)))]
     .filter((title) => !title.includes("/"))
     .sort((a, b) => a.localeCompare(b));
 }
@@ -419,10 +438,21 @@ function findVersionForTimestamp(timestamp: string, versions: VersionRecord[]): 
 
 async function main() {
   const root = process.cwd();
+  const charactersDir = path.join(root, "content", "characters");
+  const existingCharacters = new Map<string, CharacterRecord>();
+  for (const file of await fs.readdir(charactersDir).catch(() => [] as string[])) {
+    if (!file.endsWith(".json")) {
+      continue;
+    }
+    const character = await readJsonIfExists<CharacterRecord>(path.join(charactersDir, file));
+    if (character) {
+      existingCharacters.set(character.id, character);
+    }
+  }
   const prevStatsPath = path.join(root, "data", "derived", "voice-line-stats.json");
   const previousStats = await readJsonIfExists<{ rows?: VoiceLineStatRow[] }>(prevStatsPath);
   const [characterNames, versionPages] = await Promise.all([
-    fetchPlayableCharacters(),
+    fetchCharacterNames(),
     fetchVersionPages(),
   ]);
 
@@ -448,6 +478,7 @@ async function main() {
   const imageRecords: CharacterImage[] = [];
   const allVoiceRows: VoiceLineStatRow[] = [];
   const allVoiceDetailRows: VoiceLineDetailRow[] = [];
+  const latestKnownVersion = versions.at(-1)?.version;
 
   for (const name of characterNames) {
     const pageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(name).replace(/%20/g, "_")}`;
@@ -464,18 +495,34 @@ async function main() {
       parseChangeHistoryVersion(wikitext) ??
       findVersionForReleaseDate(releaseDateRaw, versions) ??
       "unknown";
+    if (
+      ((!Number.isFinite(rarity) || rarity <= 0) && !/^Rover-/.test(name)) ||
+      releaseVersion === "unknown" ||
+      (latestKnownVersion && compareVersion(releaseVersion, latestKnownVersion) > 0)
+    ) {
+      continue;
+    }
     const element = parseTemplateField(wikitext, "attribute") ?? "Unknown";
     const weapon = parseTemplateField(wikitext, "weapon") ?? "Unknown";
     const faction =
       parseTemplateField(wikitext, "affiliation") ??
       parseTemplateField(wikitext, "nation") ??
       "Unknown";
-    const profile = parseFirstDescriptionLine(wikitext);
+    const parsedProfile = parseFirstDescriptionLine(wikitext);
+    const existingCharacter = existingCharacters.get(id);
+    const profile =
+      parsedProfile === "Profile text unavailable from source." || parsedProfile.startsWith("*")
+        ? existingCharacter?.profile || parsedProfile
+        : parsedProfile;
+    const aliases = [
+      ...(existingCharacter?.aliases ?? []),
+      ...(parseChineseAlias(wikitext) ? [parseChineseAlias(wikitext)!] : []),
+    ].filter((alias, index, values) => alias && values.indexOf(alias) === index);
 
     characters.push({
       id,
       name,
-      aliases: [],
+      aliases,
       element,
       weapon,
       faction,
@@ -544,10 +591,14 @@ async function main() {
 
         const firstSeenCountByVersion = new Map<string, number>();
         for (const timestamp of firstSeenAtByKey.values()) {
-          const version = findVersionForTimestamp(timestamp, versions);
-          if (!version) {
+          const inferredVersion = findVersionForTimestamp(timestamp, versions);
+          if (!inferredVersion) {
             continue;
           }
+          const version =
+            compareVersion(inferredVersion, releaseVersion) < 0
+              ? releaseVersion
+              : inferredVersion;
           firstSeenCountByVersion.set(version, (firstSeenCountByVersion.get(version) ?? 0) + 1);
         }
         finalized = versions.map((version) => ({
@@ -564,7 +615,15 @@ async function main() {
           sourceFieldPath: entry.sourceFieldPath,
           firstSeenAt: firstSeenAtByKey.get(entry.key) ?? null,
           firstSeenVersion: firstSeenAtByKey.get(entry.key)
-            ? findVersionForTimestamp(firstSeenAtByKey.get(entry.key)!, versions)
+            ? (() => {
+                const inferredVersion = findVersionForTimestamp(
+                  firstSeenAtByKey.get(entry.key)!,
+                  versions,
+                );
+                return inferredVersion && compareVersion(inferredVersion, releaseVersion) < 0
+                  ? releaseVersion
+                  : inferredVersion;
+              })()
             : null,
         }))
         .sort((a, b) => a.key.localeCompare(b.key));

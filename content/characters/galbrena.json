@@ -7,11 +7,11 @@
   "faction": "Black Shores",
   "rarity": 5,
   "releaseVersion": "2.7",
-  "profile": "Profile text unavailable from source.",
+  "profile": "Once a Septimontian known as \"Angel\", she is now a formidable \"Discord Slayer\" who wields the ability to consume the frequencies and powers of Tacet Discords she hunts across Solaris-3, with the aid of the notorious Chimera. Her identity as a \"Fiend of Ever-Burning Flame\", a huntress spoken in legend corrupted by the Dark Tide, is now reborn anew with her responsibilities as a Consultant of the Black Shores.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Galbrena",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

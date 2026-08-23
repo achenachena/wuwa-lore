@@ -7,11 +7,11 @@
   "faction": "Black Shores",
   "rarity": 4,
   "releaseVersion": "1.0",
-  "profile": "He is an information broker from the New Federation and a Consultant of the Black Shores. He first appears in the Main Quest Chapter I: Act V - Rewinding Raindrops.",
+  "profile": "He is an information broker from the New Federation and a Consultant of the Black Shores.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aalto",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

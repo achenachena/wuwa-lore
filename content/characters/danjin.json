@@ -1,17 +1,19 @@
 {
   "id": "danjin",
   "name": "Danjin",
-  "aliases": [],
+  "aliases": [
+    "丹瑾"
+  ],
   "element": "Havoc",
   "weapon": "Sword",
   "faction": "Jinzhou",
   "rarity": 4,
   "releaseVersion": "1.0",
-  "profile": "Profile text unavailable from source.",
+  "profile": "She is a member of the Midnight Rangers and hunts down thieves and bandits in order to bring them to justice.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Danjin",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

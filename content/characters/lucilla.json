@@ -7,11 +7,11 @@
   "faction": "Startorch Academy",
   "rarity": 5,
   "releaseVersion": "3.4",
-  "profile": "Profile text unavailable from source.",
+  "profile": "She is the president and the head of Startorch Academy. She was the former chief editor for the New Federation's top academic journal and an associate of Mortefi.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucilla",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

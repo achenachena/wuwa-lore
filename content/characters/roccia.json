@@ -7,11 +7,11 @@
   "faction": "Troupe of Fools",
   "rarity": 5,
   "releaseVersion": "2.0",
-  "profile": "* Roccia's Convene quote \"All the world's a stage, and we are mere players\" is a reference to a line from Shakespeare's As You Like It, \"All the world’s a stage, And all the men and women merely players.\"",
+  "profile": "She is a gifted improvisational comedian and the First Mate of the Troupe of Fools. While bashful and introverted, she, alongside Pero, her closest companion, possesses a repertoire of tools and talents to protect and nurture her friends and newfound family.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Roccia",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

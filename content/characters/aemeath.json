@@ -7,11 +7,11 @@
   "faction": "Startorch Academy",
   "rarity": 5,
   "releaseVersion": "3.1",
-  "profile": "* Aemeath's English voice actor, Cara Theobold, is also known for voicing the Damage hero, Tracer, from the hero shooter, Overwatch.",
+  "profile": "She is a Frostlands native from the Roya Tribe who was once a Synchronist at Startorch Academy. She became the Exostrider's Resonator after overclocking in order to resonate with it, causing her to lose her body. She now roams throughout Lahai-Roi as a digital ghost invisible to everyone around her except for Rover, whom she met with during her childhood.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aemeath",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

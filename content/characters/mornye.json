@@ -7,11 +7,11 @@
   "faction": "Spacetrek Collective",
   "rarity": 5,
   "releaseVersion": "3.0",
-  "profile": "* Mornië is the word for \"darkness\" in the fictional elvish language Quenya, from J.R.R. Tolkien's Lord of the Rings.",
+  "profile": "She is a researcher for the Spacetrek Collective and a professor for Exostrider Engineering at Startorch Academy. She was a student at Startorch Academy and an acquaintance of Rover 20 years before the Void Storm hit Lahai-Roi. With an unwavering dream to chart the course of humanity's exploration of the world beyond Solaris, she plays a key role in the technological developments of Lahai-Roi as a project head of the Spacetrek Collective Research Institute.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mornye",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

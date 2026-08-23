@@ -1,126 +1,102 @@
 {
-  "generatedAt": "2026-07-11T23:46:56.240Z",
+  "generatedAt": "2026-08-23T00:14:34.431Z",
   "rowCoverage": {
-    "oldRowCount": 204,
-    "newRowCount": 224,
-    "addedRows": 20,
-    "removedRows": 0,
-    "changedRows": 4
+    "oldRowCount": 224,
+    "newRowCount": 236,
+    "addedRows": 16,
+    "removedRows": 4,
+    "changedRows": 0
   },
   "currentLineCountDelta": {
-    "increasedRows": 3,
-    "decreasedRows": 1,
-    "unchangedRows": 200
+    "increasedRows": 0,
+    "decreasedRows": 0,
+    "unchangedRows": 220
   },
   "samples": {
     "added": [
       {
-        "key": "lucilla::en-US",
-        "currentLineCount": 0
+        "key": "rover-aero::en-US",
+        "currentLineCount": 52
       },
       {
-        "key": "lucilla::ja-JP",
-        "currentLineCount": 0
+        "key": "rover-aero::ja-JP",
+        "currentLineCount": 52
       },
       {
-        "key": "lucilla::ko-KR",
-        "currentLineCount": 0
+        "key": "rover-aero::ko-KR",
+        "currentLineCount": 52
       },
       {
-        "key": "lucilla::zh-CN",
-        "currentLineCount": 0
-      },
-      {
-        "key": "lucy::en-US",
-        "currentLineCount": 0
-      },
-      {
-        "key": "lucy::ja-JP",
-        "currentLineCount": 0
-      },
-      {
-        "key": "lucy::ko-KR",
-        "currentLineCount": 0
-      },
-      {
-        "key": "lucy::zh-CN",
-        "currentLineCount": 0
-      },
-      {
-        "key": "rebecca::en-US",
-        "currentLineCount": 0
-      },
-      {
-        "key": "rebecca::ja-JP",
-        "currentLineCount": 0
-      },
-      {
-        "key": "rebecca::ko-KR",
-        "currentLineCount": 0
-      },
-      {
-        "key": "rebecca::zh-CN",
-        "currentLineCount": 0
+        "key": "rover-aero::zh-CN",
+        "currentLineCount": 52
       },
       {
         "key": "rover-electro::en-US",
-        "currentLineCount": 53
+        "currentLineCount": 52
       },
       {
         "key": "rover-electro::ja-JP",
-        "currentLineCount": 53
+        "currentLineCount": 52
       },
       {
         "key": "rover-electro::ko-KR",
-        "currentLineCount": 0
+        "currentLineCount": 52
       },
       {
         "key": "rover-electro::zh-CN",
         "currentLineCount": 52
       },
       {
-        "key": "yangyang-xuanling::en-US",
-        "currentLineCount": 0
+        "key": "rover-havoc::en-US",
+        "currentLineCount": 52
       },
       {
-        "key": "yangyang-xuanling::ja-JP",
-        "currentLineCount": 0
+        "key": "rover-havoc::ja-JP",
+        "currentLineCount": 52
       },
       {
-        "key": "yangyang-xuanling::ko-KR",
-        "currentLineCount": 0
+        "key": "rover-havoc::ko-KR",
+        "currentLineCount": 52
       },
       {
-        "key": "yangyang-xuanling::zh-CN",
-        "currentLineCount": 0
+        "key": "rover-havoc::zh-CN",
+        "currentLineCount": 52
+      },
+      {
+        "key": "rover-spectro::en-US",
+        "currentLineCount": 52
+      },
+      {
+        "key": "rover-spectro::ja-JP",
+        "currentLineCount": 52
+      },
+      {
+        "key": "rover-spectro::ko-KR",
+        "currentLineCount": 52
+      },
+      {
+        "key": "rover-spectro::zh-CN",
+        "currentLineCount": 52
       }
     ],
-    "removed": [],
-    "changed": [
+    "removed": [
       {
-        "key": "denia::en-US",
-        "previousLineCount": 0,
-        "currentLineCount": 93,
-        "delta": 93
+        "key": "hsin::en-US",
+        "previousLineCount": 0
       },
       {
-        "key": "qiuyuan::en-US",
-        "previousLineCount": 0,
-        "currentLineCount": 71,
-        "delta": 71
+        "key": "hsin::ja-JP",
+        "previousLineCount": 0
       },
       {
-        "key": "aalto::ja-JP",
-        "previousLineCount": 0,
-        "currentLineCount": 34,
-        "delta": 34
+        "key": "hsin::ko-KR",
+        "previousLineCount": 0
       },
       {
-        "key": "aalto::zh-CN",
-        "previousLineCount": 64,
-        "currentLineCount": 63,
-        "delta": -1
+        "key": "hsin::zh-CN",
+        "previousLineCount": 0
       }
-    ]
+    ],
+    "changed": []
   }
 }

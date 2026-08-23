@@ -12,17 +12,34 @@ export const ENCORE_V2_BASE = "https://api-v2.encore.moe/api";
 export const ENCORE_LOCALES: EncoreLocale[] = ["zh-Hans", "en"];
 
 export async function fetchEncoreJson<T>(url: string): Promise<T> {
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": "wuwa-lore/1.0",
-      Referer: "https://encore.moe/",
-      Accept: "application/json",
-    },
-  });
-  if (!response.ok) {
-    throw new Error(`Encore API failed ${response.status} for ${url}`);
+  let lastError: unknown;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          "User-Agent": "wuwa-lore/1.0",
+          Referer: "https://encore.moe/",
+          Accept: "application/json",
+        },
+      });
+      if (response.ok) {
+        return (await response.json()) as T;
+      }
+      const error = new Error(`Encore API failed ${response.status} for ${url}`);
+      if (response.status !== 429 && response.status < 500) {
+        throw error;
+      }
+      lastError = error;
+    } catch (error) {
+      lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      if (/Encore API failed 4\d\d/.test(message) && !message.includes("429")) {
+        throw error;
+      }
+    }
+    await new Promise((resolve) => setTimeout(resolve, 250 * 2 ** attempt));
   }
-  return (await response.json()) as T;
+  throw lastError;
 }
 
 export async function fetchEncoreStoryDetail(

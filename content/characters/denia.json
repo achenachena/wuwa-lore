@@ -7,11 +7,11 @@
   "faction": "Fractsidus",
   "rarity": 5,
   "releaseVersion": "3.3",
-  "profile": "She is a student from Startorch Academy's Department of Voidmatters who secretly serves as an agent for the Fractsidus. Created by Schwarzloch for the purpose to become a Threnodian Resonator, Denia can wear many faces.",
+  "profile": "She is a student from Startorch Academy's Department of Voidmatters with a sardonic nihilism, who secretly serves as an agent for the Fractsidus. Despite being created by Schwarzloch for the purpose of becoming the Resonator of the Threnodian Aleph-1, she harbors deep-seated fear and resentment towards the Fractsidus and her creator. No matter the price, even her own existence, she is determined to use her \"gift\" to protect those dearest to her.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Denia",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

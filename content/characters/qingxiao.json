@@ -1,0 +1,19 @@
+{
+  "id": "qingxiao",
+  "name": "Qingxiao",
+  "aliases": [
+    "清宵"
+  ],
+  "element": "Aero",
+  "weapon": "Sword",
+  "faction": "Ministry of War",
+  "rarity": 5,
+  "releaseVersion": "3.6",
+  "profile": "A reclusive sword cultivator who holds the nominal title of Xuan Paragon of Xuanfang Hold, and a peerless master of both qin and sword.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qingxiao",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}
