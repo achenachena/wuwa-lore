@@ -7,11 +7,11 @@
   "faction": "Septimont",
   "rarity": 5,
   "releaseVersion": "2.6",
-  "profile": "Profile text unavailable from source.",
+  "profile": "She is a prodigious and renowned Priestess of Septimont's Tetragon Temple, charged with delivering prophecies that shape the lives of its citizens. While both blessed and cursed with the power to foretell the futures of others, her responsibilities are contrasted by her cocky, outspoken and rebellious attitude, embodying an eagerness to defy all of fate's cruelest machinations.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Iuno",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

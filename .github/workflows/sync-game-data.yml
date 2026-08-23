@@ -1,0 +1,68 @@
+name: Sync game data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-game-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync Fandom and official data
+        run: npm run data:sync
+
+      - name: Sync main-story appearances and dialogue
+        run: npm run data:sync-stories
+
+      - name: Generate derived statistics and word clouds
+        run: npm run data:generate
+
+      - name: Validate synchronized data
+        run: npm run data:validate
+
+      - name: Compare official and community sources
+        run: npm run data:compare
+
+      - name: Run application quality checks
+        run: |
+          npm run typecheck
+          npm run lint
+          npm test
+          npm run build
+
+      - name: Create or update data pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: codex/automated-game-data
+          delete-branch: true
+          commit-message: "data: sync latest game data"
+          title: "data: sync latest game data"
+          body: |
+            Automated weekly refresh of the version registry, character records,
+            image metadata, and per-locale voice-line statistics.
+
+            The workflow validates the generated data and compares version metadata
+            with the official Kuro Games notice feed before opening this pull request.
+          labels: automated,data

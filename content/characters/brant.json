@@ -7,11 +7,11 @@
   "faction": "Ragunna",
   "rarity": 5,
   "releaseVersion": "2.1",
-  "profile": "Beneath his flamboyant persona lies a genuine heart, deeply devoted to his family and companions. His life is dedicated to securing a safe haven for the Troupe's members|Introduction on the Official Website.}}",
+  "profile": "He is the captain of the Troupe of Fools, exuding a carefree, easygoing charm and charisma, unbound by convention. However, beneath his flamboyant persona lies a kind heart deeply devoted to ensuring his crew's safety and freedom. He views the world as one of unlimited possibilities and encourages this same optimism in the public through his spectacular performances.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Brant",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

@@ -7,11 +7,11 @@
   "faction": "Fisalia Family",
   "rarity": 5,
   "releaseVersion": "2.2",
-  "profile": "For a moment, you think you glimpse something in the ocean's depths—but you are unsure if it is the shadow of a giant sea creature... or the tail feathers of the Celestial Steed.|Her introduction on the Official Website.}}",
+  "profile": "She is the thirty-sixth matriarch of the Fisalia family, and the former Blessed Maiden of Imperator. Her elegant, composed demeanor and captivating beauty conceal a dark and disturbing past, of which she is steadfastly searching for the means to liberate herself and her lineage.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cantarella",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

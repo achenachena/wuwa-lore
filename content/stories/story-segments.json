@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
   "editor": "scripts/sync-story-appearances.ts",
-  "generatedAt": "2026-07-11T23:49:07.263Z",
+  "generatedAt": "2026-08-23T00:18:00.087Z",
   "segments": [
     {
       "id": "utterance-of-marvels",
@@ -407,6 +407,24 @@
       "half": "a",
       "versionHalf": "3.5-a",
       "sortOrder": 44
+    },
+    {
+      "id": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "sortOrder": 45
+    },
+    {
+      "id": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "sortOrder": 46
     }
   ]
 }

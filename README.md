@@ -26,6 +26,8 @@ A Next.js + TypeScript site for collecting Wuthering Waves character archives, i
 npm run dev           # Start local dev server
 npm run data:sync     # Pull Fandom data + official version notices
 npm run data:sync-official # Refresh official version notice baseline only
+npm run data:sync-quest-map # Discover main quests from the latest version page
+npm run data:sync-stories # Refresh main-story appearances and dialogue counts
 npm run data:generate # Generate data/derived/voice-line-stats.json
 npm run data:validate # Validate identity and stat integrity
 npm run data:compare  # Compare Fandom versions against official notice baseline
@@ -39,5 +41,7 @@ npm run build         # Next.js production build
 ## CI and deployment
 
 - GitHub Actions runs: data generation, data validation, typecheck, lint, test, build.
+- A weekly `Sync game data` workflow refreshes Fandom + official data, validates it,
+  and opens or updates a reviewable pull request. It can also be run manually.
 - Vercel config is in `vercel.json`.
 - Deployment notes in `docs/deployment.md`.

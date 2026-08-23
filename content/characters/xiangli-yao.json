@@ -1,7 +1,9 @@
 {
   "id": "xiangli-yao",
   "name": "Xiangli Yao",
-  "aliases": [],
+  "aliases": [
+    "相里要"
+  ],
   "element": "Electro",
   "weapon": "Gauntlets",
   "faction": "Jinzhou",
@@ -11,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

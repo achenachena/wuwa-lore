@@ -1,17 +1,19 @@
 {
   "id": "yuanwu",
   "name": "Yuanwu",
-  "aliases": [],
+  "aliases": [
+    "渊武"
+  ],
   "element": "Electro",
   "weapon": "Gauntlets",
   "faction": "Jinzhou",
   "rarity": 4,
   "releaseVersion": "1.0",
-  "profile": "Profile text unavailable from source.",
+  "profile": "He owns a boxing gym where he teaches martial arts and health management, and is well-respected in the community for his cordial demeanor and pleasant temperament.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yuanwu",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

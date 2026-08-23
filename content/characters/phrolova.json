@@ -6,12 +6,12 @@
   "weapon": "Rectifier",
   "faction": "Fractsidus",
   "rarity": 5,
-  "releaseVersion": "2.4",
-  "profile": "A silent wave of her baton is enough to attune the very frequencies of being and conduct the symphonies of \"souls.\" The music of hers can sculpt a better world or, just as easily, summon a legion to wreak havoc.{{Quote|The silent and somber Overseer of the Fractsidus, Phrolova carries an endless sadness that envelops everyone around her.<br />She weaves music that bridges the gap between life and death, crafting an ideal world within her heart.|Introduction from the Official Website.",
+  "releaseVersion": "2.5",
+  "profile": "She is a particularly powerful Resonator and a former Overseer of the Fractsidus. Her forte can manipulate and transfigure the frequencies of humans, Echoes, and Tacet Discords alike.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Phrolova",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

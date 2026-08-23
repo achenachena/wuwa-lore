@@ -1,17 +1,19 @@
 {
   "id": "jinhsi",
   "name": "Jinhsi",
-  "aliases": [],
+  "aliases": [
+    "今汐"
+  ],
   "element": "Spectro",
   "weapon": "Broadblade",
   "faction": "Jinzhou",
   "rarity": 5,
   "releaseVersion": "1.1",
-  "profile": "Profile text unavailable from source.",
+  "profile": "She is the young Magistrate of Jinzhou with a resolute and altruistic nature and an unbreakable dedication to defending her city and countrymen to her last breath. She is also the appointed Resonator of Sentinel Jué, manifesting in the shape of a , since birth, and with it the responsibility to safeguard Jinzhou's past and guide its future.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jinhsi",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

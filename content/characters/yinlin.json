@@ -1,17 +1,19 @@
 {
   "id": "yinlin",
   "name": "Yinlin",
-  "aliases": [],
+  "aliases": [
+    "吟霖"
+  ],
   "element": "Electro",
   "weapon": "Rectifier",
   "faction": "Jinzhou",
   "rarity": 5,
   "releaseVersion": "1.0",
-  "profile": "Profile text unavailable from source.",
+  "profile": "Once an outstanding Patroller who was suspended from her duties at the Public Security Bureau, Yinlin now pursues hidden evils in secrecy.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yinlin",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

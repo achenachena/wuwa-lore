@@ -1,17 +1,19 @@
 {
   "id": "changli",
   "name": "Changli",
-  "aliases": [],
+  "aliases": [
+    "长离"
+  ],
   "element": "Fusion",
   "weapon": "Sword",
   "faction": "Jinzhou",
   "rarity": 5,
   "releaseVersion": "1.1",
-  "profile": "Profile text unavailable from source.",
+  "profile": "She is the Former Secretary-General of the Central Secretariat in Mingting, the capital, and now serves as Counselor to Jinzhou Magistrate, Jinhsi. Having flourished from an unforgiving childhood, she now stands as a calculated, knowledgeable, and mysterious official and strategist with a keen eye for both political and civilian affairs.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Changli",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

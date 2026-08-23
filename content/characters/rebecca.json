@@ -7,11 +7,11 @@
   "faction": "Unknown",
   "rarity": 5,
   "releaseVersion": "3.4",
-  "profile": ":Lucy: Back in our world, David's already dead. And so are you, Rebecca... You both died that night. Adam Smasher killed you.</ref>",
+  "profile": "She is a part of the collaboration with .",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rebecca",
-    "scrapedAt": "2026-07-11T23:46:56.240Z",
+    "scrapedAt": "2026-08-23T00:14:34.431Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
