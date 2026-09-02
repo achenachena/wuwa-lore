@@ -38,7 +38,7 @@ describe("story speaker attribution", () => {
     ["卡戎（斯瓦茨洛）", "galbrena"],
     ["The Shorekeeper", "shorekeeper"],
   ])("maps %s to %s", (speaker, characterId) => {
-    expect(resolver.resolveSpeaker(speaker)).toBe(characterId);
+    expect(resolver.resolveSpeakers(speaker)).toEqual([characterId]);
   });
 
   test("credits a shared line to every named playable character", () => {
