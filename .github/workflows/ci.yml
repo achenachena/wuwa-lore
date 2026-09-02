@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Generate derived data
-        run: npm run data:generate
+        run: npm run data:generate-local
 
       - name: Validate data
         run: npm run data:validate
