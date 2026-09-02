@@ -1,6 +1,7 @@
 import type {
   Character,
   CharacterOptionalQuestRow,
+  CharacterRankingRow,
   CharacterStorySegmentRow,
   OptionalQuestAppearanceRow,
   OptionalQuestDialogueRow,
@@ -8,7 +9,6 @@ import type {
   StoryAppearanceRow,
   StoryDialogueRow,
   StorySegment,
-  VersionHalfRankingRow,
   VersionRecord,
   VersionStatRow,
   VoiceLineEntry,
@@ -407,7 +407,7 @@ export function buildOptionalQuestRanking(params: {
   quests: OptionalQuestRecord[];
   appearances: OptionalQuestAppearanceRow[];
   dialogueStats: OptionalQuestDialogueRow[];
-}): VersionHalfRankingRow[] {
+}): CharacterRankingRow[] {
   const { characters, category, quests, appearances, dialogueStats } = params;
   const characterById = new Map(
     characters.map((character) => [character.id, character]),

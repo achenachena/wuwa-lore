@@ -2,7 +2,6 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { cache } from "react";
 
-const root = /* turbopackIgnore: true */ process.cwd();
 const cacheForever = process.env.NODE_ENV === "production";
 const processCache = new Map<string, Promise<unknown>>();
 
@@ -39,11 +38,11 @@ export function defineParsedJsonLoader<T>(
   parse: (raw: unknown) => T,
 ) {
   return defineLoader(key, async () => {
-    const raw = await readJsonFile<unknown>(path.join(root, relativePath));
+    const raw = await readJsonFile<unknown>(dataPath(relativePath));
     return parse(raw);
   });
 }
 
 export function dataPath(...parts: string[]): string {
-  return path.join(root, ...parts);
+  return path.join(/* turbopackIgnore: true */ process.cwd(), ...parts);
 }

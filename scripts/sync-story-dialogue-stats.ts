@@ -19,6 +19,8 @@ import type {
   EncoreRole,
   EncoreStoryIndexItem,
 } from "@/lib/encore/types";
+import { fandomPageUrl, fetchFandomWikitext } from "@/lib/fandom/client";
+import { parseTemplateField } from "@/lib/fandom/wikitext";
 import { mergeDialogueAppearances } from "@/lib/story/merge-dialogue-appearances";
 import { slugify } from "@/lib/slugify";
 
@@ -60,54 +62,6 @@ type StoryDialogueSnapshot = {
 };
 
 const nowIso = new Date().toISOString();
-const questWikitextCache = new Map<string, Promise<string>>();
-
-function parseTemplateField(wikitext: string, key: string): string | undefined {
-  const match = wikitext.match(new RegExp(`\\|\\s*${key}\\s*=\\s*([^\\n|]+)`));
-  return match?.[1]?.trim().replace(/\[\[([^|\]]*\|)?([^\]]+)\]\]/g, "$2");
-}
-
-async function fetchQuestWikitext(wikiTitle: string): Promise<string> {
-  const cached = questWikitextCache.get(wikiTitle);
-  if (cached) {
-    return cached;
-  }
-  const request = (async () => {
-    const params = new URLSearchParams({
-      action: "parse",
-      page: wikiTitle,
-      prop: "wikitext",
-      format: "json",
-    });
-    for (let attempt = 1; attempt <= 4; attempt += 1) {
-      try {
-        const response = await fetch(
-          `https://wutheringwaves.fandom.com/api.php?${params}`,
-          {
-            headers: { "User-Agent": "wuwa-lore/1.0" },
-          },
-        );
-        if (response.ok) {
-          const data = (await response.json()) as {
-            parse?: { wikitext?: { "*": string } };
-          };
-          return data.parse?.wikitext?.["*"] ?? "";
-        }
-        if (response.status < 500 && response.status !== 429) {
-          return "";
-        }
-      } catch (error) {
-        if (attempt === 4) {
-          throw error;
-        }
-      }
-      await new Promise((resolve) => setTimeout(resolve, attempt * 500));
-    }
-    return "";
-  })();
-  questWikitextCache.set(wikiTitle, request);
-  return request;
-}
 
 function countFandomVoicedDialogue(wikitext: string): Map<string, number> {
   const counts = new Map<string, number>();
@@ -166,8 +120,10 @@ async function syncLocale(params: {
   let processedQuests = 0;
   for (const quest of map.quests) {
     const questId = slugify(quest.wikiTitle);
-    const wikitext = await fetchQuestWikitext(quest.wikiTitle);
-    const nameZh = parseTemplateField(wikitext, "zhs") ?? quest.wikiTitle;
+    const wikitext = await fetchFandomWikitext(quest.wikiTitle);
+    const nameZh =
+      parseTemplateField(wikitext, "zhs", { stopAtPipe: true }) ??
+      quest.wikiTitle;
     const storyIds = resolveEncoreStoryIds({
       locale,
       wikiTitle: quest.wikiTitle,
@@ -182,9 +138,7 @@ async function syncLocale(params: {
     const sourceUrls = new Set<string>();
     if (storyIds.length === 0) {
       source = "fandom-fallback";
-      sourceUrls.add(
-        `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(quest.wikiTitle).replace(/%20/g, "_")}`,
-      );
+      sourceUrls.add(fandomPageUrl(quest.wikiTitle));
       for (const [speaker, count] of countFandomVoicedDialogue(wikitext)) {
         speakerCounts.set(speaker, (speakerCounts.get(speaker) ?? 0) + count);
       }

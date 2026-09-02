@@ -1,6 +1,13 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
+import {
+  fandomPageUrl,
+  fetchFandomJson,
+  fetchFandomWikitext,
+} from "@/lib/fandom/client";
+import { cleanWikiText, parseTemplateField } from "@/lib/fandom/wikitext";
+import { slugify } from "@/lib/slugify";
 import { compareVersion } from "@/lib/version/compare";
 
 type Locale = "en-US" | "zh-CN" | "ja-JP" | "ko-KR";
@@ -102,8 +109,6 @@ type ChangeReport = {
   };
 };
 
-const API_ROOT = "https://wutheringwaves.fandom.com/api.php";
-
 const localePages: Array<{ locale: Locale; suffix: string }> = [
   { locale: "en-US", suffix: "/Voicelines" },
   { locale: "zh-CN", suffix: "/Voicelines/Chinese" },
@@ -113,14 +118,6 @@ const localePages: Array<{ locale: Locale; suffix: string }> = [
 
 const nowIso = new Date().toISOString();
 
-function slugify(value: string): string {
-  return value
-    .toLowerCase()
-    .replace(/['".]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
 function parseWikiDate(raw: string): string {
   // Example values: "2025-06-12 11:00" or "2024-05-23"
   const normalized = raw.trim().replace(" ", "T");
@@ -128,28 +125,6 @@ function parseWikiDate(raw: string): string {
     return normalized;
   }
   return normalized;
-}
-
-function cleanWikiText(value: string): string {
-  return value
-    .replace(/<ref[^>]*>[\s\S]*?<\/ref>/g, "")
-    .replace(/{{\s*w\|([^}|]+)(?:\|[^}]*)?}}/gi, "$1")
-    .replace(/{{[^{}]*}}/g, "")
-    .replace(/\[\[([^|\]]*\|)?([^\]]+)\]\]/g, "$2")
-    .replace(/\[[^\s\]]+\s([^\]]+)\]/g, "$1")
-    .replace(/'''?/g, "")
-    .replace(/&nbsp;/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function parseTemplateField(wikitext: string, key: string): string | undefined {
-  const re = new RegExp(`\\|\\s*${key}\\s*=\\s*([^\\n]+)`);
-  const match = wikitext.match(re);
-  if (!match) {
-    return undefined;
-  }
-  return cleanWikiText(match[1] ?? "");
 }
 
 function meaningfulField(value: string | undefined): string | undefined {
@@ -259,20 +234,6 @@ function findVersionForReleaseDate(
   return picked;
 }
 
-async function fetchJson<T>(params: Record<string, string>): Promise<T> {
-  const query = new URLSearchParams({
-    format: "json",
-    ...params,
-  }).toString();
-  const response = await fetch(`${API_ROOT}?${query}`);
-  if (!response.ok) {
-    throw new Error(
-      `API request failed: ${response.status} ${response.statusText}`,
-    );
-  }
-  return (await response.json()) as T;
-}
-
 async function readJsonIfExists<T>(filePath: string): Promise<T | null> {
   try {
     const text = await fs.readFile(filePath, "utf8");
@@ -294,7 +255,7 @@ async function fetchCharacterNames(): Promise<string[]> {
   ];
   const results = await Promise.all(
     categories.map((category) =>
-      fetchJson<Res>({
+      fetchFandomJson<Res>({
         action: "query",
         list: "categorymembers",
         cmtitle: category,
@@ -319,7 +280,7 @@ async function fetchVersionPages(): Promise<string[]> {
       allpages: Array<{ title: string }>;
     };
   };
-  const data = await fetchJson<Res>({
+  const data = await fetchFandomJson<Res>({
     action: "query",
     list: "allpages",
     apprefix: "Version/",
@@ -331,20 +292,6 @@ async function fetchVersionPages(): Promise<string[]> {
     .sort((a, b) =>
       compareVersion(a.replace("Version/", ""), b.replace("Version/", "")),
     );
-}
-
-async function fetchWikitext(page: string): Promise<string> {
-  type Res = {
-    parse?: {
-      wikitext: { "*": string };
-    };
-  };
-  const data = await fetchJson<Res>({
-    action: "parse",
-    page,
-    prop: "wikitext",
-  });
-  return data.parse?.wikitext["*"] ?? "";
 }
 
 async function fetchFileUrl(fileTitle: string): Promise<string | null> {
@@ -359,7 +306,7 @@ async function fetchFileUrl(fileTitle: string): Promise<string | null> {
       >;
     };
   };
-  const data = await fetchJson<Res>({
+  const data = await fetchFandomJson<Res>({
     action: "query",
     titles: fileTitle,
     prop: "imageinfo",
@@ -383,7 +330,7 @@ async function fetchCharacterImage(page: string): Promise<string | null> {
       pages: Record<string, Page>;
     };
   };
-  const data = await fetchJson<Res>({
+  const data = await fetchFandomJson<Res>({
     action: "query",
     titles: page,
     prop: "pageimages",
@@ -412,7 +359,7 @@ async function fetchAllRevisions(
   let rvcontinue: string | undefined;
 
   do {
-    const data = await fetchJson<Res>({
+    const data = await fetchFandomJson<Res>({
       action: "query",
       prop: "revisions",
       titles: page,
@@ -509,7 +456,7 @@ async function main() {
 
   const versions: VersionRecord[] = [];
   for (const page of versionPages) {
-    const wikitext = await fetchWikitext(page);
+    const wikitext = await fetchFandomWikitext(page);
     const version = parseTemplateField(wikitext, "version");
     const date = parseTemplateField(wikitext, "date");
     const title = parseTemplateField(wikitext, "title");
@@ -532,9 +479,9 @@ async function main() {
   const latestKnownVersion = versions.at(-1)?.version;
 
   for (const name of characterNames) {
-    const pageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(name).replace(/%20/g, "_")}`;
+    const pageUrl = fandomPageUrl(name);
     const [wikitext, imageUrl, portraitUrl] = await Promise.all([
-      fetchWikitext(name),
+      fetchFandomWikitext(name),
       fetchCharacterImage(name),
       fetchFileUrl(`File:Resonator ${name}.png`),
     ]);
@@ -629,7 +576,7 @@ async function main() {
     const voiceBaseName = /^Rover(?:-|$)/.test(name) ? "Rover" : name;
     for (const localeDef of localePages) {
       const voicePage = `${voiceBaseName}${localeDef.suffix}`;
-      const voicePageUrl = `https://wutheringwaves.fandom.com/wiki/${encodeURIComponent(voicePage).replace(/%20/g, "_")}`;
+      const voicePageUrl = fandomPageUrl(voicePage);
       const revisions = await fetchAllRevisions(voicePage);
       let finalized = buildZeroPerVersionCounts(versions);
       let currentLineCount = 0;

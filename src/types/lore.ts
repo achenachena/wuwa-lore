@@ -66,6 +66,3 @@ export interface CharacterRankingRow {
   appearanceCount: number;
   linesPerAppearance: number | null;
 }
-
-/** @deprecated Prefer CharacterRankingRow — alias kept for existing call sites. */
-export type VersionHalfRankingRow = CharacterRankingRow;

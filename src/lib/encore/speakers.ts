@@ -67,9 +67,7 @@ export function countDialoguesBySpeaker(payload: unknown): Map<string, number> {
 }
 
 export type SpeakerResolver = {
-  resolveSpeaker: (speaker: string) => string | null;
   resolveSpeakers: (speaker: string) => string[];
-  localeNamesByCharacter: Map<string, string>;
 };
 
 export function buildSpeakerResolver(params: {
@@ -141,7 +139,7 @@ export function buildSpeakerResolver(params: {
     return direct ? [direct] : [];
   }
 
-  return { resolveSpeaker, resolveSpeakers, localeNamesByCharacter };
+  return { resolveSpeakers };
 }
 
 export function storyLineCountAdjustments(params: {

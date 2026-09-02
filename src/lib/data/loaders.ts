@@ -230,9 +230,6 @@ export const loadStoryDialogueStatsForLocale = cache(
   },
 );
 
-/** @deprecated Use loadStoryDialogueStatsForLocale with an explicit locale. */
-export const loadStoryDialogueStats = loadStoryDialogueStatsForLocale;
-
 export const loadOptionalQuestCatalog = defineParsedJsonLoader(
   "optional-quest-catalog",
   "content/stories/optional-quest-catalog.json",
@@ -271,9 +268,6 @@ export const loadOptionalQuestDialogueStatsForLocale = cache(
     );
   },
 );
-
-/** @deprecated Use loadOptionalQuestDialogueStatsForLocale with an explicit locale. */
-export const loadOptionalQuestDialogueStats = loadOptionalQuestDialogueStatsForLocale;
 
 export const loadOptionalQuestCoverage = cache(async () => {
   const file = await loadOptionalQuestDialogueFile();
