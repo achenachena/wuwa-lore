@@ -144,7 +144,10 @@ function parseFirstDescriptionLine(wikitext: string): string {
     /{{\s*Intro\/Resonator(?:\|[^}\n]+)?}}[ \t]*([^\n]+)/i,
   )?.[1];
   if (intro) {
-    return cleanWikiText(intro);
+    const cleaned = cleanWikiText(intro);
+    if (cleaned) {
+      return cleaned;
+    }
   }
   const lines = wikitext
     .split("\n")
