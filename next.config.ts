@@ -4,6 +4,9 @@ import { productionSecurityHeaders } from "@/lib/security/headers";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/*": ["./content/**/*.json", "./data/derived/**/*.json"],
+  },
   images: {
     remotePatterns: [
       {
