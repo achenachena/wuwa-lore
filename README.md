@@ -1,49 +1,49 @@
-# 鸣潮角色台词统计 · Wuwa Lore
+# Wuwa Lore
 
-想查一个角色在哪段剧情出过场、到底说了多少句话，就做了这个小站。也可以拿来翻角色资料，看看不同版本里谁的戏份多一点。
+I wanted to look up where a character shows up in the story and how many lines they actually get, so I made a little site for it. You can also browse character profiles and compare their dialogue across patches.
 
-**[打开网站 → wuwalore.xyz](https://wuwalore.xyz)**
+**[Visit the site → wuwalore.xyz](https://wuwalore.xyz)**
 
-有主线、伴星、活动和支线的出场与台词统计，角色页还放了台词词云。支持中文和英文。页面里会出现任务名和角色出场信息，介意剧透的话先过完剧情再看。
+It covers appearances and dialogue in main quests, companion stories, events, and side quests, with word clouds on character pages. Chinese and English are supported. Expect spoilers: quest names and character appearances are visible, so you might want to catch up on the story first.
 
-## 数字怎么看
+## About the numbers
 
-角色档案和语音资料来自 Wuthering Waves Wiki（Fandom），剧情台词主要来自 [Encore](https://encore.moe/)，版本日期会和库洛的公告核对。原始来源和统计方式可以在站内的[统计说明](https://wuwalore.xyz/methodology)里看。
+Character profiles and voice-over data come from the Wuthering Waves Wiki on Fandom. Story dialogue mainly comes from [Encore](https://encore.moe/), and patch dates are checked against Kuro's announcements. The site's [counting notes](https://wuwalore.xyz/methodology) explain the sources and methods in more detail.
 
-这里数的是整理到的台词条目，不是配音时长，也不等于角色的剧情重要程度。角色实装版本和第一次在剧情里开口的版本也可能不同。上游资料缺失、说话人用了别名，都会影响结果。
+These are dialogue entry counts, not voice-acting duration or a measure of how important a character is to the story. A character can have lines before their playable release, too. Missing source data and speaker aliases can throw the counts off.
 
-发现漏算或算错，欢迎 [开个 issue](https://github.com/achenachena/wuwa-lore/issues)。带上角色、版本、任务名，有具体台词或截图就更容易查。
+Spotted a missing line or a wrong count? [Open an issue](https://github.com/achenachena/wuwa-lore/issues) with the character, patch, and quest name. A specific line or screenshot helps a lot.
 
-## 本地跑一下
+## Running locally
 
-用 Node.js 22，装好依赖就能启动。仓库里带了数据，单纯改页面不用先抓一遍。
+Use Node.js 22. The repo includes the data, so you can work on the site without running the scrapers first.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-打开 <http://localhost:3000>。技术上就是 Next.js、TypeScript 和 Tailwind，数据放 JSON 文件，没有数据库。
+Then open <http://localhost:3000>. It's built with Next.js, TypeScript, and Tailwind. Data lives in JSON files; there's no database to set up.
 
-## 更新数据
+## Updating the data
 
-GitHub Actions 每周一检查一次角色、版本和主线数据，有变化会开 PR，检查后再合并；也能在 Actions 里手动运行 `Sync game data`。上游资料更新有延迟，所以新版本内容不一定当天就齐。
+A GitHub Actions workflow checks character, patch, and main-story data every Monday and opens a PR when something changes. Those changes still need review and merging. You can also run `Sync game data` manually from the Actions tab. Sources take time to catch up, so a new patch won't necessarily be complete on day one.
 
-本地常用这几个命令：
+For local updates:
 
 ```bash
-npm run data:sync                  # 角色、语音资料和版本公告
-npm run data:sync-stories          # 主线任务、出场和台词
-npm run data:sync-optional-quests  # 伴星、活动、支线（单独更新）
-npm run data:generate              # 统计和词云；词云会联网，比较慢
-npm run data:validate              # 检查数据
-npm run data:audit-stories         # 检查主线出场和台词是否对得上
+npm run data:sync                 # Characters, voice-over data, and patch notices
+npm run data:sync-stories         # Main quests, appearances, and dialogue
+npm run data:sync-optional-quests # Companion stories, events, and side quests
+npm run data:generate             # Stats and word clouds; fetches data and takes a while
+npm run data:validate             # Check the data
+npm run data:audit-stories        # Cross-check main-story appearances and dialogue
 ```
 
-`content/` 放角色、版本和任务对应关系，`data/raw/` 留来源快照，`data/derived/` 是网站读取的统计结果。抓取和整理脚本都在 `scripts/`。
+`content/` holds character records, patches, and quest mappings. `data/raw/` keeps source snapshots, and `data/derived/` contains the stats the site reads. The scraping and processing scripts are in `scripts/`.
 
-改完代码可以跑 `npm run typecheck`、`npm run lint`、`npm test` 和 `npm run build`。只想从已有数据重算统计，用 `npm run data:generate-local` 就行。
+After code changes, run `npm run typecheck`, `npm run lint`, `npm test`, and `npm run build`. To recalculate stats from the data already in the repo, use `npm run data:generate-local`.
 
-部署在 Vercel，推到 `main` 会自动发布。[部署备注](docs/deployment.md)里留了自定义域名和运行数据打包的注意事项。
+The site runs on Vercel and deploys when changes reach `main`. [Deployment notes](docs/deployment.md) cover the custom domain and bundling the data files.
 
-个人维护的非官方小项目。鸣潮的角色、图片和文本归库洛游戏及相应权利方所有，也感谢整理 Wiki 和 Encore 数据的朋友。
+An unofficial side project, maintained in my spare time. Wuthering Waves characters, artwork, and text belong to Kuro Games and their respective owners. Thanks to everyone maintaining the Wiki and Encore data that makes this possible.
