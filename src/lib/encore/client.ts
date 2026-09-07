@@ -105,18 +105,14 @@ export function buildStoryIdsByName(
   return storyIdsByName;
 }
 
-export function storyTypeIdKey(typeId: number | string): string {
-  return String(typeId);
-}
-
 export function collectEncoreStoriesByTypeIds(
   storyTypes: EncoreStoryType[],
   typeIds: Array<number | string>,
 ): EncoreStoryIndexItem[] {
-  const allowed = new Set(typeIds.map(storyTypeIdKey));
+  const allowed = new Set(typeIds.map(String));
   const items: EncoreStoryIndexItem[] = [];
   for (const type of storyTypes) {
-    if (!allowed.has(storyTypeIdKey(type.TypeId))) {
+    if (!allowed.has(String(type.TypeId))) {
       continue;
     }
     for (const story of flattenEncoreStories([type])) {
@@ -126,22 +122,6 @@ export function collectEncoreStoriesByTypeIds(
     }
   }
   return items.sort((a, b) => a.Id - b.Id);
-}
-
-export function buildStoryIdsByNameForTypeIds(
-  storyTypes: EncoreStoryType[],
-  typeIds: Array<number | string>,
-): Map<string, number[]> {
-  const storyIdsByName = new Map<string, number[]>();
-  for (const story of collectEncoreStoriesByTypeIds(storyTypes, typeIds)) {
-    const name = story.Name ?? story.Title;
-    if (name && typeof story.Id === "number") {
-      const list = storyIdsByName.get(name) ?? [];
-      list.push(story.Id);
-      storyIdsByName.set(name, list);
-    }
-  }
-  return storyIdsByName;
 }
 
 export async function loadWikiEncoreMap(): Promise<WikiEncoreMapFile> {

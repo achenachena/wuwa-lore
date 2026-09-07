@@ -48,29 +48,36 @@ type OptionalQuestDialogueFile = {
   unmappedSpeakers: UnmappedSpeakerRow[] | null;
 };
 
-export const loadCharacters = defineLoader("characters", async () => {
+export const loadCharacters = defineLoader(async () => {
   const dir = dataPath("content", "characters");
-  const files = (await fs.readdir(dir)).filter((name) => name.endsWith(".json"));
+  const files = (await fs.readdir(dir)).filter((name) =>
+    name.endsWith(".json"),
+  );
   const characters = await Promise.all(
     files.map(async (file) => {
-      const data = await readJsonFile<unknown>(dataPath("content", "characters", file));
+      const data = await readJsonFile<unknown>(
+        dataPath("content", "characters", file),
+      );
       return characterSchema.parse(data);
     }),
   );
   return characters.sort((a, b) => a.id.localeCompare(b.id));
 });
 
-export const loadCharacterById = cache(async (id: string): Promise<Character | null> => {
-  try {
-    const data = await readJsonFile<unknown>(dataPath("content", "characters", `${id}.json`));
-    return characterSchema.parse(data);
-  } catch {
-    return null;
-  }
-});
+export const loadCharacterById = cache(
+  async (id: string): Promise<Character | null> => {
+    try {
+      const data = await readJsonFile<unknown>(
+        dataPath("content", "characters", `${id}.json`),
+      );
+      return characterSchema.parse(data);
+    } catch {
+      return null;
+    }
+  },
+);
 
 export const loadVersions = defineParsedJsonLoader(
-  "versions",
   "content/versions/versions.json",
   (raw): VersionRecord[] =>
     versionSchema
@@ -80,7 +87,6 @@ export const loadVersions = defineParsedJsonLoader(
 );
 
 export const loadCharacterImages = defineParsedJsonLoader(
-  "character-images",
   "content/images/images.json",
   (raw): CharacterImage[] =>
     characterImageSchema
@@ -90,23 +96,22 @@ export const loadCharacterImages = defineParsedJsonLoader(
 );
 
 export const loadGeneratedStats = defineParsedJsonLoader(
-  "voice-line-stats",
   "data/derived/voice-line-stats.json",
   (raw): VoiceLineStatRow[] => generatedStatsSchema.parse(raw).rows,
 );
 
 export const loadVoiceLineDetails = defineParsedJsonLoader(
-  "voice-line-details",
   "data/derived/voice-line-details.json",
   (raw): VoiceLineDetailRow[] =>
     z.object({ rows: z.array(voiceLineDetailRowSchema) }).parse(raw).rows,
 );
 
 const loadWordCloudIndex = defineParsedJsonLoader(
-  "character-word-clouds-index",
   "data/derived/character-word-clouds.json",
   (raw): Map<string, CharacterWordCloudRow> => {
-    const parsed = z.object({ rows: z.array(characterWordCloudRowSchema) }).parse(raw);
+    const parsed = z
+      .object({ rows: z.array(characterWordCloudRowSchema) })
+      .parse(raw);
     const index = new Map<string, CharacterWordCloudRow>();
     for (const row of parsed.rows) {
       index.set(`${row.characterId}::${row.locale}`, row);
@@ -116,7 +121,10 @@ const loadWordCloudIndex = defineParsedJsonLoader(
 );
 
 export const loadCharacterWordCloud = cache(
-  async (characterId: string, locale: EncoreLocale): Promise<CharacterWordCloudRow | null> => {
+  async (
+    characterId: string,
+    locale: EncoreLocale,
+  ): Promise<CharacterWordCloudRow | null> => {
     try {
       const index = await loadWordCloudIndex();
       return index.get(`${characterId}::${locale}`) ?? null;
@@ -126,7 +134,7 @@ export const loadCharacterWordCloud = cache(
   },
 );
 
-export const loadValidationReport = defineLoader("validation-report", () =>
+export const loadValidationReport = defineLoader(() =>
   readJsonFile<{
     generatedAt: string;
     ok: boolean;
@@ -138,7 +146,7 @@ export const loadValidationReport = defineLoader("validation-report", () =>
   }>(dataPath("data", "derived", "validation-report.json")),
 );
 
-export const loadQualityReport = defineLoader("quality-report", () =>
+export const loadQualityReport = defineLoader(() =>
   readJsonFile<{
     generatedAt: string;
     totalCharacters: number;
@@ -152,7 +160,7 @@ export const loadQualityReport = defineLoader("quality-report", () =>
   }>(dataPath("data", "derived", "quality-report.json")),
 );
 
-export const loadChangeReport = defineLoader("change-report", () =>
+export const loadChangeReport = defineLoader(() =>
   readJsonFile<{
     generatedAt: string;
     rowCoverage: {
@@ -180,7 +188,7 @@ export const loadChangeReport = defineLoader("change-report", () =>
   }>(dataPath("data", "derived", "change-report.json")),
 );
 
-export const loadOfficialVersionNotes = defineLoader("official-version-notes", () =>
+export const loadOfficialVersionNotes = defineLoader(() =>
   readJsonFile<{
     sourceName: string;
     sourceUrl: string;
@@ -198,14 +206,12 @@ export const loadOfficialVersionNotes = defineLoader("official-version-notes", (
 );
 
 export const loadStorySegments = defineParsedJsonLoader(
-  "story-segments",
   "content/stories/story-segments.json",
   (raw): StorySegment[] =>
     z.object({ segments: z.array(storySegmentSchema) }).parse(raw).segments,
 );
 
 export const loadStoryAppearances = defineParsedJsonLoader(
-  "story-appearances",
   "data/derived/story-appearances.json",
   (raw): StoryAppearanceRow[] =>
     z
@@ -215,7 +221,6 @@ export const loadStoryAppearances = defineParsedJsonLoader(
 );
 
 export const loadAllStoryDialogueStats = defineParsedJsonLoader(
-  "story-dialogue-stats",
   "data/derived/story-dialogue-stats.json",
   (raw): StoryDialogueRow[] =>
     z.object({ rows: z.array(storyDialogueRowSchema) }).parse(raw).rows,
@@ -231,14 +236,12 @@ export const loadStoryDialogueStatsForLocale = cache(
 );
 
 export const loadOptionalQuestCatalog = defineParsedJsonLoader(
-  "optional-quest-catalog",
   "content/stories/optional-quest-catalog.json",
   (raw): OptionalQuestRecord[] =>
     z.object({ quests: z.array(optionalQuestRecordSchema) }).parse(raw).quests,
 );
 
 const loadOptionalQuestDialogueFile = defineParsedJsonLoader(
-  "optional-quest-dialogue-file",
   "data/derived/optional-quest-dialogue-stats.json",
   (raw): OptionalQuestDialogueFile => {
     const parsed = z
@@ -247,7 +250,9 @@ const loadOptionalQuestDialogueFile = defineParsedJsonLoader(
         source: z
           .object({
             coverage: z.array(optionalQuestCoverageSchema).optional(),
-            unmappedSpeakers: z.array(optionalQuestUnmappedSpeakerSchema).optional(),
+            unmappedSpeakers: z
+              .array(optionalQuestUnmappedSpeakerSchema)
+              .optional(),
           })
           .optional(),
       })
@@ -280,7 +285,6 @@ export const loadOptionalQuestUnmappedSpeakers = cache(async () => {
 });
 
 export const loadOptionalQuestAppearances = defineParsedJsonLoader(
-  "optional-quest-appearances",
   "data/derived/optional-quest-appearances.json",
   (raw): OptionalQuestAppearanceRow[] =>
     z
@@ -290,13 +294,12 @@ export const loadOptionalQuestAppearances = defineParsedJsonLoader(
 );
 
 export const loadVersionHalfVoiceStats = defineParsedJsonLoader(
-  "version-half-voice-stats",
   "data/derived/version-half-voice-stats.json",
   (raw): VersionHalfVoiceRow[] =>
     z.object({ rows: z.array(versionHalfVoiceRowSchema) }).parse(raw).rows,
 );
 
-export const loadSourceDiffReport = defineLoader("source-diff-report", () =>
+export const loadSourceDiffReport = defineLoader(() =>
   readJsonFile<{
     generatedAt: string;
     toleranceMinutes?: number;

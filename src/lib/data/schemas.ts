@@ -60,11 +60,6 @@ export const voiceLineEntrySchema = z.object({
   source: sourceTraceSchema,
 });
 
-export const rawVoiceSnapshotSchema = z.object({
-  snapshotId: z.string().min(1),
-  entries: z.array(voiceLineEntrySchema),
-});
-
 export const voiceLineStatRowSchema = z.object({
   characterId: z.string().min(1),
   debutVersion: z.string().min(1),
