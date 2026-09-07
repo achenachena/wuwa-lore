@@ -1,12 +1,18 @@
 import { loadSourceDiffReport } from "@/lib/data/loaders";
-import { trimSourceDiffForProduction } from "@/lib/exports/reports";
+import { isProduction } from "@/lib/security/headers";
 import { jsonExport } from "@/lib/security/exports";
 
 export async function GET() {
   try {
     const report = await loadSourceDiffReport();
-    return jsonExport(trimSourceDiffForProduction(report), "wuwa-source-diff.json");
+    const body = isProduction()
+      ? { generatedAt: report.generatedAt, summary: report.summary }
+      : report;
+    return jsonExport(body, "wuwa-source-diff.json");
   } catch {
-    return Response.json({ error: "Source diff report not found" }, { status: 404 });
+    return Response.json(
+      { error: "Source diff report not found" },
+      { status: 404 },
+    );
   }
 }

@@ -1,105 +1,22 @@
-# Deployment
+# 部署备注
 
-## Build parity
+网站在 Vercel，正式域名是 <https://wuwalore.xyz>。GitHub 的 `main` 分支自动部署到正式环境，其他分支会生成预览。
 
-- CI build command: `npm run build`
-- Vercel build command: `npm run build`
+## 配置
 
-## Required runtime variables
+- Framework：Next.js
+- Build command：`npm run build`，和 CI 一样
+- `NEXT_PUBLIC_SITE_URL=https://wuwalore.xyz`：用于 sitemap、robots 和页面的 canonical URL。换域名时一起改；本地可参考 `.env.example`。
+- `ENABLE_PUBLIC_TOOLS=1`：可选，开放 `/tools` 数据检查页。正式环境默认不开放，本地开发可以直接访问。
 
-This MVP is JSON-first and does not require runtime secrets for page rendering.
+页面读取仓库里的 JSON，不需要数据库或运行时密钥。`next.config.ts` 中的 `outputFileTracingIncludes` 要保留 `content/**/*.json` 和 `data/derived/**/*.json`，否则可能构建成功、上线后却找不到数据。抓取脚本在本地或 GitHub Actions 跑，不在用户打开网页时跑。
 
-| Variable | Required | Example | Purpose |
-|----------|----------|---------|---------|
-| `NEXT_PUBLIC_SITE_URL` | Recommended (production) | `https://wuwalore.xyz` | Canonical URL for sitemap, robots, Open Graph |
+## 发布后看一眼
 
-Optional integrations (future phase):
+确认 Vercel 部署的提交和 GitHub 一致，再检查首页、角色页、统计页以及 `/api/health/data-quality`。健康接口应返回 `ok: true`。构建显示 Ready 不代表运行时数据一定齐全。
 
-- `NEON_API_KEY` for Neon MCP/database workflows
-- `GITHUB_TOKEN` for GitHub MCP/workflows
+遇到线上问题可以用 `vercel rollback <上一份正常部署的 URL>` 回滚。修好后检查正式域名是否已经跟到新部署；必要时用 `vercel promote <已验证的部署 URL>` 切回。
 
-## Deploy steps
+## 域名
 
-1. Push `main` branch to GitHub.
-2. Import repository in Vercel.
-3. Keep framework preset as Next.js.
-4. Confirm build command is `npm run build`.
-5. Trigger deployment.
-
-## Custom domain (`wuwalore.xyz` on Cloudflare)
-
-Production site: **https://wuwalore.xyz**
-
-### 1. Add domain in Vercel
-
-1. [Vercel Dashboard](https://vercel.com) → **wuwa-lore** project.
-2. **Settings → Domains**.
-3. Add `wuwalore.xyz`.
-4. (Optional) Add `www.wuwalore.xyz` and set redirects in Vercel (e.g. `www` → apex).
-
-Vercel shows the DNS records it expects. Keep that tab open for the next step.
-
-### 2. Cloudflare DNS records
-
-Cloudflare Dashboard → **wuwalore.xyz** → **DNS** → **Records**.
-
-**Recommended (apex + optional www):**
-
-| Type | Name | Target / Content | Proxy |
-|------|------|------------------|-------|
-| `CNAME` | `@` | `cname.vercel-dns.com` | Proxied (orange) or DNS only (grey) |
-| `CNAME` | `www` | `cname.vercel-dns.com` | Same as above |
-
-Cloudflare supports CNAME at the zone apex (`@`) via CNAME flattening.
-
-**Alternative for apex only:**
-
-| Type | Name | Content | Proxy |
-|------|------|---------|-------|
-| `A` | `@` | `76.76.21.21` | DNS only (grey) recommended for first setup |
-
-Delete conflicting old `A` / `CNAME` records for `@` or `www` before adding new ones.
-
-Back in Vercel **Domains**, wait until status is **Valid Configuration** (usually a few minutes).
-
-### 3. Cloudflare SSL/TLS
-
-**SSL/TLS** → Overview → set encryption mode to **Full (strict)**.
-
-This lets Cloudflare connect to Vercel over HTTPS with a valid certificate. Avoid **Flexible** (can cause redirect loops with Vercel).
-
-Optional but useful:
-
-- **SSL/TLS → Edge Certificates** → enable **Always Use HTTPS**
-- **Rules → Redirect Rules** → redirect `www.wuwalore.xyz` → `https://wuwalore.xyz` if you only use the apex domain
-
-### 4. Canonical URL in Vercel
-
-**Settings → Environment Variables**:
-
-```
-NEXT_PUBLIC_SITE_URL=https://wuwalore.xyz
-```
-
-Scope: **Production**. Redeploy after saving.
-
-Locally: `cp .env.example .env.local` and use the same value if needed.
-
-### 5. Primary domain & old URL redirect
-
-**Settings → Domains** → set `wuwalore.xyz` as **Primary**. Enable redirect from `wuwa-lore.vercel.app` if offered.
-
-### 6. Verify
-
-- https://wuwalore.xyz
-- https://wuwalore.xyz/sitemap.xml (URLs use `wuwalore.xyz`)
-- https://wuwalore.xyz/robots.txt
-
-### Troubleshooting
-
-| Symptom | Fix |
-|---------|-----|
-| Vercel stuck on "Invalid Configuration" | Check record names (`@` not `wuwalore.xyz`), remove duplicates, wait 5–10 min |
-| Redirect loop | Cloudflare SSL → **Full (strict)**; disable conflicting Page Rules |
-| Site loads but sitemap shows `vercel.app` | Set `NEXT_PUBLIC_SITE_URL` and redeploy |
-| SSL certificate pending | Grey-cloud DNS first until Vercel validates, then re-enable proxy |
+在 Vercel 项目的 Domains 添加域名，再按页面给出的记录配置 Cloudflare DNS，避免照抄旧 IP。Cloudflare 的 SSL/TLS 用 Full (strict)。如果换了域名，记得更新 `NEXT_PUBLIC_SITE_URL` 并重新部署，检查 `/sitemap.xml` 和 `/robots.txt` 中的地址。
