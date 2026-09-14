@@ -21,9 +21,11 @@ import {
   loadStoryAppearances,
   loadStoryDialogueStatsForLocale,
   loadStorySegments,
-  loadVersions,
 } from "@/lib/data/loaders";
-import { filterVoiceStatsForSite, getCharacterPortraitMap } from "@/lib/data/queries/shared";
+import {
+  filterVoiceStatsForSite,
+  getCharacterPortraitMap,
+} from "@/lib/data/queries/shared";
 import { isRoverCharacter, toEncoreLocale } from "@/lib/i18n/locale";
 import { getSiteLocale } from "@/lib/i18n/server";
 
@@ -115,32 +117,14 @@ export const getCharacterLineTotalsForSite = cache(async () => {
   return totals;
 });
 
-export const getHomeSummary = cache(async () => {
-  const [characters, versions, lineTotals] = await Promise.all([
-    loadCharacters(),
-    loadVersions(),
-    getCharacterLineTotalsForSite(),
-  ]);
-  let totalLines = 0;
-  for (const row of lineTotals.values()) {
-    totalLines += row.totalLines;
-  }
-  return {
-    characterCount: characters.filter(
-      (character) => !isRoverCharacter(character.id),
-    ).length,
-    versionCount: versions.length,
-    totalLines,
-  };
-});
-
 export const getCharacterAppearanceVersionMap = cache(async () => {
-  const [characters, segments, storyAppearances, siteLocale] = await Promise.all([
-    loadCharacters(),
-    loadStorySegments(),
-    loadStoryAppearances(),
-    getSiteLocale(),
-  ]);
+  const [characters, segments, storyAppearances, siteLocale] =
+    await Promise.all([
+      loadCharacters(),
+      loadStorySegments(),
+      loadStoryAppearances(),
+      getSiteLocale(),
+    ]);
   const storyDialogueStats = await loadStoryDialogueStatsForLocale(
     toEncoreLocale(siteLocale),
   );

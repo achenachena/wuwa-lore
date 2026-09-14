@@ -7,7 +7,7 @@ import { CharacterAvatar } from "@/components/character-avatar";
 import { CharacterRankingTable } from "@/components/character-ranking-table";
 import { ToggleTab } from "@/components/toggle-tab";
 import type { Messages } from "@/lib/i18n/messages";
-import { isVersionInRange } from "@/lib/version/compare";
+import { compareVersion, isVersionInRange } from "@/lib/version/compare";
 
 type SegmentOption = {
   id: string;
@@ -54,7 +54,7 @@ export function VersionHalfStatsBrowser({
   const [fromVersion, setFromVersion] = useState(initialFromVersion);
   const [toVersion, setToVersion] = useState(initialToVersion);
   const [view, setView] = useState<"ranking" | "matrix">("ranking");
-  const [sortKey, setSortKey] = useState<SortKey>("linesPerAppearance");
+  const [sortKey, setSortKey] = useState<SortKey>("voiceLineCount");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [matrixSortDirection, setMatrixSortDirection] =
     useState<SortDirection>("desc");
@@ -202,7 +202,11 @@ export function VersionHalfStatsBrowser({
           <select
             className="block rounded-md border border-zinc-300 px-3 py-2"
             value={fromVersion}
-            onChange={(event) => setFromVersion(event.target.value)}
+            onChange={(event) => {
+              const value = event.target.value;
+              setFromVersion(value);
+              if (compareVersion(value, toVersion) > 0) setToVersion(value);
+            }}
           >
             {versions.map((version) => (
               <option key={version} value={version}>
@@ -216,7 +220,11 @@ export function VersionHalfStatsBrowser({
           <select
             className="block rounded-md border border-zinc-300 px-3 py-2"
             value={toVersion}
-            onChange={(event) => setToVersion(event.target.value)}
+            onChange={(event) => {
+              const value = event.target.value;
+              setToVersion(value);
+              if (compareVersion(value, fromVersion) < 0) setFromVersion(value);
+            }}
           >
             {versions.map((version) => (
               <option key={version} value={version}>
@@ -225,11 +233,37 @@ export function VersionHalfStatsBrowser({
             ))}
           </select>
         </label>
-        <div className="flex gap-2">
-          <ToggleTab active={view === "ranking"} onClick={() => setView("ranking")}>
+        <button
+          type="button"
+          className="rounded-md border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+          onClick={() => {
+            setFromVersion(initialToVersion);
+            setToVersion(initialToVersion);
+          }}
+        >
+          {labels.latestPatch}
+        </button>
+        <button
+          type="button"
+          className="rounded-md border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+          onClick={() => {
+            setFromVersion(initialFromVersion);
+            setToVersion(initialToVersion);
+          }}
+        >
+          {labels.allPatches}
+        </button>
+        <div className="flex gap-2 sm:ml-auto">
+          <ToggleTab
+            active={view === "ranking"}
+            onClick={() => setView("ranking")}
+          >
             {labels.rankingTab}
           </ToggleTab>
-          <ToggleTab active={view === "matrix"} onClick={() => setView("matrix")}>
+          <ToggleTab
+            active={view === "matrix"}
+            onClick={() => setView("matrix")}
+          >
             {labels.matrixTab}
           </ToggleTab>
         </div>

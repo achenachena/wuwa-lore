@@ -10,7 +10,6 @@ import type {
   StoryDialogueRow,
   StorySegment,
   VersionRecord,
-  VersionStatRow,
   VoiceLineEntry,
   VoiceLineStatRow,
   QuestCategory,
@@ -116,63 +115,6 @@ export function sumStoryDialogueByCharacter(
     );
   }
   return totals;
-}
-
-export function sumStoryDialogueByVersion(
-  rows: StoryDialogueRow[],
-): Map<string, number> {
-  const totals = new Map<string, number>();
-  for (const row of rows) {
-    totals.set(row.version, (totals.get(row.version) ?? 0) + row.lineCount);
-  }
-  return totals;
-}
-
-export function aggregateVersionStats(params: {
-  versions: VersionRecord[];
-  characters: Character[];
-  voiceStats: VoiceLineStatRow[];
-  storyDialogueStats?: StoryDialogueRow[];
-}): VersionStatRow[] {
-  const { versions, characters, voiceStats, storyDialogueStats } = params;
-  const debutCountByVersion = new Map<string, number>();
-  for (const character of characters) {
-    if (isRoverCharacter(character.id)) {
-      continue;
-    }
-    debutCountByVersion.set(
-      character.releaseVersion,
-      (debutCountByVersion.get(character.releaseVersion) ?? 0) + 1,
-    );
-  }
-
-  const storyLinesByVersion = storyDialogueStats
-    ? sumStoryDialogueByVersion(storyDialogueStats)
-    : null;
-
-  const voiceLinesByVersion = new Map<string, number>();
-  if (!storyLinesByVersion) {
-    for (const row of voiceStats) {
-      if (isRoverCharacter(row.characterId)) {
-        continue;
-      }
-      for (const item of row.perVersionLineCounts) {
-        voiceLinesByVersion.set(
-          item.version,
-          (voiceLinesByVersion.get(item.version) ?? 0) + item.lineCount,
-        );
-      }
-    }
-  }
-
-  return versions.map((version) => ({
-    version: version.version,
-    releaseDate: version.releaseDate,
-    characterCount: debutCountByVersion.get(version.version) ?? 0,
-    totalVoiceLines: storyLinesByVersion
-      ? (storyLinesByVersion.get(version.version) ?? 0)
-      : (voiceLinesByVersion.get(version.version) ?? 0),
-  }));
 }
 
 export function appearanceKey(characterId: string, questId: string): string {

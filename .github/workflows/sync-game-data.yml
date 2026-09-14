@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Sync Fandom and official data
+      - name: Sync character and version data
         run: npm run data:sync
 
       - name: Sync main-story appearances and dialogue
@@ -41,9 +41,6 @@ jobs:
 
       - name: Validate synchronized data
         run: npm run data:validate
-
-      - name: Compare official and community sources
-        run: npm run data:compare
 
       - name: Audit story dialogue attribution
         run: npm run data:audit-stories
@@ -66,6 +63,5 @@ jobs:
             Automated weekly refresh of the version registry, character records,
             image metadata, and per-locale voice-line statistics.
 
-            The workflow validates the generated data and compares version metadata
-            with the official Kuro Games notice feed before opening this pull request.
+            The workflow checks dialogue counts and story attribution before opening this pull request.
           labels: automated,data

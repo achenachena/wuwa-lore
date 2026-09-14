@@ -1,96 +1,42 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
-
 import {
   loadCharacters,
   loadGeneratedStats,
-  loadOfficialVersionNotes,
+  loadVersions,
+  loadStorySegments,
   loadStoryAppearances,
   loadAllStoryDialogueStats,
-  loadStorySegments,
-  loadVersionHalfVoiceStats,
-  loadVersions,
 } from "@/lib/data/loaders";
-import { validateCharactersAndVersions, validateVoiceLineStats } from "@/lib/data/validate";
+import {
+  validateCharactersAndVersions,
+  validateVoiceLineStats,
+} from "@/lib/data/validate";
 
 async function main() {
-  const [characters, versions, rows, official, storyAppearances, storyDialogueStats, storySegments, versionHalfVoiceStats] =
+  const [characters, versions, rows, segments, appearances, dialogue] =
     await Promise.all([
-    loadCharacters(),
-    loadVersions(),
-    loadGeneratedStats(),
-    loadOfficialVersionNotes(),
-    loadStoryAppearances().catch(() => []),
-    loadAllStoryDialogueStats().catch(() => []),
-    loadStorySegments().catch(() => []),
-    loadVersionHalfVoiceStats().catch(() => []),
-  ]);
-
-  const identityValidation = validateCharactersAndVersions(characters, versions);
-  const statValidation = validateVoiceLineStats(rows);
-  const officialVersions = new Set(official.rows.map((row) => row.version));
-  const missingOfficialVersions = versions
-    .map((version) => version.version)
-    .filter((version) => !officialVersions.has(version));
-  const officialValidation = {
-    ok: missingOfficialVersions.length === 0,
-    errors: missingOfficialVersions.map(
-      (version) => `Missing official baseline for version ${version}`,
-    ),
-  };
-
-  const storyValidation = {
-    ok:
-      storyAppearances.length > 0 &&
-      storyDialogueStats.some((row) => row.locale === "zh-Hans") &&
-      storyDialogueStats.some((row) => row.locale === "en") &&
-      storySegments.length > 0 &&
-      versionHalfVoiceStats.length > 0,
-    errors: [
-      ...(storyAppearances.length === 0 ? ["Missing story appearance rows"] : []),
-      ...(storyDialogueStats.some((row) => row.locale === "zh-Hans") ? [] : ["Missing zh-Hans story dialogue rows"]),
-      ...(storyDialogueStats.some((row) => row.locale === "en") ? [] : ["Missing en story dialogue rows"]),
-      ...(storySegments.length === 0 ? ["Missing story segment registry"] : []),
-      ...(versionHalfVoiceStats.length === 0 ? ["Missing version-half voice stats rows"] : []),
-    ],
-  };
-
-  const report = {
-    generatedAt: new Date().toISOString(),
-    checks: {
-      identityValidation,
-      statValidation,
-      officialValidation,
-      storyValidation,
-    },
-    ok:
-      identityValidation.ok &&
-      statValidation.ok &&
-      officialValidation.ok &&
-      storyValidation.ok,
-  };
-
-  const reportPath = path.join(process.cwd(), "data", "derived", "validation-report.json");
-  await fs.writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
-
-  if (!report.ok) {
-    console.error("Data validation failed");
-    for (const error of [
-      ...identityValidation.errors,
-      ...statValidation.errors,
-      ...officialValidation.errors,
-      ...storyValidation.errors,
-    ]) {
-      console.error(`- ${error}`);
-    }
-    process.exitCode = 1;
-    return;
+      loadCharacters(),
+      loadVersions(),
+      loadGeneratedStats(),
+      loadStorySegments(),
+      loadStoryAppearances(),
+      loadAllStoryDialogueStats(),
+    ]);
+  const errors = [
+    ...validateCharactersAndVersions(characters, versions).errors,
+    ...validateVoiceLineStats(rows).errors,
+  ];
+  if (!characters.length || !segments.length || !appearances.length)
+    errors.push("Missing character or main-story data");
+  for (const locale of ["zh-Hans", "en"]) {
+    if (!dialogue.some((row) => row.locale === locale))
+      errors.push(`Missing ${locale} story dialogue`);
   }
-
-  console.log(`Data validation passed -> ${reportPath}`);
+  if (errors.length) throw new Error(errors.join("\n"));
+  console.log(
+    `Data valid: ${characters.length} characters, ${dialogue.length} story dialogue rows`,
+  );
 }
-
-main().catch((error: unknown) => {
-  console.error("Validation script crashed", error);
+main().catch((error) => {
+  console.error(error);
   process.exitCode = 1;
 });

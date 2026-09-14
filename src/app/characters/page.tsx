@@ -8,7 +8,6 @@ import {
 } from "@/lib/data";
 import { loadCharacters } from "@/lib/data/loaders";
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
-import { localizeGameLabel } from "@/lib/i18n/game-labels";
 import { getMessages, getSiteLocale } from "@/lib/i18n/server";
 import { isRoverCharacter } from "@/lib/i18n/locale";
 import { pageMetadata } from "@/lib/seo/metadata";
@@ -56,10 +55,6 @@ export default async function CharactersPage({ searchParams }: PageProps) {
     return {
       id: character.id,
       name: displayNames.get(character.id) ?? character.name,
-      element: localizeGameLabel(character.element, "element", siteLocale),
-      weapon: localizeGameLabel(character.weapon, "weapon", siteLocale),
-      faction: localizeGameLabel(character.faction, "faction", siteLocale),
-      rarity: character.rarity,
       appearanceVersion: appearanceVersion ?? t.common.dash,
       voiceLineTotal: totalLines,
       hasVoiceStats: totalLines > 0,

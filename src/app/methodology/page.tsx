@@ -1,121 +1,46 @@
-import type { Metadata } from "next";
+import { getSiteLocale } from "@/lib/i18n/server";
 
-import { pageMetadata } from "@/lib/seo/metadata";
-
-export function generateMetadata(): Metadata {
-  return pageMetadata({
-    title: "Data Methodology",
-    description:
-      "How WuWa Dialogue Stats / 鸣潮台词库 counts dialogue lines, attributes versions, and combines Fandom and encore.moe sources.",
-    path: "/methodology",
-    locale: "en",
-    keywords: [
-      "鸣潮台词",
-      "methodology",
-      "Wuthering Waves dialogue counting",
-      "voice line methodology",
-    ],
-  });
-}
-
-export default function MethodologyPage() {
+export default async function MethodologyPage() {
+  const zh = (await getSiteLocale()) === "zh";
   return (
-    <section className="space-y-6">
-      <h1 className="text-3xl font-semibold">Data Methodology</h1>
-      <p className="max-w-4xl text-zinc-700">
-        This page documents exactly how voiceline numbers are produced, what is directly sourced, and
-        what is estimated. The goal is auditability for lore-focused players.
+    <section className="max-w-3xl space-y-5 text-zinc-700">
+      <h1 className="text-2xl font-semibold text-zinc-900">
+        {zh ? "这些数字怎么算？" : "How are the lines counted?"}
+      </h1>
+      <p>
+        {zh
+          ? "首页统计主线剧情。台词数来自 Encore 的对话条目，出场记录来自 Wiki 任务角色列表，并补上有台词但未被列出的角色。提到一个角色的名字，不算该角色出场。"
+          : "The homepage covers the main story. Lines come from Encore dialogue entries. Appearances use the Wiki quest cast, plus speakers missing from that list. Mentioning a character does not count as an appearance."}
       </p>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Primary Sources</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700">
-          <li>Character metadata: playable resonator pages on Wuthering Waves Fandom.</li>
-          <li>Version metadata: pages under `Version/x.y` on Wuthering Waves Fandom.</li>
-          <li>Voiceline metadata: locale pages such as `Character/Voicelines/...` and their revisions.</li>
-        </ul>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Counting Rule</h2>
-        <p className="mt-2 text-sm text-zinc-700">
-          A voiceline is counted as one unique, non-empty text key matching the source pattern
-          <code className="ml-1">*_tx</code> (including localized suffixes such as
-          <code className="ml-1">*_tx_s</code> and <code className="ml-1">*_tx_t</code>, deduplicated by base key).
-        </p>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Version Attribution</h2>
-        <p className="mt-2 text-sm text-zinc-700">
-          Per-version counts are estimated by comparing source page revision snapshots at version
-          release boundaries. Because source wikis may be edited after release windows, per-version
-          values should be treated as best-effort historical estimates, while total counts represent
-          current source state.
-        </p>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Reliability Status</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700">
-          <li>
-            <strong>verified</strong>: source locale page exists and was parsed from revision history.
-          </li>
-          <li>
-            <strong>missing_source</strong>: source locale page does not currently exist; row is present
-            for completeness but counts remain zero.
-          </li>
-        </ul>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Dual-source Validation</h2>
-        <p className="mt-2 text-sm text-zinc-700">
-          Version dates are cross-checked against Kuro&apos;s official news feed (MainMenu JSON CDN)
-          via <code className="mx-1">npm run data:sync-official</code>, stored in
-          <code className="ml-1">content/official/version-notes.json</code>, and compared with Fandom
-          using a ±180 minute tolerance in <code className="mx-1">npm run data:compare</code>.
-        </p>
-        <p className="mt-2 text-sm text-zinc-700">
-          Each voiceline row stores the exact wiki field path (for example
-          <code className="mx-1">resskill_1_tx_s</code>) so text can be traced back to source wikitext.
-        </p>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Main Story Dialogue Lines</h2>
-        <p className="mt-2 text-sm text-zinc-700">
-          Story dialogue counts are synced from{" "}
-          <a className="underline" href="https://encore.moe/story?lang=zh-Hans" target="_blank" rel="noreferrer">
-            encore.moe
-          </a>{" "}
-          (<code className="mx-1">npm run data:sync-story-dialogue</code>). Each line is counted when
-          the character is the speaker in a main-story quest chapter.
-        </p>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Version-half Story Appearances</h2>
-        <p className="mt-2 text-sm text-zinc-700">
-          Main-story appearance counts are derived from Fandom quest infobox
-          <code className="mx-1">characters</code> fields only (no dialogue mentions). Quest-to-half
-          mapping lives in <code className="mx-1">content/stories/quest-half-map.json</code> and follows
-          official content release waves: first story wave in a patch = 上半, second wave = 下半.
-          Episodic/联动 quests are excluded.
-        </p>
-        <p className="mt-2 text-sm text-zinc-700">
-          Regenerate with <code className="mx-1">npm run data:sync-stories</code>.
-        </p>
-      </article>
-
-      <article className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h2 className="text-lg font-semibold">Version-half Voice Lines</h2>
-        <p className="mt-2 text-sm text-zinc-700">
-          Per-half voiceline counts map each line&apos;s first-seen timestamp to the calendar midpoint
-          between adjacent version release dates. Regenerate with{" "}
-          <code className="mx-1">npm run data:generate-half-stats</code>.
-        </p>
-      </article>
+      <p>
+        {zh
+          ? "出场次数按版本上半、下半分别计数。同一角色在同一个上下半的多个任务中出现，只计一次。台词/出场是所选区间的台词数除以出场次数。段落明细可以查看具体任务。"
+          : "Appearances are counted once per patch half, even if a character appears in several quests within it. Lines per appearance divides their dialogue total by that count. Use segment details to see individual quests."}
+      </p>
+      <p>
+        {zh
+          ? "角色首次在剧情登场的版本可能早于实装版本。中文和英文台词分开统计；条目数不等于配音时长，也不代表角色的重要程度。伴星、活动和支线在单独的页面统计。"
+          : "A character can appear before their playable release. Chinese and English lines are counted separately. Entry counts are not voice-acting duration or a measure of importance. Companion, event, and side quests have their own page."}
+      </p>
+      <p>
+        {zh
+          ? "资料可能漏收，角色别名也可能造成归属错误。发现问题请带上角色、版本和任务名报错。"
+          : "Sources can be incomplete, and aliases can cause attribution mistakes. If you spot one, please include the character, patch, and quest name in an issue."}
+      </p>
+      <div className="flex flex-wrap gap-5 text-sm">
+        <a className="underline" href="https://encore.moe/">
+          Encore
+        </a>
+        <a className="underline" href="https://wutheringwaves.fandom.com/">
+          Wuthering Waves Wiki
+        </a>
+        <a
+          className="underline"
+          href="https://github.com/achenachena/wuwa-lore/issues"
+        >
+          {zh ? "报错 / 建议" : "Report an issue"}
+        </a>
+      </div>
     </section>
   );
 }

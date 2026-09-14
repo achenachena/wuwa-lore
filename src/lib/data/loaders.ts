@@ -14,39 +14,27 @@ import {
   characterWordCloudRowSchema,
   generatedStatsSchema,
   optionalQuestAppearanceRowSchema,
-  optionalQuestCoverageSchema,
   optionalQuestDialogueRowSchema,
   optionalQuestRecordSchema,
-  optionalQuestUnmappedSpeakerSchema,
   storyAppearanceRowSchema,
   storyDialogueRowSchema,
   storySegmentSchema,
-  versionHalfVoiceRowSchema,
   versionSchema,
   voiceLineDetailRowSchema,
   type Character,
   type CharacterImage,
   type CharacterWordCloudRow,
   type OptionalQuestAppearanceRow,
-  type OptionalQuestCoverageRow,
   type OptionalQuestDialogueRow,
   type OptionalQuestRecord,
   type StoryAppearanceRow,
   type StoryDialogueRow,
   type StorySegment,
-  type UnmappedSpeakerRow,
-  type VersionHalfVoiceRow,
   type VersionRecord,
   type VoiceLineDetailRow,
   type VoiceLineStatRow,
 } from "@/lib/data/schemas";
 import { isRoverCharacter, type EncoreLocale } from "@/lib/i18n/locale";
-
-type OptionalQuestDialogueFile = {
-  rows: OptionalQuestDialogueRow[];
-  coverage: OptionalQuestCoverageRow[] | null;
-  unmappedSpeakers: UnmappedSpeakerRow[] | null;
-};
 
 export const loadCharacters = defineLoader(async () => {
   const dir = dataPath("content", "characters");
@@ -134,77 +122,6 @@ export const loadCharacterWordCloud = cache(
   },
 );
 
-export const loadValidationReport = defineLoader(() =>
-  readJsonFile<{
-    generatedAt: string;
-    ok: boolean;
-    checks: {
-      identityValidation: { ok: boolean; errors: string[] };
-      statValidation: { ok: boolean; errors: string[] };
-      officialValidation?: { ok: boolean; errors: string[] };
-    };
-  }>(dataPath("data", "derived", "validation-report.json")),
-);
-
-export const loadQualityReport = defineLoader(() =>
-  readJsonFile<{
-    generatedAt: string;
-    totalCharacters: number;
-    expectedRows: number;
-    actualRows: number;
-    coveredCharacters: number;
-    rowsWithContent: number;
-    rowsWithoutContent: number;
-    verifiedRows: number;
-    missingSourceRows: number;
-  }>(dataPath("data", "derived", "quality-report.json")),
-);
-
-export const loadChangeReport = defineLoader(() =>
-  readJsonFile<{
-    generatedAt: string;
-    rowCoverage: {
-      oldRowCount: number;
-      newRowCount: number;
-      addedRows: number;
-      removedRows: number;
-      changedRows: number;
-    };
-    currentLineCountDelta: {
-      increasedRows: number;
-      decreasedRows: number;
-      unchangedRows: number;
-    };
-    samples: {
-      added: Array<{ key: string; currentLineCount: number }>;
-      removed: Array<{ key: string; previousLineCount: number }>;
-      changed: Array<{
-        key: string;
-        previousLineCount: number;
-        currentLineCount: number;
-        delta: number;
-      }>;
-    };
-  }>(dataPath("data", "derived", "change-report.json")),
-);
-
-export const loadOfficialVersionNotes = defineLoader(() =>
-  readJsonFile<{
-    sourceName: string;
-    sourceUrl: string;
-    scrapedAt: string;
-    editor: string;
-    rows: Array<{
-      version: string;
-      releaseDate: string;
-      noticeUrl: string;
-      title: string;
-      articleId: number | null;
-      matchMethod: string;
-    }>;
-  }>(dataPath("content", "official", "version-notes.json")),
-);
-
 export const loadStorySegments = defineParsedJsonLoader(
   "content/stories/story-segments.json",
   (raw): StorySegment[] =>
@@ -241,48 +158,20 @@ export const loadOptionalQuestCatalog = defineParsedJsonLoader(
     z.object({ quests: z.array(optionalQuestRecordSchema) }).parse(raw).quests,
 );
 
-const loadOptionalQuestDialogueFile = defineParsedJsonLoader(
+const loadOptionalQuestDialogueRows = defineParsedJsonLoader(
   "data/derived/optional-quest-dialogue-stats.json",
-  (raw): OptionalQuestDialogueFile => {
-    const parsed = z
-      .object({
-        rows: z.array(optionalQuestDialogueRowSchema),
-        source: z
-          .object({
-            coverage: z.array(optionalQuestCoverageSchema).optional(),
-            unmappedSpeakers: z
-              .array(optionalQuestUnmappedSpeakerSchema)
-              .optional(),
-          })
-          .optional(),
-      })
-      .parse(raw);
-    return {
-      rows: parsed.rows,
-      coverage: parsed.source?.coverage ?? null,
-      unmappedSpeakers: parsed.source?.unmappedSpeakers ?? null,
-    };
-  },
+  (raw): OptionalQuestDialogueRow[] =>
+    z.object({ rows: z.array(optionalQuestDialogueRowSchema) }).parse(raw).rows,
 );
 
 export const loadOptionalQuestDialogueStatsForLocale = cache(
   async (locale: EncoreLocale): Promise<OptionalQuestDialogueRow[]> => {
-    const file = await loadOptionalQuestDialogueFile();
-    return file.rows.filter(
+    const rows = await loadOptionalQuestDialogueRows();
+    return rows.filter(
       (row) => !isRoverCharacter(row.characterId) && row.locale === locale,
     );
   },
 );
-
-export const loadOptionalQuestCoverage = cache(async () => {
-  const file = await loadOptionalQuestDialogueFile();
-  return file.coverage;
-});
-
-export const loadOptionalQuestUnmappedSpeakers = cache(async () => {
-  const file = await loadOptionalQuestDialogueFile();
-  return file.unmappedSpeakers;
-});
 
 export const loadOptionalQuestAppearances = defineParsedJsonLoader(
   "data/derived/optional-quest-appearances.json",
@@ -291,43 +180,4 @@ export const loadOptionalQuestAppearances = defineParsedJsonLoader(
       .object({ rows: z.array(optionalQuestAppearanceRowSchema) })
       .parse(raw)
       .rows.filter((row) => !isRoverCharacter(row.characterId)),
-);
-
-export const loadVersionHalfVoiceStats = defineParsedJsonLoader(
-  "data/derived/version-half-voice-stats.json",
-  (raw): VersionHalfVoiceRow[] =>
-    z.object({ rows: z.array(versionHalfVoiceRowSchema) }).parse(raw).rows,
-);
-
-export const loadSourceDiffReport = defineLoader(() =>
-  readJsonFile<{
-    generatedAt: string;
-    toleranceMinutes?: number;
-    sources: {
-      fandomVersionsFile: string;
-      officialVersionsFile: string;
-      officialSourceUrl: string;
-      officialSourceName?: string;
-    };
-    summary: {
-      fandomVersionCount: number;
-      officialVersionCount: number;
-      missingInOfficial: number;
-      missingInFandom: number;
-      alignedDate?: number;
-      mismatchedDate: number;
-      ok: boolean;
-    };
-    missingInOfficial: string[];
-    missingInFandom: string[];
-    alignedDate?: string[];
-    mismatchedDate: Array<{
-      version: string;
-      fandomReleaseDate: string;
-      officialReleaseDate: string;
-      deltaMinutes: number;
-      noticeUrl: string;
-      officialMatchMethod?: string | null;
-    }>;
-  }>(dataPath("data", "derived", "source-diff-report.json")),
 );

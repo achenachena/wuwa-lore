@@ -7,7 +7,6 @@
 - Framework：Next.js
 - Build command：`npm run build`，和 CI 一样
 - `NEXT_PUBLIC_SITE_URL=https://wuwalore.xyz`：用于 sitemap、robots 和页面的 canonical URL。换域名时一起改；本地可参考 `.env.example`。
-- `ENABLE_PUBLIC_TOOLS=1`：可选，开放 `/tools` 数据检查页。正式环境默认不开放，本地开发可以直接访问。
 
 页面读取仓库里的 JSON，不需要数据库或运行时密钥。`next.config.ts` 中的 `outputFileTracingIncludes` 要保留 `content/**/*.json` 和 `data/derived/**/*.json`，否则可能构建成功、上线后却找不到数据。抓取脚本在本地或 GitHub Actions 跑，不在用户打开网页时跑。
 

@@ -15,7 +15,9 @@ function parseCategory(value?: string): QuestCategory {
   return isQuestCategory(value) ? value : "companion";
 }
 
-export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  searchParams,
+}: PageProps): Promise<Metadata> {
   const params = await searchParams;
   const category = parseCategory(params.category);
   const [t, locale] = await Promise.all([getMessages(), getSiteLocale()]);
@@ -32,10 +34,15 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
   });
 }
 
-export default async function OptionalQuestStatsPage({ searchParams }: PageProps) {
+export default async function OptionalQuestStatsPage({
+  searchParams,
+}: PageProps) {
   const params = await searchParams;
   const category = parseCategory(params.category);
-  const [pageData, t] = await Promise.all([getOptionalQuestStatsPageData(category), getMessages()]);
+  const [pageData, t] = await Promise.all([
+    getOptionalQuestStatsPageData(category),
+    getMessages(),
+  ]);
 
   return (
     <section className="space-y-4">
@@ -46,8 +53,6 @@ export default async function OptionalQuestStatsPage({ searchParams }: PageProps
         questCounts={pageData.questCounts}
         ranking={pageData.ranking}
         characterPortraits={pageData.characterPortraits}
-        coverage={pageData.coverage}
-        unmappedSpeakers={pageData.unmappedSpeakers}
         labels={t.optionalQuests}
       />
     </section>

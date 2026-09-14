@@ -87,16 +87,6 @@ export const generatedStatsSchema = z.object({
   rows: z.array(voiceLineStatRowSchema),
 });
 
-export const versionHalfRecordSchema = z.object({
-  id: z.string().min(1),
-  version: z.string().min(1),
-  half: versionHalfSchema,
-  label: z.string().min(1),
-  labelZh: z.string().min(1),
-  startDate: z.string().min(1),
-  endDate: z.string().min(1),
-});
-
 export const storySegmentSchema = z.object({
   id: z.string().min(1),
   wikiTitle: z.string().min(1),
@@ -130,15 +120,6 @@ export const storyDialogueRowSchema = z.object({
   encoreStoryIds: z.array(z.number().int()),
   source: z.enum(["encore", "fandom-fallback"]),
   sourceUrls: z.array(z.string().url()).min(1),
-});
-
-export const versionHalfVoiceRowSchema = z.object({
-  characterId: z.string().min(1),
-  locale: localeSchema,
-  versionHalf: z.string().min(1),
-  version: z.string().min(1),
-  half: versionHalfSchema,
-  lineCount: z.number().int().min(0),
 });
 
 export const optionalQuestRecordSchema = z.object({
@@ -229,11 +210,9 @@ export type VersionRecord = z.infer<typeof versionSchema>;
 export type VoiceLineEntry = z.infer<typeof voiceLineEntrySchema>;
 export type VoiceLineStatRow = z.infer<typeof voiceLineStatRowSchema>;
 export type VoiceLineDetailRow = z.infer<typeof voiceLineDetailRowSchema>;
-export type VersionHalfRecord = z.infer<typeof versionHalfRecordSchema>;
 export type StorySegment = z.infer<typeof storySegmentSchema>;
 export type StoryAppearanceRow = z.infer<typeof storyAppearanceRowSchema>;
 export type StoryDialogueRow = z.infer<typeof storyDialogueRowSchema>;
-export type VersionHalfVoiceRow = z.infer<typeof versionHalfVoiceRowSchema>;
 export type OptionalQuestRecord = z.infer<typeof optionalQuestRecordSchema>;
 export type OptionalQuestDialogueRow = z.infer<
   typeof optionalQuestDialogueRowSchema
