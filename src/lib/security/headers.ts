@@ -2,7 +2,8 @@ export const SECURITY_HEADERS: Record<string, string> = {
   "X-Content-Type-Options": "nosniff",
   "X-Frame-Options": "DENY",
   "Referrer-Policy": "strict-origin-when-cross-origin",
-  "Permissions-Policy": "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+  "Permissions-Policy":
+    "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   "X-DNS-Prefetch-Control": "off",
   "Cross-Origin-Opener-Policy": "same-origin",
   "Cross-Origin-Resource-Policy": "same-site",
@@ -29,13 +30,6 @@ export function productionSecurityHeaders(): Record<string, string> {
     ...SECURITY_HEADERS,
     "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
   };
-}
-
-const PROBE_PATH =
-  /^\/(?:\.env|\.git|wp-admin|wp-login|phpmyadmin|administrator|server-status|actuator|\.well-known\/security\.txt)(?:\/|$)/i;
-
-export function isProbePath(pathname: string): boolean {
-  return PROBE_PATH.test(pathname);
 }
 
 export function isSameOriginRequest(request: Request): boolean {

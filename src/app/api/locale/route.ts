@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 
-import { isProduction } from "@/lib/security/headers";
+import { isProduction, isSameOriginRequest } from "@/lib/security/headers";
 import { isSiteLocale, SITE_LOCALE_COOKIE } from "@/lib/i18n/locale";
 
 export async function POST(request: Request) {
+  if (!isSameOriginRequest(request)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
   let body: { locale?: string };
   try {
     body = (await request.json()) as { locale?: string };

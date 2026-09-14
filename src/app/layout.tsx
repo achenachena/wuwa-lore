@@ -103,7 +103,16 @@ export default async function RootLayout({
             </div>
           </div>
         </header>
-        <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">{children}</main>
+        <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">
+          {children}
+        </main>
+        <footer className="mx-auto max-w-6xl px-6 pb-8 text-sm text-zinc-500">
+          <Link className="hover:underline" href="/methodology">
+            {locale === "zh"
+              ? "统计说明与数据来源"
+              : "Counting notes & sources"}
+          </Link>
+        </footer>
         <Analytics />
       </body>
     </html>

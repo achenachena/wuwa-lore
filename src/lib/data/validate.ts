@@ -3,7 +3,6 @@ import type { Character, VersionRecord, VoiceLineStatRow } from "@/types/lore";
 export interface ValidationResult {
   ok: boolean;
   errors: string[];
-  checkedAt: string;
 }
 
 export function validateCharactersAndVersions(
@@ -20,7 +19,10 @@ export function validateCharactersAndVersions(
     } else {
       idSet.add(character.id);
     }
-    if (character.releaseVersion !== "unknown" && !versionSet.has(character.releaseVersion)) {
+    if (
+      character.releaseVersion !== "unknown" &&
+      !versionSet.has(character.releaseVersion)
+    ) {
       errors.push(
         `Character ${character.id} has invalid releaseVersion ${character.releaseVersion}`,
       );
@@ -30,11 +32,12 @@ export function validateCharactersAndVersions(
   return {
     ok: errors.length === 0,
     errors,
-    checkedAt: new Date().toISOString(),
   };
 }
 
-export function validateVoiceLineStats(rows: VoiceLineStatRow[]): ValidationResult {
+export function validateVoiceLineStats(
+  rows: VoiceLineStatRow[],
+): ValidationResult {
   const errors: string[] = [];
 
   for (const row of rows) {
@@ -58,6 +61,5 @@ export function validateVoiceLineStats(rows: VoiceLineStatRow[]): ValidationResu
   return {
     ok: errors.length === 0,
     errors,
-    checkedAt: new Date().toISOString(),
   };
 }

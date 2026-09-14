@@ -2,7 +2,6 @@ import { cache } from "react";
 
 import { countQuestsByCategory } from "@/lib/data/quest-categories";
 import {
-  aggregateVersionStats,
   appearanceKey,
   buildAppearanceIndex,
   buildDialogueIndex,
@@ -11,18 +10,15 @@ import {
 } from "@/lib/data/aggregate";
 import {
   loadCharacters,
-  loadGeneratedStats,
   loadOptionalQuestAppearances,
   loadOptionalQuestCatalog,
-  loadOptionalQuestCoverage,
   loadOptionalQuestDialogueStatsForLocale,
-  loadOptionalQuestUnmappedSpeakers,
   loadStoryAppearances,
   loadStoryDialogueStatsForLocale,
   loadStorySegments,
   loadVersions,
 } from "@/lib/data/loaders";
-import { filterVoiceStatsForSite, getCharacterPortraitMap } from "@/lib/data/queries/shared";
+import { getCharacterPortraitMap } from "@/lib/data/queries/shared";
 import { getCharacterDisplayNameMap } from "@/lib/i18n/character-names";
 import { isRoverCharacter, toEncoreLocale } from "@/lib/i18n/locale";
 import { getSiteLocale } from "@/lib/i18n/server";
@@ -33,23 +29,14 @@ export const getOptionalQuestStatsPageData = cache(
     const siteLocale = await getSiteLocale();
     const encoreLocale = toEncoreLocale(siteLocale);
 
-    const [
-      characters,
-      quests,
-      appearances,
-      dialogueStats,
-      coverage,
-      unmappedSpeakers,
-      portraits,
-    ] = await Promise.all([
-      loadCharacters(),
-      loadOptionalQuestCatalog(),
-      loadOptionalQuestAppearances(),
-      loadOptionalQuestDialogueStatsForLocale(encoreLocale),
-      loadOptionalQuestCoverage(),
-      loadOptionalQuestUnmappedSpeakers(),
-      getCharacterPortraitMap(),
-    ]);
+    const [characters, quests, appearances, dialogueStats, portraits] =
+      await Promise.all([
+        loadCharacters(),
+        loadOptionalQuestCatalog(),
+        loadOptionalQuestAppearances(),
+        loadOptionalQuestDialogueStatsForLocale(encoreLocale),
+        getCharacterPortraitMap(),
+      ]);
     const displayNames = await getCharacterDisplayNameMap(siteLocale);
     const playableCharacters = characters.filter(
       (character) => !isRoverCharacter(character.id),
@@ -70,32 +57,11 @@ export const getOptionalQuestStatsPageData = cache(
       category,
       quests: quests.filter((quest) => quest.category === category),
       ranking,
-      coverage,
-      unmappedSpeakers,
       characterPortraits: Object.fromEntries(portraits),
       questCounts: countQuestsByCategory(quests),
     };
   },
 );
-
-export const getVersionStatsPageData = cache(async () => {
-  const siteLocale = await getSiteLocale();
-  const encoreLocale = toEncoreLocale(siteLocale);
-
-  const [versions, characters, stats, storyDialogueStats] = await Promise.all([
-    loadVersions(),
-    loadCharacters(),
-    loadGeneratedStats(),
-    loadStoryDialogueStatsForLocale(encoreLocale),
-  ]);
-  const voiceStats = filterVoiceStatsForSite(stats, siteLocale);
-  return aggregateVersionStats({
-    versions,
-    characters,
-    voiceStats,
-    storyDialogueStats,
-  });
-});
 
 export const getVersionHalfStatsPageData = cache(
   async (params?: { fromVersion?: string; toVersion?: string }) => {

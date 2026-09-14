@@ -9,10 +9,6 @@ import type { Messages } from "@/lib/i18n/messages";
 export interface CharacterListItem {
   id: string;
   name: string;
-  element: string;
-  weapon: string;
-  faction: string;
-  rarity: number;
   appearanceVersion: string;
   voiceLineTotal: number;
   hasVoiceStats: boolean;
@@ -37,41 +33,9 @@ export function CharactersBrowser({
   initialSearch = "",
 }: CharactersBrowserProps) {
   const [search, setSearch] = useState(initialSearch);
-  const [element, setElement] = useState("all");
-  const [weapon, setWeapon] = useState("all");
-  const [rarity, setRarity] = useState("all");
   const [appearanceVersion, setAppearanceVersion] = useState("all");
   const [sortBy, setSortBy] = useState<SortKey>("name");
 
-  const elementOptions = useMemo(
-    () => [
-      "all",
-      ...new Set(
-        items.map((item) => item.element).sort((a, b) => a.localeCompare(b)),
-      ),
-    ],
-    [items],
-  );
-  const weaponOptions = useMemo(
-    () => [
-      "all",
-      ...new Set(
-        items.map((item) => item.weapon).sort((a, b) => a.localeCompare(b)),
-      ),
-    ],
-    [items],
-  );
-  const rarityOptions = useMemo(
-    () => [
-      "all",
-      ...new Set(
-        items
-          .map((item) => String(item.rarity))
-          .sort((a, b) => Number(a) - Number(b)),
-      ),
-    ],
-    [items],
-  );
   const versionOptions = useMemo(
     () => [
       "all",
@@ -89,15 +53,6 @@ export function CharactersBrowser({
     const normalized = search.trim().toLowerCase();
     return items
       .filter((item) => {
-        if (element !== "all" && item.element !== element) {
-          return false;
-        }
-        if (weapon !== "all" && item.weapon !== weapon) {
-          return false;
-        }
-        if (rarity !== "all" && String(item.rarity) !== rarity) {
-          return false;
-        }
         if (
           appearanceVersion !== "all" &&
           item.appearanceVersion !== appearanceVersion
@@ -127,12 +82,12 @@ export function CharactersBrowser({
         }
         return a.name.localeCompare(b.name);
       });
-  }, [appearanceVersion, element, items, rarity, search, sortBy, weapon]);
+  }, [appearanceVersion, items, search, sortBy]);
 
   return (
     <section className="space-y-4">
       <div className="rounded-lg border border-zinc-200 bg-white p-4">
-        <div className="grid gap-3 md:grid-cols-3 lg:grid-cols-6">
+        <div className="grid gap-3 md:grid-cols-[2fr_1fr_1fr]">
           <label className="flex flex-col gap-1 text-sm">
             <span className="text-zinc-500">{labels.search}</span>
             <input
@@ -142,27 +97,6 @@ export function CharactersBrowser({
               className="rounded-md border border-zinc-300 px-3 py-2"
             />
           </label>
-          <FilterSelect
-            label={labels.element}
-            allLabel={common.all}
-            value={element}
-            onChange={setElement}
-            options={elementOptions}
-          />
-          <FilterSelect
-            label={labels.weapon}
-            allLabel={common.all}
-            value={weapon}
-            onChange={setWeapon}
-            options={weaponOptions}
-          />
-          <FilterSelect
-            label={labels.rarity}
-            allLabel={common.all}
-            value={rarity}
-            onChange={setRarity}
-            options={rarityOptions}
-          />
           <FilterSelect
             label={labels.appearanceVersion}
             allLabel={common.all}
@@ -212,22 +146,11 @@ export function CharactersBrowser({
                       </p>
                     ) : null}
                   </div>
-                  <span className="shrink-0 rounded bg-zinc-100 px-2 py-1 text-xs">
-                    {character.rarity}★
-                  </span>
                 </div>
               </div>
             </div>
 
             <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
-              <div>
-                <dt className="text-zinc-500">{labels.element}</dt>
-                <dd>{character.element}</dd>
-              </div>
-              <div>
-                <dt className="text-zinc-500">{labels.weapon}</dt>
-                <dd>{character.weapon}</dd>
-              </div>
               <div>
                 <dt className="text-zinc-500">{labels.appearance}</dt>
                 <dd>{character.appearanceVersion}</dd>

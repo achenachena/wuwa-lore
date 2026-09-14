@@ -83,32 +83,6 @@ type VoiceLineDetailRow = {
   }>;
 };
 
-type ChangeReport = {
-  generatedAt: string;
-  rowCoverage: {
-    oldRowCount: number;
-    newRowCount: number;
-    addedRows: number;
-    removedRows: number;
-    changedRows: number;
-  };
-  currentLineCountDelta: {
-    increasedRows: number;
-    decreasedRows: number;
-    unchangedRows: number;
-  };
-  samples: {
-    added: Array<{ key: string; currentLineCount: number }>;
-    removed: Array<{ key: string; previousLineCount: number }>;
-    changed: Array<{
-      key: string;
-      previousLineCount: number;
-      currentLineCount: number;
-      delta: number;
-    }>;
-  };
-};
-
 const localePages: Array<{ locale: Locale; suffix: string }> = [
   { locale: "en-US", suffix: "/Voicelines" },
   { locale: "zh-CN", suffix: "/Voicelines/Chinese" },
@@ -443,15 +417,6 @@ async function main() {
       existingCharacters.set(character.id, character);
     }
   }
-  const prevStatsPath = path.join(
-    root,
-    "data",
-    "derived",
-    "voice-line-stats.json",
-  );
-  const previousStats = await readJsonIfExists<{ rows?: VoiceLineStatRow[] }>(
-    prevStatsPath,
-  );
   const [characterNames, versionPages] = await Promise.all([
     fetchCharacterNames(),
     fetchVersionPages(),
@@ -757,111 +722,8 @@ async function main() {
     "utf8",
   );
 
-  const coveredCharacterIds = new Set(
-    allVoiceRows.map((row) => row.characterId),
-  );
-  const rowsWithContent = allVoiceRows.filter(
-    (row) => row.totalLineCount > 0,
-  ).length;
-  const qualityReport = {
-    generatedAt: nowIso,
-    totalCharacters: characters.length,
-    expectedRows: characters.length * localePages.length,
-    actualRows: allVoiceRows.length,
-    coveredCharacters: coveredCharacterIds.size,
-    rowsWithContent,
-    rowsWithoutContent: allVoiceRows.length - rowsWithContent,
-    verifiedRows: allVoiceRows.filter((row) => row.qualityStatus === "verified")
-      .length,
-    missingSourceRows: allVoiceRows.filter(
-      (row) => row.qualityStatus === "missing_source",
-    ).length,
-  };
-  await fs.writeFile(
-    path.join(root, "data", "derived", "quality-report.json"),
-    `${JSON.stringify(qualityReport, null, 2)}\n`,
-    "utf8",
-  );
-
-  const previousRows = previousStats?.rows ?? [];
-  const oldMap = new Map(
-    previousRows.map((row) => [
-      `${row.characterId}::${row.locale}`,
-      row.currentLineCount ?? row.totalLineCount,
-    ]),
-  );
-  const newMap = new Map(
-    allVoiceRows.map((row) => [
-      `${row.characterId}::${row.locale}`,
-      row.currentLineCount,
-    ]),
-  );
-
-  const added: Array<{ key: string; currentLineCount: number }> = [];
-  const removed: Array<{ key: string; previousLineCount: number }> = [];
-  const changed: Array<{
-    key: string;
-    previousLineCount: number;
-    currentLineCount: number;
-    delta: number;
-  }> = [];
-  let increasedRows = 0;
-  let decreasedRows = 0;
-  let unchangedRows = 0;
-
-  for (const [key, currentLineCount] of newMap.entries()) {
-    const prev = oldMap.get(key);
-    if (prev === undefined) {
-      added.push({ key, currentLineCount });
-      continue;
-    }
-    const delta = currentLineCount - prev;
-    if (delta > 0) {
-      increasedRows += 1;
-      changed.push({ key, previousLineCount: prev, currentLineCount, delta });
-    } else if (delta < 0) {
-      decreasedRows += 1;
-      changed.push({ key, previousLineCount: prev, currentLineCount, delta });
-    } else {
-      unchangedRows += 1;
-    }
-  }
-  for (const [key, previousLineCount] of oldMap.entries()) {
-    if (!newMap.has(key)) {
-      removed.push({ key, previousLineCount });
-    }
-  }
-
-  const changeReport: ChangeReport = {
-    generatedAt: nowIso,
-    rowCoverage: {
-      oldRowCount: oldMap.size,
-      newRowCount: newMap.size,
-      addedRows: added.length,
-      removedRows: removed.length,
-      changedRows: changed.length,
-    },
-    currentLineCountDelta: {
-      increasedRows,
-      decreasedRows,
-      unchangedRows,
-    },
-    samples: {
-      added: added.slice(0, 25),
-      removed: removed.slice(0, 25),
-      changed: changed
-        .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
-        .slice(0, 50),
-    },
-  };
-  await fs.writeFile(
-    path.join(root, "data", "derived", "change-report.json"),
-    `${JSON.stringify(changeReport, null, 2)}\n`,
-    "utf8",
-  );
-
   console.log(
-    `Synced ${characters.length} characters, ${versions.length} versions, ${allVoiceRows.length} voice-stat rows (${rowsWithContent} with content).`,
+    `Synced ${characters.length} characters, ${versions.length} versions, ${allVoiceRows.length} voice-stat rows.`,
   );
 }
 

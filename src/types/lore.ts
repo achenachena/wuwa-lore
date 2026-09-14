@@ -20,11 +20,9 @@ export type {
   VoiceLineEntry,
   VoiceLineStatRow,
   VoiceLineDetailRow,
-  VersionHalfRecord,
   StorySegment,
   StoryAppearanceRow,
   StoryDialogueRow,
-  VersionHalfVoiceRow,
   OptionalQuestRecord,
   OptionalQuestDialogueRow,
   OptionalQuestAppearanceRow,
@@ -33,18 +31,7 @@ export type {
   CharacterWordCloudRow,
 } from "@/lib/data/schemas";
 
-import type {
-  OptionalQuestRecord,
-  StorySegment,
-} from "@/lib/data/schemas";
-
-/** Aggregated per-version dashboard row (derived, not persisted as-is). */
-export interface VersionStatRow {
-  version: string;
-  releaseDate: string;
-  characterCount: number;
-  totalVoiceLines: number;
-}
+import type { OptionalQuestRecord, StorySegment } from "@/lib/data/schemas";
 
 export interface CharacterStorySegmentRow {
   segment: StorySegment;

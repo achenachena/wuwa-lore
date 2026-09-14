@@ -1,6 +1,6 @@
 # Wuwa Lore
 
-I wanted to look up where a character shows up in the story and how many lines they actually get, so I made a little site for it. You can also browse character profiles and compare their dialogue across patches.
+I wanted to look up where a character shows up in the story and how many lines they actually get, so I made a little site for it. The homepage goes straight to the main-story ranking: pick a patch range, then sort by lines, appearances, or lines per appearance.
 
 **[Visit the site → wuwalore.xyz](https://wuwalore.xyz)**
 
@@ -8,7 +8,7 @@ It covers appearances and dialogue in main quests, companion stories, events, an
 
 ## About the numbers
 
-Character profiles and voice-over data come from the Wuthering Waves Wiki on Fandom. Story dialogue mainly comes from [Encore](https://encore.moe/), and patch dates are checked against Kuro's announcements. The site's [counting notes](https://wuwalore.xyz/methodology) explain the sources and methods in more detail.
+Character profiles and voice-over data come from the Wuthering Waves Wiki on Fandom. Story dialogue mainly comes from [Encore](https://encore.moe/); patch information comes from the Wiki. The site's [counting notes](https://wuwalore.xyz/methodology) explain the sources and methods in more detail.
 
 These are dialogue entry counts, not voice-acting duration or a measure of how important a character is to the story. A character can have lines before their playable release, too. Missing source data and speaker aliases can throw the counts off.
 
@@ -32,7 +32,7 @@ A GitHub Actions workflow checks character, patch, and main-story data every Mon
 For local updates:
 
 ```bash
-npm run data:sync                 # Characters, voice-over data, and patch notices
+npm run data:sync                 # Characters, voice-over data, and patches
 npm run data:sync-stories         # Main quests, appearances, and dialogue
 npm run data:sync-optional-quests # Companion stories, events, and side quests
 npm run data:generate             # Stats and word clouds; fetches data and takes a while

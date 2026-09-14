@@ -14,19 +14,6 @@ type Props = {
   questCounts: Record<QuestCategory, number>;
   ranking: CharacterRankingRow[];
   characterPortraits: Record<string, string>;
-  coverage: Array<{
-    category: QuestCategory;
-    questCount: number;
-    questsWithDialogue: number;
-    playableCharacterLines: number;
-    unmappedLines: number;
-    playableCharacterCount: number;
-  }> | null;
-  unmappedSpeakers: Array<{
-    category: QuestCategory;
-    name: string;
-    lineCount: number;
-  }> | null;
   labels: Messages["optionalQuests"];
 };
 
@@ -35,15 +22,9 @@ export function OptionalQuestsBrowser({
   questCounts,
   ranking,
   characterPortraits,
-  coverage,
-  unmappedSpeakers,
   labels,
 }: Props) {
   const category = initialCategory;
-  const categoryCoverage = coverage?.find((row) => row.category === category);
-  const categoryUnmappedSpeakers =
-    unmappedSpeakers?.filter((row) => row.category === category) ?? [];
-
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap gap-2">
@@ -59,33 +40,9 @@ export function OptionalQuestsBrowser({
       </div>
 
       <p className="text-sm text-zinc-600">
-        {labels.trackedQuests}: <strong>{questCounts[category]}</strong> · {labels.rankedCharacters}:{" "}
-        <strong>{ranking.length}</strong>
+        {labels.trackedQuests}: <strong>{questCounts[category]}</strong> ·{" "}
+        {labels.rankedCharacters}: <strong>{ranking.length}</strong>
       </p>
-
-      {categoryCoverage && categoryCoverage.unmappedLines > 0 ? (
-        <p className="text-xs text-zinc-500">
-          {labels.coverageNote
-            .replace("{playableChars}", String(categoryCoverage.playableCharacterCount))
-            .replace("{playableLines}", String(categoryCoverage.playableCharacterLines))
-            .replace("{unmappedLines}", String(categoryCoverage.unmappedLines))
-            .replace("{questsWithDialogue}", String(categoryCoverage.questsWithDialogue))
-            .replace("{questCount}", String(categoryCoverage.questCount))}
-        </p>
-      ) : null}
-
-      {categoryUnmappedSpeakers.length > 0 ? (
-        <details className="text-xs text-zinc-500">
-          <summary className="cursor-pointer select-none">{labels.unmappedSpeakersHint}</summary>
-          <ul className="mt-2 space-y-1 pl-4">
-            {categoryUnmappedSpeakers.map((speaker) => (
-              <li key={speaker.name}>
-                {speaker.name} ({speaker.lineCount} {labels.lines})
-              </li>
-            ))}
-          </ul>
-        </details>
-      ) : null}
 
       <CharacterRankingTable
         rows={ranking}
