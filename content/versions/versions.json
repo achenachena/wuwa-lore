@@ -103,5 +103,10 @@
     "version": "3.6",
     "releaseDate": "2026-08-20T10:00",
     "notes": "Version 3.6: Lamplight in Mirage, Sword's Resolve in Heart"
+  },
+  {
+    "version": "3.7",
+    "releaseDate": "2026-09-30T10:00",
+    "notes": "Version 3.7: Prism's Illusion, Heart's Illumination"
   }
 ]

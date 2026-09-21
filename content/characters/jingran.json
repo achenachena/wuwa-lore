@@ -6,14 +6,14 @@
   ],
   "element": "Fusion",
   "weapon": "Broadblade",
-  "faction": "Mengzhou",
+  "faction": "Nethermancer",
   "rarity": 5,
   "releaseVersion": "3.6",
   "profile": "A Resonator from Mengzhou who practices Nether Qi Art and fights with a Broadblade.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jingran",
-    "scrapedAt": "2026-08-23T00:14:34.431Z",
+    "scrapedAt": "2026-09-21T15:55:45.941Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

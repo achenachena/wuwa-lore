@@ -7,11 +7,11 @@
   "faction": "Black Shores",
   "rarity": 5,
   "releaseVersion": "1.4",
-  "profile": "* Camellia is a genus of flowering plants native to Asia.",
+  "profile": "She is a Bloom Bearer of the Black Shores, and handles the combat-oriented germination tests given to new candidates. However, she refuses all sense of responsibility, delighting in satiating her unquenchable thirst for battle and personal amusement. In pursuit of the thrill of a fight, she gleefully abandons the risks to her life and the people around her.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Camellya",
-    "scrapedAt": "2026-08-23T00:14:34.431Z",
+    "scrapedAt": "2026-09-21T15:55:45.941Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

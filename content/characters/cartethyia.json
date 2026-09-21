@@ -7,11 +7,11 @@
   "faction": "Ragunna",
   "rarity": 5,
   "releaseVersion": "2.4",
-  "profile": "* Her favorite opera line is said to be \"A thousand stars light up the air. Freedom blooms like flowers wide,\" from the now banned opera play Pegasus.",
+  "profile": "Throughout Rinascita, she is revered as Fleurdelys, the \"Blessed Maiden,\" and in some accounts, \"The Martyred Maiden.\" As a key figure in the region’s history, she holds profound influence, with her connections to the Sentinel Imperator, the Threnodian Leviathan, and the Dark Tide. Her true desires, however, lie in freeing herself from the shackles of her titles and living out her days as a just and righteous wandering knight.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cartethyia",
-    "scrapedAt": "2026-08-23T00:14:34.431Z",
+    "scrapedAt": "2026-09-21T15:55:45.941Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

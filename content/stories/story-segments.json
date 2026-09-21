@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
   "editor": "scripts/sync-story-appearances.ts",
-  "generatedAt": "2026-08-23T01:15:56.501Z",
+  "generatedAt": "2026-09-21T15:57:42.321Z",
   "segments": [
     {
       "id": "utterance-of-marvels",
@@ -15,7 +15,7 @@
     {
       "id": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -24,7 +24,7 @@
     {
       "id": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -33,7 +33,7 @@
     {
       "id": "ominous-star",
       "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
+      "nameZh": "奔策候残星",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -42,7 +42,7 @@
     {
       "id": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -51,7 +51,7 @@
     {
       "id": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -105,7 +105,7 @@
     {
       "id": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
+      "nameZh": "海岸尽头……之后？",
       "version": "1.4",
       "half": "a",
       "versionHalf": "1.4-a",
@@ -425,6 +425,15 @@
       "half": "a",
       "versionHalf": "3.6-a",
       "sortOrder": 46
+    },
+    {
+      "id": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "sortOrder": 47
     }
   ]
 }

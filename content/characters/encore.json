@@ -7,11 +7,11 @@
   "faction": "Black Shores",
   "rarity": 5,
   "releaseVersion": "1.0",
-  "profile": "She always has two Woolies with her, who are Encore's best friends and protectors.",
+  "profile": "She is from the New Federation and a Consultant of the Black Shores. With her vivid imagination, her Wooly companions, Cosmos and Cloudy, and a penchant for crafting fairy tales, she is responsible for finding new clients for the Black Shores alongside her fellow Consultant and brother figure Aalto.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Encore",
-    "scrapedAt": "2026-08-23T00:14:34.431Z",
+    "scrapedAt": "2026-09-21T15:55:45.941Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }

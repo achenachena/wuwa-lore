@@ -7,11 +7,11 @@
   "faction": "Ragunna",
   "rarity": 5,
   "releaseVersion": "2.3",
-  "profile": "* A chaconne (ciaccona in Italian) is a style of musical composition popular during the Baroque Era (1600-1750 A.D.).",
+  "profile": "She is a free-spirited, romantic, sincere, and whimsical bard wandering Rinascita in search of inspiration. A passionate musician, poet, and storyteller for both commoners as well as the Divinity, Ciaccona aims to spread her talents, truths, and discoveries of the world around her to all those daring enough to listen.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Ciaccona",
-    "scrapedAt": "2026-08-23T00:14:34.431Z",
+    "scrapedAt": "2026-09-21T15:55:45.941Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
