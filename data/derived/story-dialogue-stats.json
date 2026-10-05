@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T04:07:10.130Z",
+  "generatedAt": "2026-10-05T18:35:10.038Z",
   "source": {
     "name": "encore.moe+wutheringwaves.fandom.com",
     "baseUrl": "https://api.encore.moe",
@@ -10,8 +10,8 @@
     "countMethod": "main_story_dialogue_speaker_lines_with_fandom_audio_fallback"
   },
   "questCountByLocale": {
-    "en": 47,
-    "zh-Hans": 47
+    "en": 48,
+    "zh-Hans": 48
   },
   "rows": [
     {
@@ -57,7 +57,7 @@
       "characterId": "aalto",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -309,7 +309,7 @@
       "characterId": "baizhi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -347,7 +347,7 @@
       "characterId": "baizhi",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -601,7 +601,7 @@
       "characterId": "camellya",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -943,7 +943,7 @@
       "characterId": "changli",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1125,7 +1125,7 @@
       "characterId": "chixia",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1143,7 +1143,7 @@
       "characterId": "chixia",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1161,7 +1161,7 @@
       "characterId": "chixia",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1199,7 +1199,7 @@
       "characterId": "chixia",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1491,7 +1491,7 @@
       "characterId": "encore",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1668,6 +1668,152 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "by-moons-fated-light",
+      "wikiTitle": "By Moon's Fated Light",
+      "nameZh": "今夜，注定属于月亮",
+      "version": "2.6",
+      "half": "b",
+      "versionHalf": "2.6-b",
+      "lineCount": 13,
+      "encoreStoryIds": [
+        100026
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100026"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "by-suns-burning-hand",
+      "wikiTitle": "By Sun's Burning Hand",
+      "nameZh": "灼我以烈阳",
+      "version": "2.6",
+      "half": "a",
+      "versionHalf": "2.6-a",
+      "lineCount": 2,
+      "encoreStoryIds": [
+        100025
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100025"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 436,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100050"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 76,
+      "encoreStoryIds": [
+        100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100048"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "veils-off-in-sun-or-shadow",
+      "wikiTitle": "Veils Off in Sun or Shadow",
+      "nameZh": "夜与昼，均请摘下面纱",
+      "version": "2.0",
+      "half": "a",
+      "versionHalf": "2.0-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100016
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100016"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "we-choose-the-sky",
+      "wikiTitle": "We Choose the Sky",
+      "nameZh": "我们选择天空",
+      "version": "3.4",
+      "half": "b",
+      "versionHalf": "3.4-b",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100044
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100044"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "what-burns-beneath-frostlands",
+      "wikiTitle": "What Burns Beneath Frostlands",
+      "nameZh": "冰原下的星炬",
+      "version": "3.0",
+      "half": "a",
+      "versionHalf": "3.0-a",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        103,
+        100033
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100033",
+        "https://api.encore.moe/zh-Hans/story/103"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "hsin",
+      "questId": "xuanling-sings-storm-quelled",
+      "wikiTitle": "Xuanling Sings, Storm Quelled",
+      "nameZh": "玄翎振壑定澜音",
+      "version": "3.5",
+      "half": "a",
+      "versionHalf": "3.5-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100046
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100046"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "iuno",
       "questId": "by-moons-fated-light",
       "wikiTitle": "By Moon's Fated Light",
@@ -1761,7 +1907,7 @@
       "characterId": "jianxin",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1779,7 +1925,7 @@
       "characterId": "jianxin",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -1810,24 +1956,6 @@
       "sourceUrls": [
         "https://api.encore.moe/zh-Hans/story/100008",
         "https://api.encore.moe/zh-Hans/story/100009"
-      ]
-    },
-    {
-      "locale": "zh-Hans",
-      "characterId": "jianxin",
-      "questId": "song-of-the-heart-sword",
-      "wikiTitle": "Song of the Heart Sword",
-      "nameZh": "烟云幽远心剑鸣",
-      "version": "3.6",
-      "half": "a",
-      "versionHalf": "3.6-a",
-      "lineCount": 25,
-      "encoreStoryIds": [
-        100048
-      ],
-      "source": "encore",
-      "sourceUrls": [
-        "https://api.encore.moe/zh-Hans/story/100048"
       ]
     },
     {
@@ -1889,7 +2017,7 @@
       "characterId": "jinhsi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -2001,7 +2129,7 @@
       "characterId": "jiyan",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -2039,7 +2167,7 @@
       "characterId": "lingyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -2773,7 +2901,7 @@
       "characterId": "mortefi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3061,6 +3189,24 @@
     {
       "locale": "zh-Hans",
       "characterId": "qingxiao",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 65,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100050"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "qingxiao",
       "questId": "song-of-the-heart-sword",
       "wikiTitle": "Song of the Heart Sword",
       "nameZh": "烟云幽远心剑鸣",
@@ -3225,7 +3371,7 @@
       "characterId": "sanhua",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3243,7 +3389,7 @@
       "characterId": "sanhua",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3261,7 +3407,7 @@
       "characterId": "sanhua",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
+      "nameZh": "奔策候残星",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3315,7 +3461,7 @@
       "characterId": "shorekeeper",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
+      "nameZh": "海岸尽头……之后？",
       "version": "1.4",
       "half": "a",
       "versionHalf": "1.4-a",
@@ -3634,6 +3780,42 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "suoming",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 204,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100050"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "suoming",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100049"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "taoqi",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
@@ -3677,7 +3859,7 @@
       "characterId": "verina",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3749,7 +3931,7 @@
       "characterId": "yangyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3767,7 +3949,7 @@
       "characterId": "yangyang",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3785,7 +3967,7 @@
       "characterId": "yangyang",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3823,7 +4005,7 @@
       "characterId": "yangyang",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
+      "nameZh": "奔策候残星",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3841,7 +4023,7 @@
       "characterId": "yangyang",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -3852,6 +4034,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/zh-Hans/story/100007"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yangyang",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100050"
       ]
     },
     {
@@ -4005,7 +4205,7 @@
       "characterId": "yuanwu",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -4225,7 +4425,7 @@
       "characterId": "aalto",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -4477,7 +4677,7 @@
       "characterId": "baizhi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -4515,7 +4715,7 @@
       "characterId": "baizhi",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -4769,7 +4969,7 @@
       "characterId": "camellya",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5111,7 +5311,7 @@
       "characterId": "changli",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5293,7 +5493,7 @@
       "characterId": "chixia",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5311,7 +5511,7 @@
       "characterId": "chixia",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5329,7 +5529,7 @@
       "characterId": "chixia",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5367,7 +5567,7 @@
       "characterId": "chixia",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5641,7 +5841,7 @@
       "characterId": "encore",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5818,6 +6018,42 @@
     },
     {
       "locale": "en",
+      "characterId": "hsin",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 423,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100050"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "hsin",
+      "questId": "song-of-the-heart-sword",
+      "wikiTitle": "Song of the Heart Sword",
+      "nameZh": "烟云幽远心剑鸣",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 32,
+      "encoreStoryIds": [
+        100048
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100048"
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "iuno",
       "questId": "by-moons-fated-light",
       "wikiTitle": "By Moon's Fated Light",
@@ -5911,7 +6147,7 @@
       "characterId": "jianxin",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -5929,7 +6165,7 @@
       "characterId": "jianxin",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -6021,7 +6257,7 @@
       "characterId": "jinhsi",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -6133,7 +6369,7 @@
       "characterId": "jiyan",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -6171,7 +6407,7 @@
       "characterId": "lingyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -6905,7 +7141,7 @@
       "characterId": "mortefi",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7193,6 +7429,24 @@
     {
       "locale": "en",
       "characterId": "qingxiao",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 65,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100050"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "qingxiao",
       "questId": "song-of-the-heart-sword",
       "wikiTitle": "Song of the Heart Sword",
       "nameZh": "烟云幽远心剑鸣",
@@ -7357,7 +7611,7 @@
       "characterId": "sanhua",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7375,7 +7629,7 @@
       "characterId": "sanhua",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7393,7 +7647,7 @@
       "characterId": "sanhua",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
+      "nameZh": "奔策候残星",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7447,7 +7701,7 @@
       "characterId": "shorekeeper",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
-      "nameZh": "海岸尽头……之后?",
+      "nameZh": "海岸尽头……之后？",
       "version": "1.4",
       "half": "a",
       "versionHalf": "1.4-a",
@@ -7766,6 +8020,42 @@
     },
     {
       "locale": "en",
+      "characterId": "suoming",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 204,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100050"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "suoming",
+      "questId": "the-nethermancers-requiem",
+      "wikiTitle": "The Nethermancer's Requiem",
+      "nameZh": "幽客销残声",
+      "version": "3.6",
+      "half": "a",
+      "versionHalf": "3.6-a",
+      "lineCount": 3,
+      "encoreStoryIds": [
+        100049
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100049"
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "taoqi",
       "questId": "grand-warstorm",
       "wikiTitle": "Grand Warstorm",
@@ -7809,7 +8099,7 @@
       "characterId": "verina",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7820,6 +8110,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/en/story/100007"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "xiangli-yao",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 7,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100050"
       ]
     },
     {
@@ -7881,7 +8189,7 @@
       "characterId": "yangyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
-      "nameZh": "碰撞刀片",
+      "nameZh": "庭际刀刃鸣",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7899,7 +8207,7 @@
       "characterId": "yangyang",
       "questId": "echoing-marche",
       "wikiTitle": "Echoing Marche",
-      "nameZh": "呼应马尔凯",
+      "nameZh": "撞金止行阵",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7917,7 +8225,7 @@
       "characterId": "yangyang",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7955,7 +8263,7 @@
       "characterId": "yangyang",
       "questId": "ominous-star",
       "wikiTitle": "Ominous Star",
-      "nameZh": "不祥之星",
+      "nameZh": "奔策候残星",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7973,7 +8281,7 @@
       "characterId": "yangyang",
       "questId": "rewinding-raindrops",
       "wikiTitle": "Rewinding Raindrops",
-      "nameZh": "倒带雨滴",
+      "nameZh": "欲知天将雨",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
@@ -7984,6 +8292,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/en/story/100007"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "simulacrum-of-the-heart",
+      "wikiTitle": "Simulacrum of the Heart",
+      "nameZh": "梦枢心相由心生",
+      "version": "3.7",
+      "half": "a",
+      "versionHalf": "3.7-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100050
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100050"
       ]
     },
     {
@@ -8137,7 +8463,7 @@
       "characterId": "yuanwu",
       "questId": "first-resonance",
       "wikiTitle": "First Resonance",
-      "nameZh": "第一次共振",
+      "nameZh": "嘤鸣初相召",
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
