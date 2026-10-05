@@ -3,11 +3,10 @@ name: Sync game data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 9 * * 1"
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: sync-game-data
@@ -20,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v6
@@ -52,16 +53,16 @@ jobs:
           npm test
           npm run build
 
-      - name: Create or update data pull request
-        uses: peter-evans/create-pull-request@v8
-        with:
-          branch: codex/automated-game-data
-          delete-branch: true
-          commit-message: "data: sync latest game data"
-          title: "data: sync latest game data"
-          body: |
-            Automated weekly refresh of the version registry, character records,
-            image metadata, and per-locale voice-line statistics.
-
-            The workflow checks dialogue counts and story attribution before opening this pull request.
-          labels: automated,data
+      - name: Publish checked data
+        run: |
+          # Scrape timestamps alone do not require a new deployment.
+          git add content data
+          if git diff --cached --quiet --ignore-matching-lines='"\(generatedAt\|scrapedAt\)":'; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "data: sync latest game data"
+          # A non-fast-forward push fails safely if main changed during the checks.
+          git push origin HEAD:main
