@@ -17,12 +17,55 @@ const SPEAKER_ALIASES: Record<string, string> = {
   Kharon: "galbrena",
   卡戎: "galbrena",
   "The Shorekeeper": "shorekeeper",
+  "Young Galbrena": "galbrena",
+  儿时的嘉贝莉娜: "galbrena",
+  "Past Aemeath": "aemeath",
+  旧日的爱弥斯: "aemeath",
+  "Young Aemeath": "aemeath",
+  年幼的爱弥斯: "aemeath",
+  "Young Augusta": "augusta",
+  年少的奥古斯塔: "augusta",
+  "Chixia's Voice": "chixia",
+  炽霞的声音: "chixia",
+  "Zhezhi's Voice": "zhezhi",
+  折枝的声音: "zhezhi",
+  "Cartethyia's Frequency": "cartethyia",
+  卡提希娅的频率留言: "cartethyia",
+  "Demon King (Phrolova)": "phrolova",
+  "魔王（弗洛洛）": "phrolova",
+  "Hecate (Phrolova)": "phrolova",
+  "赫卡忒（弗洛洛）": "phrolova",
+  "Young Hiyuki": "hiyuki",
+  小绯雪: "hiyuki",
+  "Past Luuk Herssen": "luuk-herssen",
+  "旧日的陆·赫斯": "luuk-herssen",
+  "演员·洛瑟菈": "lucilla",
+  "Qingxiao of the Past": "qingxiao",
+  昔日的清宵: "qingxiao",
+  // Named Hsin variants in Encore stories 100048 and 100050. NPC names
+  // such as 心魔 / Inner Demon and 天演溯心 / Suhsin are not Hsin.
+  "Hsin of the Past": "hsin",
+  昔日的心: "hsin",
+  "Hsin's Phantom": "hsin",
+  心的幻影: "hsin",
+  "Hsin the Moon Fox": "hsin",
+  心月狐: "hsin",
+  "Hsin's Voice": "hsin",
+  心的声音: "hsin",
+  "Hsin's Thoughts": "hsin",
+  心的心声: "hsin",
+  "Hsin's Past Shadow": "hsin",
+  心的旧影: "hsin",
 };
 
 const MULTI_SPEAKER_SEPARATOR = /\s*(?:&|＆)\s*/;
 
 export function normalizeSpeakerKey(speaker: string): string {
   return speaker
+    .replace(/<[^>]*>/g, "")
+    .replace(/\{message\}/g, "")
+    .replace(/["“”「」]/g, "")
+    .replace(/[?？]+$/g, "")
     .replace(/[·•]/g, "")
     .replace(/（[^）]*）/g, "")
     .replace(/\([^)]*\)/g, "")
@@ -79,7 +122,6 @@ export function buildSpeakerResolver(params: {
     params.localeRoles.map((role) => [role.Id, role.Name]),
   );
   const speakerToCharacter = new Map<string, string>();
-  const localeNamesByCharacter = new Map<string, string>();
 
   for (const role of params.enRoles) {
     const localeName = localeById.get(role.Id);
@@ -88,7 +130,6 @@ export function buildSpeakerResolver(params: {
       continue;
     }
     if (localeName) {
-      localeNamesByCharacter.set(characterId, localeName);
       speakerToCharacter.set(localeName, characterId);
       speakerToCharacter.set(normalizeSpeakerKey(localeName), characterId);
     }
@@ -110,16 +151,6 @@ export function buildSpeakerResolver(params: {
     const normalized = normalizeSpeakerKey(speaker);
     if (speakerToCharacter.has(normalized)) {
       return speakerToCharacter.get(normalized) ?? null;
-    }
-    for (const [characterId, localeName] of localeNamesByCharacter.entries()) {
-      const normalizedLocale = normalizeSpeakerKey(localeName);
-      if (
-        speaker.includes(localeName) ||
-        normalized.includes(normalizedLocale) ||
-        normalizedLocale.includes(normalized)
-      ) {
-        return characterId;
-      }
     }
     return null;
   }

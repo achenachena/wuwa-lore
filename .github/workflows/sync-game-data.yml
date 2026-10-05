@@ -57,7 +57,7 @@ jobs:
         run: |
           # Scrape timestamps alone do not require a new deployment.
           git add content data
-          if git diff --cached --quiet --ignore-matching-lines='"\(generatedAt\|scrapedAt\)":'; then
+          if git diff --cached --quiet --ignore-matching-lines='"(generatedAt|scrapedAt)":'; then
             echo "No data changes."
             exit 0
           fi

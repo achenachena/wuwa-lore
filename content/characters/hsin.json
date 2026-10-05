@@ -1,0 +1,19 @@
+{
+  "id": "hsin",
+  "name": "Hsin",
+  "aliases": [
+    "心"
+  ],
+  "element": "Electro",
+  "weapon": "Rectifier",
+  "faction": "Sentinels",
+  "rarity": 5,
+  "releaseVersion": "3.7",
+  "profile": "She is also known as \"The Moon Fox\" or Hsin (Heart), and is one of Huanglong's seven Sentinels who is located in Mengzhou.",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hsin",
+    "scrapedAt": "2026-10-05T22:33:49.948Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}
