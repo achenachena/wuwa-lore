@@ -10,6 +10,13 @@ const EXPECTED = [
   ["cartethyia", "The Maiden, The Defier, The Death Crier", 353],
   ["galbrena", "Dawn Breaks on Dark Tides", 320],
   ["jinhsi", "Grand Warstorm", 26],
+  // Encore 100048 / 100050: exact named speakers and their explicit aliases.
+  // 心魔, 天演溯心, and Yao (小瑶) are separate NPCs, not partial-name matches.
+  ["hsin", "Song of the Heart Sword", 32],
+  ["jianxin", "Song of the Heart Sword", 0],
+  ["hsin", "Simulacrum of the Heart", 423],
+  ["suoming", "Simulacrum of the Heart", 204],
+  ["xiangli-yao", "Simulacrum of the Heart", 0],
 ] as const;
 
 const FANDOM_FALLBACK_QUESTS = [

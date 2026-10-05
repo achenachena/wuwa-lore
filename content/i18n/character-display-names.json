@@ -1,6 +1,6 @@
 {
   "source": "encore.moe",
-  "generatedAt": "2026-08-23",
+  "generatedAt": "2026-10-05",
   "names": {
     "yangyang": {
       "en": "Yangyang",
@@ -230,9 +230,17 @@
       "en": "Qingxiao",
       "zh": "清宵"
     },
+    "hsin": {
+      "en": "Hsin",
+      "zh": "心"
+    },
     "jingran": {
       "en": "Jingran",
       "zh": "景燃"
+    },
+    "suoming": {
+      "en": "Suoming",
+      "zh": "锁暝"
     }
   }
 }
