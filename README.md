@@ -27,7 +27,7 @@ Then open <http://localhost:3000>. It's built with Next.js, TypeScript, and Tail
 
 ## Updating the data
 
-A GitHub Actions workflow checks character, patch, and main-story data every six hours. When the data changes, it runs the data checks, tests, and production build before committing to `main`, where Vercel picks it up. No manual PR merge is needed. Failed checks leave the published data untouched; check the `Sync game data` run in Actions if an update is missing. You can also run it manually there. Sources take time to catch up, so a new patch won't necessarily be complete on day one.
+A GitHub Actions workflow checks character, patch, and main-story data every six hours. When the data changes, it runs the data checks, tests, and production build before committing to `main`, where Vercel picks it up. No manual PR merge is needed. Failed checks leave the published data untouched; check the `Sync game data` run in Actions if an update is missing. Word clouds are optional: if their source is unavailable, the old clouds stay in place and the next run retries them without holding up story statistics. You can also run the workflow manually. Sources take time to catch up, so a new patch won't necessarily be complete on day one.
 
 For local updates:
 

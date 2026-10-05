@@ -37,8 +37,12 @@ jobs:
       - name: Sync main-story appearances and dialogue
         run: npm run data:sync-stories
 
-      - name: Generate derived statistics and word clouds
-        run: npm run data:generate
+      - name: Generate derived statistics
+        run: npm run data:generate-local
+
+      - name: Refresh word clouds (optional)
+        continue-on-error: true
+        run: npm run data:generate-word-clouds
 
       - name: Validate synchronized data
         run: npm run data:validate
