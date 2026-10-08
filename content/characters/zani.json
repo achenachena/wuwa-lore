@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zani",
-    "scrapedAt": "2026-10-08T13:41:13.293Z",
+    "scrapedAt": "2026-10-08T23:25:25.355Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
