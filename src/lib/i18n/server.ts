@@ -1,7 +1,11 @@
 import { cookies, headers } from "next/headers";
 
 import { messages, type Messages } from "@/lib/i18n/messages";
-import { isSiteLocale, SITE_LOCALE_COOKIE, type SiteLocale } from "@/lib/i18n/locale";
+import {
+  isSiteLocale,
+  SITE_LOCALE_COOKIE,
+  type SiteLocale,
+} from "@/lib/i18n/locale";
 
 function localeFromAcceptLanguage(header: string | null): SiteLocale | null {
   if (!header) {
@@ -28,6 +32,8 @@ function localeFromAcceptLanguage(header: string | null): SiteLocale | null {
 }
 
 export async function getSiteLocale(): Promise<SiteLocale> {
+  const explicitLocale = (await headers()).get("x-site-locale") ?? undefined;
+  if (isSiteLocale(explicitLocale)) return explicitLocale;
   const value = (await cookies()).get(SITE_LOCALE_COOKIE)?.value;
   if (isSiteLocale(value)) {
     return value;

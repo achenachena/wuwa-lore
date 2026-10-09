@@ -95,9 +95,8 @@ export default async function RootLayout({
               <Link href="/" className="text-lg font-semibold hover:underline">
                 {t.siteTitle}
               </Link>
-              <p className="text-xs text-zinc-500">{t.siteTagline}</p>
             </div>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="contents md:flex md:items-center md:gap-6">
               <LanguageSwitcher current={locale} labels={t.language} />
               <SiteNav labels={t.nav} />
             </div>
@@ -107,6 +106,11 @@ export default async function RootLayout({
           {children}
         </main>
         <footer className="mx-auto max-w-6xl px-6 pb-8 text-sm text-zinc-500">
+          <p className="mb-2">
+            {locale === "zh"
+              ? "玩家制作，非鸣潮官方网站。"
+              : "A fan-made project. Not affiliated with Kuro Games."}
+          </p>
           <Link className="hover:underline" href="/methodology">
             {locale === "zh"
               ? "统计说明与数据来源"

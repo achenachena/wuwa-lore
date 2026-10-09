@@ -15,6 +15,20 @@ export function htmlLang(locale: SiteLocale): string {
   return locale === "zh" ? "zh-CN" : "en";
 }
 
+export function localizedUrl(path: string, locale: SiteLocale): string {
+  const url = new URL(absoluteUrl(path));
+  url.searchParams.set("lang", locale);
+  return url.toString();
+}
+
+export function languageAlternates(path: string) {
+  return {
+    "zh-CN": localizedUrl(path, "zh"),
+    en: localizedUrl(path, "en"),
+    "x-default": absoluteUrl(path),
+  };
+}
+
 export function pageMetadata(params: {
   title: string;
   description: string;
@@ -23,11 +37,11 @@ export function pageMetadata(params: {
   keywords?: string[];
   images?: string[];
 }): Metadata {
-  const url = absoluteUrl(params.path);
+  const url = localizedUrl(params.path, params.locale);
   const ogLocale = params.locale === "zh" ? "zh_CN" : "en_US";
-  const images = (params.images ?? []).filter(Boolean).map((image) =>
-    image.startsWith("http") ? image : absoluteUrl(image),
-  );
+  const images = (params.images ?? [])
+    .filter(Boolean)
+    .map((image) => (image.startsWith("http") ? image : absoluteUrl(image)));
 
   return {
     title: params.title,
@@ -35,6 +49,7 @@ export function pageMetadata(params: {
     keywords: params.keywords,
     alternates: {
       canonical: url,
+      languages: languageAlternates(params.path),
     },
     openGraph: {
       title: params.title,
@@ -53,7 +68,9 @@ export function pageMetadata(params: {
   };
 }
 
-export function jsonLdScript(data: Record<string, unknown> | Array<Record<string, unknown>>) {
+export function jsonLdScript(
+  data: Record<string, unknown> | Array<Record<string, unknown>>,
+) {
   return {
     __html: JSON.stringify(data).replace(/</g, "\\u003c"),
   };
@@ -69,7 +86,11 @@ export function websiteJsonLd(params: {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: params.name,
-    alternateName: ["鸣潮台词库", "WuWa Dialogue Stats", "Wuthering Waves Dialogue Stats"],
+    alternateName: [
+      "鸣潮台词库",
+      "WuWa Dialogue Stats",
+      "Wuthering Waves Dialogue Stats",
+    ],
     url,
     description: params.description,
     inLanguage: htmlLang(params.locale),
@@ -84,9 +105,7 @@ export function websiteJsonLd(params: {
   };
 }
 
-export function breadcrumbJsonLd(
-  items: Array<{ name: string; path: string }>,
-) {
+export function breadcrumbJsonLd(items: Array<{ name: string; path: string }>) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

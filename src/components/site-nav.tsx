@@ -9,12 +9,12 @@ type Props = {
 
 export function SiteNav({ labels }: Props) {
   return (
-    <nav className="flex flex-wrap gap-3 text-sm">
+    <nav className="flex flex-wrap gap-4 text-sm">
       {navRoutes().map((route) => (
         <Link
           key={route.path}
           href={route.path}
-          className="rounded-md border border-zinc-300 px-3 py-1.5 hover:bg-zinc-100"
+          className="py-1 text-zinc-600 underline-offset-4 hover:text-zinc-900 hover:underline"
         >
           {labels[route.navKey]}
         </Link>

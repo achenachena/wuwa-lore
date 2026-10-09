@@ -89,9 +89,12 @@ const en = {
     wordCloudEmpty: "Not enough dialogue text to build a word cloud yet.",
   },
   storySegments: {
-    title: "Who gets the lines?",
+    title: "Wuthering Waves Dialogue Stats",
     description:
-      "Pick a patch range to compare main-story lines and appearances. Each patch half counts as one appearance, even across multiple quests.",
+      "Compare character line counts and main-story appearances by patch.",
+    countingNotes: "How are appearances counted?",
+    countingDescription:
+      "A character appearing in several quests within the same patch half counts once. Line counts add up across all selected quests. Companion stories, events and side quests are listed separately.",
     fromVersion: "From version",
     latestPatch: "Latest patch",
     allPatches: "All patches",
@@ -244,9 +247,11 @@ export const messages: Record<SiteLocale, Messages> = {
       wordCloudEmpty: "台词文本不足，暂无法生成词云。",
     },
     storySegments: {
-      title: "谁在剧情里出场，说了多少句？",
-      description:
-        "选一个版本区间，看看角色的主线台词和出场排名。同一版本上半或下半的多个任务，合并计作一次出场。",
+      title: "鸣潮角色台词统计",
+      description: "按版本查看角色的主线台词数和出场次数。",
+      countingNotes: "出场次数怎么算？",
+      countingDescription:
+        "同一版本上半或下半中，角色出现多次只计一次出场；台词数按所选任务累加。伴星、活动和支线另行统计。",
       fromVersion: "起始版本",
       latestPatch: "最新版本",
       allPatches: "全部版本",
