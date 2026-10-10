@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mornye",
-    "scrapedAt": "2026-10-10T05:59:53.234Z",
+    "scrapedAt": "2026-10-10T12:40:24.319Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
