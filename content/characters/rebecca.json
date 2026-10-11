@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rebecca",
-    "scrapedAt": "2026-10-10T21:50:06.027Z",
+    "scrapedAt": "2026-10-11T05:56:06.577Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
