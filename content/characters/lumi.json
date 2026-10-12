@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lumi",
-    "scrapedAt": "2026-10-12T06:07:16.863Z",
+    "scrapedAt": "2026-10-12T15:38:22.861Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
