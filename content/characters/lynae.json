@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lynae",
-    "scrapedAt": "2026-10-12T15:38:22.861Z",
+    "scrapedAt": "2026-10-13T00:47:37.684Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
