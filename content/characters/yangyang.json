@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang",
-    "scrapedAt": "2026-10-13T00:47:37.684Z",
+    "scrapedAt": "2026-10-13T14:20:10.007Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
