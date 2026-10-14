@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lingyang",
-    "scrapedAt": "2026-10-14T12:01:42.950Z",
+    "scrapedAt": "2026-10-14T17:19:06.153Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
