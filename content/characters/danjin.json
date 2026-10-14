@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Danjin",
-    "scrapedAt": "2026-10-13T22:51:24.924Z",
+    "scrapedAt": "2026-10-14T05:00:36.961Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
