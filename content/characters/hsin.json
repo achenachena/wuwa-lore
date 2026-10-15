@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hsin",
-    "scrapedAt": "2026-10-15T17:07:38.430Z",
+    "scrapedAt": "2026-10-15T21:29:45.064Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
