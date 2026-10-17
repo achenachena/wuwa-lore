@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover-Havoc",
-    "scrapedAt": "2026-10-16T21:18:12.979Z",
+    "scrapedAt": "2026-10-17T04:36:46.763Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
