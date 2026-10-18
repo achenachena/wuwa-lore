@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Denia",
-    "scrapedAt": "2026-10-18T04:42:01.748Z",
+    "scrapedAt": "2026-10-18T11:17:11.895Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
