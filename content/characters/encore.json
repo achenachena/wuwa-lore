@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Encore",
-    "scrapedAt": "2026-10-20T11:47:27.376Z",
+    "scrapedAt": "2026-10-20T17:16:23.354Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
