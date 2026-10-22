@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Carlotta",
-    "scrapedAt": "2026-10-21T21:47:56.805Z",
+    "scrapedAt": "2026-10-22T04:58:33.088Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
