@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucilla",
-    "scrapedAt": "2026-10-22T17:16:43.824Z",
+    "scrapedAt": "2026-10-22T21:42:35.001Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
