@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jianxin",
-    "scrapedAt": "2026-10-23T04:59:48.931Z",
+    "scrapedAt": "2026-10-23T11:47:02.962Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
