@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qingxiao",
-    "scrapedAt": "2026-10-24T11:11:42.983Z",
+    "scrapedAt": "2026-10-24T16:02:28.124Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
