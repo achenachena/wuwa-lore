@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Camellya",
-    "scrapedAt": "2026-10-24T20:55:41.107Z",
+    "scrapedAt": "2026-10-25T04:51:45.759Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
