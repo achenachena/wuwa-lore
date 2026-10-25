@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cantarella",
-    "scrapedAt": "2026-10-25T04:51:45.759Z",
+    "scrapedAt": "2026-10-25T11:41:15.043Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
