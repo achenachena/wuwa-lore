@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Cartethyia",
-    "scrapedAt": "2026-10-25T11:41:15.043Z",
+    "scrapedAt": "2026-10-25T16:30:40.185Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
