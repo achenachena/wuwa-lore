@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Aalto",
-    "scrapedAt": "2026-10-26T13:14:52.463Z",
+    "scrapedAt": "2026-10-26T22:44:16.666Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
