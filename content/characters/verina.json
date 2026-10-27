@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Verina",
-    "scrapedAt": "2026-10-27T12:21:20.788Z",
+    "scrapedAt": "2026-10-27T22:21:21.136Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
