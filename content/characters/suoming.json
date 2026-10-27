@@ -9,11 +9,11 @@
   "faction": "Mengzhou",
   "rarity": 5,
   "releaseVersion": "3.7",
-  "profile": "Profile text unavailable from source.",
+  "profile": "<!--Mod's Note: We are kinda planning to move from Fandom to another host. Please read https://wutheringwaves.fandom.com/f/p/4400000000000029673-->",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Suoming",
-    "scrapedAt": "2026-10-26T22:44:16.666Z",
+    "scrapedAt": "2026-10-27T05:13:34.625Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
