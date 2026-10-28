@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Chixia",
-    "scrapedAt": "2026-10-28T13:06:33.200Z",
+    "scrapedAt": "2026-10-28T22:40:11.600Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
