@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Hiyuki",
-    "scrapedAt": "2026-10-29T13:12:46.522Z",
+    "scrapedAt": "2026-10-29T22:49:32.953Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
