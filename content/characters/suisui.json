@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Suisui",
-    "scrapedAt": "2026-10-30T13:05:14.400Z",
+    "scrapedAt": "2026-10-30T22:27:15.344Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
