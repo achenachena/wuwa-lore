@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T07:00:37.620Z",
+  "generatedAt": "2026-11-06T19:35:06.351Z",
   "source": {
     "name": "encore.moe+wutheringwaves.fandom.com",
     "baseUrl": "https://api.encore.moe",
@@ -10,8 +10,8 @@
     "countMethod": "main_story_dialogue_speaker_lines_with_fandom_audio_fallback"
   },
   "questCountByLocale": {
-    "en": 48,
-    "zh-Hans": 48
+    "en": 49,
+    "zh-Hans": 49
   },
   "rows": [
     {

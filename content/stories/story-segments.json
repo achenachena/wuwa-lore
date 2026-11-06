@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Category:Main_Quests",
   "editor": "scripts/sync-story-appearances.ts",
-  "generatedAt": "2026-11-06T06:58:50.856Z",
+  "generatedAt": "2026-11-06T19:33:48.324Z",
   "segments": [
     {
       "id": "utterance-of-marvels",
@@ -434,6 +434,15 @@
       "half": "a",
       "versionHalf": "3.7-a",
       "sortOrder": 47
+    },
+    {
+      "id": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "sortOrder": 48
     }
   ]
 }

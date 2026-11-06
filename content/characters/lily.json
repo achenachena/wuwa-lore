@@ -1,0 +1,17 @@
+{
+  "id": "lily",
+  "name": "Lily",
+  "aliases": [],
+  "element": "Spectro",
+  "weapon": "Pistols",
+  "faction": "Somnoire",
+  "rarity": 5,
+  "releaseVersion": "3.8",
+  "profile": "<!--Mod's Note: We are kinda planning to move from Fandom to another host. Please read https://wutheringwaves.fandom.com/f/p/4400000000000029673-->",
+  "locale": "en-US",
+  "source": {
+    "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lily",
+    "scrapedAt": "2026-11-06T19:30:08.721Z",
+    "editor": "scripts/sync-fandom-data.ts"
+  }
+}

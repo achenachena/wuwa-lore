@@ -108,5 +108,10 @@
     "version": "3.7",
     "releaseDate": "2026-09-30T11:00",
     "notes": "Version 3.7: Prism's Illusion, Heart's Illumination"
+  },
+  {
+    "version": "3.8",
+    "releaseDate": "2026-11-12T11:00",
+    "notes": "Version 3.8: Lilies in a Dying Dream"
   }
 ]

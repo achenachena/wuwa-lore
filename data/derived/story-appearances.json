@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-06T07:00:37.620Z",
+  "generatedAt": "2026-11-06T19:35:06.351Z",
   "source": {
     "questMapFile": "content/stories/quest-half-map.json",
     "fandomApi": "https://wutheringwaves.fandom.com/api.php",
     "appearanceRule": "main_quest_infobox_characters_plus_encore_dialogue_when_wiki_missing"
   },
-  "questCount": 48,
+  "questCount": 49,
   "rows": [
     {
       "characterId": "aalto",
@@ -1124,6 +1124,15 @@
       "versionHalf": "1.0-a"
     },
     {
+      "characterId": "lily",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
+    },
+    {
       "characterId": "lingyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -1791,6 +1800,15 @@
     },
     {
       "characterId": "rover",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
+    },
+    {
+      "characterId": "rover",
       "questId": "a-new-companion",
       "wikiTitle": "A New Companion",
       "nameZh": "行路遇新知",
@@ -2418,6 +2436,15 @@
       "version": "3.5",
       "half": "a",
       "versionHalf": "3.5-a"
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
     },
     {
       "characterId": "yangyang",
