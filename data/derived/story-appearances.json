@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:35:06.351Z",
+  "generatedAt": "2026-11-07T06:12:11.072Z",
   "source": {
     "questMapFile": "content/stories/quest-half-map.json",
     "fandomApi": "https://wutheringwaves.fandom.com/api.php",
@@ -2439,15 +2439,6 @@
     },
     {
       "characterId": "yangyang",
-      "questId": "a-bouquet-for-tomorrow",
-      "wikiTitle": "A Bouquet for Tomorrow",
-      "nameZh": "予以明日的花束",
-      "version": "3.8",
-      "half": "a",
-      "versionHalf": "3.8-a"
-    },
-    {
-      "characterId": "yangyang",
       "questId": "a-new-companion",
       "wikiTitle": "A New Companion",
       "nameZh": "行路遇新知",
@@ -2571,6 +2562,15 @@
       "version": "3.5",
       "half": "a",
       "versionHalf": "3.5-a"
+    },
+    {
+      "characterId": "yangyang-xuanling",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
     },
     {
       "characterId": "yangyang-xuanling",
