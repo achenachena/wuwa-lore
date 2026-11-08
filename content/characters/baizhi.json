@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Baizhi",
-    "scrapedAt": "2026-11-07T21:57:30.847Z",
+    "scrapedAt": "2026-11-08T06:13:13.300Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
