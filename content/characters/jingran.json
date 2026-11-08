@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Jingran",
-    "scrapedAt": "2026-11-08T13:36:59.785Z",
+    "scrapedAt": "2026-11-08T22:14:20.780Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
