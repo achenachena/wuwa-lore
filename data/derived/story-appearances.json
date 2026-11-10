@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T22:33:03.356Z",
+  "generatedAt": "2026-11-10T07:30:56.755Z",
   "source": {
     "questMapFile": "content/stories/quest-half-map.json",
     "fandomApi": "https://wutheringwaves.fandom.com/api.php",
@@ -1152,6 +1152,15 @@
     },
     {
       "characterId": "lucilla",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
+    },
+    {
+      "characterId": "lucilla",
       "questId": "all-that-sunlight-touches",
       "wikiTitle": "All That Sunlight Touches",
       "nameZh": "日光落处",
@@ -2187,6 +2196,15 @@
     },
     {
       "characterId": "shorekeeper",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
+    },
+    {
+      "characterId": "shorekeeper",
       "questId": "advance-toward-the-future-from-today",
       "wikiTitle": "Advance toward the Future from Today",
       "nameZh": "便能在如今走向未来",
@@ -2436,6 +2454,15 @@
       "version": "3.5",
       "half": "a",
       "versionHalf": "3.5-a"
+    },
+    {
+      "characterId": "yangyang",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a"
     },
     {
       "characterId": "yangyang",

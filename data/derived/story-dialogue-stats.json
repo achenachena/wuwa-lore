@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T22:33:03.356Z",
+  "generatedAt": "2026-11-10T07:30:56.755Z",
   "source": {
     "name": "encore.moe+wutheringwaves.fandom.com",
     "baseUrl": "https://api.encore.moe",
@@ -2036,6 +2036,24 @@
     },
     {
       "locale": "zh-Hans",
+      "characterId": "lily",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 485,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100051"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
       "characterId": "lingyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -2070,6 +2088,24 @@
       "sourceUrls": [
         "https://api.encore.moe/zh-Hans/story/100008",
         "https://api.encore.moe/zh-Hans/story/100009"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "lucilla",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100051"
       ]
     },
     {
@@ -3331,6 +3367,24 @@
     {
       "locale": "zh-Hans",
       "characterId": "shorekeeper",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100051"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "shorekeeper",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
       "nameZh": "海岸尽头……之后？",
@@ -3778,6 +3832,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/zh-Hans/story/100046"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "yangyang",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100051"
       ]
     },
     {
@@ -6276,6 +6348,24 @@
     },
     {
       "locale": "en",
+      "characterId": "lily",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 491,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100051"
+      ]
+    },
+    {
+      "locale": "en",
       "characterId": "lingyang",
       "questId": "clashing-blades",
       "wikiTitle": "Clashing Blades",
@@ -6310,6 +6400,24 @@
       "sourceUrls": [
         "https://api.encore.moe/en/story/100008",
         "https://api.encore.moe/en/story/100009"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "lucilla",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 9,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100051"
       ]
     },
     {
@@ -7571,6 +7679,24 @@
     {
       "locale": "en",
       "characterId": "shorekeeper",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 17,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100051"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "shorekeeper",
       "questId": "beyond-the-shores-end",
       "wikiTitle": "Beyond the Shore's End",
       "nameZh": "海岸尽头……之后？",
@@ -8018,6 +8144,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/en/story/100046"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "yangyang",
+      "questId": "a-bouquet-for-tomorrow",
+      "wikiTitle": "A Bouquet for Tomorrow",
+      "nameZh": "予以明日的花束",
+      "version": "3.8",
+      "half": "a",
+      "versionHalf": "3.8-a",
+      "lineCount": 15,
+      "encoreStoryIds": [
+        100051
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100051"
       ]
     },
     {

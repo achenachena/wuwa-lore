@@ -1,6 +1,6 @@
 {
   "source": "encore.moe",
-  "generatedAt": "2026-11-09",
+  "generatedAt": "2026-11-10",
   "names": {
     "yangyang": {
       "en": "Yangyang",
@@ -241,6 +241,10 @@
     "suoming": {
       "en": "Suoming",
       "zh": "锁暝"
+    },
+    "lily": {
+      "en": "Lily",
+      "zh": "莉莉"
     }
   }
 }

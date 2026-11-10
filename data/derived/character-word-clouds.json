@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T22:34:01.665Z",
+  "generatedAt": "2026-11-10T07:31:49.309Z",
   "source": {
     "name": "encore.moe+fandom-voicelines",
     "tokenMethod": "intl-segmenter+bigram",
@@ -8,7 +8,7 @@
       "optional_quest",
       "ui_voiceline"
     ],
-    "storyCount": 373
+    "storyCount": 374
   },
   "rows": [
     {
@@ -10776,6 +10776,18 @@
       ]
     },
     {
+      "characterId": "lily",
+      "locale": "zh-Hans",
+      "lineCount": 485,
+      "terms": []
+    },
+    {
+      "characterId": "lily",
+      "locale": "en",
+      "lineCount": 491,
+      "terms": []
+    },
+    {
       "characterId": "lingyang",
       "locale": "zh-Hans",
       "lineCount": 440,
@@ -11192,7 +11204,7 @@
     {
       "characterId": "lucilla",
       "locale": "zh-Hans",
-      "lineCount": 957,
+      "lineCount": 966,
       "terms": [
         {
           "term": "学院",
@@ -11399,7 +11411,7 @@
     {
       "characterId": "lucilla",
       "locale": "en",
-      "lineCount": 1093,
+      "lineCount": 1102,
       "terms": [
         {
           "term": "academy",
@@ -17402,7 +17414,7 @@
     {
       "characterId": "shorekeeper",
       "locale": "zh-Hans",
-      "lineCount": 506,
+      "lineCount": 523,
       "terms": [
         {
           "term": "海岸",
@@ -17609,7 +17621,7 @@
     {
       "characterId": "shorekeeper",
       "locale": "en",
-      "lineCount": 626,
+      "lineCount": 643,
       "terms": [
         {
           "term": "black",
@@ -20300,7 +20312,7 @@
     {
       "characterId": "yangyang",
       "locale": "zh-Hans",
-      "lineCount": 1236,
+      "lineCount": 1251,
       "terms": [
         {
           "term": "残象",
@@ -20507,7 +20519,7 @@
     {
       "characterId": "yangyang",
       "locale": "en",
-      "lineCount": 1352,
+      "lineCount": 1367,
       "terms": [
         {
           "term": "tacet",
