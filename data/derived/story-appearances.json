@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T19:53:18.225Z",
+  "generatedAt": "2026-11-12T19:39:06.355Z",
   "source": {
     "questMapFile": "content/stories/quest-half-map.json",
     "fandomApi": "https://wutheringwaves.fandom.com/api.php",
@@ -789,6 +789,15 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a"
+    },
+    {
+      "characterId": "galbrena",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b"
     },
     {
       "characterId": "galbrena",

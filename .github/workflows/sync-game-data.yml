@@ -40,15 +40,26 @@ jobs:
       - name: Generate derived statistics
         run: npm run data:generate-local
 
-      - name: Refresh word clouds (optional)
-        continue-on-error: true
-        run: npm run data:generate-word-clouds
-
       - name: Validate synchronized data
         run: npm run data:validate
 
       - name: Audit story dialogue attribution
         run: npm run data:audit-stories
+
+      - name: Preserve failed synchronization evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-sync-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            content/stories/
+            data/derived/story-dialogue-stats.json
+            data/derived/story-appearances.json
+          retention-days: 14
+
+      - name: Refresh word clouds (optional)
+        continue-on-error: true
+        run: npm run data:generate-word-clouds
 
       - name: Run application quality checks
         run: |

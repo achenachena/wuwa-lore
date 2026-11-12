@@ -5,9 +5,11 @@ import type { StoryDialogueRow } from "@/types/lore";
 
 const EXPECTED = [
   ["jingran", "Xuanling Sings, Storm Quelled", 22],
-  ["jingran", "Song of the Heart Sword", 77],
+  // Revalidated against both Encore locales on 2026-11-12; source hashes and
+  // independent speaker histograms: src/lib/encore/fixtures/attribution-2026-11-12.json.
+  ["jingran", "Song of the Heart Sword", 81],
   ["jingran", "The Nethermancer's Requiem", 34],
-  ["cartethyia", "The Maiden, The Defier, The Death Crier", 353],
+  ["cartethyia", "The Maiden, The Defier, The Death Crier", 428],
   ["galbrena", "Dawn Breaks on Dark Tides", 320],
   ["jinhsi", "Grand Warstorm", 26],
   // Encore 100048 / 100050: exact named speakers and their explicit aliases.

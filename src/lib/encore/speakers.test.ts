@@ -1,7 +1,9 @@
 import { describe, expect, test } from "vitest";
+import attributionEvidence from "./fixtures/attribution-2026-11-12.json";
 
 import {
   buildSpeakerResolver,
+  countDialoguesBySpeaker,
   storyLineCountAdjustments,
 } from "@/lib/encore/speakers";
 
@@ -29,6 +31,44 @@ const resolver = buildSpeakerResolver({
 });
 
 describe("story speaker attribution", () => {
+  test.each(attributionEvidence)(
+    "reproduces reviewed $locale story $storyId attribution ($expected lines)",
+    (evidence) => {
+      const resolve = buildSpeakerResolver({
+        enRoles: [
+          { Id: 1, Name: "Jingran" },
+          { Id: 2, Name: "Cartethyia" },
+        ],
+        localeRoles:
+          evidence.locale === "en"
+            ? [
+                { Id: 1, Name: "Jingran" },
+                { Id: 2, Name: "Cartethyia" },
+              ]
+            : [
+                { Id: 1, Name: "景燃" },
+                { Id: 2, Name: "卡提希娅" },
+              ],
+        knownCharacterIds: new Set(["jingran", "cartethyia"]),
+      });
+      // Histogram captured independently from each source's Chapters/Dialogues.
+      // Include all NPC speakers, so accidental broad matching also fails.
+      const payload = {
+        Chapters: Object.entries(evidence.speakerCounts).map(
+          ([Speaker, count]) => ({
+            Dialogues: Array.from({ length: count ?? 0 }, () => ({ Speaker })),
+          }),
+        ),
+      };
+      let actual = 0;
+      for (const [speaker, count] of countDialoguesBySpeaker(payload)) {
+        if (resolve.resolveSpeakers(speaker).includes(evidence.characterId))
+          actual += count;
+      }
+      expect(actual).toBe(evidence.expected);
+    },
+  );
+
   const shortNameResolver = buildSpeakerResolver({
     enRoles: [
       { Id: 1, Name: "Hsin" },

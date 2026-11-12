@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T19:53:18.225Z",
+  "generatedAt": "2026-11-12T19:39:06.355Z",
   "source": {
     "name": "encore.moe+wutheringwaves.fandom.com",
     "baseUrl": "https://api.encore.moe",
@@ -151,7 +151,7 @@
       "version": "3.1",
       "half": "a",
       "versionHalf": "3.1-a",
-      "lineCount": 361,
+      "lineCount": 368,
       "encoreStoryIds": [
         100035
       ],
@@ -241,7 +241,7 @@
       "version": "2.6",
       "half": "a",
       "versionHalf": "2.6-a",
-      "lineCount": 306,
+      "lineCount": 328,
       "encoreStoryIds": [
         100025
       ],
@@ -515,7 +515,7 @@
       "version": "2.6",
       "half": "a",
       "versionHalf": "2.6-a",
-      "lineCount": 30,
+      "lineCount": 36,
       "encoreStoryIds": [
         100025
       ],
@@ -875,7 +875,7 @@
       "version": "2.4",
       "half": "a",
       "versionHalf": "2.4-a",
-      "lineCount": 39,
+      "lineCount": 46,
       "encoreStoryIds": [
         100021
       ],
@@ -911,7 +911,7 @@
       "version": "2.2",
       "half": "a",
       "versionHalf": "2.2-a",
-      "lineCount": 353,
+      "lineCount": 428,
       "encoreStoryIds": [
         100019
       ],
@@ -1367,7 +1367,7 @@
       "version": "3.3",
       "half": "b",
       "versionHalf": "3.3-b",
-      "lineCount": 238,
+      "lineCount": 313,
       "encoreStoryIds": [
         100042
       ],
@@ -1421,7 +1421,7 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a",
-      "lineCount": 3,
+      "lineCount": 13,
       "encoreStoryIds": [
         100040
       ],
@@ -1484,6 +1484,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/zh-Hans/story/100007"
+      ]
+    },
+    {
+      "locale": "zh-Hans",
+      "characterId": "galbrena",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/zh-Hans/story/100036"
       ]
     },
     {
@@ -1567,7 +1585,7 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a",
-      "lineCount": 75,
+      "lineCount": 83,
       "encoreStoryIds": [
         100040
       ],
@@ -1711,7 +1729,7 @@
       "version": "2.6",
       "half": "a",
       "versionHalf": "2.6-a",
-      "lineCount": 143,
+      "lineCount": 166,
       "encoreStoryIds": [
         100025
       ],
@@ -1839,7 +1857,7 @@
       "version": "3.6",
       "half": "a",
       "versionHalf": "3.6-a",
-      "lineCount": 77,
+      "lineCount": 81,
       "encoreStoryIds": [
         100048
       ],
@@ -2023,7 +2041,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 221,
+      "lineCount": 235,
       "encoreStoryIds": [
         100008,
         100009
@@ -2333,7 +2351,7 @@
       "version": "2.4",
       "half": "b",
       "versionHalf": "2.4-b",
-      "lineCount": 193,
+      "lineCount": 197,
       "encoreStoryIds": [
         100022
       ],
@@ -2369,7 +2387,7 @@
       "version": "3.1",
       "half": "b",
       "versionHalf": "3.1-b",
-      "lineCount": 177,
+      "lineCount": 236,
       "encoreStoryIds": [
         100036
       ],
@@ -2461,7 +2479,7 @@
       "version": "3.1",
       "half": "a",
       "versionHalf": "3.1-a",
-      "lineCount": 63,
+      "lineCount": 80,
       "encoreStoryIds": [
         100035
       ],
@@ -2627,7 +2645,7 @@
       "version": "3.0",
       "half": "a",
       "versionHalf": "3.0-a",
-      "lineCount": 327,
+      "lineCount": 364,
       "encoreStoryIds": [
         103,
         100033
@@ -2831,7 +2849,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 21,
+      "lineCount": 30,
       "encoreStoryIds": [
         100008,
         100009
@@ -2995,7 +3013,7 @@
       "version": "2.5",
       "half": "a",
       "versionHalf": "2.5-a",
-      "lineCount": 328,
+      "lineCount": 330,
       "encoreStoryIds": [
         100023
       ],
@@ -3121,7 +3139,7 @@
       "version": "3.6",
       "half": "a",
       "versionHalf": "3.6-a",
-      "lineCount": 410,
+      "lineCount": 417,
       "encoreStoryIds": [
         100048
       ],
@@ -3461,7 +3479,7 @@
       "version": "1.3",
       "half": "a",
       "versionHalf": "1.3-a",
-      "lineCount": 308,
+      "lineCount": 313,
       "encoreStoryIds": [
         100012
       ],
@@ -3933,7 +3951,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 54,
+      "lineCount": 58,
       "encoreStoryIds": [
         100008,
         100009
@@ -3953,7 +3971,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 112,
+      "lineCount": 111,
       "encoreStoryIds": [
         100005
       ],
@@ -4463,7 +4481,7 @@
       "version": "3.1",
       "half": "a",
       "versionHalf": "3.1-a",
-      "lineCount": 361,
+      "lineCount": 368,
       "encoreStoryIds": [
         100035
       ],
@@ -4553,7 +4571,7 @@
       "version": "2.6",
       "half": "a",
       "versionHalf": "2.6-a",
-      "lineCount": 306,
+      "lineCount": 328,
       "encoreStoryIds": [
         100025
       ],
@@ -4827,7 +4845,7 @@
       "version": "2.6",
       "half": "a",
       "versionHalf": "2.6-a",
-      "lineCount": 30,
+      "lineCount": 36,
       "encoreStoryIds": [
         100025
       ],
@@ -5187,7 +5205,7 @@
       "version": "2.4",
       "half": "a",
       "versionHalf": "2.4-a",
-      "lineCount": 39,
+      "lineCount": 46,
       "encoreStoryIds": [
         100021
       ],
@@ -5223,7 +5241,7 @@
       "version": "2.2",
       "half": "a",
       "versionHalf": "2.2-a",
-      "lineCount": 353,
+      "lineCount": 428,
       "encoreStoryIds": [
         100019
       ],
@@ -5679,7 +5697,7 @@
       "version": "3.3",
       "half": "b",
       "versionHalf": "3.3-b",
-      "lineCount": 238,
+      "lineCount": 313,
       "encoreStoryIds": [
         100042
       ],
@@ -5733,7 +5751,7 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a",
-      "lineCount": 3,
+      "lineCount": 13,
       "encoreStoryIds": [
         100040
       ],
@@ -5796,6 +5814,24 @@
       "source": "encore",
       "sourceUrls": [
         "https://api.encore.moe/en/story/100007"
+      ]
+    },
+    {
+      "locale": "en",
+      "characterId": "galbrena",
+      "questId": "all-that-sunlight-touches",
+      "wikiTitle": "All That Sunlight Touches",
+      "nameZh": "日光落处",
+      "version": "3.1",
+      "half": "b",
+      "versionHalf": "3.1-b",
+      "lineCount": 1,
+      "encoreStoryIds": [
+        100036
+      ],
+      "source": "encore",
+      "sourceUrls": [
+        "https://api.encore.moe/en/story/100036"
       ]
     },
     {
@@ -5879,7 +5915,7 @@
       "version": "3.3",
       "half": "a",
       "versionHalf": "3.3-a",
-      "lineCount": 75,
+      "lineCount": 83,
       "encoreStoryIds": [
         100040
       ],
@@ -6023,7 +6059,7 @@
       "version": "2.6",
       "half": "a",
       "versionHalf": "2.6-a",
-      "lineCount": 143,
+      "lineCount": 166,
       "encoreStoryIds": [
         100025
       ],
@@ -6151,7 +6187,7 @@
       "version": "3.6",
       "half": "a",
       "versionHalf": "3.6-a",
-      "lineCount": 77,
+      "lineCount": 81,
       "encoreStoryIds": [
         100048
       ],
@@ -6335,7 +6371,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 221,
+      "lineCount": 235,
       "encoreStoryIds": [
         100008,
         100009
@@ -6645,7 +6681,7 @@
       "version": "2.4",
       "half": "b",
       "versionHalf": "2.4-b",
-      "lineCount": 193,
+      "lineCount": 197,
       "encoreStoryIds": [
         100022
       ],
@@ -6681,7 +6717,7 @@
       "version": "3.1",
       "half": "b",
       "versionHalf": "3.1-b",
-      "lineCount": 177,
+      "lineCount": 236,
       "encoreStoryIds": [
         100036
       ],
@@ -6773,7 +6809,7 @@
       "version": "3.1",
       "half": "a",
       "versionHalf": "3.1-a",
-      "lineCount": 63,
+      "lineCount": 80,
       "encoreStoryIds": [
         100035
       ],
@@ -6939,7 +6975,7 @@
       "version": "3.0",
       "half": "a",
       "versionHalf": "3.0-a",
-      "lineCount": 327,
+      "lineCount": 364,
       "encoreStoryIds": [
         103,
         100033
@@ -7143,7 +7179,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 21,
+      "lineCount": 30,
       "encoreStoryIds": [
         100008,
         100009
@@ -7307,7 +7343,7 @@
       "version": "2.5",
       "half": "a",
       "versionHalf": "2.5-a",
-      "lineCount": 328,
+      "lineCount": 330,
       "encoreStoryIds": [
         100023
       ],
@@ -7433,7 +7469,7 @@
       "version": "3.6",
       "half": "a",
       "versionHalf": "3.6-a",
-      "lineCount": 410,
+      "lineCount": 417,
       "encoreStoryIds": [
         100048
       ],
@@ -7773,7 +7809,7 @@
       "version": "1.3",
       "half": "a",
       "versionHalf": "1.3-a",
-      "lineCount": 308,
+      "lineCount": 313,
       "encoreStoryIds": [
         100012
       ],
@@ -8245,7 +8281,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 54,
+      "lineCount": 58,
       "encoreStoryIds": [
         100008,
         100009
@@ -8265,7 +8301,7 @@
       "version": "1.0",
       "half": "a",
       "versionHalf": "1.0-a",
-      "lineCount": 112,
+      "lineCount": 111,
       "encoreStoryIds": [
         100005
       ],
