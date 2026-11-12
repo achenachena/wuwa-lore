@@ -9,11 +9,11 @@
   "faction": "Mingting",
   "rarity": 5,
   "releaseVersion": "2.7",
-  "profile": "Former senior agent of Mingting's Internal Security Agency, he is a swordsman of cool resilience and absolute integrity, wandering Huanglong alone and seeks not fame nor high office, but mastery of swordsmanship and a life guided by high morals. He was framed by the Grand Architect for the murder of his master, and is now a fugitive throughout all of Huanglong.",
+  "profile": "Former senior agent of Mingting's Internal Security Agency, he is a swordsman of cool resilience and absolute integrity, wandering Huanglong alone and seeks not fame nor high office, but mastery of swordsmanship and a life guided by high morals. He was framed by the Grand Architect for the murder of Grandmaster Liang Dongyuan, and is now a fugitive throughout all of Huanglong.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
-    "scrapedAt": "2026-11-10T19:49:42.255Z",
+    "scrapedAt": "2026-11-12T19:42:46.291Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
