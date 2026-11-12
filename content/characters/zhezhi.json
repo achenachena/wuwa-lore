@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Zhezhi",
-    "scrapedAt": "2026-11-12T19:42:46.291Z",
+    "scrapedAt": "2026-11-12T20:02:22.385Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
