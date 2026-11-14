@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:42:24.089Z",
+  "generatedAt": "2026-11-14T18:18:32.727Z",
   "source": {
     "name": "encore.moe+fandom-voicelines",
     "tokenMethod": "intl-segmenter+bigram",
@@ -10778,18 +10778,34 @@
     {
       "characterId": "lily",
       "locale": "zh-Hans",
-      "lineCount": 485,
+      "lineCount": 558,
       "terms": [
         {
           "term": "列车",
-          "count": 72
-        },
-        {
-          "term": "最后",
-          "count": 49
+          "count": 79
         },
         {
           "term": "我的",
+          "count": 70
+        },
+        {
+          "term": "世界",
+          "count": 55
+        },
+        {
+          "term": "最后",
+          "count": 54
+        },
+        {
+          "term": "你的",
+          "count": 52
+        },
+        {
+          "term": "战士",
+          "count": 51
+        },
+        {
+          "term": "战争",
           "count": 48
         },
         {
@@ -10797,27 +10813,19 @@
           "count": 47
         },
         {
-          "term": "世界",
-          "count": 47
-        },
-        {
-          "term": "战士",
-          "count": 47
-        },
-        {
           "term": "先生",
           "count": 46
         },
         {
-          "term": "你的",
-          "count": 42
-        },
-        {
-          "term": "战争",
-          "count": 42
-        },
-        {
           "term": "亡魂",
+          "count": 42
+        },
+        {
+          "term": "时间",
+          "count": 41
+        },
+        {
+          "term": "到了",
           "count": 40
         },
         {
@@ -10825,15 +10833,19 @@
           "count": 40
         },
         {
-          "term": "到了",
-          "count": 38
-        },
-        {
-          "term": "时间",
-          "count": 34
+          "term": "的话",
+          "count": 35
         },
         {
           "term": "东西",
+          "count": 32
+        },
+        {
+          "term": "下来",
+          "count": 32
+        },
+        {
+          "term": "好好",
           "count": 30
         },
         {
@@ -10841,27 +10853,51 @@
           "count": 30
         },
         {
-          "term": "下来",
+          "term": "是我",
           "count": 30
         },
         {
-          "term": "的话",
+          "term": "我也",
+          "count": 30
+        },
+        {
+          "term": "也许",
+          "count": 30
+        },
+        {
+          "term": "不要",
           "count": 29
+        },
+        {
+          "term": "联邦",
+          "count": 28
+        },
+        {
+          "term": "的人",
+          "count": 27
+        },
+        {
+          "term": "我想",
+          "count": 27
         },
         {
           "term": "安息",
           "count": 26
         },
         {
-          "term": "好好",
+          "term": "开始",
           "count": 26
         },
         {
-          "term": "不要",
+          "term": "生活",
+          "count": 26
+        },
+        {
+          "term": "孩子",
           "count": 25
         },
         {
-          "term": "是我",
+          "term": "未来",
           "count": 25
         },
         {
@@ -10869,11 +10905,19 @@
           "count": 24
         },
         {
-          "term": "我想",
+          "term": "幻梦",
           "count": 24
         },
         {
-          "term": "孩子",
+          "term": "我在",
+          "count": 24
+        },
+        {
+          "term": "战区",
+          "count": 24
+        },
+        {
+          "term": "刚刚",
           "count": 23
         },
         {
@@ -10881,19 +10925,31 @@
           "count": 23
         },
         {
+          "term": "明天",
+          "count": 23
+        },
+        {
+          "term": "不同",
+          "count": 22
+        },
+        {
+          "term": "不用",
+          "count": 22
+        },
+        {
           "term": "大家",
           "count": 22
         },
         {
-          "term": "开始",
+          "term": "的是",
           "count": 22
         },
         {
-          "term": "我也",
+          "term": "食物",
           "count": 22
         },
         {
-          "term": "刚刚",
+          "term": "变成",
           "count": 21
         },
         {
@@ -10901,15 +10957,19 @@
           "count": 21
         },
         {
-          "term": "不同",
+          "term": "第五",
           "count": 20
         },
         {
-          "term": "的人",
+          "term": "告诉",
           "count": 20
         },
         {
-          "term": "的是",
+          "term": "你是",
+          "count": 20
+        },
+        {
+          "term": "女士",
           "count": 20
         },
         {
@@ -10917,79 +10977,27 @@
           "count": 20
         },
         {
-          "term": "未来",
+          "term": "幸福",
           "count": 20
-        },
-        {
-          "term": "也许",
-          "count": 20
-        },
-        {
-          "term": "战区",
-          "count": 20
-        },
-        {
-          "term": "幻梦",
-          "count": 19
-        },
-        {
-          "term": "机会",
-          "count": 19
-        },
-        {
-          "term": "一天",
-          "count": 19
-        },
-        {
-          "term": "不用",
-          "count": 18
-        },
-        {
-          "term": "第五",
-          "count": 18
-        },
-        {
-          "term": "告诉",
-          "count": 18
-        },
-        {
-          "term": "联邦",
-          "count": 18
-        },
-        {
-          "term": "你是",
-          "count": 18
-        },
-        {
-          "term": "身体",
-          "count": 18
-        },
-        {
-          "term": "食物",
-          "count": 18
-        },
-        {
-          "term": "是在",
-          "count": 18
-        },
-        {
-          "term": "相信",
-          "count": 17
-        },
-        {
-          "term": "变成",
-          "count": 16
         }
       ]
     },
     {
       "characterId": "lily",
       "locale": "en",
-      "lineCount": 491,
+      "lineCount": 710,
       "terms": [
         {
           "term": "time",
-          "count": 38
+          "count": 47
+        },
+        {
+          "term": "don't",
+          "count": 39
+        },
+        {
+          "term": "i'll",
+          "count": 39
         },
         {
           "term": "female",
@@ -11000,71 +11008,111 @@
           "count": 34
         },
         {
-          "term": "don't",
-          "count": 32
+          "term": "dream",
+          "count": 33
         },
         {
           "term": "train",
-          "count": 29
-        },
-        {
-          "term": "i'll",
-          "count": 28
+          "count": 32
         },
         {
           "term": "i'm",
-          "count": 26
-        },
-        {
-          "term": "see",
-          "count": 25
-        },
-        {
-          "term": "dream",
-          "count": 24
-        },
-        {
-          "term": "still",
-          "count": 24
-        },
-        {
-          "term": "let",
-          "count": 23
-        },
-        {
-          "term": "only",
-          "count": 23
-        },
-        {
-          "term": "you're",
-          "count": 23
+          "count": 31
         },
         {
           "term": "know",
-          "count": 21
+          "count": 28
         },
         {
-          "term": "day",
-          "count": 20
-        },
-        {
-          "term": "i've",
-          "count": 20
+          "term": "let",
+          "count": 28
         },
         {
           "term": "little",
-          "count": 20
+          "count": 28
         },
         {
-          "term": "that's",
-          "count": 20
+          "term": "see",
+          "count": 26
         },
         {
           "term": "can't",
-          "count": 19
+          "count": 25
+        },
+        {
+          "term": "day",
+          "count": 25
+        },
+        {
+          "term": "still",
+          "count": 25
         },
         {
           "term": "even",
+          "count": 24
+        },
+        {
+          "term": "never",
+          "count": 24
+        },
+        {
+          "term": "only",
+          "count": 24
+        },
+        {
+          "term": "that's",
+          "count": 24
+        },
+        {
+          "term": "world",
+          "count": 24
+        },
+        {
+          "term": "you're",
+          "count": 24
+        },
+        {
+          "term": "i've",
+          "count": 23
+        },
+        {
+          "term": "war",
+          "count": 23
+        },
+        {
+          "term": "again",
+          "count": 22
+        },
+        {
+          "term": "those",
+          "count": 22
+        },
+        {
+          "term": "every",
+          "count": 21
+        },
+        {
+          "term": "something",
+          "count": 21
+        },
+        {
+          "term": "way",
+          "count": 21
+        },
+        {
+          "term": "go",
+          "count": 20
+        },
+        {
+          "term": "need",
+          "count": 20
+        },
+        {
+          "term": "stop",
+          "count": 20
+        },
+        {
+          "term": "come",
           "count": 19
         },
         {
@@ -11072,19 +11120,15 @@
           "count": 19
         },
         {
-          "term": "stop",
-          "count": 19
-        },
-        {
-          "term": "war",
-          "count": 19
-        },
-        {
-          "term": "again",
+          "term": "after",
           "count": 18
         },
         {
-          "term": "come",
+          "term": "away",
+          "count": 18
+        },
+        {
+          "term": "first",
           "count": 18
         },
         {
@@ -11092,100 +11136,56 @@
           "count": 18
         },
         {
-          "term": "go",
+          "term": "may",
           "count": 18
-        },
-        {
-          "term": "something",
-          "count": 18
-        },
-        {
-          "term": "world",
-          "count": 18
-        },
-        {
-          "term": "never",
-          "count": 17
-        },
-        {
-          "term": "first",
-          "count": 16
-        },
-        {
-          "term": "off",
-          "count": 16
-        },
-        {
-          "term": "those",
-          "count": 16
-        },
-        {
-          "term": "want",
-          "count": 16
         },
         {
           "term": "myself",
-          "count": 15
+          "count": 18
         },
         {
-          "term": "rest",
-          "count": 15
+          "term": "new",
+          "count": 18
         },
         {
-          "term": "soldiers",
-          "count": 15
-        },
-        {
-          "term": "yes",
-          "count": 15
-        },
-        {
-          "term": "you've",
-          "count": 15
-        },
-        {
-          "term": "after",
-          "count": 14
+          "term": "want",
+          "count": 18
         },
         {
           "term": "before",
-          "count": 14
+          "count": 17
+        },
+        {
+          "term": "i'd",
+          "count": 17
         },
         {
           "term": "keep",
-          "count": 14
+          "count": 17
         },
         {
-          "term": "need",
-          "count": 14
-        },
-        {
-          "term": "somnoire",
-          "count": 14
-        },
-        {
-          "term": "end",
-          "count": 13
-        },
-        {
-          "term": "every",
-          "count": 13
-        },
-        {
-          "term": "find",
-          "count": 13
+          "term": "look",
+          "count": 17
         },
         {
           "term": "once",
-          "count": 13
+          "count": 17
         },
         {
-          "term": "people",
-          "count": 13
+          "term": "right",
+          "count": 17
         },
         {
-          "term": "place",
-          "count": 13
+          "term": "soldiers",
+          "count": 17
+        },
+        {
+          "term": "back",
+          "count": 16
+        },
+        {
+          "term": "end",
+          "count": 16
         }
       ]
     },
