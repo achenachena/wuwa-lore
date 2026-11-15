@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Youhu",
-    "scrapedAt": "2026-11-14T22:33:04.571Z",
+    "scrapedAt": "2026-11-15T06:44:23.596Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
