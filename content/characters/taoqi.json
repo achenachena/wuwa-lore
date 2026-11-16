@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Taoqi",
-    "scrapedAt": "2026-11-15T18:56:32.244Z",
+    "scrapedAt": "2026-11-16T06:44:08.025Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
