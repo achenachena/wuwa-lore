@@ -10,11 +10,11 @@
   "faction": "Ministry of War",
   "rarity": 5,
   "releaseVersion": "3.5",
-  "profile": "Once an Outrider for the Midnight Rangers, she's now an acting of Xuanfang Hold.",
+  "profile": "Once an Outrider for the Midnight Rangers, she is currently an acting of Xuanfang Hold.",
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Yangyang%3A_Xuanling",
-    "scrapedAt": "2026-11-17T21:02:01.891Z",
+    "scrapedAt": "2026-11-18T07:39:17.329Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
