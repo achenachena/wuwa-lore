@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lupa",
-    "scrapedAt": "2026-11-19T20:45:09.377Z",
+    "scrapedAt": "2026-11-20T07:26:16.674Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
