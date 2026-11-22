@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Mortefi",
-    "scrapedAt": "2026-11-21T19:24:49.379Z",
+    "scrapedAt": "2026-11-22T07:01:06.505Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
