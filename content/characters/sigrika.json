@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Sigrika",
-    "scrapedAt": "2026-11-22T19:47:57.756Z",
+    "scrapedAt": "2026-11-23T07:50:30.145Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
