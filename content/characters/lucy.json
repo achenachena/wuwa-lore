@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Lucy",
-    "scrapedAt": "2026-11-24T10:02:10.321Z",
+    "scrapedAt": "2026-11-24T22:34:01.631Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
