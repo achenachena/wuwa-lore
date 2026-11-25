@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Brant",
-    "scrapedAt": "2026-11-25T08:46:18.386Z",
+    "scrapedAt": "2026-11-25T21:47:52.635Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
