@@ -13,7 +13,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Changli",
-    "scrapedAt": "2026-11-24T22:34:01.631Z",
+    "scrapedAt": "2026-11-25T08:46:18.386Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
