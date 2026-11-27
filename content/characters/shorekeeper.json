@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Shorekeeper",
-    "scrapedAt": "2026-11-26T21:41:00.839Z",
+    "scrapedAt": "2026-11-27T08:45:22.348Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
