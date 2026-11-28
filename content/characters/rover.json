@@ -11,7 +11,7 @@
   "locale": "en-US",
   "source": {
     "sourceUrl": "https://wutheringwaves.fandom.com/wiki/Rover",
-    "scrapedAt": "2026-11-27T21:25:58.295Z",
+    "scrapedAt": "2026-11-28T07:58:34.630Z",
     "editor": "scripts/sync-fandom-data.ts"
   }
 }
